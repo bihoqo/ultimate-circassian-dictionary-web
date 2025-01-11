@@ -93,9 +93,9 @@ function Lesson_1() {
       <LessonDialogBubble
         leftOrRight="left"
         character={CHARACTERS[0]}
-        cirText="Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?"
-        engTranslation="Good day. My name is Dana. What is your name?"
-        wordByWordTranslation={[
+        originText="Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?"
+        translationText="Good day. My name is Dana. What is your name?"
+        inlineTranslations={[
           "your day",
           "good",
           "I",
@@ -109,9 +109,9 @@ function Lesson_1() {
       <LessonDialogBubble
         leftOrRight="right"
         character={CHARACTERS[1]}
-        cirText="Сэ сцlэр Сэтэнай."
-        engTranslation="My name is Satanay."
-        wordByWordTranslation={["I", "name is", "Satanay"]}
+        originText="Сэ сцlэр Сэтэнай."
+        translationText="My name is Satanay."
+        inlineTranslations={["I", "name is", "Satanay"]}
       />
     </div>
   );

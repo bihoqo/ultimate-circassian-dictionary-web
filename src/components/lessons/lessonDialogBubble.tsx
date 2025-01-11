@@ -7,18 +7,18 @@ import React from "react";
 export default function LessonDialogBubble({
   leftOrRight,
   character,
-  cirText,
-  wordByWordTranslation,
-  engTranslation,
+  originText,
+  inlineTranslations,
+  translationText,
 }: {
   leftOrRight: "left" | "right";
   character: ICharacter;
-  cirText: string;
-  wordByWordTranslation: string[];
-  engTranslation: string;
+  originText: string;
+  inlineTranslations: string[];
+  translationText: string;
 }) {
   // Split the cirText into words
-  const cirTextWords = cirText.split(" ");
+  const cirTextWords = originText.split(" ");
 
   return (
     <div className="flex flex-col gap-2">
@@ -46,13 +46,13 @@ export default function LessonDialogBubble({
             {cirTextWords.map((word, idx) => {
               return (
                 <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                  <TopTooltipWithBottomSpike text={wordByWordTranslation[idx]}>
+                  <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
                     <span className="text-black text-2xl leading-none font-semibold hover:text-blue-400">
                       {word}
                     </span>
                   </TopTooltipWithBottomSpike>
                   <span className="text-gray-600 text-base font-medium leading-none">
-                    {wordByWordTranslation[idx]}
+                    {inlineTranslations[idx]}
                   </span>
                 </div>
               );
@@ -71,7 +71,7 @@ export default function LessonDialogBubble({
           />
         </div>
       </div>
-      <p className="text-2xl border-b-2 border-solid border-gray-300">{engTranslation}</p>
+      <p className="text-2xl border-b-2 border-solid border-gray-300">{translationText}</p>
     </div>
   );
 }
