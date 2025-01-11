@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface NameToTwitter {
   userName: string;
   twitterName: string;
@@ -99,4 +101,11 @@ export interface Autocomplete {
 export interface ICharacter {
   name: string;
   avatar: string;
+}
+
+export interface INavBarItem {
+  title: string;
+  link: string;
+  icon: ReactNode;
+  isVisible: boolean;
 }
