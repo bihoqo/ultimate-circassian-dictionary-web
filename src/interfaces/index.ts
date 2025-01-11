@@ -109,3 +109,10 @@ export interface INavBarItem {
   icon: ReactNode;
   isVisible: boolean;
 }
+
+export interface IPreferredSettings {
+  circassianFontSize: number;
+  translationFontSize: number;
+  isTooltipTranslationChecked: boolean;
+  isInlineTranslationChecked: boolean;
+}

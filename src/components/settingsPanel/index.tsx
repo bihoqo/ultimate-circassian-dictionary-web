@@ -3,37 +3,42 @@ import { cn } from "~/utils/classNames";
 import PlusSvg from "~/components/svg/plusSvg";
 import MinusSvg from "~/components/svg/minusSvg";
 import RestoreSvg from "~/components/svg/restoreSvg";
+import {
+  DEFAULT_SETTINGS,
+  MAX_CIR_FONT_SIZE,
+  MAX_TRANS_FONT_SIZE,
+  MIN_CIR_FONT_SIZE,
+  MIN_TRANS_FONT_SIZE,
+  usePreferredSettings,
+} from "~/hooks/usePreferredSettings";
 
 interface SettingsPanelProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const MINIMUM_CIRCASSIAN_FONT_SIZE = 12;
-const MAXIMUM_CIRCASSIAN_FONT_SIZE = 24;
-const DEFAULT_CIRCASSIAN_FONT_SIZE = 16;
-const MAXIMUM_TRANSLATION_FONT_SIZE = 24;
-const MINIMUM_TRANSLATION_FONT_SIZE = 12;
-const DEFAULT_TRANSLATION_FONT_SIZE = 16;
-
 export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
-  const [circassianFontSize, setCircassianFontSize] = React.useState(DEFAULT_CIRCASSIAN_FONT_SIZE);
-  const [translationFontSize, setTranslationFontSize] = React.useState(
-    DEFAULT_TRANSLATION_FONT_SIZE,
-  );
+  const { settings, saveSettings } = usePreferredSettings();
+
+  const {
+    circassianFontSize,
+    translationFontSize,
+    isInlineTranslationChecked,
+    isTooltipTranslationChecked,
+  } = settings;
 
   function changeCircassianFontSizeHandler(newValue: number) {
-    if (newValue < MINIMUM_CIRCASSIAN_FONT_SIZE || newValue > MAXIMUM_CIRCASSIAN_FONT_SIZE) {
+    if (newValue < MIN_CIR_FONT_SIZE || newValue > MAX_CIR_FONT_SIZE) {
       return;
     }
-    setCircassianFontSize(newValue);
+    saveSettings({ circassianFontSize: newValue });
   }
 
   function changeTranslationFontSizeHandler(newValue: number) {
-    if (newValue < MINIMUM_TRANSLATION_FONT_SIZE || newValue > MAXIMUM_TRANSLATION_FONT_SIZE) {
+    if (newValue < MIN_TRANS_FONT_SIZE || newValue > MAX_TRANS_FONT_SIZE) {
       return;
     }
-    setTranslationFontSize(newValue);
+    saveSettings({ translationFontSize: newValue });
   }
 
   return (
@@ -68,7 +73,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                   width="24"
                   className="cursor-pointer hover:opacity-50"
                   onClick={() => changeCircassianFontSizeHandler(circassianFontSize - 1)}
-                  isDisabled={circassianFontSize === MINIMUM_CIRCASSIAN_FONT_SIZE}
+                  isDisabled={circassianFontSize === MIN_CIR_FONT_SIZE}
                 />
                 <span className="">{circassianFontSize}</span>
                 <PlusSvg
@@ -76,14 +81,16 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                   width="24"
                   className="cursor-pointer hover:opacity-50"
                   onClick={() => changeCircassianFontSizeHandler(circassianFontSize + 1)}
-                  isDisabled={circassianFontSize === MAXIMUM_CIRCASSIAN_FONT_SIZE}
+                  isDisabled={circassianFontSize === MAX_CIR_FONT_SIZE}
                 />
                 <RestoreSvg
                   height="24"
                   width="24"
                   className="cursor-pointer hover:opacity-50"
-                  onClick={() => changeCircassianFontSizeHandler(DEFAULT_CIRCASSIAN_FONT_SIZE)}
-                  isDisabled={circassianFontSize === MAXIMUM_CIRCASSIAN_FONT_SIZE}
+                  onClick={() =>
+                    changeCircassianFontSizeHandler(DEFAULT_SETTINGS.circassianFontSize)
+                  }
+                  isDisabled={circassianFontSize === DEFAULT_SETTINGS.circassianFontSize}
                 />
               </div>
             </div>
@@ -94,11 +101,23 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
             <span className="font-semibold">Word By Word Translation</span>
             <div className="flex flex-col gap-2 mt-2">
               <label className="flex items-center gap-2">
-                <input type="checkbox" defaultChecked />
+                <input
+                  type="checkbox"
+                  checked={isInlineTranslationChecked}
+                  onChange={() =>
+                    saveSettings({ isInlineTranslationChecked: !isInlineTranslationChecked })
+                  }
+                />
                 In-line
               </label>
               <label className="flex items-center gap-2">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  checked={isTooltipTranslationChecked}
+                  onChange={() =>
+                    saveSettings({ isTooltipTranslationChecked: !isTooltipTranslationChecked })
+                  }
+                />
                 Tooltip
               </label>
             </div>
@@ -116,7 +135,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 width="24"
                 className="cursor-pointer hover:opacity-50"
                 onClick={() => changeTranslationFontSizeHandler(translationFontSize - 1)}
-                isDisabled={translationFontSize === MINIMUM_TRANSLATION_FONT_SIZE}
+                isDisabled={translationFontSize === MIN_TRANS_FONT_SIZE}
               />
               <span className="">{translationFontSize}</span>
               <PlusSvg
@@ -124,14 +143,16 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 width="24"
                 className="cursor-pointer hover:opacity-50"
                 onClick={() => changeTranslationFontSizeHandler(translationFontSize + 1)}
-                isDisabled={translationFontSize === MAXIMUM_TRANSLATION_FONT_SIZE}
+                isDisabled={translationFontSize === MAX_TRANS_FONT_SIZE}
               />
               <RestoreSvg
                 height="24"
                 width="24"
                 className="cursor-pointer hover:opacity-50"
-                onClick={() => changeTranslationFontSizeHandler(DEFAULT_TRANSLATION_FONT_SIZE)}
-                isDisabled={translationFontSize === MAXIMUM_TRANSLATION_FONT_SIZE}
+                onClick={() =>
+                  changeTranslationFontSizeHandler(DEFAULT_SETTINGS.translationFontSize)
+                }
+                isDisabled={translationFontSize === DEFAULT_SETTINGS.translationFontSize}
               />
             </div>
           </div>
