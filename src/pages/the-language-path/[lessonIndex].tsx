@@ -6,6 +6,7 @@ import { cn } from "~/utils/classNames";
 import { ICharacter } from "~/interfaces";
 import LessonDialogBubble from "~/components/lessons/lessonDialogBubble";
 import LessonTable from "~/components/lessons/lessonTable";
+import SettingsSvg from "~/components/svg/settingsSvg";
 
 const CHARACTERS: ICharacter[] = [
   {
@@ -60,7 +61,8 @@ export default function TheLanguagePathPage() {
             })}
           </div>
           {/* Main content area */}
-          <div className="flex-[3_3_0%] border-solid border-black p-4">
+          <div className="flex flex-col gap-2 flex-[3_3_0%] border-solid border-black p-4">
+            <SettingsSvg className="self-end hover:opacity-70 cursor-pointer" />
             {selectedLessonComponent}
           </div>
         </div>
