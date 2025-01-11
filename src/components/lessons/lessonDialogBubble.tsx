@@ -3,6 +3,7 @@ import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import TopTooltipWithBottomSpike from "~/components/tooltip";
 import React from "react";
+import { usePreferredSettings, TEXT_SIZE_MAP } from "~/hooks/usePreferredSettings";
 
 export default function LessonDialogBubble({
   leftOrRight,
@@ -17,6 +18,14 @@ export default function LessonDialogBubble({
   inlineTranslations: string[];
   translationText: string;
 }) {
+  const { settings } = usePreferredSettings();
+  const {
+    circassianFontSize,
+    translationFontSize,
+    isTooltipTranslationChecked,
+    isInlineTranslationChecked,
+  } = settings;
+
   // Split the cirText into words
   const cirTextWords = originText.split(" ");
 
@@ -43,20 +52,35 @@ export default function LessonDialogBubble({
               { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
             )}
           >
-            {cirTextWords.map((word, idx) => {
-              return (
-                <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+            {cirTextWords.map((word, idx) => (
+              <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+                {/* Tooltip */}
+                {isTooltipTranslationChecked && inlineTranslations[idx] && (
                   <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
-                    <span className="text-black text-2xl leading-none font-semibold hover:text-blue-400">
+                    <span
+                      className={cn(
+                        "text-black leading-none font-semibold hover:text-blue-400",
+                        TEXT_SIZE_MAP[circassianFontSize],
+                      )}
+                    >
                       {word}
                     </span>
                   </TopTooltipWithBottomSpike>
-                  <span className="text-gray-600 text-base font-medium leading-none">
+                )}
+
+                {/* Inline translation */}
+                {isInlineTranslationChecked && (
+                  <span
+                    className={cn(
+                      "text-gray-600 font-medium leading-none",
+                      TEXT_SIZE_MAP[translationFontSize],
+                    )}
+                  >
                     {inlineTranslations[idx]}
                   </span>
-                </div>
-              );
-            })}
+                )}
+              </div>
+            ))}
           </div>
           {/* Spike */}
           <div
@@ -71,7 +95,16 @@ export default function LessonDialogBubble({
           />
         </div>
       </div>
-      <p className="text-2xl border-b-2 border-solid border-gray-300">{translationText}</p>
+
+      {/* Translation text */}
+      <p
+        className={cn(
+          "text-2xl border-b-2 border-solid border-gray-300",
+          TEXT_SIZE_MAP[translationFontSize],
+        )}
+      >
+        {translationText}
+      </p>
     </div>
   );
 }

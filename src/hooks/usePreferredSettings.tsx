@@ -1,19 +1,31 @@
 import { useState, useEffect, useCallback } from "react";
 import { PREFERRED_SETTINGS_KEY } from "~/constants/cache";
 import { IPreferredSettings } from "~/interfaces";
+import { clampNumber } from "~/utils/number";
 
 // Constants for font size ranges
-export const MIN_CIR_FONT_SIZE = 12;
-export const MAX_CIR_FONT_SIZE = 24;
-export const MIN_TRANS_FONT_SIZE = 12;
-export const MAX_TRANS_FONT_SIZE = 24;
+export const MIN_FONT_SIZE = 1;
+export const MAX_FONT_SIZE = 10;
 
 // Default settings as a single constant
 export const DEFAULT_SETTINGS: IPreferredSettings = {
-  circassianFontSize: 16,
-  translationFontSize: 16,
+  circassianFontSize: 5,
+  translationFontSize: 5,
   isTooltipTranslationChecked: true,
   isInlineTranslationChecked: true,
+};
+
+export const TEXT_SIZE_MAP: Record<number, string> = {
+  1: "text-xs",
+  2: "text-sm",
+  3: "text-base",
+  4: "text-lg",
+  5: "text-xl",
+  6: "text-2xl",
+  7: "text-3xl",
+  8: "text-4xl",
+  9: "text-5xl",
+  10: "text-6xl",
 };
 
 export const usePreferredSettings = () => {
@@ -43,15 +55,17 @@ export const usePreferredSettings = () => {
           parsedSettings.isInlineTranslationChecked ?? DEFAULT_SETTINGS.isInlineTranslationChecked,
       };
 
-      // Ensure values are within valid ranges
+      // Ensure values are within valid ranges using the clampValue utility
       setSettings({
-        circassianFontSize: Math.min(
-          MAX_CIR_FONT_SIZE,
-          Math.max(MIN_CIR_FONT_SIZE, updatedSettings.circassianFontSize),
+        circassianFontSize: clampNumber(
+          updatedSettings.circassianFontSize,
+          MIN_FONT_SIZE,
+          MAX_FONT_SIZE,
         ),
-        translationFontSize: Math.min(
-          MAX_TRANS_FONT_SIZE,
-          Math.max(MIN_TRANS_FONT_SIZE, updatedSettings.translationFontSize),
+        translationFontSize: clampNumber(
+          updatedSettings.translationFontSize,
+          MIN_FONT_SIZE,
+          MAX_FONT_SIZE,
         ),
         isTooltipTranslationChecked: updatedSettings.isTooltipTranslationChecked,
         isInlineTranslationChecked: updatedSettings.isInlineTranslationChecked,
@@ -65,7 +79,20 @@ export const usePreferredSettings = () => {
   // Save settings to localStorage
   const saveSettings = useCallback(
     (newSettings: Partial<IPreferredSettings>) => {
-      const updatedSettings = { ...settings, ...newSettings };
+      const updatedSettings = {
+        ...settings,
+        ...newSettings,
+        circassianFontSize: clampNumber(
+          newSettings.circassianFontSize ?? settings.circassianFontSize,
+          MIN_FONT_SIZE,
+          MAX_FONT_SIZE,
+        ),
+        translationFontSize: clampNumber(
+          newSettings.translationFontSize ?? settings.translationFontSize,
+          MIN_FONT_SIZE,
+          MAX_FONT_SIZE,
+        ),
+      };
       setSettings(updatedSettings);
       localStorage.setItem(PREFERRED_SETTINGS_KEY, JSON.stringify(updatedSettings));
     },
