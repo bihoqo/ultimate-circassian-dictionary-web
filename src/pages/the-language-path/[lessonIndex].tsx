@@ -32,6 +32,8 @@ export default function TheLanguagePathPage() {
         return <Lesson_1 />;
       case "2":
         return <Lesson_2 />;
+      case "3":
+        return <Lesson_3 />;
       default:
         return <Lesson_1 />;
     }
@@ -138,6 +140,33 @@ function Lesson_2() {
         originTextMatrix={origin}
         translationTextMatrix={translation}
         showIndexes={true}
+      />
+    </div>
+  );
+}
+
+function Lesson_3() {
+  const origin = [
+    ["О-сы", "Уа-сэ", "Са-сэ", "Си-мэ"],
+    ["Се-сы", "Уис", "Е-сы", "Мы-е"],
+    ["Ис", "Уа-е", "Сис", "Е-о"],
+    ["У-сэ", "Мэу", "Ау", "Сэ"],
+  ];
+
+  const translation = [
+    ["snow", "price", "girl", "Sima"],
+    ["I'm swimming", "you're sitting inside", "he's swimming", "apple"],
+    ["he's sitting inside", "rainy weather", "I'm sitting inside", "he's hitting it"],
+    ["poem", "here", "there", "I"],
+  ];
+
+  return (
+    <div className="flex flex-col gap-6">
+      <LessonTable
+        originTextMatrix={origin}
+        translationTextMatrix={translation}
+        showIndexes={true}
+        gapBetweenRows={10}
       />
     </div>
   );

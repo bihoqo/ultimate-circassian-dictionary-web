@@ -1,5 +1,7 @@
 import React from "react";
 import { cn } from "~/utils/classNames";
+import { usePreferredSettings } from "~/hooks/usePreferredSettings";
+import { TEXT_SIZE_MAP } from "~/constants/setting";
 
 interface LessonTableProps {
   headers?: React.ReactNode[]; // Headers for the table
@@ -18,25 +20,27 @@ export default function LessonTable({
   headers = [],
   footer = [],
 }: LessonTableProps) {
+  const { settings } = usePreferredSettings();
+  const { circassianFontSize, translationFontSize } = settings;
+
   return (
     <table className="w-full border-collapse text-sm">
       {/* Table Head */}
       <thead className={cn({ hidden: headers.length === 0 })}>
         <tr>
           <th className={cn("bg-[#ed7c31] text-white font-bold", { hidden: !showIndexes })}>#</th>
-          {headers.map((header, index) => {
-            return (
-              <th key={index} className="border border-gray-300 px-4 py-2 text-left">
-                {header}
-              </th>
-            );
-          })}
+          {headers.map((header, index) => (
+            <th key={index} className="border border-gray-300 px-4 py-2 text-left">
+              {header}
+            </th>
+          ))}
         </tr>
       </thead>
 
       {/* Table Body */}
       <tbody>
         {originTextMatrix.map((row, rowIndex) => {
+          const translationRow = translationTextMatrix[rowIndex] || [];
           return (
             <tr
               key={rowIndex}
@@ -44,29 +48,52 @@ export default function LessonTable({
                 "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0,
                 "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0,
               })}
+              style={{ marginBottom: `${gapBetweenRows}px` }} // Apply the gap between rows
             >
               {/* Show Index Column */}
-              <td
-                className={cn("font-bold text-white text-center px-1", {
-                  "bg-[#ed7d31]": rowIndex % 2 === 0,
-                  "bg-[#70ad47]": rowIndex % 2 !== 0,
-                  hidden: !showIndexes,
-                })}
-              >
-                {rowIndex + 1}
-              </td>
+              {showIndexes && (
+                <td
+                  className={cn("font-bold text-white text-center px-1", {
+                    "bg-[#ed7d31]": rowIndex % 2 === 0,
+                    "bg-[#70ad47]": rowIndex % 2 !== 0,
+                  })}
+                >
+                  {rowIndex + 1}
+                </td>
+              )}
 
               {/* Render Row Data */}
               {row.map((cell, cellIndex) => {
+                const translationCell = translationRow[cellIndex] || "";
                 return (
                   <td
                     key={cellIndex}
-                    className={cn("border-2 border-solid text-black px-4 py-2", {
+                    className={cn("border-2 border-solid px-4 py-2", {
                       "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0,
                       "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0,
                     })}
                   >
-                    {cell}
+                    <div className="flex flex-col">
+                      {/* Origin Word */}
+                      <span
+                        className={cn(
+                          "text-black font-semibold hover:text-blue-400",
+                          TEXT_SIZE_MAP[circassianFontSize],
+                        )}
+                      >
+                        {cell}
+                      </span>
+
+                      {/* Translation Text */}
+                      <span
+                        className={cn(
+                          "text-gray-600 font-medium mt-1",
+                          TEXT_SIZE_MAP[translationFontSize],
+                        )}
+                      >
+                        {translationCell}
+                      </span>
+                    </div>
                   </td>
                 );
               })}
@@ -79,13 +106,11 @@ export default function LessonTable({
       <tfoot className={cn({ hidden: footer.length === 0 })}>
         <tr>
           {showIndexes && <td></td>}
-          {footer.map((footerCell, index) => {
-            return (
-              <td key={index} className="border px-4 py-2">
-                {footerCell}
-              </td>
-            );
-          })}
+          {footer.map((footerCell, index) => (
+            <td key={index} className="border px-4 py-2">
+              {footerCell}
+            </td>
+          ))}
         </tr>
       </tfoot>
     </table>
