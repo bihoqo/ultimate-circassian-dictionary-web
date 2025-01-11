@@ -3,13 +3,17 @@ import { cn } from "~/utils/classNames";
 
 interface LessonTableProps {
   headers?: React.ReactNode[]; // Headers for the table
-  rows?: React.ReactNode[][]; // Rows data
+  originTextMatrix?: React.ReactNode[][]; // Rows data
+  translationTextMatrix?: React.ReactNode[][]; // Rows data
   footer?: React.ReactNode[]; // Footer for the table
   showIndexes?: boolean; // Whether to show index column
+  gapBetweenRows?: number; // Space between rows
 }
 
 export default function LessonTable({
-  rows = [],
+  originTextMatrix = [],
+  translationTextMatrix = [],
+  gapBetweenRows = 0,
   showIndexes = false,
   headers = [],
   footer = [],
@@ -32,7 +36,7 @@ export default function LessonTable({
 
       {/* Table Body */}
       <tbody>
-        {rows.map((row, rowIndex) => {
+        {originTextMatrix.map((row, rowIndex) => {
           return (
             <tr
               key={rowIndex}
