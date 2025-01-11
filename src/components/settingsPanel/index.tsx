@@ -3,12 +3,14 @@ import { cn } from "~/utils/classNames";
 import PlusSvg from "~/components/svg/plusSvg";
 import MinusSvg from "~/components/svg/minusSvg";
 import RestoreSvg from "~/components/svg/restoreSvg";
+import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import {
   DEFAULT_SETTINGS,
-  MAX_FONT_SIZE,
-  MIN_FONT_SIZE,
-  usePreferredSettings,
-} from "~/hooks/usePreferredSettings";
+  MAX_ORIGIN_FONT_SIZE,
+  MAX_TRANSLATION_FONT_SIZE,
+  MIN_ORIGIN_FONT_SIZE,
+  MIN_TRANSLATION_FONT_SIZE,
+} from "~/constants/setting";
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -26,14 +28,14 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
   } = settings;
 
   function changeCircassianFontSizeHandler(newValue: number) {
-    if (newValue < MIN_FONT_SIZE || MAX_FONT_SIZE < newValue) {
+    if (newValue < MIN_ORIGIN_FONT_SIZE || MAX_ORIGIN_FONT_SIZE < newValue) {
       return;
     }
     saveSettings({ circassianFontSize: newValue });
   }
 
   function changeTranslationFontSizeHandler(newValue: number) {
-    if (newValue < MIN_FONT_SIZE || MAX_FONT_SIZE < newValue) {
+    if (newValue < MIN_TRANSLATION_FONT_SIZE || MAX_TRANSLATION_FONT_SIZE < newValue) {
       return;
     }
     saveSettings({ translationFontSize: newValue });
@@ -71,7 +73,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                   width="24"
                   className="cursor-pointer hover:opacity-50"
                   onClick={() => changeCircassianFontSizeHandler(circassianFontSize - 1)}
-                  isDisabled={circassianFontSize === MIN_FONT_SIZE}
+                  isDisabled={circassianFontSize === MIN_ORIGIN_FONT_SIZE}
                 />
                 <span className="">{circassianFontSize}</span>
                 <PlusSvg
@@ -79,7 +81,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                   width="24"
                   className="cursor-pointer hover:opacity-50"
                   onClick={() => changeCircassianFontSizeHandler(circassianFontSize + 1)}
-                  isDisabled={circassianFontSize === MAX_FONT_SIZE}
+                  isDisabled={circassianFontSize === MAX_ORIGIN_FONT_SIZE}
                 />
                 <RestoreSvg
                   height="24"
@@ -133,7 +135,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 width="24"
                 className="cursor-pointer hover:opacity-50"
                 onClick={() => changeTranslationFontSizeHandler(translationFontSize - 1)}
-                isDisabled={translationFontSize === MIN_FONT_SIZE}
+                isDisabled={translationFontSize === MIN_TRANSLATION_FONT_SIZE}
               />
               <span className="">{translationFontSize}</span>
               <PlusSvg
@@ -141,7 +143,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 width="24"
                 className="cursor-pointer hover:opacity-50"
                 onClick={() => changeTranslationFontSizeHandler(translationFontSize + 1)}
-                isDisabled={translationFontSize === MAX_FONT_SIZE}
+                isDisabled={translationFontSize === MAX_TRANSLATION_FONT_SIZE}
               />
               <RestoreSvg
                 height="24"

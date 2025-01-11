@@ -3,7 +3,8 @@ import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import TopTooltipWithBottomSpike from "~/components/tooltip";
 import React from "react";
-import { usePreferredSettings, TEXT_SIZE_MAP } from "~/hooks/usePreferredSettings";
+import { usePreferredSettings } from "~/hooks/usePreferredSettings";
+import { TEXT_SIZE_MAP } from "~/constants/setting";
 
 export default function LessonDialogBubble({
   leftOrRight,
@@ -55,18 +56,16 @@ export default function LessonDialogBubble({
             {cirTextWords.map((word, idx) => (
               <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
                 {/* Tooltip */}
-                {isTooltipTranslationChecked && inlineTranslations[idx] && (
-                  <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
-                    <span
-                      className={cn(
-                        "text-black leading-none font-semibold hover:text-blue-400",
-                        TEXT_SIZE_MAP[circassianFontSize],
-                      )}
-                    >
-                      {word}
-                    </span>
-                  </TopTooltipWithBottomSpike>
-                )}
+                <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
+                  <span
+                    className={cn(
+                      "text-black leading-none font-semibold hover:text-blue-400",
+                      TEXT_SIZE_MAP[circassianFontSize],
+                    )}
+                  >
+                    {word}
+                  </span>
+                </TopTooltipWithBottomSpike>
 
                 {/* Inline translation */}
                 {isInlineTranslationChecked && (

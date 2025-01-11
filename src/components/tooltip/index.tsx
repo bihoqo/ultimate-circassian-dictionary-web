@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { cn } from "~/utils/classNames";
+import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 
 interface TopTooltipWithBottomSpikeProps {
   text: string;
@@ -12,7 +13,12 @@ export default function TopTooltipWithBottomSpike({
   children,
   className = "",
 }: TopTooltipWithBottomSpikeProps) {
+  const { settings } = usePreferredSettings();
   const [isVisible, setIsVisible] = useState(false);
+
+  if (!settings.isTooltipTranslationChecked) {
+    return <>{children}</>;
+  }
 
   return (
     <div className="relative flex items-center">
