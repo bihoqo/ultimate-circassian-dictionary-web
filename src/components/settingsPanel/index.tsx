@@ -1,12 +1,26 @@
 import React from "react";
 import { cn } from "~/utils/classNames";
+import PlusSvg from "~/components/svg/plusSvg";
+import MinusSvg from "~/components/svg/minusSvg";
 
 interface SettingsPanelProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
+const MINIMUM_CIRCASSIAN_FONT_SIZE = 12;
+const MAXIMUM_CIRCASSIAN_FONT_SIZE = 24;
+
 export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
+  const [circassianFontSize, setCircassianFontSize] = React.useState(16);
+
+  function changeCircassianFontSizeHandler(newValue: number) {
+    if (newValue < MINIMUM_CIRCASSIAN_FONT_SIZE || newValue > MAXIMUM_CIRCASSIAN_FONT_SIZE) {
+      return;
+    }
+    setCircassianFontSize(newValue);
+  }
+
   return (
     <>
       {/* Overlay that shows when the settings panel is open */}
@@ -22,7 +36,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
         <div className="flex justify-between items-center">
           <h2 className="font-bold text-lg">Settings</h2>
           <button
-            className="text-xl font-bold hover:bg-gray-500 hover:text-white rounded-full py-1 px-2"
+            className="text-xl font-bold hover:bg-gray-400 hover:text-white rounded-full py-1 px-2"
             onClick={onClose}
           >
             X
@@ -31,37 +45,68 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
 
         {/* Settings content */}
         <div className="mt-4">
-          <div className="flex items-center gap-4">
-            <span className="font-semibold">Theme</span>
-            <button className="px-4 py-2 bg-gray-200 rounded-md">Light</button>
-            <button className="px-4 py-2 bg-gray-200 rounded-md">Sepia</button>
-            <button className="px-4 py-2 bg-gray-200 rounded-md">Dark</button>
-          </div>
-
+          {/* Circassian font settings */}
           <div className="mt-4">
-            <span className="font-semibold">Quran Font</span>
-            <div className="flex gap-2 mt-2">
-              <button className="px-4 py-2 bg-gray-200 rounded-md">Uthmani</button>
-              <button className="px-4 py-2 bg-gray-200 rounded-md">IndoPak</button>
-              <button className="px-4 py-2 bg-gray-200 rounded-md">Tajweed</button>
+            <span className="font-semibold">Circassian font</span>
+            <div className="flex flex-row justify-between gap-2 mt-2">
+              <p>Font size</p>
+              <div className="flex flex-row gap-2">
+                <MinusSvg
+                  height="24"
+                  width="24"
+                  className="cursor-pointer hover:bg-gray-400 hover:text-white rounded-full"
+                  onClick={() => changeCircassianFontSizeHandler(circassianFontSize - 1)}
+                  isDisabled={circassianFontSize === MINIMUM_CIRCASSIAN_FONT_SIZE}
+                />
+                <span className="">{circassianFontSize}</span>
+                <PlusSvg
+                  height="24"
+                  width="24"
+                  className="cursor-pointer hover:bg-gray-400 hover:text-white rounded-full"
+                  onClick={() => changeCircassianFontSizeHandler(circassianFontSize + 1)}
+                  isDisabled={circassianFontSize === MAXIMUM_CIRCASSIAN_FONT_SIZE}
+                />
+              </div>
             </div>
           </div>
 
+          {/* Word by word translation settings */}
           <div className="mt-4">
-            <span className="font-semibold">Word By Word</span>
+            <span className="font-semibold">Word By Word Translation</span>
             <div className="flex flex-col gap-2 mt-2">
               <label className="flex items-center gap-2">
                 <input type="checkbox" defaultChecked />
-                Translation
+                In-line
               </label>
               <label className="flex items-center gap-2">
                 <input type="checkbox" />
-                Transliteration
+                Tooltip
               </label>
-              <label className="flex items-center gap-2">
-                <input type="checkbox" defaultChecked />
-                Recitation
-              </label>
+            </div>
+          </div>
+        </div>
+
+        {/* Translation settings */}
+        <div className="mt-4">
+          <span className="font-semibold">Translation font</span>
+          <div className="flex flex-row justify-between gap-2 mt-2">
+            <p>Font size</p>
+            <div className="flex flex-row gap-2">
+              <MinusSvg
+                height="24"
+                width="24"
+                className="cursor-pointer hover:bg-gray-400 hover:text-white rounded-full"
+                onClick={() => changeCircassianFontSizeHandler(circassianFontSize - 1)}
+                isDisabled={circassianFontSize === MINIMUM_CIRCASSIAN_FONT_SIZE}
+              />
+              <span className="">{circassianFontSize}</span>
+              <PlusSvg
+                height="24"
+                width="24"
+                className="cursor-pointer hover:bg-gray-400 hover:text-white rounded-full"
+                onClick={() => changeCircassianFontSizeHandler(circassianFontSize + 1)}
+                isDisabled={circassianFontSize === MAXIMUM_CIRCASSIAN_FONT_SIZE}
+              />
             </div>
           </div>
         </div>
