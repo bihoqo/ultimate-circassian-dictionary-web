@@ -20,12 +20,7 @@ export default function LessonDialogBubble({
   translationText: string;
 }) {
   const { settings } = usePreferredSettings();
-  const {
-    circassianFontSize,
-    translationFontSize,
-    isTooltipTranslationChecked,
-    isInlineTranslationChecked,
-  } = settings;
+  const { circassianFontSize, translationFontSize, isInlineTranslationChecked } = settings;
 
   // Split the cirText into words
   const cirTextWords = originText.split(" ");
