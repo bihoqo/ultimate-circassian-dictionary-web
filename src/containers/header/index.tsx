@@ -7,6 +7,7 @@ import Image from "next/image";
 import useWindowSize from "~/hooks/useWindowDimensions";
 import SearchContainer from "~/containers/header/searchContainer";
 import { usePathname } from "next/navigation";
+import { INavBarItem } from "~/interfaces";
 
 function Logo({ onClick }: { onClick: () => void }) {
   return (
@@ -25,13 +26,11 @@ function Logo({ onClick }: { onClick: () => void }) {
   );
 }
 
-function NavItem({
-  item,
-  onClick,
-}: {
-  item: { title: string; link: string; icon: React.ReactNode };
-  onClick: () => void;
-}) {
+function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) {
+  if (!item.isVisible) {
+    return null;
+  }
+
   return (
     <button
       className={cn(
@@ -46,13 +45,11 @@ function NavItem({
   );
 }
 
-function MobileNavItem({
-  item,
-  onClick,
-}: {
-  item: { title: string; link: string | undefined; icon: React.ReactNode };
-  onClick: () => void;
-}) {
+function MobileNavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) {
+  if (!item.isVisible) {
+    return null;
+  }
+
   return (
     <button
       className={cn(
@@ -66,6 +63,19 @@ function MobileNavItem({
   );
 }
 
+const NAV_ITEMS: INavBarItem[] = [
+  { title: "Home", link: "/", icon: <FaHome />, isVisible: true },
+  { title: "Dictionary", link: "/dictionary", icon: <MdMenuBook />, isVisible: true },
+  {
+    title: "The Language Path",
+    link: "/the-language-path",
+    icon: <MdMenuBook />,
+    isVisible: false,
+  },
+  { title: "Grammar", link: "/grammar", icon: <MdMenuBook />, isVisible: true },
+  { title: "Contact Us", link: "/contact-us", icon: <MdContactSupport />, isVisible: true },
+];
+
 export default function Header() {
   const { width } = useWindowSize();
   const pathname = usePathname();
@@ -76,14 +86,6 @@ export default function Header() {
     router.push(link);
     setIsMobileMenuOpen(false); // Close mobile menu when navigating
   };
-
-  const navItems = [
-    { title: "Home", link: "/", icon: <FaHome /> },
-    { title: "Dictionary", link: "/dictionary", icon: <MdMenuBook /> },
-    { title: "Grammar", link: "/grammar", icon: <MdMenuBook /> },
-    // { title: "Blog", link: "/blog", icon: <MdMenuBook /> },
-    { title: "Contact Us", link: "/contact-us", icon: <MdContactSupport /> },
-  ];
 
   if (width < 640) {
     return (
@@ -98,12 +100,18 @@ export default function Header() {
 
           {isMobileMenuOpen && (
             <div className="absolute left-0 top-16 z-60 w-full bg-white shadow-lg">
-              {navItems.map((item) => (
-                <MobileNavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
-              ))}
+              {NAV_ITEMS.map((item) => {
+                return (
+                  <MobileNavItem
+                    key={item.title}
+                    item={item}
+                    onClick={() => navigateTo(item.link)}
+                  />
+                );
+              })}
 
               <MobileNavItem
-                item={{ title: "Close", link: "", icon: <FaTimes /> }}
+                item={{ title: "Close", link: "", icon: <FaTimes />, isVisible: true }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               />
             </div>
@@ -118,9 +126,9 @@ export default function Header() {
       <div className="mx-auto flex w-11/12 flex-row items-center gap-1 sm:gap-4">
         <Logo onClick={() => navigateTo("/")} />
         <div className="flex">
-          {navItems.map((item) => (
-            <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
-          ))}
+          {NAV_ITEMS.map((item) => {
+            return <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />;
+          })}
         </div>
       </div>
     </div>
