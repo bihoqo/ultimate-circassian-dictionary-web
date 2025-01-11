@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { LESSON_LIST } from "~/constants/content";
 import { cn } from "~/utils/classNames";
@@ -7,6 +7,7 @@ import { ICharacter } from "~/interfaces";
 import LessonDialogBubble from "~/components/lessons/lessonDialogBubble";
 import LessonTable from "~/components/lessons/lessonTable";
 import SettingsSvg from "~/components/svg/settingsSvg";
+import SettingsPanel from "~/components/settingsPanel";
 
 const CHARACTERS: ICharacter[] = [
   {
@@ -23,6 +24,8 @@ export default function TheLanguagePathPage() {
   const router = useRouter();
   const { lessonIndex } = router.query;
 
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for managing the settings panel
+
   const selectedLessonComponent = useMemo(() => {
     switch (lessonIndex) {
       case "1":
@@ -34,12 +37,19 @@ export default function TheLanguagePathPage() {
     }
   }, [lessonIndex]);
 
+  // Function to toggle the settings panel
+  const toggleSettings = () => {
+    setIsSettingsOpen(!isSettingsOpen);
+  };
+
   return (
     <>
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main className="bg-white w-full">
+      <main className="bg-white w-full relative">
+        {" "}
+        {/* Relative for the overlay positioning */}
         <div className="mx-auto w-11/12 flex flex-row">
           {/* Sidebar with lessons */}
           <div className="flex-[2_2_0%] border-r border-solid border-black flex flex-col justify-start items-start gap-2 pt-4">
@@ -60,12 +70,18 @@ export default function TheLanguagePathPage() {
               );
             })}
           </div>
+
           {/* Main content area */}
           <div className="flex flex-col gap-2 flex-[3_3_0%] border-solid border-black p-4">
-            <SettingsSvg className="self-end hover:opacity-70 cursor-pointer" />
+            <SettingsSvg
+              className="self-end hover:opacity-70 cursor-pointer"
+              onClick={toggleSettings}
+            />
             {selectedLessonComponent}
           </div>
         </div>
+        {/* Integrating the SettingsPanel component */}
+        <SettingsPanel isOpen={isSettingsOpen} onClose={toggleSettings} />
       </main>
     </>
   );
