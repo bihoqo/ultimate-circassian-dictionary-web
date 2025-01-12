@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaFilter, FaSearch, FaTimesCircle } from "react-icons/fa";
 import { useParams, useRouter } from "next/navigation";
-import { useDebounce } from "use-debounce";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { Result } from "neverthrow";
 
@@ -27,6 +26,7 @@ import {
   findAutocompletesInWordHistoryCache,
   removeFromWordHistoryCache,
 } from "~/cache/wordHistory";
+import useDebounce from "~/hooks/useDebounce";
 
 function CachedAutocompletedSearchElement({
   word,
