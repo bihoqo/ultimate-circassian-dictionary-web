@@ -35,7 +35,13 @@ export default function LessonDialogBubble({
       >
         {/* Avatar and name */}
         <div className="flex flex-col items-center gap-1">
-          <Image src={character.avatar} alt={character.name} width={50} height={50} />
+          <Image
+            src={character.avatar}
+            alt={character.name}
+            width={75}
+            height={75}
+            className={cn({ "scale-x-[-1]": leftOrRight === "right" })}
+          />
           <p className="text-[#4a7324] text-2xl font-bold">{character.name}</p>
         </div>
 

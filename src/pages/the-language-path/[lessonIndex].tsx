@@ -12,11 +12,11 @@ import SettingsPanel from "~/components/settingsPanel";
 const CHARACTERS: ICharacter[] = [
   {
     name: "Данэ",
-    avatar: "/lessons/girl1.png",
+    avatar: "/lessons/faces/14.png",
   },
   {
     name: "Сэтэнай",
-    avatar: "/lessons/girl2.png",
+    avatar: "/lessons/faces/10.png",
   },
 ];
 
