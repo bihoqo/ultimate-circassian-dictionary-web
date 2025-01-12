@@ -31,6 +31,8 @@ const loadSettingsFromLocalStorage = (): IPreferredSettings => {
         parsedSettings.isTooltipTranslationChecked ?? DEFAULT_SETTINGS.isTooltipTranslationChecked,
       isInlineTranslationChecked:
         parsedSettings.isInlineTranslationChecked ?? DEFAULT_SETTINGS.isInlineTranslationChecked,
+      isTranslationChecked:
+        parsedSettings.isTranslationChecked ?? DEFAULT_SETTINGS.isTranslationChecked,
     };
   } catch (e) {
     console.error("Failed to parse saved settings, using defaults.", e);
@@ -52,7 +54,7 @@ export const usePreferredSettings = () => {
     const loadedSettings = loadSettingsFromLocalStorage();
 
     // Ensure values are within valid ranges using the clampValue utility
-    const clampedSettings = {
+    const clampedSettings: IPreferredSettings = {
       circassianFontSize: clampNumber(
         loadedSettings.circassianFontSize,
         MIN_ORIGIN_FONT_SIZE,
@@ -65,6 +67,7 @@ export const usePreferredSettings = () => {
       ),
       isTooltipTranslationChecked: loadedSettings.isTooltipTranslationChecked,
       isInlineTranslationChecked: loadedSettings.isInlineTranslationChecked,
+      isTranslationChecked: loadedSettings.isTranslationChecked,
     };
 
     setSettings(clampedSettings);

@@ -115,4 +115,5 @@ export interface IPreferredSettings {
   translationFontSize: number;
   isTooltipTranslationChecked: boolean;
   isInlineTranslationChecked: boolean;
+  isTranslationChecked: boolean;
 }

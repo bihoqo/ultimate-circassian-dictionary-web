@@ -20,7 +20,12 @@ export default function LessonDialogBubble({
   translationText: string;
 }) {
   const { settings } = usePreferredSettings();
-  const { circassianFontSize, translationFontSize, isInlineTranslationChecked } = settings;
+  const {
+    circassianFontSize,
+    translationFontSize,
+    isInlineTranslationChecked,
+    isTranslationChecked,
+  } = settings;
 
   // Split the cirText into words
   const cirTextWords = originText.split(" ");
@@ -97,14 +102,11 @@ export default function LessonDialogBubble({
       </div>
 
       {/* Translation text */}
-      <p
-        className={cn(
-          "text-2xl border-b-2 border-solid border-gray-300",
-          TEXT_SIZE_MAP[translationFontSize],
-        )}
-      >
-        {translationText}
-      </p>
+      <div className="border-b-2 border-solid border-gray-300">
+        <p className={cn(TEXT_SIZE_MAP[translationFontSize], { hidden: !isTranslationChecked })}>
+          {translationText}
+        </p>
+      </div>
     </div>
   );
 }

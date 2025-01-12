@@ -8,6 +8,7 @@ import LessonDialogBubble from "~/components/lessons/lessonDialogBubble";
 import LessonTable from "~/components/lessons/lessonTable";
 import SettingsSvg from "~/components/svg/settingsSvg";
 import SettingsPanel from "~/components/settingsPanel";
+import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
 
 const CHARACTERS: ICharacter[] = [
   {
@@ -75,10 +76,21 @@ export default function TheLanguagePathPage() {
 
           {/* Main content area */}
           <div className="flex flex-col gap-2 flex-[3_3_0%] border-solid border-black p-4">
-            <SettingsSvg
-              className="self-end hover:opacity-70 cursor-pointer"
-              onClick={toggleSettings}
-            />
+            {/* Settings */}
+            <div className="flex flex-row justify-between items-center w-full mb-8">
+              <div />
+              <div className="self-center">
+                <SwitchReadingOrTranslation />
+              </div>
+              <div className="self-center">
+                <SettingsSvg
+                  className="self-end hover:opacity-70 cursor-pointer"
+                  onClick={toggleSettings}
+                />
+              </div>
+            </div>
+
+            {/* Selected lesson component */}
             {selectedLessonComponent}
           </div>
         </div>
