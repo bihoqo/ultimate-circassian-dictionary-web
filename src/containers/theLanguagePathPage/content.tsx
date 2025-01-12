@@ -1,31 +1,19 @@
 import Head from "next/head";
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { cn } from "~/utils/classNames";
 import SettingsSvg from "~/components/svg/settingsSvg";
 import SettingsPanel from "~/components/settingsPanel";
 import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
-import { Lesson_1_1, Lesson_1_2, Lesson_1_3 } from "~/lessonComponents/lesson_1";
 import { LESSONS_LIST } from "~/constants/lessons";
 
 export default function TheLanguagePathContentContainer() {
   const router = useRouter();
-  const { lessonIndex } = router.query;
+  const { lessonIdx, panelIdx } = router.query;
   const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for managing the settings panel
 
-  const selectedLessonComponent = useMemo(() => {
-    switch (lessonIndex) {
-      case "1":
-      case "1.1":
-        return <Lesson_1_1 />;
-      case "1.2":
-        return <Lesson_1_2 />;
-      case "1.3":
-        return <Lesson_1_3 />;
-      default:
-        return <></>;
-    }
-  }, [lessonIndex]);
+  const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
+  const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)];
 
   return (
     <>
@@ -44,7 +32,7 @@ export default function TheLanguagePathContentContainer() {
                   onClick={() => router.push(`/the-language-path/${lesson.lessonIdx}`)} // Navigate on click
                   className={cn(
                     "font-black",
-                    Number(lessonIndex) === lesson.lessonIdx
+                    selectedLesson.lessonIdx === lesson.lessonIdx
                       ? "text-red-500 hover:text-red-500/50"
                       : "text-black hover:text-black/50",
                   )}
@@ -72,7 +60,7 @@ export default function TheLanguagePathContentContainer() {
             </div>
 
             {/* Selected lesson component */}
-            {selectedLessonComponent}
+            {selectedPanelComponent}
           </div>
         </div>
         {/* Integrating the SettingsPanel component */}

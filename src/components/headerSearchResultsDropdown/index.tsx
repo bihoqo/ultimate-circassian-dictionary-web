@@ -16,7 +16,7 @@ import {
 import { Autocomplete } from "~/interfaces";
 import { replaceStickLettersToPalochka } from "~/utils/wordFormatting";
 import { FaTimesCircle } from "react-icons/fa";
-import useDebounce from "~/hooks/useDebounce";
+import { useDebounce } from "use-debounce";
 
 interface HeaderSearchResultsDropdownProps {
   searchInputValue: string;

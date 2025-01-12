@@ -26,7 +26,7 @@ import {
   findAutocompletesInWordHistoryCache,
   removeFromWordHistoryCache,
 } from "~/cache/wordHistory";
-import useDebounce from "~/hooks/useDebounce";
+import { useDebounce } from "use-debounce";
 
 function CachedAutocompletedSearchElement({
   word,
@@ -90,9 +90,7 @@ function AutocompletedSearchElement({
 
   return (
     <button
-      className={cn(
-        "w-full rounded-md p-2 text-left font-medium hover:bg-[#e7e7e7] hover:bg-gray-100",
-      )}
+      className={cn("w-full rounded-md p-2 text-left font-medium hover:bg-gray-100")}
       key={word.key}
       onClick={() => onWordSelection(word.key)}
     >

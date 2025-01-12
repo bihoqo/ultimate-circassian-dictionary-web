@@ -26,7 +26,7 @@ export default function TheLanguagePathPage() {
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main>
+      <main className="w-full">
         <TheLanguagePathContentContainer />
       </main>
     </>
