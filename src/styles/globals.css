@@ -25,8 +25,11 @@ body {
     background-attachment: fixed;
 }
 
-
 html {
     position: relative;
     height: 100vh;
+}
+
+button {
+    cursor: pointer;
 }

@@ -25,6 +25,7 @@ export default function TheLanguagePathContentContainer() {
         <div className="w-11/12 mx-auto border-b border-black border-solid">
           <h1 className="text-3xl underline">{selectedLesson.title}</h1>
         </div>
+
         <div className="mx-auto w-11/12 flex flex-row">
           {/* Sidebar with lessons */}
           <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-black">
