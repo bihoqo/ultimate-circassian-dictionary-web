@@ -1,11 +1,11 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { cn } from "~/utils/classNames";
 import SettingsSvg from "~/components/svg/settingsSvg";
 import SettingsPanel from "~/components/settingsPanel";
 import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
 import { LESSONS_LIST } from "~/constants/lessons";
+import LessonSidebar from "~/components/lessonSidebar";
 
 export default function TheLanguagePathContentContainer() {
   const router = useRouter();
@@ -21,30 +21,18 @@ export default function TheLanguagePathContentContainer() {
         <title>Learn Circassian</title>
       </Head>
       <main className="bg-white w-full relative block">
-        <h1></h1>
+        {/* Title */}
+        <div className="w-11/12 mx-auto border-b border-black border-solid">
+          <h1 className="text-3xl underline">{selectedLesson.title}</h1>
+        </div>
         <div className="mx-auto w-11/12 flex flex-row">
           {/* Sidebar with lessons */}
-          <div className="flex-[2_2_0%] border-r border-solid border-black flex flex-col justify-start items-start gap-2 pt-4">
-            {LESSONS_LIST.map((lesson) => {
-              return (
-                <button
-                  key={lesson.lessonIdx}
-                  onClick={() => router.push(`/the-language-path/${lesson.lessonIdx}`)} // Navigate on click
-                  className={cn(
-                    "font-black",
-                    selectedLesson.lessonIdx === lesson.lessonIdx
-                      ? "text-red-500 hover:text-red-500/50"
-                      : "text-black hover:text-black/50",
-                  )}
-                >
-                  {lesson.lessonIdx}. {lesson.title}
-                </button>
-              );
-            })}
+          <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-black">
+            <LessonSidebar />
           </div>
 
           {/* Main content area */}
-          <div className="flex flex-col gap-2 flex-[3_3_0%] border-solid border-black p-4">
+          <div className="flex flex-col gap-2 w-full border-solid border-black p-4">
             {/* Settings */}
             <div className="flex flex-row justify-between items-center w-full mb-8">
               <div />

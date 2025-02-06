@@ -117,3 +117,9 @@ export interface IPreferredSettings {
   isInlineTranslationChecked: boolean;
   isTranslationChecked: boolean;
 }
+
+export interface ILesson {
+  lessonIdx: number;
+  title: string;
+  panelIdxList: ReactNode[];
+}
