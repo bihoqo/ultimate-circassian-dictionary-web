@@ -12,7 +12,7 @@ export default function TheLanguagePathContentContainer() {
   const { lessonIdx, panelIdx } = router.query;
   const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for managing the settings panel
 
-  const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
+  const selectedLesson = LESSONS_LIST[Number(lessonIdx) - 1];
   const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)].component;
 
   return (

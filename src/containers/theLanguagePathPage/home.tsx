@@ -49,7 +49,7 @@ function LessonButton({
         </div>
         <div className="mb-2" />
       </div>
-      <p className="text-3xl font-medium text-[#68a629] hover:underline text-left">{title}</p>
+      <p className="text-3xl font-medium text-[#68a629] hover:underline text-left pr-2">{title}</p>
     </button>
   );
 }
