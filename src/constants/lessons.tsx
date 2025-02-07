@@ -1,16 +1,24 @@
 import { ICharacter, ICharacterBank, ILesson } from "~/interfaces";
-import { Lesson_1_1, Lesson_1_2 } from "~/lessonComponents/lesson_1";
-import { Lesson_2_1, Lesson_2_2, Lesson_2_3 } from "~/lessonComponents/lesson_2";
-import { Lesson_3_1, Lesson_3_2 } from "~/lessonComponents/lesson_3";
-import { Lesson_4_1, Lesson_4_2, Lesson_4_3 } from "~/lessonComponents/lesson_4";
 import {
-  Lesson_5_1,
-  Lesson_5_2,
-  Lesson_5_3,
-  Lesson_5_4,
-  Lesson_5_5,
-} from "~/lessonComponents/lesson_5";
-import { Lesson_6_1, Lesson_6_2, Lesson_6_3 } from "~/lessonComponents/lesson_6";
+  Lesson_1_1,
+  Lesson_1_2,
+  Lesson_1_3,
+  Lesson_1_4,
+  Lesson_1_5,
+  Lesson_1_6,
+  Lesson_1_7,
+  Lesson_1_8,
+  Lesson_1_9,
+  Lesson_1_10,
+  Lesson_1_11,
+  Lesson_1_12,
+  Lesson_1_13,
+  Lesson_1_14,
+  Lesson_1_15,
+  Lesson_1_16,
+  Lesson_1_17,
+  Lesson_1_18,
+} from "~/lessonComponents/lesson_1";
 
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
@@ -56,56 +64,27 @@ export function getCharacterByName(name: string): ICharacter {
 export const LESSONS_LIST: ILesson[] = [
   {
     lessonIdx: 1,
-    title: "Conversation 1",
+    title: "Welcome",
     panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_1_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_1_2 /> },
-    ],
-  },
-  {
-    lessonIdx: 2,
-    title: "Conversation 2",
-    panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_2_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_2_2 /> },
-      { title: "Зэдэгущы1эгъу 3", component: <Lesson_2_3 /> },
-    ],
-  },
-  {
-    lessonIdx: 3,
-    title: "Conversation 3",
-    panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_3_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_3_2 /> },
-    ],
-  },
-  {
-    lessonIdx: 4,
-    title: "Conversation 4",
-    panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_4_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_4_2 /> },
-      { title: "Зэдэгущы1эгъу 3", component: <Lesson_4_3 /> },
-    ],
-  },
-  {
-    lessonIdx: 5,
-    title: "Conversation 5",
-    panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_5_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_5_2 /> },
-      { title: "Зэдэгущы1эгъу 3", component: <Lesson_5_3 /> },
-      { title: "Зэдэгущы1эгъу 4", component: <Lesson_5_4 /> },
-      { title: "Зэдэгущы1эгъу 5", component: <Lesson_5_5 /> },
-    ],
-  },
-  {
-    lessonIdx: 6,
-    title: "Conversation 6",
-    panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_6_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_6_2 /> },
-      { title: "Зэдэгущы1эгъу 3", component: <Lesson_6_3 /> },
+      { title: "1.2 Dialogue 1", component: <Lesson_1_1 /> },
+      { title: "1.2 Dialogue 2", component: <Lesson_1_2 /> },
+      { title: "2.1 Dialogue 1", component: <Lesson_1_3 /> },
+      { title: "2.1 Dialogue 2", component: <Lesson_1_4 /> },
+      { title: "2.1 Dialogue 3", component: <Lesson_1_5 /> },
+      { title: "3.1 Dialogue 1", component: <Lesson_1_6 /> },
+      { title: "3.2 Dialogue 1", component: <Lesson_1_6 /> },
+      { title: "4.1 Dialogue 1", component: <Lesson_1_7 /> },
+      { title: "4.2 Dialogue 1", component: <Lesson_1_8 /> },
+      { title: "4.2 Dialogue 2", component: <Lesson_1_9 /> },
+      { title: "4.2 Dialogue 1", component: <Lesson_1_10 /> },
+      { title: "7.1 Dialogue 1", component: <Lesson_1_11 /> },
+      { title: "9.1 Dialogue 1", component: <Lesson_1_12 /> },
+      { title: "9.2 Dialogue 1", component: <Lesson_1_13 /> },
+      { title: "9.3 Dialogue 1", component: <Lesson_1_14 /> },
+      { title: "9.3 Dialogue 2", component: <Lesson_1_15 /> },
+      { title: "11.1 Dialogue 1", component: <Lesson_1_16 /> },
+      { title: "11.1 Dialogue 2", component: <Lesson_1_17 /> },
+      { title: "11.1 Dialogue 3", component: <Lesson_1_18 /> },
     ],
   },
 ];
