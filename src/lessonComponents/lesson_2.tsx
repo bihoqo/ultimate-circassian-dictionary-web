@@ -25,6 +25,26 @@ export function Lesson_2_1() {
         }}
         inlineTranslations={[]}
       />
+      <LessonDialogBubble
+        leftOrRight="left"
+        character={LESSON_CHARACTERS[0]}
+        originText="Тыдэ укъикIыра?"
+        translationText={{
+          En: "From where are you?",
+          Ar: "دانا: من أين أنت؟",
+        }}
+        inlineTranslations={[]}
+      />
+      <LessonDialogBubble
+        leftOrRight="right"
+        character={LESSON_CHARACTERS[0]}
+        originText="Сэ Мыекъуапэ сыкъекIы."
+        translationText={{
+          En: "I am from Maykop.",
+          Ar: "ستناي: أنا من مايكوب.",
+        }}
+        inlineTranslations={[]}
+      />
     </div>
   );
 }
