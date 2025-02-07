@@ -33,7 +33,7 @@ export default function TheLanguagePathContentContainer() {
           </div>
 
           {/* Main content area */}
-          <div className="flex flex-col gap-2 w-full border-solid border-black p-4">
+          <div className="flex flex-col gap-2 w-full border-solid border-black px-4 pt-4 pb-14">
             {/* Settings */}
             <div className="flex flex-row justify-between items-center w-full mb-8">
               <div />
