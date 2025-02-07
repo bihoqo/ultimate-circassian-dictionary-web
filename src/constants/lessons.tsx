@@ -10,10 +10,11 @@ import {
   Lesson_5_4,
   Lesson_5_5,
 } from "~/lessonComponents/lesson_5";
+import { Lesson_6_1, Lesson_6_2, Lesson_6_3 } from "~/lessonComponents/lesson_6";
 
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
-    names: ["Данэ", "Нэрыт", "lазэ", "Нэрыс", "Дэнэф", "Разэ", "Симаз", "Симэ"],
+    names: ["Данэ", "Нэрыт", "lазэ", "Нэрыс", "Дэнэф", "Разэ", "Симаз", "Симэ", "Синэмис"],
     avatar: "/lessons/faces/14.png",
   },
   {
@@ -32,11 +33,12 @@ export const LESSON_CHARACTERS: ICharacterBank[] = [
       "Къазбэч",
       "Батыр",
       "Джэбагъ",
+      "Бибэрс",
     ],
     avatar: "/lessons/faces/4.png",
   },
   {
-    names: ["Аслъан", "Чан", "Озырмэдж", "Пщымаф"],
+    names: ["Аслъан", "Чан", "Озырмэдж", "Пщымаф", "Тембот"],
     avatar: "/lessons/faces/13.png",
   },
 ];
@@ -95,6 +97,15 @@ export const LESSONS_LIST: ILesson[] = [
       { title: "Зэдэгущы1эгъу 3", component: <Lesson_5_3 /> },
       { title: "Зэдэгущы1эгъу 4", component: <Lesson_5_4 /> },
       { title: "Зэдэгущы1эгъу 5", component: <Lesson_5_5 /> },
+    ],
+  },
+  {
+    lessonIdx: 6,
+    title: "Conversation 6",
+    panelIdxList: [
+      { title: "Зэдэгущы1эгъу 1", component: <Lesson_6_1 /> },
+      { title: "Зэдэгущы1эгъу 2", component: <Lesson_6_2 /> },
+      { title: "Зэдэгущы1эгъу 3", component: <Lesson_6_3 /> },
     ],
   },
 ];
