@@ -116,10 +116,19 @@ export interface IPreferredSettings {
   isTooltipTranslationChecked: boolean;
   isInlineTranslationChecked: boolean;
   isTranslationChecked: boolean;
+  translationLang: ISupportedTranslationLang;
 }
 
 export interface ILesson {
   lessonIdx: number;
   title: string;
-  panelIdxList: ReactNode[];
+  panelIdxList: IPanel[];
 }
+
+export interface IPanel {
+  title: string;
+  component: ReactNode;
+}
+
+export type ISupportedTranslationLang = "En" | "Ar";
+export type ITranslation = Record<ISupportedTranslationLang, string>;

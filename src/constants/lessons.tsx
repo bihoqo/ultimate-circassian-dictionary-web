@@ -17,11 +17,15 @@ export const LESSONS_LIST: ILesson[] = [
   {
     lessonIdx: 0,
     title: "The Letters",
-    panelIdxList: [<Lesson_1_1 />, <Lesson_1_2 />, <Lesson_1_3 />],
+    panelIdxList: [
+      { title: "Panel", component: <Lesson_1_1 /> },
+      { title: "Panel", component: <Lesson_1_2 /> },
+      { title: "Panel", component: <Lesson_1_3 /> },
+    ],
   },
   {
     lessonIdx: 1,
     title: "1",
-    panelIdxList: [<Lesson_2_1 />],
+    panelIdxList: [{ title: "Зэдэгущы1эгъу 1", component: <Lesson_2_1 /> }],
   },
 ];

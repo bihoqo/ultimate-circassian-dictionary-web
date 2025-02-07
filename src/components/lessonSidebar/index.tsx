@@ -51,7 +51,7 @@ export default function LessonSidebar() {
                   : "text-black hover:text-black/50",
               )}
             >
-              {lessonIdx}.{idx} Panel
+              {lessonIdx}.{idx} {panel.title}
             </button>
           );
         })}

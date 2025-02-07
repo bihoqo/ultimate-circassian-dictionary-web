@@ -1,4 +1,4 @@
-import { ICharacter } from "~/interfaces";
+import { ICharacter, ITranslation } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import TopTooltipWithBottomSpike from "~/components/tooltip";
@@ -17,7 +17,7 @@ export default function LessonDialogBubble({
   character: ICharacter;
   originText: string;
   inlineTranslations: string[];
-  translationText: string;
+  translationText: ITranslation;
 }) {
   const { settings } = usePreferredSettings();
   const {
@@ -25,6 +25,7 @@ export default function LessonDialogBubble({
     translationFontSize,
     isInlineTranslationChecked,
     isTranslationChecked,
+    translationLang,
   } = settings;
 
   // Split the cirText into words
@@ -104,7 +105,7 @@ export default function LessonDialogBubble({
       {/* Translation text */}
       <div className="border-b-2 border-solid border-gray-300">
         <p className={cn(TEXT_SIZE_MAP[translationFontSize], { hidden: !isTranslationChecked })}>
-          {translationText}
+          {translationText[translationLang]}
         </p>
       </div>
     </div>

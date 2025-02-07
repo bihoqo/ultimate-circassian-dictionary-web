@@ -13,7 +13,7 @@ export default function TheLanguagePathContentContainer() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for managing the settings panel
 
   const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
-  const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)];
+  const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)].component;
 
   return (
     <>
