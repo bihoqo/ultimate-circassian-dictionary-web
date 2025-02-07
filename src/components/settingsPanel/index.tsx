@@ -44,7 +44,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
 
   return (
     <>
-      {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose}></div>}
+      {isOpen && <div className="fixed inset-0 bg-black/30" onClick={onClose}></div>}
 
       <div
         className={cn(
