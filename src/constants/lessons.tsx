@@ -1,33 +1,32 @@
-import { ICharacter, ILesson } from "~/interfaces";
+import { ICharacter, ICharacterBank, ILesson } from "~/interfaces";
 import { Lesson_1_1, Lesson_1_2 } from "~/lessonComponents/lesson_1";
 
-export const LESSON_CHARACTERS: ICharacter[] = [
+export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
-    name: "Данэ",
+    names: ["Данэ", "Нэрыт", "lазэ"],
     avatar: "/lessons/faces/14.png",
   },
   {
-    name: "Сэтэнай",
+    names: ["Сэтэнай"],
     avatar: "/lessons/faces/10.png",
   },
   {
-    name: "Нарт",
+    names: ["Нарт", "Енал"],
     avatar: "/lessons/faces/4.png",
   },
   {
-    name: "Аслъан",
+    names: ["Аслъан"],
     avatar: "/lessons/faces/13.png",
   },
 ];
 
 export function getCharacterByName(name: string): ICharacter {
-  const found = LESSON_CHARACTERS.find((character) => character.name === name);
-  if (found) {
-    return found;
-  }
+  const found = LESSON_CHARACTERS.find((character) => {
+    return character.names.includes(name);
+  });
   return {
     name: name,
-    avatar: "/lessons/faces/16.png",
+    avatar: found?.avatar || "/lessons/faces/16.png",
   };
 }
 
