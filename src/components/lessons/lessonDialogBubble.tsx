@@ -60,33 +60,35 @@ export default function LessonDialogBubble({
               { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
             )}
           >
-            {cirTextWords.map((word, idx) => (
-              <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                {/* Tooltip */}
-                <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
-                  <span
-                    className={cn(
-                      "text-black leading-none font-semibold hover:text-blue-400",
-                      TEXT_SIZE_MAP[circassianFontSize],
-                    )}
-                  >
-                    {word}
-                  </span>
-                </TopTooltipWithBottomSpike>
+            {cirTextWords.map((word, idx) => {
+              return (
+                <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+                  {/* Tooltip */}
+                  <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
+                    <span
+                      className={cn(
+                        "text-black leading-none font-semibold hover:text-blue-400",
+                        TEXT_SIZE_MAP[circassianFontSize],
+                      )}
+                    >
+                      {word}
+                    </span>
+                  </TopTooltipWithBottomSpike>
 
-                {/* Inline translation */}
-                {isInlineTranslationChecked && (
-                  <span
-                    className={cn(
-                      "text-gray-600 font-medium leading-none",
-                      TEXT_SIZE_MAP[translationFontSize],
-                    )}
-                  >
-                    {inlineTranslations[idx]}
-                  </span>
-                )}
-              </div>
-            ))}
+                  {/* Inline translation */}
+                  {isInlineTranslationChecked && (
+                    <span
+                      className={cn(
+                        "text-gray-600 font-medium leading-none",
+                        TEXT_SIZE_MAP[translationFontSize],
+                      )}
+                    >
+                      {inlineTranslations[idx]}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
           </div>
           {/* Spike */}
           <div

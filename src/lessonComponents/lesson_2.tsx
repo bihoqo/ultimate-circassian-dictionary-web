@@ -15,6 +15,16 @@ export function Lesson_2_1() {
         }}
         inlineTranslations={[]}
       />
+      <LessonDialogBubble
+        leftOrRight="right"
+        character={LESSON_CHARACTERS[0]}
+        originText="Сэ сцlэр Сэтэнай."
+        translationText={{
+          En: "My name is Satenai.",
+          Ar: "ستناي: أنا اسمي ستناي",
+        }}
+        inlineTranslations={[]}
+      />
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { cn } from "~/utils/classNames";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 
-interface TopTooltipWithBottomSpikeProps {
-  text: string;
+interface ITopTooltipWithBottomSpikeProps {
+  text: string | null | undefined;
   children: React.ReactNode;
   className?: string;
 }
@@ -12,11 +12,15 @@ export default function TopTooltipWithBottomSpike({
   text,
   children,
   className = "",
-}: TopTooltipWithBottomSpikeProps) {
+}: ITopTooltipWithBottomSpikeProps) {
   const { settings } = usePreferredSettings();
   const [isVisible, setIsVisible] = useState(false);
 
   if (!settings.isTooltipTranslationChecked) {
+    return <>{children}</>;
+  }
+
+  if (!text) {
     return <>{children}</>;
   }
 
