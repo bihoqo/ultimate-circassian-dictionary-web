@@ -11,10 +11,15 @@ export default function TheLanguagePathContentContainer() {
   const router = useRouter();
   const { lessonIdx, panelIdx } = router.query;
   const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for managing the settings panel
-
   const selectedLesson = LESSONS_LIST[Number(lessonIdx) - 1];
-  const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)].component;
 
+  if (!selectedLesson) {
+    return (
+      <div className="flex flex-row justify-center items-center text-4xl p-8">Lesson not found</div>
+    );
+  }
+
+  const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)].component;
   return (
     <>
       <Head>

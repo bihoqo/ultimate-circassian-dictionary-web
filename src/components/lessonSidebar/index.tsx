@@ -15,6 +15,10 @@ export default function LessonSidebar() {
     await router.push(`/the-language-path?${params.toString()}`);
   }
 
+  if (!selectedLesson) {
+    return <div>Lesson not found</div>;
+  }
+
   return (
     <div className="flex flex-row gap-2 w-full">
       {/* Left */}
