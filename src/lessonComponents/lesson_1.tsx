@@ -56,7 +56,7 @@ export function Lesson_1_2() {
         characterName="Нарт"
         originText="Фэсапщи. Сэ сцIэр Нарт. О сыда пцlэр?"
         translationText={{
-          En: "",
+          En: "Hello. My name is Nart. What is your name?",
           Ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
         }}
         inlineTranslations={[]}
@@ -66,7 +66,7 @@ export function Lesson_1_2() {
         characterName="Аслъан"
         originText="Сэ сцlэр Аслъан."
         translationText={{
-          En: "",
+          En: "My name is Aslan.",
           Ar: "أسلان :  أنا اسمي أسلان.",
         }}
         inlineTranslations={[]}
@@ -76,7 +76,7 @@ export function Lesson_1_2() {
         characterName="Нарт"
         originText="Тыдэ укъикIыра, Аслъан?"
         translationText={{
-          En: "",
+          En: "From where are you Aslan?",
           Ar: " نارت : من أين أنت أسلان؟",
         }}
         inlineTranslations={[]}
@@ -86,7 +86,7 @@ export function Lesson_1_2() {
         characterName="Аслъан"
         originText="Сэ Истамбулы сыкъекIы. О тыдэ укъикIыра?"
         translationText={{
-          En: "",
+          En: "I am from Istanbul. And you?",
           Ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
         }}
         inlineTranslations={[]}
@@ -96,7 +96,7 @@ export function Lesson_1_2() {
         characterName="Нарт"
         originText="Сэ Налчыкы сыкъекlы."
         translationText={{
-          En: "",
+          En: "I am from Nalchik.",
           Ar: "نارت : أنا من نالتشيك.",
         }}
         inlineTranslations={[]}
