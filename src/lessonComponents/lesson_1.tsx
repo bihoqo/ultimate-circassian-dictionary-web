@@ -10,7 +10,10 @@ export function Lesson_1_1() {
         leftOrRight="left"
         character={LESSON_CHARACTERS[0]}
         originText="Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?"
-        translationText="Good day. My name is Dana. What is your name?"
+        translationText={{
+          En: "Good day. My name is Dana. What is your name?",
+          Ar: "",
+        }}
         inlineTranslations={[
           "your day",
           "good",
@@ -26,7 +29,10 @@ export function Lesson_1_1() {
         leftOrRight="right"
         character={LESSON_CHARACTERS[1]}
         originText="Сэ сцlэр Сэтэнай."
-        translationText="My name is Satanay."
+        translationText={{
+          En: "My name is Satanay.",
+          Ar: "",
+        }}
         inlineTranslations={["I", "name is", "Satanay"]}
       />
     </div>

@@ -13,6 +13,7 @@ export const DEFAULT_SETTINGS: IPreferredSettings = {
   isTooltipTranslationChecked: true,
   isInlineTranslationChecked: true,
   isTranslationChecked: true,
+  translationLang: "En",
 };
 
 export const TEXT_SIZE_MAP: Record<number, string> = {
