@@ -1,24 +1,26 @@
-import { ICharacter, ITranslation } from "~/interfaces";
+import { ITranslation } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import TopTooltipWithBottomSpike from "~/components/tooltip";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
+import { getCharacterByName } from "~/constants/lessons";
 
 export default function LessonDialogBubble({
   leftOrRight,
-  character,
+  characterName,
   originText,
   inlineTranslations,
   translationText,
 }: {
   leftOrRight: "left" | "right";
-  character: ICharacter;
+  characterName: string;
   originText: string;
   inlineTranslations: string[];
   translationText: ITranslation;
 }) {
+  const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
   const {
     circassianFontSize,

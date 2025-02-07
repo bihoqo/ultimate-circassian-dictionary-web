@@ -1,5 +1,5 @@
 import { ICharacter, ILesson } from "~/interfaces";
-import { Lesson_2_1, Lesson_2_2 } from "~/lessonComponents/lesson_2";
+import { Lesson_1_1, Lesson_1_2 } from "~/lessonComponents/lesson_1";
 
 export const LESSON_CHARACTERS: ICharacter[] = [
   {
@@ -36,8 +36,8 @@ export const LESSONS_LIST: ILesson[] = [
     lessonIdx: 1,
     title: "Conversation 1",
     panelIdxList: [
-      { title: "Зэдэгущы1эгъу 1", component: <Lesson_2_1 /> },
-      { title: "Зэдэгущы1эгъу 2", component: <Lesson_2_2 /> },
+      { title: "Зэдэгущы1эгъу 1", component: <Lesson_1_1 /> },
+      { title: "Зэдэгущы1эгъу 2", component: <Lesson_1_2 /> },
     ],
   },
 ];
