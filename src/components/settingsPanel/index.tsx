@@ -11,6 +11,7 @@ import {
   MIN_ORIGIN_FONT_SIZE,
   MIN_TRANSLATION_FONT_SIZE,
 } from "~/constants/setting";
+import { ISupportedTranslationLang } from "~/interfaces";
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -25,7 +26,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
     translationFontSize,
     isInlineTranslationChecked,
     isTooltipTranslationChecked,
-    translationLang,
+    translationLangs,
   } = settings;
 
   function changeCircassianFontSizeHandler(newValue: number) {
@@ -40,6 +41,14 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
       return;
     }
     saveSettings({ translationFontSize: newValue });
+  }
+
+  function toggleTranslationLang(lang: ISupportedTranslationLang) {
+    if (translationLangs.includes(lang)) {
+      saveSettings({ translationLangs: translationLangs.filter((l) => l !== lang) });
+    } else {
+      saveSettings({ translationLangs: [...translationLangs, lang] });
+    }
   }
 
   return (
@@ -158,21 +167,17 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
           <div className="flex flex-col gap-2 mt-2">
             <label className="flex items-center gap-2">
               <input
-                type="radio"
-                name="translationLang"
-                value="Arabic"
-                checked={translationLang === "Ar"}
-                onChange={() => saveSettings({ translationLang: "Ar" })}
+                type="checkbox"
+                checked={translationLangs.includes("Ar")}
+                onChange={() => toggleTranslationLang("Ar")}
               />
               Arabic
             </label>
             <label className="flex items-center gap-2">
               <input
-                type="radio"
-                name="translationLang"
-                value="English"
-                checked={translationLang === "En"}
-                onChange={() => saveSettings({ translationLang: "En" })}
+                type="checkbox"
+                checked={translationLangs.includes("En")}
+                onChange={() => toggleTranslationLang("En")}
               />
               English
             </label>

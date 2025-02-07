@@ -33,7 +33,7 @@ const loadSettingsFromLocalStorage = (): IPreferredSettings => {
         parsedSettings.isInlineTranslationChecked ?? DEFAULT_SETTINGS.isInlineTranslationChecked,
       isTranslationChecked:
         parsedSettings.isTranslationChecked ?? DEFAULT_SETTINGS.isTranslationChecked,
-      translationLang: parsedSettings.translationLang ?? DEFAULT_SETTINGS.translationLang,
+      translationLangs: parsedSettings.translationLangs ?? DEFAULT_SETTINGS.translationLangs,
     };
   } catch (e) {
     console.error("Failed to parse saved settings, using defaults.", e);
@@ -69,7 +69,7 @@ export const usePreferredSettings = () => {
       isTooltipTranslationChecked: loadedSettings.isTooltipTranslationChecked,
       isInlineTranslationChecked: loadedSettings.isInlineTranslationChecked,
       isTranslationChecked: loadedSettings.isTranslationChecked,
-      translationLang: loadedSettings.translationLang,
+      translationLangs: loadedSettings.translationLangs,
     };
 
     setSettings(clampedSettings);

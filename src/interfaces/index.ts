@@ -121,7 +121,7 @@ export interface IPreferredSettings {
   isTooltipTranslationChecked: boolean;
   isInlineTranslationChecked: boolean;
   isTranslationChecked: boolean;
-  translationLang: ISupportedTranslationLang;
+  translationLangs: ISupportedTranslationLang[];
 }
 
 export interface ILesson {

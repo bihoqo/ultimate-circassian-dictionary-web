@@ -27,7 +27,7 @@ export default function LessonDialogBubble({
     translationFontSize,
     isInlineTranslationChecked,
     isTranslationChecked,
-    translationLang,
+    translationLangs,
   } = settings;
 
   // Split the cirText into words
@@ -107,10 +107,17 @@ export default function LessonDialogBubble({
       </div>
 
       {/* Translation text */}
-      <div className="border-b-2 border-solid border-gray-300">
-        <p className={cn(TEXT_SIZE_MAP[translationFontSize], { hidden: !isTranslationChecked })}>
-          {translationText[translationLang]}
-        </p>
+      <div
+        className={cn(
+          "border-b-2 border-solid border-gray-300",
+          TEXT_SIZE_MAP[translationFontSize],
+          { hidden: !isTranslationChecked },
+        )}
+      >
+        {/* Translation */}
+        {translationLangs.map((lang) => {
+          return <p key={lang}>{translationText[lang]}</p>;
+        })}
       </div>
     </div>
   );
