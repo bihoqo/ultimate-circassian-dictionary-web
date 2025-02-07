@@ -34,7 +34,7 @@ export default function LessonDialogBubble({
   const cirTextWords = originText.split(" ");
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-4">
       <div
         className={cn("flex items-start gap-4", {
           "flex-row": leftOrRight === "left",
@@ -109,7 +109,7 @@ export default function LessonDialogBubble({
       {/* Translation text */}
       <div
         className={cn(
-          "border-b-2 border-solid border-gray-300",
+          "flex flex-col gap-3 border-b-2 border-solid border-gray-300",
           TEXT_SIZE_MAP[translationFontSize],
           { hidden: !isTranslationChecked },
         )}
