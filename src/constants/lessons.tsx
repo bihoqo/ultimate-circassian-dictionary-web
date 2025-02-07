@@ -3,6 +3,7 @@ import { Lesson_1_1, Lesson_1_2 } from "~/lessonComponents/lesson_1";
 import { Lesson_2_1, Lesson_2_2, Lesson_2_3 } from "~/lessonComponents/lesson_2";
 import { Lesson_3_1, Lesson_3_2 } from "~/lessonComponents/lesson_3";
 import { Lesson_4_1, Lesson_4_2, Lesson_4_3 } from "~/lessonComponents/lesson_4";
+import { Lesson_5_1 } from "~/lessonComponents/lesson_5";
 
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
@@ -10,7 +11,7 @@ export const LESSON_CHARACTERS: ICharacterBank[] = [
     avatar: "/lessons/faces/14.png",
   },
   {
-    names: ["Сэтэнай", "Нэф"],
+    names: ["Сэтэнай", "Нэф", "Нэфын"],
     avatar: "/lessons/faces/10.png",
   },
   {
@@ -67,5 +68,10 @@ export const LESSONS_LIST: ILesson[] = [
       { title: "Зэдэгущы1эгъу 2", component: <Lesson_4_2 /> },
       { title: "Зэдэгущы1эгъу 3", component: <Lesson_4_3 /> },
     ],
+  },
+  {
+    lessonIdx: 5,
+    title: "Conversation 5",
+    panelIdxList: [{ title: "Зэдэгущы1эгъу 1", component: <Lesson_5_1 /> }],
   },
 ];
