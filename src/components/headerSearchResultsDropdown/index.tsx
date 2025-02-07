@@ -1,4 +1,3 @@
-import { useDebounce } from "use-debounce";
 import React, { useEffect, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Result } from "neverthrow";
@@ -17,6 +16,7 @@ import {
 import { Autocomplete } from "~/interfaces";
 import { replaceStickLettersToPalochka } from "~/utils/wordFormatting";
 import { FaTimesCircle } from "react-icons/fa";
+import { useDebounce } from "use-debounce";
 
 interface HeaderSearchResultsDropdownProps {
   searchInputValue: string;

@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaFilter, FaSearch, FaTimesCircle } from "react-icons/fa";
 import { useParams, useRouter } from "next/navigation";
-import { useDebounce } from "use-debounce";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { Result } from "neverthrow";
 
@@ -27,6 +26,7 @@ import {
   findAutocompletesInWordHistoryCache,
   removeFromWordHistoryCache,
 } from "~/cache/wordHistory";
+import { useDebounce } from "use-debounce";
 
 function CachedAutocompletedSearchElement({
   word,
@@ -90,9 +90,7 @@ function AutocompletedSearchElement({
 
   return (
     <button
-      className={cn(
-        "w-full rounded-md p-2 text-left font-medium hover:bg-[#e7e7e7] hover:bg-gray-100",
-      )}
+      className={cn("w-full rounded-md p-2 text-left font-medium hover:bg-gray-100")}
       key={word.key}
       onClick={() => onWordSelection(word.key)}
     >

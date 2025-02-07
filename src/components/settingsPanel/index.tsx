@@ -11,6 +11,7 @@ import {
   MIN_ORIGIN_FONT_SIZE,
   MIN_TRANSLATION_FONT_SIZE,
 } from "~/constants/setting";
+import { ISupportedTranslationLang } from "~/interfaces";
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -25,6 +26,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
     translationFontSize,
     isInlineTranslationChecked,
     isTooltipTranslationChecked,
+    translationLangs,
   } = settings;
 
   function changeCircassianFontSizeHandler(newValue: number) {
@@ -41,16 +43,22 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
     saveSettings({ translationFontSize: newValue });
   }
 
+  function toggleTranslationLang(lang: ISupportedTranslationLang) {
+    if (translationLangs.includes(lang)) {
+      saveSettings({ translationLangs: translationLangs.filter((l) => l !== lang) });
+    } else {
+      saveSettings({ translationLangs: [...translationLangs, lang] });
+    }
+  }
+
   return (
     <>
-      {/* Overlay that shows when the settings panel is open */}
-      {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose}></div>}
+      {isOpen && <div className="fixed inset-0 bg-black/30" onClick={onClose}></div>}
 
-      {/* Settings panel */}
       <div
         className={cn(
           "fixed top-0 right-0 w-96 h-full bg-white shadow-lg p-4 transform transition-transform duration-300 ease-in-out",
-          isOpen ? "translate-x-0" : "translate-x-full", // Slide in/out
+          isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
         <div className="flex justify-between items-center">
@@ -60,9 +68,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
           </button>
         </div>
 
-        {/* Settings content */}
         <div className="mt-4">
-          {/* Circassian font settings */}
           <div className="mt-4">
             <span className="font-semibold">Circassian font</span>
             <div className="flex flex-row justify-between gap-2 mt-2">
@@ -75,7 +81,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                   onClick={() => changeCircassianFontSizeHandler(circassianFontSize - 1)}
                   isDisabled={circassianFontSize === MIN_ORIGIN_FONT_SIZE}
                 />
-                <span className="">{circassianFontSize}</span>
+                <span>{circassianFontSize}</span>
                 <PlusSvg
                   height="24"
                   width="24"
@@ -96,7 +102,6 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
             </div>
           </div>
 
-          {/* Word by word translation settings */}
           <div className="mt-4">
             <span className="font-semibold">Word By Word Translation</span>
             <div className="flex flex-col gap-2 mt-2">
@@ -124,7 +129,6 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
           </div>
         </div>
 
-        {/* Translation settings */}
         <div className="mt-4">
           <span className="font-semibold">Translation font</span>
           <div className="flex flex-row justify-between gap-2 mt-2">
@@ -137,7 +141,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 onClick={() => changeTranslationFontSizeHandler(translationFontSize - 1)}
                 isDisabled={translationFontSize === MIN_TRANSLATION_FONT_SIZE}
               />
-              <span className="">{translationFontSize}</span>
+              <span>{translationFontSize}</span>
               <PlusSvg
                 height="24"
                 width="24"
@@ -155,6 +159,28 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 isDisabled={translationFontSize === DEFAULT_SETTINGS.translationFontSize}
               />
             </div>
+          </div>
+        </div>
+
+        <div className="mt-4">
+          <span className="font-semibold">Translation Language</span>
+          <div className="flex flex-col gap-2 mt-2">
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={translationLangs.includes("Ar")}
+                onChange={() => toggleTranslationLang("Ar")}
+              />
+              Arabic
+            </label>
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={translationLangs.includes("En")}
+                onChange={() => toggleTranslationLang("En")}
+              />
+              English
+            </label>
           </div>
         </div>
       </div>

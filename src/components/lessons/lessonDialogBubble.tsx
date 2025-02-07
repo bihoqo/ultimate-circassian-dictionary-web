@@ -1,32 +1,40 @@
-import { ICharacter } from "~/interfaces";
+import { ITranslation } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import TopTooltipWithBottomSpike from "~/components/tooltip";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
+import { getCharacterByName } from "~/constants/lessons";
 
 export default function LessonDialogBubble({
   leftOrRight,
-  character,
+  characterName,
   originText,
   inlineTranslations,
   translationText,
 }: {
   leftOrRight: "left" | "right";
-  character: ICharacter;
+  characterName: string;
   originText: string;
   inlineTranslations: string[];
-  translationText: string;
+  translationText: ITranslation;
 }) {
+  const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
-  const { circassianFontSize, translationFontSize, isInlineTranslationChecked } = settings;
+  const {
+    circassianFontSize,
+    translationFontSize,
+    isInlineTranslationChecked,
+    isTranslationChecked,
+    translationLangs,
+  } = settings;
 
   // Split the cirText into words
   const cirTextWords = originText.split(" ");
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-4">
       <div
         className={cn("flex items-start gap-4", {
           "flex-row": leftOrRight === "left",
@@ -35,7 +43,13 @@ export default function LessonDialogBubble({
       >
         {/* Avatar and name */}
         <div className="flex flex-col items-center gap-1">
-          <Image src={character.avatar} alt={character.name} width={50} height={50} />
+          <Image
+            src={character.avatar}
+            alt={character.name}
+            width={75}
+            height={75}
+            className={cn({ "scale-x-[-1]": leftOrRight === "right" })}
+          />
           <p className="text-[#4a7324] text-2xl font-bold">{character.name}</p>
         </div>
 
@@ -48,33 +62,35 @@ export default function LessonDialogBubble({
               { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
             )}
           >
-            {cirTextWords.map((word, idx) => (
-              <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                {/* Tooltip */}
-                <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
-                  <span
-                    className={cn(
-                      "text-black leading-none font-semibold hover:text-blue-400",
-                      TEXT_SIZE_MAP[circassianFontSize],
-                    )}
-                  >
-                    {word}
-                  </span>
-                </TopTooltipWithBottomSpike>
+            {cirTextWords.map((word, idx) => {
+              return (
+                <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+                  {/* Tooltip */}
+                  <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
+                    <span
+                      className={cn(
+                        "text-black leading-none font-semibold hover:text-blue-400",
+                        TEXT_SIZE_MAP[circassianFontSize],
+                      )}
+                    >
+                      {word}
+                    </span>
+                  </TopTooltipWithBottomSpike>
 
-                {/* Inline translation */}
-                {isInlineTranslationChecked && (
-                  <span
-                    className={cn(
-                      "text-gray-600 font-medium leading-none",
-                      TEXT_SIZE_MAP[translationFontSize],
-                    )}
-                  >
-                    {inlineTranslations[idx]}
-                  </span>
-                )}
-              </div>
-            ))}
+                  {/* Inline translation */}
+                  {isInlineTranslationChecked && (
+                    <span
+                      className={cn(
+                        "text-gray-600 font-medium leading-none",
+                        TEXT_SIZE_MAP[translationFontSize],
+                      )}
+                    >
+                      {inlineTranslations[idx]}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
           </div>
           {/* Spike */}
           <div
@@ -91,14 +107,18 @@ export default function LessonDialogBubble({
       </div>
 
       {/* Translation text */}
-      <p
+      <div
         className={cn(
-          "text-2xl border-b-2 border-solid border-gray-300",
+          "flex flex-col gap-3 border-b-2 border-solid border-gray-300",
           TEXT_SIZE_MAP[translationFontSize],
+          { hidden: !isTranslationChecked },
         )}
       >
-        {translationText}
-      </p>
+        {/* Translation */}
+        {translationLangs.map((lang) => {
+          return <p key={lang}>{translationText[lang]}</p>;
+        })}
+      </div>
     </div>
   );
 }

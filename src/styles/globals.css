@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html,
 body {
@@ -27,8 +25,11 @@ body {
     background-attachment: fixed;
 }
 
-
 html {
     position: relative;
     height: 100vh;
+}
+
+button {
+    cursor: pointer;
 }
