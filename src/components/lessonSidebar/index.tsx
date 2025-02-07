@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export default function LessonSidebar() {
   const router = useRouter();
   const { lessonIdx, panelIdx } = router.query;
-  const selectedLesson = LESSONS_LIST[Number(lessonIdx) - 1];
+  const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
 
   async function navigateToLesson(lessonIdx: number, panelIdx: number) {
     const params = new URLSearchParams();

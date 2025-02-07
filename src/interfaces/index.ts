@@ -136,4 +136,4 @@ export interface IPanel {
 }
 
 export type ISupportedTranslationLang = "En" | "Ar";
-export type ITranslation = Record<ISupportedTranslationLang, string>;
+export type ILangToTranslationMap = Record<ISupportedTranslationLang, string>;

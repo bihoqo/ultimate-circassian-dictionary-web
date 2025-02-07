@@ -1,4 +1,4 @@
-import { ITranslation } from "~/interfaces";
+import { ILangToTranslationMap } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import TopTooltipWithBottomSpike from "~/components/tooltip";
@@ -12,13 +12,13 @@ export default function LessonDialogBubble({
   characterName,
   originText,
   inlineTranslations,
-  translationText,
+  langToTranslationMap,
 }: {
   leftOrRight: "left" | "right";
   characterName: string;
   originText: string;
   inlineTranslations: string[];
-  translationText: ITranslation;
+  langToTranslationMap: ILangToTranslationMap;
 }) {
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
@@ -116,7 +116,7 @@ export default function LessonDialogBubble({
       >
         {/* Translation */}
         {translationLangs.map((lang) => {
-          return <p key={lang}>{translationText[lang]}</p>;
+          return <p key={lang}>{langToTranslationMap[lang]}</p>;
         })}
       </div>
     </div>

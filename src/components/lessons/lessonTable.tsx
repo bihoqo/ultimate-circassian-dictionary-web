@@ -2,6 +2,7 @@ import React from "react";
 import { cn } from "~/utils/classNames";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
+import { ILangToTranslationMap } from "~/interfaces";
 
 interface LessonTableProps {
   headers?: React.ReactNode[]; // Headers for the table
@@ -114,5 +115,31 @@ export default function LessonTable({
         </tr>
       </tfoot>
     </table>
+  );
+}
+
+export function LessonTableCell({
+  letter,
+  example,
+  langToTranslationMap,
+}: {
+  letter: string;
+  example: string;
+  langToTranslationMap: ILangToTranslationMap;
+}) {
+  return (
+    <div className="flex flex-col gap-1">
+      <div className="text-center">{letter}</div>
+      <div className="text-center">{example}</div>
+      <div className="flex flex-col gap-1">
+        {Object.entries(langToTranslationMap).map(([lang, translation]) => {
+          return (
+            <div key={lang} className="text-center">
+              {translation}
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }

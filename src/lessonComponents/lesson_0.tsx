@@ -1,40 +1,24 @@
-import LessonDialogBubble from "~/components/lessons/lessonDialogBubble";
-import LessonTable from "~/components/lessons/lessonTable";
+import LessonTable, { LessonTableCell } from "~/components/lessons/lessonTable";
 import React from "react";
+import PanelDiv from "../components/panelDiv";
 
 export function Lesson_0_1() {
+  const origin = [
+    <LessonTableCell
+      letter="А"
+      example="Атакъэ"
+      langToTranslationMap={{ En: "Rooster", Ar: "ديك" }}
+    />,
+  ];
+
   return (
-    <div className="flex flex-col gap-6">
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Данэ"
-        originText="Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?"
-        translationText={{
-          En: "Good day. My name is Dana. What is your name?",
-          Ar: "",
-        }}
-        inlineTranslations={[
-          "your day",
-          "good",
-          "I",
-          "my name is",
-          "Dana",
-          "you",
-          "what is",
-          "your name",
-        ]}
+    <PanelDiv>
+      <LessonTable
+        originTextMatrix={origin}
+        translationTextMatrix={translation}
+        showIndexes={false}
       />
-      <LessonDialogBubble
-        leftOrRight="right"
-        characterName="Сэтэнай"
-        originText="Сэ сцlэр Сэтэнай."
-        translationText={{
-          En: "My name is Satanay.",
-          Ar: "",
-        }}
-        inlineTranslations={["I", "name is", "Satanay"]}
-      />
-    </div>
+    </PanelDiv>
   );
 }
 
