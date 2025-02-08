@@ -27,10 +27,6 @@ const loadSettingsFromLocalStorage = (): IPreferredSettings => {
       circassianFontSize: parsedSettings.circassianFontSize ?? DEFAULT_SETTINGS.circassianFontSize,
       translationFontSize:
         parsedSettings.translationFontSize ?? DEFAULT_SETTINGS.translationFontSize,
-      isTooltipTranslationChecked:
-        parsedSettings.isTooltipTranslationChecked ?? DEFAULT_SETTINGS.isTooltipTranslationChecked,
-      isInlineTranslationChecked:
-        parsedSettings.isInlineTranslationChecked ?? DEFAULT_SETTINGS.isInlineTranslationChecked,
       isTranslationChecked:
         parsedSettings.isTranslationChecked ?? DEFAULT_SETTINGS.isTranslationChecked,
       translationLangs: parsedSettings.translationLangs ?? DEFAULT_SETTINGS.translationLangs,
@@ -66,8 +62,6 @@ export const usePreferredSettings = () => {
         MIN_ORIGIN_FONT_SIZE,
         MAX_ORIGIN_FONT_SIZE,
       ),
-      isTooltipTranslationChecked: loadedSettings.isTooltipTranslationChecked,
-      isInlineTranslationChecked: loadedSettings.isInlineTranslationChecked,
       isTranslationChecked: loadedSettings.isTranslationChecked,
       translationLangs: loadedSettings.translationLangs,
     };

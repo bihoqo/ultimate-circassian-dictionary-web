@@ -21,13 +21,7 @@ interface SettingsPanelProps {
 export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
   const { settings, saveSettings } = usePreferredSettings();
 
-  const {
-    circassianFontSize,
-    translationFontSize,
-    isInlineTranslationChecked,
-    isTooltipTranslationChecked,
-    translationLangs,
-  } = settings;
+  const { circassianFontSize, translationFontSize, translationLangs } = settings;
 
   function changeCircassianFontSizeHandler(newValue: number) {
     if (newValue < MIN_ORIGIN_FONT_SIZE || MAX_ORIGIN_FONT_SIZE < newValue) {
@@ -99,32 +93,6 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                   isDisabled={circassianFontSize === DEFAULT_SETTINGS.circassianFontSize}
                 />
               </div>
-            </div>
-          </div>
-
-          <div className="mt-4">
-            <span className="font-semibold">Word By Word Translation</span>
-            <div className="flex flex-col gap-2 mt-2">
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  checked={isInlineTranslationChecked}
-                  onChange={() =>
-                    saveSettings({ isInlineTranslationChecked: !isInlineTranslationChecked })
-                  }
-                />
-                In-line
-              </label>
-              <label className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  checked={isTooltipTranslationChecked}
-                  onChange={() =>
-                    saveSettings({ isTooltipTranslationChecked: !isTooltipTranslationChecked })
-                  }
-                />
-                Tooltip
-              </label>
             </div>
           </div>
         </div>

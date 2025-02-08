@@ -11,24 +11,17 @@ export default function LessonDialogBubble({
   leftOrRight,
   characterName,
   originText,
-  inlineTranslations,
   langToTranslationMap,
 }: {
   leftOrRight: "left" | "right";
   characterName: string;
   originText: string;
-  inlineTranslations: string[];
   langToTranslationMap: ILangToTranslationMap;
 }) {
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
-  const {
-    circassianFontSize,
-    translationFontSize,
-    isInlineTranslationChecked,
-    isTranslationChecked,
-    translationLangs,
-  } = settings;
+  const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
+    settings;
 
   // Split the cirText into words
   const cirTextWords = originText.split(" ");
@@ -65,29 +58,14 @@ export default function LessonDialogBubble({
             {cirTextWords.map((word, idx) => {
               return (
                 <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                  {/* Tooltip */}
-                  <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
-                    <span
-                      className={cn(
-                        "text-black leading-none font-semibold hover:text-blue-400",
-                        TEXT_SIZE_MAP[circassianFontSize],
-                      )}
-                    >
-                      {word}
-                    </span>
-                  </TopTooltipWithBottomSpike>
-
-                  {/* Inline translation */}
-                  {isInlineTranslationChecked && (
-                    <span
-                      className={cn(
-                        "text-gray-600 font-medium leading-none",
-                        TEXT_SIZE_MAP[translationFontSize],
-                      )}
-                    >
-                      {inlineTranslations[idx]}
-                    </span>
-                  )}
+                  <span
+                    className={cn(
+                      "text-black leading-none font-semibold",
+                      TEXT_SIZE_MAP[circassianFontSize],
+                    )}
+                  >
+                    {word}
+                  </span>
                 </div>
               );
             })}

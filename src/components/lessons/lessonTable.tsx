@@ -72,9 +72,7 @@ export default function LessonTable({
                   >
                     <div className="flex flex-col">
                       {/* Origin Word */}
-                      <span className={cn("text-black font-semibold hover:text-blue-400")}>
-                        {cell}
-                      </span>
+                      <span className={cn("text-black font-semibold ")}>{cell}</span>
                     </div>
                   </td>
                 );
@@ -111,24 +109,20 @@ export function LessonTableCell({
   langToTranslationMap: ILangToTranslationMap;
 }) {
   const { settings } = usePreferredSettings();
-  const { circassianFontSize, translationFontSize, translationLangs } = settings;
+  const { circassianFontSize, translationFontSize, translationLangs, isTranslationChecked } =
+    settings;
 
   return (
     <div className="flex flex-col gap-1">
       <div
-        className={cn(
-          "text-center text-black font-semibold hover:text-blue-400",
-          TEXT_SIZE_MAP[circassianFontSize],
-        )}
+        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize])}
       >
         {firstRow}
       </div>
       <div
-        className={cn(
-          "text-center text-black font-semibold hover:text-blue-400",
-          TEXT_SIZE_MAP[circassianFontSize],
-          { hidden: !secondRow },
-        )}
+        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize], {
+          hidden: !secondRow,
+        })}
       >
         {secondRow}
       </div>
@@ -137,7 +131,7 @@ export function LessonTableCell({
           <Image src={imgUrl} alt={firstRow} width={50} height={50} />
         </div>
       )}
-      <div className="flex flex-col gap-1">
+      <div className={cn("flex flex-col gap-1", { hidden: !isTranslationChecked })}>
         {translationLangs.map((lang) => {
           return (
             <div

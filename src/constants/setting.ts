@@ -10,8 +10,6 @@ export const MAX_TRANSLATION_FONT_SIZE = 8;
 export const DEFAULT_SETTINGS: IPreferredSettings = {
   circassianFontSize: 5,
   translationFontSize: 3,
-  isTooltipTranslationChecked: true,
-  isInlineTranslationChecked: true,
   isTranslationChecked: true,
   translationLangs: ["En", "Ar"],
 };
