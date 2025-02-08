@@ -1,7 +1,6 @@
 import { ILangToTranslationMap } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
-import TopTooltipWithBottomSpike from "~/components/tooltip";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";

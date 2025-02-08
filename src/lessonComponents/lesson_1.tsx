@@ -13,7 +13,6 @@ export function Lesson_1_1() {
           En: "Good day. My name is Dana. What is your name?",
           Ar: "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -23,7 +22,6 @@ export function Lesson_1_1() {
           En: "My name is Satenai.",
           Ar: "ستناي: أنا اسمي ستناي",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -33,7 +31,6 @@ export function Lesson_1_1() {
           En: "From where are you?",
           Ar: "دانا: من أين أنت؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -43,7 +40,6 @@ export function Lesson_1_1() {
           En: "I am from Maykop.",
           Ar: "ستناي: أنا من مايكوب.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -60,7 +56,6 @@ export function Lesson_1_2() {
           En: "Hello. My name is Nart. What is your name?",
           Ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -70,7 +65,6 @@ export function Lesson_1_2() {
           En: "My name is Aslan.",
           Ar: "أسلان :  أنا اسمي أسلان.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -80,7 +74,6 @@ export function Lesson_1_2() {
           En: "From where are you Aslan?",
           Ar: " نارت : من أين أنت أسلان؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -90,7 +83,6 @@ export function Lesson_1_2() {
           En: "I am from Istanbul. And you?",
           Ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -100,7 +92,6 @@ export function Lesson_1_2() {
           En: "I am from Nalchik.",
           Ar: "نارت : أنا من نالتشيك.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -117,7 +108,6 @@ export function Lesson_1_3() {
           En: "Hello, my name is Neryt, I am from the Lash family.",
           Ar: "نَرِت: مرحبا، أنا اسمي نَرِت، أنا من آل لاش",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -127,7 +117,6 @@ export function Lesson_1_3() {
           En: "Welcome, my name is Yenal, I am from the Myshe family.",
           Ar: "ينال: تفضل،  أنا اسمي ينال ، أنا من آل مِشَّه",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -144,7 +133,6 @@ export function Lesson_1_4() {
           En: "Hello, my name is Nerys.",
           Ar: "نَرِس: مرحبا، أنا اسمي نَرِس.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -154,7 +142,6 @@ export function Lesson_1_4() {
           En: "Welcome, my name is Zaur.",
           Ar: "زاوِر: تفضل،  أنا اسمي زاوِر.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -164,7 +151,6 @@ export function Lesson_1_4() {
           En: "Excuse me, what is your name?",
           Ar: "نَرِس: عفوا، ما هو اسمك ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -174,7 +160,6 @@ export function Lesson_1_4() {
           En: "Zaur.",
           Ar: "زاوِر: زاوِر.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -184,7 +169,6 @@ export function Lesson_1_4() {
           En: "Good day, Zaur.",
           Ar: "نَرِس: نهارك سعيد، زاوِر.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -194,7 +178,6 @@ export function Lesson_1_4() {
           En: "Good day, Nerys.",
           Ar: "زاوِر: نهارك سعيد، نَرِس.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -211,7 +194,6 @@ export function Lesson_1_5() {
           En: "Good morning, my name is Laze. What is your name?",
           Ar: "آزة: صباح الخير، أنا اسمي أزه، ما هو اسمك ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -221,7 +203,6 @@ export function Lesson_1_5() {
           En: "Good morning, my name is Nef. Where are you from, Laze?",
           Ar: "نَف: صباح الخير، أنا اسمي نَف. من أين أنت أز؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -231,7 +212,6 @@ export function Lesson_1_5() {
           En: "I am from Reyhanli.",
           Ar: "أزه: أنا من الريحانية.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -248,7 +228,6 @@ export function Lesson_1_6() {
           En: "From where are you?",
           Ar: "من أين أنت؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -258,7 +237,6 @@ export function Lesson_1_6() {
           En: "I am from Khousai.",
           Ar: "أنا من خهوساي.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -268,17 +246,15 @@ export function Lesson_1_6() {
           En: "What is your name?",
           Ar: "ما هو اسمك؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
         characterName="Дэнэф"
         originText="lэбрэдж Дэнэф."
         langToTranslationMap={{
-          En: "My name is Lebredzh Denef.",
+          En: "My name is Abrej Denef.",
           Ar: "لبزو دنف.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -288,7 +264,6 @@ export function Lesson_1_6() {
           En: "What languages do you know?",
           Ar: "أية لغات تعرف؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -298,7 +273,6 @@ export function Lesson_1_6() {
           En: "Adyghe and Russian.",
           Ar: "الأديغابزة والروسية.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -315,7 +289,6 @@ export function Lesson_1_7() {
           En: "My name is Perit, Khun Perit.",
           Ar: "برت: أنا اسمي برت،",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -325,7 +298,6 @@ export function Lesson_1_7() {
           En: "I live in Amman.",
           Ar: "خُن برت. أنا أعيش في عمان.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -335,7 +307,6 @@ export function Lesson_1_7() {
           En: "I know Adyghe and Arabic.",
           Ar: "أنا أعرف الأديغية والعربية.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -352,7 +323,6 @@ export function Lesson_1_8() {
           En: "Good morning, my name is Razé.",
           Ar: "رازة: نهارك سعيد  ، أنا اسمي رازة.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -362,7 +332,6 @@ export function Lesson_1_8() {
           En: "Good morning. My name is Gorkoj Hypбый.",
           Ar: "نوربي: نهارك سعيد ، أنا اسمي غوركؤج نوربي.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -372,7 +341,6 @@ export function Lesson_1_8() {
           En: "Excuse me, what is your name?",
           Ar: "رازة: عفوا، ما هو اسمك ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -382,7 +350,6 @@ export function Lesson_1_8() {
           En: "Gorkoj Hypбый, I am from Duzdjem. Where are you from?",
           Ar: "نوربي: غوركؤج نوربي، أنا من دُزجه، من أين أنت؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -392,7 +359,6 @@ export function Lesson_1_8() {
           En: "I am from Anqara.",
           Ar: "رازة: أنا من أنقره.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -409,7 +375,6 @@ export function Lesson_1_9() {
           En: "Good morning, my name is Ujyhu Ozirmes.",
           Ar: "وَزِرمس: نهارك سعيد  ، أنا اسمي وِجوخ وَزِرمس.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -419,7 +384,6 @@ export function Lesson_1_9() {
           En: "Good morning, my name is Ujyhu, my name is Heleo Chan.",
           Ar: "تشان: نهارك سعيد  ، صديقي وِجوخ وَزِرمس. أنا اسمي حَلَوه تشان.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -429,7 +393,6 @@ export function Lesson_1_9() {
           En: "Where are you from?",
           Ar: "وَزِرمس: من أين أنت؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -439,7 +402,6 @@ export function Lesson_1_9() {
           En: "I am from Panakes, and you?",
           Ar: "تشان: أنا من بنة-خهس. أنت؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -449,7 +411,6 @@ export function Lesson_1_9() {
           En: "I am from Tjwaps.",
           Ar: "وَزِرمس: أنا من  طوابسه.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -466,7 +427,6 @@ export function Lesson_1_10() {
           En: "Good evening.",
           Ar: "سيماز: مساء الخير.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -476,7 +436,6 @@ export function Lesson_1_10() {
           En: "Good evening, my name is Gunéjyko Kъazbэch.",
           Ar: "قازبَتش: مساء الخير، أنا اسمي غوه-نَجِقوه قربَتش",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -486,7 +445,6 @@ export function Lesson_1_10() {
           En: "Excuse me, what is your name?",
           Ar: "سيماز: عفوا، ما هو اسمك؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -496,7 +454,6 @@ export function Lesson_1_10() {
           En: "Gunéjyko, Gunéjyko Kъazbэch.",
           Ar: "قازبَتش: غوه-نَجِقوه، غوه-نَجِقوه قربَتش.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -506,7 +463,6 @@ export function Lesson_1_10() {
           En: "My name is Simaz, Jantig Simaz.",
           Ar: "سيماز: أنا اسمي سيماز، جانتِغ سيماز.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -523,7 +479,6 @@ export function Lesson_1_11() {
           En: "Who is this?",
           Ar: "دانا: من هذا ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -533,7 +488,6 @@ export function Lesson_1_11() {
           En: "This is Khut Sine.",
           Ar: "نفن: هذا خُت سينه.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -543,7 +497,6 @@ export function Lesson_1_11() {
           En: "Where is it from?",
           Ar: "دانا: من أين هي  ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -553,7 +506,6 @@ export function Lesson_1_11() {
           En: "It is from Nartkale.",
           Ar: "نفن: :  إنها من نارتقاله",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -563,7 +515,6 @@ export function Lesson_1_11() {
           En: "Where is Nartkale?",
           Ar: "دانا: أين تقع نارتقاله؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -573,7 +524,6 @@ export function Lesson_1_11() {
           En: "It is in Khebertaim.",
           Ar: "نفن: تقع في القبرتاي.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -583,7 +533,6 @@ export function Lesson_1_11() {
           En: "Does she speak Adyghe?",
           Ar: "دانا: هل هي تتحدث الأديغية؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -593,7 +542,6 @@ export function Lesson_1_11() {
           En: "Yes, she speaks Adyghe.",
           Ar: "نفن: نعم هي تتحدث الاديغية.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -610,7 +558,6 @@ export function Lesson_1_12() {
           En: "We will learn the Adyghe alphabet",
           Ar: "سنتعلم الأحرف الأديغية",
         }}
-        inlineTranslations={[]}
       />
 
       <div className="overflow-x-auto mt-6">
@@ -691,7 +638,6 @@ export function Lesson_1_13() {
           En: "Good morning. What is your last name?",
           Ar: "سيما: صباح الخير. ما هو اسم عائلتك ؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -701,7 +647,6 @@ export function Lesson_1_13() {
           En: "Gutchel.",
           Ar: "ستناي: غوتشلأ.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -711,7 +656,6 @@ export function Lesson_1_13() {
           En: "What? How is it written?",
           Ar: "سيما: ماذا ؟ كيف تكتب؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -721,7 +665,6 @@ export function Lesson_1_13() {
           En: "Gu - Chel",
           Ar: "ستناي: غو-تشلأ.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -731,7 +674,6 @@ export function Lesson_1_13() {
           En: "Okay. What is your name?",
           Ar: "سيما: حسنا. ما هو اسمك؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -741,7 +683,6 @@ export function Lesson_1_13() {
           En: "Setenay. S - T - NAY.",
           Ar: "ستناي: ستناي. س-ت-ناي",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -751,7 +692,6 @@ export function Lesson_1_13() {
           En: "Okay. Where do you live?",
           Ar: "سيما: حسنا. أين تعيش؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -761,7 +701,6 @@ export function Lesson_1_13() {
           En: "I live in Maikop.",
           Ar: "ستناي: أنا أعيش في مايكوب.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -778,7 +717,6 @@ export function Lesson_1_14() {
           En: "What is your name?",
           Ar: "باتر: ما هو اسمك؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -788,7 +726,6 @@ export function Lesson_1_14() {
           En: "Ozyrmedj",
           Ar: "وزِرمج: وزِرمج.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -798,7 +735,6 @@ export function Lesson_1_14() {
           En: "Excuse me, what is your name?",
           Ar: "باتر: عفوا، ما هو اسمك؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -808,7 +744,6 @@ export function Lesson_1_14() {
           En: "Ozyrmedj",
           Ar: "وزِرمج: وزِرمج.",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -818,7 +753,6 @@ export function Lesson_1_14() {
           En: "How is it written?",
           Ar: "باتر: كيف تكتب؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -828,7 +762,6 @@ export function Lesson_1_14() {
           En: "O-Zyr-Medj",
           Ar: "وزِرمج: و-زِر-مج",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -838,7 +771,6 @@ export function Lesson_1_14() {
           En: "Thank you.",
           Ar: "باتر: شكرا",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -855,7 +787,6 @@ export function Lesson_1_15() {
           En: "What is your name?",
           Ar: "جباغ: ما هو اسمك؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -865,7 +796,6 @@ export function Lesson_1_15() {
           En: "Pshymaph",
           Ar: "بشِماف: بشِماف",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -875,7 +805,6 @@ export function Lesson_1_15() {
           En: "Pshymaph?",
           Ar: "جباغ: بشَمف",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -885,7 +814,6 @@ export function Lesson_1_15() {
           En: "Yes.",
           Ar: "بشِماف: لا",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -895,7 +823,6 @@ export function Lesson_1_15() {
           En: "How is it written, can you tell me?",
           Ar: "جباغ: كيف تكتب؟هل يمكن أن تقول لي؟",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="right"
@@ -905,7 +832,6 @@ export function Lesson_1_15() {
           En: "Pshy-maf",
           Ar: "بشِماف: بشِ-ماف",
         }}
-        inlineTranslations={[]}
       />
       <LessonDialogBubble
         leftOrRight="left"
@@ -915,7 +841,6 @@ export function Lesson_1_15() {
           En: "Thank you.",
           Ar: "جباغ: شكرا",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -932,7 +857,6 @@ export function Lesson_1_16() {
           En: "My name is Mashbashah Tembot. I am 40 years old. I live in the city of Maikop. Maikop is the capital of Adygea. I am a carpenter. I like building houses with wood.",
           Ar: "أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40. أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي. أنا نجار. أحب بناء البيوت بالخشب.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -949,7 +873,6 @@ export function Lesson_1_17() {
           En: "My name is Khuut Bibers. I live in Cherkessk. Cherkessk is the capital of the Circassian republic. I am 37 years old. I am a writer. I like writing poetry in Adyghe. I am married. I have three young children.",
           Ar: "أنا اسمي خُت بيبرس. أنا أعيش في تشركيسك. تشركيسك هي عاصمة جمهورية الشركس. عمري 37. أنا كاتب. أحب كتابة الأشعار بالأديغابزة. متزوج. لدي ثلاثة أولاد صغار.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
@@ -966,7 +889,6 @@ export function Lesson_1_18() {
           En: "My name is Tzei Sinemis. I am 25 years old. I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria. I am a teacher. I teach Adyghe. I love Adyghe. I also love teaching. I am married. I have a daughter, her name is Sina, she is two years old.",
           Ar: "أنا اسمي تزي سينميس. عمري 25. أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي. أنا معلمة. أعلم الأديغابزة. أحب الأديغابزة. وأيضا أحب التعليم. أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين.",
         }}
-        inlineTranslations={[]}
       />
     </PanelDiv>
   );
