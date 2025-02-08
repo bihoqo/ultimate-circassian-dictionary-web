@@ -3,34 +3,32 @@ import { cn } from "~/utils/classNames";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { ILangToTranslationMap } from "~/interfaces";
+import Image from "next/image";
 
 interface LessonTableProps {
-  headers?: React.ReactNode[]; // Headers for the table
-  originTextMatrix?: React.ReactNode[][]; // Rows data
-  translationTextMatrix?: React.ReactNode[][]; // Rows data
-  footer?: React.ReactNode[]; // Footer for the table
+  headersArray?: React.ReactNode[]; // Headers for the table
+  contentMatrix?: React.ReactNode[][]; // Rows data
+  footerArray?: React.ReactNode[]; // Footer for the table
   showIndexes?: boolean; // Whether to show index column
   gapBetweenRows?: number; // Space between rows
+  className?: string;
 }
 
 export default function LessonTable({
-  originTextMatrix = [],
-  translationTextMatrix = [],
+  contentMatrix = [],
   gapBetweenRows = 0,
   showIndexes = false,
-  headers = [],
-  footer = [],
+  headersArray = [],
+  footerArray = [],
+  className,
 }: LessonTableProps) {
-  const { settings } = usePreferredSettings();
-  const { circassianFontSize, translationFontSize } = settings;
-
   return (
-    <table className="w-full border-collapse text-sm">
+    <table className={cn("w-full border-collapse text-sm", className)}>
       {/* Table Head */}
-      <thead className={cn({ hidden: headers.length === 0 })}>
+      <thead className={cn({ hidden: headersArray.length === 0 })}>
         <tr>
           <th className={cn("bg-[#ed7c31] text-white font-bold", { hidden: !showIndexes })}>#</th>
-          {headers.map((header, index) => (
+          {headersArray.map((header, index) => (
             <th key={index} className="border border-gray-300 px-4 py-2 text-left">
               {header}
             </th>
@@ -40,8 +38,7 @@ export default function LessonTable({
 
       {/* Table Body */}
       <tbody>
-        {originTextMatrix.map((row, rowIndex) => {
-          const translationRow = translationTextMatrix[rowIndex] || [];
+        {contentMatrix.map((row, rowIndex) => {
           return (
             <tr
               key={rowIndex}
@@ -65,7 +62,6 @@ export default function LessonTable({
 
               {/* Render Row Data */}
               {row.map((cell, cellIndex) => {
-                const translationCell = translationRow[cellIndex] || "";
                 return (
                   <td
                     key={cellIndex}
@@ -76,23 +72,8 @@ export default function LessonTable({
                   >
                     <div className="flex flex-col">
                       {/* Origin Word */}
-                      <span
-                        className={cn(
-                          "text-black font-semibold hover:text-blue-400",
-                          TEXT_SIZE_MAP[circassianFontSize],
-                        )}
-                      >
+                      <span className={cn("text-black font-semibold hover:text-blue-400")}>
                         {cell}
-                      </span>
-
-                      {/* Translation Text */}
-                      <span
-                        className={cn(
-                          "text-gray-600 font-medium mt-1",
-                          TEXT_SIZE_MAP[translationFontSize],
-                        )}
-                      >
-                        {translationCell}
                       </span>
                     </div>
                   </td>
@@ -104,10 +85,10 @@ export default function LessonTable({
       </tbody>
 
       {/* Table Footer */}
-      <tfoot className={cn({ hidden: footer.length === 0 })}>
+      <tfoot className={cn({ hidden: footerArray.length === 0 })}>
         <tr>
           {showIndexes && <td></td>}
-          {footer.map((footerCell, index) => (
+          {footerArray.map((footerCell, index) => (
             <td key={index} className="border px-4 py-2">
               {footerCell}
             </td>
@@ -119,23 +100,54 @@ export default function LessonTable({
 }
 
 export function LessonTableCell({
-  letter,
-  example,
+  firstRow,
+  secondRow,
+  imgUrl,
   langToTranslationMap,
 }: {
-  letter: string;
-  example: string;
+  firstRow: string;
+  secondRow?: string;
+  imgUrl?: string;
   langToTranslationMap: ILangToTranslationMap;
 }) {
+  const { settings } = usePreferredSettings();
+  const { circassianFontSize, translationFontSize, translationLangs } = settings;
+
   return (
     <div className="flex flex-col gap-1">
-      <div className="text-center">{letter}</div>
-      <div className="text-center">{example}</div>
+      <div
+        className={cn(
+          "text-center text-black font-semibold hover:text-blue-400",
+          TEXT_SIZE_MAP[circassianFontSize],
+        )}
+      >
+        {firstRow}
+      </div>
+      <div
+        className={cn(
+          "text-center text-black font-semibold hover:text-blue-400",
+          TEXT_SIZE_MAP[circassianFontSize],
+          { hidden: !secondRow },
+        )}
+      >
+        {secondRow}
+      </div>
+      {imgUrl && (
+        <div className="flex justify-center">
+          <Image src={imgUrl} alt={firstRow} width={50} height={50} />
+        </div>
+      )}
       <div className="flex flex-col gap-1">
-        {Object.entries(langToTranslationMap).map(([lang, translation]) => {
+        {translationLangs.map((lang) => {
           return (
-            <div key={lang} className="text-center">
-              {translation}
+            <div
+              key={lang}
+              className={cn(
+                "text-center text-gray-600 font-medium mt-1",
+                TEXT_SIZE_MAP[translationFontSize],
+              )}
+            >
+              {langToTranslationMap[lang]}
             </div>
           );
         })}
