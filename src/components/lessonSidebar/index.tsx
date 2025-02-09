@@ -22,7 +22,7 @@ export default function LessonSidebar() {
   return (
     <div className="flex flex-row gap-2 w-full">
       {/* Left */}
-      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-black border-r">
+      <div className="flex-[1_1_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-black border-r">
         {LESSONS_LIST.map((lesson) => {
           return (
             <button
@@ -42,7 +42,7 @@ export default function LessonSidebar() {
       </div>
 
       {/* Right */}
-      <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4">
+      <div className="flex-[1_1_0%] flex flex-col justify-start items-start gap-2 pt-4">
         {selectedLesson.panelIdxList.map((panel, idx) => {
           return (
             <button

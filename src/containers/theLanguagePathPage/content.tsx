@@ -73,7 +73,7 @@ export default function TheLanguagePathContentContainer() {
             </div>
 
             {/* Selected lesson component */}
-            <div className="flex flex-row justify-center items-center w-full">
+            <div className="flex flex-row justify-center items-center w-full mb-16">
               {selectedPanelComponent}
             </div>
           </div>
