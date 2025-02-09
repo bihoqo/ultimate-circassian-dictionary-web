@@ -16,10 +16,6 @@ export default function TopTooltipWithBottomSpike({
   const { settings } = usePreferredSettings();
   const [isVisible, setIsVisible] = useState(false);
 
-  if (!settings.isTooltipTranslationChecked) {
-    return <>{children}</>;
-  }
-
   if (!text) {
     return <>{children}</>;
   }

@@ -1,34 +1,28 @@
-import { ITranslation } from "~/interfaces";
+import { ILangToTranslationMap } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
-import TopTooltipWithBottomSpike from "~/components/tooltip";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { getCharacterByName } from "~/constants/lessons";
 
+export interface ILessonDialogBubbleProps {
+  leftOrRight: "left" | "right";
+  characterName: string;
+  originText: string;
+  langToTranslationMap: ILangToTranslationMap;
+}
+
 export default function LessonDialogBubble({
   leftOrRight,
   characterName,
   originText,
-  inlineTranslations,
-  translationText,
-}: {
-  leftOrRight: "left" | "right";
-  characterName: string;
-  originText: string;
-  inlineTranslations: string[];
-  translationText: ITranslation;
-}) {
+  langToTranslationMap,
+}: ILessonDialogBubbleProps) {
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
-  const {
-    circassianFontSize,
-    translationFontSize,
-    isInlineTranslationChecked,
-    isTranslationChecked,
-    translationLangs,
-  } = settings;
+  const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
+    settings;
 
   // Split the cirText into words
   const cirTextWords = originText.split(" ");
@@ -65,29 +59,14 @@ export default function LessonDialogBubble({
             {cirTextWords.map((word, idx) => {
               return (
                 <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                  {/* Tooltip */}
-                  <TopTooltipWithBottomSpike text={inlineTranslations[idx]}>
-                    <span
-                      className={cn(
-                        "text-black leading-none font-semibold hover:text-blue-400",
-                        TEXT_SIZE_MAP[circassianFontSize],
-                      )}
-                    >
-                      {word}
-                    </span>
-                  </TopTooltipWithBottomSpike>
-
-                  {/* Inline translation */}
-                  {isInlineTranslationChecked && (
-                    <span
-                      className={cn(
-                        "text-gray-600 font-medium leading-none",
-                        TEXT_SIZE_MAP[translationFontSize],
-                      )}
-                    >
-                      {inlineTranslations[idx]}
-                    </span>
-                  )}
+                  <span
+                    className={cn(
+                      "text-black leading-none font-semibold",
+                      TEXT_SIZE_MAP[circassianFontSize],
+                    )}
+                  >
+                    {word}
+                  </span>
                 </div>
               );
             })}
@@ -116,7 +95,7 @@ export default function LessonDialogBubble({
       >
         {/* Translation */}
         {translationLangs.map((lang) => {
-          return <p key={lang}>{translationText[lang]}</p>;
+          return <p key={lang}>{langToTranslationMap[lang]}</p>;
         })}
       </div>
     </div>

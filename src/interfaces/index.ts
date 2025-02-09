@@ -118,8 +118,6 @@ export interface INavBarItem {
 export interface IPreferredSettings {
   circassianFontSize: number;
   translationFontSize: number;
-  isTooltipTranslationChecked: boolean;
-  isInlineTranslationChecked: boolean;
   isTranslationChecked: boolean;
   translationLangs: ISupportedTranslationLang[];
 }
@@ -136,4 +134,4 @@ export interface IPanel {
 }
 
 export type ISupportedTranslationLang = "En" | "Ar";
-export type ITranslation = Record<ISupportedTranslationLang, string>;
+export type ILangToTranslationMap = Record<ISupportedTranslationLang, string>;

@@ -70,7 +70,7 @@ const NAV_ITEMS: INavBarItem[] = [
     title: "The Language Path",
     link: "/the-language-path",
     icon: <MdMenuBook />,
-    isVisible: false,
+    isVisible: true,
   },
   { title: "Grammar", link: "/grammar", icon: <MdMenuBook />, isVisible: true },
   { title: "Contact Us", link: "/contact-us", icon: <MdContactSupport />, isVisible: true },
