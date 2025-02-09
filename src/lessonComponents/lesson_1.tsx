@@ -1,46 +1,54 @@
-import LessonDialogBubble from "~/components/lessons/lessonDialogBubble";
+import LessonDialogBubble, {
+  ILessonDialogBubbleProps,
+} from "~/components/lessons/lessonDialogBubble";
 import React from "react";
 import PanelDiv from "../components/panelDiv";
 
 export function Lesson_1_1() {
+  const content: ILessonDialogBubbleProps[] = [
+    {
+      leftOrRight: "left",
+      characterName: "Данэ",
+      originText: "Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?",
+      langToTranslationMap: {
+        En: "Good day. My name is Dana. What is your name?",
+        Ar: "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
+      },
+    },
+    {
+      leftOrRight: "right",
+      characterName: "Сэтэнай",
+      originText: "Сэ сцlэр Сэтэнай.",
+      langToTranslationMap: {
+        En: "My name is Satenai.",
+        Ar: "ستناي: أنا اسمي ستناي",
+      },
+    },
+    {
+      leftOrRight: "left",
+      characterName: "Данэ",
+      originText: "Тыдэ укъикIыра?",
+      langToTranslationMap: {
+        En: "From where are you?",
+        Ar: "دانا: من أين أنت؟",
+      },
+    },
+    {
+      leftOrRight: "right",
+      characterName: "Сэтэнай",
+      originText: "Сэ Мыекъуапэ сыкъекIы.",
+      langToTranslationMap: {
+        En: "I am from Maykop.",
+        Ar: "ستناي: أنا من مايكوب.",
+      },
+    },
+  ];
+
   return (
     <PanelDiv>
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Данэ"
-        originText="Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?"
-        langToTranslationMap={{
-          En: "Good day. My name is Dana. What is your name?",
-          Ar: "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="right"
-        characterName="Сэтэнай"
-        originText="Сэ сцlэр Сэтэнай."
-        langToTranslationMap={{
-          En: "My name is Satenai.",
-          Ar: "ستناي: أنا اسمي ستناي",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Данэ"
-        originText="Тыдэ укъикIыра?"
-        langToTranslationMap={{
-          En: "From where are you?",
-          Ar: "دانا: من أين أنت؟",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="right"
-        characterName="Сэтэнай"
-        originText="Сэ Мыекъуапэ сыкъекIы."
-        langToTranslationMap={{
-          En: "I am from Maykop.",
-          Ar: "ستناي: أنا من مايكوب.",
-        }}
-      />
+      {content.map((props, index) => (
+        <LessonDialogBubble key={index} {...props} />
+      ))}
     </PanelDiv>
   );
 }

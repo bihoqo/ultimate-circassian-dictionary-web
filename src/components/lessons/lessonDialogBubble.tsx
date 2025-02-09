@@ -6,17 +6,19 @@ import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { getCharacterByName } from "~/constants/lessons";
 
+export interface ILessonDialogBubbleProps {
+  leftOrRight: "left" | "right";
+  characterName: string;
+  originText: string;
+  langToTranslationMap: ILangToTranslationMap;
+}
+
 export default function LessonDialogBubble({
   leftOrRight,
   characterName,
   originText,
   langToTranslationMap,
-}: {
-  leftOrRight: "left" | "right";
-  characterName: string;
-  originText: string;
-  langToTranslationMap: ILangToTranslationMap;
-}) {
+}: ILessonDialogBubbleProps) {
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
