@@ -1,6 +1,8 @@
 import Head from "next/head";
 import React, { lazy, Suspense } from "react";
 import { useRouter } from "next/router";
+import { GetStaticPaths, GetStaticProps } from "next";
+import { LESSONS_LIST } from "~/constants/lessons";
 import TheLanguagePathHomeContainer, {
   TheLanguagePathLoadingScreen,
 } from "~/containers/theLanguagePathPage/home";
@@ -10,9 +12,12 @@ const TheLanguagePathContentContainer = lazy(
   () => import("~/containers/theLanguagePathPage/content"),
 );
 
-export default function TheLanguagePathPage() {
+type TheLanguagePathPageProps = {
+  lessonIdx?: string;
+};
+
+export default function TheLanguagePathPage({ lessonIdx }: TheLanguagePathPageProps) {
   const router = useRouter();
-  const { lessonIdx } = router.query;
 
   // If no lesson index is provided, show the home container
   if (!lessonIdx) {
@@ -42,3 +47,26 @@ export default function TheLanguagePathPage() {
     </>
   );
 }
+
+// Static Site Generation - Generate static paths for lessons
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = LESSONS_LIST.map((lesson) => ({
+    params: { lessonIdx: lesson.lessonIdx.toString() }, // Ensure lessonIdx is passed as a string
+  }));
+
+  return {
+    paths,
+    fallback: false, // If a path is not generated, it will return a 404
+  };
+};
+
+// Get static props - Static generation with lesson data
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { lessonIdx } = params || {};
+
+  return {
+    props: {
+      lessonIdx: lessonIdx || null,
+    },
+  };
+};

@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { LESSONS_LIST } from "~/constants/lessons";
 import queryString from "query-string";
 import Image from "next/image";
@@ -64,7 +64,7 @@ function LessonButton({
         </div>
         <div className="mb-2" />
       </div>
-      <p className="text-3xl font-boldhover:underline text-left pr-2 text-white">{title}</p>
+      <p className="text-3xl font-bold hover:underline text-left pr-2 text-white">{title}</p>
     </button>
   );
 }
