@@ -197,4 +197,29 @@ export const LESSONS_LIST: ILesson[] = [
       { title: "11.1 Dialogue 3", component: <Lesson_1_18 /> },
     ],
   },
+  {
+    lessonIdx: 2,
+    title: "How are You?",
+    panelIdxList: [],
+  },
+  {
+    lessonIdx: 3,
+    title: "What is The Price of This?",
+    panelIdxList: [],
+  },
+  {
+    lessonIdx: 4,
+    title: "What is The Time",
+    panelIdxList: [],
+  },
+  {
+    lessonIdx: 5,
+    title: "How Can I Help You?",
+    panelIdxList: [],
+  },
+  {
+    lessonIdx: 6,
+    title: "Family Life",
+    panelIdxList: [],
+  },
 ];

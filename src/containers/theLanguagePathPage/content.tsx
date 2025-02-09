@@ -23,17 +23,17 @@ export default function TheLanguagePathContentContainer() {
   const currentPanelIdx = Number(panelIdx);
   const selectedPanelComponent = selectedLesson.panelIdxList[currentPanelIdx]?.component;
 
-  const handlePrevious = () => {
+  const handlePrevious = async () => {
     if (currentPanelIdx > 0) {
-      router.push({
+      await router.push({
         query: { lessonIdx, panelIdx: currentPanelIdx - 1 },
       });
     }
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentPanelIdx < selectedLesson.panelIdxList.length - 1) {
-      router.push({
+      await router.push({
         query: { lessonIdx, panelIdx: currentPanelIdx + 1 },
       });
     }
