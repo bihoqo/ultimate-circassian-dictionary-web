@@ -122,3 +122,33 @@ export function Lesson_0_2() {
     </PanelDiv>
   );
 }
+
+export function Lesson_0_3() {
+  const data: string[][] = [
+    ["М м", "0002.jpg", "Мышъэ", "دب", "Bear"],
+    ["С с", "0004.jpg", "Санэ", "عنب", "Grapes"],
+  ];
+
+  const contentMatrix: React.ReactNode[][] = data.map((row) => {
+    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
+    return [
+      <LessonTableCell key={letter} firstRow={letter} />,
+      <LessonTableCell key={letter} imgUrl={`/lessons/suad/${imgUrl}`} />,
+      <LessonTableCell
+        secondRow={secondRow}
+        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
+      />,
+    ];
+  });
+
+  return (
+    <PanelDiv>
+      <LessonTable
+        contentMatrix={contentMatrix}
+        showIndexes={false}
+        className="w-fit"
+        showBackgroundColors={false}
+      />
+    </PanelDiv>
+  );
+}
