@@ -112,26 +112,32 @@ export function Lesson_1_2() {
 }
 
 export function Lesson_1_3() {
+  const content: ILessonDialogBubbleProps[] = [
+    {
+      leftOrRight: "left",
+      characterName: "Нарт",
+      originText: "Фэсапщи, сэ сцIэр Нарт, Налчыкы сащыщ.",
+      langToTranslationMap: {
+        En: "Hello, my name is Nart, I am from Nalchik.",
+        Ar: "نارت: مرحبا، أنا اسمي نارت، أنا من نالتشيك.",
+      },
+    },
+    {
+      leftOrRight: "right",
+      characterName: "Аслъан",
+      originText: "Къеблагъ, сэ сцIэр Аслъан, Истамбулы сащыщ.",
+      langToTranslationMap: {
+        En: "Welcome, my name is Aslan, I am from Istanbul.",
+        Ar: "أسلان: تفضل،  أنا اسمي أسلان، أنا من إسطنبول.",
+      },
+    },
+  ];
+
   return (
     <PanelDiv>
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Нэрыт"
-        originText="Фэсапщи, сэ сцIэр Нэрыт, Лащымэ сащыщ."
-        langToTranslationMap={{
-          En: "Hello, my name is Neryt, I am from the Lash family.",
-          Ar: "نَرِت: مرحبا، أنا اسمي نَرِت، أنا من آل لاش",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="right"
-        characterName="Енал"
-        originText="Къеблагъ, сэ сцIэр Енал, Мышъэмэ сащыщ."
-        langToTranslationMap={{
-          En: "Welcome, my name is Yenal, I am from the Myshe family.",
-          Ar: "ينال: تفضل،  أنا اسمي ينال ، أنا من آل مِشَّه",
-        }}
-      />
+      {content.map((props, index) => {
+        return <LessonDialogBubble key={index} {...props} />;
+      })}
     </PanelDiv>
   );
 }
