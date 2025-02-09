@@ -12,6 +12,7 @@ interface LessonTableProps {
   showIndexes?: boolean; // Whether to show index column
   gapBetweenRows?: number; // Space between rows
   className?: string;
+  showBackgroundColors?: boolean;
 }
 
 export default function LessonTable({
@@ -21,6 +22,7 @@ export default function LessonTable({
   headersArray = [],
   footerArray = [],
   className,
+  showBackgroundColors = true,
 }: LessonTableProps) {
   return (
     <table className={cn("w-full border-collapse text-sm", className)}>
@@ -42,10 +44,6 @@ export default function LessonTable({
           return (
             <tr
               key={rowIndex}
-              className={cn("border-2 border-solid text-black", {
-                "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0,
-                "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0,
-              })}
               style={{ marginBottom: `${gapBetweenRows}px` }} // Apply the gap between rows
             >
               {/* Show Index Column */}
@@ -65,9 +63,10 @@ export default function LessonTable({
                 return (
                   <td
                     key={cellIndex}
-                    className={cn("border-2 border-solid px-4 py-2", {
-                      "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0,
-                      "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0,
+                    className={cn("border-2 border-solid px-4 py-2 text-black", {
+                      "bg-white border-gray-300": !showBackgroundColors,
+                      "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0 && showBackgroundColors,
+                      "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0 && showBackgroundColors,
                     })}
                   >
                     <div className="flex flex-col">
