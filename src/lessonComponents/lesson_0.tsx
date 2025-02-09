@@ -1,4 +1,4 @@
-import LessonTable from "~/components/lessons/lessonTable";
+import LessonTable, { LessonTableCell } from "~/components/lessons/lessonTable";
 import React from "react";
 import PanelDiv from "../components/panelDiv";
 
@@ -32,7 +32,7 @@ export function Lesson_0_1() {
     ["Р р", "/lessons/suad/0059.jpg", "Хъурай", "دائرة", "Circle"],
     ["С с", "/lessons/suad/0004.jpg", "Санэ", "عنب", "Grapes"],
     ["Т т", "/lessons/suad/0013.jpg", "Tыгъужъ", "ذئب", "Wolf"],
-    ["ТI тI", "/lessons/suad/0036.jpg", "ТIы", "كبش", "Ramb"],
+    ["ТI тI", "/lessons/suad/0036.jpg", "ТIы", "كبش", "Ram"],
     ["У у", "/lessons/suad/0008.jpg", "Унэ", "بيت", "House"],
     ["Ф ф", "/lessons/suad/0037.jpg", "Фыжьы", "أبيض", "White"],
     ["Х х", "/lessons/suad/0016.jpg", "Хы", "ستة", "Six"],
@@ -52,10 +52,33 @@ export function Lesson_0_1() {
     ["I I", "/lessons/suad/0012.jpg", "Iанэ", "طاولة", "Table"],
   ];
 
+  // Convert to ReactNode matrix
+  const contentNodesMatrix: React.ReactNode[][] = [];
+  let currentRow: React.ReactNode[] = [];
+
+  contentData.forEach(([firstRow, imgUrl, secondRow, arTranslation, enTranslation], index) => {
+    const node = (
+      <LessonTableCell
+        key={firstRow}
+        firstRow={firstRow.split(" ")[0]} // Extract first part of the letter
+        secondRow={secondRow}
+        imgUrl={imgUrl}
+        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
+      />
+    );
+
+    currentRow.push(node);
+
+    if (currentRow.length === 6 || index === contentData.length - 1) {
+      contentNodesMatrix.push(currentRow);
+      currentRow = [];
+    }
+  });
+
   return (
     <PanelDiv>
       <LessonTable
-        contentMatrix={contentData}
+        contentMatrix={contentNodesMatrix}
         showIndexes={false}
         className="w-fit"
         showBackgroundColors={false}
