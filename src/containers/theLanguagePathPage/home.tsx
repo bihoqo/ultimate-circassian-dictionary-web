@@ -68,3 +68,13 @@ function LessonButton({
     </button>
   );
 }
+
+export function TheLanguagePathLoadingScreen() {
+  return (
+    <div className="w-full h-full min-h-screen bg-white flex flex-col justify-center items-center">
+      {/* Loading spinner */}
+      <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32 mb-4"></div>
+      <h1 className="text-3xl font-semibold text-gray-700 text-center">Loading...</h1>
+    </div>
+  );
+}
