@@ -8,12 +8,12 @@ export default function TheLanguagePathHomeContainer() {
   const router = useRouter();
   return (
     <div
-      className="w-full h-full min-h-screen bg-cover bg-center bg-no-repeat"
+      className="w-full h-full min-h-screen bg-cover bg-center bg-no-repeat py-4"
       style={{
         backgroundImage: `url('/lessons/menu/bg2.jpg')`,
       }}
     >
-      <div className="p-4 flex flex-col gap-4">
+      <div className="p-4 flex flex-col gap-8">
         <div className="flex flex-row justify-center items-center">
           <Image src="/lessons/menu/P7.png" width={350} height={350} alt="Lessons" />
         </div>
