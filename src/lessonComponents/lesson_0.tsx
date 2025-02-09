@@ -124,21 +124,50 @@ export function Lesson_0_2() {
 }
 
 export function Lesson_0_3() {
-  const data: string[][] = [
-    ["М м", "0002.jpg", "Мышъэ", "دب", "Bear"],
-    ["С с", "0004.jpg", "Санэ", "عنب", "Grapes"],
+  const data2: string[][] = [
+    ["О-сы", "Уа-сэ", "Са-сэ", "Си-мэ", "ثلج", "سعر", "(فتاة)  ساسه", "سيما  (اسم)"],
+    ["Се-сы", "Уис", "Е-сы", "Мы-е", "أسبح", "أنت موجود في الداخل", "يسبح", "التفاح البري"],
+    ["Ис", "Уа-е", "Сис", "Е-о", "موجود في الداخل", "عاصفه", "أنا موجود في الداخل", "يضرب"],
+    ["У-сэ", "Мэу", "Ау", "Сэ", "شعر", "هنا", "لكن", "أنا"],
+  ];
+
+  const data = [
+    [
+      { cir: "О-сы", ar: "ثلج", en: "Snow" },
+      { cir: "Уа-сэ", ar: "سعر", en: "Price" },
+      { cir: "Са-сэ", ar: "(فتاة)  ساسه", en: "Sasa (name)" },
+      { cir: "Си-мэ", ar: "سيما  (اسم)", en: "Sima (name)" },
+    ],
+    [
+      { cir: "Се-сы", ar: "أسبح", en: "Swim" },
+      { cir: "Уис", ar: "أنت موجود في الداخل", en: "You are inside" },
+      { cir: "Е-сы", ar: "يسبح", en: "Swims" },
+      { cir: "Мы-е", ar: "التفاح البري", en: "Wild apple" },
+    ],
+    [
+      { cir: "Ис", ar: "موجود في الداخل", en: "Inside" },
+      { cir: "Уа-е", ar: "عاصفه", en: "Storm" },
+      { cir: "Сис", ar: "أنا موجود في الداخل", en: "I am inside" },
+      { cir: "Е-о", ar: "يضرب", en: "Hits" },
+    ],
+    [
+      { cir: "У-сэ", ar: "شعر", en: "Hair" },
+      { cir: "Мэу", ar: "هنا", en: "Here" },
+      { cir: "Ау", ar: "لكن", en: "But" },
+      { cir: "Сэ", ar: "أنا", en: "I" },
+    ],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/suad/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
+    return row.map((cell) => {
+      return (
+        <LessonTableCell
+          key={cell.cir}
+          firstRow={cell.cir}
+          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
+        />
+      );
+    });
   });
 
   return (
@@ -147,7 +176,7 @@ export function Lesson_0_3() {
         contentMatrix={contentMatrix}
         showIndexes={false}
         className="w-fit"
-        showBackgroundColors={false}
+        showBackgroundColors={true}
       />
     </PanelDiv>
   );
