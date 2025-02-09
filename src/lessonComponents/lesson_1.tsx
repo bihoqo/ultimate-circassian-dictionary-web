@@ -46,61 +46,67 @@ export function Lesson_1_1() {
 
   return (
     <PanelDiv>
-      {content.map((props, index) => (
-        <LessonDialogBubble key={index} {...props} />
-      ))}
+      {content.map((props, index) => {
+        return <LessonDialogBubble key={index} {...props} />;
+      })}
     </PanelDiv>
   );
 }
 
 export function Lesson_1_2() {
+  const content: ILessonDialogBubbleProps[] = [
+    {
+      leftOrRight: "left",
+      characterName: "Нарт",
+      originText: "Фэсапщи. Сэ сцIэр Нарт. О сыда пцlэр?",
+      langToTranslationMap: {
+        En: "Hello. My name is Nart. What is your name?",
+        Ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
+      },
+    },
+    {
+      leftOrRight: "right",
+      characterName: "Аслъан",
+      originText: "Сэ сцlэр Аслъан.",
+      langToTranslationMap: {
+        En: "My name is Aslan.",
+        Ar: "أسلان :  أنا اسمي أسلان.",
+      },
+    },
+    {
+      leftOrRight: "left",
+      characterName: "Нарт",
+      originText: "Тыдэ укъикIыра, Аслъан?",
+      langToTranslationMap: {
+        En: "From where are you Aslan?",
+        Ar: " نارت : من أين أنت أسلان؟",
+      },
+    },
+    {
+      leftOrRight: "right",
+      characterName: "Аслъан",
+      originText: "Сэ Истамбулы сыкъекIы. О тыдэ укъикIыра?",
+      langToTranslationMap: {
+        En: "I am from Istanbul. And you?",
+        Ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
+      },
+    },
+    {
+      leftOrRight: "left",
+      characterName: "Нарт",
+      originText: "Сэ Налчыкы сыкъекlы.",
+      langToTranslationMap: {
+        En: "I am from Nalchik.",
+        Ar: "نارت : أنا من نالتشيك.",
+      },
+    },
+  ];
+
   return (
     <PanelDiv>
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Нарт"
-        originText="Фэсапщи. Сэ сцIэр Нарт. О сыда пцlэр?"
-        langToTranslationMap={{
-          En: "Hello. My name is Nart. What is your name?",
-          Ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="right"
-        characterName="Аслъан"
-        originText="Сэ сцlэр Аслъан."
-        langToTranslationMap={{
-          En: "My name is Aslan.",
-          Ar: "أسلان :  أنا اسمي أسلان.",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Нарт"
-        originText="Тыдэ укъикIыра, Аслъан?"
-        langToTranslationMap={{
-          En: "From where are you Aslan?",
-          Ar: " نارت : من أين أنت أسلان؟",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="right"
-        characterName="Аслъан"
-        originText="Сэ Истамбулы сыкъекIы. О тыдэ укъикIыра?"
-        langToTranslationMap={{
-          En: "I am from Istanbul. And you?",
-          Ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
-        }}
-      />
-      <LessonDialogBubble
-        leftOrRight="left"
-        characterName="Нарт"
-        originText="Сэ Налчыкы сыкъекlы."
-        langToTranslationMap={{
-          En: "I am from Nalchik.",
-          Ar: "نارت : أنا من نالتشيك.",
-        }}
-      />
+      {content.map((props, index) => {
+        return <LessonDialogBubble key={index} {...props} />;
+      })}
     </PanelDiv>
   );
 }
