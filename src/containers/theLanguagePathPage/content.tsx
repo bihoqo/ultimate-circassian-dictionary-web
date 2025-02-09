@@ -4,8 +4,9 @@ import { useRouter } from "next/router";
 import SettingsSvg from "~/components/svg/settingsSvg";
 import SettingsPanel from "~/components/settingsPanel";
 import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
-import { LESSONS_LIST } from "~/constants/lessons";
 import LessonSidebar from "~/components/lessonSidebar";
+import { cn } from "~/utils/classNames";
+import { LESSONS_LIST } from "~/constants/lessons";
 
 export default function TheLanguagePathContentContainer() {
   const router = useRouter();
@@ -19,7 +20,25 @@ export default function TheLanguagePathContentContainer() {
     );
   }
 
-  const selectedPanelComponent = selectedLesson.panelIdxList[Number(panelIdx)].component;
+  const currentPanelIdx = Number(panelIdx);
+  const selectedPanelComponent = selectedLesson.panelIdxList[currentPanelIdx]?.component;
+
+  const handlePrevious = () => {
+    if (currentPanelIdx > 0) {
+      router.push({
+        query: { lessonIdx, panelIdx: currentPanelIdx - 1 },
+      });
+    }
+  };
+
+  const handleNext = () => {
+    if (currentPanelIdx < selectedLesson.panelIdxList.length - 1) {
+      router.push({
+        query: { lessonIdx, panelIdx: currentPanelIdx + 1 },
+      });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -54,9 +73,43 @@ export default function TheLanguagePathContentContainer() {
             </div>
 
             {/* Selected lesson component */}
-            {selectedPanelComponent}
+            <div className="flex flex-row justify-center items-center w-full">
+              {selectedPanelComponent}
+            </div>
           </div>
         </div>
+
+        {/* Previous and Next buttons - fixed at the bottom */}
+        <div className="fixed bottom-0 left-0 w-full flex justify-center items-center gap-4 bg-white py-4 border-t border-black">
+          {/* Previous Button */}
+          <button
+            onClick={handlePrevious}
+            disabled={currentPanelIdx === 0}
+            className={cn(
+              "px-4 py-2 rounded ",
+              currentPanelIdx === 0
+                ? "opacity-50 cursor-not-allowed"
+                : "bg-green-300/80 hover:bg-green-300/50",
+            )}
+          >
+            Previous
+          </button>
+
+          {/* Next Button */}
+          <button
+            onClick={handleNext}
+            disabled={currentPanelIdx === selectedLesson.panelIdxList.length - 1}
+            className={cn(
+              "px-4 py-2 rounded",
+              currentPanelIdx === selectedLesson.panelIdxList.length - 1
+                ? "opacity-50 cursor-not-allowed"
+                : "bg-green-300/80 hover:bg-green-300/50",
+            )}
+          >
+            Next
+          </button>
+        </div>
+
         {/* Integrating the SettingsPanel component */}
         <SettingsPanel isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(!isSettingsOpen)} />
       </main>
