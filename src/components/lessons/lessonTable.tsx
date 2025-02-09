@@ -96,17 +96,19 @@ export default function LessonTable({
   );
 }
 
+export interface ILessonTableCellProps {
+  firstRow?: string;
+  secondRow?: string;
+  imgUrl?: string;
+  langToTranslationMap?: ILangToTranslationMap;
+}
+
 export function LessonTableCell({
   firstRow,
   secondRow,
   imgUrl,
   langToTranslationMap,
-}: {
-  firstRow: string;
-  secondRow?: string;
-  imgUrl?: string;
-  langToTranslationMap: ILangToTranslationMap;
-}) {
+}: ILessonTableCellProps) {
   const { settings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, translationLangs, isTranslationChecked } =
     settings;
@@ -114,7 +116,9 @@ export function LessonTableCell({
   return (
     <div className="flex flex-col gap-1">
       <div
-        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize])}
+        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize], {
+          hidden: !firstRow,
+        })}
       >
         {firstRow}
       </div>
@@ -127,24 +131,26 @@ export function LessonTableCell({
       </div>
       {imgUrl && (
         <div className="flex justify-center">
-          <Image src={imgUrl} alt={firstRow} width={50} height={50} />
+          <Image src={imgUrl} alt="img" width={50} height={50} />
         </div>
       )}
-      <div className={cn("flex flex-col gap-1", { hidden: !isTranslationChecked })}>
-        {translationLangs.map((lang) => {
-          return (
-            <div
-              key={lang}
-              className={cn(
-                "text-center text-gray-600 font-medium mt-1",
-                TEXT_SIZE_MAP[translationFontSize],
-              )}
-            >
-              {langToTranslationMap[lang]}
-            </div>
-          );
-        })}
-      </div>
+      {langToTranslationMap && (
+        <div className={cn("flex flex-col gap-1", { hidden: !isTranslationChecked })}>
+          {translationLangs.map((lang) => {
+            return (
+              <div
+                key={lang}
+                className={cn(
+                  "text-center text-gray-600 font-medium mt-1",
+                  TEXT_SIZE_MAP[translationFontSize],
+                )}
+              >
+                {langToTranslationMap[lang]}
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

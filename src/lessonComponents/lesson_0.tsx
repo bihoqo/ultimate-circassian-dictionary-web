@@ -3,7 +3,7 @@ import React from "react";
 import PanelDiv from "../components/panelDiv";
 
 export function Lesson_0_1() {
-  const contentData: string[][] = [
+  const data: string[][] = [
     ["А а", "/lessons/suad/0061.jpg", "Атакъэ", "ديك", "Rooster"],
     ["Б б", "/lessons/suad/0026.jpg", "Блэ", "أفعى", "Snake"],
     ["В в", "/lessons/suad/0029.jpg", "Витамин", "فيتامين", "Vitamin"],
@@ -53,15 +53,16 @@ export function Lesson_0_1() {
   ];
 
   // Convert to ReactNode matrix
-  const contentNodesMatrix: React.ReactNode[][] = [];
+  const contentMatrix: React.ReactNode[][] = [];
   let currentRow: React.ReactNode[] = [];
 
-  contentData.forEach(([firstRow, imgUrl, secondRow, arTranslation, enTranslation], index) => {
+  data.forEach((row, index) => {
+    const [letter, imgUrl, example, arTranslation, enTranslation] = row;
     const node = (
       <LessonTableCell
-        key={firstRow}
-        firstRow={firstRow.split(" ")[0]} // Extract first part of the letter
-        secondRow={secondRow}
+        key={letter}
+        firstRow={letter.split(" ")[0]} // Extract first part of the letter
+        secondRow={example}
         imgUrl={imgUrl}
         langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
       />
@@ -69,8 +70,8 @@ export function Lesson_0_1() {
 
     currentRow.push(node);
 
-    if (currentRow.length === 6 || index === contentData.length - 1) {
-      contentNodesMatrix.push(currentRow);
+    if (currentRow.length === 6 || index === data.length - 1) {
+      contentMatrix.push(currentRow);
       currentRow = [];
     }
   });
@@ -78,7 +79,42 @@ export function Lesson_0_1() {
   return (
     <PanelDiv>
       <LessonTable
-        contentMatrix={contentNodesMatrix}
+        contentMatrix={contentMatrix}
+        showIndexes={false}
+        className="w-fit"
+        showBackgroundColors={false}
+      />
+    </PanelDiv>
+  );
+}
+
+export function Lesson_0_2() {
+  const data: string[][] = [
+    ["А а", "0061.jpg", "Атакъэ", "ديك", "Rooster"],
+    ["О о", "0009.jpg", "Осы", "ثلج", "Snow"],
+    ["Э э", "0003.jpg", "Iэ", "يد", "Hand"],
+    ["Ы ы", "0005.jpg", "Сыд", "ماذا", "What"],
+    ["У у", "0008.jpg", "Унэ", "بيت", "House"],
+    ["И и", "0006.jpg", "Иныжъ", "عملاق", "Giant"],
+    ["Е е", "0007.jpg", "Еджэ", "يقرأ", "Reading"],
+  ];
+
+  const contentMatrix: React.ReactNode[][] = data.map((row) => {
+    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
+    return [
+      <LessonTableCell key={letter} firstRow={letter} />,
+      <LessonTableCell key={letter} imgUrl={`/lessons/suad/${imgUrl}`} />,
+      <LessonTableCell
+        secondRow={secondRow}
+        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
+      />,
+    ];
+  });
+
+  return (
+    <PanelDiv>
+      <LessonTable
+        contentMatrix={contentMatrix}
         showIndexes={false}
         className="w-fit"
         showBackgroundColors={false}

@@ -19,7 +19,7 @@ import {
   Lesson_1_17,
   Lesson_1_18,
 } from "~/lessonComponents/lesson_1";
-import { Lesson_0_1 } from "~/lessonComponents/lesson_0";
+import { Lesson_0_1, Lesson_0_2 } from "~/lessonComponents/lesson_0";
 
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
@@ -66,7 +66,10 @@ export const LESSONS_LIST: ILesson[] = [
   {
     lessonIdx: 0,
     title: "The Letters",
-    panelIdxList: [{ title: "1.2 Dialogue 1", component: <Lesson_0_1 /> }],
+    panelIdxList: [
+      { title: "1.2 Dialogue 1", component: <Lesson_0_1 /> },
+      { title: "1.2 Dialogue 1", component: <Lesson_0_2 /> },
+    ],
   },
   {
     lessonIdx: 1,
