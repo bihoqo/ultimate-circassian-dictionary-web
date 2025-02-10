@@ -33,3 +33,19 @@ html {
 button {
     cursor: pointer;
 }
+
+/* This part changes the scrollbar track (the part behind the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light grey/white background */
+}
+
+/* This part changes the scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: #bbb; /* Soft grey scrollbar for a subtle look */
+}
+
+/* You can also change the scrollbar width and height */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+    height: 8px; /* Height of the horizontal scrollbar */
+}

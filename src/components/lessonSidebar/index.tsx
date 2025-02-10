@@ -22,7 +22,7 @@ export default function LessonSidebar() {
   return (
     <div className="flex flex-row gap-2 w-full">
       {/* Left (Lessons) */}
-      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-black border-r overflow-y-auto max-h-[500px] px-4 bg-gray-50">
+      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-black border-r overflow-y-auto max-h-[700px] px-4">
         <h2 className="text-lg font-semibold mb-2 text-center w-full">- Lessons -</h2>
         {LESSONS_LIST.map((lesson) => {
           return (
@@ -32,7 +32,7 @@ export default function LessonSidebar() {
               className={cn(
                 "font-black px-2 py-1 rounded-md transition-colors duration-200",
                 selectedLesson.lessonIdx === lesson.lessonIdx
-                  ? "text-red-500 bg-gray-200 hover:bg-gray-300"
+                  ? "text-red-500 bg-gray-100 hover:bg-gray-300"
                   : "text-black hover:bg-gray-100",
               )}
             >
@@ -43,7 +43,7 @@ export default function LessonSidebar() {
       </div>
 
       {/* Right (Panels) */}
-      <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4 overflow-y-auto max-h-[500px] px-4 bg-gray-50">
+      <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4 overflow-y-auto max-h-[700px] px-4">
         <h2 className="text-lg font-semibold mb-2 text-center w-full">- Panels -</h2>
         {selectedLesson.panelIdxList.map((panel, idx) => {
           return (
@@ -53,7 +53,7 @@ export default function LessonSidebar() {
               className={cn(
                 "font-black px-2 py-1 rounded-md transition-colors duration-200",
                 Number(panelIdx) === idx
-                  ? "text-red-500 bg-gray-200 hover:bg-gray-300"
+                  ? "text-red-500 bg-gray-100 hover:bg-gray-300"
                   : "text-black hover:bg-gray-100",
               )}
             >
