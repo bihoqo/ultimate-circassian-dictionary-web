@@ -15,7 +15,7 @@ export default function PanelDiv({
           {audioPath && <AudioButton audioPath={audioPath} />}
         </div>
       )}
-      <div className="flex flex-col gap-6 items-stretch w-fit">{children}</div>
+      <div className="flex flex-col gap-6 items-center justify-center w-full">{children}</div>
     </div>
   );
 }
