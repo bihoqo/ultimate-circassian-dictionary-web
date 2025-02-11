@@ -44,7 +44,14 @@ export default function LessonDialogBubble({
             height={75}
             className={cn({ "scale-x-[-1]": leftOrRight === "right" })}
           />
-          <p className="text-[#4a7324] text-2xl font-bold">{character.name}</p>
+          <p
+            className={cn(
+              "text-2xl font-bold",
+              leftOrRight === "left" ? "text-[#f27141]" : "text-[#4a7324]",
+            )}
+          >
+            {character.name}
+          </p>
         </div>
 
         {/* Dialog bubble */}
@@ -86,7 +93,7 @@ export default function LessonDialogBubble({
       {/* Translation text */}
       <div
         className={cn(
-          "flex flex-col gap-3 border-b-2 border-solid border-gray-300",
+          "flex flex-col gap-3 border-b-2 border-solid border-gray-300 text-[#333333]",
           TEXT_SIZE_MAP[translationFontSize],
           { hidden: !isTranslationChecked },
           {

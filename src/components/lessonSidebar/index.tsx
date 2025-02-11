@@ -22,7 +22,7 @@ export default function LessonSidebar() {
   return (
     <div className="flex flex-row gap-2 w-full">
       {/* Left (Lessons) */}
-      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-black border-r overflow-y-auto max-h-[700px] px-4">
+      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-[#cecec3] border-r overflow-y-auto max-h-[700px] px-4">
         <h2 className="text-lg font-semibold mb-2 text-center w-full">- Lessons -</h2>
         {LESSONS_LIST.map((lesson) => {
           return (
@@ -30,10 +30,8 @@ export default function LessonSidebar() {
               key={lesson.lessonIdx}
               onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
               className={cn(
-                "font-black px-2 py-1 rounded-md transition-colors duration-200",
-                selectedLesson.lessonIdx === lesson.lessonIdx
-                  ? "text-red-500 bg-gray-100 hover:bg-gray-300"
-                  : "text-black hover:bg-gray-100",
+                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100",
+                selectedLesson.lessonIdx === lesson.lessonIdx ? "text-[#f27141]" : "text-black",
               )}
             >
               {lesson.lessonIdx}. {lesson.title}
@@ -51,10 +49,8 @@ export default function LessonSidebar() {
               key={idx}
               onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
               className={cn(
-                "font-black px-2 py-1 rounded-md transition-colors duration-200",
-                Number(panelIdx) === idx
-                  ? "text-red-500 bg-gray-100 hover:bg-gray-300"
-                  : "text-black hover:bg-gray-100",
+                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100",
+                Number(panelIdx) === idx ? "text-[#f27141]" : "text-black",
               )}
             >
               {panel.title}
