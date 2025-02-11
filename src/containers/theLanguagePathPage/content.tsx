@@ -44,32 +44,40 @@ export default function TheLanguagePathContentContainer() {
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main className="bg-white w-full relative block">
+      <main className="bg-white w-full relative flex flex-col min-h-screen">
         {/* Title */}
-        <div className="w-11/12 mx-auto border-b border-black border-solid">
-          <h1 className="text-3xl underline">{selectedLesson.title}</h1>
+        <div className="flex flex-row justify-between items-center w-11/12 mx-auto border-b border-[#cecec3] border-solid py-4">
+          <h1 className="text-3xl underline font-bold text-[#f27141]">{selectedLesson.title}</h1>
+          <SettingsSvg
+            className="self-end hover:opacity-70 cursor-pointer"
+            onClick={() => setIsSettingsOpen(!isSettingsOpen)}
+          />
         </div>
 
-        <div className="mx-auto w-11/12 flex flex-row">
+        <div className="mx-auto w-11/12 flex flex-row flex-grow">
           {/* Sidebar with lessons */}
-          <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-black">
+          <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-[#cecec3]">
             <LessonSidebar />
           </div>
 
           {/* Main content area */}
-          <div className="flex flex-col gap-2 w-full border-solid border-black px-4 pt-4 pb-14">
+          <div className="flex flex-col gap-2 w-full border-solid border-[#cecec3] px-4 pt-4 pb-14 overflow-hidden overflow-y-auto">
             {/* Settings */}
-            <div className="flex flex-row justify-between items-center w-full mb-8">
-              <div />
+            <div className="flex flex-row justify-center items-center w-full mb-8">
               <div className="self-center">
                 <SwitchReadingOrTranslation />
               </div>
-              <div className="self-center">
-                <SettingsSvg
-                  className="self-end hover:opacity-70 cursor-pointer"
-                  onClick={() => setIsSettingsOpen(!isSettingsOpen)}
-                />
-              </div>
+            </div>
+
+            {/* Display selected lesson and panel information */}
+            <div className="flex flex-row justify-center items-center gap-2">
+              <p className="text-2xl font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
+                {selectedLesson.title}
+              </p>
+              <p className="text-4xl font-bold text-black/50">/</p>
+              <p className="text-2xl font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
+                {selectedLesson.panelIdxList[currentPanelIdx]?.title || "Panel not selected"}
+              </p>
             </div>
 
             {/* Selected lesson component */}
@@ -80,13 +88,13 @@ export default function TheLanguagePathContentContainer() {
         </div>
 
         {/* Previous and Next buttons - fixed at the bottom */}
-        <div className="fixed bottom-0 left-0 w-full flex justify-center items-center gap-4 bg-white py-4 border-t border-black">
+        <div className="fixed bottom-0 left-0 w-full flex justify-center items-center gap-4 bg-white py-4 border-t border-[#cecec3] z-10">
           {/* Previous Button */}
           <button
             onClick={handlePrevious}
             disabled={currentPanelIdx === 0}
             className={cn(
-              "px-4 py-2 rounded ",
+              "px-4 py-2 rounded",
               currentPanelIdx === 0
                 ? "opacity-50 cursor-not-allowed"
                 : "bg-green-300/80 hover:bg-green-300/50",

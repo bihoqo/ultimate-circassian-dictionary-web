@@ -44,7 +44,14 @@ export default function LessonDialogBubble({
             height={75}
             className={cn({ "scale-x-[-1]": leftOrRight === "right" })}
           />
-          <p className="text-[#4a7324] text-2xl font-bold">{character.name}</p>
+          <p
+            className={cn(
+              "text-2xl font-bold",
+              leftOrRight === "left" ? "text-[#f27141]" : "text-[#4a7324]",
+            )}
+          >
+            {character.name}
+          </p>
         </div>
 
         {/* Dialog bubble */}
@@ -56,20 +63,18 @@ export default function LessonDialogBubble({
               { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
             )}
           >
-            {cirTextWords.map((word, idx) => {
-              return (
-                <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                  <span
-                    className={cn(
-                      "text-black leading-none font-semibold",
-                      TEXT_SIZE_MAP[circassianFontSize],
-                    )}
-                  >
-                    {word}
-                  </span>
-                </div>
-              );
-            })}
+            {cirTextWords.map((word, idx) => (
+              <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+                <span
+                  className={cn(
+                    "text-black leading-none font-semibold",
+                    TEXT_SIZE_MAP[circassianFontSize],
+                  )}
+                >
+                  {word}
+                </span>
+              </div>
+            ))}
           </div>
           {/* Spike */}
           <div
@@ -88,15 +93,20 @@ export default function LessonDialogBubble({
       {/* Translation text */}
       <div
         className={cn(
-          "flex flex-col gap-3 border-b-2 border-solid border-gray-300",
+          "flex flex-col gap-3 border-b-2 border-solid border-gray-300 text-[#333333]",
           TEXT_SIZE_MAP[translationFontSize],
           { hidden: !isTranslationChecked },
+          {
+            // Align translation text based on the direction of the bubble
+            "text-left": leftOrRight === "left",
+            "text-right": leftOrRight === "right",
+          },
         )}
       >
         {/* Translation */}
-        {translationLangs.map((lang) => {
-          return <p key={lang}>{langToTranslationMap[lang]}</p>;
-        })}
+        {translationLangs.map((lang) => (
+          <p key={lang}>{langToTranslationMap[lang]}</p>
+        ))}
       </div>
     </div>
   );
