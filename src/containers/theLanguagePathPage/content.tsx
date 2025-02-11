@@ -72,6 +72,14 @@ export default function TheLanguagePathContentContainer() {
               </div>
             </div>
 
+            {/* Display selected lesson and panel information */}
+            <div className="flex flex-col items-center mb-8">
+              <p className="text-2xl font-semibold">{selectedLesson.title}</p>
+              <p className="text-lg text-gray-600">
+                {selectedLesson.panelIdxList[currentPanelIdx]?.title || "Panel not selected"}
+              </p>
+            </div>
+
             {/* Selected lesson component */}
             <div className="flex flex-row justify-center items-center w-full mb-16">
               {selectedPanelComponent}
