@@ -81,7 +81,7 @@ export function Lesson_0_1() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className="w-11/12 mx-auto"
         showBackgroundColors={true}
       />
     </PanelDiv>
