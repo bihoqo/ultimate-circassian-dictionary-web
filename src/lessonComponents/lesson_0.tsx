@@ -23,7 +23,7 @@ export function Lesson_0_1() {
     ["КЪ къ", "/lessons/lesson_0/pictures/0049.png", "Къамэ", "قامة – خنجر", "Stature – Dagger"],
     ["КI кI", "/lessons/lesson_0/pictures/0040.png", "КIэ", "ذيل", "Tail"],
     ["Л л", "/lessons/lesson_0/pictures/0062.png", "Лы", "لحم", "Meat"],
-    ["ЛЪ лъ", "/lessons/lesson_0/pictures/0064.png", "Лъакъо", "رجل", "Leg"],
+    ["ЛЪ лъ", "/lessons/lesson_0/pictures/0028.png", "Лъакъо", "رجل", "Leg"],
     ["М м", "/lessons/lesson_0/pictures/0002.png", "Мышъэ", "دب", "Bear"],
     ["Н н", "/lessons/lesson_0/pictures/0043.png", "Натрыф", "ذرة", "Corn"],
     ["О о", "/lessons/lesson_0/pictures/0009.png", "Осы", "ثلج", "Snow"],
@@ -1357,7 +1357,7 @@ export function Lesson_0_32() {
 }
 
 export function Lesson_0_33() {
-  const data: string[][] = [["ЛЪ лъ", "0064.png", "Лъакъо", "رِجْل", "Leg"]];
+  const data: string[][] = [["ЛЪ лъ", "0028.png", "Лъакъо", "رِجْل", "Leg"]];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
     const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
