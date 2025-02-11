@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { FaCaretRight } from "react-icons/fa6";
 import { ImSpinner2 } from "react-icons/im"; // Ring loader icon
 
@@ -8,25 +8,7 @@ interface IAudioButtonProps {
 
 export default function AudioButton({ audioPath }: IAudioButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [duration, setDuration] = useState<number | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  useEffect(() => {
-    if (!audioRef.current) {
-      return;
-    }
-
-    const updateDuration = () => {
-      if (audioRef.current) {
-        setDuration(audioRef.current.duration * 1000); // Convert seconds to ms
-      }
-    };
-
-    audioRef.current.addEventListener("loadedmetadata", updateDuration);
-    return () => {
-      audioRef.current?.removeEventListener("loadedmetadata", updateDuration);
-    };
-  }, []);
 
   const toggleAudio = () => {
     if (!audioPath) {
