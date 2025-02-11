@@ -112,7 +112,7 @@ export function Lesson_0_2() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\1_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}

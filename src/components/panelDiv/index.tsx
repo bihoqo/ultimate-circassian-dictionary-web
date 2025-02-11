@@ -1,4 +1,5 @@
-import { FaCaretRight } from "react-icons/fa6";
+import AudioButton from "~/components/audioButton";
+import React from "react";
 
 export default function PanelDiv({
   children,
@@ -9,10 +10,7 @@ export default function PanelDiv({
 }) {
   return (
     <div className="flex flex-col gap-6 w-full">
-      <button className="flex flex-row gap-1 justify-center items-center self-end hover:opacity-80">
-        <FaCaretRight color="#39a9b0" size={20} className="mt-0.5" />
-        <p className="font-black text-[#39a9b0] text-xl">Play Audio</p>
-      </button>
+      <AudioButton audioPath={audioPath} />
       <div className="flex flex-row justify-center items-center">{children}</div>
     </div>
   );
