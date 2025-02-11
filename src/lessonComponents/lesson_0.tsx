@@ -142,7 +142,7 @@ export function Lesson_0_2b() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\1_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -194,7 +194,7 @@ export function Lesson_0_3() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\1_3.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -225,7 +225,7 @@ export function Lesson_0_4() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\2_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -277,7 +277,7 @@ export function Lesson_0_5() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\2_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -307,7 +307,7 @@ export function Lesson_0_6() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\3_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -359,7 +359,7 @@ export function Lesson_0_7() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\3_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -389,7 +389,7 @@ export function Lesson_0_8() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\4_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -441,7 +441,7 @@ export function Lesson_0_9() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\4_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -472,7 +472,7 @@ export function Lesson_0_10() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\5_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -522,7 +522,7 @@ export function Lesson_0_11() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\5_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -552,7 +552,7 @@ export function Lesson_0_12() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\6_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -604,7 +604,7 @@ export function Lesson_0_13() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\6_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -634,7 +634,7 @@ export function Lesson_0_14() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\7_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -668,7 +668,7 @@ export function Lesson_0_15() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\7_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -720,7 +720,7 @@ export function Lesson_0_16() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\7_3.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -750,7 +750,7 @@ export function Lesson_0_17() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\\8_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -806,7 +806,7 @@ export function Lesson_0_18() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\\8_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -836,7 +836,7 @@ export function Lesson_0_19() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\\9_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -870,7 +870,7 @@ export function Lesson_0_20() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\\9_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -922,7 +922,7 @@ export function Lesson_0_21() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\\9_3.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -952,7 +952,7 @@ export function Lesson_0_22() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\10_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1004,7 +1004,7 @@ export function Lesson_0_23() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\10_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1031,7 +1031,7 @@ export function Lesson_0_24() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\11_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1065,7 +1065,7 @@ export function Lesson_0_25() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\11_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1095,7 +1095,7 @@ export function Lesson_0_26() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\12_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1129,7 +1129,7 @@ export function Lesson_0_27() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\12_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1181,7 +1181,7 @@ export function Lesson_0_28() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\12_3.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1211,7 +1211,7 @@ export function Lesson_0_29() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\13_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1263,7 +1263,7 @@ export function Lesson_0_30() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\13_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1293,7 +1293,7 @@ export function Lesson_0_31() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\14_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1345,7 +1345,7 @@ export function Lesson_0_32() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\14_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1372,7 +1372,7 @@ export function Lesson_0_33() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\15_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1408,7 +1408,7 @@ export function Lesson_0_34() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\15_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1438,7 +1438,7 @@ export function Lesson_0_35() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\16_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1468,7 +1468,7 @@ export function Lesson_0_36() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\16_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1516,7 +1516,7 @@ export function Lesson_0_37() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\16_3.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1546,7 +1546,7 @@ export function Lesson_0_38() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\17_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1576,7 +1576,7 @@ export function Lesson_0_39() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\17_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1606,7 +1606,7 @@ export function Lesson_0_40() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\17_3.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1654,7 +1654,7 @@ export function Lesson_0_41() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\17_4.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1681,7 +1681,7 @@ export function Lesson_0_42() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\18_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1717,7 +1717,7 @@ export function Lesson_0_43() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\18_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1747,7 +1747,7 @@ export function Lesson_0_44() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\19_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1795,7 +1795,7 @@ export function Lesson_0_45() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\19_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1825,7 +1825,7 @@ export function Lesson_0_46() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\20_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1873,7 +1873,7 @@ export function Lesson_0_47() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\20_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
@@ -1903,7 +1903,7 @@ export function Lesson_0_48() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\21_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -1951,7 +1951,7 @@ export function Lesson_0_49() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\21_2.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
@@ -2021,7 +2021,7 @@ export function Lesson_0_50() {
   });
 
   return (
-    <PanelDiv>
+    <PanelDiv audioPath="lessons\lesson_0\audio\22_1.mp3">
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
