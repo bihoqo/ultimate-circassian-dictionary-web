@@ -46,22 +46,24 @@ export default function TheLanguagePathContentContainer() {
       </Head>
       <main className="bg-white w-full relative flex flex-col min-h-screen">
         {/* Title */}
-        <div className="flex flex-row justify-between items-center w-full lg:w-11/12 mx-auto border-b border-[#cecec3] border-solid py-4">
-          <h1 className="text-3xl underline font-bold text-[#f27141]">{selectedLesson.title}</h1>
+        <div className="flex flex-row justify-between items-center w-full xl:w-11/12 px-2 lg:px-4 xl:mx-auto border-b border-[#cecec3] border-solid py-4">
+          <h1 className="text-3xl underline font-bold text-[#f27141] truncate max-w-[80%]">
+            {selectedLesson.title}
+          </h1>
           <SettingsSvg
             className="self-end hover:opacity-70 cursor-pointer"
             onClick={() => setIsSettingsOpen(!isSettingsOpen)}
           />
         </div>
 
-        <div className="mx-auto w-11/12 flex flex-row flex-grow">
+        <div className="w-full 2xl:w-11/12 px-1 md:px-2 xl:px-3 2xl:px-4 xl:mx-auto flex flex-row">
           {/* Sidebar with lessons */}
           <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-[#cecec3]">
             <LessonSidebar />
           </div>
 
           {/* Main content area */}
-          <div className="flex flex-col gap-2 w-full border-solid border-[#cecec3] px-4 pt-4 pb-14 overflow-hidden overflow-y-auto">
+          <div className="flex flex-col gap-2 w-full border-solid border-[#cecec3] px-1 md:px-2 lg:px-4 pt-4 pb-14 overflow-hidden overflow-y-auto">
             {/* Settings */}
             <div className="flex flex-row justify-center items-center w-full mb-8">
               <div className="self-center">

@@ -28,7 +28,7 @@ export default function LessonTable({
 
   return (
     <table
-      className={cn("w-full border-collapse text-sm table-fixed", className)}
+      className={cn("w-full xl:w-11/12 mx-auto border-collapse text-sm table-fixed", className)}
       style={{ tableLayout: "fixed" }}
     >
       {/* Table Head */}

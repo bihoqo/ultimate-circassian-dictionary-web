@@ -28,7 +28,7 @@ export default function LessonDialogBubble({
   const cirTextWords = originText.split(" ");
 
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="w-full mx-auto flex-col gap-4">
       <div
         className={cn("flex items-start gap-4", {
           "flex-row": leftOrRight === "left",
