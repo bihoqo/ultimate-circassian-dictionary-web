@@ -56,7 +56,7 @@ export default function TheLanguagePathContentContainer() {
           />
         </div>
 
-        <div className="w-full 2xl:w-11/12 px-1 md:px-2 xl:px-3 2xl:px-4 xl:mx-auto flex flex-row">
+        <div className="w-full 2xl:w-11/12 px-0 sm:px-1 md:px-2 xl:px-3 2xl:px-4 xl:mx-auto flex flex-row">
           {/* Sidebar with lessons */}
           <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-[#cecec3]">
             <LessonSidebar />
@@ -73,11 +73,11 @@ export default function TheLanguagePathContentContainer() {
 
             {/* Display selected lesson and panel information */}
             <div className="flex flex-row justify-center items-center gap-2">
-              <p className="text-2xl font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
+              <p className="text-2xl font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
                 {selectedLesson.title}
               </p>
               <p className="text-4xl font-bold text-black/50">/</p>
-              <p className="text-2xl font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
+              <p className="text-2xl font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
                 {selectedLesson.panelIdxList[currentPanelIdx]?.title || "Panel not selected"}
               </p>
             </div>

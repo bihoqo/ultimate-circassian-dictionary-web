@@ -30,7 +30,7 @@ export default function LessonSidebar() {
               key={lesson.lessonIdx}
               onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
               className={cn(
-                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
+                "font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
                 selectedLesson.lessonIdx === lesson.lessonIdx ? "text-[#f27141]" : "text-black",
               )}
             >
@@ -49,7 +49,7 @@ export default function LessonSidebar() {
               key={idx}
               onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
               className={cn(
-                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
+                "font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
                 Number(panelIdx) === idx ? "text-[#f27141]" : "text-black",
               )}
             >
