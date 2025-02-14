@@ -30,11 +30,13 @@ export default function LessonTable({
       <thead className={cn({ hidden: headersArray.length === 0 })}>
         <tr>
           <th className={cn("bg-[#ed7c31] text-white font-bold", { hidden: !showIndexes })}>#</th>
-          {headersArray.map((header, index) => (
-            <th key={index} className="border border-gray-300 px-4 py-2 text-left">
-              {header}
-            </th>
-          ))}
+          {headersArray.map((header, index) => {
+            return (
+              <th key={index} className="border border-gray-300 px-4 py-2 text-left">
+                {header}
+              </th>
+            );
+          })}
         </tr>
       </thead>
 
@@ -85,17 +87,18 @@ export default function LessonTable({
       <tfoot className={cn({ hidden: footerArray.length === 0 })}>
         <tr>
           {showIndexes && <td></td>}
-          {footerArray.map((footerCell, index) => (
-            <td key={index} className="border px-4 py-2">
-              {footerCell}
-            </td>
-          ))}
+          {footerArray.map((footerCell, index) => {
+            return (
+              <td key={index} className="border px-4 py-2">
+                {footerCell}
+              </td>
+            );
+          })}
         </tr>
       </tfoot>
     </table>
   );
 }
-
 export interface ILessonTableCellProps {
   firstRow?: string;
   secondRow?: string;
@@ -131,7 +134,9 @@ export function LessonTableCell({
       </div>
       {imgUrl && (
         <div className="flex justify-center">
-          <Image src={imgUrl} alt="img" width={50} height={50} />
+          <div className="h-[65px] flex items-center">
+            <Image src={imgUrl} alt="img" height={65} width={65} className="h-[65px] w-auto" />
+          </div>
         </div>
       )}
       {langToTranslationMap && (

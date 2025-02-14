@@ -40,8 +40,8 @@ export default function LessonDialogBubble({
           <Image
             src={character.avatar}
             alt={character.name}
-            width={75}
-            height={75}
+            width={65}
+            height={65}
             className={cn({ "scale-x-[-1]": leftOrRight === "right" })}
           />
           <p
