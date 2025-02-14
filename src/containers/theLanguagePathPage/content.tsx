@@ -46,7 +46,7 @@ export default function TheLanguagePathContentContainer() {
       </Head>
       <main className="bg-white w-full relative flex flex-col min-h-screen">
         {/* Title */}
-        <div className="flex flex-row justify-between items-center w-11/12 mx-auto border-b border-[#cecec3] border-solid py-4">
+        <div className="flex flex-row justify-between items-center w-full lg:w-11/12 mx-auto border-b border-[#cecec3] border-solid py-4">
           <h1 className="text-3xl underline font-bold text-[#f27141]">{selectedLesson.title}</h1>
           <SettingsSvg
             className="self-end hover:opacity-70 cursor-pointer"

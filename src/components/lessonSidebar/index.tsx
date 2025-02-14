@@ -22,7 +22,7 @@ export default function LessonSidebar() {
   return (
     <div className="flex flex-row gap-2 w-full">
       {/* Left (Lessons) */}
-      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-[#cecec3] border-r overflow-y-auto max-h-[700px] px-4">
+      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-[#cecec3] border-r overflow-y-auto max-h-[700px] px-0 xl:px-2 3xl:px-4">
         <h2 className="text-lg font-semibold mb-2 text-center w-full">- Lessons -</h2>
         {LESSONS_LIST.map((lesson) => {
           return (
@@ -30,7 +30,7 @@ export default function LessonSidebar() {
               key={lesson.lessonIdx}
               onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
               className={cn(
-                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100",
+                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
                 selectedLesson.lessonIdx === lesson.lessonIdx ? "text-[#f27141]" : "text-black",
               )}
             >
@@ -41,7 +41,7 @@ export default function LessonSidebar() {
       </div>
 
       {/* Right (Panels) */}
-      <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4 overflow-y-auto max-h-[700px] px-4">
+      <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4 overflow-y-auto max-h-[700px] px-0 xl:px-2 3xl:px-4">
         <h2 className="text-lg font-semibold mb-2 text-center w-full">- Panels -</h2>
         {selectedLesson.panelIdxList.map((panel, idx) => {
           return (
@@ -49,7 +49,7 @@ export default function LessonSidebar() {
               key={idx}
               onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
               className={cn(
-                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100",
+                "font-black px-2 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
                 Number(panelIdx) === idx ? "text-[#f27141]" : "text-black",
               )}
             >
