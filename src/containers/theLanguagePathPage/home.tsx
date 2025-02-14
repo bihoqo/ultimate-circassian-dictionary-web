@@ -22,7 +22,7 @@ export default function TheLanguagePathHomeContainer() {
           Чэтэо Мэруан, Мышъэ Хъун Суӏад, Гъукӏэлӏ Махыр
         </h2>
         <h2 className="text-4xl font-black text-white text-center">2024</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-1/2 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 3xl:w-1/2 2xl:w-2/3 md:w-2/3 sm:w-11/12 w-full mx-auto">
           {LESSONS_LIST.map((lesson) => {
             const params: string = queryString.stringify({
               lessonIdx: lesson.lessonIdx,

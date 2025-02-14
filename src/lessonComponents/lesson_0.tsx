@@ -81,7 +81,7 @@ export function Lesson_0_1() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-11/12 mx-auto"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -116,7 +116,7 @@ export function Lesson_0_2() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -146,7 +146,7 @@ export function Lesson_0_2b() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -198,7 +198,7 @@ export function Lesson_0_3() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -229,7 +229,7 @@ export function Lesson_0_4() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -281,7 +281,7 @@ export function Lesson_0_5() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -311,7 +311,7 @@ export function Lesson_0_6() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -363,7 +363,7 @@ export function Lesson_0_7() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -393,7 +393,7 @@ export function Lesson_0_8() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -445,7 +445,7 @@ export function Lesson_0_9() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -476,7 +476,7 @@ export function Lesson_0_10() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -526,7 +526,7 @@ export function Lesson_0_11() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -556,7 +556,7 @@ export function Lesson_0_12() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -608,7 +608,7 @@ export function Lesson_0_13() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -638,7 +638,7 @@ export function Lesson_0_14() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -672,7 +672,7 @@ export function Lesson_0_15() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -724,7 +724,7 @@ export function Lesson_0_16() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -754,7 +754,7 @@ export function Lesson_0_17() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -810,7 +810,7 @@ export function Lesson_0_18() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -840,7 +840,7 @@ export function Lesson_0_19() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -874,7 +874,7 @@ export function Lesson_0_20() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -926,7 +926,7 @@ export function Lesson_0_21() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -956,7 +956,7 @@ export function Lesson_0_22() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1008,7 +1008,7 @@ export function Lesson_0_23() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1035,7 +1035,7 @@ export function Lesson_0_24() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1069,7 +1069,7 @@ export function Lesson_0_25() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1099,7 +1099,7 @@ export function Lesson_0_26() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1133,7 +1133,7 @@ export function Lesson_0_27() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1185,7 +1185,7 @@ export function Lesson_0_28() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1215,7 +1215,7 @@ export function Lesson_0_29() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1267,7 +1267,7 @@ export function Lesson_0_30() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1297,7 +1297,7 @@ export function Lesson_0_31() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1349,7 +1349,7 @@ export function Lesson_0_32() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1376,7 +1376,7 @@ export function Lesson_0_33() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1412,7 +1412,7 @@ export function Lesson_0_34() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1442,7 +1442,7 @@ export function Lesson_0_35() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1472,7 +1472,7 @@ export function Lesson_0_36() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1520,7 +1520,7 @@ export function Lesson_0_37() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1550,7 +1550,7 @@ export function Lesson_0_38() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1580,7 +1580,7 @@ export function Lesson_0_39() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1610,7 +1610,7 @@ export function Lesson_0_40() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1658,7 +1658,7 @@ export function Lesson_0_41() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1685,7 +1685,7 @@ export function Lesson_0_42() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1721,7 +1721,7 @@ export function Lesson_0_43() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1751,7 +1751,7 @@ export function Lesson_0_44() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1799,7 +1799,7 @@ export function Lesson_0_45() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1829,7 +1829,7 @@ export function Lesson_0_46() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1877,7 +1877,7 @@ export function Lesson_0_47() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={true}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1907,7 +1907,7 @@ export function Lesson_0_48() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -1955,7 +1955,7 @@ export function Lesson_0_49() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>
@@ -2025,7 +2025,7 @@ export function Lesson_0_50() {
       <LessonTable
         contentMatrix={contentMatrix}
         showIndexes={false}
-        className="w-fit"
+        className=""
         showBackgroundColors={true}
       />
     </PanelDiv>

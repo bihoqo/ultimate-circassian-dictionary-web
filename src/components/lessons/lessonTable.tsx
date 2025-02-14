@@ -24,14 +24,22 @@ export default function LessonTable({
   className,
   showBackgroundColors = true,
 }: LessonTableProps) {
+  const columnCount = headersArray.length + (showIndexes ? 1 : 0); // Count total columns
+
   return (
-    <table className={cn("w-full border-collapse text-sm", className)}>
+    <table
+      className={cn("w-full xl:w-11/12 mx-auto border-collapse text-sm table-fixed", className)}
+      style={{ tableLayout: "fixed" }}
+    >
       {/* Table Head */}
       <thead className={cn({ hidden: headersArray.length === 0 })}>
         <tr>
-          <th className={cn("bg-[#ed7c31] text-white font-bold", { hidden: !showIndexes })}>#</th>
+          {showIndexes && <th className="bg-[#ed7c31] text-white font-bold w-[40px]">#</th>}
           {headersArray.map((header, index) => (
-            <th key={index} className="border border-gray-300 px-4 py-2 text-left">
+            <th
+              key={index}
+              className="border border-gray-300 px-4 py-2 text-left w-1/[columnCount]"
+            >
               {header}
             </th>
           ))}
@@ -40,53 +48,41 @@ export default function LessonTable({
 
       {/* Table Body */}
       <tbody>
-        {contentMatrix.map((row, rowIndex) => {
-          return (
-            <tr
-              key={rowIndex}
-              style={{ marginBottom: `${gapBetweenRows}px` }} // Apply the gap between rows
-            >
-              {/* Show Index Column */}
-              {showIndexes && (
-                <td
-                  className={cn("font-bold text-white text-center px-1", {
-                    "bg-[#ed7d31]": rowIndex % 2 === 0,
-                    "bg-[#70ad47]": rowIndex % 2 !== 0,
-                  })}
-                >
-                  {rowIndex + 1}
-                </td>
-              )}
+        {contentMatrix.map((row, rowIndex) => (
+          <tr key={rowIndex} style={{ marginBottom: `${gapBetweenRows}px` }}>
+            {/* Show Index Column */}
+            {showIndexes && (
+              <td className="font-bold text-white text-center px-1 w-[40px]">{rowIndex + 1}</td>
+            )}
 
-              {/* Render Row Data */}
-              {row.map((cell, cellIndex) => {
-                return (
-                  <td
-                    key={cellIndex}
-                    className={cn("border-2 border-solid px-4 py-2 text-black", {
-                      "bg-white border-gray-300": !showBackgroundColors,
-                      "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0 && showBackgroundColors,
-                      "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0 && showBackgroundColors,
-                    })}
-                  >
-                    <div className="flex flex-col">
-                      {/* Origin Word */}
-                      <span className={cn("text-black font-semibold ")}>{cell}</span>
-                    </div>
-                  </td>
-                );
-              })}
-            </tr>
-          );
-        })}
+            {/* Render Row Data */}
+            {row.map((cell, cellIndex) => (
+              <td
+                key={cellIndex}
+                className={cn(
+                  "border-2 border-solid px-4 py-2 text-black w-1/[columnCount] h-full",
+                  {
+                    "bg-white border-gray-300": !showBackgroundColors,
+                    "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0 && showBackgroundColors,
+                    "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0 && showBackgroundColors,
+                  },
+                )}
+              >
+                <div className="flex flex-col justify-center h-full">
+                  <span className="text-black font-semibold">{cell}</span>
+                </div>
+              </td>
+            ))}
+          </tr>
+        ))}
       </tbody>
 
       {/* Table Footer */}
       <tfoot className={cn({ hidden: footerArray.length === 0 })}>
         <tr>
-          {showIndexes && <td></td>}
+          {showIndexes && <td className="w-[40px]"></td>}
           {footerArray.map((footerCell, index) => (
-            <td key={index} className="border px-4 py-2">
+            <td key={index} className="border px-4 py-2 w-1/[columnCount]">
               {footerCell}
             </td>
           ))}
@@ -131,7 +127,9 @@ export function LessonTableCell({
       </div>
       {imgUrl && (
         <div className="flex justify-center">
-          <Image src={imgUrl} alt="img" width={50} height={50} />
+          <div className="h-[65px] flex items-center">
+            <Image src={imgUrl} alt="img" height={65} width={65} className="h-[65px] w-auto" />
+          </div>
         </div>
       )}
       {langToTranslationMap && (
