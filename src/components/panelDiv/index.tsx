@@ -9,7 +9,7 @@ export default function PanelDiv({
   audioPath?: string;
 }) {
   return (
-    <div className="flex flex-col justify-center items-center w-full">
+    <div className="flex flex-col justify-center items-center w-full gap-4">
       {audioPath && (
         <div className="w-full flex flex-row justify-end items-center">
           {audioPath && <AudioButton audioPath={audioPath} />}
