@@ -26,7 +26,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
-    "react-simple-keyboard": "^3.8.45",
+    "react-simple-keyboard": "^3.8.46",
     "react-toastify": "^11.0.3",
     "tailwind-merge": "^3.0.1",
     "use-debounce": "^10.0.4"
