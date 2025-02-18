@@ -28,7 +28,7 @@ export default function LessonDialogBubble({
   const cirTextWords = originText.split(" ");
 
   return (
-    <div className="w-full mx-auto flex-col gap-4">
+    <div className="w-full mx-auto flex flex-col gap-4 border-b-2 border-solid border-gray-300 pb-2">
       <div
         className={cn("flex items-start gap-4", {
           "flex-row": leftOrRight === "left",
@@ -54,59 +54,61 @@ export default function LessonDialogBubble({
           </p>
         </div>
 
-        {/* Dialog bubble */}
-        <div className="relative">
+        {/* Dialog bubble and translation container */}
+        <div className="flex flex-col">
+          <div className="relative">
+            <div
+              className={cn(
+                "border border-solid p-4 rounded-sm relative flex flex-row flex-wrap gap-4",
+                { "bg-[#fbddd1] border-[#f19f76]": leftOrRight === "left" },
+                { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
+              )}
+            >
+              {cirTextWords.map((word, idx) => (
+                <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+                  <span
+                    className={cn(
+                      "text-black leading-none font-semibold",
+                      TEXT_SIZE_MAP[circassianFontSize],
+                    )}
+                  >
+                    {word}
+                  </span>
+                </div>
+              ))}
+            </div>
+            {/* Spike */}
+            <div
+              className={cn("absolute top-4 w-0 h-0", {
+                // Spike styles for "left"
+                "-left-2 border-t-[10px] border-t-transparent border-r-[10px] border-r-[#fbddd1] border-b-[10px] border-b-transparent":
+                  leftOrRight === "left",
+                // Spike styles for "right"
+                "-right-2 border-t-[10px] border-t-transparent border-l-[10px] border-l-[#d6e8ce] border-b-[10px] border-b-transparent":
+                  leftOrRight === "right",
+              })}
+            />
+          </div>
+
+          {/* Translation text */}
           <div
             className={cn(
-              "border border-solid p-4 rounded-sm relative flex flex-row flex-wrap gap-4",
-              { "bg-[#fbddd1] border-[#f19f76]": leftOrRight === "left" },
-              { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
+              "flex flex-col gap-3 text-[#333333] mt-2",
+              TEXT_SIZE_MAP[translationFontSize],
+              { hidden: !isTranslationChecked },
+              {
+                // Align translation text based on the direction of the bubble
+                "text-left": leftOrRight === "left",
+                "text-right": leftOrRight === "right",
+              },
             )}
           >
-            {cirTextWords.map((word, idx) => (
-              <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
-                <span
-                  className={cn(
-                    "text-black leading-none font-semibold",
-                    TEXT_SIZE_MAP[circassianFontSize],
-                  )}
-                >
-                  {word}
-                </span>
-              </div>
+            {/* Translation */}
+            {translationLangs.map((lang) => (
+              <p key={lang}>{langToTranslationMap[lang]}</p>
             ))}
           </div>
-          {/* Spike */}
-          <div
-            className={cn("absolute top-4 w-0 h-0", {
-              // Spike styles for "left"
-              "-left-2 border-t-[10px] border-t-transparent border-r-[10px] border-r-[#fbddd1] border-b-[10px] border-b-transparent":
-                leftOrRight === "left",
-              // Spike styles for "right"
-              "-right-2 border-t-[10px] border-t-transparent border-l-[10px] border-l-[#d6e8ce] border-b-[10px] border-b-transparent":
-                leftOrRight === "right",
-            })}
-          />
         </div>
-      </div>
-
-      {/* Translation text */}
-      <div
-        className={cn(
-          "flex flex-col gap-3 border-b-2 border-solid border-gray-300 text-[#333333]",
-          TEXT_SIZE_MAP[translationFontSize],
-          { hidden: !isTranslationChecked },
-          {
-            // Align translation text based on the direction of the bubble
-            "text-left": leftOrRight === "left",
-            "text-right": leftOrRight === "right",
-          },
-        )}
-      >
-        {/* Translation */}
-        {translationLangs.map((lang) => (
-          <p key={lang}>{langToTranslationMap[lang]}</p>
-        ))}
       </div>
     </div>
   );

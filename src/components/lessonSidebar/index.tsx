@@ -1,12 +1,15 @@
 import { LESSONS_LIST } from "~/constants/lessons";
 import { cn } from "~/utils/classNames";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/router";
+import { IoChevronForward, IoChevronBack, IoClose } from "react-icons/io5";
 
 export default function LessonSidebar() {
   const router = useRouter();
   const { lessonIdx, panelIdx } = router.query;
   const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
+  const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   async function navigateToLesson(lessonIdx: number, panelIdx: number) {
     const params = new URLSearchParams();
@@ -15,49 +18,88 @@ export default function LessonSidebar() {
     await router.push(`/the-language-path?${params.toString()}`);
   }
 
-  if (!selectedLesson) {
-    return <div>Lesson not found</div>;
-  }
+  // Close sidebar when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
-    <div className="flex flex-row gap-2 w-full">
-      {/* Left (Lessons) */}
-      <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-[#cecec3] border-r overflow-y-auto max-h-[700px] px-0 xl:px-2 3xl:px-4">
-        <h2 className="text-lg font-semibold mb-2 text-center w-full">- Lessons -</h2>
-        {LESSONS_LIST.map((lesson) => {
-          return (
-            <button
-              key={lesson.lessonIdx}
-              onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
-              className={cn(
-                "font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
-                selectedLesson.lessonIdx === lesson.lessonIdx ? "text-[#f27141]" : "text-black",
-              )}
-            >
-              {lesson.lessonIdx}. {lesson.title}
-            </button>
-          );
-        })}
+    <>
+      {/* Sidebar Panel */}
+      <div
+        ref={sidebarRef}
+        className={cn(
+          "fixed top-0 left-0 h-full w-[300px] bg-white shadow-md border-r border-[#cecec3] transform transition-transform duration-300 z-50",
+          isOpen ? "translate-x-0" : "-translate-x-full",
+        )}
+      >
+        {/* Header */}
+        <div className="flex justify-between items-center p-4 border-b border-[#cecec3]">
+          <h2 className="text-xl font-bold text-[#f27141]">Lessons</h2>
+          <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-black">
+            <IoClose size={24} />
+          </button>
+        </div>
+
+        {/* Scrollable Content */}
+        <div className="overflow-y-auto h-full">
+          {/* Lessons List */}
+          <div className="flex flex-col gap-2 p-4">
+            {LESSONS_LIST.map((lesson) => (
+              <button
+                key={lesson.lessonIdx}
+                onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
+                className={cn(
+                  "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                  selectedLesson?.lessonIdx === lesson.lessonIdx
+                    ? "text-[#f27141]"
+                    : "text-[#4a7324]",
+                )}
+              >
+                {lesson.lessonIdx}. {lesson.title}
+              </button>
+            ))}
+          </div>
+
+          {/* Panels List */}
+          {selectedLesson && (
+            <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3] mb-24">
+              {/* Added margin at the bottom */}
+              <h2 className="text-lg font-medium text-left">Panels</h2>
+              {selectedLesson.panelIdxList.map((panel, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
+                  className={cn(
+                    "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                    Number(panelIdx) === idx ? "text-[#f27141]" : "text-[#4a7324]",
+                  )}
+                >
+                  {panel.title}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Right (Panels) */}
-      <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4 overflow-y-auto max-h-[700px] px-0 xl:px-2 3xl:px-4">
-        <h2 className="text-lg font-semibold mb-2 text-center w-full">- Panels -</h2>
-        {selectedLesson.panelIdxList.map((panel, idx) => {
-          return (
-            <button
-              key={idx}
-              onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
-              className={cn(
-                "font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
-                Number(panelIdx) === idx ? "text-[#f27141]" : "text-black",
-              )}
-            >
-              {panel.title}
-            </button>
-          );
-        })}
-      </div>
-    </div>
+      {/* Arrow Button - Moves with Sidebar */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={cn(
+          "fixed top-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-[#f27141] text-white shadow-md hover:bg-[#f27141]/80 transition-all",
+          "transform -translate-y-1/2",
+          isOpen ? "left-[300px]" : "left-2",
+        )}
+      >
+        {isOpen ? <IoChevronBack size={24} /> : <IoChevronForward size={24} />}
+      </button>
+    </>
   );
 }
