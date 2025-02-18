@@ -58,9 +58,7 @@ export default function TheLanguagePathContentContainer() {
 
         <div className="w-full 2xl:w-11/12 px-0 sm:px-1 md:px-2 xl:px-3 2xl:px-4 xl:mx-auto flex flex-row">
           {/* Sidebar with lessons */}
-          <div className="flex flex-row gap-2 w-[500px] border-r border-solid border-[#cecec3]">
-            <LessonSidebar />
-          </div>
+          <LessonSidebar />
 
           {/* Main content area */}
           <div className="flex flex-col gap-2 w-full border-solid border-[#cecec3] px-1 md:px-2 lg:px-4 pt-4 pb-14 overflow-hidden overflow-y-auto">
