@@ -23,7 +23,7 @@ export default function LessonSidebar() {
     <div className="flex flex-row gap-2 w-full">
       {/* Left (Lessons) */}
       <div className="flex-[3_3_0%] flex flex-col justify-start items-start gap-2 pt-4 border-solid border-[#cecec3] border-r overflow-y-auto max-h-[700px] px-0 xl:px-2 3xl:px-4">
-        <h2 className="text-lg font-semibold mb-2 text-center w-full">- Lessons -</h2>
+        <h2 className="text-lg font-medium mb-2 text-left w-full">Lessons</h2>
         {LESSONS_LIST.map((lesson) => {
           return (
             <button
@@ -31,7 +31,7 @@ export default function LessonSidebar() {
               onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
               className={cn(
                 "font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
-                selectedLesson.lessonIdx === lesson.lessonIdx ? "text-[#f27141]" : "text-black",
+                selectedLesson.lessonIdx === lesson.lessonIdx ? "text-[#f27141]" : "text-[#4a7324]",
               )}
             >
               {lesson.lessonIdx}. {lesson.title}
@@ -42,7 +42,7 @@ export default function LessonSidebar() {
 
       {/* Right (Panels) */}
       <div className="flex-[2_2_0%] flex flex-col justify-start items-start gap-2 pt-4 overflow-y-auto max-h-[700px] px-0 xl:px-2 3xl:px-4">
-        <h2 className="text-lg font-semibold mb-2 text-center w-full">- Panels -</h2>
+        <h2 className="text-lg font-medium mb-2 text-left w-full">Panels</h2>
         {selectedLesson.panelIdxList.map((panel, idx) => {
           return (
             <button
@@ -50,7 +50,7 @@ export default function LessonSidebar() {
               onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
               className={cn(
                 "font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-left",
-                Number(panelIdx) === idx ? "text-[#f27141]" : "text-black",
+                Number(panelIdx) === idx ? "text-[#f27141]" : "text-[#4a7324]",
               )}
             >
               {panel.title}
