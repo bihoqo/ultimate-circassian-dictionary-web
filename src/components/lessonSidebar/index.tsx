@@ -47,42 +47,45 @@ export default function LessonSidebar() {
           </button>
         </div>
 
-        {/* Lessons List */}
-        <div className="flex flex-col gap-2 p-4 overflow-y-auto max-h-[80vh]">
-          {LESSONS_LIST.map((lesson) => (
-            <button
-              key={lesson.lessonIdx}
-              onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
-              className={cn(
-                "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
-                selectedLesson?.lessonIdx === lesson.lessonIdx
-                  ? "text-[#f27141]"
-                  : "text-[#4a7324]",
-              )}
-            >
-              {lesson.lessonIdx}. {lesson.title}
-            </button>
-          ))}
-        </div>
-
-        {/* Panels List */}
-        {selectedLesson && (
-          <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3] overflow-y-auto max-h-[80vh]">
-            <h2 className="text-lg font-medium text-left">Panels</h2>
-            {selectedLesson.panelIdxList.map((panel, idx) => (
+        {/* Scrollable Content */}
+        <div className="overflow-y-auto h-full">
+          {/* Lessons List */}
+          <div className="flex flex-col gap-2 p-4">
+            {LESSONS_LIST.map((lesson) => (
               <button
-                key={idx}
-                onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
+                key={lesson.lessonIdx}
+                onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
                 className={cn(
                   "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
-                  Number(panelIdx) === idx ? "text-[#f27141]" : "text-[#4a7324]",
+                  selectedLesson?.lessonIdx === lesson.lessonIdx
+                    ? "text-[#f27141]"
+                    : "text-[#4a7324]",
                 )}
               >
-                {panel.title}
+                {lesson.lessonIdx}. {lesson.title}
               </button>
             ))}
           </div>
-        )}
+
+          {/* Panels List */}
+          {selectedLesson && (
+            <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3]">
+              <h2 className="text-lg font-medium text-left">Panels</h2>
+              {selectedLesson.panelIdxList.map((panel, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
+                  className={cn(
+                    "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                    Number(panelIdx) === idx ? "text-[#f27141]" : "text-[#4a7324]",
+                  )}
+                >
+                  {panel.title}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Arrow Button - Moves with Sidebar */}
