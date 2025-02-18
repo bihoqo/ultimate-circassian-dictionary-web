@@ -15,13 +15,13 @@ export default function TheLanguagePathHomeContainer() {
     >
       <div className="p-4 flex flex-col gap-8">
         <div className="flex flex-row justify-center items-center">
-          <Image src="/lessons/menu/P7.png" width={350} height={350} alt="Lessons" />
+          <Image src="/lessons/menu/P7.png" width={188} height={100} alt="Lessons" />
         </div>
-        <h1 className="text-6xl font-black text-white text-center">БЗЭМ ИЛЪАГЪУ</h1>
-        <h2 className="text-4xl font-black text-white text-center">
+        <h1 className="text-[36px] font-black text-white text-center">БЗЭМ ИЛЪАГЪУ</h1>
+        <h2 className="text-[28px] font-black text-white text-center">
           Чэтэо Мэруан, Мышъэ Хъун Суӏад, Гъукӏэлӏ Махыр
         </h2>
-        <h2 className="text-4xl font-black text-white text-center">2024</h2>
+        <h2 className="text-[28px] font-black text-white text-center">2024</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 3xl:w-1/2 2xl:w-2/3 md:w-2/3 sm:w-11/12 w-full mx-auto">
           {LESSONS_LIST.map((lesson) => {
             const params: string = queryString.stringify({
@@ -64,7 +64,7 @@ function LessonButton({
         </div>
         <div className="mb-2" />
       </div>
-      <p className="text-3xl font-boldhover:underline text-left pr-2 text-white">{title}</p>
+      <p className="text-[28px] font-boldhover:underline text-left pr-2 text-white">{title}</p>
     </button>
   );
 }
