@@ -69,7 +69,8 @@ export default function LessonSidebar() {
 
           {/* Panels List */}
           {selectedLesson && (
-            <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3]">
+            <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3] mb-24">
+              {/* Added margin at the bottom */}
               <h2 className="text-lg font-medium text-left">Panels</h2>
               {selectedLesson.panelIdxList.map((panel, idx) => (
                 <button
