@@ -41,7 +41,7 @@ export default function LessonSidebar() {
       >
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b border-[#cecec3]">
-          <h2 className="text-xl font-bold text-[#f27141]">Lessons</h2>
+          <h2 className="text-xl font-bold text-black">Lessons</h2>
           <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-black">
             <IoClose size={24} />
           </button>
@@ -56,10 +56,10 @@ export default function LessonSidebar() {
                 key={lesson.lessonIdx}
                 onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
                 className={cn(
-                  "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                  "px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
                   selectedLesson?.lessonIdx === lesson.lessonIdx
-                    ? "text-[#f27141]"
-                    : "text-[#4a7324]",
+                    ? "text-[#f27141] font-bold"
+                    : "text-[#4a7324] font-medium",
                 )}
               >
                 {lesson.lessonIdx}. {lesson.title}
@@ -71,14 +71,16 @@ export default function LessonSidebar() {
           {selectedLesson && (
             <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3] mb-24">
               {/* Added margin at the bottom */}
-              <h2 className="text-lg font-medium text-left">Panels</h2>
+              <h2 className="text-lg font-medium text-left">Exercise</h2>
               {selectedLesson.panelIdxList.map((panel, idx) => (
                 <button
                   key={idx}
                   onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
                   className={cn(
-                    "font-bold px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
-                    Number(panelIdx) === idx ? "text-[#f27141]" : "text-[#4a7324]",
+                    "px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                    Number(panelIdx) === idx
+                      ? "text-[#f27141] font-bold"
+                      : "text-[#4a7324] font-medium",
                   )}
                 >
                   {panel.title}
@@ -93,12 +95,12 @@ export default function LessonSidebar() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "fixed top-1/2 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-[#f27141] text-white shadow-md hover:bg-[#f27141]/80 transition-all",
+          "fixed top-1/2 z-20 flex items-center justify-center w-14 h-14 rounded-full bg-[#f27141] text-white shadow-md hover:bg-[#f29e7e] transition-all",
           "transform -translate-y-1/2",
           isOpen ? "left-[300px]" : "left-2",
         )}
       >
-        {isOpen ? <IoChevronBack size={24} /> : <IoChevronForward size={24} />}
+        {isOpen ? <IoChevronBack size={32} /> : <IoChevronForward size={32} />}
       </button>
     </>
   );

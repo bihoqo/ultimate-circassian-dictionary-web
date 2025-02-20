@@ -207,9 +207,9 @@ export function Lesson_0_3() {
 
 export function Lesson_0_4() {
   const data: string[][] = [
-    ["К к", "0010.png", "Коцы", "قمح", "Wheat"],
-    ["Т т", "0013.png", "Tыгъужъ", "ذئب", "Wolf"],
-    ["I I", "0012.png", "Iанэ", "طاولة", "Table"],
+    ["К к", "0010.png", "Коцы", "قمح", "Wheat", "חיטה"],
+    ["Т т", "0013.png", "Tыгъужъ", "ذئب", "Wolf", "זאב"],
+    ["I I", "0012.png", "Iанэ", "طاولة", "Table", "שולחן"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {

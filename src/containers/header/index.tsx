@@ -8,6 +8,8 @@ import useWindowSize from "~/hooks/useWindowDimensions";
 import SearchContainer from "~/containers/header/searchContainer";
 import { usePathname } from "next/navigation";
 import { INavBarItem } from "~/interfaces";
+import SettingsPanel from "~/components/settingsPanel";
+import SettingsSvg from "~/components/svg/settingsSvg";
 
 function Logo({ onClick }: { onClick: () => void }) {
   return (
@@ -81,11 +83,15 @@ export default function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for settings panel
 
   const navigateTo = (link: string) => {
     router.push(link);
     setIsMobileMenuOpen(false); // Close mobile menu when navigating
   };
+
+  // Check if current path is "/the-language-path" to show the setting icon
+  const isOnLanguagePath = pathname?.startsWith("/the-language-path");
 
   if (width < 640) {
     return (
@@ -122,14 +128,28 @@ export default function Header() {
   }
 
   return (
-    <div className="relative flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0">
+    <div className="relative flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0 z-50">
       <div className="mx-auto flex w-11/12 flex-row items-center gap-1 sm:gap-4">
         <Logo onClick={() => navigateTo("/")} />
+
         <div className="flex">
           {NAV_ITEMS.map((item) => {
             return <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />;
           })}
         </div>
+
+        {/* Conditional rendering of SettingSvg for the-language-path */}
+        {isOnLanguagePath && (
+          <div className="ml-auto">
+            <SettingsSvg
+              className="cursor-pointer text-[#303f2e] hover:text-[#637f5e]/50"
+              onClick={() => setIsSettingsOpen(true)}
+            />
+          </div>
+        )}
+
+        {/* Settings panel */}
+        <SettingsPanel isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
       </div>
     </div>
   );
