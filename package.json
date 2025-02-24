@@ -20,7 +20,7 @@
     "framer-motion": "^12.4.7",
     "html-react-parser": "^5.2.2",
     "jotai": "^2.12.1",
-    "neverthrow": "^8.1.1",
+    "neverthrow": "^8.2.0",
     "next": "^15.1.7",
     "query-string": "^9.1.1",
     "react": "^19.0.0",
