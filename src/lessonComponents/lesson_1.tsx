@@ -13,6 +13,7 @@ export function Lesson_1_1() {
       langToTranslationMap: {
         en: "Good day. My name is Dana. What is your name?",
         ar: "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
+        he: "יום טוב. שמי דנה. מה שמך?",
       },
     },
     {
@@ -22,6 +23,7 @@ export function Lesson_1_1() {
       langToTranslationMap: {
         en: "My name is Satenai.",
         ar: "ستناي: أنا اسمي ستناي",
+        he: "שמי סטנאי.",
       },
     },
     {
@@ -31,6 +33,7 @@ export function Lesson_1_1() {
       langToTranslationMap: {
         en: "From where are you?",
         ar: "دانا: من أين أنت؟",
+        he: "מאיפה אתה?",
       },
     },
     {
@@ -40,6 +43,7 @@ export function Lesson_1_1() {
       langToTranslationMap: {
         en: "I am from Maykop.",
         ar: "ستناي: أنا من مايكوب.",
+        he: "אני ממיקופ.",
       },
     },
   ];
@@ -62,6 +66,7 @@ export function Lesson_1_2() {
       langToTranslationMap: {
         en: "Hello. My name is Nart. What is your name?",
         ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
+        he: "שלום. שמי נארט. מה שמך?",
       },
     },
     {
@@ -71,6 +76,7 @@ export function Lesson_1_2() {
       langToTranslationMap: {
         en: "My name is Aslan.",
         ar: "أسلان :  أنا اسمي أسلان.",
+        he: "שמי אסלאן.",
       },
     },
     {
@@ -80,6 +86,7 @@ export function Lesson_1_2() {
       langToTranslationMap: {
         en: "From where are you Aslan?",
         ar: " نارت : من أين أنت أسلان؟",
+        he: "מאיפה אתה אסלאן?",
       },
     },
     {
@@ -89,6 +96,7 @@ export function Lesson_1_2() {
       langToTranslationMap: {
         en: "I am from Istanbul. And you?",
         ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
+        he: "אני מאיסטנבול. ואתה?",
       },
     },
     {
@@ -98,6 +106,7 @@ export function Lesson_1_2() {
       langToTranslationMap: {
         en: "I am from Nalchik.",
         ar: "نارت : أنا من نالتشيك.",
+        he: "אני מנלצ'יק.",
       },
     },
   ];
@@ -120,6 +129,7 @@ export function Lesson_1_3() {
       langToTranslationMap: {
         en: "Hello, my name is Nart, I am from Nalchik.",
         ar: "نارت: مرحبا، أنا اسمي نارت، أنا من نالتشيك.",
+        he: "שלום, שמי נארט, אני מנלצ'יק.",
       },
     },
     {
@@ -129,6 +139,7 @@ export function Lesson_1_3() {
       langToTranslationMap: {
         en: "Welcome, my name is Aslan, I am from Istanbul.",
         ar: "أسلان: تفضل،  أنا اسمي أسلان، أنا من إسطنبول.",
+        he: "ברוך הבא, שמי אסלאן, אני מאיסטנבול.",
       },
     },
   ];
@@ -152,6 +163,7 @@ export function Lesson_1_4() {
         langToTranslationMap={{
           en: "Hello, my name is Nerys.",
           ar: "نَرِس: مرحبا، أنا اسمي نَرِس.",
+          he: "שלום, שמי נאריס.",
         }}
       />
       <LessonDialogBubble
@@ -161,6 +173,7 @@ export function Lesson_1_4() {
         langToTranslationMap={{
           en: "Welcome, my name is Zaur.",
           ar: "زاوِر: تفضل،  أنا اسمي زاوِر.",
+          he: "ברוך הבא, שמי זאור.",
         }}
       />
       <LessonDialogBubble
@@ -170,6 +183,7 @@ export function Lesson_1_4() {
         langToTranslationMap={{
           en: "Excuse me, what is your name?",
           ar: "نَرِس: عفوا، ما هو اسمك ؟",
+          he: "סליחה, מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -179,6 +193,7 @@ export function Lesson_1_4() {
         langToTranslationMap={{
           en: "Zaur.",
           ar: "زاوِر: زاوِر.",
+          he: "זאור.",
         }}
       />
       <LessonDialogBubble
@@ -188,6 +203,7 @@ export function Lesson_1_4() {
         langToTranslationMap={{
           en: "Good day, Zaur.",
           ar: "نَرِس: نهارك سعيد، زاوِر.",
+          he: "יום טוב, זאור.",
         }}
       />
       <LessonDialogBubble
@@ -197,6 +213,7 @@ export function Lesson_1_4() {
         langToTranslationMap={{
           en: "Good day, Nerys.",
           ar: "زاوِر: نهارك سعيد، نَرِس.",
+          he: "יום טוב, נאריס.",
         }}
       />
     </PanelDiv>
@@ -213,6 +230,7 @@ export function Lesson_1_5() {
         langToTranslationMap={{
           en: "Good morning, my name is Laze. What is your name?",
           ar: "آزة: صباح الخير، أنا اسمي أزه، ما هو اسمك ؟",
+          he: "בוקר טוב, שמי לאזה. מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -222,6 +240,7 @@ export function Lesson_1_5() {
         langToTranslationMap={{
           en: "Good morning, my name is Nef. Where are you from, Laze?",
           ar: "نَف: صباح الخير، أنا اسمي نَف. من أين أنت أز؟",
+          he: "בוקר טוב, שמי נאף. מאיפה אתה לאזה?",
         }}
       />
       <LessonDialogBubble
@@ -231,6 +250,7 @@ export function Lesson_1_5() {
         langToTranslationMap={{
           en: "I am from Reyhanli.",
           ar: "أزه: أنا من الريحانية.",
+          he: "אני מריחאניה.",
         }}
       />
     </PanelDiv>
@@ -247,6 +267,7 @@ export function Lesson_1_6() {
         langToTranslationMap={{
           en: "From where are you?",
           ar: "من أين أنت؟",
+          he: "מאיפה אתה?",
         }}
       />
       <LessonDialogBubble
@@ -256,6 +277,7 @@ export function Lesson_1_6() {
         langToTranslationMap={{
           en: "I am from Khousai.",
           ar: "أنا من خهوساي.",
+          he: "אני מחוסאי.",
         }}
       />
       <LessonDialogBubble
@@ -265,6 +287,7 @@ export function Lesson_1_6() {
         langToTranslationMap={{
           en: "What is your name?",
           ar: "ما هو اسمك؟",
+          he: "מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -274,6 +297,7 @@ export function Lesson_1_6() {
         langToTranslationMap={{
           en: "My name is Abrej Denef.",
           ar: "لبزو دنف.",
+          he: "שמי אברג' דנף.",
         }}
       />
       <LessonDialogBubble
@@ -283,6 +307,7 @@ export function Lesson_1_6() {
         langToTranslationMap={{
           en: "What languages do you know?",
           ar: "أية لغات تعرف؟",
+          he: "אילו שפות אתה יודע?",
         }}
       />
       <LessonDialogBubble
@@ -292,6 +317,7 @@ export function Lesson_1_6() {
         langToTranslationMap={{
           en: "Adyghe and Russian.",
           ar: "الأديغابزة والروسية.",
+          he: "אדיג'בזה ורוסית.",
         }}
       />
     </PanelDiv>
@@ -308,6 +334,7 @@ export function Lesson_1_7() {
         langToTranslationMap={{
           en: "My name is Perit, Khun Perit.",
           ar: "برت: أنا اسمي برت،",
+          he: "שמי פרית, חון פרית.",
         }}
       />
       <LessonDialogBubble
@@ -317,6 +344,7 @@ export function Lesson_1_7() {
         langToTranslationMap={{
           en: "I live in Amman.",
           ar: "خُن برت. أنا أعيش في عمان.",
+          he: "אני גר בעמאן.",
         }}
       />
       <LessonDialogBubble
@@ -326,6 +354,7 @@ export function Lesson_1_7() {
         langToTranslationMap={{
           en: "I know Adyghe and Arabic.",
           ar: "أنا أعرف الأديغية والعربية.",
+          he: "אני יודע אדיג'ה וערבית.",
         }}
       />
     </PanelDiv>
@@ -342,6 +371,7 @@ export function Lesson_1_8() {
         langToTranslationMap={{
           en: "Good morning, my name is Razé.",
           ar: "رازة: نهارك سعيد  ، أنا اسمي رازة.",
+          he: "בוקר טוב, שמי ראזה.",
         }}
       />
       <LessonDialogBubble
@@ -351,6 +381,7 @@ export function Lesson_1_8() {
         langToTranslationMap={{
           en: "Good morning. My name is Gorkoj Hypбый.",
           ar: "نوربي: نهارك سعيد ، أنا اسمي غوركؤج نوربي.",
+          he: "בוקר טוב. שמי גורקוג' נורבי.",
         }}
       />
       <LessonDialogBubble
@@ -360,6 +391,7 @@ export function Lesson_1_8() {
         langToTranslationMap={{
           en: "Excuse me, what is your name?",
           ar: "رازة: عفوا، ما هو اسمك ؟",
+          he: "סליחה, מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -369,6 +401,7 @@ export function Lesson_1_8() {
         langToTranslationMap={{
           en: "Gorkoj Hypбый, I am from Duzdjem. Where are you from?",
           ar: "نوربي: غوركؤج نوربي، أنا من دُزجه، من أين أنت؟",
+          he: "גורקוג' נורבי, אני מדוזג'ם. מאיפה אתה?",
         }}
       />
       <LessonDialogBubble
@@ -378,6 +411,7 @@ export function Lesson_1_8() {
         langToTranslationMap={{
           en: "I am from Anqara.",
           ar: "رازة: أنا من أنقره.",
+          he: "אני מאנקרה.",
         }}
       />
     </PanelDiv>
@@ -394,6 +428,7 @@ export function Lesson_1_9() {
         langToTranslationMap={{
           en: "Good morning, my name is Ujyhu Ozirmes.",
           ar: "وَزِرمس: نهارك سعيد  ، أنا اسمي وِجوخ وَزِرمس.",
+          he: "בוקר טוב, שמי אוג'יחו אוזירמס.",
         }}
       />
       <LessonDialogBubble
@@ -403,6 +438,7 @@ export function Lesson_1_9() {
         langToTranslationMap={{
           en: "Good morning, my name is Ujyhu, my name is Heleo Chan.",
           ar: "تشان: نهارك سعيد  ، صديقي وِجوخ وَزِرمس. أنا اسمي حَلَوه تشان.",
+          he: "בוקר טוב, שמי אוג'יחו, שמי חלאו צ'אן.",
         }}
       />
       <LessonDialogBubble
@@ -412,6 +448,7 @@ export function Lesson_1_9() {
         langToTranslationMap={{
           en: "Where are you from?",
           ar: "وَزِرمس: من أين أنت؟",
+          he: "מאיפה אתה?",
         }}
       />
       <LessonDialogBubble
@@ -421,6 +458,7 @@ export function Lesson_1_9() {
         langToTranslationMap={{
           en: "I am from Panakes, and you?",
           ar: "تشان: أنا من بنة-خهس. أنت؟",
+          he: "אני מפנקס, ואתה?",
         }}
       />
       <LessonDialogBubble
@@ -430,6 +468,7 @@ export function Lesson_1_9() {
         langToTranslationMap={{
           en: "I am from Tjwaps.",
           ar: "وَزِرمس: أنا من  طوابسه.",
+          he: "אני מט'ואבס.",
         }}
       />
     </PanelDiv>
@@ -446,6 +485,7 @@ export function Lesson_1_10() {
         langToTranslationMap={{
           en: "Good evening.",
           ar: "سيماز: مساء الخير.",
+          he: "ערב טוב.",
         }}
       />
       <LessonDialogBubble
@@ -455,6 +495,7 @@ export function Lesson_1_10() {
         langToTranslationMap={{
           en: "Good evening, my name is Gunéjyko Kъazbэch.",
           ar: "قازبَتش: مساء الخير، أنا اسمي غوه-نَجِقوه قربَتش",
+          he: "ערב טוב, שמי גונג'יקו קאזבצ'.",
         }}
       />
       <LessonDialogBubble
@@ -464,6 +505,7 @@ export function Lesson_1_10() {
         langToTranslationMap={{
           en: "Excuse me, what is your name?",
           ar: "سيماز: عفوا، ما هو اسمك؟",
+          he: "סליחה, מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -473,6 +515,7 @@ export function Lesson_1_10() {
         langToTranslationMap={{
           en: "Gunéjyko, Gunéjyko Kъazbэch.",
           ar: "قازبَتش: غوه-نَجِقوه، غوه-نَجِقوه قربَتش.",
+          he: "גונג'יקו, גונג'יקו קאזבצ'.",
         }}
       />
       <LessonDialogBubble
@@ -482,6 +525,7 @@ export function Lesson_1_10() {
         langToTranslationMap={{
           en: "My name is Simaz, Jantig Simaz.",
           ar: "سيماز: أنا اسمي سيماز، جانتِغ سيماز.",
+          he: "שמי סימאז, ג'נטיג סימאז.",
         }}
       />
     </PanelDiv>
@@ -498,6 +542,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "Who is this?",
           ar: "دانا: من هذا ؟",
+          he: "מי זה?",
         }}
       />
       <LessonDialogBubble
@@ -507,6 +552,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "This is Khut Sine.",
           ar: "نفن: هذا خُت سينه.",
+          he: "זה חות סינה.",
         }}
       />
       <LessonDialogBubble
@@ -516,6 +562,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "Where is it from?",
           ar: "دانا: من أين هي  ؟",
+          he: "מאיפה זה?",
         }}
       />
       <LessonDialogBubble
@@ -525,6 +572,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "It is from Nartkale.",
           ar: "نفن: :  إنها من نارتقاله",
+          he: "זה מנרטקלה.",
         }}
       />
       <LessonDialogBubble
@@ -534,6 +582,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "Where is Nartkale?",
           ar: "دانا: أين تقع نارتقاله؟",
+          he: "איפה נרטקלה?",
         }}
       />
       <LessonDialogBubble
@@ -543,6 +592,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "It is in Khebertaim.",
           ar: "نفن: تقع في القبرتاي.",
+          he: "זה בחברטאים.",
         }}
       />
       <LessonDialogBubble
@@ -552,6 +602,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "Does she speak Adyghe?",
           ar: "دانا: هل هي تتحدث الأديغية؟",
+          he: "האם היא מדברת אדיג'ה?",
         }}
       />
       <LessonDialogBubble
@@ -561,6 +612,7 @@ export function Lesson_1_11() {
         langToTranslationMap={{
           en: "Yes, she speaks Adyghe.",
           ar: "نفن: نعم هي تتحدث الاديغية.",
+          he: "כן, היא מדברת אדיג'ה.",
         }}
       />
     </PanelDiv>
@@ -577,6 +629,7 @@ export function Lesson_1_12() {
         langToTranslationMap={{
           en: "We will learn the Adyghe alphabet",
           ar: "سنتعلم الأحرف الأديغية",
+          he: "נלמד את האלפבית האדיג'י",
         }}
       />
 
@@ -657,6 +710,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "Good morning. What is your last name?",
           ar: "سيما: صباح الخير. ما هو اسم عائلتك ؟",
+          he: "בוקר טוב. מה שם משפחתך?",
         }}
       />
       <LessonDialogBubble
@@ -666,6 +720,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "Gutchel.",
           ar: "ستناي: غوتشلأ.",
+          he: "גוצ'ל.",
         }}
       />
       <LessonDialogBubble
@@ -675,6 +730,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "What? How is it written?",
           ar: "سيما: ماذا ؟ كيف تكتب؟",
+          he: "מה? איך זה כתוב?",
         }}
       />
       <LessonDialogBubble
@@ -684,6 +740,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "Gu - Chel",
           ar: "ستناي: غو-تشلأ.",
+          he: "גו - צ'ל.",
         }}
       />
       <LessonDialogBubble
@@ -693,6 +750,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "Okay. What is your name?",
           ar: "سيما: حسنا. ما هو اسمك؟",
+          he: "בסדר. מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -702,6 +760,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "Setenay. S - T - NAY.",
           ar: "ستناي: ستناي. س-ت-ناي",
+          he: "סטנאי. ס - ט - נאי.",
         }}
       />
       <LessonDialogBubble
@@ -711,6 +770,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "Okay. Where do you live?",
           ar: "سيما: حسنا. أين تعيش؟",
+          he: "בסדר. איפה אתה גר?",
         }}
       />
       <LessonDialogBubble
@@ -720,6 +780,7 @@ export function Lesson_1_13() {
         langToTranslationMap={{
           en: "I live in Maikop.",
           ar: "ستناي: أنا أعيش في مايكوب.",
+          he: "אני גר במאיקופ.",
         }}
       />
     </PanelDiv>
@@ -736,6 +797,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "What is your name?",
           ar: "باتر: ما هو اسمك؟",
+          he: "מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -745,6 +807,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "Ozyrmedj",
           ar: "وزِرمج: وزِرمج.",
+          he: "אוזירמדג'.",
         }}
       />
       <LessonDialogBubble
@@ -754,6 +817,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "Excuse me, what is your name?",
           ar: "باتر: عفوا، ما هو اسمك؟",
+          he: "סליחה, מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -763,6 +827,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "Ozyrmedj",
           ar: "وزِرمج: وزِرمج.",
+          he: "אוזירמדג'.",
         }}
       />
       <LessonDialogBubble
@@ -772,6 +837,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "How is it written?",
           ar: "باتر: كيف تكتب؟",
+          he: "איך זה כתוב?",
         }}
       />
       <LessonDialogBubble
@@ -781,6 +847,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "O-Zyr-Medj",
           ar: "وزِرمج: و-زِر-مج",
+          he: "אוזיר-מדג'.",
         }}
       />
       <LessonDialogBubble
@@ -790,6 +857,7 @@ export function Lesson_1_14() {
         langToTranslationMap={{
           en: "Thank you.",
           ar: "باتر: شكرا",
+          he: "תודה.",
         }}
       />
     </PanelDiv>
@@ -806,6 +874,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "What is your name?",
           ar: "جباغ: ما هو اسمك؟",
+          he: "מה שמך?",
         }}
       />
       <LessonDialogBubble
@@ -815,6 +884,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "Pshymaph",
           ar: "بشِماف: بشِماف",
+          he: "פשימאף",
         }}
       />
       <LessonDialogBubble
@@ -824,6 +894,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "Pshymaph?",
           ar: "جباغ: بشَمف",
+          he: "פשימפה?",
         }}
       />
       <LessonDialogBubble
@@ -833,6 +904,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "Yes.",
           ar: "بشِماف: لا",
+          he: "כן.",
         }}
       />
       <LessonDialogBubble
@@ -842,6 +914,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "How is it written, can you tell me?",
           ar: "جباغ: كيف تكتب؟هل يمكن أن تقول لي؟",
+          he: "איך זה כתוב, אתה יכול לומר לי?",
         }}
       />
       <LessonDialogBubble
@@ -851,6 +924,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "Pshy-maf",
           ar: "بشِماف: بشِ-ماف",
+          he: "פשי-מאף",
         }}
       />
       <LessonDialogBubble
@@ -860,6 +934,7 @@ export function Lesson_1_15() {
         langToTranslationMap={{
           en: "Thank you.",
           ar: "جباغ: شكرا",
+          he: "תודה.",
         }}
       />
     </PanelDiv>
@@ -876,6 +951,7 @@ export function Lesson_1_16() {
         langToTranslationMap={{
           en: "My name is Mashbashah Tembot. I am 40 years old. I live in the city of Maikop. Maikop is the capital of Adygea. I am a carpenter. I like building houses with wood.",
           ar: "أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40. أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي. أنا نجار. أحب بناء البيوت بالخشب.",
+          he: "שמי משבשה תמבוט. אני בן 40. אני גר בעיר מאיקופ. מאיקופ היא בירת אדיגיה. אני נגר. אני אוהב לבנות בתים מעץ.",
         }}
       />
     </PanelDiv>
@@ -892,6 +968,7 @@ export function Lesson_1_17() {
         langToTranslationMap={{
           en: "My name is Khuut Bibers. I live in Cherkessk. Cherkessk is the capital of the Circassian republic. I am 37 years old. I am a writer. I like writing poetry in Adyghe. I am married. I have three young children.",
           ar: "أنا اسمي خُت بيبرس. أنا أعيش في تشركيسك. تشركيسك هي عاصمة جمهورية الشركس. عمري 37. أنا كاتب. أحب كتابة الأشعار بالأديغابزة. متزوج. لدي ثلاثة أولاد صغار.",
+          he: "שמי חות ביברס. אני גר בצ'רקסק. צ'רקסק היא בירת הרפובליקה הצ'רקסית. בן 37. אני סופר. אני אוהב לכתוב שירים באדיג'ה. אני נשוי. יש לי שלושה ילדים קטנים.",
         }}
       />
     </PanelDiv>
@@ -908,6 +985,7 @@ export function Lesson_1_18() {
         langToTranslationMap={{
           en: "My name is Tzei Sinemis. I am 25 years old. I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria. I am a teacher. I teach Adyghe. I love Adyghe. I also love teaching. I am married. I have a daughter, her name is Sina, she is two years old.",
           ar: "أنا اسمي تزي سينميس. عمري 25. أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي. أنا معلمة. أعلم الأديغابزة. أحب الأديغابزة. وأيضا أحب التعليم. أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين.",
+          he: "שמי צ'י סינמיס. בת 25. אני גרה בנלצ'יק. נלצ'יק היא בירת קברדינו-בלקריה. אני מורה. אני מלמדת אדיג'ה. אני אוהבת אדיג'ה. אני גם אוהבת ללמד. אני נשואה. יש לי בת, שמה סינה, בת שנתיים.",
         }}
       />
     </PanelDiv>
