@@ -1,92 +1,354 @@
 import LessonTable, { LessonTableCell } from "~/components/lessons/lessonTable";
 import React from "react";
 import PanelDiv from "../components/panelDiv";
+import { ILangToTranslationMap } from "~/interfaces";
 
-export function Lesson_0_1() {
-  const data: string[][] = [
-    ["А а", "/lessons/lesson_0/pictures/0061.png", "Атакъэ", "ديك", "Rooster", "תרנגול"],
-    ["Б б", "/lessons/lesson_0/pictures/0026.png", "Блэ", "أفعى", "Snake", "נחש"],
-    ["В в", "/lessons/lesson_0/pictures/0029.png", "Витамин", "فيتامين", "Vitamin", "ויטמין"],
-    ["Г г", "/lessons/lesson_0/pictures/0045.png", "Адыгаер", "أديغيا", "Adygea", "אדיגיא"],
-    ["ГЪ гъ", "/lessons/lesson_0/pictures/0048.png", "Гъэмаф", "صيف", "summer", "קיץ"],
-    ["Д д", "/lessons/lesson_0/pictures/0057.png", "Дэ", "جوز", "Nut", "אגוז"],
-    ["ДЖ дж", "/lessons/lesson_0/pictures/0041.png", "Джэмышх", "ملعقة", "Spoon", "כף"],
-    ["ДЗ дз", "/lessons/lesson_0/pictures/0052.png", "Дзэ", "جيش", "Army", "צבא"],
-    ["Е е", "/lessons/lesson_0/pictures/0007.png", "Еджэ", "يقرأ", "Reads", "קורא"],
-    ["Ж", "/lessons/lesson_0/pictures/0022.png", "Жэ", "فم", "Mouth", "פה"],
-    ["ЖЪ", "/lessons/lesson_0/pictures/0055.png", "Жъапхъэ", "مقلاة", "Frying pan", "מחבת"],
-    ["ЖЬ", "/lessons/lesson_0/pictures/0050.png", "Жьыбгъэ", "ريح", "Wind", "רוח"],
-    ["З з", "/lessons/lesson_0/pictures/0015.png", "Зы", "واحد", "One", "אחד"],
-    ["И и", "/lessons/lesson_0/pictures/0006.png", "Иныжъ", "عملاق", "Giant", "ענק"],
-    ["Й й", "/lessons/lesson_0/pictures/0038.png", "Пцэжъый", "سمكه", "Fish", "דג"],
-    ["К к", "/lessons/lesson_0/pictures/0010.png", "Коцы", "قمح", "Wheat", "חיטה"],
-    ["КЪ къ", "/lessons/lesson_0/pictures/0049.png", "Къамэ", "قامة – خنجر", "Dagger", "חרב קטן"],
-    ["КI кI", "/lessons/lesson_0/pictures/0040.png", "КIэ", "ذيل", "Tail", "זנב"],
-    ["Л л", "/lessons/lesson_0/pictures/0062.png", "Лы", "لحم", "Meat", "בשר"],
-    ["ЛЪ лъ", "/lessons/lesson_0/pictures/0028.png", "Лъакъо", "رجل", "Leg", "רגל"],
-    ["М м", "/lessons/lesson_0/pictures/0002.png", "Мышъэ", "دب", "Bear", "דוב"],
-    ["Н н", "/lessons/lesson_0/pictures/0043.png", "Натрыф", "ذرة", "Corn", "תירס"],
-    ["О о", "/lessons/lesson_0/pictures/0009.png", "Осы", "ثلج", "Snow", "שלג"],
-    ["П п", "/lessons/lesson_0/pictures/0039.png", "Пыжъы", "قنفذ", "Hedgehog", "קיפוד"],
-    ["ПI пI", "/lessons/lesson_0/pictures/0019.png", "ПIэ", "فراش", "Butterfly", "פרפר"],
-    ["Р р", "/lessons/lesson_0/pictures/0059.png", "Хъурай", "دائرة", "Circle", "מעגל"],
-    ["С с", "/lessons/lesson_0/pictures/0004.png", "Санэ", "عنب", "Grapes", "ענבים"],
-    ["Т т", "/lessons/lesson_0/pictures/0013.png", "Tыгъужъ", "ذئب", "Wolf", "זאב"],
-    ["ТI тI", "/lessons/lesson_0/pictures/0036.png", "ТIы", "كبش", "Ram", "כבש"],
-    ["У у", "/lessons/lesson_0/pictures/0008.png", "Унэ", "بيت", "House", "בית"],
-    ["Ф ф", "/lessons/lesson_0/pictures/0037.png", "Фыжьы", "أبيض", "White", "לבן"],
-    ["Х х", "/lessons/lesson_0/pictures/0016.png", "Хы", "ستة", "Six", "שש"],
-    [
-      "ХЪ хъ",
-      "/lessons/lesson_0/pictures/0018.png",
-      "Хъагъэ",
-      "شبكة/ مطرز",
-      "Net/Embroidered",
-      "רשת/רקמה",
-    ],
-    ["ХЬ хь", "/lessons/lesson_0/pictures/0020.png", "Хьэ", "كلب", "Dog", "כלב"],
-    ["Ц ц", "/lessons/lesson_0/pictures/0063.png", "Цыгъо", "فار", "Mouse", "עכבר"],
-    ["ЦӀ цI", "/lessons/lesson_0/pictures/0025.png", "ЦӀыргъ", "حلزون", "Snail", "חלזון"],
-    ["Ч ч", "/lessons/lesson_0/pictures/0046.png", "Чэркеся", "شركيسيا", "Circassia", "צ'רקסיה"],
-    ["ЧЪ чъ", "/lessons/lesson_0/pictures/0053.png", "Чъыгы", "شجره", "Tree", "עץ"],
-    ["ЧӀ чI", "/lessons/lesson_0/pictures/0031.png", "ЧӀы", "أرض", "Earth", "אדמה"],
-    ["Ш ш", "/lessons/lesson_0/pictures/0011.png", "Шы", "حصان", "Horse", "סוס"],
-    ["ШЪ шъ", "/lessons/lesson_0/pictures/0100.png", "Шъэ", "مئه", "Hundred", "מאה"],
-    ["Щ щ", "/lessons/lesson_0/pictures/0014.png", "Щэ", "حليب", "Milk", "חלב"],
-    ["Ы ы", "/lessons/lesson_0/pictures/0005.png", "Сыд", "ماذا", "What", "מה"],
-    ["Э э", "/lessons/lesson_0/pictures/0003.png", "Iэ", "يد", "Hand", "יד"],
-    ["Я я", "/lessons/lesson_0/pictures/0023.png", "ЯтIэ", "تراب", "Dust", "אבק"],
-    ["I I", "/lessons/lesson_0/pictures/0012.png", "Iанэ", "طاولة", "Table", "שולחן"],
-  ];
+interface ILetterIntroductionRow {
+  letter: string;
+  imgUrl: string;
+  wordExample: string;
+  translationsMap: ILangToTranslationMap;
+}
 
-  // Convert to ReactNode matrix
+interface IExampleInEachLangRow {
+  cir: string;
+  ar: string;
+  en: string;
+  he: string;
+}
+
+function convertLetterIntroductionRowArrayToReactNodeMatrix(
+  data: ILetterIntroductionRow[],
+  numberOfColumns = 6,
+): React.ReactNode[][] {
   const contentMatrix: React.ReactNode[][] = [];
   let currentRow: React.ReactNode[] = [];
+  let index = 0;
 
-  data.forEach((row, index) => {
-    const [letter, imgUrl, example, arTranslation, enTranslation] = row;
+  for (const row of data) {
     const node = (
       <LessonTableCell
-        key={letter}
-        firstRow={letter.split(" ")[0]} // Extract first part of the letter
-        secondRow={example}
-        imgUrl={imgUrl}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
+        key={row.letter}
+        firstRow={row.letter} // Extract first part of the letter
+        secondRow={row.wordExample}
+        imgUrl={row.imgUrl}
+        langToTranslationMap={row.translationsMap}
       />
     );
 
     currentRow.push(node);
 
-    if (currentRow.length === 6 || index === data.length - 1) {
+    if (currentRow.length === numberOfColumns || index === data.length - 1) {
       contentMatrix.push(currentRow);
       currentRow = [];
     }
+
+    index++;
+  }
+
+  return contentMatrix;
+}
+
+function convertExampleInEachLangRowToReactNodeMatrix(
+  data: IExampleInEachLangRow[][],
+): React.ReactNode[][] {
+  return data.map((row) => {
+    return row.map((cell) => {
+      return (
+        <LessonTableCell
+          key={cell.cir}
+          firstRow={cell.cir}
+          langToTranslationMap={{ en: cell.en, ar: cell.ar, he: cell.he }}
+        />
+      );
+    });
   });
+}
+
+export function Lesson_0_1() {
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "А а",
+      imgUrl: "0061.png",
+      wordExample: "Атакъэ",
+      translationsMap: { ar: "ديك", en: "Rooster", he: "תרנגול" },
+    },
+    {
+      letter: "Б б",
+      imgUrl: "0026.png",
+      wordExample: "Блэ",
+      translationsMap: { ar: "أفعى", en: "Snake", he: "נחש" },
+    },
+    {
+      letter: "В в",
+      imgUrl: "0029.png",
+      wordExample: "Витамин",
+      translationsMap: { ar: "فيتامين", en: "Vitamin", he: "ויטמין" },
+    },
+    {
+      letter: "Г г",
+      imgUrl: "0045.png",
+      wordExample: "Адыгаер",
+      translationsMap: { ar: "أديغيا", en: "Adygea", he: "אדיגיא" },
+    },
+    {
+      letter: "ГЪ гъ",
+      imgUrl: "0048.png",
+      wordExample: "Гъэмаф",
+      translationsMap: { ar: "صيف", en: "summer", he: "קיץ" },
+    },
+    {
+      letter: "Д д",
+      imgUrl: "0057.png",
+      wordExample: "Дэ",
+      translationsMap: { ar: "جوز", en: "Nut", he: "אגוז" },
+    },
+    {
+      letter: "ДЖ дж",
+      imgUrl: "0041.png",
+      wordExample: "Джэмышх",
+      translationsMap: { ar: "ملعقة", en: "Spoon", he: "כף" },
+    },
+    {
+      letter: "ДЗ дз",
+      imgUrl: "0052.png",
+      wordExample: "Дзэ",
+      translationsMap: { ar: "جيش", en: "Army", he: "צבא" },
+    },
+    {
+      letter: "Е е",
+      imgUrl: "0007.png",
+      wordExample: "Еджэ",
+      translationsMap: { ar: "يقرأ", en: "Reads", he: "קורא" },
+    },
+    {
+      letter: "Ж",
+      imgUrl: "0022.png",
+      wordExample: "Жэ",
+      translationsMap: { ar: "فم", en: "Mouth", he: "פה" },
+    },
+    {
+      letter: "ЖЪ",
+      imgUrl: "0055.png",
+      wordExample: "Жъапхъэ",
+      translationsMap: { ar: "مقلاة", en: "Frying pan", he: "מחבת" },
+    },
+    {
+      letter: "ЖЬ",
+      imgUrl: "0050.png",
+      wordExample: "Жьыбгъэ",
+      translationsMap: { ar: "ريح", en: "Wind", he: "רוח" },
+    },
+    {
+      letter: "З з",
+      imgUrl: "0015.png",
+      wordExample: "Зы",
+      translationsMap: { ar: "واحد", en: "One", he: "אחד" },
+    },
+    {
+      letter: "И и",
+      imgUrl: "0006.png",
+      wordExample: "Иныжъ",
+      translationsMap: { ar: "عملاق", en: "Giant", he: "ענק" },
+    },
+    {
+      letter: "Й й",
+      imgUrl: "0038.png",
+      wordExample: "Пцэжъый",
+      translationsMap: { ar: "سمكه", en: "Fish", he: "דג" },
+    },
+    {
+      letter: "К к",
+      imgUrl: "0010.png",
+      wordExample: "Коцы",
+      translationsMap: { ar: "قمح", en: "Wheat", he: "חיטה" },
+    },
+    {
+      letter: "КЪ къ",
+      imgUrl: "0049.png",
+      wordExample: "Къамэ",
+      translationsMap: { ar: "قامة – خنجر", en: "Dagger", he: "חרב קטן" },
+    },
+    {
+      letter: "КI кI",
+      imgUrl: "0040.png",
+      wordExample: "КIэ",
+      translationsMap: { ar: "ذيل", en: "Tail", he: "זנב" },
+    },
+    {
+      letter: "Л л",
+      imgUrl: "0062.png",
+      wordExample: "Лы",
+      translationsMap: { ar: "لحم", en: "Meat", he: "בשר" },
+    },
+    {
+      letter: "ЛЪ лъ",
+      imgUrl: "0028.png",
+      wordExample: "Лъакъо",
+      translationsMap: { ar: "رجل", en: "Leg", he: "רגל" },
+    },
+    {
+      letter: "М м",
+      imgUrl: "0002.png",
+      wordExample: "Мышъэ",
+      translationsMap: { ar: "دب", en: "Bear", he: "דוב" },
+    },
+    {
+      letter: "Н н",
+      imgUrl: "0043.png",
+      wordExample: "Натрыф",
+      translationsMap: { ar: "ذرة", en: "Corn", he: "תירס" },
+    },
+    {
+      letter: "О о",
+      imgUrl: "0009.png",
+      wordExample: "Осы",
+      translationsMap: { ar: "ثلج", en: "Snow", he: "שלג" },
+    },
+    {
+      letter: "П п",
+      imgUrl: "0039.png",
+      wordExample: "Пыжъы",
+      translationsMap: { ar: "قنفذ", en: "Hedgehog", he: "קיפוד" },
+    },
+    {
+      letter: "ПI пI",
+      imgUrl: "0019.png",
+      wordExample: "ПIэ",
+      translationsMap: { ar: "فراش", en: "Butterfly", he: "פרפר" },
+    },
+    {
+      letter: "Р р",
+      imgUrl: "0059.png",
+      wordExample: "Хъурай",
+      translationsMap: { ar: "دائرة", en: "Circle", he: "מעגל" },
+    },
+    {
+      letter: "С с",
+      imgUrl: "0004.png",
+      wordExample: "Санэ",
+      translationsMap: { ar: "عنب", en: "Grapes", he: "ענבים" },
+    },
+    {
+      letter: "Т т",
+      imgUrl: "0013.png",
+      wordExample: "Tыгъужъ",
+      translationsMap: { ar: "ذئب", en: "Wolf", he: "זאב" },
+    },
+    {
+      letter: "ТI тI",
+      imgUrl: "0036.png",
+      wordExample: "ТIы",
+      translationsMap: { ar: "كبش", en: "Ram", he: "כבש" },
+    },
+    {
+      letter: "У у",
+      imgUrl: "0008.png",
+      wordExample: "Унэ",
+      translationsMap: { ar: "بيت", en: "House", he: "בית" },
+    },
+    {
+      letter: "Ф ф",
+      imgUrl: "0037.png",
+      wordExample: "Фыжьы",
+      translationsMap: { ar: "أبيض", en: "White", he: "לבן" },
+    },
+    {
+      letter: "Х х",
+      imgUrl: "0016.png",
+      wordExample: "Хы",
+      translationsMap: { ar: "ستة", en: "Six", he: "שש" },
+    },
+    {
+      letter: "ХЪ хъ",
+      imgUrl: "0018.png",
+      wordExample: "Хъагъэ",
+      translationsMap: { ar: "شبكة/ مطرز", en: "Net/Embroidered", he: "רשת/רקמה" },
+    },
+    {
+      letter: "ХЬ хь",
+      imgUrl: "0020.png",
+      wordExample: "Хьэ",
+      translationsMap: { ar: "كلب", en: "Dog", he: "כלב" },
+    },
+    {
+      letter: "Ц ц",
+      imgUrl: "0063.png",
+      wordExample: "Цыгъо",
+      translationsMap: { ar: "فار", en: "Mouse", he: "עכבר" },
+    },
+    {
+      letter: "ЦӀ цI",
+      imgUrl: "0025.png",
+      wordExample: "ЦӀыргъ",
+      translationsMap: { ar: "حلزون", en: "Snail", he: "חלזון" },
+    },
+    {
+      letter: "Ч ч",
+      imgUrl: "0046.png",
+      wordExample: "Чэркеся",
+      translationsMap: { ar: "شركيسيا", en: "Circassia", he: "צ'רקסיה" },
+    },
+    {
+      letter: "ЧЪ чъ",
+      imgUrl: "0053.png",
+      wordExample: "Чъыгы",
+      translationsMap: { ar: "شجره", en: "Tree", he: "עץ" },
+    },
+    {
+      letter: "ЧӀ чI",
+      imgUrl: "0031.png",
+      wordExample: "ЧӀы",
+      translationsMap: { ar: "أرض", en: "Earth", he: "אדמה" },
+    },
+    {
+      letter: "Ш ш",
+      imgUrl: "0011.png",
+      wordExample: "Шы",
+      translationsMap: { ar: "حصان", en: "Horse", he: "סוס" },
+    },
+    {
+      letter: "ШЪ шъ",
+      imgUrl: "0100.png",
+      wordExample: "Шъэ",
+      translationsMap: { ar: "مئه", en: "Hundred", he: "מאה" },
+    },
+    {
+      letter: "Щ щ",
+      imgUrl: "0014.png",
+      wordExample: "Щэ",
+      translationsMap: { ar: "حليب", en: "Milk", he: "חלב" },
+    },
+    {
+      letter: "Ы ы",
+      imgUrl: "0005.png",
+      wordExample: "Сыд",
+      translationsMap: { ar: "ماذا", en: "What", he: "מה" },
+    },
+    {
+      letter: "Э э",
+      imgUrl: "0003.png",
+      wordExample: "Iэ",
+      translationsMap: { ar: "يد", en: "Hand", he: "יד" },
+    },
+    {
+      letter: "Я я",
+      imgUrl: "0023.png",
+      wordExample: "ЯтIэ",
+      translationsMap: { ar: "تراب", en: "Dust", he: "אבק" },
+    },
+    {
+      letter: "I I",
+      imgUrl: "0012.png",
+      wordExample: "Iанэ",
+      translationsMap: { ar: "طاولة", en: "Table", he: "שולחן" },
+    },
+  ];
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\0_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -96,32 +358,55 @@ export function Lesson_0_1() {
 }
 
 export function Lesson_0_2() {
-  const data: string[][] = [
-    ["А а", "0061.png", "Атакъэ", "ديك", "Rooster", "תרנגול"],
-    ["О о", "0009.png", "Осы", "ثلج", "Snow", "שלג"],
-    ["Э э", "0003.png", "Iэ", "يد", "Hand", "יד"],
-    ["Ы ы", "0005.png", "Сыд", "ماذا", "What", "מה"],
-    ["У у", "0008.png", "Унэ", "بيت", "House", "בית"],
-    ["И и", "0006.png", "Иныжъ", "عملاق", "Giant", "ענק"],
-    ["Е е", "0007.png", "Еджэ", "يقرأ", "Reading", "קורא"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "А а",
+      imgUrl: "0061.png",
+      wordExample: "Атакъэ",
+      translationsMap: { ar: "ديك", en: "Rooster", he: "תרנגול" },
+    },
+    {
+      letter: "О о",
+      imgUrl: "0009.png",
+      wordExample: "Осы",
+      translationsMap: { ar: "ثلج", en: "Snow", he: "שלג" },
+    },
+    {
+      letter: "Э э",
+      imgUrl: "0003.png",
+      wordExample: "Iэ",
+      translationsMap: { ar: "يد", en: "Hand", he: "יד" },
+    },
+    {
+      letter: "Ы ы",
+      imgUrl: "0005.png",
+      wordExample: "Сыд",
+      translationsMap: { ar: "ماذا", en: "What", he: "מה" },
+    },
+    {
+      letter: "У у",
+      imgUrl: "0008.png",
+      wordExample: "Унэ",
+      translationsMap: { ar: "بيت", en: "House", he: "בית" },
+    },
+    {
+      letter: "И и",
+      imgUrl: "0006.png",
+      wordExample: "Иныжъ",
+      translationsMap: { ar: "عملاق", en: "Giant", he: "ענק" },
+    },
+    {
+      letter: "Е е",
+      imgUrl: "0007.png",
+      wordExample: "Еджэ",
+      translationsMap: { ar: "يقرأ", en: "Reading", he: "קורא" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\1_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -131,27 +416,25 @@ export function Lesson_0_2() {
 }
 
 export function Lesson_0_2b() {
-  const data: string[][] = [
-    ["М м", "0002.png", "Мышъэ", "دب", "Bear", "דוב"],
-    ["С с", "0004.png", "Санэ", "عنب", "Grapes", "ענבים"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "М м",
+      imgUrl: "0002.png",
+      wordExample: "Мышъэ",
+      translationsMap: { ar: "دب", en: "Bear", he: "דוב" },
+    },
+    {
+      letter: "С с",
+      imgUrl: "0004.png",
+      wordExample: "Санэ",
+      translationsMap: { ar: "عنب", en: "Grapes", he: "ענבים" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\1_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -161,7 +444,7 @@ export function Lesson_0_2b() {
 }
 
 export function Lesson_0_3() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "О-сы", ar: "ثلج", en: "Snow", he: "שלג" },
       { cir: "Уа-сэ", ar: "سعر", en: "Price", he: "מחיר" },
@@ -188,22 +471,10 @@ export function Lesson_0_3() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\1_3.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -213,28 +484,31 @@ export function Lesson_0_3() {
 }
 
 export function Lesson_0_4() {
-  const data: string[][] = [
-    ["К к", "0010.png", "Коцы", "قمح", "Wheat", "חיטה"],
-    ["Т т", "0013.png", "Tыгъужъ", "ذئب", "Wolf", "זאב"],
-    ["I I", "0012.png", "Iанэ", "طاولة", "Table", "שולחן"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "К к",
+      imgUrl: "0010.png",
+      wordExample: "Коцы",
+      translationsMap: { ar: "قمح", en: "Wheat", he: "חיטה" },
+    },
+    {
+      letter: "Т т",
+      imgUrl: "0013.png",
+      wordExample: "Tыгъужъ",
+      translationsMap: { ar: "ذئب", en: "Wolf", he: "זאב" },
+    },
+    {
+      letter: "I I",
+      imgUrl: "0012.png",
+      wordExample: "Iанэ",
+      translationsMap: { ar: "طاولة", en: "Table", he: "שולחן" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\2_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -244,7 +518,7 @@ export function Lesson_0_4() {
 }
 
 export function Lesson_0_5() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Тат", ar: "أب", en: "Father", he: "אבא" },
       { cir: "Тет", ar: "موجود على / أبينا", en: "Is on / Our father", he: "יש על / אבינו" },
@@ -276,22 +550,10 @@ export function Lesson_0_5() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\2_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -301,27 +563,25 @@ export function Lesson_0_5() {
 }
 
 export function Lesson_0_6() {
-  const data: string[][] = [
-    ["Ш ш", "0011.png", "Шы", "حصان / أَخ", "Horse", "סוס"],
-    ["Щ щ", "0014.png", "Щэ", "حليب", "Milk", "חלב"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "Ш ш",
+      imgUrl: "0011.png",
+      wordExample: "Шы",
+      translationsMap: { ar: "حصان / أَخ", en: "Horse", he: "סוס" },
+    },
+    {
+      letter: "Щ щ",
+      imgUrl: "0014.png",
+      wordExample: "Щэ",
+      translationsMap: { ar: "حليب", en: "Milk", he: "חלב" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\3_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -331,7 +591,7 @@ export function Lesson_0_6() {
 }
 
 export function Lesson_0_7() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Шы", ar: "حصان / أَخ", en: "Horse", he: "סוס" },
       { cir: "Шэ", ar: "دَسَم", en: "Milk", he: "חלב" },
@@ -358,22 +618,10 @@ export function Lesson_0_7() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\3_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -383,27 +631,25 @@ export function Lesson_0_7() {
 }
 
 export function Lesson_0_8() {
-  const data: string[][] = [
-    ["Я я", "0023.png", "ЯтIэ", "تراب", "Dust", "אבק"],
-    ["Й й", "0038.png", "Пцэжъый", "سمكه", "Fish", "דג"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "Я я",
+      imgUrl: "0023.png",
+      wordExample: "ЯтIэ",
+      translationsMap: { ar: "تراب", en: "Dust", he: "אבק" },
+    },
+    {
+      letter: "Й й",
+      imgUrl: "0038.png",
+      wordExample: "Пцэжъый",
+      translationsMap: { ar: "سمكه", en: "Fish", he: "דג" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\4_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -413,10 +659,10 @@ export function Lesson_0_8() {
 }
 
 export function Lesson_0_9() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Я-е", ar: "سمين جدًا / اسطوانة", en: "Very fat / Cylinder", he: "מאוד שמן / גליל" },
-      { cir: "Сай", ar: "ثوب نسائي أديغي", en: "Lady dress" },
+      { cir: "Сай", ar: "ثوب نسائي أديغي", en: "Lady dress", he: "שמלת גברת" },
       { cir: "С-ят", ar: "أَبي", en: "My father", he: "אבי" },
       { cir: "ЯI", ar: "لديهم", en: "They have", he: "יש להם" },
     ],
@@ -440,22 +686,10 @@ export function Lesson_0_9() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\4_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -465,28 +699,31 @@ export function Lesson_0_9() {
 }
 
 export function Lesson_0_10() {
-  const data: string[][] = [
-    ["П п", "0039.png", "Пыжъы", "قُنفذ", "Hedgehog", "קיפוד"],
-    ["Р р", "0059.png", "Хъурай", "دائرة", "Circle", "מעגל"],
-    ["Н н", "0043.png", "Натрыф", "ذرة", "Corn", "תירס"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "П п",
+      imgUrl: "0039.png",
+      wordExample: "Пыжъы",
+      translationsMap: { ar: "قُنفذ", en: "Hedgehog", he: "קיפוד" },
+    },
+    {
+      letter: "Р р",
+      imgUrl: "0059.png",
+      wordExample: "Хъурай",
+      translationsMap: { ar: "دائرة", en: "Circle", he: "מעגל" },
+    },
+    {
+      letter: "Н н",
+      imgUrl: "0043.png",
+      wordExample: "Натрыф",
+      translationsMap: { ar: "ذرة", en: "Corn", he: "תירס" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\5_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -496,7 +733,7 @@ export function Lesson_0_10() {
 }
 
 export function Lesson_0_11() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "На-сып", ar: "ناسب (اسم)", en: "Nasip (name)", he: "נאסיפ (שם)" },
       {
@@ -532,22 +769,10 @@ export function Lesson_0_11() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\5_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -557,27 +782,25 @@ export function Lesson_0_11() {
 }
 
 export function Lesson_0_12() {
-  const data: string[][] = [
-    ["З з", "0015.png", "Зы", "واحد", "One", "אחד"],
-    ["Х х", "0016.png", "Хы", "ستة", "Six", "שש"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "З з",
+      imgUrl: "0015.png",
+      wordExample: "Зы",
+      translationsMap: { ar: "واحد", en: "One", he: "אחד" },
+    },
+    {
+      letter: "Х х",
+      imgUrl: "0016.png",
+      wordExample: "Хы",
+      translationsMap: { ar: "ستة", en: "Six", he: "שש" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\6_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -587,7 +810,7 @@ export function Lesson_0_12() {
 }
 
 export function Lesson_0_13() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Мэ-зы", ar: "غابه", en: "Forest", he: "יער" },
       { cir: "Ма-зэ", ar: "مازة (اسم) / قمر", en: "Maza (name) / Moon", he: "מאזה (שם) / ירח" },
@@ -619,22 +842,10 @@ export function Lesson_0_13() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\6_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -644,27 +855,25 @@ export function Lesson_0_13() {
 }
 
 export function Lesson_0_14() {
-  const data: string[][] = [
-    ["Ч ч", "0046.png", "Чэркеся", "شركسيا", "Circassia", "צ'רקסיה"],
-    ["Ц ц", "0063.png", "Цыгъо", "فأر", "Mouse", "עכבר"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "Ч ч",
+      imgUrl: "0046.png",
+      wordExample: "Чэркеся",
+      translationsMap: { ar: "شركسيا", en: "Circassia", he: "צ'רקסיה" },
+    },
+    {
+      letter: "Ц ц",
+      imgUrl: "0063.png",
+      wordExample: "Цыгъо",
+      translationsMap: { ar: "فأر", en: "Mouse", he: "עכבר" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\7_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -674,7 +883,7 @@ export function Lesson_0_14() {
 }
 
 export function Lesson_0_15() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Цу", ar: "ثور", en: "Bull", he: "שור" },
       { cir: "Цо", ar: "-----", en: "-----", he: "-----" },
@@ -684,22 +893,10 @@ export function Lesson_0_15() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\7_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -709,7 +906,7 @@ export function Lesson_0_15() {
 }
 
 export function Lesson_0_16() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Чэ-мы", ar: "بقرة", en: "Cow", he: "פרה" },
       { cir: "Апч", ar: "زجاج", en: "Glass", he: "זכוכית" },
@@ -736,22 +933,10 @@ export function Lesson_0_16() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\7_3.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -761,27 +946,25 @@ export function Lesson_0_16() {
 }
 
 export function Lesson_0_17() {
-  const data: string[][] = [
-    ["Д д", "0057.png", "Дэ", "جوز", "Nut", "אגוז"],
-    ["Л л", "0062.png", "Лы", "لحم", "Meat", "בשר"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "Д д",
+      imgUrl: "0017.png",
+      wordExample: "Дэ",
+      translationsMap: { ar: "جوز", en: "Nut", he: "אגוז" },
+    },
+    {
+      letter: "Л л",
+      imgUrl: "0018.png",
+      wordExample: "Лы",
+      translationsMap: { ar: "لحم", en: "Meat", he: "בשר" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\\8_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -791,7 +974,7 @@ export function Lesson_0_17() {
 }
 
 export function Lesson_0_18() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Да-хэ", ar: "جميل", en: "Beautiful", he: "יפה" },
       {
@@ -833,22 +1016,10 @@ export function Lesson_0_18() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\\8_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -858,27 +1029,25 @@ export function Lesson_0_18() {
 }
 
 export function Lesson_0_19() {
-  const data: string[][] = [
-    ["Б б", "0026.png", "Блэ", "أفعى", "Snake", "נחש"],
-    ["Г г", "0045.png", "Адыгаер", "الأديغاية", "Adygea", "אדיגיה"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "Б б",
+      imgUrl: "0026.png",
+      wordExample: "Блэ",
+      translationsMap: { ar: "أفعى", en: "Snake", he: "נחש" },
+    },
+    {
+      letter: "Г г",
+      imgUrl: "0045.png",
+      wordExample: "Адыгаер",
+      translationsMap: { ar: "الأديغاية", en: "Adygea", he: "אדיגיה" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\\9_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -888,7 +1057,7 @@ export function Lesson_0_19() {
 }
 
 export function Lesson_0_20() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Гу", ar: "قلب", en: "Heart", he: "לב" },
       { cir: "Го", ar: "-----", en: "-----", he: "-----" },
@@ -897,22 +1066,10 @@ export function Lesson_0_20() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\\9_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -922,7 +1079,7 @@ export function Lesson_0_20() {
 }
 
 export function Lesson_0_21() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Бэщ", ar: "عصا", en: "Stick", he: "מקל" },
       { cir: "Бын", ar: "أبناء", en: "Sons", he: "בנים" },
@@ -942,29 +1099,17 @@ export function Lesson_0_21() {
       { cir: "Гу-пшыс", ar: "فكرة", en: "Idea", he: "רעיון" },
     ],
     [
-      { cir: "Бгы", ar: "خصر", en: "Waist" },
+      { cir: "Бгы", ar: "خصر", en: "Waist", he: "מותן" },
       { cir: "Гырз", ar: "ارتجاج / صوت الرعد", en: "Concussion / Thunder", he: "אידם / רעם" },
       { cir: "Го-гон", ar: "ابريق", en: "Teapot", he: "קנקן" },
       { cir: "Гы-ны", ar: "بارود", en: "Gunpowder", he: "פודרה" },
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\\9_3.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -974,27 +1119,25 @@ export function Lesson_0_21() {
 }
 
 export function Lesson_0_22() {
-  const data: string[][] = [
-    ["Ж ж", "0022.png", "Жэ", "فم", "Mouth", "פה"],
-    ["Ф ф", "0037.png", "Фыжьы", "أبيض", "White", "לבן"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "Ж ж",
+      imgUrl: "0022.png",
+      wordExample: "Жэ",
+      translationsMap: { ar: "فم", en: "Mouth", he: "פה" },
+    },
+    {
+      letter: "Ф ф",
+      imgUrl: "0037.png",
+      wordExample: "Фыжьы",
+      translationsMap: { ar: "أبيض", en: "White", he: "לבן" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\10_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1004,7 +1147,7 @@ export function Lesson_0_22() {
 }
 
 export function Lesson_0_23() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       {
         cir: "Жа-нэ",
@@ -1012,7 +1155,7 @@ export function Lesson_0_23() {
         en: "Zhane (Adyghe tribe)",
         he: "ז'אנה (שבט אדיגי)",
       },
-      { cir: "Жэ-ры-Iу", ar: "شفهي", en: "Oral" },
+      { cir: "Жэ-ры-Iу", ar: "شفهي", en: "Oral", he: "פה" },
       {
         cir: "Жа-бзэ",
         ar: "كلام / اللغة المحكية",
@@ -1051,22 +1194,10 @@ export function Lesson_0_23() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\10_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1076,24 +1207,19 @@ export function Lesson_0_23() {
 }
 
 export function Lesson_0_24() {
-  const data: string[][] = [["В в", "0029.png", "Витамин", "فيتامين", "Vitamin", "ויטמין"]];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "В в",
+      imgUrl: "0029.png",
+      wordExample: "Витамин",
+      translationsMap: { ar: "فيتامين", en: "Vitamin", he: "ויטמין" },
+    },
+  ];
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\11_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1103,7 +1229,7 @@ export function Lesson_0_24() {
 }
 
 export function Lesson_0_25() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Ви-рус", ar: "فايروس", en: "Virus", he: "וירוס" },
       { cir: "Ви-за", ar: "تأشيرة", en: "Visa", he: "ויזה" },
@@ -1112,22 +1238,10 @@ export function Lesson_0_25() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\11_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1137,27 +1251,25 @@ export function Lesson_0_25() {
 }
 
 export function Lesson_0_26() {
-  const data: string[][] = [
-    ["КЪ къ", "0049.png", "Къамэ", "قامة / الخنجر الأدغي القفقاسي", "Dagger", "חרב"],
-    ["КI кI", "0040.png", "КIэ", "ذيل", "Tail", "זנב"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "КЪ къ",
+      imgUrl: "0049.png",
+      wordExample: "Къамэ",
+      translationsMap: { ar: "قامة / الخنجر الأدغي القفقاسي", en: "Dagger", he: "חרב" },
+    },
+    {
+      letter: "КI кI",
+      imgUrl: "0040.png",
+      wordExample: "КIэ",
+      translationsMap: { ar: "ذيل", en: "Tail", he: "זנב" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\12_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1167,7 +1279,7 @@ export function Lesson_0_26() {
 }
 
 export function Lesson_0_27() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "КIу", ar: "إمشي", en: "Walk", he: "הליכה" },
       { cir: "КIо", ar: "طريقة مشي", en: "Walking method", he: "שיטת הליכה" },
@@ -1176,22 +1288,10 @@ export function Lesson_0_27() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\12_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1201,7 +1301,7 @@ export function Lesson_0_27() {
 }
 
 export function Lesson_0_28() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Ма-къэ", ar: "صوت", en: "Sound", he: "קול" },
       { cir: "Къэ-Iу", ar: "مسموع", en: "Audible", he: "נשמע" },
@@ -1233,22 +1333,10 @@ export function Lesson_0_28() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\12_3.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1258,27 +1346,25 @@ export function Lesson_0_28() {
 }
 
 export function Lesson_0_29() {
-  const data: string[][] = [
-    ["ДЖ дж", "0041.png", "Джэмышх", "ملعقة", "Spoon", "כף"],
-    ["ГЪ гъ", "0048.png", "Гъэмаф", "صيف", "summer", "קיץ"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ДЖ дж",
+      imgUrl: "0041.png",
+      wordExample: "Джэмышх",
+      translationsMap: { ar: "ملعقة", en: "Spoon", he: "כף" },
+    },
+    {
+      letter: "ГЪ гъ",
+      imgUrl: "0048.png",
+      wordExample: "Гъэмаф",
+      translationsMap: { ar: "صيف", en: "summer", he: "קיץ" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\13_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1288,7 +1374,7 @@ export function Lesson_0_29() {
 }
 
 export function Lesson_0_30() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Джа-нэ", ar: "قميص / ثوب", en: "Shirt", he: "חולצה" },
       { cir: "Къуа-джэ", ar: "قرية", en: "Village", he: "כפר" },
@@ -1315,22 +1401,10 @@ export function Lesson_0_30() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\13_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1340,27 +1414,25 @@ export function Lesson_0_30() {
 }
 
 export function Lesson_0_31() {
-  const data: string[][] = [
-    ["ХЬ хь", "0020.png", "Хьэ", "كلب", "Dog", "כלב"],
-    ["ХЪ хъ", "0018.png", "Хъагъэ", "زخرفة/ شبكة", "Net/Embroidered", "רשת/מרורק"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ХЬ хь",
+      imgUrl: "0020.png",
+      wordExample: "Хьэ",
+      translationsMap: { ar: "كلب", en: "Dog", he: "כלב" },
+    },
+    {
+      letter: "ХЪ хъ",
+      imgUrl: "0018.png",
+      wordExample: "Хъагъэ",
+      translationsMap: { ar: "زخرفة/ شبكة", en: "Net/Embroidered", he: "רשת/מרורק" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\14_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1370,7 +1442,7 @@ export function Lesson_0_31() {
 }
 
 export function Lesson_0_32() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Хьа-кIэ", ar: "ضيف", en: "Guest", he: "אורח" },
       { cir: "Тхьа-мыкI", ar: "مسكين", en: "Poor", he: "עני" },
@@ -1397,22 +1469,10 @@ export function Lesson_0_32() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ En: cell.en, Ar: cell.ar }}
-        />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\14_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1422,24 +1482,25 @@ export function Lesson_0_32() {
 }
 
 export function Lesson_0_33() {
-  const data: string[][] = [["ЛЪ лъ", "0028.png", "Лъакъо", "رِجْل", "Leg", "רגל"]];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell key={letter} firstRow={letter} />,
-      <LessonTableCell key={letter} imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ЛЪ лъ",
+      imgUrl: "0028.png",
+      wordExample: "Лъакъо",
+      translationsMap: { ar: "رِجْل", en: "Leg", he: "רגל" },
+    },
+    {
+      letter: "ЛЬ ль",
+      imgUrl: "0027.png",
+      wordExample: "Льы",
+      translationsMap: { ar: "دم", en: "Blood", he: "דם" },
+    },
+  ];
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\15_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1449,7 +1510,7 @@ export function Lesson_0_33() {
 }
 
 export function Lesson_0_34() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Лъы", ar: "دم", en: "Blood", he: "דם" },
       { cir: "Тхылъ", ar: "كتاب", en: "Book", he: "ספר" },
@@ -1464,18 +1525,10 @@ export function Lesson_0_34() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\15_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1485,27 +1538,25 @@ export function Lesson_0_34() {
 }
 
 export function Lesson_0_35() {
-  const data: string[][] = [
-    ["ЖЬ жь", "0050.png", "Жьыбгъэ", "ريح", "Wind", "רוח"],
-    ["ЖЪ жъ", "0055.png", "Жъапхъэ", "مقلاة", "Frying pan", "מחבת"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ЖЬ жь",
+      imgUrl: "0050.png",
+      wordExample: "Жьыбгъэ",
+      translationsMap: { ar: "ريح", en: "Wind", he: "רוח" },
+    },
+    {
+      letter: "ЖЪ жъ",
+      imgUrl: "0055.png",
+      wordExample: "Жъапхъэ",
+      translationsMap: { ar: "مقلاة", en: "Frying pan", he: "מחבת" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell firstRow={letter} />,
-      <LessonTableCell imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\16_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1515,7 +1566,7 @@ export function Lesson_0_35() {
 }
 
 export function Lesson_0_36() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Жъу", ar: "محروث", en: "Plowed", he: "חרוש" },
       { cir: "Жъо", ar: "جمر", en: "Embers", he: "גחלים" },
@@ -1524,18 +1575,10 @@ export function Lesson_0_36() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\16_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1545,7 +1588,7 @@ export function Lesson_0_36() {
 }
 
 export function Lesson_0_37() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Жьы-бгъэ", ar: "ريح", en: "Wind", he: "רוח" },
       { cir: "Фы-жьы", ar: "أبيض", en: "White", he: "לבן" },
@@ -1572,18 +1615,10 @@ export function Lesson_0_37() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\16_3.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1593,27 +1628,25 @@ export function Lesson_0_37() {
 }
 
 export function Lesson_0_38() {
-  const data: string[][] = [
-    ["ШЪ шъ", "0100.png", "Шъэ", "مائة", "Hundred", "מאה"],
-    ["ШI шI", "0017.png", "ПшIы", "عشرة", "Ten", "עשרה"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ШЪ шъ",
+      imgUrl: "0100.png",
+      wordExample: "Шъэ",
+      translationsMap: { ar: "مائة", en: "Hundred", he: "מאה" },
+    },
+    {
+      letter: "ШI шI",
+      imgUrl: "0017.png",
+      wordExample: "ПшIы",
+      translationsMap: { ar: "عشرة", en: "Ten", he: "עשרה" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell firstRow={letter} />,
-      <LessonTableCell imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\17_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1623,7 +1656,7 @@ export function Lesson_0_38() {
 }
 
 export function Lesson_0_39() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Шъу", ar: "لون", en: "Color", he: "צבע" },
       { cir: "Шъо", ar: "أنتم", en: "You", he: "אתם" },
@@ -1632,18 +1665,10 @@ export function Lesson_0_39() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\17_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1653,7 +1678,7 @@ export function Lesson_0_39() {
 }
 
 export function Lesson_0_40() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "ШIу", ar: "خير", en: "Good", he: "טוב" },
       { cir: "ШIо", ar: "قولوا", en: "Say", he: "אמרו" },
@@ -1662,18 +1687,10 @@ export function Lesson_0_40() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\17_3.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1683,7 +1700,7 @@ export function Lesson_0_40() {
 }
 
 export function Lesson_0_41() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Шъа-о", ar: "ولد / عريس", en: "lad", he: "נער" },
       { cir: "Пшъа-шъэ", ar: "بنت", en: "girl", he: "ילדה" },
@@ -1715,18 +1732,10 @@ export function Lesson_0_41() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\17_4.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1736,24 +1745,19 @@ export function Lesson_0_41() {
 }
 
 export function Lesson_0_42() {
-  const data: string[][] = [["ЦI цI", "0025.png", "Цъыргъ", "حلزون", "Snail", "חלמיש"]];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell firstRow={letter} />,
-      <LessonTableCell imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ЦI цI",
+      imgUrl: "0025.png",
+      wordExample: "Цъыргъ",
+      translationsMap: { ar: "حلزون", en: "Snail", he: "חלמיש" },
+    },
+  ];
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\18_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1763,7 +1767,7 @@ export function Lesson_0_42() {
 }
 
 export function Lesson_0_43() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "ЦIы-кIу", ar: "صغير", en: "Small", he: "קטן" },
       { cir: "ШIу-цIэ", ar: "أسود", en: "Black", he: "שחור" },
@@ -1778,18 +1782,10 @@ export function Lesson_0_43() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\18_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1799,27 +1795,25 @@ export function Lesson_0_43() {
 }
 
 export function Lesson_0_44() {
-  const data: string[][] = [
-    ["ЧЪ чъ", "0053.png", "Чъыгы", "شجرة", "Tree", "עץ"],
-    ["ЧӀ чI", "0031.png", "ЧӀы", "أرض", "Earth", "אדמה"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ЧЪ чъ",
+      imgUrl: "0053.png",
+      wordExample: "Чъыгы",
+      translationsMap: { ar: "شجرة", en: "Tree", he: "עץ" },
+    },
+    {
+      letter: "ЧӀ чI",
+      imgUrl: "0031.png",
+      wordExample: "ЧӀы",
+      translationsMap: { ar: "أرض", en: "Earth", he: "אדמה" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell firstRow={letter} />,
-      <LessonTableCell imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\19_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1829,7 +1823,7 @@ export function Lesson_0_44() {
 }
 
 export function Lesson_0_45() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Чъа-гъэ", ar: "ركض", en: "Ran", he: "רץ" },
       { cir: "Чъы-е", ar: "نوم", en: "Sleep", he: "שינה" },
@@ -1856,18 +1850,10 @@ export function Lesson_0_45() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\19_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1877,27 +1863,25 @@ export function Lesson_0_45() {
 }
 
 export function Lesson_0_46() {
-  const data: string[][] = [
-    ["ТӀ тI", "0036.png", "ТӀы", "كَبْش", "Ram", "כבש"],
-    ["ПӀ пI", "0019.png", "ПӀэ", "سرير", "Bed", "מיטה"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ТӀ тI",
+      imgUrl: "0036.png",
+      wordExample: "ТӀы",
+      translationsMap: { ar: "كَبْش", en: "Ram", he: "כבש" },
+    },
+    {
+      letter: "ПӀ пI",
+      imgUrl: "0019.png",
+      wordExample: "ПӀэ",
+      translationsMap: { ar: "سرير", en: "Bed", he: "מיטה" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell firstRow={letter} />,
-      <LessonTableCell imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\20_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1907,7 +1891,7 @@ export function Lesson_0_46() {
 }
 
 export function Lesson_0_47() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "Я-тIэ", ar: "التراب", en: "Dust", he: "אבק" },
       { cir: "ТIыс", ar: "اقعد", en: "Sit", he: "שב" },
@@ -1934,18 +1918,10 @@ export function Lesson_0_47() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\20_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={true}
         className=""
         showBackgroundColors={true}
@@ -1955,27 +1931,25 @@ export function Lesson_0_47() {
 }
 
 export function Lesson_0_48() {
-  const data: string[][] = [
-    ["ЛӀ лI", "0056.png", "ЛӀы", "رجل", "Man", "איש"],
-    ["ДЗ дз", "0052.png", "Дзэ", "جيش", "Army", "צבא"],
+  const data: ILetterIntroductionRow[] = [
+    {
+      letter: "ЛӀ лI",
+      imgUrl: "0056.png",
+      wordExample: "ЛӀы",
+      translationsMap: { ar: "رجل", en: "Man", he: "איש" },
+    },
+    {
+      letter: "ДЗ дз",
+      imgUrl: "0052.png",
+      wordExample: "Дзэ",
+      translationsMap: { ar: "جيش", en: "Army", he: "צבא" },
+    },
   ];
-
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
-    return [
-      <LessonTableCell firstRow={letter} />,
-      <LessonTableCell imgUrl={`/lessons/lesson_0/pictures/${imgUrl}`} />,
-      <LessonTableCell
-        secondRow={secondRow}
-        langToTranslationMap={{ En: enTranslation, Ar: arTranslation }}
-      />,
-    ];
-  });
 
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\21_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -1985,7 +1959,7 @@ export function Lesson_0_48() {
 }
 
 export function Lesson_0_49() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "ЛIыжъ", ar: "عجوز", en: "Old-man", he: "זקן" },
       { cir: "ПлIы", ar: "أربعة", en: "Four", he: "ארבע" },
@@ -2017,18 +1991,10 @@ export function Lesson_0_49() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\21_2.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}
@@ -2038,7 +2004,7 @@ export function Lesson_0_49() {
 }
 
 export function Lesson_0_50() {
-  const data = [
+  const data: IExampleInEachLangRow[][] = [
     [
       { cir: "А-ды-га-ер", ar: "الأديغاية", en: "The Adyghean", he: "האדיגית" },
       { cir: "Гу", ar: "قلب", en: "Heart", he: "לב" },
@@ -2087,18 +2053,10 @@ export function Lesson_0_50() {
     ],
   ];
 
-  const contentMatrix: React.ReactNode[][] = data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell firstRow={cell.cir} langToTranslationMap={{ En: cell.en, Ar: cell.ar }} />
-      );
-    });
-  });
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\22_1.mp3">
       <LessonTable
-        contentMatrix={contentMatrix}
+        contentMatrix={convertExampleInEachLangRowToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
         showBackgroundColors={true}

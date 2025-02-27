@@ -11,7 +11,7 @@ export const DEFAULT_SETTINGS: IPreferredSettings = {
   circassianFontSize: 5,
   translationFontSize: 3,
   isTranslationChecked: true,
-  translationLangs: ["En", "Ar"],
+  translationLangs: ["en", "ar"],
 };
 
 export const TEXT_SIZE_MAP: Record<number, string> = {

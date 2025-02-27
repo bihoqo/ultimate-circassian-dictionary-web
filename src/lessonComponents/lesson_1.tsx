@@ -11,8 +11,8 @@ export function Lesson_1_1() {
       characterName: "Данэ",
       originText: "Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?",
       langToTranslationMap: {
-        En: "Good day. My name is Dana. What is your name?",
-        Ar: "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
+        en: "Good day. My name is Dana. What is your name?",
+        ar: "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
       },
     },
     {
@@ -20,8 +20,8 @@ export function Lesson_1_1() {
       characterName: "Сэтэнай",
       originText: "Сэ сцlэр Сэтэнай.",
       langToTranslationMap: {
-        En: "My name is Satenai.",
-        Ar: "ستناي: أنا اسمي ستناي",
+        en: "My name is Satenai.",
+        ar: "ستناي: أنا اسمي ستناي",
       },
     },
     {
@@ -29,8 +29,8 @@ export function Lesson_1_1() {
       characterName: "Данэ",
       originText: "Тыдэ укъикIыра?",
       langToTranslationMap: {
-        En: "From where are you?",
-        Ar: "دانا: من أين أنت؟",
+        en: "From where are you?",
+        ar: "دانا: من أين أنت؟",
       },
     },
     {
@@ -38,8 +38,8 @@ export function Lesson_1_1() {
       characterName: "Сэтэнай",
       originText: "Сэ Мыекъуапэ сыкъекIы.",
       langToTranslationMap: {
-        En: "I am from Maykop.",
-        Ar: "ستناي: أنا من مايكوب.",
+        en: "I am from Maykop.",
+        ar: "ستناي: أنا من مايكوب.",
       },
     },
   ];
@@ -60,8 +60,8 @@ export function Lesson_1_2() {
       characterName: "Нарт",
       originText: "Фэсапщи. Сэ сцIэр Нарт. О сыда пцlэр?",
       langToTranslationMap: {
-        En: "Hello. My name is Nart. What is your name?",
-        Ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
+        en: "Hello. My name is Nart. What is your name?",
+        ar: "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
       },
     },
     {
@@ -69,8 +69,8 @@ export function Lesson_1_2() {
       characterName: "Аслъан",
       originText: "Сэ сцlэр Аслъан.",
       langToTranslationMap: {
-        En: "My name is Aslan.",
-        Ar: "أسلان :  أنا اسمي أسلان.",
+        en: "My name is Aslan.",
+        ar: "أسلان :  أنا اسمي أسلان.",
       },
     },
     {
@@ -78,8 +78,8 @@ export function Lesson_1_2() {
       characterName: "Нарт",
       originText: "Тыдэ укъикIыра, Аслъан?",
       langToTranslationMap: {
-        En: "From where are you Aslan?",
-        Ar: " نارت : من أين أنت أسلان؟",
+        en: "From where are you Aslan?",
+        ar: " نارت : من أين أنت أسلان؟",
       },
     },
     {
@@ -87,8 +87,8 @@ export function Lesson_1_2() {
       characterName: "Аслъан",
       originText: "Сэ Истамбулы сыкъекIы. О тыдэ укъикIыра?",
       langToTranslationMap: {
-        En: "I am from Istanbul. And you?",
-        Ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
+        en: "I am from Istanbul. And you?",
+        ar: "أسلان: أنا من إسطنبول . من أين أنت ؟",
       },
     },
     {
@@ -96,8 +96,8 @@ export function Lesson_1_2() {
       characterName: "Нарт",
       originText: "Сэ Налчыкы сыкъекlы.",
       langToTranslationMap: {
-        En: "I am from Nalchik.",
-        Ar: "نارت : أنا من نالتشيك.",
+        en: "I am from Nalchik.",
+        ar: "نارت : أنا من نالتشيك.",
       },
     },
   ];
@@ -118,8 +118,8 @@ export function Lesson_1_3() {
       characterName: "Нарт",
       originText: "Фэсапщи, сэ сцIэр Нарт, Налчыкы сащыщ.",
       langToTranslationMap: {
-        En: "Hello, my name is Nart, I am from Nalchik.",
-        Ar: "نارت: مرحبا، أنا اسمي نارت، أنا من نالتشيك.",
+        en: "Hello, my name is Nart, I am from Nalchik.",
+        ar: "نارت: مرحبا، أنا اسمي نارت، أنا من نالتشيك.",
       },
     },
     {
@@ -127,8 +127,8 @@ export function Lesson_1_3() {
       characterName: "Аслъан",
       originText: "Къеблагъ, сэ сцIэр Аслъан, Истамбулы сащыщ.",
       langToTranslationMap: {
-        En: "Welcome, my name is Aslan, I am from Istanbul.",
-        Ar: "أسلان: تفضل،  أنا اسمي أسلان، أنا من إسطنبول.",
+        en: "Welcome, my name is Aslan, I am from Istanbul.",
+        ar: "أسلان: تفضل،  أنا اسمي أسلان، أنا من إسطنبول.",
       },
     },
   ];
@@ -150,8 +150,8 @@ export function Lesson_1_4() {
         characterName="Нэрыс"
         originText="Фэсапщи, сэ сцIэр Нэрыс."
         langToTranslationMap={{
-          En: "Hello, my name is Nerys.",
-          Ar: "نَرِس: مرحبا، أنا اسمي نَرِس.",
+          en: "Hello, my name is Nerys.",
+          ar: "نَرِس: مرحبا، أنا اسمي نَرِس.",
         }}
       />
       <LessonDialogBubble
@@ -159,8 +159,8 @@ export function Lesson_1_4() {
         characterName="Заур"
         originText="Къеблагъ, сэ сцIэр Заур."
         langToTranslationMap={{
-          En: "Welcome, my name is Zaur.",
-          Ar: "زاوِر: تفضل،  أنا اسمي زاوِر.",
+          en: "Welcome, my name is Zaur.",
+          ar: "زاوِر: تفضل،  أنا اسمي زاوِر.",
         }}
       />
       <LessonDialogBubble
@@ -168,8 +168,8 @@ export function Lesson_1_4() {
         characterName="Нэрыс"
         originText="Къысфэгъэгъу, сыда пцIэр?"
         langToTranslationMap={{
-          En: "Excuse me, what is your name?",
-          Ar: "نَرِس: عفوا، ما هو اسمك ؟",
+          en: "Excuse me, what is your name?",
+          ar: "نَرِس: عفوا، ما هو اسمك ؟",
         }}
       />
       <LessonDialogBubble
@@ -177,8 +177,8 @@ export function Lesson_1_4() {
         characterName="Заур"
         originText="Заур."
         langToTranslationMap={{
-          En: "Zaur.",
-          Ar: "زاوِر: زاوِر.",
+          en: "Zaur.",
+          ar: "زاوِر: زاوِر.",
         }}
       />
       <LessonDialogBubble
@@ -186,8 +186,8 @@ export function Lesson_1_4() {
         characterName="Нэрыс"
         originText="Уимафэ шIу, Заур."
         langToTranslationMap={{
-          En: "Good day, Zaur.",
-          Ar: "نَرِس: نهارك سعيد، زاوِر.",
+          en: "Good day, Zaur.",
+          ar: "نَرِس: نهارك سعيد، زاوِر.",
         }}
       />
       <LessonDialogBubble
@@ -195,8 +195,8 @@ export function Lesson_1_4() {
         characterName="Заур"
         originText="Уимафэ шIу, Нэрыс."
         langToTranslationMap={{
-          En: "Good day, Nerys.",
-          Ar: "زاوِر: نهارك سعيد، نَرِس.",
+          en: "Good day, Nerys.",
+          ar: "زاوِر: نهارك سعيد، نَرِس.",
         }}
       />
     </PanelDiv>
@@ -211,8 +211,8 @@ export function Lesson_1_5() {
         characterName="lазэ"
         originText="Уипчэдыжь шIу, сэ сцIэр lазэ. Сыда о пцIэр?"
         langToTranslationMap={{
-          En: "Good morning, my name is Laze. What is your name?",
-          Ar: "آزة: صباح الخير، أنا اسمي أزه، ما هو اسمك ؟",
+          en: "Good morning, my name is Laze. What is your name?",
+          ar: "آزة: صباح الخير، أنا اسمي أزه، ما هو اسمك ؟",
         }}
       />
       <LessonDialogBubble
@@ -220,8 +220,8 @@ export function Lesson_1_5() {
         characterName="Нэф"
         originText="Уипчэдыжь шIу, сэ сцIэр Нэф. Тыдэ ущыщ, lаз?"
         langToTranslationMap={{
-          En: "Good morning, my name is Nef. Where are you from, Laze?",
-          Ar: "نَف: صباح الخير، أنا اسمي نَف. من أين أنت أز؟",
+          en: "Good morning, my name is Nef. Where are you from, Laze?",
+          ar: "نَف: صباح الخير، أنا اسمي نَف. من أين أنت أز؟",
         }}
       />
       <LessonDialogBubble
@@ -229,8 +229,8 @@ export function Lesson_1_5() {
         characterName="lазэ"
         originText="Сэ Рихьаныем сыщыщ."
         langToTranslationMap={{
-          En: "I am from Reyhanli.",
-          Ar: "أزه: أنا من الريحانية.",
+          en: "I am from Reyhanli.",
+          ar: "أزه: أنا من الريحانية.",
         }}
       />
     </PanelDiv>
@@ -245,8 +245,8 @@ export function Lesson_1_6() {
         characterName="Блан"
         originText="Тыдэ укъикIыра?"
         langToTranslationMap={{
-          En: "From where are you?",
-          Ar: "من أين أنت؟",
+          en: "From where are you?",
+          ar: "من أين أنت؟",
         }}
       />
       <LessonDialogBubble
@@ -254,8 +254,8 @@ export function Lesson_1_6() {
         characterName="Дэнэф"
         originText="Хэусае сыкъекlы."
         langToTranslationMap={{
-          En: "I am from Khousai.",
-          Ar: "أنا من خهوساي.",
+          en: "I am from Khousai.",
+          ar: "أنا من خهوساي.",
         }}
       />
       <LessonDialogBubble
@@ -263,8 +263,8 @@ export function Lesson_1_6() {
         characterName="Блан"
         originText="Сыда пцIэр?"
         langToTranslationMap={{
-          En: "What is your name?",
-          Ar: "ما هو اسمك؟",
+          en: "What is your name?",
+          ar: "ما هو اسمك؟",
         }}
       />
       <LessonDialogBubble
@@ -272,8 +272,8 @@ export function Lesson_1_6() {
         characterName="Дэнэф"
         originText="lэбрэдж Дэнэф."
         langToTranslationMap={{
-          En: "My name is Abrej Denef.",
-          Ar: "لبزو دنف.",
+          en: "My name is Abrej Denef.",
+          ar: "لبزو دنف.",
         }}
       />
       <LessonDialogBubble
@@ -281,8 +281,8 @@ export function Lesson_1_6() {
         characterName="Блан"
         originText="Сыда бзэу пшlэхэрэр?"
         langToTranslationMap={{
-          En: "What languages do you know?",
-          Ar: "أية لغات تعرف؟",
+          en: "What languages do you know?",
+          ar: "أية لغات تعرف؟",
         }}
       />
       <LessonDialogBubble
@@ -290,8 +290,8 @@ export function Lesson_1_6() {
         characterName="Дэнэф"
         originText="Адыгабзэрэ урысыбзэрэ."
         langToTranslationMap={{
-          En: "Adyghe and Russian.",
-          Ar: "الأديغابزة والروسية.",
+          en: "Adyghe and Russian.",
+          ar: "الأديغابزة والروسية.",
         }}
       />
     </PanelDiv>
@@ -306,8 +306,8 @@ export function Lesson_1_7() {
         characterName="Пэрыт"
         originText="Сэ сцlэр Пэрыт, Хъун Пэрыт."
         langToTranslationMap={{
-          En: "My name is Perit, Khun Perit.",
-          Ar: "برت: أنا اسمي برت،",
+          en: "My name is Perit, Khun Perit.",
+          ar: "برت: أنا اسمي برت،",
         }}
       />
       <LessonDialogBubble
@@ -315,8 +315,8 @@ export function Lesson_1_7() {
         characterName="Пэрыт"
         originText="Сэ Аманы сыщэпсэу"
         langToTranslationMap={{
-          En: "I live in Amman.",
-          Ar: "خُن برت. أنا أعيش في عمان.",
+          en: "I live in Amman.",
+          ar: "خُن برت. أنا أعيش في عمان.",
         }}
       />
       <LessonDialogBubble
@@ -324,8 +324,8 @@ export function Lesson_1_7() {
         characterName="Пэрыт"
         originText="Сэ адыгабзэрэ арапыбзэрэ сэшlэ."
         langToTranslationMap={{
-          En: "I know Adyghe and Arabic.",
-          Ar: "أنا أعرف الأديغية والعربية.",
+          en: "I know Adyghe and Arabic.",
+          ar: "أنا أعرف الأديغية والعربية.",
         }}
       />
     </PanelDiv>
@@ -340,8 +340,8 @@ export function Lesson_1_8() {
         characterName="Разэ"
         originText="Уимафэ шIу, сэ сцIэр Нэфыш Разэ."
         langToTranslationMap={{
-          En: "Good morning, my name is Razé.",
-          Ar: "رازة: نهارك سعيد  ، أنا اسمي رازة.",
+          en: "Good morning, my name is Razé.",
+          ar: "رازة: نهارك سعيد  ، أنا اسمي رازة.",
         }}
       />
       <LessonDialogBubble
@@ -349,8 +349,8 @@ export function Lesson_1_8() {
         characterName="Hypбый"
         originText="Уимафэ шIу. Сэ сцIэр Гъоркlожъ Hypбый."
         langToTranslationMap={{
-          En: "Good morning. My name is Gorkoj Hypбый.",
-          Ar: "نوربي: نهارك سعيد ، أنا اسمي غوركؤج نوربي.",
+          en: "Good morning. My name is Gorkoj Hypбый.",
+          ar: "نوربي: نهارك سعيد ، أنا اسمي غوركؤج نوربي.",
         }}
       />
       <LessonDialogBubble
@@ -358,8 +358,8 @@ export function Lesson_1_8() {
         characterName="Разэ"
         originText="Къысфэгъэгъу, сыдa пцIэр?"
         langToTranslationMap={{
-          En: "Excuse me, what is your name?",
-          Ar: "رازة: عفوا، ما هو اسمك ؟",
+          en: "Excuse me, what is your name?",
+          ar: "رازة: عفوا، ما هو اسمك ؟",
         }}
       />
       <LessonDialogBubble
@@ -367,8 +367,8 @@ export function Lesson_1_8() {
         characterName="Hypбый"
         originText="Гъоркlожъ Hypбый, сэ Дузджэм сыщыщ. О тыдэ ущыщa?"
         langToTranslationMap={{
-          En: "Gorkoj Hypбый, I am from Duzdjem. Where are you from?",
-          Ar: "نوربي: غوركؤج نوربي، أنا من دُزجه، من أين أنت؟",
+          en: "Gorkoj Hypбый, I am from Duzdjem. Where are you from?",
+          ar: "نوربي: غوركؤج نوربي، أنا من دُزجه، من أين أنت؟",
         }}
       />
       <LessonDialogBubble
@@ -376,8 +376,8 @@ export function Lesson_1_8() {
         characterName="Разэ"
         originText="Сэ Iэнкъэрэм сыщыщ."
         langToTranslationMap={{
-          En: "I am from Anqara.",
-          Ar: "رازة: أنا من أنقره.",
+          en: "I am from Anqara.",
+          ar: "رازة: أنا من أنقره.",
         }}
       />
     </PanelDiv>
@@ -392,8 +392,8 @@ export function Lesson_1_9() {
         characterName="Озырмэс"
         originText="Уимафэ шIу, сэ сцIэр Уджыхъу Озырмэс."
         langToTranslationMap={{
-          En: "Good morning, my name is Ujyhu Ozirmes.",
-          Ar: "وَزِرمس: نهارك سعيد  ، أنا اسمي وِجوخ وَزِرمس.",
+          en: "Good morning, my name is Ujyhu Ozirmes.",
+          ar: "وَزِرمس: نهارك سعيد  ، أنا اسمي وِجوخ وَزِرمس.",
         }}
       />
       <LessonDialogBubble
@@ -401,8 +401,8 @@ export function Lesson_1_9() {
         characterName="Чан"
         originText="Уимафэ шIу, ныбджэгъу Озырмэс, Сэ сцIэр Хьэлэо Чан."
         langToTranslationMap={{
-          En: "Good morning, my name is Ujyhu, my name is Heleo Chan.",
-          Ar: "تشان: نهارك سعيد  ، صديقي وِجوخ وَزِرمس. أنا اسمي حَلَوه تشان.",
+          en: "Good morning, my name is Ujyhu, my name is Heleo Chan.",
+          ar: "تشان: نهارك سعيد  ، صديقي وِجوخ وَزِرمس. أنا اسمي حَلَوه تشان.",
         }}
       />
       <LessonDialogBubble
@@ -410,8 +410,8 @@ export function Lesson_1_9() {
         characterName="Озырмэс"
         originText="Тыдэ укъикIыра?"
         langToTranslationMap={{
-          En: "Where are you from?",
-          Ar: "وَزِرمس: من أين أنت؟",
+          en: "Where are you from?",
+          ar: "وَزِرمس: من أين أنت؟",
         }}
       />
       <LessonDialogBubble
@@ -419,8 +419,8 @@ export function Lesson_1_9() {
         characterName="Чан"
         originText="Сэ Пэнэхэсы сыщыщ, оры?"
         langToTranslationMap={{
-          En: "I am from Panakes, and you?",
-          Ar: "تشان: أنا من بنة-خهس. أنت؟",
+          en: "I am from Panakes, and you?",
+          ar: "تشان: أنا من بنة-خهس. أنت؟",
         }}
       />
       <LessonDialogBubble
@@ -428,8 +428,8 @@ export function Lesson_1_9() {
         characterName="Озырмэс"
         originText="ТIуапсэ сыщыщ."
         langToTranslationMap={{
-          En: "I am from Tjwaps.",
-          Ar: "وَزِرمس: أنا من  طوابسه.",
+          en: "I am from Tjwaps.",
+          ar: "وَزِرمس: أنا من  طوابسه.",
         }}
       />
     </PanelDiv>
@@ -444,8 +444,8 @@ export function Lesson_1_10() {
         characterName="Симаз"
         originText="Уипчыхьэ шIу."
         langToTranslationMap={{
-          En: "Good evening.",
-          Ar: "سيماز: مساء الخير.",
+          en: "Good evening.",
+          ar: "سيماز: مساء الخير.",
         }}
       />
       <LessonDialogBubble
@@ -453,8 +453,8 @@ export function Lesson_1_10() {
         characterName="Къазбэч"
         originText="Уипчыхьэ шIу, сэ сцIэр Гъунэжьыкъо Къазбэч."
         langToTranslationMap={{
-          En: "Good evening, my name is Gunéjyko Kъazbэch.",
-          Ar: "قازبَتش: مساء الخير، أنا اسمي غوه-نَجِقوه قربَتش",
+          en: "Good evening, my name is Gunéjyko Kъazbэch.",
+          ar: "قازبَتش: مساء الخير، أنا اسمي غوه-نَجِقوه قربَتش",
         }}
       />
       <LessonDialogBubble
@@ -462,8 +462,8 @@ export function Lesson_1_10() {
         characterName="Симаз"
         originText="Къысфэгъэгъу, сыдa пцIэр?"
         langToTranslationMap={{
-          En: "Excuse me, what is your name?",
-          Ar: "سيماز: عفوا، ما هو اسمك؟",
+          en: "Excuse me, what is your name?",
+          ar: "سيماز: عفوا، ما هو اسمك؟",
         }}
       />
       <LessonDialogBubble
@@ -471,8 +471,8 @@ export function Lesson_1_10() {
         characterName="Къазбэч"
         originText="Гъунэжьыкъо, Гъунэжьыкъо Къазбэч."
         langToTranslationMap={{
-          En: "Gunéjyko, Gunéjyko Kъazbэch.",
-          Ar: "قازبَتش: غوه-نَجِقوه، غوه-نَجِقوه قربَتش.",
+          en: "Gunéjyko, Gunéjyko Kъazbэch.",
+          ar: "قازبَتش: غوه-نَجِقوه، غوه-نَجِقوه قربَتش.",
         }}
       />
       <LessonDialogBubble
@@ -480,8 +480,8 @@ export function Lesson_1_10() {
         characterName="Симаз"
         originText="Сэ сцIэр Симаз, Джантыгъ Симаз."
         langToTranslationMap={{
-          En: "My name is Simaz, Jantig Simaz.",
-          Ar: "سيماز: أنا اسمي سيماز، جانتِغ سيماز.",
+          en: "My name is Simaz, Jantig Simaz.",
+          ar: "سيماز: أنا اسمي سيماز، جانتِغ سيماز.",
         }}
       />
     </PanelDiv>
@@ -496,8 +496,8 @@ export function Lesson_1_11() {
         characterName="Данэ"
         originText="Хэтa мыр ?"
         langToTranslationMap={{
-          En: "Who is this?",
-          Ar: "دانا: من هذا ؟",
+          en: "Who is this?",
+          ar: "دانا: من هذا ؟",
         }}
       />
       <LessonDialogBubble
@@ -505,8 +505,8 @@ export function Lesson_1_11() {
         characterName="Нэфын"
         originText="Мыр Хъут Синэ."
         langToTranslationMap={{
-          En: "This is Khut Sine.",
-          Ar: "نفن: هذا خُت سينه.",
+          en: "This is Khut Sine.",
+          ar: "نفن: هذا خُت سينه.",
         }}
       />
       <LessonDialogBubble
@@ -514,8 +514,8 @@ export function Lesson_1_11() {
         characterName="Данэ"
         originText="Тыдэ ар къикlыра?"
         langToTranslationMap={{
-          En: "Where is it from?",
-          Ar: "دانا: من أين هي  ؟",
+          en: "Where is it from?",
+          ar: "دانا: من أين هي  ؟",
         }}
       />
       <LessonDialogBubble
@@ -523,8 +523,8 @@ export function Lesson_1_11() {
         characterName="Нэфын"
         originText="Ар Нарткъалэ къекlы."
         langToTranslationMap={{
-          En: "It is from Nartkale.",
-          Ar: "نفن: :  إنها من نارتقاله",
+          en: "It is from Nartkale.",
+          ar: "نفن: :  إنها من نارتقاله",
         }}
       />
       <LessonDialogBubble
@@ -532,8 +532,8 @@ export function Lesson_1_11() {
         characterName="Данэ"
         originText="Тыдэ щыl а Нарткъалэp?"
         langToTranslationMap={{
-          En: "Where is Nartkale?",
-          Ar: "دانا: أين تقع نارتقاله؟",
+          en: "Where is Nartkale?",
+          ar: "دانا: أين تقع نارتقاله؟",
         }}
       />
       <LessonDialogBubble
@@ -541,8 +541,8 @@ export function Lesson_1_11() {
         characterName="Нэфын"
         originText="Къэбэртаим ит."
         langToTranslationMap={{
-          En: "It is in Khebertaim.",
-          Ar: "نفن: تقع في القبرتاي.",
+          en: "It is in Khebertaim.",
+          ar: "نفن: تقع في القبرتاي.",
         }}
       />
       <LessonDialogBubble
@@ -550,8 +550,8 @@ export function Lesson_1_11() {
         characterName="Данэ"
         originText="Ар адыгабзэкIэ мэгyщыIа?"
         langToTranslationMap={{
-          En: "Does she speak Adyghe?",
-          Ar: "دانا: هل هي تتحدث الأديغية؟",
+          en: "Does she speak Adyghe?",
+          ar: "دانا: هل هي تتحدث الأديغية؟",
         }}
       />
       <LessonDialogBubble
@@ -559,8 +559,8 @@ export function Lesson_1_11() {
         characterName="Нэфын"
         originText="Ары, ар адыгабзэкIэ мэгyщыIэ."
         langToTranslationMap={{
-          En: "Yes, she speaks Adyghe.",
-          Ar: "نفن: نعم هي تتحدث الاديغية.",
+          en: "Yes, she speaks Adyghe.",
+          ar: "نفن: نعم هي تتحدث الاديغية.",
         }}
       />
     </PanelDiv>
@@ -575,8 +575,8 @@ export function Lesson_1_12() {
         characterName=""
         originText="Адыгэбзэ тхыбзэхэр зэдгъэшlэщтых"
         langToTranslationMap={{
-          En: "We will learn the Adyghe alphabet",
-          Ar: "سنتعلم الأحرف الأديغية",
+          en: "We will learn the Adyghe alphabet",
+          ar: "سنتعلم الأحرف الأديغية",
         }}
       />
 
@@ -655,8 +655,8 @@ export function Lesson_1_13() {
         characterName="Симэ"
         originText="Уипчэдыжь шlу. Сыда плъэкъуацlэр?"
         langToTranslationMap={{
-          En: "Good morning. What is your last name?",
-          Ar: "سيما: صباح الخير. ما هو اسم عائلتك ؟",
+          en: "Good morning. What is your last name?",
+          ar: "سيما: صباح الخير. ما هو اسم عائلتك ؟",
         }}
       />
       <LessonDialogBubble
@@ -664,8 +664,8 @@ export function Lesson_1_13() {
         characterName="Сэтэнай"
         originText="Гъукlэлl."
         langToTranslationMap={{
-          En: "Gutchel.",
-          Ar: "ستناي: غوتشلأ.",
+          en: "Gutchel.",
+          ar: "ستناي: غوتشلأ.",
         }}
       />
       <LessonDialogBubble
@@ -673,8 +673,8 @@ export function Lesson_1_13() {
         characterName="Симэ"
         originText="Сыд? Тащ фэдэу птхыщт?"
         langToTranslationMap={{
-          En: "What? How is it written?",
-          Ar: "سيما: ماذا ؟ كيف تكتب؟",
+          en: "What? How is it written?",
+          ar: "سيما: ماذا ؟ كيف تكتب؟",
         }}
       />
       <LessonDialogBubble
@@ -682,8 +682,8 @@ export function Lesson_1_13() {
         characterName="Сэтэнай"
         originText="Гу - кlэлл"
         langToTranslationMap={{
-          En: "Gu - Chel",
-          Ar: "ستناي: غو-تشلأ.",
+          en: "Gu - Chel",
+          ar: "ستناي: غو-تشلأ.",
         }}
       />
       <LessonDialogBubble
@@ -691,8 +691,8 @@ export function Lesson_1_13() {
         characterName="Симэ"
         originText="Дэгъу. Сыда пцlэр?"
         langToTranslationMap={{
-          En: "Okay. What is your name?",
-          Ar: "سيما: حسنا. ما هو اسمك؟",
+          en: "Okay. What is your name?",
+          ar: "سيما: حسنا. ما هو اسمك؟",
         }}
       />
       <LessonDialogBubble
@@ -700,8 +700,8 @@ export function Lesson_1_13() {
         characterName="Сэтэнай"
         originText="Сэтэнай. Сэ - тэ - най"
         langToTranslationMap={{
-          En: "Setenay. S - T - NAY.",
-          Ar: "ستناي: ستناي. س-ت-ناي",
+          en: "Setenay. S - T - NAY.",
+          ar: "ستناي: ستناي. س-ت-ناي",
         }}
       />
       <LessonDialogBubble
@@ -709,8 +709,8 @@ export function Lesson_1_13() {
         characterName="Симэ"
         originText="Дэгъу. Тыдэ ущыпсэурэ?"
         langToTranslationMap={{
-          En: "Okay. Where do you live?",
-          Ar: "سيما: حسنا. أين تعيش؟",
+          en: "Okay. Where do you live?",
+          ar: "سيما: حسنا. أين تعيش؟",
         }}
       />
       <LessonDialogBubble
@@ -718,8 +718,8 @@ export function Lesson_1_13() {
         characterName="Сэтэнай"
         originText="Сэ мыекъуапэ сыщэпсэу."
         langToTranslationMap={{
-          En: "I live in Maikop.",
-          Ar: "ستناي: أنا أعيش في مايكوب.",
+          en: "I live in Maikop.",
+          ar: "ستناي: أنا أعيش في مايكوب.",
         }}
       />
     </PanelDiv>
@@ -734,8 +734,8 @@ export function Lesson_1_14() {
         characterName="Батыр"
         originText="Сыда пцIэр?"
         langToTranslationMap={{
-          En: "What is your name?",
-          Ar: "باتر: ما هو اسمك؟",
+          en: "What is your name?",
+          ar: "باتر: ما هو اسمك؟",
         }}
       />
       <LessonDialogBubble
@@ -743,8 +743,8 @@ export function Lesson_1_14() {
         characterName="Озырмэдж"
         originText="Озырмэдж"
         langToTranslationMap={{
-          En: "Ozyrmedj",
-          Ar: "وزِرمج: وزِرمج.",
+          en: "Ozyrmedj",
+          ar: "وزِرمج: وزِرمج.",
         }}
       />
       <LessonDialogBubble
@@ -752,8 +752,8 @@ export function Lesson_1_14() {
         characterName="Батыр"
         originText="Къысфэгъэгъу, сыда пцIэр?"
         langToTranslationMap={{
-          En: "Excuse me, what is your name?",
-          Ar: "باتر: عفوا، ما هو اسمك؟",
+          en: "Excuse me, what is your name?",
+          ar: "باتر: عفوا، ما هو اسمك؟",
         }}
       />
       <LessonDialogBubble
@@ -761,8 +761,8 @@ export function Lesson_1_14() {
         characterName="Озырмэдж"
         originText="Озырмэдж"
         langToTranslationMap={{
-          En: "Ozyrmedj",
-          Ar: "وزِرمج: وزِرمج.",
+          en: "Ozyrmedj",
+          ar: "وزِرمج: وزِرمج.",
         }}
       />
       <LessonDialogBubble
@@ -770,8 +770,8 @@ export function Lesson_1_14() {
         characterName="Батыр"
         originText="Тащ фэдэу птхыщт?"
         langToTranslationMap={{
-          En: "How is it written?",
-          Ar: "باتر: كيف تكتب؟",
+          en: "How is it written?",
+          ar: "باتر: كيف تكتب؟",
         }}
       />
       <LessonDialogBubble
@@ -779,8 +779,8 @@ export function Lesson_1_14() {
         characterName="Озырмэдж"
         originText="О-зыр-мэдж"
         langToTranslationMap={{
-          En: "O-Zyr-Medj",
-          Ar: "وزِرمج: و-زِر-مج",
+          en: "O-Zyr-Medj",
+          ar: "وزِرمج: و-زِر-مج",
         }}
       />
       <LessonDialogBubble
@@ -788,8 +788,8 @@ export function Lesson_1_14() {
         characterName="Батыр"
         originText="Тхьэуегъэпсэу"
         langToTranslationMap={{
-          En: "Thank you.",
-          Ar: "باتر: شكرا",
+          en: "Thank you.",
+          ar: "باتر: شكرا",
         }}
       />
     </PanelDiv>
@@ -804,8 +804,8 @@ export function Lesson_1_15() {
         characterName="Джэбагъ"
         originText="Сыда пцIэр?"
         langToTranslationMap={{
-          En: "What is your name?",
-          Ar: "جباغ: ما هو اسمك؟",
+          en: "What is your name?",
+          ar: "جباغ: ما هو اسمك؟",
         }}
       />
       <LessonDialogBubble
@@ -813,8 +813,8 @@ export function Lesson_1_15() {
         characterName="Пщымаф"
         originText="Пщымаф"
         langToTranslationMap={{
-          En: "Pshymaph",
-          Ar: "بشِماف: بشِماف",
+          en: "Pshymaph",
+          ar: "بشِماف: بشِماف",
         }}
       />
       <LessonDialogBubble
@@ -822,8 +822,8 @@ export function Lesson_1_15() {
         characterName="Джэбагъ"
         originText="Пщэмыфа?"
         langToTranslationMap={{
-          En: "Pshymaph?",
-          Ar: "جباغ: بشَمف",
+          en: "Pshymaph?",
+          ar: "جباغ: بشَمف",
         }}
       />
       <LessonDialogBubble
@@ -831,8 +831,8 @@ export function Lesson_1_15() {
         characterName="Пщымаф"
         originText="Хьау."
         langToTranslationMap={{
-          En: "Yes.",
-          Ar: "بشِماف: لا",
+          en: "Yes.",
+          ar: "بشِماف: لا",
         }}
       />
       <LessonDialogBubble
@@ -840,8 +840,8 @@ export function Lesson_1_15() {
         characterName="Джэбагъ"
         originText="Тащ фэдэу птхыщт, къысэпlона?"
         langToTranslationMap={{
-          En: "How is it written, can you tell me?",
-          Ar: "جباغ: كيف تكتب؟هل يمكن أن تقول لي؟",
+          en: "How is it written, can you tell me?",
+          ar: "جباغ: كيف تكتب؟هل يمكن أن تقول لي؟",
         }}
       />
       <LessonDialogBubble
@@ -849,8 +849,8 @@ export function Lesson_1_15() {
         characterName="Пщымаф"
         originText="Пщы-маф"
         langToTranslationMap={{
-          En: "Pshy-maf",
-          Ar: "بشِماف: بشِ-ماف",
+          en: "Pshy-maf",
+          ar: "بشِماف: بشِ-ماف",
         }}
       />
       <LessonDialogBubble
@@ -858,8 +858,8 @@ export function Lesson_1_15() {
         characterName="Джэбагъ"
         originText="Тхьэуегъэпсэу"
         langToTranslationMap={{
-          En: "Thank you.",
-          Ar: "جباغ: شكرا",
+          en: "Thank you.",
+          ar: "جباغ: شكرا",
         }}
       />
     </PanelDiv>
@@ -874,8 +874,8 @@ export function Lesson_1_16() {
         characterName="Тембот"
         originText="Сэ сцlэр Мэщбэшlэ Тембот. Сэ 40 синыбжь. Мыекъопэ къалэ сыщэпсэу. Мекъуапэ Адыгаем икъэлэ шъхьаl. Сэ сыпхъашl. унэхэр пхъэкlэ сшlынхэр сикlас."
         langToTranslationMap={{
-          En: "My name is Mashbashah Tembot. I am 40 years old. I live in the city of Maikop. Maikop is the capital of Adygea. I am a carpenter. I like building houses with wood.",
-          Ar: "أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40. أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي. أنا نجار. أحب بناء البيوت بالخشب.",
+          en: "My name is Mashbashah Tembot. I am 40 years old. I live in the city of Maikop. Maikop is the capital of Adygea. I am a carpenter. I like building houses with wood.",
+          ar: "أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40. أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي. أنا نجار. أحب بناء البيوت بالخشب.",
         }}
       />
     </PanelDiv>
@@ -890,8 +890,8 @@ export function Lesson_1_17() {
         characterName="Бибэрс"
         originText="Сэ сцlэр Хъут Бибэрс. Сэ Чэркескы сыщэпсэу. Черкеск республикэм Черкеск икъэлэ шъхьаl. 37 синыбжь. Сэ сытхакlу. усэхэр Адыгабзэкlэ стхынхэр сикlас. къэсщагъ. Бынэу кlэлэцlыкlуищ сиl."
         langToTranslationMap={{
-          En: "My name is Khuut Bibers. I live in Cherkessk. Cherkessk is the capital of the Circassian republic. I am 37 years old. I am a writer. I like writing poetry in Adyghe. I am married. I have three young children.",
-          Ar: "أنا اسمي خُت بيبرس. أنا أعيش في تشركيسك. تشركيسك هي عاصمة جمهورية الشركس. عمري 37. أنا كاتب. أحب كتابة الأشعار بالأديغابزة. متزوج. لدي ثلاثة أولاد صغار.",
+          en: "My name is Khuut Bibers. I live in Cherkessk. Cherkessk is the capital of the Circassian republic. I am 37 years old. I am a writer. I like writing poetry in Adyghe. I am married. I have three young children.",
+          ar: "أنا اسمي خُت بيبرس. أنا أعيش في تشركيسك. تشركيسك هي عاصمة جمهورية الشركس. عمري 37. أنا كاتب. أحب كتابة الأشعار بالأديغابزة. متزوج. لدي ثلاثة أولاد صغار.",
         }}
       />
     </PanelDiv>
@@ -906,8 +906,8 @@ export function Lesson_1_18() {
         characterName="Синэмис"
         originText="Сэ сцlэр Цэй Синэмис . 25 синыбжь. Налчыкы сыдэс. Налчык Къэбэртаим икъэлэ шъхьаl. Сэ сыегъэджакlу. Адыгабзэ есэгъаджэх. Адыгабзэр сикlас. Джыри езгъэджэнхэр сикlас. Сэ сыдэкlуагъ. Пшъашъэ сиl, Синэ ыцlэр, илъэситlу ыныбжь."
         langToTranslationMap={{
-          En: "My name is Tzei Sinemis. I am 25 years old. I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria. I am a teacher. I teach Adyghe. I love Adyghe. I also love teaching. I am married. I have a daughter, her name is Sina, she is two years old.",
-          Ar: "أنا اسمي تزي سينميس. عمري 25. أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي. أنا معلمة. أعلم الأديغابزة. أحب الأديغابزة. وأيضا أحب التعليم. أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين.",
+          en: "My name is Tzei Sinemis. I am 25 years old. I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria. I am a teacher. I teach Adyghe. I love Adyghe. I also love teaching. I am married. I have a daughter, her name is Sina, she is two years old.",
+          ar: "أنا اسمي تزي سينميس. عمري 25. أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي. أنا معلمة. أعلم الأديغابزة. أحب الأديغابزة. وأيضا أحب التعليم. أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين.",
         }}
       />
     </PanelDiv>
