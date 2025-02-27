@@ -11,7 +11,7 @@ import {
   MIN_ORIGIN_FONT_SIZE,
   MIN_TRANSLATION_FONT_SIZE,
 } from "~/constants/setting";
-import { ISupportedTranslationLang } from "~/interfaces";
+import { DEFAULT_TRANSLATION_LANG_TO_NAME, ISupportedTranslationLang } from "~/interfaces";
 
 interface SettingsPanelProps {
   isOpen: boolean;
@@ -160,22 +160,19 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
         <div className="mt-4">
           <span className="font-semibold">Translation Language</span>
           <div className="flex flex-col gap-2 mt-2">
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={translationLangs.includes("Ar")}
-                onChange={() => toggleTranslationLang("Ar")}
-              />
-              Arabic
-            </label>
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={translationLangs.includes("En")}
-                onChange={() => toggleTranslationLang("En")}
-              />
-              English
-            </label>
+            {Object.entries(DEFAULT_TRANSLATION_LANG_TO_NAME).map((lang) => {
+              const [shortName, longName] = lang;
+              return (
+                <label key={shortName} className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={translationLangs.includes(shortName as ISupportedTranslationLang)}
+                    onChange={() => toggleTranslationLang(shortName as ISupportedTranslationLang)}
+                  />
+                  {longName}
+                </label>
+              );
+            })}
           </div>
         </div>
       </div>

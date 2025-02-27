@@ -24,8 +24,6 @@ export default function LessonTable({
   className,
   showBackgroundColors = true,
 }: LessonTableProps) {
-  const columnCount = headersArray.length + (showIndexes ? 1 : 0); // Count total columns
-
   return (
     <table
       className={cn("w-full xl:w-11/12 mx-auto border-collapse text-sm table-fixed", className)}
