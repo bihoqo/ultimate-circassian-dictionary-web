@@ -102,6 +102,14 @@ export default function Header() {
               <FaHamburger size={36} />
             </button>
             <SearchContainer showOnMobile={true} />
+
+            {/* Settings icon added on mobile next to the search input */}
+            {isOnLanguagePath && (
+              <SettingsSvg
+                className="ml-auto cursor-pointer text-[#303f2e] hover:text-[#637f5e]/50"
+                onClick={() => setIsSettingsOpen(true)}
+              />
+            )}
           </div>
 
           {isMobileMenuOpen && (
@@ -123,6 +131,9 @@ export default function Header() {
             </div>
           )}
         </div>
+
+        {/* Settings panel */}
+        <SettingsPanel isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
       </div>
     );
   }

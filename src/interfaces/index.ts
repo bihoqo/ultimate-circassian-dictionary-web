@@ -133,5 +133,11 @@ export interface IPanel {
   component: ReactNode;
 }
 
-export type ISupportedTranslationLang = "En" | "Ar";
+export type ISupportedTranslationLang = "en" | "ar" | "he";
 export type ILangToTranslationMap = Record<ISupportedTranslationLang, string>;
+
+export const DEFAULT_TRANSLATION_LANG_TO_NAME: ILangToTranslationMap = {
+  en: "English",
+  ar: "Arabic",
+  he: "Hebrew",
+};
