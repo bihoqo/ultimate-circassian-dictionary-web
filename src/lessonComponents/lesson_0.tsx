@@ -4,52 +4,59 @@ import PanelDiv from "../components/panelDiv";
 
 export function Lesson_0_1() {
   const data: string[][] = [
-    ["А а", "/lessons/lesson_0/pictures/0061.png", "Атакъэ", "ديك", "Rooster"],
-    ["Б б", "/lessons/lesson_0/pictures/0026.png", "Блэ", "أفعى", "Snake"],
-    ["В в", "/lessons/lesson_0/pictures/0029.png", "Витамин", "فيتامين", "Vitamin"],
-    ["Г г", "/lessons/lesson_0/pictures/0045.png", "Адыгаер", "أديغيا", "Adygea"],
-    ["ГЪ гъ", "/lessons/lesson_0/pictures/0048.png", "Гъэмаф", "صيف", "summer"],
-    ["Д д", "/lessons/lesson_0/pictures/0057.png", "Дэ", "جوز", "Nut"],
-    ["ДЖ дж", "/lessons/lesson_0/pictures/0041.png", "Джэмышх", "ملعقة", "Spoon"],
-    ["ДЗ дз", "/lessons/lesson_0/pictures/0052.png", "Дзэ", "جيش", "Army"],
-    ["Е е", "/lessons/lesson_0/pictures/0007.png", "Еджэ", "يقرأ", "Reads"],
-    ["Ж", "/lessons/lesson_0/pictures/0022.png", "Жэ", "فم", "Mouth"],
-    ["ЖЪ", "/lessons/lesson_0/pictures/0055.png", "Жъапхъэ", "مقلاة", "Frying pan"],
-    ["ЖЬ", "/lessons/lesson_0/pictures/0050.png", "Жьыбгъэ", "ريح", "Wind"],
-    ["З з", "/lessons/lesson_0/pictures/0015.png", "Зы", "واحد", "One"],
-    ["И и", "/lessons/lesson_0/pictures/0006.png", "Иныжъ", "عملاق", "Giant"],
-    ["Й й", "/lessons/lesson_0/pictures/0038.png", "Пцэжъый", "سمكه", "Fish"],
-    ["К к", "/lessons/lesson_0/pictures/0010.png", "Коцы", "قمح", "Wheat"],
-    ["КЪ къ", "/lessons/lesson_0/pictures/0049.png", "Къамэ", "قامة – خنجر", "Stature – Dagger"],
-    ["КI кI", "/lessons/lesson_0/pictures/0040.png", "КIэ", "ذيل", "Tail"],
-    ["Л л", "/lessons/lesson_0/pictures/0062.png", "Лы", "لحم", "Meat"],
-    ["ЛЪ лъ", "/lessons/lesson_0/pictures/0028.png", "Лъакъо", "رجل", "Leg"],
-    ["М м", "/lessons/lesson_0/pictures/0002.png", "Мышъэ", "دب", "Bear"],
-    ["Н н", "/lessons/lesson_0/pictures/0043.png", "Натрыф", "ذرة", "Corn"],
-    ["О о", "/lessons/lesson_0/pictures/0009.png", "Осы", "ثلج", "Snow"],
-    ["П п", "/lessons/lesson_0/pictures/0039.png", "Пыжъы", "قنفذ", "Hedgehog"],
-    ["ПI пI", "/lessons/lesson_0/pictures/0019.png", "ПIэ", "فراش", "Butterfly"],
-    ["Р р", "/lessons/lesson_0/pictures/0059.png", "Хъурай", "دائرة", "Circle"],
-    ["С с", "/lessons/lesson_0/pictures/0004.png", "Санэ", "عنب", "Grapes"],
-    ["Т т", "/lessons/lesson_0/pictures/0013.png", "Tыгъужъ", "ذئب", "Wolf"],
-    ["ТI тI", "/lessons/lesson_0/pictures/0036.png", "ТIы", "كبش", "Ram"],
-    ["У у", "/lessons/lesson_0/pictures/0008.png", "Унэ", "بيت", "House"],
-    ["Ф ф", "/lessons/lesson_0/pictures/0037.png", "Фыжьы", "أبيض", "White"],
-    ["Х х", "/lessons/lesson_0/pictures/0016.png", "Хы", "ستة", "Six"],
-    ["ХЪ хъ", "/lessons/lesson_0/pictures/0018.png", "Хъагъэ", "شبكة/ مطرز", "Net/Embroidered"],
-    ["ХЬ хь", "/lessons/lesson_0/pictures/0020.png", "Хьэ", "كلب", "Dog"],
-    ["Ц ц", "/lessons/lesson_0/pictures/0063.png", "Цыгъо", "فار", "Mouse"],
-    ["ЦӀ цI", "/lessons/lesson_0/pictures/0025.png", "ЦӀыргъ", "حلزون", "Snail"],
-    ["Ч ч", "/lessons/lesson_0/pictures/0046.png", "Чэркеся", "شركيسيا", "Circassia"],
-    ["ЧЪ чъ", "/lessons/lesson_0/pictures/0053.png", "Чъыгы", "شجره", "Tree"],
-    ["ЧӀ чI", "/lessons/lesson_0/pictures/0031.png", "ЧӀы", "أرض", "Earth"],
-    ["Ш ш", "/lessons/lesson_0/pictures/0011.png", "Шы", "حصان", "Horse"],
-    ["ШЪ шъ", "/lessons/lesson_0/pictures/0100.png", "Шъэ", "مئه", "Hundred"],
-    ["Щ щ", "/lessons/lesson_0/pictures/0014.png", "Щэ", "حليب", "Milk"],
-    ["Ы ы", "/lessons/lesson_0/pictures/0005.png", "Сыд", "ماذا", "What"],
-    ["Э э", "/lessons/lesson_0/pictures/0003.png", "Iэ", "يد", "Hand"],
-    ["Я я", "/lessons/lesson_0/pictures/0023.png", "ЯтIэ", "تراب", "Dust"],
-    ["I I", "/lessons/lesson_0/pictures/0012.png", "Iанэ", "طاولة", "Table"],
+    ["А а", "/lessons/lesson_0/pictures/0061.png", "Атакъэ", "ديك", "Rooster", "תרנגול"],
+    ["Б б", "/lessons/lesson_0/pictures/0026.png", "Блэ", "أفعى", "Snake", "נחש"],
+    ["В в", "/lessons/lesson_0/pictures/0029.png", "Витамин", "فيتامين", "Vitamin", "ויטמין"],
+    ["Г г", "/lessons/lesson_0/pictures/0045.png", "Адыгаер", "أديغيا", "Adygea", "אדיגיא"],
+    ["ГЪ гъ", "/lessons/lesson_0/pictures/0048.png", "Гъэмаф", "صيف", "summer", "קיץ"],
+    ["Д д", "/lessons/lesson_0/pictures/0057.png", "Дэ", "جوز", "Nut", "אגוז"],
+    ["ДЖ дж", "/lessons/lesson_0/pictures/0041.png", "Джэмышх", "ملعقة", "Spoon", "כף"],
+    ["ДЗ дз", "/lessons/lesson_0/pictures/0052.png", "Дзэ", "جيش", "Army", "צבא"],
+    ["Е е", "/lessons/lesson_0/pictures/0007.png", "Еджэ", "يقرأ", "Reads", "קורא"],
+    ["Ж", "/lessons/lesson_0/pictures/0022.png", "Жэ", "فم", "Mouth", "פה"],
+    ["ЖЪ", "/lessons/lesson_0/pictures/0055.png", "Жъапхъэ", "مقلاة", "Frying pan", "מחבת"],
+    ["ЖЬ", "/lessons/lesson_0/pictures/0050.png", "Жьыбгъэ", "ريح", "Wind", "רוח"],
+    ["З з", "/lessons/lesson_0/pictures/0015.png", "Зы", "واحد", "One", "אחד"],
+    ["И и", "/lessons/lesson_0/pictures/0006.png", "Иныжъ", "عملاق", "Giant", "ענק"],
+    ["Й й", "/lessons/lesson_0/pictures/0038.png", "Пцэжъый", "سمكه", "Fish", "דג"],
+    ["К к", "/lessons/lesson_0/pictures/0010.png", "Коцы", "قمح", "Wheat", "חיטה"],
+    ["КЪ къ", "/lessons/lesson_0/pictures/0049.png", "Къамэ", "قامة – خنجر", "Dagger", "חרב קטן"],
+    ["КI кI", "/lessons/lesson_0/pictures/0040.png", "КIэ", "ذيل", "Tail", "זנב"],
+    ["Л л", "/lessons/lesson_0/pictures/0062.png", "Лы", "لحم", "Meat", "בשר"],
+    ["ЛЪ лъ", "/lessons/lesson_0/pictures/0028.png", "Лъакъо", "رجل", "Leg", "רגל"],
+    ["М м", "/lessons/lesson_0/pictures/0002.png", "Мышъэ", "دب", "Bear", "דוב"],
+    ["Н н", "/lessons/lesson_0/pictures/0043.png", "Натрыф", "ذرة", "Corn", "תירס"],
+    ["О о", "/lessons/lesson_0/pictures/0009.png", "Осы", "ثلج", "Snow", "שלג"],
+    ["П п", "/lessons/lesson_0/pictures/0039.png", "Пыжъы", "قنفذ", "Hedgehog", "קיפוד"],
+    ["ПI пI", "/lessons/lesson_0/pictures/0019.png", "ПIэ", "فراش", "Butterfly", "פרפר"],
+    ["Р р", "/lessons/lesson_0/pictures/0059.png", "Хъурай", "دائرة", "Circle", "מעגל"],
+    ["С с", "/lessons/lesson_0/pictures/0004.png", "Санэ", "عنب", "Grapes", "ענבים"],
+    ["Т т", "/lessons/lesson_0/pictures/0013.png", "Tыгъужъ", "ذئب", "Wolf", "זאב"],
+    ["ТI тI", "/lessons/lesson_0/pictures/0036.png", "ТIы", "كبش", "Ram", "כבש"],
+    ["У у", "/lessons/lesson_0/pictures/0008.png", "Унэ", "بيت", "House", "בית"],
+    ["Ф ф", "/lessons/lesson_0/pictures/0037.png", "Фыжьы", "أبيض", "White", "לבן"],
+    ["Х х", "/lessons/lesson_0/pictures/0016.png", "Хы", "ستة", "Six", "שש"],
+    [
+      "ХЪ хъ",
+      "/lessons/lesson_0/pictures/0018.png",
+      "Хъагъэ",
+      "شبكة/ مطرز",
+      "Net/Embroidered",
+      "רשת/רקמה",
+    ],
+    ["ХЬ хь", "/lessons/lesson_0/pictures/0020.png", "Хьэ", "كلب", "Dog", "כלב"],
+    ["Ц ц", "/lessons/lesson_0/pictures/0063.png", "Цыгъо", "فار", "Mouse", "עכבר"],
+    ["ЦӀ цI", "/lessons/lesson_0/pictures/0025.png", "ЦӀыргъ", "حلزون", "Snail", "חלזון"],
+    ["Ч ч", "/lessons/lesson_0/pictures/0046.png", "Чэркеся", "شركيسيا", "Circassia", "צ'רקסיה"],
+    ["ЧЪ чъ", "/lessons/lesson_0/pictures/0053.png", "Чъыгы", "شجره", "Tree", "עץ"],
+    ["ЧӀ чI", "/lessons/lesson_0/pictures/0031.png", "ЧӀы", "أرض", "Earth", "אדמה"],
+    ["Ш ш", "/lessons/lesson_0/pictures/0011.png", "Шы", "حصان", "Horse", "סוס"],
+    ["ШЪ шъ", "/lessons/lesson_0/pictures/0100.png", "Шъэ", "مئه", "Hundred", "מאה"],
+    ["Щ щ", "/lessons/lesson_0/pictures/0014.png", "Щэ", "حليب", "Milk", "חלב"],
+    ["Ы ы", "/lessons/lesson_0/pictures/0005.png", "Сыд", "ماذا", "What", "מה"],
+    ["Э э", "/lessons/lesson_0/pictures/0003.png", "Iэ", "يد", "Hand", "יד"],
+    ["Я я", "/lessons/lesson_0/pictures/0023.png", "ЯтIэ", "تراب", "Dust", "אבק"],
+    ["I I", "/lessons/lesson_0/pictures/0012.png", "Iанэ", "طاولة", "Table", "שולחן"],
   ];
 
   // Convert to ReactNode matrix
@@ -90,13 +97,13 @@ export function Lesson_0_1() {
 
 export function Lesson_0_2() {
   const data: string[][] = [
-    ["А а", "0061.png", "Атакъэ", "ديك", "Rooster"],
-    ["О о", "0009.png", "Осы", "ثلج", "Snow"],
-    ["Э э", "0003.png", "Iэ", "يد", "Hand"],
-    ["Ы ы", "0005.png", "Сыд", "ماذا", "What"],
-    ["У у", "0008.png", "Унэ", "بيت", "House"],
-    ["И и", "0006.png", "Иныжъ", "عملاق", "Giant"],
-    ["Е е", "0007.png", "Еджэ", "يقرأ", "Reading"],
+    ["А а", "0061.png", "Атакъэ", "ديك", "Rooster", "תרנגול"],
+    ["О о", "0009.png", "Осы", "ثلج", "Snow", "שלג"],
+    ["Э э", "0003.png", "Iэ", "يد", "Hand", "יד"],
+    ["Ы ы", "0005.png", "Сыд", "ماذا", "What", "מה"],
+    ["У у", "0008.png", "Унэ", "بيت", "House", "בית"],
+    ["И и", "0006.png", "Иныжъ", "عملاق", "Giant", "ענק"],
+    ["Е е", "0007.png", "Еджэ", "يقرأ", "Reading", "קורא"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -125,8 +132,8 @@ export function Lesson_0_2() {
 
 export function Lesson_0_2b() {
   const data: string[][] = [
-    ["М м", "0002.png", "Мышъэ", "دب", "Bear"],
-    ["С с", "0004.png", "Санэ", "عنب", "Grapes"],
+    ["М м", "0002.png", "Мышъэ", "دب", "Bear", "דוב"],
+    ["С с", "0004.png", "Санэ", "عنب", "Grapes", "ענבים"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -377,8 +384,8 @@ export function Lesson_0_7() {
 
 export function Lesson_0_8() {
   const data: string[][] = [
-    ["Я я", "0023.png", "ЯтIэ", "تراب", "Dust"],
-    ["Й й", "0038.png", "Пцэжъый", "سمكه", "Fish"],
+    ["Я я", "0023.png", "ЯтIэ", "تراب", "Dust", "אבק"],
+    ["Й й", "0038.png", "Пцэжъый", "سمكه", "Fish", "דג"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -459,9 +466,9 @@ export function Lesson_0_9() {
 
 export function Lesson_0_10() {
   const data: string[][] = [
-    ["П п", "0039.png", "Пыжъы", "قُنفذ", "Hedgehog"],
-    ["Р р", "0059.png", "Хъурай", "دائرة", "Circle"],
-    ["Н н", "0043.png", "Натрыф", "ذرة", "Corn"],
+    ["П п", "0039.png", "Пыжъы", "قُنفذ", "Hedgehog", "קיפוד"],
+    ["Р р", "0059.png", "Хъурай", "دائرة", "Circle", "מעגל"],
+    ["Н н", "0043.png", "Натрыф", "ذرة", "Corn", "תירס"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -551,8 +558,8 @@ export function Lesson_0_11() {
 
 export function Lesson_0_12() {
   const data: string[][] = [
-    ["З з", "0015.png", "Зы", "واحد", "One"],
-    ["Х х", "0016.png", "Хы", "ستة", "Six"],
+    ["З з", "0015.png", "Зы", "واحد", "One", "אחד"],
+    ["Х х", "0016.png", "Хы", "ستة", "Six", "שש"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -638,8 +645,8 @@ export function Lesson_0_13() {
 
 export function Lesson_0_14() {
   const data: string[][] = [
-    ["Ч ч", "0046.png", "Чэркеся", "شركسيا", "Circassia"],
-    ["Ц ц", "0063.png", "Цыгъо", "فأر", "Mouse"],
+    ["Ч ч", "0046.png", "Чэркеся", "شركسيا", "Circassia", "צ'רקסיה"],
+    ["Ц ц", "0063.png", "Цыгъо", "فأر", "Mouse", "עכבר"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -755,8 +762,8 @@ export function Lesson_0_16() {
 
 export function Lesson_0_17() {
   const data: string[][] = [
-    ["Д д", "0057.png", "Дэ", "جوز", "Nut"],
-    ["Л л", "0062.png", "Лы", "لحم", "Meat"],
+    ["Д д", "0057.png", "Дэ", "جوز", "Nut", "אגוז"],
+    ["Л л", "0062.png", "Лы", "لحم", "Meat", "בשר"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -852,8 +859,8 @@ export function Lesson_0_18() {
 
 export function Lesson_0_19() {
   const data: string[][] = [
-    ["Б б", "0026.png", "Блэ", "أفعى", "Snake"],
-    ["Г г", "0045.png", "Адыгаер", "الأديغاية", "Adygea"],
+    ["Б б", "0026.png", "Блэ", "أفعى", "Snake", "נחש"],
+    ["Г г", "0045.png", "Адыгаер", "الأديغاية", "Adygea", "אדיגיה"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -968,8 +975,8 @@ export function Lesson_0_21() {
 
 export function Lesson_0_22() {
   const data: string[][] = [
-    ["Ж ж", "0022.png", "Жэ", "فم", "Mouth"],
-    ["Ф ф", "0037.png", "Фыжьы", "أبيض", "White"],
+    ["Ж ж", "0022.png", "Жэ", "فم", "Mouth", "פה"],
+    ["Ф ф", "0037.png", "Фыжьы", "أبيض", "White", "לבן"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1069,7 +1076,7 @@ export function Lesson_0_23() {
 }
 
 export function Lesson_0_24() {
-  const data: string[][] = [["В в", "0029.png", "Витамин", "فيتامين", "Vitamin"]];
+  const data: string[][] = [["В в", "0029.png", "Витамин", "فيتامين", "Vitamin", "ויטמין"]];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
     const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
@@ -1131,8 +1138,8 @@ export function Lesson_0_25() {
 
 export function Lesson_0_26() {
   const data: string[][] = [
-    ["КЪ къ", "0049.png", "Къамэ", "قامة / الخنجر الأدغي القفقاسي", "Stature – Dagger"],
-    ["КI кI", "0040.png", "КIэ", "ذيل", "Tail"],
+    ["КЪ къ", "0049.png", "Къамэ", "قامة / الخنجر الأدغي القفقاسي", "Dagger", "חרב"],
+    ["КI кI", "0040.png", "КIэ", "ذيل", "Tail", "זנב"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1252,8 +1259,8 @@ export function Lesson_0_28() {
 
 export function Lesson_0_29() {
   const data: string[][] = [
-    ["ДЖ дж", "0041.png", "Джэмышх", "ملعقة", "Spoon"],
-    ["ГЪ гъ", "0048.png", "Гъэмаф", "صيف", "summer"],
+    ["ДЖ дж", "0041.png", "Джэмышх", "ملعقة", "Spoon", "כף"],
+    ["ГЪ гъ", "0048.png", "Гъэмаф", "صيف", "summer", "קיץ"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1334,8 +1341,8 @@ export function Lesson_0_30() {
 
 export function Lesson_0_31() {
   const data: string[][] = [
-    ["ХЬ хь", "0020.png", "Хьэ", "كلب", "Dog"],
-    ["ХЪ хъ", "0018.png", "Хъагъэ", "زخرفة/ شبكة", "Net/Embroidered"],
+    ["ХЬ хь", "0020.png", "Хьэ", "كلب", "Dog", "כלב"],
+    ["ХЪ хъ", "0018.png", "Хъагъэ", "زخرفة/ شبكة", "Net/Embroidered", "רשת/מרורק"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1415,7 +1422,7 @@ export function Lesson_0_32() {
 }
 
 export function Lesson_0_33() {
-  const data: string[][] = [["ЛЪ лъ", "0028.png", "Лъакъо", "رِجْل", "Leg"]];
+  const data: string[][] = [["ЛЪ лъ", "0028.png", "Лъакъо", "رِجْل", "Leg", "רגל"]];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
     const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
@@ -1479,8 +1486,8 @@ export function Lesson_0_34() {
 
 export function Lesson_0_35() {
   const data: string[][] = [
-    ["ЖЬ жь", "0050.png", "Жьыбгъэ", "ريح", "Wind"],
-    ["ЖЪ жъ", "0055.png", "Жъапхъэ", "مقلاة", "Frying pan"],
+    ["ЖЬ жь", "0050.png", "Жьыбгъэ", "ريح", "Wind", "רוח"],
+    ["ЖЪ жъ", "0055.png", "Жъапхъэ", "مقلاة", "Frying pan", "מחבת"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1587,8 +1594,8 @@ export function Lesson_0_37() {
 
 export function Lesson_0_38() {
   const data: string[][] = [
-    ["ШЪ шъ", "0100.png", "Шъэ", "مائة", "Hundred"],
-    ["ШI шI", "0017.png", "ПшIы", "عشرة", "Ten"],
+    ["ШЪ шъ", "0100.png", "Шъэ", "مائة", "Hundred", "מאה"],
+    ["ШI шI", "0017.png", "ПшIы", "عشرة", "Ten", "עשרה"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1729,7 +1736,7 @@ export function Lesson_0_41() {
 }
 
 export function Lesson_0_42() {
-  const data: string[][] = [["ЦI цI", "0025.png", "Цъыргъ", "حلزون", "Snail"]];
+  const data: string[][] = [["ЦI цI", "0025.png", "Цъыргъ", "حلزون", "Snail", "חלמיש"]];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
     const [letter, imgUrl, secondRow, arTranslation, enTranslation] = row;
@@ -1793,8 +1800,8 @@ export function Lesson_0_43() {
 
 export function Lesson_0_44() {
   const data: string[][] = [
-    ["ЧЪ чъ", "0053.png", "Чъыгы", "شجرة", "Tree"],
-    ["ЧӀ чI", "0031.png", "ЧӀы", "أرض", "Earth"],
+    ["ЧЪ чъ", "0053.png", "Чъыгы", "شجرة", "Tree", "עץ"],
+    ["ЧӀ чI", "0031.png", "ЧӀы", "أرض", "Earth", "אדמה"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1871,8 +1878,8 @@ export function Lesson_0_45() {
 
 export function Lesson_0_46() {
   const data: string[][] = [
-    ["ТӀ тI", "0036.png", "ТӀы", "كَبْش", "Ram"],
-    ["ПӀ пI", "0019.png", "ПӀэ", "سرير", "Bed"],
+    ["ТӀ тI", "0036.png", "ТӀы", "كَبْش", "Ram", "כבש"],
+    ["ПӀ пI", "0019.png", "ПӀэ", "سرير", "Bed", "מיטה"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -1949,8 +1956,8 @@ export function Lesson_0_47() {
 
 export function Lesson_0_48() {
   const data: string[][] = [
-    ["ЛӀ лI", "0056.png", "ЛӀы", "رجل", "Man"],
-    ["ДЗ дз", "0052.png", "Дзэ", "جيش", "Army"],
+    ["ЛӀ лI", "0056.png", "ЛӀы", "رجل", "Man", "איש"],
+    ["ДЗ дз", "0052.png", "Дзэ", "جيش", "Army", "צבא"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
