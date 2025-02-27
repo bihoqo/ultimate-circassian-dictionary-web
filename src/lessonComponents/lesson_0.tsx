@@ -156,28 +156,28 @@ export function Lesson_0_2b() {
 export function Lesson_0_3() {
   const data = [
     [
-      { cir: "О-сы", ar: "ثلج", en: "Snow" },
-      { cir: "Уа-сэ", ar: "سعر", en: "Price" },
-      { cir: "Са-сэ", ar: "(فتاة)  ساسه", en: "Sasa (name)" },
-      { cir: "Си-мэ", ar: "سيما  (اسم)", en: "Sima (name)" },
+      { cir: "О-сы", ar: "ثلج", en: "Snow", he: "שלג" },
+      { cir: "Уа-сэ", ar: "سعر", en: "Price", he: "מחיר" },
+      { cir: "Са-сэ", ar: "(فتاة)  ساسه", en: "Sasa (name)", he: "סאסה (שם)" },
+      { cir: "Си-мэ", ar: "سيما  (اسم)", en: "Sima (name)", he: "סימה (שם)" },
     ],
     [
-      { cir: "Се-сы", ar: "أسبح", en: "Swim" },
-      { cir: "Уис", ar: "أنت موجود في الداخل", en: "You are inside" },
-      { cir: "Е-сы", ar: "يسبح", en: "Swims" },
-      { cir: "Мы-е", ar: "التفاح البري", en: "Wild apple" },
+      { cir: "Се-сы", ar: "أسبح", en: "Swim", he: "אני שוחה" },
+      { cir: "Уис", ar: "أنت موجود في الداخل", en: "You are inside", he: "אתה בפנים" },
+      { cir: "Е-сы", ar: "يسبح", en: "Swims", he: "הוא שוחה" },
+      { cir: "Мы-е", ar: "التفاح البري", en: "Wild apple", he: "תפוח בר" },
     ],
     [
-      { cir: "Ис", ar: "موجود في الداخل", en: "Inside" },
-      { cir: "Уа-е", ar: "عاصفه", en: "Storm" },
-      { cir: "Сис", ar: "أنا موجود في الداخل", en: "I am inside" },
-      { cir: "Е-о", ar: "يضرب", en: "Hits" },
+      { cir: "Ис", ar: "موجود في الداخل", en: "Inside", he: "בפנים" },
+      { cir: "Уа-е", ar: "عاصفه", en: "Storm", he: "סופה" },
+      { cir: "Сис", ar: "أنا موجود في الداخل", en: "I am inside", he: "אני בפנים" },
+      { cir: "Е-о", ar: "يضرب", en: "Hits", he: "הוא מכה" },
     ],
     [
-      { cir: "У-сэ", ar: "شعر", en: "Hair" },
-      { cir: "Мэу", ar: "هنا", en: "Here" },
-      { cir: "Ау", ar: "لكن", en: "But" },
-      { cir: "Сэ", ar: "أنا", en: "I" },
+      { cir: "У-сэ", ar: "شعر", en: "Hair", he: "שיער" },
+      { cir: "Мэу", ar: "هنا", en: "Here", he: "כאן" },
+      { cir: "Ау", ar: "لكن", en: "But", he: "אבל" },
+      { cir: "Сэ", ar: "أنا", en: "I", he: "אני" },
     ],
   ];
 
@@ -239,28 +239,33 @@ export function Lesson_0_4() {
 export function Lesson_0_5() {
   const data = [
     [
-      { cir: "Тат", ar: "أب", en: "Father" },
-      { cir: "Тет", ar: "موجود على / أبينا", en: "Is on / Our father" },
-      { cir: "УиӀ", ar: "لديك", en: "You have" },
-      { cir: "ТиӀ", ar: "لدينا", en: "We have" },
+      { cir: "Тат", ar: "أب", en: "Father", he: "אבא" },
+      { cir: "Тет", ar: "موجود على / أبينا", en: "Is on / Our father", he: "יש על / אבינו" },
+      { cir: "УиӀ", ar: "لديك", en: "You have", he: "יש לך" },
+      { cir: "ТиӀ", ar: "لدينا", en: "We have", he: "יש לנו" },
     ],
     [
-      { cir: "Ку", ar: "عربة", en: "Carriage" },
-      { cir: "А-Ӏо", ar: "يقولون", en: "They say" },
-      { cir: "У-тет", ar: "تقف على", en: "Stand on" },
-      { cir: "Ӏа-тэ", ar: "كومة", en: "Pile" },
+      { cir: "Ку", ar: "عربة", en: "Carriage", he: "עגלה" },
+      { cir: "А-Ӏо", ar: "يقولون", en: "They say", he: "הם אומרים" },
+      { cir: "У-тет", ar: "تقف على", en: "Stand on", he: "עומד על" },
+      { cir: "Ӏа-тэ", ar: "كومة", en: "Pile", he: "ערימה" },
     ],
     [
-      { cir: "Уа-тэ", ar: "مطرقة", en: "Hammer" },
-      { cir: "О-ку-о", ar: "أنت تصرخ", en: "You scream" },
-      { cir: "А-те-Ӏэ", ar: "يلمسهم من فوق", en: "Touch them from above" },
-      { cir: "Те-о", ar: "يطرق على", en: "Knocks on" },
+      { cir: "Уа-тэ", ar: "مطرقة", en: "Hammer", he: "פטיש" },
+      { cir: "О-ку-о", ar: "أنت تصرخ", en: "You scream", he: "אתה צועק" },
+      { cir: "А-те-Ӏэ", ar: "يلمسهم من فوق", en: "Touch them from above", he: "נוגע בהם מלמעלה" },
+      { cir: "Те-о", ar: "يطرق على", en: "Knocks on", he: "דופק על" },
     ],
     [
-      { cir: "Ты-Ӏут", ar: "نحن نقف أمام", en: "We stand in front of" },
-      { cir: "Тэ-ку-о", ar: "نصرخ", en: "We scream" },
-      { cir: "Та-те-Ӏэ", ar: "نلمسهم من فوق", en: "We touch them from above" },
-      { cir: "Е-Ӏуа-тэ", ar: "يحكي / يسرد", en: "He tells" },
+      { cir: "Ты-Ӏут", ar: "نحن نقف أمام", en: "We stand in front of", he: "אנחנו עומדים מול" },
+      { cir: "Тэ-ку-о", ar: "نصرخ", en: "We scream", he: "אנחנו צועקים" },
+      {
+        cir: "Та-те-Ӏэ",
+        ar: "نلمسهم من فوق",
+        en: "We touch them from above",
+        he: "אנחנו נוגעים בהם מלמעלה",
+      },
+      { cir: "Е-Ӏуа-тэ", ar: "يحكي / يسرد", en: "He tells", he: "הוא מספר" },
     ],
   ];
 
@@ -290,8 +295,8 @@ export function Lesson_0_5() {
 
 export function Lesson_0_6() {
   const data: string[][] = [
-    ["Ш ш", "0011.png", "Шы", "حصان / أَخ", "Horse"],
-    ["Щ щ", "0014.png", "Щэ", "حليب", "Milk"],
+    ["Ш ш", "0011.png", "Шы", "حصان / أَخ", "Horse", "סוס"],
+    ["Щ щ", "0014.png", "Щэ", "حليب", "Milk", "חלב"],
   ];
 
   const contentMatrix: React.ReactNode[][] = data.map((row) => {
@@ -321,28 +326,28 @@ export function Lesson_0_6() {
 export function Lesson_0_7() {
   const data = [
     [
-      { cir: "Шы", ar: "حصان / أَخ", en: "Horse" },
-      { cir: "Шэ", ar: "دَسَم", en: "Milk" },
-      { cir: "Шэщ", ar: "اسطبل حصان", en: "Horse stable" },
-      { cir: "Шыу", ar: "فارس", en: "Knight" },
+      { cir: "Шы", ar: "حصان / أَخ", en: "Horse", he: "סוס" },
+      { cir: "Шэ", ar: "دَسَم", en: "Milk", he: "חלב" },
+      { cir: "Шэщ", ar: "اسطبل حصان", en: "Horse stable", he: "אורוות סוסים" },
+      { cir: "Шыу", ar: "فارس", en: "Knight", he: "אביר" },
     ],
     [
-      { cir: "Ша-о", ar: "ساىق عربة خيل", en: "Rider" },
-      { cir: "Ша-Iо", ar: "حظيرة خيل", en: "Horse stable" },
-      { cir: "Шэ-сы", ar: "محامي / كفيل", en: "Lawyer / Guarantor" },
-      { cir: "Ша-ко", ar: "شهد / قرص العسل", en: "Honey" },
+      { cir: "Ша-о", ar: "ساىق عربة خيل", en: "Rider", he: "רוכב עגלה" },
+      { cir: "Ша-Iо", ar: "حظيرة خيل", en: "Horse stable", he: "אורוות סוסים" },
+      { cir: "Шэ-сы", ar: "محامي / كفيل", en: "Guarantor", he: "ערב" },
+      { cir: "Ша-ко", ar: "شهد / قرص العسل", en: "Honey", he: "דבש / קשת דבש" },
     ],
     [
-      { cir: "Щы-сэ", ar: "مثال", en: "Example" },
-      { cir: "Ща-тэ", ar: "القشده", en: "Cream" },
-      { cir: "ЩыI", ar: "موجود", en: "Exists" },
-      { cir: "Щы", ar: "ثلاث", en: "Three" },
+      { cir: "Щы-сэ", ar: "مثال", en: "Example", he: "דוגמה" },
+      { cir: "Ща-тэ", ar: "القشده", en: "Cream", he: "קרם" },
+      { cir: "ЩыI", ar: "موجود", en: "Exists", he: "קיים" },
+      { cir: "Щы", ar: "ثلاث", en: "Three", he: "שלוש" },
     ],
     [
-      { cir: "Щыс", ar: "جالس", en: "Sitting" },
-      { cir: "Щыщ", ar: "ينتمي إلى / منه", en: "Belongs to / From it" },
-      { cir: "Е-щы", ar: "يقيس / يحلب", en: "Measures / Milks" },
-      { cir: "Е-щэ", ar: "يبيع", en: "Sells" },
+      { cir: "Щыс", ar: "جالس", en: "Sitting", he: "יושב" },
+      { cir: "Щыщ", ar: "ينتمي إلى / منه", en: "Belongs to / From it", he: "שייך ל / ממנו" },
+      { cir: "Е-щы", ar: "يقيس / يحلب", en: "Measures / Milks", he: "מודד / מחלב" },
+      { cir: "Е-щэ", ar: "يبيع", en: "Sells", he: "מוכר" },
     ],
   ];
 
@@ -403,7 +408,7 @@ export function Lesson_0_8() {
 export function Lesson_0_9() {
   const data = [
     [
-      { cir: "Я-е", ar: "سمين جدًا / اسطوانة", en: "Very fat / Cylinder" },
+      { cir: "Я-е", ar: "سمين جدًا / اسطوانة", en: "Very fat / Cylinder", he: "מאוד שמן / גליל" },
       { cir: "Сай", ar: "ثوب نسائي أديغي", en: "" },
       { cir: "С-ят", ar: "أَبي", en: "Father" },
       { cir: "ЯI", ar: "لديهم", en: "They have" },
