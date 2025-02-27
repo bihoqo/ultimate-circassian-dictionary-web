@@ -31,7 +31,7 @@ function convertLetterIntroductionRowArrayToReactNodeMatrix(
         key={row.letter}
         firstRow={row.letter} // Extract first part of the letter
         secondRow={row.wordExample}
-        imgUrl={row.imgUrl}
+        imgUrl={`/lessons/lesson_0/pictures/${row.imgUrl}`}
         langToTranslationMap={row.translationsMap}
       />
     );
