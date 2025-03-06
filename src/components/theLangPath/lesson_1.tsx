@@ -2,7 +2,7 @@ import LessonDialogBubble, {
   ILessonDialogBubbleProps,
 } from "~/components/lessons/lessonDialogBubble";
 import React from "react";
-import PanelDiv from "../components/panelDiv";
+import PanelDiv from "../panelDiv";
 
 export function Lesson_1_1() {
   const content: ILessonDialogBubbleProps[] = [

@@ -18,7 +18,7 @@ import {
   Lesson_1_16,
   Lesson_1_17,
   Lesson_1_18,
-} from "~/lessonComponents/lesson_1";
+} from "~/components/theLangPath/lesson_1";
 import {
   Lesson_0_1,
   Lesson_0_2,
@@ -71,7 +71,7 @@ import {
   Lesson_0_49,
   Lesson_0_50,
   Lesson_0_2b,
-} from "~/lessonComponents/lesson_0";
+} from "~/components/theLangPath/lesson_0";
 
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
