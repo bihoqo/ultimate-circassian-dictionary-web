@@ -36,24 +36,26 @@ function convertLetterIntroductionRowArrayToReactNodeMatrix(
 }
 
 function convertExampleInEachLangRowToReactNodeMatrix(
-  data: IExampleInEachLangRow[][],
+  data: IExampleInEachLangRow[],
+  columnsPerRow: number = 4,
 ): React.ReactNode[][] {
-  return data.map((row) => {
-    return row.map((cell) => {
-      return (
-        <LessonTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ en: cell.en, ar: cell.ar, he: cell.he }}
-        />
-      );
-    });
-  });
+  const result: React.ReactNode[][] = [];
+  for (let i = 0; i < data.length; i += columnsPerRow) {
+    const row = data.slice(i, i + columnsPerRow).map((cell) => (
+      <LessonTableCell
+        key={cell.cir}
+        firstRow={cell.cir}
+        langToTranslationMap={{ en: cell.en, ar: cell.ar, he: cell.he }}
+      />
+    ));
+    result.push(row);
+  }
+
+  return result;
 }
 
-export function Lesson_0_1() {
-  const data: ILetterIntroductionRow[] = ;
 
+export function convertLetterIntroductionRowArrayToPanelComponent(data: ILetterIntroductionRow[], audioPath: string) {
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\0_1.mp3">
       <LessonTable
@@ -802,8 +804,6 @@ export function Lesson_0_49() {
 }
 
 export function Lesson_0_50() {
-  const data: IExampleInEachLangRow[][] = ;
-
   return (
     <PanelDiv audioPath="lessons\lesson_0\audio\22_1.mp3">
       <LessonTable
