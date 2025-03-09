@@ -98,16 +98,6 @@ export interface Autocomplete {
   toLangs: SupportedLang[];
 }
 
-export interface ICharacterBank {
-  names: string[];
-  avatar: string;
-}
-
-export interface ICharacter {
-  name: string;
-  avatar: string;
-}
-
 export interface INavBarItem {
   title: string;
   link: string;

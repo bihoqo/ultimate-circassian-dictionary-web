@@ -1,13 +1,13 @@
 import { ILangToTranslationMap } from "~/interfaces/index";
 
-export interface ITheLangPathLetterIntroductionRow {
+export interface ITheLangPathLetterIntroductionTableRow {
   letter: string;
   imgUrl: string;
   wordExample: string;
   translationsMap: ILangToTranslationMap;
 }
 
-export interface ITheLangPathExampleInEachLangRow {
+export interface ITheLangPathExamplesInEachLangTableRow {
   cir: string;
   ar: string;
   en: string;
@@ -19,14 +19,32 @@ export interface ITheLangPathLesson {
   index: number;
 }
 
-export type ITheLangPathPanelType = "letterIntroduction" | "exampleInEachLang";
-export type ITheLangPathPanelData =
-  | ITheLangPathLetterIntroductionRow[]
-  | ITheLangPathExampleInEachLangRow[];
-
 export interface ITheLangPathPanel {
   title: string;
   audio: string;
   type: ITheLangPathPanelType;
   data: ITheLangPathPanelData;
 }
+
+export interface ITheLangPathDialogBubble {
+  leftOrRight: "left" | "right";
+  characterName: string;
+  originText: string;
+  langToTranslationMap: ILangToTranslationMap;
+}
+
+export interface ITheLangPathCharacterBank {
+  names: string[];
+  avatar: string;
+}
+
+export interface ITheLangPathCharacter {
+  name: string;
+  avatar: string;
+}
+
+export type ITheLangPathPanelType = "letterIntroduction" | "exampleInEachLang" | "dialogBubble";
+export type ITheLangPathPanelData =
+  | ITheLangPathLetterIntroductionTableRow[]
+  | ITheLangPathExamplesInEachLangTableRow[]
+  | ITheLangPathDialogBubble[];

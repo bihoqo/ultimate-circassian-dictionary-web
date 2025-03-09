@@ -1,5 +1,5 @@
 import LessonDialogBubble, {
-  ILessonDialogBubbleProps,
+  ITheLangPathDialogBubble,
 } from "~/components/lessons/lessonDialogBubble";
 import React from "react";
 import PanelDiv from "../panelDiv";

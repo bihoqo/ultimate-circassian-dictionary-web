@@ -2,12 +2,13 @@ import React from "react";
 import LessonTable, { LessonTableCell } from "~/components/lessons/lessonTable";
 import PanelDiv from "~/components/panelDiv";
 import {
-  ITheLangPathExampleInEachLangRow,
+  ITheLangPathCharacter,
+  ITheLangPathCharacterBank,
+  ITheLangPathExamplesInEachLangTableRow,
   ITheLangPathLesson,
-  ITheLangPathLetterIntroductionRow,
+  ITheLangPathLetterIntroductionTableRow,
   ITheLangPathPanel,
 } from "~/interfaces/theLangPath";
-import { ICharacter, ICharacterBank } from "~/interfaces";
 
 export const LESSONS_LIST: ITheLangPathLesson[] = [
   {
@@ -40,7 +41,7 @@ export const LESSONS_LIST: ITheLangPathLesson[] = [
   },
 ];
 
-export const LESSON_CHARACTERS: ICharacterBank[] = [
+export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
   {
     names: ["Данэ", "Нэрыт", "lазэ", "Нэрыс", "Дэнэф", "Разэ", "Симаз", "Симэ", "Синэмис"],
     avatar: "/theLangPath/faces/14.png",
@@ -71,7 +72,7 @@ export const LESSON_CHARACTERS: ICharacterBank[] = [
   },
 ];
 
-export function getCharacterByName(name: string): ICharacter {
+export function getCharacterByName(name: string): ITheLangPathCharacter {
   const found = LESSON_CHARACTERS.find((character) => {
     return character.names.includes(name);
   });
@@ -85,19 +86,19 @@ export function convertDataToPanelComponent(panel: ITheLangPathPanel): React.Rea
   switch (panel.type) {
     case "letterIntroduction":
       return convertLetterIntroductionRowArrayToPanelComponent(
-        panel.data as ITheLangPathLetterIntroductionRow[],
+        panel.data as ITheLangPathLetterIntroductionTableRow[],
         panel.audio,
       );
     case "exampleInEachLang":
       return convertExampleInEachLangRowToPanelComponent(
-        panel.data as ITheLangPathExampleInEachLangRow[],
+        panel.data as ITheLangPathExamplesInEachLangTableRow[],
         panel.audio,
       );
   }
 }
 
 function _convertLetterIntroductionRowArrayToReactNodeMatrix(
-  data: ITheLangPathLetterIntroductionRow[],
+  data: ITheLangPathLetterIntroductionTableRow[],
   numberOfColumns = 6,
 ): React.ReactNode[][] {
   const contentMatrix: React.ReactNode[][] = [];
@@ -129,7 +130,7 @@ function _convertLetterIntroductionRowArrayToReactNodeMatrix(
 }
 
 function _convertExampleInEachLangRowToReactNodeMatrix(
-  data: ITheLangPathExampleInEachLangRow[],
+  data: ITheLangPathExamplesInEachLangTableRow[],
   columnsPerRow: number = 4,
 ): React.ReactNode[][] {
   const result: React.ReactNode[][] = [];
@@ -150,7 +151,7 @@ function _convertExampleInEachLangRowToReactNodeMatrix(
 }
 
 export function convertLetterIntroductionRowArrayToPanelComponent(
-  data: ITheLangPathLetterIntroductionRow[],
+  data: ITheLangPathLetterIntroductionTableRow[],
   audioPath: string,
 ) {
   return (
@@ -166,7 +167,7 @@ export function convertLetterIntroductionRowArrayToPanelComponent(
 }
 
 export function convertExampleInEachLangRowToPanelComponent(
-  data: ITheLangPathExampleInEachLangRow[],
+  data: ITheLangPathExamplesInEachLangTableRow[],
   audioPath: string,
 ) {
   return (

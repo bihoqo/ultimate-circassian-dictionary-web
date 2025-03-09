@@ -1,0 +1,241 @@
+[
+  {
+    "title": "1.2 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": [
+      {
+        "leftOrRight": "left",
+        "characterName": "Данэ",
+        "originText": "Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?",
+        "langToTranslationMap": {
+          "en": "Good day. My name is Dana. What is your name?",
+          "ar": "دانا: نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
+          "he": "יום טוב. שמי דנה. מה שמך?"
+        }
+      },
+      {
+        "leftOrRight": "right",
+        "characterName": "Сэтэнай",
+        "originText": "Сэ сцlэр Сэтэнай.",
+        "langToTranslationMap": {
+          "en": "My name is Satenai.",
+          "ar": "ستناي: أنا اسمي ستناي",
+          "he": "שמי סטנאי."
+        }
+      },
+      {
+        "leftOrRight": "left",
+        "characterName": "Данэ",
+        "originText": "Тыдэ укъикIыра?",
+        "langToTranslationMap": {
+          "en": "From where are you?",
+          "ar": "دانا: من أين أنت؟",
+          "he": "מאיפה אתה?"
+        }
+      },
+      {
+        "leftOrRight": "right",
+        "characterName": "Сэтэнай",
+        "originText": "Сэ Мыекъуапэ сыкъекIы.",
+        "langToTranslationMap": {
+          "en": "I am from Maykop.",
+          "ar": "ستناي: أنا من مايكوب.",
+          "he": "אני ממיקופ."
+        }
+      }
+    ]
+  },
+  {
+    "title": "1.2 Dialogue 2",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": [
+      {
+        "leftOrRight": "left",
+        "characterName": "Нарт",
+        "originText": "Фэсапщи. Сэ сцIэр Нарт. О сыда пцlэр?",
+        "langToTranslationMap": {
+          "en": "Hello. My name is Nart. What is your name?",
+          "ar": "نارت: مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
+          "he": "שלום. שמי נארט. מה שמך?"
+        }
+      },
+      {
+        "leftOrRight": "right",
+        "characterName": "Аслъан",
+        "originText": "Сэ сцlэр Аслъан.",
+        "langToTranslationMap": {
+          "en": "My name is Aslan.",
+          "ar": "أسلان :  أنا اسمي أسلان.",
+          "he": "שמי אסלאן."
+        }
+      },
+      {
+        "leftOrRight": "left",
+        "characterName": "Нарт",
+        "originText": "Тыдэ укъикIыра, Аслъан?",
+        "langToTranslationMap": {
+          "en": "From where are you Aslan?",
+          "ar": " نارت : من أين أنت أسلان؟",
+          "he": "מאיפה אתה אסלאן?"
+        }
+      },
+      {
+        "leftOrRight": "right",
+        "characterName": "Аслъан",
+        "originText": "Сэ Истамбулы сыкъекIы. О тыдэ укъикIыра?",
+        "langToTranslationMap": {
+          "en": "I am from Istanbul. And you?",
+          "ar": "أسلان: أنا من إسطنبول . من أين أنت ؟",
+          "he": "אני מאיסטנבול. ואתה?"
+        }
+      },
+      {
+        "leftOrRight": "left",
+        "characterName": "Нарт",
+        "originText": "Сэ Налчыкы сыкъекlы.",
+        "langToTranslationMap": {
+          "en": "I am from Nalchik.",
+          "ar": "نارت : أنا من نالتشيك.",
+          "he": "אני מנלצ'יק."
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": [
+      {
+        "leftOrRight": "left",
+        "characterName": "Нарт",
+        "originText": "Фэсапщи, сэ сцIэр Нарт, Налчыкы сащыщ.",
+        "langToTranslationMap": {
+          "en": "Hello, my name is Nart, I am from Nalchik.",
+          "ar": "نارت: مرحبا، أنا اسمي نارت، أنا من نالتشيك.",
+          "he": "שלום, שמי נארט, אני מנלצ'יק."
+        }
+      },
+      {
+        "leftOrRight": "right",
+        "characterName": "Аслъан",
+        "originText": "Къеблагъ, сэ сцIэр Аслъан, Истамбулы сащыщ.",
+        "langToTranslationMap": {
+          "en": "Welcome, my name is Aslan, I am from Istanbul.",
+          "ar": "أسلان: تفضل،  أنا اسمي أسلان، أنا من إسطنبول.",
+          "he": "ברוך הבא, שמי אסלאן, אני מאיסטנבול."
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 Dialogue 2",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "2.1 Dialogue 3",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "XXXXXXXXXX",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "XXXXXXXXXX",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "3.1 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "3.2 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "4.1 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "4.2 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "4.2 Dialogue 2",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "4.2 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "7.1 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "9.1 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "9.2 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "9.3 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "9.3 Dialogue 2",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "11.1 Dialogue 1",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "11.1 Dialogue 2",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  },
+  {
+    "title": "11.1 Dialogue 3",
+    "audio": "XXXXXXXXXX",
+    "type": "dialogBubble",
+    "data": []
+  }
+]
