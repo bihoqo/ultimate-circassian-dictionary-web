@@ -1,55 +1,62 @@
 import Head from "next/head";
-import React, { useMemo } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
 import LessonSidebar from "~/components/lessonSidebar";
 import { cn } from "~/utils/classNames";
 import { useQuery } from "@tanstack/react-query";
-import { ITheLangPathLesson } from "~/interfaces/theLangPath";
-import { convertDataToPanelComponent } from "~/components/theLangPath/panels";
+import { ITheLangPathPanel } from "~/interfaces/theLangPath";
+import { convertDataToPanelComponent, LESSONS_LIST } from "~/components/theLangPath/panels";
 
 export default function TheLanguagePathContentContainer() {
   const router = useRouter();
   const { lessonIdx, panelIdx } = router.query;
+  const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
+  const currentPanelIdx = Number(panelIdx);
 
   const {
-    data: selectedLesson = null,
-    isLoading: isSelectedLessonLoading,
-    isError: isSelectedLessonErrored,
+    data: panelsOfSelectedLesson = null,
+    isLoading: isPanelsOfSelectedLessonLoading,
+    isError: isPanelsOfSelectedLessonErrored,
   } = useQuery({
     staleTime: 60000,
     gcTime: 60000,
     retry: 1,
     queryKey: ["selectedLesson", lessonIdx],
-    queryFn: async (): Promise<ITheLangPathLesson | null> => {
-      if (!lessonIdx) {
-        return null;
-      }
-      if (Number(lessonIdx) < 0 || 1 < Number(lessonIdx)) {
+    queryFn: async (): Promise<ITheLangPathPanel[] | null> => {
+      if (!lessonIdx || !selectedLesson) {
         return null;
       }
       return await import(`~/constants/theLangPath/lesson_${lessonIdx}`);
     },
   });
 
-  const currentPanelIdx = Number(panelIdx);
-  const selectedPanelComponent = useMemo(() => {
-    if (!selectedLesson) {
-      return <div>Lesson not found</div>;
-    }
+  if (isPanelsOfSelectedLessonLoading) {
+    return <div className="flex flex-row justify-center items-center text-4xl p-8">Loading...</div>;
+  }
 
-    const panel = selectedLesson.panels[currentPanelIdx];
-    if (!panel) {
-      return <div>Panel not found</div>;
-    }
-    return convertDataToPanelComponent(panel);
-  }, [selectedLesson, currentPanelIdx]);
+  if (isPanelsOfSelectedLessonErrored) {
+    return (
+      <div className="flex flex-row justify-center items-center text-4xl p-8">
+        Error loading lesson
+      </div>
+    );
+  }
 
-  if (!selectedLesson) {
+  if (!panelsOfSelectedLesson || panelsOfSelectedLesson.length === 0) {
     return (
       <div className="flex flex-row justify-center items-center text-4xl p-8">Lesson not found</div>
     );
   }
+
+  const selectedPanel = panelsOfSelectedLesson[currentPanelIdx];
+  if (!selectedPanel) {
+    return (
+      <div className="flex flex-row justify-center items-center text-4xl p-8">Panel not found</div>
+    );
+  }
+
+  const selectedPanelComponent = convertDataToPanelComponent(selectedPanel);
 
   const handlePrevious = async () => {
     if (currentPanelIdx > 0) {
@@ -60,12 +67,14 @@ export default function TheLanguagePathContentContainer() {
   };
 
   const handleNext = async () => {
-    if (currentPanelIdx < selectedLesson.panels.length - 1) {
+    if (currentPanelIdx < panelsOfSelectedLesson.length - 1) {
       await router.push({
         query: { lessonIdx, panelIdx: currentPanelIdx + 1 },
       });
     }
   };
+
+  console.log("panelsOfSelectedLesson", panelsOfSelectedLesson);
 
   return (
     <>
@@ -80,13 +89,13 @@ export default function TheLanguagePathContentContainer() {
           </span>
           <span className="text-4xl font-bold text-[#f27141]">/</span>
           <span className="text-2xl font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
-            {selectedLesson.panels[currentPanelIdx]?.title || "Panel not selected"}
+            {panelsOfSelectedLesson[currentPanelIdx]?.title || "Panel not selected"}
           </span>
         </div>
 
         <div className="w-full 2xl:w-11/12 px-0 sm:px-1 md:px-2 xl:px-3 2xl:px-4 xl:mx-auto flex flex-row">
           {/* Sidebar with lessons */}
-          <LessonSidebar />
+          <LessonSidebar panels={panelsOfSelectedLesson} />
 
           {/* Main content area */}
           <div className="flex flex-col gap-2 w-full border-solid border-[#cecec3] px-1 md:px-2 lg:px-4 pt-4 pb-14 overflow-hidden overflow-y-auto">
@@ -123,10 +132,10 @@ export default function TheLanguagePathContentContainer() {
           {/* Next Button */}
           <button
             onClick={handleNext}
-            disabled={currentPanelIdx === selectedLesson.panels.length - 1}
+            disabled={currentPanelIdx === panelsOfSelectedLesson.length - 1}
             className={cn(
               "px-4 py-2 rounded",
-              currentPanelIdx === selectedLesson.panels.length - 1
+              currentPanelIdx === panelsOfSelectedLesson.length - 1
                 ? "opacity-50 cursor-not-allowed text-black"
                 : "bg-[#f27141] hover:bg-[#f27141]/75 text-white",
             )}

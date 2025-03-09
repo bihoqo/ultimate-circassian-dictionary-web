@@ -3,10 +3,42 @@ import LessonTable, { LessonTableCell } from "~/components/lessons/lessonTable";
 import PanelDiv from "~/components/panelDiv";
 import {
   ITheLangPathExampleInEachLangRow,
+  ITheLangPathLesson,
   ITheLangPathLetterIntroductionRow,
   ITheLangPathPanel,
 } from "~/interfaces/theLangPath";
 import { ICharacter, ICharacterBank } from "~/interfaces";
+
+export const LESSONS_LIST: ITheLangPathLesson[] = [
+  {
+    index: 0,
+    title: "The Letters",
+  },
+  {
+    index: 1,
+    title: "Welcome",
+  },
+  {
+    index: 2,
+    title: "How are You?",
+  },
+  {
+    index: 3,
+    title: "What is The Price of This?",
+  },
+  {
+    index: 4,
+    title: "What is The Time",
+  },
+  {
+    index: 5,
+    title: "How Can I Help You?",
+  },
+  {
+    index: 6,
+    title: "Family Life",
+  },
+];
 
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {

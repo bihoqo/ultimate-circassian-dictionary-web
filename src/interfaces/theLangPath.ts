@@ -17,7 +17,6 @@ export interface ITheLangPathExampleInEachLangRow {
 export interface ITheLangPathLesson {
   title: string;
   index: number;
-  panels: ITheLangPathPanel[];
 }
 
 export type ITheLangPathPanelType = "letterIntroduction" | "exampleInEachLang";

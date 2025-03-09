@@ -1,10 +1,11 @@
-import { LESSONS_LIST } from "~/constants/lessons";
 import { cn } from "~/utils/classNames";
 import React, { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/router";
 import { IoChevronForward, IoChevronBack, IoClose } from "react-icons/io5";
+import { LESSONS_LIST } from "~/components/theLangPath/panels";
+import { ITheLangPathPanel } from "~/interfaces/theLangPath";
 
-export default function LessonSidebar() {
+export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] }) {
   const router = useRouter();
   const { lessonIdx, panelIdx } = router.query;
   const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
@@ -28,6 +29,8 @@ export default function LessonSidebar() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  console.log("panels", panels);
 
   return (
     <>
@@ -53,16 +56,16 @@ export default function LessonSidebar() {
           <div className="flex flex-col gap-2 p-4">
             {LESSONS_LIST.map((lesson) => (
               <button
-                key={lesson.lessonIdx}
-                onClick={() => navigateToLesson(lesson.lessonIdx, 0)}
+                key={lesson.index}
+                onClick={() => navigateToLesson(lesson.index, 0)}
                 className={cn(
                   "px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
-                  selectedLesson?.lessonIdx === lesson.lessonIdx
+                  selectedLesson?.index === lesson.index
                     ? "text-[#f27141] font-bold"
                     : "text-[#4a7324] font-medium",
                 )}
               >
-                {lesson.lessonIdx}. {lesson.title}
+                {lesson.index}. {lesson.title}
               </button>
             ))}
           </div>
@@ -72,10 +75,10 @@ export default function LessonSidebar() {
             <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3] mb-24">
               {/* Added margin at the bottom */}
               <h2 className="text-lg font-medium text-left">Exercise</h2>
-              {selectedLesson.panelIdxList.map((panel, idx) => (
+              {panels.map((panel, idx) => (
                 <button
                   key={idx}
-                  onClick={() => navigateToLesson(selectedLesson.lessonIdx, idx)}
+                  onClick={() => navigateToLesson(selectedLesson.index, idx)}
                   className={cn(
                     "px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
                     Number(panelIdx) === idx
