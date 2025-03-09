@@ -10,12 +10,12 @@ export default function TheLanguagePathHomeContainer() {
     <div
       className="w-full h-full min-h-screen bg-cover bg-center bg-no-repeat py-4"
       style={{
-        backgroundImage: `url('/lessons/menu/bg2.jpg')`,
+        backgroundImage: `url('/theLangPath/menu/bg2.jpg')`,
       }}
     >
       <div className="p-4 flex flex-col gap-8">
         <div className="flex flex-row justify-center items-center">
-          <Image src="/lessons/menu/P7.png" width={188} height={100} alt="Lessons" />
+          <Image src="/theLangPath/menu/P7.png" width={188} height={100} alt="Lessons" />
         </div>
         <h1 className="text-[36px] font-black text-white text-center">БЗЭМ ИЛЪАГЪУ</h1>
         <h2 className="text-[28px] font-black text-white text-center">

@@ -27,7 +27,18 @@ export default function TheLanguagePathContentContainer() {
       if (!lessonIdx || !selectedLesson) {
         return null;
       }
-      return await import(`~/constants/theLangPath/lesson_${lessonIdx}`);
+
+      try {
+        const response = await fetch(`/theLangPath/content/lesson_${lessonIdx}.json`);
+        if (!response.ok) {
+          console.error(`Failed to load lesson data for lesson ${lessonIdx}`);
+          return null;
+        }
+        return response.json();
+      } catch (error) {
+        console.error("Error fetching lesson data:", error);
+        return null;
+      }
     },
   });
 

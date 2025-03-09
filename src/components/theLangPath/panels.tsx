@@ -43,11 +43,11 @@ export const LESSONS_LIST: ITheLangPathLesson[] = [
 export const LESSON_CHARACTERS: ICharacterBank[] = [
   {
     names: ["Данэ", "Нэрыт", "lазэ", "Нэрыс", "Дэнэф", "Разэ", "Симаз", "Симэ", "Синэмис"],
-    avatar: "/lessons/faces/14.png",
+    avatar: "/theLangPath/faces/14.png",
   },
   {
     names: ["Сэтэнай", "Нэф", "Нэфын"],
-    avatar: "/lessons/faces/10.png",
+    avatar: "/theLangPath/faces/10.png",
   },
   {
     names: [
@@ -63,11 +63,11 @@ export const LESSON_CHARACTERS: ICharacterBank[] = [
       "Джэбагъ",
       "Бибэрс",
     ],
-    avatar: "/lessons/faces/4.png",
+    avatar: "/theLangPath/faces/4.png",
   },
   {
     names: ["Аслъан", "Чан", "Озырмэдж", "Пщымаф", "Тембот"],
-    avatar: "/lessons/faces/13.png",
+    avatar: "/theLangPath/faces/13.png",
   },
 ];
 
@@ -77,7 +77,7 @@ export function getCharacterByName(name: string): ICharacter {
   });
   return {
     name: name,
-    avatar: found?.avatar || "/lessons/faces/16.png",
+    avatar: found?.avatar || "/theLangPath/faces/16.png",
   };
 }
 
@@ -110,7 +110,7 @@ function _convertLetterIntroductionRowArrayToReactNodeMatrix(
         key={row.letter}
         firstRow={row.letter} // Extract first part of the letter
         secondRow={row.wordExample}
-        imgUrl={`/lessons/lesson_0/pictures/${row.imgUrl}`}
+        imgUrl={`/theLangPath/lesson_0/pictures/${row.imgUrl}`}
         langToTranslationMap={row.translationsMap}
       />
     );
