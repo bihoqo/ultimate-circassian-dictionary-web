@@ -122,17 +122,6 @@ export interface IPreferredSettings {
   translationLangs: ISupportedTranslationLang[];
 }
 
-export interface ILesson {
-  lessonIdx: number;
-  title: string;
-  panelIdxList: IPanel[];
-}
-
-export interface IPanel {
-  title: string;
-  component: ReactNode;
-}
-
 export type ISupportedTranslationLang = "en" | "ar" | "he";
 export type ILangToTranslationMap = Record<ISupportedTranslationLang, string>;
 

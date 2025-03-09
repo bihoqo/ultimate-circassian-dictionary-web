@@ -1,24 +1,55 @@
 import Head from "next/head";
-import React from "react";
+import React, { useMemo } from "react";
 import { useRouter } from "next/router";
 import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
 import LessonSidebar from "~/components/lessonSidebar";
 import { cn } from "~/utils/classNames";
-import { LESSONS_LIST } from "~/constants/lessons";
+import { useQuery } from "@tanstack/react-query";
+import { ITheLangPathLesson } from "~/interfaces/theLangPath";
+import { convertDataToPanelComponent } from "~/components/theLangPath/panels";
 
 export default function TheLanguagePathContentContainer() {
   const router = useRouter();
   const { lessonIdx, panelIdx } = router.query;
-  const selectedLesson = LESSONS_LIST[Number(lessonIdx)];
+
+  const {
+    data: selectedLesson = null,
+    isLoading: isSelectedLessonLoading,
+    isError: isSelectedLessonErrored,
+  } = useQuery({
+    staleTime: 60000,
+    gcTime: 60000,
+    retry: 1,
+    queryKey: ["selectedLesson", lessonIdx],
+    queryFn: async (): Promise<ITheLangPathLesson | null> => {
+      if (!lessonIdx) {
+        return null;
+      }
+      if (Number(lessonIdx) < 0 || 1 < Number(lessonIdx)) {
+        return null;
+      }
+      return await import(`~/constants/theLangPath/lesson_${lessonIdx}`);
+    },
+  });
+
+  const currentPanelIdx = Number(panelIdx);
+  const selectedPanelComponent = useMemo(() => {
+    if (!selectedLesson) {
+      return <div>Lesson not found</div>;
+    }
+
+    const panel = selectedLesson.panels[currentPanelIdx];
+    if (!panel) {
+      return <div>Panel not found</div>;
+    }
+    return convertDataToPanelComponent(panel);
+  }, [selectedLesson, currentPanelIdx]);
 
   if (!selectedLesson) {
     return (
       <div className="flex flex-row justify-center items-center text-4xl p-8">Lesson not found</div>
     );
   }
-
-  const currentPanelIdx = Number(panelIdx);
-  const selectedPanelComponent = selectedLesson.panelIdxList[currentPanelIdx]?.component;
 
   const handlePrevious = async () => {
     if (currentPanelIdx > 0) {
@@ -29,7 +60,7 @@ export default function TheLanguagePathContentContainer() {
   };
 
   const handleNext = async () => {
-    if (currentPanelIdx < selectedLesson.panelIdxList.length - 1) {
+    if (currentPanelIdx < selectedLesson.panels.length - 1) {
       await router.push({
         query: { lessonIdx, panelIdx: currentPanelIdx + 1 },
       });
@@ -49,7 +80,7 @@ export default function TheLanguagePathContentContainer() {
           </span>
           <span className="text-4xl font-bold text-[#f27141]">/</span>
           <span className="text-2xl font-black px-1 py-1 rounded-md transition-colors duration-200 hover:hover:bg-gray-100 text-[#f27141]">
-            {selectedLesson.panelIdxList[currentPanelIdx]?.title || "Panel not selected"}
+            {selectedLesson.panels[currentPanelIdx]?.title || "Panel not selected"}
           </span>
         </div>
 
@@ -92,10 +123,10 @@ export default function TheLanguagePathContentContainer() {
           {/* Next Button */}
           <button
             onClick={handleNext}
-            disabled={currentPanelIdx === selectedLesson.panelIdxList.length - 1}
+            disabled={currentPanelIdx === selectedLesson.panels.length - 1}
             className={cn(
               "px-4 py-2 rounded",
-              currentPanelIdx === selectedLesson.panelIdxList.length - 1
+              currentPanelIdx === selectedLesson.panels.length - 1
                 ? "opacity-50 cursor-not-allowed text-black"
                 : "bg-[#f27141] hover:bg-[#f27141]/75 text-white",
             )}
