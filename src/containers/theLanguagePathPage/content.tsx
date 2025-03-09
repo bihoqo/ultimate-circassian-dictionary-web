@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useMemo } from "react";
 import { useRouter } from "next/router";
 import SwitchReadingOrTranslation from "~/components/switchReadingOrTranslation";
 import LessonSidebar from "~/components/lessonSidebar";
@@ -15,7 +15,7 @@ export default function TheLanguagePathContentContainer() {
   const currentPanelIdx = Number(panelIdx);
 
   const {
-    data: panelsOfSelectedLesson = null,
+    data: panelsOfSelectedLesson = [],
     isLoading: isPanelsOfSelectedLessonLoading,
     isError: isPanelsOfSelectedLessonErrored,
   } = useQuery({
@@ -23,51 +23,64 @@ export default function TheLanguagePathContentContainer() {
     gcTime: 60000,
     retry: 1,
     queryKey: ["selectedLesson", lessonIdx],
-    queryFn: async (): Promise<ITheLangPathPanel[] | null> => {
+    queryFn: async (): Promise<ITheLangPathPanel[]> => {
       if (!lessonIdx || !selectedLesson) {
-        return null;
+        return [];
       }
 
       try {
         const response = await fetch(`/theLangPath/content/lesson_${lessonIdx}.json`);
         if (!response.ok) {
           console.error(`Failed to load lesson data for lesson ${lessonIdx}`);
-          return null;
+          return [];
         }
         return response.json();
       } catch (error) {
         console.error("Error fetching lesson data:", error);
-        return null;
+        return [];
       }
     },
   });
 
-  if (isPanelsOfSelectedLessonLoading) {
-    return <div className="flex flex-row justify-center items-center text-4xl p-8">Loading...</div>;
-  }
+  const selectedPanelComponent = useMemo((): React.ReactNode => {
+    if (isPanelsOfSelectedLessonLoading) {
+      return (
+        <div className="flex flex-row justify-center items-center text-4xl p-8">Loading...</div>
+      );
+    }
 
-  if (isPanelsOfSelectedLessonErrored) {
-    return (
-      <div className="flex flex-row justify-center items-center text-4xl p-8">
-        Error loading lesson
-      </div>
-    );
-  }
+    if (isPanelsOfSelectedLessonErrored) {
+      return (
+        <div className="flex flex-row justify-center items-center text-4xl p-8">
+          Error loading lesson
+        </div>
+      );
+    }
 
-  if (!panelsOfSelectedLesson || panelsOfSelectedLesson.length === 0) {
-    return (
-      <div className="flex flex-row justify-center items-center text-4xl p-8">Lesson not found</div>
-    );
-  }
+    if (!panelsOfSelectedLesson || panelsOfSelectedLesson.length === 0) {
+      return (
+        <div className="flex flex-row justify-center items-center text-4xl p-8">
+          Lesson not found
+        </div>
+      );
+    }
 
-  const selectedPanel = panelsOfSelectedLesson[currentPanelIdx];
-  if (!selectedPanel) {
-    return (
-      <div className="flex flex-row justify-center items-center text-4xl p-8">Panel not found</div>
-    );
-  }
+    const selectedPanel = panelsOfSelectedLesson[currentPanelIdx];
+    if (!selectedPanel) {
+      return (
+        <div className="flex flex-row justify-center items-center text-4xl p-8">
+          Panel not found
+        </div>
+      );
+    }
 
-  const selectedPanelComponent = convertDataToPanelComponent(selectedPanel);
+    return convertDataToPanelComponent(selectedPanel);
+  }, [
+    currentPanelIdx,
+    isPanelsOfSelectedLessonErrored,
+    isPanelsOfSelectedLessonLoading,
+    panelsOfSelectedLesson,
+  ]);
 
   const handlePrevious = async () => {
     if (currentPanelIdx > 0) {
