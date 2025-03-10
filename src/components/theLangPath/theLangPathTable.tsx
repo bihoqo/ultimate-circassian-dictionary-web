@@ -15,7 +15,7 @@ interface LessonTableProps {
   showBackgroundColors?: boolean;
 }
 
-export default function LessonTable({
+export default function TheLangPathTable({
   contentMatrix = [],
   gapBetweenRows = 0,
   showIndexes = false,
@@ -97,7 +97,7 @@ export interface ILessonTableCellProps {
   langToTranslationMap?: ILangToTranslationMap;
 }
 
-export function LessonTableCell({
+export function TheLangPathTableCell({
   firstRow,
   secondRow,
   imgUrl,

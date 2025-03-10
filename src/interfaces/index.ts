@@ -98,16 +98,6 @@ export interface Autocomplete {
   toLangs: SupportedLang[];
 }
 
-export interface ICharacterBank {
-  names: string[];
-  avatar: string;
-}
-
-export interface ICharacter {
-  name: string;
-  avatar: string;
-}
-
 export interface INavBarItem {
   title: string;
   link: string;
@@ -120,17 +110,6 @@ export interface IPreferredSettings {
   translationFontSize: number;
   isTranslationChecked: boolean;
   translationLangs: ISupportedTranslationLang[];
-}
-
-export interface ILesson {
-  lessonIdx: number;
-  title: string;
-  panelIdxList: IPanel[];
-}
-
-export interface IPanel {
-  title: string;
-  component: ReactNode;
 }
 
 export type ISupportedTranslationLang = "en" | "ar" | "he";

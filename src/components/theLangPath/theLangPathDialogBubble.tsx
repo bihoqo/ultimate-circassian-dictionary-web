@@ -1,24 +1,17 @@
-import { ILangToTranslationMap } from "~/interfaces";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
-import { getCharacterByName } from "~/constants/lessons";
+import { getCharacterByName } from "~/components/theLangPath/panels";
+import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 
-export interface ILessonDialogBubbleProps {
-  leftOrRight: "left" | "right";
-  characterName: string;
-  originText: string;
-  langToTranslationMap: ILangToTranslationMap;
-}
-
-export default function LessonDialogBubble({
+export default function TheLangPathDialogBubble({
   leftOrRight,
   characterName,
   originText,
   langToTranslationMap,
-}: ILessonDialogBubbleProps) {
+}: ITheLangPathDialogBubble) {
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =

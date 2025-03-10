@@ -1,8 +1,8 @@
 import React from "react";
 import { useRouter } from "next/navigation";
-import { LESSONS_LIST } from "~/constants/lessons";
 import queryString from "query-string";
 import Image from "next/image";
+import { LESSONS_LIST } from "~/components/theLangPath/panels";
 
 export default function TheLanguagePathHomeContainer() {
   const router = useRouter();
@@ -10,12 +10,12 @@ export default function TheLanguagePathHomeContainer() {
     <div
       className="w-full h-full min-h-screen bg-cover bg-center bg-no-repeat py-4"
       style={{
-        backgroundImage: `url('/lessons/menu/bg2.jpg')`,
+        backgroundImage: `url('/theLangPath/menu/bg2.jpg')`,
       }}
     >
       <div className="p-4 flex flex-col gap-8">
         <div className="flex flex-row justify-center items-center">
-          <Image src="/lessons/menu/P7.png" width={188} height={100} alt="Lessons" />
+          <Image src="/theLangPath/menu/P7.png" width={188} height={100} alt="Lessons" />
         </div>
         <h1 className="text-[36px] font-black text-white text-center">БЗЭМ ИЛЪАГЪУ</h1>
         <h2 className="text-[28px] font-black text-white text-center">
@@ -25,15 +25,15 @@ export default function TheLanguagePathHomeContainer() {
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 3xl:w-1/2 2xl:w-2/3 md:w-2/3 sm:w-11/12 w-full mx-auto">
           {LESSONS_LIST.map((lesson) => {
             const params: string = queryString.stringify({
-              lessonIdx: lesson.lessonIdx,
+              lessonIdx: lesson.index,
               panelIdx: 0,
             });
 
             return (
               <LessonButton
-                key={lesson.lessonIdx}
+                key={lesson.index}
                 title={lesson.title}
-                lessonIndex={lesson.lessonIdx}
+                lessonIndex={lesson.index}
                 onClick={() => router.push(`/the-language-path?${params}`)}
               />
             );
