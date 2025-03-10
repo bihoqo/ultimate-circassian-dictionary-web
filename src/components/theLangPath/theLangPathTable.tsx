@@ -4,6 +4,7 @@ import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { ILangToTranslationMap } from "~/interfaces";
 import Image from "next/image";
+import TheLangPathDialogBubble from "~/components/theLangPath/theLangPathDialogBubble";
 
 interface LessonTableProps {
   headersArray?: React.ReactNode[]; // Headers for the table
@@ -15,7 +16,7 @@ interface LessonTableProps {
   showBackgroundColors?: boolean;
 }
 
-export default function LessonTable({
+export default function TheLangPathTable({
   contentMatrix = [],
   gapBetweenRows = 0,
   showIndexes = false,
@@ -97,7 +98,7 @@ export interface ILessonTableCellProps {
   langToTranslationMap?: ILangToTranslationMap;
 }
 
-export function LessonTableCell({
+export function TheLangPathTableCell({
   firstRow,
   secondRow,
   imgUrl,

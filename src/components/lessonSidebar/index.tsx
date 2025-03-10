@@ -30,8 +30,6 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  console.log("panels", panels);
-
   return (
     <>
       {/* Sidebar Panel */}

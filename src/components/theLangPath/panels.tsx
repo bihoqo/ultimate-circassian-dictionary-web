@@ -1,5 +1,5 @@
 import React from "react";
-import LessonTable, { LessonTableCell } from "~/components/lessons/lessonTable";
+import TheLangPathTable, { TheLangPathTableCell } from "~/components/theLangPath/theLangPathTable";
 import PanelDiv from "~/components/panelDiv";
 import {
   ITheLangPathCharacter,
@@ -8,6 +8,7 @@ import {
   ITheLangPathLesson,
   ITheLangPathLetterIntroductionTableRow,
   ITheLangPathPanel,
+  ITheLangPathPart,
 } from "~/interfaces/theLangPath";
 
 export const LESSONS_LIST: ITheLangPathLesson[] = [
@@ -82,17 +83,17 @@ export function getCharacterByName(name: string): ITheLangPathCharacter {
   };
 }
 
-export function convertDataToPanelComponent(panel: ITheLangPathPanel): React.ReactNode {
-  switch (panel.type) {
+export function convertDataToPanelComponent(panelPart: ITheLangPathPart): React.ReactNode {
+  switch (panelPart.type) {
     case "letterIntroduction":
       return convertLetterIntroductionRowArrayToPanelComponent(
-        panel.data as ITheLangPathLetterIntroductionTableRow[],
-        panel.audio,
+        panelPart.data as ITheLangPathLetterIntroductionTableRow[],
+        panelPart.audio,
       );
     case "exampleInEachLang":
       return convertExampleInEachLangRowToPanelComponent(
-        panel.data as ITheLangPathExamplesInEachLangTableRow[],
-        panel.audio,
+        panelPart.data as ITheLangPathExamplesInEachLangTableRow[],
+        panelPart.audio,
       );
   }
 }
@@ -107,7 +108,7 @@ function _convertLetterIntroductionRowArrayToReactNodeMatrix(
 
   for (const row of data) {
     const node = (
-      <LessonTableCell
+      <TheLangPathTableCell
         key={row.letter}
         firstRow={row.letter} // Extract first part of the letter
         secondRow={row.wordExample}
@@ -138,7 +139,7 @@ function _convertExampleInEachLangRowToReactNodeMatrix(
     const row = data
       .slice(i, i + columnsPerRow)
       .map((cell) => (
-        <LessonTableCell
+        <TheLangPathTableCell
           key={cell.cir}
           firstRow={cell.cir}
           langToTranslationMap={{ en: cell.en, ar: cell.ar, he: cell.he }}
@@ -156,7 +157,7 @@ export function convertLetterIntroductionRowArrayToPanelComponent(
 ) {
   return (
     <PanelDiv audioPath={audioPath}>
-      <LessonTable
+      <TheLangPathTable
         contentMatrix={_convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
         showIndexes={false}
         className=""
@@ -172,7 +173,7 @@ export function convertExampleInEachLangRowToPanelComponent(
 ) {
   return (
     <PanelDiv audioPath={audioPath}>
-      <LessonTable
+      <TheLangPathTable
         contentMatrix={_convertExampleInEachLangRowToReactNodeMatrix(data, 4)}
         showIndexes={false}
         className=""

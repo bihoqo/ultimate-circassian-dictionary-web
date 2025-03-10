@@ -19,13 +19,16 @@ export interface ITheLangPathLesson {
   index: number;
 }
 
-export interface ITheLangPathPanel {
-  title: string;
-  audio: string;
+export interface ITheLangPathPart {
   type: ITheLangPathPanelType;
   data: ITheLangPathPanelData;
 }
 
+export interface ITheLangPathPanel {
+  title: string;
+  audio: string;
+  parts: ITheLangPathPart[];
+}
 export interface ITheLangPathDialogBubble {
   leftOrRight: "left" | "right";
   characterName: string;

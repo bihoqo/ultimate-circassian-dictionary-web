@@ -6,7 +6,7 @@ import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 import { getCharacterByName } from "~/components/theLangPath/panels";
 
-export default function LessonDialogBubble({
+export default function TheLangPathDialogBubble({
   leftOrRight,
   characterName,
   originText,
