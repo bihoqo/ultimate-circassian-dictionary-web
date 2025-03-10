@@ -1,15 +1,15 @@
 import React from "react";
 import TheLangPathTable, { TheLangPathTableCell } from "~/components/theLangPath/theLangPathTable";
-import PanelDiv from "~/components/panelDiv";
 import {
   ITheLangPathCharacter,
   ITheLangPathCharacterBank,
+  ITheLangPathDialogBubble,
   ITheLangPathExamplesInEachLangTableRow,
   ITheLangPathLesson,
   ITheLangPathLetterIntroductionTableRow,
-  ITheLangPathPanel,
   ITheLangPathPart,
 } from "~/interfaces/theLangPath";
+import TheLangPathDialogBubble from "~/components/theLangPath/theLangPathDialogBubble";
 
 export const LESSONS_LIST: ITheLangPathLesson[] = [
   {
@@ -83,102 +83,107 @@ export function getCharacterByName(name: string): ITheLangPathCharacter {
   };
 }
 
-export function convertDataToPanelComponent(panelPart: ITheLangPathPart): React.ReactNode {
+export function convertDataToPanelPartComponent(panelPart: ITheLangPathPart): React.ReactNode {
   switch (panelPart.type) {
     case "letterIntroduction":
-      return convertLetterIntroductionRowArrayToPanelComponent(
+      return _handleLetterIntroductionTableRow(
         panelPart.data as ITheLangPathLetterIntroductionTableRow[],
-        panelPart.audio,
+        4,
       );
     case "exampleInEachLang":
-      return convertExampleInEachLangRowToPanelComponent(
+      return _handleExamplesInEachLangTableRow(
         panelPart.data as ITheLangPathExamplesInEachLangTableRow[],
-        panelPart.audio,
+        4,
       );
+    case "dialogBubble":
+      return _handleDialogBubble(panelPart.data as ITheLangPathDialogBubble);
+    default:
+      return <p>Not Found</p>;
   }
 }
 
-function _convertLetterIntroductionRowArrayToReactNodeMatrix(
+export function _handleLetterIntroductionTableRow(
   data: ITheLangPathLetterIntroductionTableRow[],
-  numberOfColumns = 6,
-): React.ReactNode[][] {
+  numberOfColumns = 4,
+): React.ReactNode {
   const contentMatrix: React.ReactNode[][] = [];
   let currentRow: React.ReactNode[] = [];
-  let index = 0;
 
-  for (const row of data) {
-    const node = (
+  for (let i = 0; i < data.length; i++) {
+    const row = data[i];
+    currentRow.push(
       <TheLangPathTableCell
         key={row.letter}
-        firstRow={row.letter} // Extract first part of the letter
+        firstRow={row.letter}
         secondRow={row.wordExample}
         imgUrl={`/theLangPath/lesson_0/pictures/${row.imgUrl}`}
         langToTranslationMap={row.translationsMap}
-      />
+      />,
     );
 
-    currentRow.push(node);
-
-    if (currentRow.length === numberOfColumns || index === data.length - 1) {
+    if (currentRow.length === numberOfColumns || i === data.length - 1) {
       contentMatrix.push(currentRow);
       currentRow = [];
     }
-
-    index++;
   }
 
-  return contentMatrix;
-}
-
-function _convertExampleInEachLangRowToReactNodeMatrix(
-  data: ITheLangPathExamplesInEachLangTableRow[],
-  columnsPerRow: number = 4,
-): React.ReactNode[][] {
-  const result: React.ReactNode[][] = [];
-  for (let i = 0; i < data.length; i += columnsPerRow) {
-    const row = data
-      .slice(i, i + columnsPerRow)
-      .map((cell) => (
-        <TheLangPathTableCell
-          key={cell.cir}
-          firstRow={cell.cir}
-          langToTranslationMap={{ en: cell.en, ar: cell.ar, he: cell.he }}
-        />
-      ));
-    result.push(row);
-  }
-
-  return result;
-}
-
-export function convertLetterIntroductionRowArrayToPanelComponent(
-  data: ITheLangPathLetterIntroductionTableRow[],
-  audioPath: string,
-) {
   return (
-    <PanelDiv audioPath={audioPath}>
-      <TheLangPathTable
-        contentMatrix={_convertLetterIntroductionRowArrayToReactNodeMatrix(data)}
-        showIndexes={false}
-        className=""
-        showBackgroundColors={true}
-      />
-    </PanelDiv>
+    <TheLangPathTable
+      contentMatrix={contentMatrix}
+      showIndexes={false}
+      className=""
+      showBackgroundColors={true}
+    />
   );
 }
 
-export function convertExampleInEachLangRowToPanelComponent(
+export function _handleExamplesInEachLangTableRow(
   data: ITheLangPathExamplesInEachLangTableRow[],
-  audioPath: string,
-) {
+  numberOfColumns = 4,
+): React.ReactNode {
+  const contentMatrix: React.ReactNode[][] = [];
+
+  for (let i = 0; i < data.length; i += numberOfColumns) {
+    const currentRow: React.ReactNode[] = [];
+
+    for (let j = i; j < Math.min(i + numberOfColumns, data.length); j++) {
+      currentRow.push(
+        <TheLangPathTableCell
+          key={data[j].cir}
+          firstRow={data[j].cir}
+          langToTranslationMap={{
+            en: data[j].en,
+            ar: data[j].ar,
+            he: data[j].he,
+          }}
+        />,
+      );
+    }
+
+    contentMatrix.push(currentRow);
+  }
+
   return (
-    <PanelDiv audioPath={audioPath}>
-      <TheLangPathTable
-        contentMatrix={_convertExampleInEachLangRowToReactNodeMatrix(data, 4)}
-        showIndexes={false}
-        className=""
-        showBackgroundColors={true}
-      />
-    </PanelDiv>
+    <TheLangPathTable
+      contentMatrix={contentMatrix}
+      showIndexes={false}
+      className=""
+      showBackgroundColors={true}
+    />
+  );
+}
+
+export function _handleDialogBubble(data: ITheLangPathDialogBubble): React.ReactNode {
+  return (
+    <TheLangPathDialogBubble
+      leftOrRight={data.leftOrRight}
+      characterName={data.characterName}
+      originText={data.originText}
+      langToTranslationMap={{
+        en: data.langToTranslationMap.en,
+        ar: data.langToTranslationMap.ar,
+        he: data.langToTranslationMap.he,
+      }}
+    />
   );
 }

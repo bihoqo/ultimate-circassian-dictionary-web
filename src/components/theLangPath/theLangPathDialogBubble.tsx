@@ -3,8 +3,8 @@ import Image from "next/image";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
-import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 import { getCharacterByName } from "~/components/theLangPath/panels";
+import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 
 export default function TheLangPathDialogBubble({
   leftOrRight,

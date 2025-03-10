@@ -29,6 +29,7 @@ export interface ITheLangPathPanel {
   audio: string;
   parts: ITheLangPathPart[];
 }
+
 export interface ITheLangPathDialogBubble {
   leftOrRight: "left" | "right";
   characterName: string;
@@ -50,4 +51,4 @@ export type ITheLangPathPanelType = "letterIntroduction" | "exampleInEachLang" |
 export type ITheLangPathPanelData =
   | ITheLangPathLetterIntroductionTableRow[]
   | ITheLangPathExamplesInEachLangTableRow[]
-  | ITheLangPathDialogBubble[];
+  | ITheLangPathDialogBubble;

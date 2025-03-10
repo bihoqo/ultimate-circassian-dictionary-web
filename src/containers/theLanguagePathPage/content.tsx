@@ -6,7 +6,8 @@ import LessonSidebar from "~/components/lessonSidebar";
 import { cn } from "~/utils/classNames";
 import { useQuery } from "@tanstack/react-query";
 import { ITheLangPathPanel } from "~/interfaces/theLangPath";
-import { convertDataToPanelComponent, LESSONS_LIST } from "~/components/theLangPath/panels";
+import { convertDataToPanelPartComponent, LESSONS_LIST } from "~/components/theLangPath/panels";
+import PanelDiv from "~/components/panelDiv";
 
 export default function TheLanguagePathContentContainer() {
   const router = useRouter();
@@ -74,7 +75,17 @@ export default function TheLanguagePathContentContainer() {
       );
     }
 
-    return convertDataToPanelComponent(selectedPanel);
+    return (
+      <PanelDiv audioPath={selectedPanel.audio}>
+        {selectedPanel.parts.map((part, idx) => {
+          return (
+            <div className="w-full" key={idx}>
+              {convertDataToPanelPartComponent(part)}
+            </div>
+          );
+        })}
+      </PanelDiv>
+    );
   }, [
     currentPanelIdx,
     isPanelsOfSelectedLessonErrored,
@@ -97,8 +108,6 @@ export default function TheLanguagePathContentContainer() {
       });
     }
   };
-
-  console.log("panelsOfSelectedLesson", panelsOfSelectedLesson);
 
   return (
     <>

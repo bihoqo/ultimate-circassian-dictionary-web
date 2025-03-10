@@ -17,16 +17,16 @@
     "axios": "^1.8.2",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
-    "framer-motion": "^12.4.10",
+    "framer-motion": "^12.4.11",
     "html-react-parser": "^5.2.2",
-    "jotai": "^2.12.1",
+    "jotai": "^2.12.2",
     "neverthrow": "^8.2.0",
     "next": "^15.2.1",
     "query-string": "^9.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-simple-keyboard": "^3.8.53",
+    "react-simple-keyboard": "^3.8.54",
     "react-toastify": "^11.0.5",
     "tailwind-merge": "^3.0.2",
     "use-debounce": "^10.0.4"
@@ -37,9 +37,9 @@
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.26.0",
-    "@typescript-eslint/parser": "^8.26.0",
-    "autoprefixer": "^10.4.20",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9.22.0",
     "eslint-config-next": "^15.2.1",
     "eslint-config-prettier": "^10.1.1",
@@ -57,6 +57,6 @@
     "tailwindcss": "^4.0.12",
     "tailwindcss-safe-area": "^0.6.0",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.0"
+    "typescript-eslint": "^8.26.1"
   }
 }
