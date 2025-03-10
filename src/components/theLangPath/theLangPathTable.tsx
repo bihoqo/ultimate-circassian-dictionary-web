@@ -4,7 +4,6 @@ import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { ILangToTranslationMap } from "~/interfaces";
 import Image from "next/image";
-import TheLangPathDialogBubble from "~/components/theLangPath/theLangPathDialogBubble";
 
 interface LessonTableProps {
   headersArray?: React.ReactNode[]; // Headers for the table
