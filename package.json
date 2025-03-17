@@ -17,7 +17,7 @@
     "axios": "^1.8.2",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
-    "framer-motion": "^12.4.11",
+    "framer-motion": "^12.5.0",
     "html-react-parser": "^5.2.2",
     "jotai": "^2.12.2",
     "neverthrow": "^8.2.0",
