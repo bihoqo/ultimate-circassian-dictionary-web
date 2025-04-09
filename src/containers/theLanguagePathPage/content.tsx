@@ -20,10 +20,10 @@ export default function TheLanguagePathContentContainer() {
     isLoading: isPanelsOfSelectedLessonLoading,
     isError: isPanelsOfSelectedLessonErrored,
   } = useQuery({
-    staleTime: 60000,
-    gcTime: 60000,
+    staleTime: 6000000,
+    gcTime: 6000000,
     retry: 1,
-    queryKey: ["selectedLesson", lessonIdx],
+    queryKey: ["panelsOfSelectedLesson", lessonIdx],
     queryFn: async (): Promise<ITheLangPathPanel[]> => {
       if (!lessonIdx || !selectedLesson) {
         return [];

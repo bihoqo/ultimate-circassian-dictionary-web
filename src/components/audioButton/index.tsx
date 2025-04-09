@@ -11,33 +11,33 @@ export default function AudioButton({ audioPath }: IAudioButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  // Reset audio when the audioPath changes
   useEffect(() => {
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-        setIsPlaying(false);
-      }
-    };
-  }, []);
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      setIsPlaying(false);
+    }
+
+    // Reinitialize audioRef with the new audioPath
+    if (audioPath) {
+      audioRef.current = new Audio(audioPath);
+      audioRef.current.onended = () => setIsPlaying(false);
+    }
+  }, [audioPath]);
 
   const toggleAudio = () => {
     if (!audioPath) {
       return;
     }
 
-    if (!audioRef.current) {
-      audioRef.current = new Audio(audioPath);
-      audioRef.current.onended = () => setIsPlaying(false);
-    }
-
     if (isPlaying) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0; // Reset audio
+      audioRef.current?.pause();
+      audioRef.current!.currentTime = 0; // Reset audio
       setIsPlaying(false);
     } else {
       audioRef.current
-        .play()
+        ?.play()
         .then(() => setIsPlaying(true))
         .catch(() => null);
     }
