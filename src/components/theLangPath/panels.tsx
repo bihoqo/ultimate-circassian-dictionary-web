@@ -44,7 +44,21 @@ export const LESSONS_LIST: ITheLangPathLesson[] = [
 
 export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
   {
-    names: ["Данэ", "Нэрыт", "lазэ", "Нэрыс", "Дэнэф", "Разэ", "Симаз", "Симэ", "Синэмис"],
+    names: [
+      "Данэ",
+      "Нэрыт",
+      "lазэ",
+      "Нэрыс",
+      "Дэнэф",
+      "Разэ",
+      "Симаз",
+      "Симэ",
+      "Синэмис",
+      "Синэ",
+      "Насып",
+      "Адиф",
+      "Мазэ",
+    ],
     avatar: "/theLangPath/faces/14.png",
   },
   {
@@ -64,22 +78,33 @@ export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
       "Батыр",
       "Джэбагъ",
       "Бибэрс",
+      "Нурбй",
+      "Щэфакlор",
     ],
     avatar: "/theLangPath/faces/4.png",
   },
   {
-    names: ["Аслъан", "Чан", "Озырмэдж", "Пщымаф", "Тембот"],
+    names: ["Аслъан", "Чан", "Озырмэдж", "Пщымаф", "Тембот", "Налмэс", "Мамсыр", "Щакlор"],
     avatar: "/theLangPath/faces/13.png",
   },
 ];
 
 export function getCharacterByName(name: string): ITheLangPathCharacter {
-  const found = LESSON_CHARACTERS.find((character) => {
-    return character.names.includes(name);
-  });
+  const nameLowerAndTrimmed = name.toLowerCase().trim();
+  for (const characterBank of LESSON_CHARACTERS) {
+    for (const characterName of characterBank.names) {
+      if (characterName.toLowerCase().trim() === nameLowerAndTrimmed) {
+        return {
+          name: characterName,
+          avatar: characterBank.avatar,
+        };
+      }
+    }
+  }
+
   return {
     name: name,
-    avatar: found?.avatar || "/theLangPath/faces/16.png",
+    avatar: "/theLangPath/faces/16.png",
   };
 }
 

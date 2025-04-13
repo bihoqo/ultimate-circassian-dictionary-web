@@ -1,0 +1,1913 @@
+[
+  {
+    "title": "1.2 exercise 1",
+    "audio": "theLangPath\\lesson_3\\audio\\1.2_1.mp3",
+    "parts": [
+      {
+        "type": "exampleInEachLang",
+        "data": [
+          {
+            "cir": "Компиутэр",
+            "ar": "كمبيوتر",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " Хэутылъ",
+            "ar": "طابعة",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " Телевизор",
+            "ar": "تلفزيون",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " МП3 Едж",
+            "ar": "قارئة mp3",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Мобайл",
+            "ar": "موبايل",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Щэкъэрытх",
+            "ar": "قلم حبر",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " Графрытх",
+            "ar": "قلم,رصاص",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " Дэтхалъ",
+            "ar": "دفتر",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ГъэучъыIылъ",
+            "ar": "ثلاجة",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " Лэныст",
+            "ar": "مقص",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Газ хьаку",
+            "ar": "فرن غاز",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " Псыгъэфаб",
+            "ar": "سخان الماء",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Уты",
+            "ar": "مكواة",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " КофэшI",
+            "ar": "محضرة القهوة (كافيه ماشين)",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " ГыкIалъ",
+            "ar": "غسالة",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Щэнт ( пхъэнтIэкIу )",
+            "ar": "كرسي",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Iанэ",
+            "ar": "طاولة",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": " ХъопкI остыгъ",
+            "ar": "مصباح كهربائي",
+            "en": "",
+            "he": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "2.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\2.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "ХъопкI остыгъэм сэ сфай.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أريد المصباح الكهربائي.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "ХъопкI остыгъэу мыра?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل هذا المصباح الكهربائي؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Хьау",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " сыд фэдиз ыуасэр?",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рубл щэкl ныIэп. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "فقط 30 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ар лъэпIэ дэд!",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هذا غالٍ جداً.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 dialogue 2",
+    "audio": "theLangPath\\lesson_3\\audio\\2.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Еплъи",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ыуасэр шъитlурэ плlыкlырэ ныIэп. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "سعرها فقط 240 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Теубытагъэу зэIыхьэгъэн фай.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "بالتأكيد يجب أن تكون معطلة.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 dialogue 3",
+    "audio": "theLangPath\\lesson_3\\audio\\2.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Телевизорым рублишъэрэ икlырэ ыуас",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Телевизорыр цIыкIу дэд рублишъэрэ икlырэр бэ дэд арыкIэ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Хьау ар мэкIэ дэд",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рублишъэрэ щэкlырэ. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "130 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Рублишъэрэ плlыкlырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "140 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Хъун",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\4.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Рубл xыкIырэ тфырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "65 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "---",
+          "originText": "Рубл милионищырэ мин шъитIурэ мин хыкIырэ минитфырэ шъэрэ блыкIырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "3،265،170 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Рублишъэрэ щэкIырэ бгъурэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "139 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "---",
+          "originText": "Рубл шъитIурэ икIырэ бгъурэ.  ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "289 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Рубл минищырэ шъийрэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "3،800 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "---",
+          "originText": "Рубл мин шъиблырэ мин плlыкlырэ минитфырэ шъихырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "745،600 روبل.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз хъопкI сэпэшыпым ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما سعر المكنسة الكهربائية؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рублишъэрэ щэкIырэ бгъурэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "139 روبل",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كم؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рублишъэрэ щэкIырэ бгъурэ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 2",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Мы лъэрыфыр хъарзынэ дэд",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ащ тефэщт рубл шъитIурэ икIырэ бгъурэ.  ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "انها تكلف 289 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ау зы щэрэхъыр зэlыхьагъ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ммм… тэрэз",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " ау дэхэ дэд.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 3",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд мы кум пае уасэу узфаер? ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما السعر الذي تطلبه في هذه السيارة؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рубл мин блыкlырэ минийрэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "78000 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Хьау",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Хьау",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " уасэр Рубл мин блыкlырэ минийрэ.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ааа",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 4",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_4.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз мы гъэучъыlылъэм ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما هو سعر هذا البراد؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Литр шъитlу иинагъ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " нэхьышlумэ ащыщ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "وكم سعره؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рубл мин тlокlырэ минитфырэ шъийрэ. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "25800 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Хьау ар лъэпlэ дэд",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 5",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_5.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Шъуащыщ горэм сабый-курэжъые ищэфы шlоигъуа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل يريد أحدكم شراء عربة أطفال؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Сшыпхъу зы ищыкlагъ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ар кlэп ау дэгъоу зекlо",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " сшыпхъу сеупчlыжьын.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 6",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_6.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз унэм ыуасэр",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما سعر المنزل؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Вилэра?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الفيلا؟   ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Уасэм уригъэнэцlынэу щыт",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كم؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рубл милион тlокlырэ мин шъиблырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "20",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ааа",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " ар вилэ дах.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 7",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_7.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Алоо",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Уимафэ шlу. Сэ сцlэр Енал",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " Сабый курэжъыер джыри шъоща?",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Тхьапш ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما هو السعر؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Рубл минрэ шъитlурэ cфай",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " тlури мэкъэ гъэlум къидзагъэх.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Рубл минрэ шъитlурэр лъэпlэ дэд.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "1200 روبل غال جدا. ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Сабый-курэжъыер кlэм фэд.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "عربة الأطفال بمثابة الجديدة. ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Сэ рубл шъибл къэстыщт",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Ар мэкlэ дэд",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Сэ рубл шъий сэlо.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أقول  800  روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Дэгъу",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Ар дэгъу",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.3 dialogue 8",
+    "audio": "theLangPath\\lesson_3\\audio\\4.3_8.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Алоо",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Уимафэ шlу",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " компиутэрым ехьылlагъэу мэкъэ гъэlоу интэрнетым къибдзагъэм пае сыкъыпфытео",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما هو سعره؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Рубл миниплlырэ шъищрэ сфай",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أريد 4300 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "А уасэр тlэкlу лъапlэба?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أليس هذا السعر مرتفعٌ قليلاً.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Уасэм компиутэрым итеплъэбгъуи хэт. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "السعر يتضمن شاشة الكمبيوتر أيضاً. ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щэфакlор",
+          "originText": "Сэ рубл минищ къэстын слъэкlыщт.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أستطيع أن أدفع 3000 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щакlор",
+          "originText": "Сэ рубл минищрэ шъитфырэ  сэlо.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أقول  3500 روبل.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "5.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\5.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Мыр телевизора?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل هذا تلفزيون؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Хьау",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " мыр компиутэр теплъэбгъу.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Тхьапш ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كم هو سعرها؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рубл мин щэкlырэ тфырэ (35000).",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "000",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "5.1 dialogue 2",
+    "audio": "theLangPath\\lesson_3\\audio\\5.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Мыр мобайла?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل هذا موبايل؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Тхьапш ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كم هو سعره؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ощ пае рубл мин тlокlырэ тфырэ (25",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "5.1 dialogue 3",
+    "audio": "theLangPath\\lesson_3\\audio\\5.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Мыр о уимобайла?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل هذا موبايلك؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Хьау",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Мыр дэгъуа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل هي جيدة؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "ГъэшIэгъоны.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "رائعة.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "7.2 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\7.2_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Мы кофэ гъэжъуалъэр дэгъуа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل غلّاية القهوة هذه جيدة؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары дэгъу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم جيدة.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما هو سعرها؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рублибгъу ныIэп.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "فقط 9 روبل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыдэу ыуасэ пыут!",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كم هو رخيصٌ سعرها!",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ау мыр дэгъуа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لكن هل هو جيد؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "10.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\10.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сыд фэдиз тхылъым ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما سعر الكتاب؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ыуасэр рублихырэ чапычипшlырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "سعره ست روبلات و عشر سنتاً.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сэ лэныстэмрэ дэтхалъэмрэ сафай.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أريد المقص والدفتر.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Дэгъу",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\12.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Алоо",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Уимафэ шlу. Сэ сцlэр Пэрыт",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ары джыри тэщэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Сыд фэдиз ыуасэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما هو سعرها ؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Рублишъэрэ тlукlырэ кумрэ пхъэнтэкlумрэ яуас тlури мэкъэгъэум хэтых.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "120 روبلاً سعر العربة مع الكرسي",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Рублишъэрэ тlукlырэр бэ дэд.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "روبلاً 120 غالٍ جداً.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Сабый курэжъыер кlэм фэд.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "عربةالأطفال بمثابة الجديدة .",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Сэ рубл блыкl къэстыщт",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ар мэкlэ дэд. Сабый курэжъыемрэ пкъэнтэкlумрэ рублишъэрэ пшlырэ тэгъаlу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هذا قلل جداً",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Сэ рубл икlырэ тфырэ сэlо.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أقول  85  روبلاً.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Дэгъу Рубл бгъукlырэ тфырэр .",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "95  روبل مناسب.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ар дэгъу",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 2",
+    "audio": "theLangPath\\lesson_3\\audio\\12.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Алоо Енал къэгущыlэрэр. Хэт ар? ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الو",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Шъуимафэ шlу. Сэ сцlэр Заур. Мэкъэ гъэlоу интэрнетым къиплъхьагъэм пае скъыпфытеуагъ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " гыкlалъэ пщэнэу уиlа?",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары зы сиl. Ар дэгъу дэд",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Хьау ар лъэпlэ дэд.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ау ащ илъэпкъ блэфыгъэу дэгъу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ولكنها ماركة ممتازة جداً.  ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Тхьапш ыныбжь?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كم  عمرها ؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Илъситlу - щы. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "سنتان-ثلاثة . ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "Хьау. Ар лъэпlэ дэд",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الشاري",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Хьау. Рублишъэрэ щэкlырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Щэфакlор",
+          "originText": "КIо рублишъэрэ тlукlырэкlэ сштэн.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا بأس",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Щакlор",
+          "originText": "Ары",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "البائع",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "18.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\18.mp3",
+    "poem_title": "Адыгабзэр – Къуекъо Налбый.",
+    "langToTranslationMap": {
+      "en": "",
+      "ar": "اللغة الأديغية  - قويقوة نالبي",
+      "he": ""
+    },
+    "parts": [
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Огу нэфынэу къабзэ,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نقيةٌ كنور السماء، ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Насып нэгоу дахэ,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "جميلةٌ كصفحة حظ،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Осы гъогоу махэ,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هشّةٌ كطريق ثلجية،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Кlэлэ джэгоу чэфы,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "مبهجةٌ كلعب الأطفال،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Пшысэ лъэгоу шъэфы,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "فيها سرٌ كمضمون قصة،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Сабый ибэу хые,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "بريئةٌ كطفل يتيم،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Щылыч lашэу пкъые,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "صلبةٌ كسلاح فولاذي،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Уиныбджэгъумэ - убзэ ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "إذا كانت صديقتك – ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "3",
+          "originText": "Къемыгъаlу игъыбзэ,",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا تدعها تردّدُ رثائها،",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "3",
+          "originText": "Сыщыгъаl, сыгъэпсалъ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "دعني أحيا - أتكلم، ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "3",
+          "originText": "Ущэlэфэ сипlалъ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ميعاد حياتي .. ما دمتِ حيّةً",
+            "he": ""
+          }
+        }
+      }
+    ]
+  }
+]
