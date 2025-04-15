@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaHome, FaTimes, FaHamburger } from "react-icons/fa";
-import { MdMenuBook, MdContactSupport } from "react-icons/md";
+import { MdMenuBook, MdContactSupport, MdOutlineFileDownload } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
@@ -75,6 +75,7 @@ const NAV_ITEMS: INavBarItem[] = [
     isVisible: true,
   },
   { title: "Grammar", link: "/grammar", icon: <MdMenuBook />, isVisible: true },
+  { title: "Download", link: "/download", icon: <MdOutlineFileDownload />, isVisible: true },
   { title: "Contact Us", link: "/contact-us", icon: <MdContactSupport />, isVisible: true },
 ];
 
