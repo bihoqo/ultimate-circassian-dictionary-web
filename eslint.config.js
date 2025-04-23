@@ -9,6 +9,11 @@ const unusedImports = require("eslint-plugin-unused-imports");
 const config = tseslint.config(
   {
     ignores: ["dist", "next.config.js", ".prettierrc.js", "public/*"],
+    plugins: {
+      "react-hooks": reactHooks,
+      "react-refresh": reactRefresh,
+      "unused-imports": unusedImports,
+    },
   },
   {
     extends: [
@@ -22,16 +27,11 @@ const config = tseslint.config(
       ecmaVersion: 2020,
       globals: globals.browser,
     },
-    plugins: {
-      "react-hooks": reactHooks,
-      "react-refresh": reactRefresh,
-      "unused-imports": unusedImports,
-    },
     rules: {
-      "react-hooks/exhaustive-deps": "error", // Enforce dependencies for hooks
+      "react-hooks/exhaustive-deps": "error",
       "prettier/prettier": ["error", { endOfLine: "auto" }],
-      "arrow-body-style": "off", // Disable problematic rule
-      "prefer-arrow-callback": "off", // Disable problematic rule
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off",
       "react/display-name": "off",
       "prefer-const": "error",
       "tailwindcss/no-custom-classname": "off",
@@ -43,8 +43,8 @@ const config = tseslint.config(
       "@typescript-eslint/no-empty-object-type": "off",
       "@typescript-eslint/no-unused-expressions": "off",
       "unused-imports/no-unused-imports": "error",
-    }, // end rules
-  }, // end options
-); // end config
+    },
+  },
+);
 
 module.exports = config;
