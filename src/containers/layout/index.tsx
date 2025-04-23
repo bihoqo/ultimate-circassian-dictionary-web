@@ -27,7 +27,7 @@ function GlobalFooter() {
   ];
   return (
     <footer className="bg-gray-800 text-white">
-      <div className="mx-auto max-w-screen-xl px-4 pb-2 pt-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-2 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-start lg:gap-8">
           <Image
             className="row-span-1 h-10"
@@ -50,10 +50,10 @@ function GlobalFooter() {
             {/*Internal Links */}
             {internalLinks.map((link) => (
               <div key={link.title}>
-                <p className="mt-2 inline-block text-sm font-semibold uppercase tracking-wider text-gray-400">
+                <p className="mt-2 inline-block text-sm font-semibold tracking-wider text-gray-400 uppercase">
                   {link.title}
                 </p>
-                <ul className="ml-2 mt-2 space-y-0">
+                <ul className="mt-2 ml-2 space-y-0">
                   {link.links.map((link) => (
                     <li key={link.title}>
                       <span
@@ -118,7 +118,7 @@ export default function Layout({ children }: LayoutProps) {
           <Header />
         </div>
       </div>
-      <div className="bg-image">
+      <div className="bg-yellow-100">
         <div className="relative flex w-full flex-row justify-center">{children}</div>
       </div>
       <GlobalFooter />

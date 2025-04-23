@@ -36,8 +36,8 @@ function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) 
   return (
     <button
       className={cn(
-        "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-[#303f2e] hover:text-[#637f5e]/50",
-        "3xl:text-4xl text-xl lg:text-xl xl:text-2xl 2xl:text-3xl",
+        "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-amber-200 hover:text-amber-400",
+        "3xl:text-xl text-lg lg:text-lg xl:text-xl 2xl:text-xl",
       )}
       onClick={onClick}
     >
@@ -140,7 +140,7 @@ export default function Header() {
   }
 
   return (
-    <div className="relative z-50 flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0">
+    <div className="relative z-50 flex flex-row gap-4 bg-green-800 p-2 shadow sm:gap-2 sm:px-0">
       <div className="mx-auto flex w-11/12 flex-row items-center gap-1 sm:gap-4">
         <Logo onClick={() => navigateTo("/")} />
 
