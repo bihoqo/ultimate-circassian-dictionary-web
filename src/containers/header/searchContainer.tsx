@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { FaFilter, FaSearch, FaTimesCircle } from "react-icons/fa";
 import { cn } from "~/utils/classNames";
 import SearchFilterDialog from "~/components/searchFilterModal";
-import HeaderSearchResultsDropdown from "~/components/HeaderSearchResultsDropdown";
+import HeaderSearchResultsDropdown from "../../components/headerSearchResultsDropdown";
 import { useParams, useRouter } from "next/navigation";
 import { regularWordToSafeWord } from "~/utils/wordFormatting";
 import useWindowSize from "~/hooks/useWindowDimensions";
@@ -111,7 +111,7 @@ function SearchInput({
   setDropdownVisible: (value: boolean) => void;
   dropdownVisible: boolean;
   clickWordHandler: (word: string) => void;
-  searchInputRef: React.RefObject<HTMLInputElement>;
+  searchInputRef: React.RefObject<HTMLInputElement | null>;
 }) {
   const { width } = useWindowSize();
   return (
@@ -121,7 +121,7 @@ function SearchInput({
           "flex w-full items-center justify-center bg-white",
           "border border-solid",
           "xs:px-2 rounded-md px-1 py-3 font-medium text-black shadow-sm sm:px-4",
-          "text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl",
+          "3xl:text-5xl text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl",
           inputValue.length > 0
             ? "border-2 border-[#b0e0b5]"
             : "border-[#cdcdcd] hover:border-[#b0e0b5]/60",
@@ -173,8 +173,8 @@ function SearchFilter({
         )}
         onClick={openFilterDialog}
       >
-        <FaFilter className="text-3xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl" />
-        <span className="w-full text-nowrap text-base xl:text-lg 2xl:text-xl 3xl:text-2xl">
+        <FaFilter className="3xl:text-5xl text-3xl xl:text-4xl 2xl:text-4xl" />
+        <span className="3xl:text-2xl w-full text-base text-nowrap xl:text-lg 2xl:text-xl">
           Search Filter
         </span>
       </button>

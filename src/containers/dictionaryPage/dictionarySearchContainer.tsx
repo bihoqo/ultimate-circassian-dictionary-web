@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaFilter, FaSearch, FaTimesCircle } from "react-icons/fa";
 import { useParams, useRouter } from "next/navigation";
-import { useDebounce } from "use-debounce";
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { Result } from "neverthrow";
 
@@ -19,7 +18,7 @@ import { containsOnlyEnglishLetters } from "~/utils/lang";
 import {
   fetchWordAutocompletes,
   fetchWordAutocompletesThatContains,
-  fetchWordAutocompletesWithVerbs,
+  fetchEnglishWordAutocompletesWithVerbs,
 } from "~/requests";
 
 import {
@@ -27,6 +26,7 @@ import {
   findAutocompletesInWordHistoryCache,
   removeFromWordHistoryCache,
 } from "~/cache/wordHistory";
+import { useDebounce } from "use-debounce";
 
 function CachedAutocompletedSearchElement({
   word,
@@ -48,7 +48,7 @@ function CachedAutocompletedSearchElement({
       <button
         className={cn(
           "w-full rounded-md text-left font-medium text-[#bb90f6]",
-          "text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl",
+          "3xl:text-3xl 4xl:text-4xl text-lg xl:text-xl 2xl:text-2xl",
         )}
         onClick={() => onWordSelection(word)}
       >
@@ -90,9 +90,7 @@ function AutocompletedSearchElement({
 
   return (
     <button
-      className={cn(
-        "w-full rounded-md p-2 text-left font-medium hover:bg-[#e7e7e7] hover:bg-gray-100",
-      )}
+      className={cn("w-full rounded-md p-2 text-left font-medium hover:bg-gray-100")}
       key={word.key}
       onClick={() => onWordSelection(word.key)}
     >
@@ -100,7 +98,7 @@ function AutocompletedSearchElement({
         <span className="mt-1 text-[8px] sm:text-xs md:text-base">
           [{word.fromLangs.join(", ")}]
         </span>
-        <span className="text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl">
+        <span className="3xl:text-3xl 4xl:text-4xl text-lg xl:text-xl 2xl:text-2xl">
           {before}
           <span className="font-bold">{bold}</span>
           {after}
@@ -127,7 +125,7 @@ function useAutocompleteQuery(
       if (4 <= searchInput.length) {
         res = await fetchWordAutocompletesThatContains(searchInput);
       } else if (containsOnlyEnglishLetters(searchInput)) {
-        res = await fetchWordAutocompletesWithVerbs(searchInput);
+        res = await fetchEnglishWordAutocompletesWithVerbs(searchInput);
       } else {
         res = await fetchWordAutocompletes(searchInput);
       }
@@ -225,7 +223,7 @@ function AutocompleteDropdown({
       <div
         ref={dropdownRef}
         className={cn(
-          "absolute left-1/2 top-[80px] flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center gap-2 overflow-y-auto rounded-b-[16px] bg-white shadow-lg",
+          "absolute top-[80px] left-1/2 flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center gap-2 overflow-y-auto rounded-b-[16px] bg-white shadow-lg",
           SIZE_STYLE,
         )}
       >
@@ -239,7 +237,7 @@ function AutocompleteDropdown({
       <div
         ref={dropdownRef}
         className={cn(
-          "absolute left-1/2 top-[80px] flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center overflow-y-auto rounded-b-[16px] bg-white py-4 shadow-lg",
+          "absolute top-[80px] left-1/2 flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center overflow-y-auto rounded-b-[16px] bg-white py-4 shadow-lg",
           SIZE_STYLE,
         )}
       >
@@ -257,9 +255,9 @@ function AutocompleteDropdown({
     <div
       ref={dropdownRef}
       className={cn(
-        "scrollbar-gray absolute left-2/4 top-[80px] flex w-screen -translate-x-1/2 transform flex-col items-center justify-start gap-2 rounded-b-[16px] bg-white shadow-lg sm:left-1/2",
-        "6xl:max-h-[1440px] 5xl:max-h-[1200px] max-h-[600px] md:max-h-[600px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px] 3xl:max-h-[900px] 4xl:max-h-[1024px]",
-        "w-full overflow-y-auto overflow-x-hidden text-ellipsis whitespace-normal break-words",
+        "scrollbar-gray absolute top-[80px] left-2/4 flex w-screen -translate-x-1/2 transform flex-col items-center justify-start gap-2 rounded-b-[16px] bg-white shadow-lg sm:left-1/2",
+        "6xl:max-h-[1440px] 5xl:max-h-[1200px] 3xl:max-h-[900px] 4xl:max-h-[1024px] max-h-[600px] md:max-h-[600px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px]",
+        "w-full overflow-x-hidden overflow-y-auto break-words text-ellipsis whitespace-normal",
         "p-0 sm:p-1 md:p-2 lg:p-4",
         SIZE_STYLE,
       )}
@@ -423,7 +421,7 @@ function SearchInput({
   setDropdownVisible: (value: boolean) => void;
   dropdownVisible: boolean;
   clickWordHandler: (word: string) => void;
-  searchInputRef: React.RefObject<HTMLInputElement>;
+  searchInputRef: React.RefObject<HTMLInputElement | null>;
 }) {
   const { width } = useWindowSize();
   return (
@@ -433,7 +431,7 @@ function SearchInput({
           "flex w-full items-center justify-center bg-white",
           "border border-solid",
           "xs:px-2 rounded-md px-1 py-3 font-medium text-black shadow-sm sm:px-4",
-          "text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl",
+          "3xl:text-5xl text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl",
           inputValue.length > 0
             ? "border-2 border-[#b0e0b5]"
             : "border-[#cdcdcd] hover:border-[#b0e0b5]/60",
@@ -485,8 +483,8 @@ function SearchFilter({
         )}
         onClick={openFilterDialog}
       >
-        <FaFilter className="text-3xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl" />
-        <span className="w-full text-nowrap text-base xl:text-lg 2xl:text-xl 3xl:text-2xl">
+        <FaFilter className="3xl:text-5xl text-3xl xl:text-4xl 2xl:text-4xl" />
+        <span className="3xl:text-2xl w-full text-base text-nowrap xl:text-lg 2xl:text-xl">
           Search Filter
         </span>
       </button>
