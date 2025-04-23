@@ -2565,7 +2565,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-dom@^18, react-dom@^18.3.1:
+react-dom@^18:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -2601,14 +2601,12 @@ react-simple-keyboard@^3.7.143:
   resolved "https://registry.yarnpkg.com/react-simple-keyboard/-/react-simple-keyboard-3.7.143.tgz#4492a477d27a7cad6a748cf8e5fb22a9112709d2"
   integrity sha512-CPt33st6hbxtHgC+MXZtyM1O262q9INymK0NsTYo56nAdzmLYD2x6L5qGDcdgc41u8ZBKgJyYqmtFh1NEF1GSw==
 
-react-social-icons@^6.17.0:
-  version "6.17.0"
-  resolved "https://registry.yarnpkg.com/react-social-icons/-/react-social-icons-6.17.0.tgz#b54217f2092960427a415ef94642aad4c7d3d275"
-  integrity sha512-NO2EcGlXdEf8a5gOnn8BMtda+jErMk/ghnp0ahqFFolXHV/X923wtRyCuO57gQHVX1sjTexvEXiQjEVzX36dlw==
+react-social-icons@^6.24.0:
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/react-social-icons/-/react-social-icons-6.24.0.tgz#7ff5f1a4f9bfd839ce3929f21dde5400c265f007"
+  integrity sha512-1YlJe2TOf/UwPi2JAb8Ci7J207owP806Tpxu36o4EkB1/jLjGhi83xbCHOagoMyPozTZrPnZIGgvp1LiiWGuZw==
   dependencies:
     "@babel/runtime" "^7.24.8"
-    react "^18.3.1"
-    react-dom "^18.3.1"
 
 react-toastify@^10.0.5:
   version "10.0.5"
@@ -2617,7 +2615,7 @@ react-toastify@^10.0.5:
   dependencies:
     clsx "^2.1.0"
 
-react@^18, react@^18.3.1:
+react@^18:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
