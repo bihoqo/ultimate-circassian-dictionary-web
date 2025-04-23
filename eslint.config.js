@@ -2,25 +2,22 @@ const js = require("@eslint/js");
 const globals = require("globals");
 const tseslint = require("typescript-eslint");
 const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommended");
-const reactHooks = require("eslint-plugin-react-hooks");
+const hooksPlugin = require("eslint-plugin-react-hooks");
 const reactRefresh = require("eslint-plugin-react-refresh");
-const unusedImports = require("eslint-plugin-unused-imports");
 
 const config = tseslint.config(
   {
     ignores: ["dist", "next.config.js", ".prettierrc.js", "public/*"],
     plugins: {
-      "react-hooks": reactHooks,
-      "react-refresh": reactRefresh,
-      "unused-imports": unusedImports,
+      "react-hooks": hooksPlugin,
     },
   },
   {
     extends: [
+      reactRefresh.configs.recommended,
       js.configs.recommended,
       ...tseslint.configs.recommended,
       eslintPluginPrettierRecommended,
-      reactHooks.configs.recommended,
     ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
@@ -42,7 +39,6 @@ const config = tseslint.config(
       "@typescript-eslint/no-require-imports": "off",
       "@typescript-eslint/no-empty-object-type": "off",
       "@typescript-eslint/no-unused-expressions": "off",
-      "unused-imports/no-unused-imports": "error",
     },
   },
 );

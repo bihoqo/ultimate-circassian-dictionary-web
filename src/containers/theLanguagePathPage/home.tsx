@@ -6,6 +6,7 @@ import { LESSONS_LIST } from "~/components/theLangPath/panels";
 
 export default function TheLanguagePathHomeContainer() {
   const router = useRouter();
+
   return (
     <div
       className="h-full min-h-screen w-full bg-cover bg-center bg-no-repeat py-4"
