@@ -5,6 +5,7 @@ const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommen
 const reactHooks = require("eslint-plugin-react-hooks");
 const reactRefresh = require("eslint-plugin-react-refresh");
 const unusedImports = require("eslint-plugin-unused-imports");
+const eslintTailwindcss = require("eslint-plugin-tailwindcss");
 
 const config = tseslint.config(
   {
@@ -14,7 +15,8 @@ const config = tseslint.config(
     extends: [
       js.configs.recommended,
       ...tseslint.configs.recommended,
-      eslintPluginPrettierRecommended, // Enables eslint-plugin-prettier
+      eslintPluginPrettierRecommended,
+      eslintTailwindcss.configs.recommended,
     ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
