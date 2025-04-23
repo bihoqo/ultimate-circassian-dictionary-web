@@ -26,9 +26,7 @@ function InnerApp({ Component, pageProps }: any) {
       <meta name="apple-mobile-web-app-title" content="Mobile web app title" />
 
       {/* <!-- Make the app title different from the page title and configure icons - Android. --> */}
-
       {/* <!-- IE configuration for icons and colors is in browserconfig.xml --> */}
-
       {/* <!-- Configure the status bar - iOS. --> */}
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
