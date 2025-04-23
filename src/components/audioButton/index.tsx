@@ -47,7 +47,7 @@ export default function AudioButton({ audioPath }: IAudioButtonProps) {
     <button
       onClick={toggleAudio}
       className={cn(
-        "flex flex-row gap-1 justify-center items-center self-end hover:opacity-80",
+        "flex flex-row items-center justify-center gap-1 self-end hover:opacity-80",
         isPlaying ? "text-[#5ddcd8]" : "text-[#39a9b0]",
       )}
     >
@@ -56,7 +56,7 @@ export default function AudioButton({ audioPath }: IAudioButtonProps) {
       ) : (
         <FaCaretRight size={20} className="mt-0.5" />
       )}
-      <p className="font-black text-xl">{isPlaying ? "Stop Audio" : "Play Audio"}</p>
+      <p className="text-xl font-black">{isPlaying ? "Stop Audio" : "Play Audio"}</p>
     </button>
   );
 }

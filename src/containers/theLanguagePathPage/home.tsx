@@ -8,21 +8,21 @@ export default function TheLanguagePathHomeContainer() {
   const router = useRouter();
   return (
     <div
-      className="w-full h-full min-h-screen bg-cover bg-center bg-no-repeat py-4"
+      className="h-full min-h-screen w-full bg-cover bg-center bg-no-repeat py-4"
       style={{
         backgroundImage: `url('/theLangPath/menu/bg2.jpg')`,
       }}
     >
-      <div className="p-4 flex flex-col gap-8">
-        <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-col gap-8 p-4">
+        <div className="flex flex-row items-center justify-center">
           <Image src="/theLangPath/menu/P7.png" width={188} height={100} alt="Lessons" />
         </div>
-        <h1 className="text-[36px] font-black text-white text-center">БЗЭМ ИЛЪАГЪУ</h1>
-        <h2 className="text-[28px] font-black text-white text-center">
+        <h1 className="text-center text-[36px] font-black text-white">БЗЭМ ИЛЪАГЪУ</h1>
+        <h2 className="text-center text-[28px] font-black text-white">
           Чэтэо Мэруан, Мышъэ Хъун Суӏад, Гъукӏэлӏ Махыр
         </h2>
-        <h2 className="text-[28px] font-black text-white text-center">2024</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 3xl:w-1/2 2xl:w-2/3 md:w-2/3 sm:w-11/12 w-full mx-auto">
+        <h2 className="text-center text-[28px] font-black text-white">2024</h2>
+        <div className="3xl:w-1/2 mx-auto grid w-full grid-cols-1 gap-4 sm:w-11/12 md:w-2/3 lg:grid-cols-2 xl:grid-cols-3 2xl:w-2/3">
           {LESSONS_LIST.map((lesson) => {
             const params: string = queryString.stringify({
               lessonIdx: lesson.index,
@@ -55,26 +55,26 @@ function LessonButton({
 }) {
   return (
     <button
-      className="cursor-pointer border-2 border-solid border-white flex flex-row gap-2 justify-start items-center min-h-[80px] bg-transparent hover:bg-white/50 rounded-lg"
+      className="flex min-h-[80px] cursor-pointer flex-row items-center justify-start gap-2 rounded-lg border-2 border-solid border-white bg-transparent hover:bg-white/50"
       onClick={onClick}
     >
-      <div className="flex flex-col justify-start items-start h-full">
-        <div className="bg-[#5faf06] h-full px-4 flex flex-col justify-center items-center text-3xl text-white font-bold ml-4 rounded-b-lg">
+      <div className="flex h-full flex-col items-start justify-start">
+        <div className="ml-4 flex h-full flex-col items-center justify-center rounded-b-lg bg-[#5faf06] px-4 text-3xl font-bold text-white">
           {lessonIndex}
         </div>
         <div className="mb-2" />
       </div>
-      <p className="text-[28px] font-boldhover:underline text-left pr-2 text-white">{title}</p>
+      <p className="font-boldhover:underline pr-2 text-left text-[28px] text-white">{title}</p>
     </button>
   );
 }
 
 export function TheLanguagePathLoadingScreen() {
   return (
-    <div className="w-full h-full min-h-screen bg-white flex flex-col justify-center items-center">
+    <div className="flex h-full min-h-screen w-full flex-col items-center justify-center bg-white">
       {/* Loading spinner */}
-      <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32 mb-4"></div>
-      <h1 className="text-3xl font-semibold text-gray-700 text-center">Loading...</h1>
+      <div className="loader mb-4 h-32 w-32 rounded-full border-8 border-t-8 border-gray-200 ease-linear"></div>
+      <h1 className="text-center text-3xl font-semibold text-gray-700">Loading...</h1>
     </div>
   );
 }

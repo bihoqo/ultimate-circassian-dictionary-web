@@ -26,6 +26,7 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
         setIsOpen(false);
       }
     }
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -36,12 +37,12 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
       <div
         ref={sidebarRef}
         className={cn(
-          "fixed top-0 left-0 h-full w-[300px] bg-white shadow-md border-r border-[#cecec3] transform transition-transform duration-300 z-50",
+          "fixed top-0 left-0 z-50 h-full w-[300px] transform border-r border-[#cecec3] bg-white shadow-md transition-transform duration-300",
           isOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
         {/* Header */}
-        <div className="flex justify-between items-center p-4 border-b border-[#cecec3]">
+        <div className="flex items-center justify-between border-b border-[#cecec3] p-4">
           <h2 className="text-xl font-bold text-black">Lessons</h2>
           <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-black">
             <IoClose size={24} />
@@ -49,7 +50,7 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
         </div>
 
         {/* Scrollable Content */}
-        <div className="overflow-y-auto h-full">
+        <div className="h-full overflow-y-auto">
           {/* Lessons List */}
           <div className="flex flex-col gap-2 p-4">
             {LESSONS_LIST.map((lesson) => (
@@ -57,10 +58,10 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
                 key={lesson.index}
                 onClick={() => navigateToLesson(lesson.index, 0)}
                 className={cn(
-                  "px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                  "rounded-md px-2 py-1 text-left transition-colors duration-200 hover:bg-gray-100",
                   selectedLesson?.index === lesson.index
-                    ? "text-[#f27141] font-bold"
-                    : "text-[#4a7324] font-medium",
+                    ? "font-bold text-[#f27141]"
+                    : "font-medium text-[#4a7324]",
                 )}
               >
                 {lesson.index}. {lesson.title}
@@ -70,18 +71,18 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
 
           {/* Panels List */}
           {selectedLesson && (
-            <div className="flex flex-col gap-2 p-4 border-t border-[#cecec3] mb-24">
+            <div className="mb-24 flex flex-col gap-2 border-t border-[#cecec3] p-4">
               {/* Added margin at the bottom */}
-              <h2 className="text-lg font-medium text-left">Exercise</h2>
+              <h2 className="text-left text-lg font-medium">Exercise</h2>
               {panels.map((panel, idx) => (
                 <button
                   key={idx}
                   onClick={() => navigateToLesson(selectedLesson.index, idx)}
                   className={cn(
-                    "px-2 py-1 rounded-md transition-colors duration-200 hover:bg-gray-100 text-left",
+                    "rounded-md px-2 py-1 text-left transition-colors duration-200 hover:bg-gray-100",
                     Number(panelIdx) === idx
-                      ? "text-[#f27141] font-bold"
-                      : "text-[#4a7324] font-medium",
+                      ? "font-bold text-[#f27141]"
+                      : "font-medium text-[#4a7324]",
                   )}
                 >
                   {panel.title}
@@ -96,8 +97,8 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          "fixed top-1/2 z-20 flex items-center justify-center w-14 h-14 rounded-full bg-[#f27141] text-white shadow-md hover:bg-[#f29e7e] transition-all",
-          "transform -translate-y-1/2",
+          "fixed top-1/2 z-20 flex h-14 w-14 items-center justify-center rounded-full bg-[#f27141] text-white shadow-md transition-all hover:bg-[#f29e7e]",
+          "-translate-y-1/2 transform",
           isOpen ? "left-[300px]" : "left-2",
         )}
       >

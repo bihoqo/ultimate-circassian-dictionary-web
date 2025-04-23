@@ -93,7 +93,7 @@ export default function DefinitionsContainer({ wordSpelling }: { wordSpelling: s
         <span
           className={cn(
             "text-left font-black text-cyan-800",
-            "text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl",
+            "3xl:text-7xl text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl",
           )}
         >
           {wordSpelling}
@@ -101,7 +101,7 @@ export default function DefinitionsContainer({ wordSpelling }: { wordSpelling: s
         <div
           className={cn(
             "w-f mt-0 text-left font-black text-cyan-800 sm:mt-3",
-            "text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-3xl",
+            "3xl:text-3xl text-lg lg:text-xl xl:text-2xl 2xl:text-3xl",
           )}
         >
           {allDefResults.length === defResultsAfterFilter.length ? (

@@ -112,7 +112,7 @@ export default function HeaderSearchResultsDropdown({
       <div
         ref={dropdownRef}
         className={cn(
-          "absolute left-1/2 top-[80px] flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center gap-2 overflow-y-auto rounded-b-[16px] bg-white shadow-lg",
+          "absolute top-[80px] left-1/2 flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center gap-2 overflow-y-auto rounded-b-[16px] bg-white shadow-lg",
           SIZE_STYLE,
         )}
       >
@@ -128,7 +128,7 @@ export default function HeaderSearchResultsDropdown({
       <div
         ref={dropdownRef}
         className={cn(
-          "absolute left-1/2 top-[80px] flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center overflow-y-auto rounded-b-[16px] bg-white py-4 shadow-lg",
+          "absolute top-[80px] left-1/2 flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center overflow-y-auto rounded-b-[16px] bg-white py-4 shadow-lg",
           SIZE_STYLE,
         )}
       >
@@ -146,9 +146,9 @@ export default function HeaderSearchResultsDropdown({
     <div
       ref={dropdownRef}
       className={cn(
-        "scrollbar-gray absolute left-2/4 top-[80px] flex w-screen -translate-x-1/2 transform flex-col items-center justify-start gap-2 rounded-b-[16px] bg-white shadow-lg sm:left-1/2",
-        "6xl:max-h-[900px] 5xl:max-h-[875px] max-h-[600px] md:max-h-[600px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px] 3xl:max-h-[825px] 4xl:max-h-[850px]",
-        "w-full overflow-y-auto overflow-x-hidden text-ellipsis whitespace-normal break-words",
+        "scrollbar-gray absolute top-[80px] left-2/4 flex w-screen -translate-x-1/2 transform flex-col items-center justify-start gap-2 rounded-b-[16px] bg-white shadow-lg sm:left-1/2",
+        "6xl:max-h-[900px] 5xl:max-h-[875px] 3xl:max-h-[825px] 4xl:max-h-[850px] max-h-[600px] md:max-h-[600px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px]",
+        "w-full overflow-x-hidden overflow-y-auto break-words text-ellipsis whitespace-normal",
         "p-0 sm:p-1 md:p-2 lg:p-4",
         SIZE_STYLE,
       )}
@@ -192,7 +192,7 @@ export default function HeaderSearchResultsDropdown({
               <button
                 className={cn(
                   "w-full rounded-md text-left font-medium text-[#bb90f6]",
-                  "text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl",
+                  "3xl:text-3xl 4xl:text-4xl text-lg xl:text-xl 2xl:text-2xl",
                 )}
                 onClick={() => onWordSelection(word)}
               >
@@ -250,7 +250,7 @@ export default function HeaderSearchResultsDropdown({
                 <span className="mt-1 text-[8px] sm:text-xs md:text-base">
                   [{word.fromLangs.join(", ")}]
                 </span>
-                <span className="text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl">
+                <span className="3xl:text-3xl 4xl:text-4xl text-lg xl:text-xl 2xl:text-2xl">
                   {word.key}
                 </span>
               </div>

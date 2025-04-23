@@ -13,15 +13,15 @@ export default function SwitchReadingOrTranslation() {
   };
 
   return (
-    <div className="flex items-center justify-between bg-gray-100 rounded-full p-1 w-64">
+    <div className="flex w-64 items-center justify-between rounded-full bg-gray-100 p-1">
       {options.map((option) => (
         <button
           key={option}
           onClick={() => handleClick(option)}
           className={cn(
-            "flex items-center justify-center w-1/2 rounded-full py-2 transition-all duration-300",
+            "flex w-1/2 items-center justify-center rounded-full py-2 transition-all duration-300",
             {
-              "bg-white shadow text-black": selectedOption === option,
+              "bg-white text-black shadow": selectedOption === option,
               "text-gray-500": selectedOption !== option,
             },
           )}

@@ -38,7 +38,7 @@ export function Content() {
         Explore our website to immerse yourself in the beauty and complexity of the Circassian
         language, and join us in our endeavor to ensure its survival for future generations.
       </p>
-      <h1 className="mb-4 mt-16 text-center text-3xl font-bold">
+      <h1 className="mt-16 mb-4 text-center text-3xl font-bold">
         List of dictionaries used: {USED_DICTS.length}
       </h1>
       <div className="mb-4 text-center">
@@ -50,10 +50,10 @@ export function Content() {
             <div key={index} className="flex flex-row items-center justify-center gap-2">
               <BookSvg width="75px" height="75px" fill={RANDOM_COLORS[index]} />
               <div key={index} className="w-full rounded-lg">
-                <h2 className="mb-2 text-base font-bold leading-none">{dict.title}</h2>
+                <h2 className="mb-2 text-base leading-none font-bold">{dict.title}</h2>
                 <p className="mb-2 text-xs leading-none">
-                  <span className="font-semibold leading-none">From:</span> {dict.fromLang} -
-                  <span className="font-semibold leading-none"> To:</span> {dict.toLang}
+                  <span className="leading-none font-semibold">From:</span> {dict.fromLang} -
+                  <span className="leading-none font-semibold"> To:</span> {dict.toLang}
                 </p>
                 <p className="text-xs leading-none">
                   <span className="font-semibold">Entries Count:</span> {dict.count}
