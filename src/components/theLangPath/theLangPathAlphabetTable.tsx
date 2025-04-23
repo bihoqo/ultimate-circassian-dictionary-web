@@ -2,8 +2,8 @@ import React from "react";
 
 export default function TheLangPathAlphabetTable() {
   return (
-    <div className="overflow-x-auto mt-6">
-      <table className="min-w-full text-left border-collapse">
+    <div className="mt-6 overflow-x-auto">
+      <table className="min-w-full border-collapse text-left">
         <thead>
           <tr>
             <th className="border-b px-4 py-2">А</th>

@@ -26,17 +26,17 @@ export default function TheLangPathTable({
 }: LessonTableProps) {
   return (
     <table
-      className={cn("w-full xl:w-11/12 mx-auto border-collapse text-sm table-fixed", className)}
+      className={cn("mx-auto w-full table-fixed border-collapse text-sm xl:w-11/12", className)}
       style={{ tableLayout: "fixed" }}
     >
       {/* Table Head */}
       <thead className={cn({ hidden: headersArray.length === 0 })}>
         <tr>
-          {showIndexes && <th className="bg-[#ed7c31] text-white font-bold w-[40px]">#</th>}
+          {showIndexes && <th className="w-[40px] bg-[#ed7c31] font-bold text-white">#</th>}
           {headersArray.map((header, index) => (
             <th
               key={index}
-              className="border border-gray-300 px-4 py-2 text-left w-1/[columnCount]"
+              className="w-1/[columnCount] border border-gray-300 px-4 py-2 text-left"
             >
               {header}
             </th>
@@ -50,7 +50,7 @@ export default function TheLangPathTable({
           <tr key={rowIndex} style={{ marginBottom: `${gapBetweenRows}px` }}>
             {/* Show Index Column */}
             {showIndexes && (
-              <td className="font-bold text-white text-center px-1 w-[40px]">{rowIndex + 1}</td>
+              <td className="w-[40px] px-1 text-center font-bold text-white">{rowIndex + 1}</td>
             )}
 
             {/* Render Row Data */}
@@ -58,16 +58,16 @@ export default function TheLangPathTable({
               <td
                 key={cellIndex}
                 className={cn(
-                  "border-2 border-solid px-4 py-2 text-black w-1/[columnCount] h-full",
+                  "w-1/[columnCount] h-full border-2 border-solid px-4 py-2 text-black",
                   {
-                    "bg-white border-gray-300": !showBackgroundColors,
-                    "bg-[#fcece8] border-[#ed7d31]": rowIndex % 2 === 0 && showBackgroundColors,
-                    "bg-[#ebf1e9] border-[#70ad47]": rowIndex % 2 !== 0 && showBackgroundColors,
+                    "border-gray-300 bg-white": !showBackgroundColors,
+                    "border-[#ed7d31] bg-[#fcece8]": rowIndex % 2 === 0 && showBackgroundColors,
+                    "border-[#70ad47] bg-[#ebf1e9]": rowIndex % 2 !== 0 && showBackgroundColors,
                   },
                 )}
               >
-                <div className="flex flex-col justify-center h-full">
-                  <span className="text-black font-semibold">{cell}</span>
+                <div className="flex h-full flex-col justify-center">
+                  <span className="font-semibold text-black">{cell}</span>
                 </div>
               </td>
             ))}
@@ -80,7 +80,7 @@ export default function TheLangPathTable({
         <tr>
           {showIndexes && <td className="w-[40px]"></td>}
           {footerArray.map((footerCell, index) => (
-            <td key={index} className="border px-4 py-2 w-1/[columnCount]">
+            <td key={index} className="w-1/[columnCount] border px-4 py-2">
               {footerCell}
             </td>
           ))}
@@ -110,14 +110,14 @@ export function TheLangPathTableCell({
   return (
     <div className="flex flex-col gap-1">
       <div
-        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize], {
+        className={cn("text-center font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize], {
           hidden: !firstRow,
         })}
       >
         {firstRow}
       </div>
       <div
-        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize], {
+        className={cn("text-center font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize], {
           hidden: !secondRow,
         })}
       >
@@ -125,7 +125,7 @@ export function TheLangPathTableCell({
       </div>
       {imgUrl && (
         <div className="flex justify-center">
-          <div className="h-[65px] flex items-center">
+          <div className="flex h-[65px] items-center">
             <Image src={imgUrl} alt="img" height={65} width={65} className="h-[65px] w-auto" />
           </div>
         </div>
@@ -137,7 +137,7 @@ export function TheLangPathTableCell({
               <div
                 key={lang}
                 className={cn(
-                  "text-center text-gray-600 font-medium mt-1",
+                  "mt-1 text-center font-medium text-gray-600",
                   TEXT_SIZE_MAP[translationFontSize],
                 )}
               >

@@ -11,13 +11,13 @@ export default function TheLangPathPoem({ originText, langToTranslationMap }: IT
   const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
     settings;
   return (
-    <div className="w-full mx-auto flex flex-col gap-4pb-2">
-      <p className={cn("text-black leading-none font-semibold", TEXT_SIZE_MAP[circassianFontSize])}>
+    <div className="gap-4pb-2 mx-auto flex w-full flex-col">
+      <p className={cn("leading-none font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize])}>
         {originText}
       </p>
       <div
         className={cn(
-          "flex flex-col gap-3 text-[#333333] mt-2",
+          "mt-2 flex flex-col gap-3 text-[#333333]",
           TEXT_SIZE_MAP[translationFontSize],
           { hidden: !isTranslationChecked },
         )}
@@ -51,14 +51,14 @@ export function TheLangPathTableCell({
   return (
     <div className="flex flex-col gap-1">
       <div
-        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize], {
+        className={cn("text-center font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize], {
           hidden: !firstRow,
         })}
       >
         {firstRow}
       </div>
       <div
-        className={cn("text-center text-black font-semibold", TEXT_SIZE_MAP[circassianFontSize], {
+        className={cn("text-center font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize], {
           hidden: !secondRow,
         })}
       >
@@ -66,7 +66,7 @@ export function TheLangPathTableCell({
       </div>
       {imgUrl && (
         <div className="flex justify-center">
-          <div className="h-[65px] flex items-center">
+          <div className="flex h-[65px] items-center">
             <Image src={imgUrl} alt="img" height={65} width={65} className="h-[65px] w-auto" />
           </div>
         </div>
@@ -78,7 +78,7 @@ export function TheLangPathTableCell({
               <div
                 key={lang}
                 className={cn(
-                  "text-center text-gray-600 font-medium mt-1",
+                  "mt-1 text-center font-medium text-gray-600",
                   TEXT_SIZE_MAP[translationFontSize],
                 )}
               >

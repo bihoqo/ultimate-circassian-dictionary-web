@@ -50,13 +50,13 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
 
       <div
         className={cn(
-          "fixed top-0 right-0 w-96 h-full bg-white shadow-lg p-4 transform transition-transform duration-300 ease-in-out",
+          "fixed top-0 right-0 h-full w-96 transform bg-white p-4 shadow-lg transition-transform duration-300 ease-in-out",
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
-        <div className="flex justify-between items-center">
-          <h2 className="font-bold text-lg">Settings</h2>
-          <button className="text-xl font-bold hover:opacity-50 " onClick={onClose}>
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-bold">Settings</h2>
+          <button className="text-xl font-bold hover:opacity-50" onClick={onClose}>
             X
           </button>
         </div>
@@ -64,9 +64,9 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
         {/* Circassian font size settings */}
         <div className="mt-4">
           <span className="font-semibold">Circassian font</span>
-          <div className="flex flex-row justify-between gap-2 mt-2 items-center">
+          <div className="mt-2 flex flex-row items-center justify-between gap-2">
             <p>Font size</p>
-            <div className="flex flex-row gap-2 items-center">
+            <div className="flex flex-row items-center gap-2">
               <MinusSvg
                 height="24"
                 width="24"
@@ -75,7 +75,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
                 isDisabled={circassianFontSize === MIN_ORIGIN_FONT_SIZE}
               />
 
-              <div className="relative flex items-center w-48">
+              <div className="relative flex w-48 items-center">
                 {" "}
                 {/* Increased width here */}
                 <input
@@ -112,9 +112,9 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
         {/* Translation font size settings */}
         <div className="mt-4">
           <span className="font-semibold">Translation font</span>
-          <div className="flex flex-row justify-between gap-2 mt-2">
+          <div className="mt-2 flex flex-row justify-between gap-2">
             <p>Font size</p>
-            <div className="flex flex-row gap-2 items-center">
+            <div className="flex flex-row items-center gap-2">
               <MinusSvg
                 height="24"
                 width="24"
@@ -159,7 +159,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
         {/* Translation Language settings */}
         <div className="mt-4">
           <span className="font-semibold">Translation Language</span>
-          <div className="flex flex-col gap-2 mt-2">
+          <div className="mt-2 flex flex-col gap-2">
             {Object.entries(DEFAULT_TRANSLATION_LANG_TO_NAME).map((lang) => {
               const [shortName, longName] = lang;
               return (

@@ -75,6 +75,7 @@ enum DisplayState {
   Expanded,
   Collapsed,
 }
+
 //SNIPPET:
 // <ExampleListContainer>
 //   <SimpleTranslationExample>

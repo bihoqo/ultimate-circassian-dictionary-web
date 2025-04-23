@@ -240,6 +240,7 @@ function SectionAbsolutive() {
     </section>
   );
 }
+
 function SectionErgative() {
   return (
     <section className="mb-8">
@@ -384,6 +385,7 @@ function SectionInstrumental() {
     </section>
   );
 }
+
 export default function NounPage() {
   return (
     <GrammarBookContainer>

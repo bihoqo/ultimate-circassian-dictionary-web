@@ -37,7 +37,7 @@ function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) 
     <button
       className={cn(
         "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-[#303f2e] hover:text-[#637f5e]/50",
-        "text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl",
+        "3xl:text-4xl text-xl lg:text-xl xl:text-2xl 2xl:text-3xl",
       )}
       onClick={onClick}
     >
@@ -114,7 +114,7 @@ export default function Header() {
           </div>
 
           {isMobileMenuOpen && (
-            <div className="absolute left-0 top-16 z-60 w-full bg-white shadow-lg">
+            <div className="absolute top-16 left-0 z-60 w-full bg-white shadow-lg">
               {NAV_ITEMS.map((item) => {
                 return (
                   <MobileNavItem
@@ -140,7 +140,7 @@ export default function Header() {
   }
 
   return (
-    <div className="relative flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0 z-50">
+    <div className="relative z-50 flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0">
       <div className="mx-auto flex w-11/12 flex-row items-center gap-1 sm:gap-4">
         <Logo onClick={() => navigateTo("/")} />
 

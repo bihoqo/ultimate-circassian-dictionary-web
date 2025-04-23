@@ -21,7 +21,7 @@ export default function TheLangPathDialogBubble({
   const cirTextWords = originText.split(" ");
 
   return (
-    <div className="w-full mx-auto flex flex-col gap-4 border-b-2 border-solid border-gray-300 pb-2">
+    <div className="mx-auto flex w-full flex-col gap-4 border-b-2 border-solid border-gray-300 pb-2">
       <div
         className={cn("flex items-start gap-4", {
           "flex-row": leftOrRight === "left",
@@ -52,16 +52,16 @@ export default function TheLangPathDialogBubble({
           <div className="relative">
             <div
               className={cn(
-                "border border-solid p-4 rounded-sm relative flex flex-row flex-wrap gap-4",
-                { "bg-[#fbddd1] border-[#f19f76]": leftOrRight === "left" },
-                { "bg-[#d6e8ce] border-[#96c07e]": leftOrRight === "right" },
+                "relative flex flex-row flex-wrap gap-4 rounded-sm border border-solid p-4",
+                { "border-[#f19f76] bg-[#fbddd1]": leftOrRight === "left" },
+                { "border-[#96c07e] bg-[#d6e8ce]": leftOrRight === "right" },
               )}
             >
               {cirTextWords.map((word, idx) => (
-                <div key={idx} className="flex flex-col gap-1 w-fit flex-wrap">
+                <div key={idx} className="flex w-fit flex-col flex-wrap gap-1">
                   <span
                     className={cn(
-                      "text-black leading-none font-semibold",
+                      "leading-none font-semibold text-black",
                       TEXT_SIZE_MAP[circassianFontSize],
                     )}
                   >
@@ -72,12 +72,12 @@ export default function TheLangPathDialogBubble({
             </div>
             {/* Spike */}
             <div
-              className={cn("absolute top-4 w-0 h-0", {
+              className={cn("absolute top-4 h-0 w-0", {
                 // Spike styles for "left"
-                "-left-2 border-t-[10px] border-t-transparent border-r-[10px] border-r-[#fbddd1] border-b-[10px] border-b-transparent":
+                "-left-2 border-t-[10px] border-r-[10px] border-b-[10px] border-t-transparent border-r-[#fbddd1] border-b-transparent":
                   leftOrRight === "left",
                 // Spike styles for "right"
-                "-right-2 border-t-[10px] border-t-transparent border-l-[10px] border-l-[#d6e8ce] border-b-[10px] border-b-transparent":
+                "-right-2 border-t-[10px] border-b-[10px] border-l-[10px] border-t-transparent border-b-transparent border-l-[#d6e8ce]":
                   leftOrRight === "right",
               })}
             />
@@ -86,7 +86,7 @@ export default function TheLangPathDialogBubble({
           {/* Translation text */}
           <div
             className={cn(
-              "flex flex-col gap-3 text-[#333333] mt-2",
+              "mt-2 flex flex-col gap-3 text-[#333333]",
               TEXT_SIZE_MAP[translationFontSize],
               { hidden: !isTranslationChecked },
               {
