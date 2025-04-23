@@ -10,21 +10,6 @@ body {
     overscroll-behavior: none;
 }
 
-.bg-image {
-    /* The image used */
-    background-image: url('./../../public/bg.jpg');
-
-    /* Full height */
-    min-height: 100% !important;
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 html {
     position: relative;
     height: 100vh;

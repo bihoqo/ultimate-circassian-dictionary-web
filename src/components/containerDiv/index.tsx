@@ -11,7 +11,10 @@ export default function ContainerDiv({
   return (
     <div
       className={cn(
-        "mx-auto mb-40 mt-16 flex w-[97%] flex-col items-center justify-center gap-2 rounded-sm bg-white py-8 shadow-xl xl:w-full xl:max-w-screen-xl 2xl:max-w-screen-2xl 3xl:max-w-screen-3xl",
+        "w-[97%] xl:w-full",
+        "bg-white shadow-xl",
+        "py-8 mx-auto mb-5 mt-5 gap-2",
+        "flex flex-col items-center justify-center rounded-sm xl:max-w-screen-xl 2xl:max-w-screen-2xl 3xl:max-w-screen-3xl",
         className,
       )}
     >
