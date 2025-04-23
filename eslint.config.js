@@ -5,7 +5,6 @@ const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommen
 const reactHooks = require("eslint-plugin-react-hooks");
 const reactRefresh = require("eslint-plugin-react-refresh");
 const unusedImports = require("eslint-plugin-unused-imports");
-const eslintTailwindcss = require("eslint-plugin-tailwindcss");
 
 const config = tseslint.config(
   {
@@ -16,7 +15,7 @@ const config = tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.recommended,
       eslintPluginPrettierRecommended,
-      eslintTailwindcss.configs.recommended,
+      reactHooks.configs.recommended,
     ],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
@@ -29,7 +28,6 @@ const config = tseslint.config(
       "unused-imports": unusedImports,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
       "react-hooks/exhaustive-deps": "error", // Enforce dependencies for hooks
       "prettier/prettier": ["error", { endOfLine: "auto" }],
       "arrow-body-style": "off", // Disable problematic rule

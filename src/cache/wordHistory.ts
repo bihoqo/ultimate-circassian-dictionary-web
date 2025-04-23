@@ -29,7 +29,6 @@ export function _loadWordHistoryCache(): WordDefinitionsResults[][] {
   }
 }
 
-// Function to save state to localStorage
 function _saveWordHistoryCache(state: WordDefinitionsResults[][]) {
   try {
     const objToSave: WordHistoryCache = {
