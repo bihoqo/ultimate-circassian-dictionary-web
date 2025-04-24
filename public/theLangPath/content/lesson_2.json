@@ -1,0 +1,1401 @@
+[
+  {
+    "title": "2.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\2.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Налмэс",
+          "originText": "Уимафэ шIу Бибэрс. Сыды уфэд?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " نهارك سعيد بيبرس، كيف حالك؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Бибэрс",
+          "originText": "Сыдэгъу, О сыды уфэд?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " أنا بخير، أنت كيف حالك؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Налмэс",
+          "originText": "Опсэу, сыдэгъу, кофэ уешъона? ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " شكراً، أنا بخير،  هل تشرب قهوةً؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Бибэрс",
+          "originText": "Хьау, опсэу, кофэ сешъуагъ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " لا، شكراً،  لقد شربت قهوة.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\2.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Батыр",
+          "originText": "Фэсапщи, сыды уфэд?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "مرحباً، كيف الحال؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэ",
+          "originText": "Сытэрэзэп.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لست بخير.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Батыр",
+          "originText": "Ар бэу гумэкIыгъу, щаи уешъона?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هذا مؤسف حقا، هل تشربين الشاي؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэ",
+          "originText": "Хьау, фызыгъэ IэшIу сешъомэ нахь сикIас.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا، أفضل شرب  عصير حلو.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 dialogue 3",
+    "audio": "theLangPath\\lesson_2\\audio\\2.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Озырмэс",
+          "originText": "Уипчэдыжь шIу Нэфын, сыдэу ущыт?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "صباح الخير نفن،  كيف حالك؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нэфын",
+          "originText": "Опсэу, сэ сыдэгъу, о сыдэу ущыт?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "شكراً، أنا  بخير،  وأنت كيف حالك؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Озырмэс",
+          "originText": "Сэ сыдэгъу дэд, кофэ уешъона?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا جيد جداً، هل تشربين قهوة؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нэфын",
+          "originText": "Ары, опсэу, кофэ сфай псы шъуалъэ игъусэу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، شكراً، أريد قهوة مع كأس ماء.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.1 dialogue 4",
+    "audio": "theLangPath\\lesson_2\\audio\\2.1_4.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Блан",
+          "originText": "Сыда узэшъощтыр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "  ماذا تشرب؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Насып",
+          "originText": "Кофэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": " قهوة. ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Блан",
+          "originText": "Щэ, шъоущыгъу хэлъэу уфая?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "وهل تريدين معها الحليب، السكر؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Насып",
+          "originText": "Хьау опсэу, кофэм изакъу, о тащфэд уикофэ?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا، شكراً، قهوة سادة،  وأنت كيف قهوتك؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Блан",
+          "originText": "Сэ щэр баIоу хэкIагъэу сешъо.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أشربها مع الكثير من الحليب .",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "3.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\3.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Симаз",
+          "originText": "Фэсапщи, сыдэу ущыт?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "مرحباً، كيف الحال؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Опсэу, сэ сыдэгъу. Ори сыдэу ущыт?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "شكراً، أنا جيد، وأنت كيف حالك؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Симаз",
+          "originText": "Сэри сыдэгъу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أيضاً جيد ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Щаи уешъона?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل تشرب شاياً؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Симаз",
+          "originText": "Хьау, сэ кофэр щаим нахьи нахь сикIас. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا، أنا أفضل القهوة على الشاي",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "3.1 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\3.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Джэбагъ",
+          "originText": "Уипчэдыжь шIу, сыд фэд уипсауныгъэ?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "صباح الخير، كيف صحتك؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Аслъан",
+          "originText": "Дэгъу дэд, опсэу, ори?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "جيدة جداً، شكراً، وأنت؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Джэбагъ",
+          "originText": "Дэгъу, кофэ уешъона?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "جيد، هل تشرب قهوة؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Аслъан",
+          "originText": "Ары, сигуапэу, щэр баIоу, ори?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، بكل سرور، مع الكثير من الحليب، وأنت؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Джэбагъ",
+          "originText": "Сэ щаи сешъо сшIоигъу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أريد أن أشرب شاياً ",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.2 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\4.2_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "О Нэджэхьаблэ укъэкIуа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل أنت من نجة حابلة؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Заур",
+          "originText": "Хьау, сэ Нэчэрэзые сыкъэкIо.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا، أنا من نتشرزي.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.2 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\4.2_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Мамсыр",
+          "originText": "О адыгабзэкIэ огущыIа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل تتحدث الأديغابزة",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Адиф",
+          "originText": "Ары, сэ адыгабзэкIэ сэгущыIэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، أنا أتحدث الأديغابزة",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.2 dialogue 3",
+    "audio": "theLangPath\\lesson_2\\audio\\4.2_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Джэбагъ",
+          "originText": "Шъо щаи шъуфая?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل أنتم تريدون شاياً",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Данэ",
+          "originText": "Хьау, тэ кофэ тыфай.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا، نحن نريد قهوة",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.2 dialogue 4",
+    "audio": "theLangPath\\lesson_2\\audio\\4.2_4.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Озырмэс",
+          "originText": "Шъо кофэ шъуешъуа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل تشربون القهوة؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Дэнэф",
+          "originText": "Ары, тэ кофэ тешъо. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، نحن نشرب القهوة",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "5.2 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\5.2_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Енал",
+          "originText": "Фэсапщи, мы чIыпIэр нэкIа, сытIысын слъэкIыщта?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "مرحباً، هل هذا المكان متاح؟ هل يمكنني الجلوس هنا؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нарт",
+          "originText": "Ары, къеблагъ, мыр Сэтэнай, мыр Дан.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، تفضل، هذه ستناي، وهذه دانا ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Енал",
+          "originText": "Сэ сцIэр Енал, шъо Мыекъуапэ шъущыща?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا اسمي ينال، هل أنتم من مايكوب؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Данэ",
+          "originText": "Хьау. Тэ Тыркуем тыщыщ. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا، نحن من تركيا.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Енал",
+          "originText": "Адэ сыд Мыекъуапэ щышъушIэрэр.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "وماذا تفعلون في مايكوب؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Данэ",
+          "originText": "Адыгабзэ тыщеджэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ندرس اللغة الشركسية",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нарт",
+          "originText": "ШIогъэшху, ащыгъум шъо адыгабзэкIэ унэм. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "رائع، إذاً تتحادثون باللغة الشركسية في المنزل. ",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "5.2 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\5.2_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нарт",
+          "originText": "Шъо тыдэ шъущыщ?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "من أين انتم؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Сэтэнай",
+          "originText": "Сэ Бжъэдыгъу къалэ сыщыщ, о?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا من مدينة بجدوغ، وأنت؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Енал",
+          "originText": "Сэ Шъачэ сыщыщ , Нарти Мыекъуапэ щыщ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا من سوتشي ونارت من مايكوب ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нарт",
+          "originText": "Ары, сэ Мыекъуапэ сыщыщ, зыгорэ шъуешъона? Щаи шъуешъона? ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، أنا من مايكوب، هل تشربون شيئاً؟ هل تشربون شاياً؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Сэ кофэ сфай, Данэ, о сыд узэшъощтыр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أريد قهوة، ماذا تشربين دانا؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Данэ",
+          "originText": "Сэ щаи сешъо сшIоигъу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أنا أريد أن أشرب شاياً ",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "8.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\8.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "",
+          "originText": "Зи, зы, тIу, щы, плIы, тфы, хы, блы, и, бгъу, пшIы",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "صفر، واحد، اثنان،  ثلاثة،  أربعة، خمسة،  ستة، سبعة، ثمانية، تسعة، عشرة.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "8.3 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\8.3_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нарт",
+          "originText": "Телефон уиIа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل لديك هاتف؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нурбй",
+          "originText": "Ары, мобайл сиI.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "نعم، لدي موبايل؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нарт",
+          "originText": "Сыда илъытэгъу?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ما هو رقمه؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нурбй",
+          "originText": "82569138",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "82569138",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "8.3 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\8.3_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Насып",
+          "originText": "Непэ сыкъыпфытеощт.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "سوف أتصل بك اليوم ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нэрыс",
+          "originText": "Силъытэгъу пIыгъа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "هل عندك رقمي؟",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Насып",
+          "originText": "Хьау",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لا ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нэрыс",
+          "originText": "87685413",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "87685413",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "10.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\10.1_1.mp3",
+    "parts": [
+      {
+        "type": "exampleInEachLang",
+        "data": [
+          {
+            "cir": "ПшIыкIуз",
+            "ar": "11",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIутIу",
+            "ar": "12",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIущ",
+            "ar": "13",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкlуплl",
+            "ar": "14",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIутф",
+            "ar": "15",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIух",
+            "ar": "16",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIубл",
+            "ar": "17",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIуи",
+            "ar": "18",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПшIыкIубгъу",
+            "ar": "19",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIы",
+            "ar": "20",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ зырэ",
+            "ar": "21",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ тlурэ",
+            "ar": "22",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ щырэ",
+            "ar": "23",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ плIырэ",
+            "ar": "24",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ тфырэ",
+            "ar": "25",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ хырэ",
+            "ar": "26",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ блырэ",
+            "ar": "27",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ ирэ",
+            "ar": "28",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТIокIырэ бгъурэ",
+            "ar": "29",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ЩэкIы",
+            "ar": "30",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ПлIыкIы",
+            "ar": "40",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ТфыкIы",
+            "ar": "50",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ХыкIы",
+            "ar": "60",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "БлыкIы",
+            "ar": "70",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ИкIы",
+            "ar": "80",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "БгъукIы",
+            "ar": "90",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Шъэ",
+            "ar": "100",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Шъэрэ зырэ",
+            "ar": "101",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Шъэрэ тIурэ",
+            "ar": "102",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ШъитIу",
+            "ar": "200",
+            "en": "",
+            "he": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "11.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\11.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Мазэ",
+          "originText": "Кофэ, псы… атефагъэр рублитIурэ чапычипшIырэ. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "قهوة، ماء، ... الحساب روبلين و 10 تشابتش.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Къысфэгъэгъу, сыд фэдиз атефагъэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "عفواً، كم الحساب؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Мазэ",
+          "originText": "РублитIурэ чапычипшIырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "روبلين و10 تشابتش.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Къеблагъ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "تفضل.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Мазэ",
+          "originText": "Мыри чапыч бгъукI, къелыжьыгъэр ары, опсэу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "وهذه 90 تشابتش، الباقية، شكراً",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Опсэу, шIукIэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "شكراً، وداعاً.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "11.1 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\11.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "КолитIурэ кофитIурэ, … атефагъэр рублихырэ чапыч тIукIырэ рубл.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "كولا اثنان وقهوة اثنان، ... الحساب 6 روبل 20 تشابتش.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налмэс",
+          "originText": "Къысфэгъэгъу, сыд фэдиз атефагъэр?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "عفواً، كم الحساب؟ ",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Рублихырэ чапыч тIокIырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "6 روبل 20 تشابتش.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налмэс",
+          "originText": "Къеблагъ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "تفضلي .",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "11.1 dialogue 3",
+    "audio": "theLangPath\\lesson_2\\audio\\11.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Озырмэс",
+          "originText": "Синыбджэгъухэр, сэ атефагъэр стыщт. ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "أصدقائي، أنا سأدفع الحساب.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Симаз",
+          "originText": "Зы щай, зы щай шIуцI, зы тIамыпс, зы пцIыипс … атефагъэр рубылиплIырэ чапыч блыкIырэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "واحد شاي، واحد شاي أسود، واحد عصير برتقال،واحد مياة معدنيه… الحساب 4 روبل 70 تشابتش.",
+            "he": ""
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Озырмэс",
+          "originText": "ТIу, плIы... Нарт, чапыч щэкI пIыгъа?",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "اثنان، أربعة ... نارت، هل لديك ثلاثين تشابتش؟",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\12.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "МэшIокоу шъитфырэ блыкIрэ блырэу (577-эу) Налчыкы икIэу Мыекъуапэ кIорэр, сыхьатыр и-м (8) хьэщпэкъ тфы-м (5) IукIыщт.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "القطار 577 المتوجه من نالتشك إلى مايكوب ينطلق في الساعة 8  من الرصيف رقم 5.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\12.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Къэдгъэзэжьыщт етIанэ, сыхьатыр бгъурэ ныкъорэм. (9:30)",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ثم نعود إليكم لاحقا في الساعة 9:30.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 3",
+    "audio": "theLangPath\\lesson_2\\audio\\12.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Фэсапщи, симобайл фэшIыгъ, си чIырыщэ телефонкIэ шъукъыслъыIэсышъущт. Телефон лъытэгъур",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "مرحباً، هاتفي الجوال مغلق، بإمكانكم التواصل معي على هاتفـي الأرضي. رقم الهاتف (001579986). نلتقي على خير في مايكوب.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 4",
+    "audio": "theLangPath\\lesson_2\\audio\\12.1_4.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Автобусыр тхьэмафэм ыкIэ ежьэщт сыхьатыр плIым.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الحافلة (الباص) سينطلق في نهاية الأسبوع في الساعة الرابعة.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 5",
+    "audio": "theLangPath\\lesson_2\\audio\\12.1_5.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Номерэу зи хы блы и и бгъу бгъу зы зы-м (067889911). укътеуагъ, джыр сэ ащ сыщыIэп. МобайлымкIэ укъыздэгущыIэшъущт, иномерэр Зи тфы тIу щы плIы плIы зи щы хы хы (0523440366).",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "لقد اتصلتَ على الرقم (067889911)، أنا حالياً لست هناك. بإمكانك الاتصال معي على الهاتف الجوال رقم (0523440366).",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "12.1 dialogue 6",
+    "audio": "theLangPath\\lesson_2\\audio\\12.1_6.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Джы сыхьатыр и (8), шъо джы къэбар къэтыным шъукъедэIу.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "إنها الساعة الثامنة 8،  أنتم تستمعون الآن إلى نشرة الأخبار.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "13.1 dialogue 1",
+    "audio": "theLangPath\\lesson_2\\audio\\13.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Непэ хэшыкIыгъэ пцэжъые лыухъо грамишъэ хъоу осэ хэшыкIыгъэ  зы рублырэ чэпыч тфыкIрэкIэ тэщэ.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "ضمن عرض السعر الخاص نبيع اليوم عبوة 100 غرام شرحات سمك من النوع الممتاز بسعر خاص  1.50 روبل .",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "13.1 dialogue 2",
+    "audio": "theLangPath\\lesson_2\\audio\\13.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Кофэ уешъоныр бэу тхъагъо, кофэ тиI утхъэжьэу уешъонэу, Непэризэ хэшыкIыгъэу, грам шъитф кофэ къамланыр рублиплIырэ чапычипшIырэ",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "شرب القهوة ممتعٌ جداً،  لدينا قهوة تشربها وأنت تستمع بها، اليوم فقط عرض خاص ، عبوة 500 غرام بسعر  4.10 روبل. ",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "13.1 dialogue 3",
+    "audio": "theLangPath\\lesson_2\\audio\\13.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Псауныгъэ щыIакIэм къикIырэр псэуныгъэ шхакIэр ары. щэр анэхь чIыопсым къытхэрмэ ащыщ. Iошъхьэ мафэ ылъэпкъыцIэу  щэ тиI. ар чIэуопскъэтыгъ джыри псаэуныгъэшI. Непэ зыщэ литрым ыуасэр , хэшыкIыгъэу зырублырэ чапыч блыкIрэ ныIэп.",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "الحياة الصحية تعني الأكل الصحي، الحليب أحد أهم منتجات الطبيعة . لدينا حليب  ماركة ( أوشحة ماف )، هو حليب نتاج طبيعي وصحي .اليوم عرض خاص، لتر واحد من الحليب بسعر روبل وسبعين تشابتش فقط. ",
+            "he": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "13.1 dialogue 4",
+    "audio": "theLangPath\\lesson_2\\audio\\13.1_4.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "---",
+          "originText": "Псыр гъашIэр ары. непэ шъонхэмкIэ хэшыкIыгъэу Зыпщызэ пцIыипс  литрым чапыч икI ыуасэр",
+          "langToTranslationMap": {
+            "en": "",
+            "ar": "المياه هي الحياة، واليوم بما يخص المشروبات ستجدون عرضاً خاصاً على مياه ( نهر بشيز ) المعدنية ، سعر اللتر ثمانون تشابتشاً.",
+            "he": ""
+          }
+        }
+      }
+    ]
+  }
+]
