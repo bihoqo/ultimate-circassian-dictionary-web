@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useState, ReactElement } from "react";
 import { cn } from "~/utils/classNames";
 
 // #region
@@ -9,7 +9,8 @@ function extractText(children: ReactNode | ReactNode[]): string {
     if (typeof child === "string" || typeof child === "number") {
       text += child.toString();
     } else if (React.isValidElement(child)) {
-      text += extractText(child.props.children);
+      const element = child as ReactElement<{ children?: ReactNode }>;
+      text += extractText(element.props.children);
     }
     // Other types such as boolean or null are ignored as they don't contain meaningful text
   });
@@ -88,9 +89,34 @@ function KbdToIpa(input: string): string {
   output = output.replace(/əa/g, "a");
   output = output.replace(/aə/g, "a");
   output = output.replace(/jj/g, "j"); // Replaces 'jj' with 'j'
-
-  const consonants = "ɮfʔkɣxʃɕt͡st͡sɡʁχħʒʑdʒɬmnrbdptʷ";
-  output = output.replace(new RegExp(`([${consonants}]ʷ)([${consonants}])`, "g"), "$1ə$2");
+  const consonantClusters = [
+    "ɮ",
+    "f",
+    "ʔ",
+    "k",
+    "ɣ",
+    "x",
+    "ʃ",
+    "ɕ",
+    "t͡s",
+    "d͡ʒ",
+    "ʑ",
+    "ʒ",
+    "ɬ",
+    "m",
+    "n",
+    "r",
+    "b",
+    "d",
+    "p",
+    "t",
+    "ʁ",
+    "χ",
+    "ħ",
+  ];
+  const clusterPattern = consonantClusters.map((c) => `${c}ʷ?`).join("|");
+  const regex = new RegExp(`(${clusterPattern})(${clusterPattern})`, "g");
+  output = output.replace(regex, "$1ə$2");
 
   return output;
 }
@@ -103,7 +129,7 @@ export function HighlightText({ children }: { children: ReactNode }) {
 
 function HoverBox({ children }: { children: ReactNode }) {
   return (
-    <div className="absolute bottom-full left-0 mb-2 whitespace-nowrap rounded border bg-white p-2 shadow-lg">
+    <div className="absolute bottom-full left-0 mb-2 rounded border bg-white p-2 whitespace-nowrap shadow-lg">
       {children}
     </div>
   );

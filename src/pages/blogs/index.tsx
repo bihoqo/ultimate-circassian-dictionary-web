@@ -52,7 +52,7 @@ export default function BlogPage() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <div className="text-3xl text-blue-600 hover:underline group-hover:underline">
+                    <div className="text-3xl text-blue-600 group-hover:underline hover:underline">
                       Enter
                     </div>
                   </div>

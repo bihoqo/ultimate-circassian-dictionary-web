@@ -41,8 +41,8 @@ export default function SearchFilterPreferences() {
   }
 
   return (
-    <div className="relative mx-auto my-8 w-11/12 max-w-6.8xl text-left shadow-xl">
-      <div className="absolute left-1/2 top-0 size-6 -translate-x-1/2 -translate-y-1/2 rotate-45 transform border border-gray-300 bg-[#b7edad]"></div>
+    <div className="max-w-6.8xl relative mx-auto my-8 w-11/12 text-left shadow-xl">
+      <div className="absolute top-0 left-1/2 size-6 -translate-x-1/2 -translate-y-1/2 rotate-45 transform border border-gray-300 bg-[#b7edad]"></div>
       <div className="rounded-[10px] border border-gray-300 bg-[#f4fff1] p-6">
         <div className="-mx-6 -mt-6 flex items-center justify-between rounded-t-[10px] border-b border-solid border-gray-300 bg-[#b7edad] px-6 py-4">
           <p className="text-lg font-semibold text-gray-900">Search Filter Preferences</p>

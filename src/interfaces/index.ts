@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface NameToTwitter {
   userName: string;
   twitterName: string;
@@ -95,3 +97,26 @@ export interface Autocomplete {
   fromLangs: SupportedLang[];
   toLangs: SupportedLang[];
 }
+
+export interface INavBarItem {
+  title: string;
+  link: string;
+  icon: ReactNode;
+  isVisible: boolean;
+}
+
+export interface IPreferredSettings {
+  circassianFontSize: number;
+  translationFontSize: number;
+  isTranslationChecked: boolean;
+  translationLangs: ISupportedTranslationLang[];
+}
+
+export type ISupportedTranslationLang = "en" | "ar" | "he";
+export type ILangToTranslationMap = Record<ISupportedTranslationLang, string>;
+
+export const DEFAULT_TRANSLATION_LANG_TO_NAME: ILangToTranslationMap = {
+  en: "English",
+  ar: "Arabic",
+  he: "Hebrew",
+};

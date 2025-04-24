@@ -11,9 +11,8 @@ import { err, ok, Result } from "neverthrow";
 import queryString from "query-string";
 import {
   regularWordToSafeWord,
-  replaceStickLettersToOne,
   replaceTurkishLetterIToEnglishLetterI,
-  safeWordToRegularWord,
+  replaceStickLettersToOne,
 } from "~/utils/wordFormatting";
 import { transformAutocomplete, transformWordDefinitionsResults } from "~/transform";
 import { getSearchFilterPrefsCache } from "~/cache/searchFilterPrefs";
@@ -28,7 +27,7 @@ export async function fetchWordAutocompletesPaginated(args: {
   const searchFilterPrefs = getSearchFilterPrefsCache();
 
   try {
-    const params: String = queryString.stringify({
+    const params: string = queryString.stringify({
       page: args.page,
       size: args.size,
       fromLangs: searchFilterPrefs.fromLang.join(","),
@@ -57,7 +56,7 @@ export async function fetchWordAutocompletes(
   wordAdjusted = replaceStickLettersToOne(wordAdjusted);
 
   const searchFilterPrefs = getSearchFilterPrefsCache();
-  const params: String = queryString.stringify({
+  const params: string = queryString.stringify({
     fromLangs: searchFilterPrefs.fromLang.join(","),
     toLangs: searchFilterPrefs.toLang.join(","),
   });
@@ -86,7 +85,7 @@ export async function fetchWordAutocompletesThatContains(
   wordAdjusted = replaceStickLettersToOne(wordAdjusted);
 
   const searchFilterPrefs = getSearchFilterPrefsCache();
-  const params: String = queryString.stringify({
+  const params: string = queryString.stringify({
     fromLangs: searchFilterPrefs.fromLang.join(","),
     toLangs: searchFilterPrefs.toLang.join(","),
   });
@@ -106,7 +105,7 @@ export async function fetchWordAutocompletesThatContains(
   }
 }
 
-export async function fetchWordAutocompletesWithVerbs(
+export async function fetchEnglishWordAutocompletesWithVerbs(
   word: string,
 ): Promise<Result<Autocomplete[], string>> {
   let wordAdjusted = regularWordToSafeWord(word).trim().toLowerCase();
@@ -114,7 +113,7 @@ export async function fetchWordAutocompletesWithVerbs(
   wordAdjusted = replaceStickLettersToOne(wordAdjusted);
 
   const searchFilterPrefs = getSearchFilterPrefsCache();
-  const params: String = queryString.stringify({
+  const params: string = queryString.stringify({
     fromLangs: searchFilterPrefs.fromLang.join(","),
     toLangs: searchFilterPrefs.toLang.join(","),
   });
