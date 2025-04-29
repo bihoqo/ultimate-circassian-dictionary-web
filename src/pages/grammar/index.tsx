@@ -25,6 +25,16 @@ export default function GrammarPage() {
 
   // TODO - Add content to this page
   const router = useRouter();
+
+  const grammarTopics = [
+    { name: "Nouns", path: "noun" },
+    { name: "Verbs", path: "verb" },
+    { name: "Phonology", path: "phonology" },
+    { name: "Morphology", path: "morphology" },
+    { name: "Numbers", path: "number" },
+    { name: "Adverbs", path: "adverb" },
+    { name: "Adjectives", path: "adjective" },
+  ];
   return (
     <>
       <Head>
@@ -33,48 +43,15 @@ export default function GrammarPage() {
       <main>
         <ContainerDiv className="p-4">
           <div className="flex flex-col gap-4">
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/noun`)}
-            >
-              Nouns
-            </p>
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/verb`)}
-            >
-              Verbs
-            </p>
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/phonology`)}
-            >
-              Phonology
-            </p>
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/morphology`)}
-            >
-              Morphology
-            </p>
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/number`)}
-            >
-              Numbers
-            </p>
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/adverb`)}
-            >
-              Adverbs
-            </p>
-            <p
-              className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
-              onClick={() => router.push(`/grammar/adjective`)}
-            >
-              Adjectives
-            </p>
+            {grammarTopics.map((topic) => (
+              <p
+                key={topic.path}
+                className="cursor-pointer text-3xl font-bold text-blue-600 hover:underline"
+                onClick={() => router.push(`/grammar/${topic.path}`)}
+              >
+                {topic.name}
+              </p>
+            ))}
           </div>
         </ContainerDiv>
       </main>

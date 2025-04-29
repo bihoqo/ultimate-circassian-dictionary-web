@@ -13,14 +13,14 @@ import SettingsSvg from "~/components/svg/settingsSvg";
 
 function Logo({ onClick }: { onClick: () => void }) {
   return (
-    <div className="size-0 sm:size-[40px] md:size-[50px] lg:size-[60px] xl:size-[65px]">
+    <div className="size-0 sm:size-[30px] md:size-[30px] lg:size-[30px] xl:size-[30px]">
       <Image
-        src="/fav/icon-1042x1042.png"
+        src="/fav/icon-256x256.png"
         className={cn("cursor-pointer text-xl font-bold")}
         onClick={onClick}
         width={0}
         height={0}
-        sizes="60vw"
+        sizes="5vw"
         style={{ width: "100%", height: "auto" }} // optional
         alt="logo"
       />
@@ -37,7 +37,7 @@ function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) 
     <button
       className={cn(
         "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-amber-200 hover:text-amber-400",
-        "3xl:text-xl text-lg lg:text-lg xl:text-xl 2xl:text-xl",
+        "text-sm",
       )}
       onClick={onClick}
     >
