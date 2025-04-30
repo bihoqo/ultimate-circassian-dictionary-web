@@ -188,9 +188,7 @@ export function CText({
 
 // TODO(artur): Make better breakpoints.
 export function GrammarBookContainer({ children }: { children: React.ReactNode }) {
-  return (
-    <article className="m-2 mx-auto w-[97%] bg-white p-4 md:max-w-screen-md">{children}</article>
-  );
+  return <article className="w-full bg-yellow-50 p-4 md:max-w-screen-md">{children}</article>;
 }
 
 //SNIPPET:
