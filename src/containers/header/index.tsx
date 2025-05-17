@@ -33,7 +33,7 @@ function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) 
 
   return (
     <button
-      className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-700"
+      className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-semibold text-amber-200 transition hover:bg-green-700"
       onClick={onClick}
     >
       {item.icon}
@@ -126,9 +126,9 @@ export default function Header() {
   }
 
   return (
-    <div className="relative z-50 flex w-full flex-row items-center justify-between bg-green-800 px-6 py-3 shadow">
+    <div className="relative z-50 flex w-full flex-row items-center bg-green-800 px-6 py-3 shadow">
       <Logo onClick={() => navigateTo("/")} />
-      <div className="flex items-center gap-6">
+      <div className="flex">
         {NAV_ITEMS.map((item) => (
           <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
         ))}
