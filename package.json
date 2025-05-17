@@ -57,6 +57,7 @@
     "sass": "^1.87.0",
     "tailwindcss": "^4.1.4",
     "tailwindcss-safe-area": "^0.6.0",
+    "ts-jest": "^29.3.4",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.31.0"
   }
