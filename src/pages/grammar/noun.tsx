@@ -6,79 +6,56 @@ import {
   CText,
   SimpleTranslationExample,
   ExampleListContainer,
+  Table,
+  MorphologyTable,
 } from "~/styled-components/";
 
 function SectionCase() {
+  const table = new Table(
+    ["Indefinite", "Definite"],
+    ["Absolutive", "Ergative", "Instrumental", "Adverbial"],
+  );
+  table.setNameInUpperLeftCorner("Case");
+  table.setCell("Indefinite", "Absolutive", "-∅");
+  table.setCell("Indefinite", "Ergative", "-∅");
+  table.setCell("Indefinite", "Instrumental", <CText d="e">-кIэ</CText>);
+  table.setCell("Indefinite", "Adverbial", <CText d="e">-уэ</CText>);
+  table.setCell("Definite", "Absolutive", <CText d="e">-р</CText>);
+  table.setCell("Definite", "Ergative", <CText d="e">-м</CText>);
+  table.setCell("Definite", "Instrumental", <CText d="e">-мкIэ</CText>);
+  table.setCell("Definite", "Adverbial", <CText d="e">-рауэ</CText>);
+
+  const table2 = new Table(
+    ["Indefinite", "Definite"],
+    ["Absolutive", "Ergative", "Instrumental", "Adverbial"],
+  );
+  table2.setNameInUpperLeftCorner("Case");
+  table2.setCell("Indefinite", "Adverbial", <CText d="e">-хэу</CText>);
+  table2.setCell("Definite", "Absolutive", <CText d="e">-хэр</CText>);
+  table2.setCell("Definite", "Ergative", <CText d="e">-хэм</CText>);
+  table2.setCell("Definite", "Instrumental", <CText d="e">-хэмкIэ</CText>);
+  table2.setCell("Definite", "Adverbial", <CText d="e">-хэрауэ</CText>);
+
+  // prettier-ignore
   return (
     <section className="mb-8">
       <h2 className="mb-2 text-2xl font-semibold">Case</h2>
       <p className="mb-4">
         Kabardian has 4 cases: absolutive (traditionally also called nominative){" "}
-        <CText ipa="-r">-р</CText>, ergative <CText ipa="-m">-м</CText>, instrumental{" "}
-        <CText ipa="-tʃʼa">-кIэ</CText>, and adverbial <CText ipa="-wa">-уэ</CText>. The case
-        markers are not part of the stem and are only suffixed when the noun is used in a sentence.
+        <CText d="e">-р</CText>, ergative <CText d="e">-м</CText>, instrumental{" "}
+        <CText d="e">-кIэ</CText>, and adverbial <CText d="e">-уэ</CText>. The case markers are not
+        part of the stem and are only suffixed when the noun is used in a sentence.
       </p>
       <p className="mb-4">
-        Those 4 cases are divided into primary and secondary cases. The primary cases are only used
-        if the noun is definite, while they are absent if the noun is indefinite (basically{" "}
-        <span className="italic">the man</span> vs <span className="italic">a man</span>). The
-        secondary cases are morphologically built upon the primary cases. This can be seen in
-        definite nouns, where the instrumental case suffix <CText ipa="-tʃʼa">-кIэ</CText> is added
-        to the ergative suffix <CText ipa="-m">-м</CText>, resulting in
-        <CText ipa="-mtʃʼa">-мкIэ</CText>, and the adverbial case suffix
-        <CText ipa="-wa">-уэ</CText> is added to the nominative suffix <CText ipa="-r">-р</CText>,
-        resulting in , resulting in <CText ipa="-raːwa">-рауэ</CText>.
+        Those 4 cases are divided into primary and secondary cases. The primary cases are only used if the noun is definite, while they are absent if the noun is indefinite (basically{" "} <span className="italic">the man</span> vs <span className="italic">a man</span>). The secondary cases are morphologically built upon the primary cases. This can be seen in definite nouns, where the instrumental case suffix <CText d="e">-кIэ</CText> is added to the ergative suffix <CText d="e">-м</CText>, resulting in <CText d="e">-мкIэ</CText>, and the adverbial case suffix <CText d="e">-уэ</CText> is added to the nominative suffix{" "} <CText d="e">-р</CText>, resulting in <CText d="e">-рауэ</CText>.
       </p>
-
-      <div className="overflow-x-auto">
-        <table className="mb-4 w-full min-w-[600px] border-collapse border border-gray-400">
-          <thead>
-            <tr className="bg-gray-200">
-              <th className="border px-4 py-2">Case</th>
-              <th className="border px-4 py-2">Absolutive</th>
-              <th className="border px-4 py-2">Ergative</th>
-              <th className="border px-4 py-2">Instrumental</th>
-              <th className="border px-4 py-2">Adverbial</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border px-4 py-2">Indefinite</td>
-              <td className="border px-4 py-2">-∅</td>
-              <td className="border px-4 py-2">-∅</td>
-              <td>
-                <CText ipa="-tʃʼa">-кIэ</CText>
-              </td>
-              <td>
-                <CText ipa="-wa">-уэ</CText>
-              </td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">Definite</td>
-              <td>
-                <CText ipa="-r">-р</CText>
-              </td>
-              <td>
-                <CText ipa="-m">-м</CText>
-              </td>
-              <td>
-                <CText ipa="-mtʃʼa">-мкIэ</CText>
-              </td>
-              <td>
-                <CText ipa="-raːwa">-рауэ</CText>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <MorphologyTable data={table} />
 
       <p className="mb-4">Below are a few examples:</p>
       <ul className="mb-4 list-inside list-disc">
         <li>
-          <CText ipa="pχaːɕʼam pχabʁʷxar kʷabʒawə jəɕʼaːɕ">
-            пхъащIэм пхъэбгъухэр куэбжэу ищIащ
-          </CText>{" "}
-          : <TranslateText>the carpenter made a gate out of planks</TranslateText> (lit.{" "}
+          <CText d="e">пхъащIэм пхъэбгъухэр куэбжэу ищIащ</CText> :
+          <TranslateText>the carpenter made a gate out of planks</TranslateText> (lit.
           <TranslateText>
             <span className="italic">the carpenter made planks like a gate</span>
           </TranslateText>
@@ -87,79 +64,34 @@ function SectionCase() {
       </ul>
 
       <p className="mb-4">
-        There is also a special interaction with the plural forms of a noun, as in their indefinite
-        form they only have the adverbial form, while in their definite form they have all 4 cases.
-        This is in line with the fact that marking the plural is optional and thus also inherently
-        definite.
+        There is also a special interaction with the plural forms of a noun, as in their indefinite form they only have the adverbial form, while in their definite form they have all 4 cases. This is in line with the fact that marking the plural is optional and thus also inherently definite.
       </p>
-      <div className="overflow-x-auto">
-        <table className="mb-4 w-full border-collapse border border-gray-400">
-          <thead>
-            <tr className="bg-gray-200">
-              <th className="border px-4 py-2">Case</th>
-              <th className="border px-4 py-2">Absolutive</th>
-              <th className="border px-4 py-2">Ergative</th>
-              <th className="border px-4 py-2">Instrumental</th>
-              <th className="border px-4 py-2">Adverbial</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border px-4 py-2">Indefinite</td>
-              <td className="border px-4 py-2">not used</td>
-              <td className="border px-4 py-2">not used</td>
-              <td className="border px-4 py-2">not used</td>
-              <td>
-                <CText ipa="-xawə">-хэу</CText>
-              </td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">Definite</td>
-              <td>
-                <CText ipa="-xar">-хэр</CText>
-              </td>
-              <td>
-                <CText ipa="-xam">-хэм</CText>
-              </td>
-              <td>
-                <CText ipa="-xamtʃʼa">-хэмкIэ</CText>
-              </td>
-              <td>
-                <CText ipa="-xaraːwa">-хэрауэ</CText>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+      <MorphologyTable data={table2} />
       <p className="mb-4">
-        However, the plural indefinite form is used in a vocative sense, which is used to address
-        someone. This is also the only case where the plural indefinite form is used, e.g.
+        However, the plural indefinite form is used in a vocative sense, which is used to address someone. This is also the only case where the plural indefinite form is used, e.g.
       </p>
 
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="ɕʼaːɮaxa qəzadaʔʷa">
+        <SimpleTranslationExample d="e">
           <>щIалэхэ, къызэдэIуэ</>
           <>boys, listen to me</>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="ɕʼaːɮaxa wənamtʃʼa fənajbɮaʁat">
+        <SimpleTranslationExample d="e">
           <>щIалэхэ, унэмкIэ фынеблагъэт</>
           <>boys, visit the house</>
         </SimpleTranslationExample>
       </ExampleListContainer>
 
       <p className="mb-4">
-        Similar to the plural, other word forms also may require case marking to be grammatical.
-        However note, that it is more accurate to say that not the noun, but the noun phrase is
-        marked for the case.
+        Similar to the plural, other word forms also may require case marking to be grammatical. However note, that it is more accurate to say that not the noun, but the noun phrase is marked for the case.
       </p>
 
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="sawsrəqʷa naːrtxam maːfʼa qaːzarəxʷəjħaːr">
+        <SimpleTranslationExample d="e">
           <>сосрыкъуэ нартхэм мафIэ къазэрыхуихьар</>
           <>how Sosruko brought fire to the Narts</>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="χʷaːʒa psəm qəzərəjtʃʼəʒaːr">
+        <SimpleTranslationExample d="e">
           <>хъуэжэ псым къызэрикIыжар</>
           <>how Khaja returned from the river</>
         </SimpleTranslationExample>
@@ -169,18 +101,17 @@ function SectionCase() {
 }
 
 function SectionAbsolutive() {
+  // prettier-ignore
   return (
     <section className="mb-8">
       <h2 className="mb-2 text-2xl font-semibold">Absolutive</h2>
       <p className="mb-4">
-        The absolutive case is marked by the suffix <CText ipa="-r">-р</CText>. As is usual for most
-        ergative languages, the absolutive is used as the subject of an intransitive verb and as the
-        direct object of a transitive verb.
+        The absolutive case is marked by the suffix <CText d="e">-р</CText>. As is usual for most ergative languages, the absolutive is used as the subject of an intransitive verb and as the direct object of a transitive verb.
       </p>
 
       <p className="mb-4">It denotes the subject of an intransitive verb.</p>
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="χədʒabzər mabaːwa">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>хъыджэбзыр</HighlightText> мэбауэ
           </>
@@ -188,7 +119,7 @@ function SectionAbsolutive() {
             <HighlightText>the girl</HighlightText> breaths
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="fəzər mazəm jawpɬ">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>фызыр</HighlightText> мэзым йоплъ
           </>
@@ -200,7 +131,7 @@ function SectionAbsolutive() {
 
       <p className="mb-4">It denotes the direct object of a transitive verb.</p>
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="sa qasɬəχʷaː ɬʼər qazʁʷataːɕ">
+        <SimpleTranslationExample d="e">
           <>
             сэ къэслъыхъуа <HighlightText>лIыр</HighlightText> къэзгъуэтащ
           </>
@@ -212,7 +143,7 @@ function SectionAbsolutive() {
 
       <p className="mb-4">It denotes the nominal predicate in equative sentences.</p>
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="sa təkʷanəm zʁakʷʼaːr səj qʷaʃərɕ">
+        <SimpleTranslationExample d="e">
           <>
             сэ тыкуэным згъэкIуар <HighlightText>си къуэшырщ</HighlightText>
           </>
@@ -220,7 +151,7 @@ function SectionAbsolutive() {
             whom I have sent to the store <HighlightText>is my brother</HighlightText>
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="sa χədʒabz daːxar səj nəsarɕ">
+        <SimpleTranslationExample d="e">
           <>
             сэ хъыджэбз дахэр <HighlightText>си нысэрщ</HighlightText>
           </>
@@ -228,7 +159,7 @@ function SectionAbsolutive() {
             this pretty girl <HighlightText>is my bride</HighlightText>
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="səj qʷar ɕaːkʷʼarɕ">
+        <SimpleTranslationExample d="e">
           <>
             си къуэр <HighlightText>щакIуэрщ</HighlightText>
           </>
@@ -242,12 +173,13 @@ function SectionAbsolutive() {
 }
 
 function SectionErgative() {
+  // prettier-ignore
   return (
     <section className="mb-8">
       <h2 className="mb-2 text-2xl font-semibold">Ergative</h2>
       <p className="mb-4">If used with transitive verbs it denotes the subject.</p>
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="ɬʼəm dəʁʷəʑ jəɬaʁʷaːɕ">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>лIым</HighlightText> дыгъужь илъэгъуащ
           </>
@@ -257,12 +189,11 @@ function SectionErgative() {
         </SimpleTranslationExample>
       </ExampleListContainer>
       <p className="mb-4">
-        It also denotes the indirect object of intransitive and transitive verbs (mainly because the
-        indirect object is governed by the preverb).
+        It also denotes the indirect object of intransitive and transitive verbs (mainly because the indirect object is governed by the preverb).
       </p>
 
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="ħar ɕʼaːɮam japɬaːɕ">
+        <SimpleTranslationExample d="e">
           <>
             хьэр <HighlightText>щIалэм</HighlightText> еплъащ
           </>
@@ -270,37 +201,34 @@ function SectionErgative() {
             the dog looked at <HighlightText> the boy</HighlightText>
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="ɕʼaːɮam məʔarəsa tħamaːdam jərətaːɕ">
+        <SimpleTranslationExample d="e">
           <>
             щIалэм мыIэрысэ <HighlightText>тхьэмадэм</HighlightText> иритащ
           </>
           <>
-            {" "}
             the boy gave <HighlightText>the Tkhamada</HighlightText> an apple
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="pɕʼaːɕar ɕʼaːɮam jawaːɕ">
+        <SimpleTranslationExample d="e">
           <>
             пщIащэр <HighlightText>щIалэм</HighlightText> еуащ
           </>
           <>
-            {" "}
             the girl hit <HighlightText>the boy</HighlightText>
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="ɕʼaːɮam məʔarəsa jəʔaːɕ">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>щIалэм</HighlightText> мыIэрысэ иIащ
           </>
           <>
-            {" "}
             the boy has <HighlightText>the apple</HighlightText>
           </>
         </SimpleTranslationExample>
       </ExampleListContainer>
       <p className="mb-4">It can also be used to create locative adverbs.</p>
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="wa qaːɮam pəjsmaw ptxaː">
+        <SimpleTranslationExample d="e">
           <>
             уэ <HighlightText>къалэм</HighlightText> письмо птха?
           </>
@@ -308,7 +236,7 @@ function SectionErgative() {
             did you write the letter <HighlightText>to the city</HighlightText>?
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="qʷaːʒam wəsʃanɕ">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>къуажэм</HighlightText> усшэнщ
           </>
@@ -320,7 +248,7 @@ function SectionErgative() {
       <p className="mb-4">It can also be used to create temporal adverbs.</p>
 
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="ʒaɕəm ħar mabaːna">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>жэщым</HighlightText> хъэр мэбанэ
           </>
@@ -333,7 +261,7 @@ function SectionErgative() {
       <p className="mb-4">It is also used in possessive constructions to denote the possessor.</p>
 
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="fəzəm jə nar">
+        <SimpleTranslationExample d="e">
           <>
             <HighlightText>фызым</HighlightText> и нэр
           </>
@@ -347,12 +275,13 @@ function SectionErgative() {
 }
 
 function SectionInstrumental() {
+  // prettier-ignore
   return (
     <section className="mb-8">
       <h2 className="mb-2 text-2xl font-semibold">Instrumental</h2>
       <p className="mb-4">It can denote an instrumental meaning.</p>
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="saːbəjr qaːɮamtʃʼa maːtxa">
+        <SimpleTranslationExample d="e">
           <>
             сабийр <HighlightText>къалэмкIэ</HighlightText> матхэ
           </>
@@ -360,7 +289,7 @@ function SectionInstrumental() {
             the child writes <HighlightText>with the pen</HighlightText>
           </>
         </SimpleTranslationExample>
-        <SimpleTranslationExample ipa="da tajndʒəzəm qχʷəħɬaːtatʃʼa dəɬataːɕ">
+        <SimpleTranslationExample d="e">
           <>
             дэ тенджызым <HighlightText>кхъухьлъатэкIэ</HighlightText> дылъэтащ
           </>
@@ -373,7 +302,7 @@ function SectionInstrumental() {
       <p className="mb-4">It can denote the direction.</p>
 
       <ExampleListContainer>
-        <SimpleTranslationExample ipa="bɣəm tajt wənamtʃʼa maːpɬa">
+        <SimpleTranslationExample d="e">
           <>
             бгым тет <HighlightText>унэмкIэ</HighlightText> маплъэ
           </>

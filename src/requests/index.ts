@@ -9,7 +9,11 @@ import {
 } from "~/interfaces";
 import { err, ok, Result } from "neverthrow";
 import queryString from "query-string";
-import { regularWordToSafeWord, replaceStickLettersToOne } from "~/utils/wordFormatting";
+import {
+  regularWordToSafeWord,
+  replaceTurkishLetterIToEnglishLetterI,
+  replaceStickLettersToOne,
+} from "~/utils/wordFormatting";
 import { transformAutocomplete, transformWordDefinitionsResults } from "~/transform";
 import { getSearchFilterPrefsCache } from "~/cache/searchFilterPrefs";
 
@@ -48,6 +52,7 @@ export async function fetchWordAutocompletes(
   word: string,
 ): Promise<Result<Autocomplete[], string>> {
   let wordAdjusted = regularWordToSafeWord(word).trim().toLowerCase();
+  wordAdjusted = replaceTurkishLetterIToEnglishLetterI(wordAdjusted);
   wordAdjusted = replaceStickLettersToOne(wordAdjusted);
 
   const searchFilterPrefs = getSearchFilterPrefsCache();
@@ -76,6 +81,7 @@ export async function fetchWordAutocompletesThatContains(
   word: string,
 ): Promise<Result<Autocomplete[], string>> {
   let wordAdjusted = regularWordToSafeWord(word).trim().toLowerCase();
+  wordAdjusted = replaceTurkishLetterIToEnglishLetterI(wordAdjusted);
   wordAdjusted = replaceStickLettersToOne(wordAdjusted);
 
   const searchFilterPrefs = getSearchFilterPrefsCache();
@@ -103,6 +109,7 @@ export async function fetchEnglishWordAutocompletesWithVerbs(
   word: string,
 ): Promise<Result<Autocomplete[], string>> {
   let wordAdjusted = regularWordToSafeWord(word).trim().toLowerCase();
+  wordAdjusted = replaceTurkishLetterIToEnglishLetterI(wordAdjusted);
   wordAdjusted = replaceStickLettersToOne(wordAdjusted);
 
   const searchFilterPrefs = getSearchFilterPrefsCache();
