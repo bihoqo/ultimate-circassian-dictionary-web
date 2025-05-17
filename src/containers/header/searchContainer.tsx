@@ -1,99 +1,100 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { FaFilter, FaSearch, FaTimesCircle } from "react-icons/fa";
+
 import { cn } from "~/utils/classNames";
 import SearchFilterDialog from "~/components/searchFilterModal";
-import HeaderSearchResultsDropdown from "../../components/headerSearchResultsDropdown";
-import { useParams, useRouter } from "next/navigation";
+import HeaderSearchResultsDropdown from "~/components/headerSearchResultsDropdown";
+import { useRouter, useParams } from "next/navigation";
 import { regularWordToSafeWord } from "~/utils/wordFormatting";
 import useWindowSize from "~/hooks/useWindowDimensions";
 import KeyboardWrapper from "~/components/keyboardWrapper";
 
-export default function SearchContainer({ showOnMobile }: { showOnMobile: boolean }) {
-  const { width } = useWindowSize();
-  const searchInputRef = useRef<HTMLInputElement>(null);
-  const [inputValue, setInputValue] = React.useState<string>("");
-  const [dropdownVisible, setDropdownVisible] = useState<boolean>(false);
-  const [filterDialogVisible, setFilterDialogVisible] = useState<boolean>(false);
+function useSearchLogic() {
+  const searchInputRef = React.useRef<HTMLInputElement>(null);
+  const [inputValue, setInputValue] = React.useState("");
+  const [dropdownVisible, setDropdownVisible] = React.useState(false);
+  const [filterDialogVisible, setFilterDialogVisible] = React.useState(false);
   const router = useRouter();
   const params = useParams<{ word: string }>();
 
-  function clickWordHandler(word: string) {
+  const clickWordHandler = (word: string) => {
     const safeWord = regularWordToSafeWord(word);
+    if (params?.word === safeWord) {
+      return;
+    }
     setInputValue("");
     setDropdownVisible(false);
-
-    if (params && "word" in params && params.word === safeWord) {
-      console.log("Word already in URL");
-      return;
-    }
-
     router.push(`/dictionary/${safeWord}`);
-  }
+  };
 
-  function keyboardSearchBtnHandler() {
-    if (inputValue.length === 0) {
-      return;
+  const keyboardSearchBtnHandler = () => {
+    if (inputValue) {
+      searchInputRef.current?.focus();
     }
-    searchInputRef.current?.focus();
-  }
+  };
 
-  if (!showOnMobile && width < 640) {
+  return {
+    inputValue,
+    setInputValue,
+    searchInputRef,
+    dropdownVisible,
+    setDropdownVisible,
+    clickWordHandler,
+    keyboardSearchBtnHandler,
+    filterDialogVisible,
+    openFilterDialog: () => setFilterDialogVisible(true),
+    closeFilterDialog: () => setFilterDialogVisible(false),
+  };
+}
+
+export default function SearchContainer({ showOnMobile }: { showOnMobile: boolean }) {
+  const { width } = useWindowSize();
+  const isMobile = width < 640;
+
+  const {
+    inputValue,
+    setInputValue,
+    searchInputRef,
+    dropdownVisible,
+    setDropdownVisible,
+    clickWordHandler,
+    keyboardSearchBtnHandler,
+    filterDialogVisible,
+    openFilterDialog,
+    closeFilterDialog,
+  } = useSearchLogic();
+
+  if (!showOnMobile && isMobile) {
     return null;
   }
 
-  if (showOnMobile && width < 640) {
-    return (
-      <div className="z-2 mx-auto flex w-11/12 flex-col">
-        <div className={cn("flex flex-row items-center justify-center")}>
-          {/* Search Input */}
-          <SearchInput
-            searchInputRef={searchInputRef}
-            inputValue={inputValue}
-            setInputValue={setInputValue}
-            setDropdownVisible={setDropdownVisible}
-            clickWordHandler={clickWordHandler}
-            dropdownVisible={dropdownVisible}
-          />
-
-          {/* Search Filter */}
-          <SearchFilter
-            filterDialogVisible={filterDialogVisible}
-            openFilterDialog={() => setFilterDialogVisible(true)}
-            closeFilterDialog={() => setFilterDialogVisible(false)}
-          />
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="z-2 mx-auto flex w-11/12 flex-col">
-      <div className={cn("flex flex-row items-center justify-center")}>
-        {/* Search Input */}
+    <div className="z-10 mx-auto flex w-11/12 flex-col gap-4">
+      <div className="flex w-full items-center justify-center gap-3">
         <SearchInput
           searchInputRef={searchInputRef}
           inputValue={inputValue}
           setInputValue={setInputValue}
           setDropdownVisible={setDropdownVisible}
-          clickWordHandler={clickWordHandler}
           dropdownVisible={dropdownVisible}
+          clickWordHandler={clickWordHandler}
         />
-
-        {/* Search Filter */}
         <SearchFilter
           filterDialogVisible={filterDialogVisible}
-          openFilterDialog={() => setFilterDialogVisible(true)}
-          closeFilterDialog={() => setFilterDialogVisible(false)}
+          openFilterDialog={openFilterDialog}
+          closeFilterDialog={closeFilterDialog}
         />
       </div>
-      {/* Search Keyboard */}
-      <div className="mx-auto mt-4 flex w-11/12 flex-row items-center justify-center xl:w-1/2">
-        <KeyboardWrapper
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          onSearchClick={keyboardSearchBtnHandler}
-        />
-      </div>
+
+      {!isMobile && (
+        <div className="mx-auto w-full xl:w-1/2">
+          <KeyboardWrapper
+            inputValue={inputValue}
+            setInputValue={setInputValue}
+            onSearchClick={keyboardSearchBtnHandler}
+          />
+        </div>
+      )}
     </div>
   );
 }
@@ -113,35 +114,32 @@ function SearchInput({
   clickWordHandler: (word: string) => void;
   searchInputRef: React.RefObject<HTMLInputElement | null>;
 }) {
-  const { width } = useWindowSize();
   return (
     <div className="relative flex w-full flex-col">
       <div
         className={cn(
-          "flex w-full items-center justify-center bg-white",
-          "border border-solid",
-          "xs:px-2 rounded-md px-1 py-3 font-medium text-black shadow-sm sm:px-4",
-          "3xl:text-5xl text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl",
-          inputValue.length > 0
-            ? "border-2 border-[#b0e0b5]"
-            : "border-[#cdcdcd] hover:border-[#b0e0b5]/60",
+          "flex w-full items-center rounded-md border px-3 py-2 text-black shadow-sm",
+          "bg-white transition-all focus-within:border-blue-400 hover:border-gray-400",
+          inputValue ? "border-green-400" : "border-gray-300",
         )}
       >
-        <FaSearch className="opacity-80" size={width < 400 ? 16 : 24} color="#155e75" />
+        <FaSearch className="mr-2 text-xl text-teal-700 opacity-80" />
         <input
           ref={searchInputRef}
-          className="flex-grow bg-transparent px-1 font-medium text-black outline-none sm:px-2"
+          className="flex-grow bg-transparent text-base font-medium placeholder-gray-400 focus:outline-none"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onFocus={() => setDropdownVisible(true)}
           placeholder="Search, e.g. boy or к1алэ"
         />
-        <button
-          className={cn("flex items-center hover:opacity-80", { hidden: !inputValue })}
-          onClick={() => setInputValue("")}
-        >
-          <FaTimesCircle className="opacity-80" size={24} color="#757575" />
-        </button>
+        {inputValue && (
+          <button
+            className="ml-2 text-gray-500 transition hover:text-gray-700"
+            onClick={() => setInputValue("")}
+          >
+            <FaTimesCircle size={20} />
+          </button>
+        )}
       </div>
       {dropdownVisible && (
         <HeaderSearchResultsDropdown
@@ -167,19 +165,14 @@ function SearchFilter({
   return (
     <div className="relative">
       <button
-        className={cn(
-          "w-full items-center gap-1 px-4 py-2 font-bold text-[#3182ce] hover:text-[#3182ce]/50",
-          "hidden md:flex",
-        )}
+        className="hidden items-center gap-2 px-4 py-2 font-semibold text-blue-600 transition hover:text-blue-400 md:flex"
         onClick={openFilterDialog}
       >
-        <FaFilter className="3xl:text-5xl text-3xl xl:text-4xl 2xl:text-4xl" />
-        <span className="3xl:text-2xl w-full text-base text-nowrap xl:text-lg 2xl:text-xl">
-          Search Filter
-        </span>
+        <FaFilter className="text-xl" />
+        <span className="text-base">Search Filter</span>
       </button>
       {filterDialogVisible && (
-        <div className="absolute right-0 z-50 mt-2 w-[407px]">
+        <div className="absolute right-0 z-50 mt-2 w-[400px]">
           <SearchFilterDialog hide={closeFilterDialog} />
         </div>
       )}
