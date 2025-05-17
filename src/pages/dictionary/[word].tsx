@@ -53,6 +53,6 @@ export default function WordPage() {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
 };
