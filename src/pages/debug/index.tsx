@@ -29,7 +29,6 @@ export default function DebugPage({ host }: HomePageProps) {
     </>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
+const getServerSideProps: GetServerSideProps = async (context) => {
   return { props: { host: context.req.headers.host || null } };
 };
