@@ -118,7 +118,7 @@ export default function Layout({ children }: LayoutProps) {
           <Header />
         </div>
       </div>
-      <div className="bg-gray-700">
+      <div className="bg-image">
         <div className="relative flex w-full flex-row justify-center">{children}</div>
       </div>
       <GlobalFooter />
