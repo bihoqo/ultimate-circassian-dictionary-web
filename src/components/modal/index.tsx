@@ -35,8 +35,8 @@ export default function Modal({
         <motion.div className={cn("fixed inset-0 z-9999 overflow-y-auto", containerClassName)}>
           <motion.div
             className={cn(
-              "overlay fixed left-0 top-0 z-40 flex h-full w-full",
-              "items-center justify-center bg-black-main/70 backdrop-blur-lg",
+              "overlay fixed top-0 left-0 z-40 flex h-full w-full",
+              "bg-black-main/70 items-center justify-center backdrop-blur-lg",
               "z-900",
             )}
             onClick={closeOnOutsideClick ? onClose : () => {}}
@@ -74,7 +74,7 @@ export default function Modal({
             className={cn(
               "fixed top-1/2 left-1/2 z-9999 max-w-full",
               !unstyled &&
-                "rounded-2xl border border-solid border-white/2 bg-popupBg p-5 shadow-modal",
+                "bg-popupBg shadow-modal rounded-2xl border border-solid border-white/2 p-5",
               className,
             )}
           >

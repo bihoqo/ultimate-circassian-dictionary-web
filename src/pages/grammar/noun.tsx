@@ -1,4 +1,4 @@
-import React, { useState, ReactNode } from "react";
+import React from "react";
 import {
   TranslateText,
   HighlightText,
@@ -240,6 +240,7 @@ function SectionAbsolutive() {
     </section>
   );
 }
+
 function SectionErgative() {
   return (
     <section className="mb-8">
@@ -384,6 +385,7 @@ function SectionInstrumental() {
     </section>
   );
 }
+
 export default function NounPage() {
   return (
     <GrammarBookContainer>
