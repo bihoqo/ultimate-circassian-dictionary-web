@@ -17,29 +17,30 @@ interface ModalProps {
 }
 
 export default function Modal({
-  children,
-  isOpen,
-  onClose,
-  width = "500px",
-  closeOnOutsideClick = true,
-  padding = 50,
-  className,
-  showClose = true,
-  unstyled = false,
-  closeButtonStyles,
-  containerClassName,
-}: ModalProps) {
+                                children,
+                                isOpen,
+                                onClose,
+                                width = "500px",
+                                closeOnOutsideClick = true,
+                                padding = 50,
+                                className,
+                                showClose = true,
+                                unstyled = false,
+                                closeButtonStyles,
+                                containerClassName,
+                              }: ModalProps) {
   return (
     <>
       {isOpen && (
         <motion.div className={cn("fixed inset-0 z-9999 overflow-y-auto", containerClassName)}>
           <motion.div
             className={cn(
-              "overlay fixed top-0 left-0 z-40 flex h-full w-full",
+                "overlay fixed left-0 top-0 z-40 flex h-full w-full",
               "bg-black-main/70 items-center justify-center backdrop-blur-lg",
               "z-900",
-            )}
-            onClick={closeOnOutsideClick ? onClose : () => {}}
+              )}
+            onClick={closeOnOutsideClick ? onClose : () => {
+            }}
             initial={{
               opacity: 0,
             }}
@@ -72,9 +73,9 @@ export default function Modal({
             }}
             transition={{ ease: [0.19, 1, 0.22, 1], duration: 0.4 }}
             className={cn(
-              "fixed top-1/2 left-1/2 z-9999 max-w-full",
+              "fixed left-1/2 top-1/2 z-9999 max-w-full",
               !unstyled &&
-                "bg-popupBg shadow-modal rounded-2xl border border-solid border-white/2 p-5",
+              "bg-popupBg rounded-2xl border border-solid border-white/2 p-5 shadow-modal",
               className,
             )}
           >
