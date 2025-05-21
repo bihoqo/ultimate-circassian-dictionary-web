@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { toast, ToastOptions } from "react-toastify";
 
-export const toastUtil = {
+const toastUtil = {
   success: (content: React.ReactNode | string, options?: ToastOptions<{}> | undefined) => {
     toast.success(<ToastContent icon="/toast/toast-success-icon.svg" content={content} />, {
       ...options,
@@ -34,7 +34,7 @@ export const toastUtil = {
   },
 };
 
-const ToastContent = ({ icon, content }: { icon: string; content: React.ReactNode }) => {
+export const ToastContent = ({ icon, content }: { icon: string; content: React.ReactNode }) => {
   return (
     <div className="flex gap-3">
       <Image width={24} height={24} src={icon} alt="toast-icon" />
