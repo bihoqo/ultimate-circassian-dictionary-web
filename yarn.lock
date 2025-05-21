@@ -4595,10 +4595,10 @@ react-property@2.0.2:
   resolved "https://registry.yarnpkg.com/react-property/-/react-property-2.0.2.tgz#d5ac9e244cef564880a610bc8d868bd6f60fdda6"
   integrity sha512-+PbtI3VuDV0l6CleQMsx2gtK0JZbZKbpdu5ynr+lbsuvtmgbNcS3VM0tuY2QjFNOcWxvXeHjDpy42RO+4U2rug==
 
-react-simple-keyboard@^3.8.66:
-  version "3.8.72"
-  resolved "https://registry.yarnpkg.com/react-simple-keyboard/-/react-simple-keyboard-3.8.72.tgz#026dbb27e7f5d18fed58c31704a150a889ed50da"
-  integrity sha512-C34MVOykLrlONImOdJrSaXrNloTxOtUStipQaINR5Bem5JLFHEszNedVBEmxnt7Fqb7CTIIZ7fSgR8FasRIbzw==
+react-simple-keyboard@^3.8.73:
+  version "3.8.73"
+  resolved "https://registry.yarnpkg.com/react-simple-keyboard/-/react-simple-keyboard-3.8.73.tgz#3cb4ddd210461191d9be2e22a562344c66cba67b"
+  integrity sha512-ymXqsdnkJcYiuDuATSEe3N5lnSGEd5wFFiNAre+goQsaZLuYCNiS0N1xxBFx8N5ykmJ2jgW4LnRzkALSB5FuRw==
 
 react-toastify@^11.0.5:
   version "11.0.5"
