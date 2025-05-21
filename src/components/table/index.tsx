@@ -194,7 +194,7 @@ function HeaderRow({
               key={idx}
               className={cn(
                 "text-md font-medium",
-                "w-full overflow-hidden text-ellipsis whitespace-normal break-words",
+                "w-full overflow-hidden break-words text-ellipsis whitespace-normal",
                 isOnDarkMode ? "text-white/70" : "text-black",
               )}
             >
@@ -268,7 +268,7 @@ function TableRows({
                 key={idx}
                 className={cn(
                   "text-md p-4 font-medium",
-                  "w-full overflow-hidden text-ellipsis whitespace-normal break-words",
+                  "w-full overflow-hidden break-words text-ellipsis whitespace-normal",
                   {
                     "text-left": idx === 0,
                     "text-right": idx > 0,

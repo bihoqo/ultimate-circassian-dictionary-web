@@ -17,29 +17,30 @@ interface ModalProps {
 }
 
 export default function Modal({
-  children,
-  isOpen,
-  onClose,
-  width = "500px",
-  closeOnOutsideClick = true,
-  padding = 50,
-  className,
-  showClose = true,
-  unstyled = false,
-  closeButtonStyles,
-  containerClassName,
-}: ModalProps) {
+                                children,
+                                isOpen,
+                                onClose,
+                                width = "500px",
+                                closeOnOutsideClick = true,
+                                padding = 50,
+                                className,
+                                showClose = true,
+                                unstyled = false,
+                                closeButtonStyles,
+                                containerClassName,
+                              }: ModalProps) {
   return (
     <>
       {isOpen && (
         <motion.div className={cn("fixed inset-0 z-9999 overflow-y-auto", containerClassName)}>
           <motion.div
             className={cn(
-              "overlay fixed left-0 top-0 z-40 flex h-full w-full",
+                "overlay fixed left-0 top-0 z-40 flex h-full w-full",
               "bg-black-main/70 items-center justify-center backdrop-blur-lg",
               "z-900",
-            )}
-            onClick={closeOnOutsideClick ? onClose : () => {}}
+              )}
+            onClick={closeOnOutsideClick ? onClose : () => {
+            }}
             initial={{
               opacity: 0,
             }}
@@ -74,7 +75,7 @@ export default function Modal({
             className={cn(
               "fixed left-1/2 top-1/2 z-9999 max-w-full",
               !unstyled &&
-                "bg-popupBg rounded-2xl border border-solid border-white/2 p-5 shadow-modal",
+              "bg-popupBg rounded-2xl border border-solid border-white/2 p-5 shadow-modal",
               className,
             )}
           >

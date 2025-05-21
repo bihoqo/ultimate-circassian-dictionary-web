@@ -1,5 +1,4 @@
-// Function to load state from localStorage
-import { getAllSupportedLangs, WordDefinitionsResults } from "~/interfaces";
+import { WordDefinitionsResults } from "~/interfaces";
 import { CACHE_VERSION, WORD_HISTORY_CACHE_KEY } from "~/constants/cache";
 
 const MAX_WORD_HISTORY_CACHE = 100;
@@ -30,7 +29,6 @@ export function _loadWordHistoryCache(): WordDefinitionsResults[][] {
   }
 }
 
-// Function to save state to localStorage
 function _saveWordHistoryCache(state: WordDefinitionsResults[][]) {
   try {
     const objToSave: WordHistoryCache = {

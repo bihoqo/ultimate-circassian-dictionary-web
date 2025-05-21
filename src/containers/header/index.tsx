@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { FaHome, FaTimes, FaHamburger } from "react-icons/fa";
-import { MdMenuBook, MdContactSupport } from "react-icons/md";
+import { MdMenuBook, MdContactSupport, MdOutlineFileDownload } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import { cn } from "~/utils/classNames";
 import Image from "next/image";
 import useWindowSize from "~/hooks/useWindowDimensions";
 import SearchContainer from "~/containers/header/searchContainer";
 import { usePathname } from "next/navigation";
+import { INavBarItem } from "~/interfaces";
+import SettingsPanel from "~/components/settingsPanel";
+import SettingsSvg from "~/components/svg/settingsSvg";
 
 function Logo({ onClick }: { onClick: () => void }) {
   return (
@@ -25,18 +28,16 @@ function Logo({ onClick }: { onClick: () => void }) {
   );
 }
 
-function NavItem({
-  item,
-  onClick,
-}: {
-  item: { title: string; link: string; icon: React.ReactNode };
-  onClick: () => void;
-}) {
+function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) {
+  if (!item.isVisible) {
+    return null;
+  }
+
   return (
     <button
       className={cn(
         "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-[#303f2e] hover:text-[#637f5e]/50",
-        "text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl",
+        "3xl:text-4xl text-xl lg:text-xl xl:text-2xl 2xl:text-3xl",
       )}
       onClick={onClick}
     >
@@ -46,13 +47,11 @@ function NavItem({
   );
 }
 
-function MobileNavItem({
-  item,
-  onClick,
-}: {
-  item: { title: string; link: string | undefined; icon: React.ReactNode };
-  onClick: () => void;
-}) {
+function MobileNavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) {
+  if (!item.isVisible) {
+    return null;
+  }
+
   return (
     <button
       className={cn(
@@ -66,24 +65,34 @@ function MobileNavItem({
   );
 }
 
+const NAV_ITEMS: INavBarItem[] = [
+  { title: "Home", link: "/", icon: <FaHome />, isVisible: true },
+  { title: "Dictionary", link: "/dictionary", icon: <MdMenuBook />, isVisible: true },
+  {
+    title: "The Language Path",
+    link: "/the-language-path",
+    icon: <MdMenuBook />,
+    isVisible: true,
+  },
+  { title: "Grammar", link: "/grammar", icon: <MdMenuBook />, isVisible: true },
+  { title: "Download", link: "/download", icon: <MdOutlineFileDownload />, isVisible: true },
+  { title: "Contact Us", link: "/contact-us", icon: <MdContactSupport />, isVisible: true },
+];
+
 export default function Header() {
   const { width } = useWindowSize();
   const pathname = usePathname();
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false); // State for settings panel
 
   const navigateTo = (link: string) => {
     router.push(link);
     setIsMobileMenuOpen(false); // Close mobile menu when navigating
   };
 
-  const navItems = [
-    { title: "Home", link: "/", icon: <FaHome /> },
-    { title: "Dictionary", link: "/dictionary", icon: <MdMenuBook /> },
-    { title: "Grammar", link: "/grammar", icon: <MdMenuBook /> },
-    // { title: "Blog", link: "/blog", icon: <MdMenuBook /> },
-    { title: "Contact Us", link: "/contact-us", icon: <MdContactSupport /> },
-  ];
+  // Check if current path is "/the-language-path" to show the setting icon
+  const isOnLanguagePath = pathname?.startsWith("/the-language-path");
 
   if (width < 640) {
     return (
@@ -94,34 +103,65 @@ export default function Header() {
               <FaHamburger size={36} />
             </button>
             <SearchContainer showOnMobile={true} />
+
+            {/* Settings icon added on mobile next to the search input */}
+            {isOnLanguagePath && (
+              <SettingsSvg
+                className="ml-auto cursor-pointer text-[#303f2e] hover:text-[#637f5e]/50"
+                onClick={() => setIsSettingsOpen(true)}
+              />
+            )}
           </div>
 
           {isMobileMenuOpen && (
-            <div className="absolute left-0 top-16 z-60 w-full bg-white shadow-lg">
-              {navItems.map((item) => (
-                <MobileNavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
-              ))}
+            <div className="absolute top-16 left-0 z-60 w-full bg-white shadow-lg">
+              {NAV_ITEMS.map((item) => {
+                return (
+                  <MobileNavItem
+                    key={item.title}
+                    item={item}
+                    onClick={() => navigateTo(item.link)}
+                  />
+                );
+              })}
 
               <MobileNavItem
-                item={{ title: "Close", link: "", icon: <FaTimes /> }}
+                item={{ title: "Close", link: "", icon: <FaTimes />, isVisible: true }}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               />
             </div>
           )}
         </div>
+
+        {/* Settings panel */}
+        <SettingsPanel isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
       </div>
     );
   }
 
   return (
-    <div className="relative flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0">
+    <div className="relative z-50 flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0">
       <div className="mx-auto flex w-11/12 flex-row items-center gap-1 sm:gap-4">
         <Logo onClick={() => navigateTo("/")} />
+
         <div className="flex">
-          {navItems.map((item) => (
-            <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
-          ))}
+          {NAV_ITEMS.map((item) => {
+            return <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />;
+          })}
         </div>
+
+        {/* Conditional rendering of SettingSvg for the-language-path */}
+        {isOnLanguagePath && (
+          <div className="ml-auto">
+            <SettingsSvg
+              className="cursor-pointer text-[#303f2e] hover:text-[#637f5e]/50"
+              onClick={() => setIsSettingsOpen(true)}
+            />
+          </div>
+        )}
+
+        {/* Settings panel */}
+        <SettingsPanel isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
       </div>
     </div>
   );

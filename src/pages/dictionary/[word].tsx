@@ -34,10 +34,10 @@ export default function WordPage() {
           <div
             className={cn(
               "mx-auto my-20 flex w-full flex-[1] flex-row px-2 sm:px-4",
-              "gap-2 sm:gap-4 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-12 3xl:gap-16",
+              "3xl:gap-16 gap-2 sm:gap-4 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-12",
             )}
           >
-            <div className="mt-4 hidden md:flex lg:flex-[2] xl:flex-[2] 2xl:flex-[2] 3xl:flex-[2]">
+            <div className="3xl:flex-[2] mt-4 hidden md:flex lg:flex-[2] xl:flex-[2] 2xl:flex-[2]">
               <WordHistoryContainer />
             </div>
             <div className="flex w-full flex-[7]">
@@ -53,6 +53,6 @@ export default function WordPage() {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+const getServerSideProps: GetServerSideProps = async () => {
   return { props: {} };
 };
