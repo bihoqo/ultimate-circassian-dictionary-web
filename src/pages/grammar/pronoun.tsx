@@ -217,8 +217,8 @@ export default function PronounPage() {
           In Circassian, using a demonstrative to refer to someone you are close to — such as a
           family member, friend, or someone present — can sound rude or overly distant. It’s
           generally acceptable to use demonstratives when referring to unfamiliar people — for
-          example, a passerby, a stranger, a newly mentioned person in conversation, or an
-          unfamiliar character in a story.
+          example, a passerby, a stranger, a newly mentioned person in conversation, a not so close
+          person, or a character in a story.
         </p>
         <br />
         <p className="text-gray-700">
