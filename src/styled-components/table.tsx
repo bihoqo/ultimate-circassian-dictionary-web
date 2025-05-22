@@ -48,7 +48,7 @@ export const SwitchTable: React.FC<SwitchTableProps> = ({ headers, rows }) => {
 
   return (
     <div>
-      <div className="overflow-x-auto">
+      <div className="mt-4 overflow-x-auto">
         <div className="mb-1 flex w-full min-w-[600px]">
           <button
             onClick={() => setDialect("West")}

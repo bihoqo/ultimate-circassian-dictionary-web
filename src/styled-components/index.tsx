@@ -159,7 +159,7 @@ export function CText({
   className,
 }: {
   children: ReactNode | ReactNode[];
-  d: "w" | "e";
+  d?: "w" | "e";
   className?: string;
 }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -440,4 +440,16 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
       </table>
     </div>
   );
+}
+
+export function H1({ children, className }: { children: ReactNode; className?: string }) {
+  return <h1 className={cn("mb-6 text-3xl font-bold text-gray-800", className)}>{children}</h1>;
+}
+
+export function H2({ children, className }: { children: ReactNode; className?: string }) {
+  return <h2 className={cn("mb-6 text-2xl font-bold text-gray-800", className)}>{children}</h2>;
+}
+
+export function H3({ children, className }: { children: ReactNode; className?: string }) {
+  return <h3 className={cn("mb-6 text-xl font-bold text-gray-800", className)}>{children}</h3>;
 }
