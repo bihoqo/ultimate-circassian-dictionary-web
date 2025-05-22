@@ -48,7 +48,8 @@ In https://www.jw.org/kbd/ :
 
 # Inspiration for language blog
 
-Here are mainly websites or resources which inspire our language content. This can be websites, books, youtube channel or anything else.
+Here are mainly websites or resources which inspire our language content. This can be websites, books, youtube channel or anything else. The main goal is to provide relevant resources.
+
 
 Circassian:
 
