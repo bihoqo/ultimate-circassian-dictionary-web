@@ -171,6 +171,7 @@ function SectionAbsolutive() {
     </section>
   );
 }
+
 function SectionErgative() {
   // prettier-ignore
   return (
@@ -313,6 +314,7 @@ function SectionInstrumental() {
     </section>
   );
 }
+
 export default function NounPage() {
   return (
     <GrammarBookContainer>

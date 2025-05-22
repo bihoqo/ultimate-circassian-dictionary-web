@@ -26,6 +26,7 @@ export default function LessonSidebar({ panels }: { panels: ITheLangPathPanel[] 
         setIsOpen(false);
       }
     }
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
