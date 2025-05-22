@@ -70,6 +70,70 @@ export default function PronounPage() {
             ],
           ]}
         />
+
+        <SwitchTable
+          headers={[
+            [
+              { text: { en: "Plurality" }, rowSpan: 2 },
+              { text: { en: "Case" }, rowSpan: 2 },
+              { text: { en: "Demonstrative а" } },
+              { text: { en: "Demonstrative мо" } },
+              { text: { en: "Demonstrative мы" } },
+            ],
+          ]}
+          rows={[
+            [
+              { text: { en: "Singular" }, rowSpan: 4 },
+              { text: { en: "Absolutive" } },
+              { text: { west: "ар", east: "ар" } },
+              { text: { west: "мор", east: "мор" } },
+              { text: { west: "мыр", east: "мыр" } },
+            ],
+            [
+              { text: { en: "Ergative" } },
+              { text: { west: "ащ", east: "абы" } },
+              { text: { west: "мощ", east: "мобы" } },
+              { text: { west: "мыщ", east: "мыбы" } },
+            ],
+            [
+              { text: { en: "Instrumental" } },
+              { text: { west: "ащкӏэ", east: "абыкӏэ" } },
+              { text: { west: "мощкӏэ", east: "мобыкӏэ" } },
+              { text: { west: "мыщкӏэ", east: "мыбыкӏэ" } },
+            ],
+            [
+              { text: { en: "Adverbial" } },
+              { text: { west: "арэу", east: "арэу" } },
+              { text: { west: "морэу", east: "морэу" } },
+              { text: { west: "мырэу", east: "мырэу" } },
+            ],
+            [
+              { text: { en: "Plural" }, rowSpan: 4 },
+              { text: { en: "Absolutive" } },
+              { text: { west: "ахэр", east: "ахэр" } },
+              { text: { west: "мохэр", east: "мохэр" } },
+              { text: { west: "мыхэр", east: "мыхэр" } },
+            ],
+            [
+              { text: { en: "Ergative" } },
+              { text: { west: "ахэмэ", east: "абыхэм" } },
+              { text: { west: "мохэмэ", east: "мобыхэм" } },
+              { text: { west: "мыхэмэ", east: "мыбыхэм" } },
+            ],
+            [
+              { text: { en: "Instrumental" } },
+              { text: { west: "ахэмкӏэ", east: "абыхэмкӏэ" } },
+              { text: { west: "мохэмкӏэ", east: "мобыхэмкӏэ" } },
+              { text: { west: "мыхэмкӏэ", east: "мыбыхэмкӏэ" } },
+            ],
+            [
+              { text: { en: "Adverbial" } },
+              { text: { west: "ахэрэу", east: "ахэрэу" } },
+              { text: { west: "мохэрэу", east: "мохэрэу" } },
+              { text: { west: "мыхэрэу", east: "мыхэрэу" } },
+            ],
+          ]}
+        />
       </GrammarBookContainer>
     </>
   );
