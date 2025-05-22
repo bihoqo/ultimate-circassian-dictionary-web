@@ -48,27 +48,27 @@ export const SwitchTable: React.FC<SwitchTableProps> = ({ headers, rows }) => {
 
   return (
     <div>
-      <div className="flex gap-2">
-        <button
-          onClick={() => setDialect("West")}
-          className={cn(
-            "rounded px-3 py-1 text-sm font-medium",
-            dialect === "West" ? "bg-blue-600 text-white" : "bg-gray-200",
-          )}
-        >
-          Western
-        </button>
-        <button
-          onClick={() => setDialect("East")}
-          className={cn(
-            "rounded px-3 py-1 text-sm font-medium",
-            dialect === "East" ? "bg-blue-600 text-white" : "bg-gray-200",
-          )}
-        >
-          Eastern
-        </button>
-      </div>
       <div className="overflow-x-auto">
+        <div className="mb-1 flex w-full min-w-[600px]">
+          <button
+            onClick={() => setDialect("West")}
+            className={cn(
+              "w-1/2 rounded-l-lg py-2 text-sm font-medium transition-colors",
+              dialect === "West" ? "bg-blue-400 text-white" : "bg-gray-200 hover:bg-gray-300",
+            )}
+          >
+            Western
+          </button>
+          <button
+            onClick={() => setDialect("East")}
+            className={cn(
+              "w-1/2 rounded-r-lg py-2 text-sm font-medium transition-colors",
+              dialect === "East" ? "bg-blue-400 text-white" : "bg-gray-200 hover:bg-gray-300",
+            )}
+          >
+            Eastern
+          </button>
+        </div>
         <table className="mb-4 w-full min-w-[600px] border-collapse border border-gray-300">
           <thead>{headers.map((headerRow, idx) => renderRow(headerRow, true))}</thead>
           <tbody>{rows.map((row, idx) => renderRow(row))}</tbody>
