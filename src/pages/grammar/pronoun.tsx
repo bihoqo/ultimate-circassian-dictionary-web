@@ -1,4 +1,4 @@
-import { CText, GrammarBookContainer, H1, H2 } from "~/styled-components";
+import { CText, GrammarBookContainer, H1, H2, H3 } from "~/styled-components";
 import React from "react";
 import Head from "next/head";
 import { SwitchTable } from "~/styled-components/table";
@@ -79,11 +79,13 @@ export default function PronounPage() {
           ]}
         />
         <H2>Demonstrative Pronouns</H2>
+        {/* Explain here that we first need to explain what's Demonstrative before talking about Demonstrative Pronouns. */}
+        <H3>What is demonstrative?</H3>
         <p>
           Demonstrative pronouns are words such as "this" and "that." In English, there are four
           basic demonstrative pronouns: <strong>this</strong>, <strong>that</strong>,{" "}
-          <strong>these</strong>, and <strong>those</strong>. Circassian has mainly three:{" "}
-          <CText>а</CText>, <CText>мы</CText>, and <CText>мо</CText>:
+          <strong>these</strong>, and <strong>those</strong>.{/* Explain what are demonstratives */}
+          Circassian has mainly three: <CText>а</CText>, <CText>мы</CText>, and <CText>мо</CText>:
         </p>
         <ul className="mb-4 list-disc pl-6 text-gray-700">
           <li>
@@ -104,27 +106,32 @@ export default function PronounPage() {
           Circassian, they differ in terms of visibility. <CText>а</CText> is used for things that
           are not visible, while <CText>мо</CText> refers to things that are visible yet distant.
         </p>
+        <H3>The difference between personal pronouns and demonstrative pronouns</H3>
         <p className="mt-4">
           Unlike personal pronouns, which refer to people or things without specifying their
           location or proximity, demonstrative pronouns indicate both the <em>number</em> (singular
           or plural) and the <em>relative distance</em> (near or far) of the thing being referred
           to. They draw specific attention to a person or object and often function as a pointer in
-          conversation. In Circassian, demonstrative pronouns can imply closeness or distance not
-          only physically but socially. Because of this, using a demonstrative pronoun
-          incorrectly—especially when referring to a person—can be seen as disrespectful or suggest
-          a lack of familiarity. For example, referring to someone with <CText>мо</CText> (\"that
-          one over there\") may unintentionally express emotional or social distance.
+          conversation.
         </p>
+        <H3>How Circassian has no 3rd person pronouns</H3>
+        {/* Explain how Circassian has no 3rd person pronouns, and that we need to use demonstrative pronouns to overcome the lack of 3rd person pronouns */}
+        Circassian does not have true third-person pronouns like “he,” “she,” or “they.” This can be
+        confusing for speakers of most other languages, which almost always include dedicated
+        third-person pronouns.
+        <H3>Demonstrative pronouns in Circassian</H3>
         <p className="mt-4 text-gray-700">
-          Importantly, Circassian does not have true third-person pronouns like “he,” “she,” or
-          “they.” This can be confusing for speakers of most other languages, which almost always
-          include dedicated third-person pronouns. In Circassian, demonstrative pronouns are used
-          instead to refer to people in the third person — but this sounds more like “that man,”
-          “this woman,” or “that person.” Because of this, using demonstratives inappropriately can
-          carry unintended social meaning. For instance, saying <CText>ар</CText> (“that one”)
-          instead of a respectful noun or name can sound overly distant or even dismissive. Although
-          some books or tutorials use <CText>ар</CText> as if it were a third-person pronoun, this
-          is grammatically incorrect and culturally misleading.
+          In Circassian, demonstrative pronouns can imply closeness or distance not only physically
+          but socially. Because of this, using a demonstrative pronoun incorrectly—especially when
+          referring to a person—can be seen as disrespectful or suggest a lack of familiarity. For
+          example, referring to someone with <CText>мо</CText> (\"that one over there\") may
+          unintentionally express emotional or social distance. Importantly, In Circassian,
+          demonstrative pronouns are used instead to refer to people in the third person — but this
+          sounds more like “that man,” “this woman,” or “that person.” Because of this, using
+          demonstratives inappropriately can carry unintended social meaning. For instance, saying{" "}
+          <CText>ар</CText> (“that one”) instead of a respectful noun or name can sound overly
+          distant or even dismissive. Although some books or tutorials use <CText>ар</CText> as if
+          it were a third-person pronoun, this is culturally misleading.
         </p>
         <SwitchTable
           headers={[
