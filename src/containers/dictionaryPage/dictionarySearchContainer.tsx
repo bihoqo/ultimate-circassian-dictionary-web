@@ -297,6 +297,7 @@ function AutocompleteDropdown({
         })}
     </div>
   );
+
   function sortingFunc<T>(a: T, b: T, getString: (item: T) => string, searchInput: string): number {
     // Prioritize words that start with searchInput
     const aStartsWith: boolean = getString(a).toLowerCase().startsWith(searchInput.toLowerCase());
@@ -350,6 +351,7 @@ export default function DictionarySearchContainer({ showOnMobile }: { showOnMobi
     }
     searchInputRef.current?.focus();
   }
+
   if (!showOnMobile && width < 640) {
     return null;
   }
