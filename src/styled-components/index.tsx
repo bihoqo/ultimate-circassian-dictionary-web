@@ -387,11 +387,14 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
       <table className="mb-4 w-full min-w-[600px] border-collapse overflow-hidden rounded-lg border border-gray-400 shadow-lg">
         <thead>
           <tr>
-            <th className={`${cellClasses} ${headerClasses}`}>{data.upperLeftCornerName}</th>
+            <th className={cn(cellClasses, headerClasses)}>{data.upperLeftCornerName}</th>
             {data.columnHeaders.map((header, index) => (
               <th
                 key={index}
-                className={`${cellClasses} ${hoveredCol == index ? headerClassesHover : headerClasses}`}
+                className={cn(
+                  cellClasses,
+                  hoveredCol == index ? headerClassesHover : headerClasses,
+                )}
               >
                 {header}
               </th>
@@ -402,7 +405,10 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
           {data.rowHeaders.map((rowHeader, rowIndex) => (
             <tr key={rowIndex}>
               <td
-                className={`${cellClasses} ${hoveredRow == rowIndex ? headerClassesHover : headerClasses}`}
+                className={cn(
+                  cellClasses,
+                  hoveredRow == rowIndex ? headerClassesHover : headerClasses,
+                )}
               >
                 {rowHeader}
               </td>
@@ -411,9 +417,11 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
                 // TODO(artur): Add that null cells are greyed out
                 <td
                   key={cellIndex}
-                  className={`${cellClasses} ${cell === null ? nullCellClasses : ""} ${
-                    hoveredRow === rowIndex || hoveredCol === cellIndex ? hoverClasses : ""
-                  }`}
+                  className={cn(
+                    cellClasses,
+                    cell === null ? nullCellClasses : "",
+                    hoveredRow === rowIndex || hoveredCol === cellIndex ? hoverClasses : "",
+                  )}
                   onMouseEnter={() => {
                     setHoveredRow(rowIndex);
                     setHoveredCol(cellIndex);
