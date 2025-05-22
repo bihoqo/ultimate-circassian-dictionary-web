@@ -205,25 +205,36 @@ export default function PronounPage() {
         />
 
         <H3>Use with Caution: Demonstratives and Social Meaning</H3>
+
         <p className="text-gray-700">
           In many languages, referring to people using the word “that” — as in “that man” or “that
           one” — can imply emotional distance, unfamiliarity, or even come across as dismissive.
           This is no different in Circassian. Demonstrative pronouns like <CText>ар</CText> (“that
           one”) carry similar social weight.
         </p>
+        <br />
         <p className="text-gray-700">
-          In Circassian, using a demonstrative to refer to someone you are close to or know well may
-          sound rude or overly distant. It’s generally acceptable to use demonstratives when
-          referring to unfamiliar people — for example, someone passing by, a stranger, a person
-          introduced in conversation or an unfamiliar person in a story. But using them for friends,
-          family, or present individuals you’re emotionally close to should be done with caution.
+          In Circassian, using a demonstrative to refer to someone you are close to — such as a
+          family member, friend, or someone present — can sound rude or overly distant. It’s
+          generally acceptable to use demonstratives when referring to unfamiliar people — for
+          example, a passerby, a stranger, a newly mentioned person in conversation, or an
+          unfamiliar character in a story.
         </p>
         <br />
         <p className="text-gray-700">
-          In storytelling and tales, demonstrative pronouns like <CText>ар</CText> are commonly used
-          to refer to characters. This is completely appropriate because those characters are not
-          present, are not visible to the listener (might even be fictional), and are not personally
-          known — making <CText>ар</CText> a natural and fitting choice.
+          When speaking about someone close or emotionally familiar, it is more appropriate to refer
+          to them by name or by their relationship to you. For instance, when talking about your
+          father, it’s customary to say “my father” each time instead of switching to{" "}
+          <CText>ар</CText>. Similarly, if speaking about a friend, referring to them by name is
+          more respectful and natural than using a demonstrative.
+        </p>
+        <br />
+        <p className="text-gray-700">
+          In storytelling and folktales, demonstrative pronouns like <CText>ар</CText> are commonly
+          used to refer to characters. This is entirely appropriate because those characters are not
+          present, are not visible to the listener (and may even be fictional), and are not
+          personally known. In that context, <CText>ар</CText> becomes a natural and fitting choice
+          for narrative flow.
         </p>
       </GrammarBookContainer>
     </>
