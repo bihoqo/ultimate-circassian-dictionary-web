@@ -21,7 +21,7 @@ export default function WordPage() {
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main className="size-full">
+      <main>
         <ContainerDiv>
           <div className="flex w-full flex-grow flex-col gap-4">
             <h1

@@ -87,13 +87,11 @@ export default function SearchContainer({ showOnMobile }: { showOnMobile: boolea
       </div>
 
       {!isMobile && (
-        <div className="mx-auto w-full xl:w-1/2">
-          <KeyboardWrapper
-            inputValue={inputValue}
-            setInputValue={setInputValue}
-            onSearchClick={keyboardSearchBtnHandler}
-          />
-        </div>
+        <KeyboardWrapper
+          inputValue={inputValue}
+          setInputValue={setInputValue}
+          onSearchClick={keyboardSearchBtnHandler}
+        />
       )}
     </div>
   );
