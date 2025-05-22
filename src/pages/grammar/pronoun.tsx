@@ -13,105 +13,112 @@ export default function PronounPage() {
         />
       </Head>
       <GrammarBookContainer>
-        <h1 className="mb-4 text-3xl font-bold">Pronouns</h1>
+        <h1 className="mb-6 text-3xl font-bold text-gray-800">Pronouns</h1>
 
-        <section>
-          <h2 className="mt-6 text-2xl font-semibold">Personal Pronouns</h2>
-          <table>
-            <thead>
-              <tr>
-                <th rowSpan={2}></th>
-                <th rowSpan={2}>Case</th>
-                <th colSpan={2}>First-person</th>
-                <th colSpan={2}>Second-person</th>
-                <th colSpan={2}>Reflexive third-person</th>
-              </tr>
-              <tr>
-                <th>Cyrillic</th>
-                <th></th>
-                <th>Cyrillic</th>
-                <th></th>
-                <th>Cyrillic</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowSpan={4}>Singular</td>
-                <td>Absolutive</td>
-                <td>сэ</td>
-                <td></td>
-                <td>о</td>
-                <td></td>
-                <td>егь</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Ergative</td>
-                <td>сэ</td>
-                <td></td>
-                <td>о</td>
-                <td></td>
-                <td>егь</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Instrumental</td>
-                <td>сэркӏэ</td>
-                <td></td>
-                <td>оркӏэ</td>
-                <td></td>
-                <td>егькӏэ</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Adverbial</td>
-                <td>сэрэу</td>
-                <td></td>
-                <td>орэу</td>
-                <td></td>
-                <td>егьрэу</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td rowSpan={4}>Plural</td>
-                <td>Absolutive</td>
-                <td>тэ</td>
-                <td></td>
-                <td>шъо</td>
-                <td></td>
-                <td>егьхэр</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Ergative</td>
-                <td>тэ</td>
-                <td></td>
-                <td>шъо</td>
-                <td></td>
-                <td>егьхэмэ</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Instrumental</td>
-                <td>тэркӏэ</td>
-                <td></td>
-                <td>шъоркӏэ</td>
-                <td></td>
-                <td>егьхэмкӏэ</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Adverbial</td>
-                <td>тэрэу</td>
-                <td></td>
-                <td>шъорэу</td>
-                <td></td>
-                <td>егьхэрэу</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+        <section className="mb-8 rounded-lg bg-white p-6 shadow-md">
+          <h2 className="mb-4 text-2xl font-semibold text-gray-800">Personal Pronouns</h2>
+          <p className="mb-4 text-gray-700">
+            Circassian personal pronouns vary by case, person, and number. Below is a table showing
+            the different forms.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="mb-4 w-full min-w-[600px] border-collapse border border-gray-300">
+              <thead>
+                <tr className="bg-blue-50">
+                  <th className="border border-gray-300 px-4 py-2">Plurality</th>
+                  <th className="border border-gray-300 px-4 py-2">Case</th>
+                  <th className="border border-gray-300 px-4 py-2">First-person</th>
+                  <th className="border border-gray-300 px-4 py-2">Second-person</th>
+                  <th className="border border-gray-300 px-4 py-2">Reflexive third-person</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2 font-medium" rowSpan={4}>
+                    Singular
+                  </td>
+                  <td className="border border-gray-300 px-4 py-2">Absolutive</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">сэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">о</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежь</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2">Ergative</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">сэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">о</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежь</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2">Instrumental</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">сэркӏэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">оркӏэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежькӏэ</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-300 px-4 py-2">Adverbial</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">сэрэу</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">орэу</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежьрэу</td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="border border-gray-300 px-4 py-2 font-medium" rowSpan={4}>
+                    Plural
+                  </td>
+                  <td className="border border-gray-300 px-4 py-2">Absolutive</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">тэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">шъо</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежьхэр</td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="border border-gray-300 px-4 py-2">Ergative</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">тэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">шъо</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежьхэмэ</td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="border border-gray-300 px-4 py-2">Instrumental</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">тэркӏэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">шъоркӏэ</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежьхэмкӏэ</td>
+                </tr>
+                <tr className="bg-gray-50 hover:bg-gray-100">
+                  <td className="border border-gray-300 px-4 py-2">Adverbial</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">тэрэу</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">шъорэу</td>
+                  <td className="border border-gray-300 px-4 py-2 font-bold">ежьхэрэу</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-sm text-gray-600">
+            Note: The table shows the different forms of personal pronouns in Circassian across
+            different cases.
+          </p>
+        </section>
+
+        {/* Placeholder for additional pronoun sections */}
+        <section className="mb-8 rounded-lg bg-white p-6 shadow-md">
+          <h2 className="mb-4 text-2xl font-semibold text-gray-800">Demonstrative Pronouns</h2>
+          <p className="mb-4 text-gray-700">
+            Demonstrative pronouns in Circassian are used to point to specific objects or persons.
+            This section will be expanded with more content in the future.
+          </p>
+        </section>
+
+        <section className="mb-8 rounded-lg bg-white p-6 shadow-md">
+          <h2 className="mb-4 text-2xl font-semibold text-gray-800">Possessive Pronouns</h2>
+          <p className="mb-4 text-gray-700">
+            Possessive pronouns indicate ownership or possession. This section will be expanded with
+            more content in the future.
+          </p>
+        </section>
+
+        <section className="mb-8 rounded-lg bg-white p-6 shadow-md">
+          <h2 className="mb-4 text-2xl font-semibold text-gray-800">Interrogative Pronouns</h2>
+          <p className="mb-4 text-gray-700">
+            Interrogative pronouns are used to ask questions. This section will be expanded with
+            more content in the future.
+          </p>
         </section>
 
         {/* Repeat similar <section> and <table> elements for:
