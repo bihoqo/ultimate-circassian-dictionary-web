@@ -443,13 +443,17 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
 }
 
 export function H1({ children, className }: { children: ReactNode; className?: string }) {
-  return <h1 className={cn("my-3 text-3xl font-bold text-gray-800", className)}>{children}</h1>;
+  return <h1 className={cn("my-3 text-5xl font-bold text-gray-800", className)}>{children}</h1>;
 }
 
 export function H2({ children, className }: { children: ReactNode; className?: string }) {
-  return <h2 className={cn("my-3 text-2xl font-bold text-gray-800", className)}>{children}</h2>;
+  return <h2 className={cn("my-3 text-3xl font-bold text-gray-800", className)}>{children}</h2>;
 }
 
 export function H3({ children, className }: { children: ReactNode; className?: string }) {
   return <h3 className={cn("my-3 text-xl font-bold text-gray-800", className)}>{children}</h3>;
+}
+
+export function P({ children, className }: { children: ReactNode; className?: string }) {
+  return <p className={cn("my-1 text-gray-700", className)}>{children}</p>;
 }
