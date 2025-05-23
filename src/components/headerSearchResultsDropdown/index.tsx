@@ -253,24 +253,20 @@ export default function HeaderSearchResultsDropdown({
       </div>
       {cachedAutocompletesList
         .sort((a, b) => finderFunc(debouncedSearchInputValue.trim(), a, b, (a) => a))
-        .map((word) => {
-          return (
-            <CachedElement
-              word={word}
-              debouncedSearchInputValue={debouncedSearchInputValue}
-              onDelete={cachedWordDeleteClickHandler}
-              onSelect={onWordSelection}
-            />
-          );
-        })}
+        .map((word) => (
+          <CachedElement
+            word={word}
+            debouncedSearchInputValue={debouncedSearchInputValue}
+            onDelete={cachedWordDeleteClickHandler}
+            onSelect={onWordSelection}
+          />
+        ))}
       {autocompletesList
-        .filter((a) => {
-          return !cachedAutocompletesList.includes(a.key);
-        })
+        .filter((a) => !cachedAutocompletesList.includes(a.key))
         .sort((a, b) => finderFunc(debouncedSearchInputValue.trim(), a, b, (a) => a.key))
-        .map((word) => {
-          return <AutocompleteElement word={word} onSelect={onWordSelection} />;
-        })}
+        .map((word) => (
+          <AutocompleteElement word={word} onSelect={onWordSelection} />
+        ))}
     </div>
   );
 }
