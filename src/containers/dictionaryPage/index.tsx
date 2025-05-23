@@ -123,63 +123,61 @@ function DictionaryListingContainer() {
       </div>
 
       {/* Collapsible dictionary section */}
-      <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          showDictionaries ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        {/* Filters */}
-        <div className="mx-auto mb-6 flex w-10/12 flex-col justify-between gap-4 md:flex-row md:items-center">
-          <div className="flex gap-4">
-            <SortingAreaThing
-              title={"Source Language"}
-              options={fromLangOptions}
-              selected={selectedFromLang}
-              setSelected={setSelectedFromLang}
-            />
-            <SortingAreaThing
-              title={"Target Language"}
-              options={toLangOptions}
-              selected={selectedToLang}
-              setSelected={setSelectedToLang}
-            />
-            <SortingAreaThing
-              title={"Sort by"}
-              options={["Alphabetical", "Entry Count"]}
-              selected={sortMethod}
-              setSelected={setSortMethod}
-            />
+      {showDictionaries && (
+        <>
+          {/* Filters */}
+          <div className="mx-auto mb-6 flex w-10/12 flex-col justify-between gap-4 md:flex-row md:items-center">
+            <div className="flex gap-4">
+              <SortingAreaThing
+                title={"Source Language"}
+                options={fromLangOptions}
+                selected={selectedFromLang}
+                setSelected={setSelectedFromLang}
+              />
+              <SortingAreaThing
+                title={"Target Language"}
+                options={toLangOptions}
+                selected={selectedToLang}
+                setSelected={setSelectedToLang}
+              />
+              <SortingAreaThing
+                title={"Sort by"}
+                options={["Alphabetical", "Entry Count"]}
+                selected={sortMethod}
+                setSelected={setSortMethod}
+              />
+            </div>
+            <p className="text-sm text-gray-500">
+              Showing {filteredDicts.length} result{filteredDicts.length !== 1 && "s"}
+            </p>
           </div>
-          <p className="text-sm text-gray-500">
-            Showing {filteredDicts.length} result{filteredDicts.length !== 1 && "s"}
-          </p>
-        </div>
 
-        {/* Dictionary Cards */}
-        <div className="mx-auto max-h-screen w-11/12 overflow-y-auto rounded-2xl bg-white p-6 shadow">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {filteredDicts.map((dict, index) => (
-              <div
-                key={index}
-                className="group flex flex-col justify-between gap-3 rounded-xl border border-gray-200 bg-gray-50 p-4 transition hover:border-yellow-300 hover:shadow-md"
-              >
-                <div>
-                  <h2 className="text-base font-bold text-gray-800 transition group-hover:text-yellow-600">
-                    {dict.title}
-                  </h2>
-                  <p className="mt-1 text-sm text-gray-600">
-                    <span className="font-semibold">{dict.fromLang}</span>
-                    <span className="mx-1">→</span>
-                    <span className="font-semibold">{dict.toLang}</span>
-                    {"  "}
-                    Entries: <span className="font-semibold">{dict.count}</span>
-                  </p>
+          {/* Dictionary Cards */}
+          <div className="mx-auto max-h-screen w-11/12 overflow-y-auto rounded-2xl bg-white p-6 shadow">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {filteredDicts.map((dict, index) => (
+                <div
+                  key={index}
+                  className="group flex flex-col justify-between gap-3 rounded-xl border border-gray-200 bg-gray-50 p-4 transition hover:border-yellow-300 hover:shadow-md"
+                >
+                  <div>
+                    <h2 className="text-base font-bold text-gray-800 transition group-hover:text-yellow-600">
+                      {dict.title}
+                    </h2>
+                    <p className="mt-1 text-sm text-gray-600">
+                      <span className="font-semibold">{dict.fromLang}</span>
+                      <span className="mx-1">→</span>
+                      <span className="font-semibold">{dict.toLang}</span>
+                      {"  "}
+                      Entries: <span className="font-semibold">{dict.count}</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </section>
   );
 }
