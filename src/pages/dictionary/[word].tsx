@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { GetServerSideProps } from "next";
 import { useParams } from "next/navigation";
 import { safeWordToRegularWord } from "~/utils/wordFormatting";
 import { cn } from "~/utils/classNames";
@@ -21,38 +20,35 @@ export default function WordPage() {
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main>
-        <ContainerDiv>
-          <div className="flex w-full flex-grow flex-col gap-4">
-            <h1
-              className={cn("w-full text-center text-5xl font-semibold", { hidden: width < 400 })}
-            >
+      <main className="min-h-screen bg-white">
+        <ContainerDiv className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <section className="py-8 sm:py-12">
+            <h1 className="mb-6 text-center text-2xl font-semibold sm:text-4xl md:text-5xl">
               Circassian Dictionary
             </h1>
-            <SearchContainer showOnMobile={false} />
-          </div>
-          <div
-            className={cn(
-              "mx-auto my-20 flex w-full flex-[1] flex-row px-2 sm:px-4",
-              "3xl:gap-16 gap-2 sm:gap-4 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-12",
-            )}
-          >
-            <div className="3xl:flex-[2] mt-4 hidden md:flex lg:flex-[2] xl:flex-[2] 2xl:flex-[2]">
+            <div className="mb-6 rounded-xl bg-gray-50 p-4 shadow-md">
+              <SearchContainer showOnMobile={false} />
+            </div>
+          </section>
+
+          <section className="grid grid-cols-1 gap-6 pb-12 sm:gap-8 md:grid-cols-[2fr_5fr] lg:gap-12">
+            <div className="hidden md:block">
               <WordHistoryContainer />
             </div>
-            <div className="flex w-full flex-[7]">
+            <div>
               <DefinitionsContainer wordSpelling={wordSpelling} />
             </div>
-          </div>
+          </section>
         </ContainerDiv>
-        <div className="z-30 w-full">
+
+        <footer className="w-full border-t border-gray-200 bg-white">
           <WordPageFooter />
-        </div>
+        </footer>
       </main>
     </>
   );
 }
 
-const getServerSideProps: GetServerSideProps = async () => {
-  return { props: {} };
-};
+// const getServerSideProps: GetServerSideProps = async () => {
+//   return { props: {} };
+// };
