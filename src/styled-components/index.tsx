@@ -120,6 +120,7 @@ function KbdToIpa(input: string): string {
 
   return output;
 }
+
 // #endregion
 
 // TODO(artur): Find better name, preferably short, as it should be used a lot whenever some highlighting is needed.
@@ -158,7 +159,7 @@ export function CText({
   className,
 }: {
   children: ReactNode | ReactNode[];
-  d: "w" | "e";
+  d?: "w" | "e";
   className?: string;
 }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -188,7 +189,17 @@ export function CText({
 
 // TODO(artur): Make better breakpoints.
 export function GrammarBookContainer({ children }: { children: React.ReactNode }) {
-  return <article className="w-full bg-yellow-50 p-4 md:max-w-screen-md">{children}</article>;
+  return (
+    <div className="mx-auto w-full max-w-4xl p-6 md:p-8">
+      <div className="rounded-xl bg-gray-50 p-6 shadow-lg">{children}</div>
+    </div>
+  );
+}
+
+enum DisplayState {
+  Default,
+  Expanded,
+  Collapsed,
 }
 
 //SNIPPET:
@@ -337,6 +348,7 @@ export class Table {
     }
     this.table[rowIndex][columnIndex] = value;
   }
+
   getCell(rowName: string, columnName: string): TableCell | null {
     const rowIndex = this.rowHeaders.indexOf(rowName);
     const columnIndex = this.columnHeaders.indexOf(columnName);
@@ -375,11 +387,14 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
       <table className="mb-4 w-full min-w-[600px] border-collapse overflow-hidden rounded-lg border border-gray-400 shadow-lg">
         <thead>
           <tr>
-            <th className={`${cellClasses} ${headerClasses}`}>{data.upperLeftCornerName}</th>
+            <th className={cn(cellClasses, headerClasses)}>{data.upperLeftCornerName}</th>
             {data.columnHeaders.map((header, index) => (
               <th
                 key={index}
-                className={`${cellClasses} ${hoveredCol == index ? headerClassesHover : headerClasses}`}
+                className={cn(
+                  cellClasses,
+                  hoveredCol == index ? headerClassesHover : headerClasses,
+                )}
               >
                 {header}
               </th>
@@ -390,7 +405,10 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
           {data.rowHeaders.map((rowHeader, rowIndex) => (
             <tr key={rowIndex}>
               <td
-                className={`${cellClasses} ${hoveredRow == rowIndex ? headerClassesHover : headerClasses}`}
+                className={cn(
+                  cellClasses,
+                  hoveredRow == rowIndex ? headerClassesHover : headerClasses,
+                )}
               >
                 {rowHeader}
               </td>
@@ -399,9 +417,11 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
                 // TODO(artur): Add that null cells are greyed out
                 <td
                   key={cellIndex}
-                  className={`${cellClasses} ${cell === null ? nullCellClasses : ""} ${
-                    hoveredRow === rowIndex || hoveredCol === cellIndex ? hoverClasses : ""
-                  }`}
+                  className={cn(
+                    cellClasses,
+                    cell === null ? nullCellClasses : "",
+                    hoveredRow === rowIndex || hoveredCol === cellIndex ? hoverClasses : "",
+                  )}
                   onMouseEnter={() => {
                     setHoveredRow(rowIndex);
                     setHoveredCol(cellIndex);
@@ -420,4 +440,20 @@ export function MorphologyTable({ data }: { data: Table }): ReactNode {
       </table>
     </div>
   );
+}
+
+export function H1({ children, className }: { children: ReactNode; className?: string }) {
+  return <h1 className={cn("my-3 text-5xl font-bold text-gray-800", className)}>{children}</h1>;
+}
+
+export function H2({ children, className }: { children: ReactNode; className?: string }) {
+  return <h2 className={cn("my-3 text-3xl font-bold text-gray-800", className)}>{children}</h2>;
+}
+
+export function H3({ children, className }: { children: ReactNode; className?: string }) {
+  return <h3 className={cn("my-3 text-xl font-bold text-gray-800", className)}>{children}</h3>;
+}
+
+export function P({ children, className }: { children: ReactNode; className?: string }) {
+  return <p className={cn("my-1 text-gray-700", className)}>{children}</p>;
 }
