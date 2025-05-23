@@ -93,7 +93,7 @@ export default function Header() {
         <div className="relative z-50 flex flex-row gap-4 bg-green-800 p-2 shadow">
           <div className="mx-auto flex w-full flex-row items-center gap-1">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              <FaBars size={36} />
+              <FaBars size={26} />
             </button>
             <SearchContainer showOnMobile={true} />
 

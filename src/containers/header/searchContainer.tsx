@@ -71,7 +71,7 @@ export default function SearchContainer({ showOnMobile }: { showOnMobile: boolea
   return (
     <div className="z-10 mx-auto flex w-11/12 flex-col gap-4">
       <div className="flex w-full items-center justify-center gap-3">
-        <SearchInput
+        <SearchBar
           searchInputRef={searchInputRef}
           inputValue={inputValue}
           setInputValue={setInputValue}
@@ -97,7 +97,7 @@ export default function SearchContainer({ showOnMobile }: { showOnMobile: boolea
   );
 }
 
-function SearchInput({
+function SearchBar({
   searchInputRef,
   inputValue,
   setInputValue,
@@ -116,7 +116,7 @@ function SearchInput({
     <div className="relative flex w-full flex-col">
       <div
         className={cn(
-          "flex w-full items-center rounded-md border px-3 py-2 text-black shadow-sm",
+          "flex w-full items-center rounded-3xl border px-3 py-2 text-black shadow-sm",
           "bg-white transition-all focus-within:border-blue-400 hover:border-gray-400",
           inputValue ? "border-green-400" : "border-gray-300",
         )}

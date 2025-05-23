@@ -40,7 +40,36 @@ function SortingAreaThing({
     </div>
   );
 }
-
+function ShowButton({
+  showText,
+  hideText,
+  isShown,
+  setShown,
+}: {
+  showText: string;
+  hideText: string;
+  isShown: boolean;
+  setShown: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+  return (
+    <button
+      onClick={() => setShown((prev) => !prev)}
+      className="flex items-center gap-2 text-sm text-gray-600 transition hover:text-gray-800"
+      aria-expanded={isShown}
+    >
+      {isShown ? hideText : showText}
+      <svg
+        className={`h-4 w-4 transform transition-transform ${isShown ? "rotate-180" : "rotate-0"}`}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  );
+}
 function DictionaryListingContainer() {
   const [selectedFromLang, setSelectedFromLang] = React.useState("All");
   const [selectedToLang, setSelectedToLang] = React.useState("All");
@@ -85,24 +114,12 @@ function DictionaryListingContainer() {
       </p>
 
       <div className="mb-6 flex justify-center">
-        <button
-          onClick={() => setShowDictionaries((prev) => !prev)}
-          className="flex items-center gap-2 text-sm text-gray-600 transition hover:text-gray-800"
-          aria-expanded={showDictionaries}
-        >
-          {showDictionaries ? "Hide dictionaries" : "Show dictionaries"}
-          <svg
-            className={`h-4 w-4 transform transition-transform ${
-              showDictionaries ? "rotate-180" : "rotate-0"
-            }`}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
+        <ShowButton
+          showText="Show dictionaries"
+          hideText="Hide dictionaries"
+          isShown={showDictionaries}
+          setShown={setShowDictionaries}
+        />
       </div>
 
       {/* Collapsible dictionary section */}
