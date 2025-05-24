@@ -13,7 +13,15 @@ import { ToastContainer } from "react-toastify";
 
 const queryClient = new QueryClient();
 
-function InnerApp({ Component, pageProps }: any) {
+function InnerApp({
+  Component,
+  pageProps,
+}: {
+  Component: React.ComponentType;
+  pageProps: {
+    [key: string]: any;
+  };
+}) {
   const headContent = (
     <Head>
       {/* <!-- Allow web app to be run in full-screen mode - iOS. --> */}

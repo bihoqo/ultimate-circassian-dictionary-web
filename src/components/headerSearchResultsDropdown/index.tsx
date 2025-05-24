@@ -18,6 +18,9 @@ import { replaceStickLettersToPalochka } from "~/utils/wordFormatting";
 import { FaTimesCircle } from "react-icons/fa";
 import { useDebounce } from "use-debounce";
 
+// --- Constants ---
+const QUERY_CACHE_TIME = 60000; // 1 minute
+
 interface HeaderSearchResultsDropdownProps {
   searchInputValue: string;
   onWordSelection: (word: string) => void;
@@ -27,6 +30,94 @@ interface HeaderSearchResultsDropdownProps {
 
 const SIZE_STYLE = cn("sm:w-full w-11/12");
 
+function CachedElement({
+  word,
+  debouncedSearchInputValue,
+  onSelect,
+  onDelete,
+}: {
+  word: string;
+  debouncedSearchInputValue: string;
+  onSelect: (word: string) => void;
+  onDelete: (word: string) => void;
+}) {
+  const adjusted = replaceStickLettersToPalochka(debouncedSearchInputValue.trim()).toLowerCase();
+  const index = word.toLowerCase().indexOf(adjusted);
+  const before = word.slice(0, index);
+  const bold = word.slice(index, index + adjusted.length);
+  const after = word.slice(index + adjusted.length);
+
+  return (
+    <div
+      key={word}
+      className="relative w-full rounded-md bg-white p-2 shadow-sm transition-all hover:bg-gray-100"
+    >
+      <button
+        className={"w-full text-left font-medium text-purple-600"}
+        onClick={() => onSelect(word)}
+      >
+        <span>
+          {before}
+          <span className="font-bold">{bold}</span>
+          {after}
+        </span>
+      </button>
+      <button
+        className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
+        onClick={() => onDelete(word)}
+      >
+        <FaTimesCircle className="opacity-80" size={20} color="#757575" />{" "}
+      </button>
+    </div>
+  );
+}
+function LanguageBadge({ text }: { text: string }) {
+  return (
+    <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-600">
+      [{text}]
+    </span>
+  );
+}
+function AutocompleteElement({
+  word,
+  onSelect,
+}: {
+  word: Autocomplete;
+  onSelect: (word: string) => void;
+}) {
+  return (
+    <button
+      className={cn(
+        "relative w-full rounded-md bg-white p-2 text-left shadow-sm transition-all hover:bg-gray-100",
+      )}
+      key={word.key}
+      onClick={() => onSelect(word.key)}
+    >
+      <div className="flex items-center gap-3">
+        <LanguageBadge text={word.fromLangs.join(", ")} />
+        <span className="font-bold">{word.key}</span>
+      </div>
+    </button>
+  );
+}
+
+function finderFunc<T extends { key: string } | string>(
+  item: string,
+  str_a: T,
+  str_b: T,
+  accessor: (a: T) => string,
+) {
+  const adjusted = replaceStickLettersToPalochka(item).toLowerCase();
+  const aStartsWith = accessor(str_a).toLowerCase().startsWith(adjusted);
+  const bStartsWith = accessor(str_b).toLowerCase().startsWith(adjusted);
+  if (aStartsWith && !bStartsWith) {
+    return -1;
+  }
+  if (!aStartsWith && bStartsWith) {
+    return 1;
+  }
+  return accessor(str_a).localeCompare(accessor(str_b));
+}
 export default function HeaderSearchResultsDropdown({
   searchInputValue,
   onWordSelection,
@@ -38,8 +129,8 @@ export default function HeaderSearchResultsDropdown({
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const { data: autocompletesList = [], isLoading: isAutocompletesListLoading } = useQuery({
-    staleTime: 60000,
-    gcTime: 60000,
+    staleTime: QUERY_CACHE_TIME,
+    gcTime: QUERY_CACHE_TIME,
     queryKey: ["autocompleteWords", debouncedSearchInputValue, dropdownVisible],
     queryFn: async (): Promise<Autocomplete[]> => {
       if (!debouncedSearchInputValue || !dropdownVisible) {
@@ -47,7 +138,7 @@ export default function HeaderSearchResultsDropdown({
       }
 
       let res: Result<Autocomplete[], string>;
-      if (4 <= debouncedSearchInputValue.length) {
+      if (debouncedSearchInputValue.length >= 4) {
         res = await fetchWordAutocompletesThatContains(debouncedSearchInputValue);
       } else if (containsOnlyEnglishLetters(debouncedSearchInputValue)) {
         res = await fetchEnglishWordAutocompletesWithVerbs(debouncedSearchInputValue);
@@ -64,8 +155,8 @@ export default function HeaderSearchResultsDropdown({
   });
 
   const { data: cachedAutocompletesList = [], refetch: refetchCachedAutocompletesList } = useQuery({
-    staleTime: 60000,
-    gcTime: 60000,
+    staleTime: QUERY_CACHE_TIME,
+    gcTime: QUERY_CACHE_TIME,
     queryKey: ["cachedAutocompletesList", debouncedSearchInputValue, dropdownVisible],
     queryFn: async (): Promise<string[]> => {
       if (!dropdownVisible) {
@@ -102,11 +193,11 @@ export default function HeaderSearchResultsDropdown({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [setDropdownVisible]);
-
+  // If the search input is empty and there are no cached autocompletes, return null
   if (debouncedSearchInputValue.trim() === "" && cachedAutocompletesList.length === 0) {
     return null;
   }
-
+  // If loading, show a spinner
   if (isAutocompletesListLoading) {
     return (
       <div
@@ -122,7 +213,7 @@ export default function HeaderSearchResultsDropdown({
       </div>
     );
   }
-
+  // If there are no results in both lists, show a message
   if (autocompletesList.length === 0 && cachedAutocompletesList.length === 0) {
     return (
       <div
@@ -146,117 +237,36 @@ export default function HeaderSearchResultsDropdown({
     <div
       ref={dropdownRef}
       className={cn(
-        "scrollbar-gray absolute top-[80px] left-2/4 flex w-screen -translate-x-1/2 transform flex-col items-center justify-start gap-2 rounded-b-[16px] bg-white shadow-lg sm:left-1/2",
-        "6xl:max-h-[900px] 5xl:max-h-[875px] 3xl:max-h-[825px] 4xl:max-h-[850px] max-h-[600px] md:max-h-[600px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px]",
-        "w-full overflow-x-hidden overflow-y-auto break-words text-ellipsis whitespace-normal",
-        "p-0 sm:p-1 md:p-2 lg:p-4",
-        SIZE_STYLE,
+        "animate-fadeIn absolute top-[60px] left-1/2 z-50 -translate-x-1/2 transform rounded-xl bg-white shadow-xl transition-all duration-200 ease-out",
+        "max-h-[500px] w-full max-w-xl overflow-y-auto",
+        "p-2 sm:p-3 md:p-4",
       )}
     >
-      <div className="flex w-full items-center justify-between border-b-2 border-solid border-[#0049d7] px-2 py-4 text-left text-lg font-bold">
+      <div className="flex items-center justify-between border-b border-gray-200 px-4 py-2 text-lg font-semibold text-gray-800">
         <span>Definitions</span>
-        <button className="font-bold text-blue-600" onClick={() => setDropdownVisible(false)}>
+        <button
+          className="text-sm text-blue-600 hover:underline"
+          onClick={() => setDropdownVisible(false)}
+        >
           Cancel
         </button>
       </div>
       {cachedAutocompletesList
-        .sort((a, b) => {
-          const searchInputValAdjusted = replaceStickLettersToPalochka(
-            debouncedSearchInputValue.trim(),
-          );
-          // Prioritize words that start with debouncedSearchInputValue
-          const aStartsWith = a.toLowerCase().startsWith(searchInputValAdjusted.toLowerCase());
-          const bStartsWith = b.toLowerCase().startsWith(searchInputValAdjusted.toLowerCase());
-
-          if (aStartsWith && !bStartsWith) {
-            return -1;
-          }
-          if (!aStartsWith && bStartsWith) {
-            return 1;
-          }
-
-          // If both or neither start with debouncedSearchInputValue, sort alphabetically
-          return a.localeCompare(b);
-        })
-        .map((word) => {
-          const searchInputValAdjusted = replaceStickLettersToPalochka(
-            debouncedSearchInputValue.trim(),
-          );
-          const index = word.toLowerCase().indexOf(searchInputValAdjusted.toLowerCase());
-          const before = word.slice(0, index);
-          const bold = word.slice(index, index + searchInputValAdjusted.length);
-          const after = word.slice(index + searchInputValAdjusted.length);
-
-          return (
-            <div key={word} className="flex w-full flex-row justify-between p-2 hover:bg-[#e7e7e7]">
-              <button
-                className={cn(
-                  "w-full rounded-md text-left font-medium text-[#bb90f6]",
-                  "3xl:text-3xl 4xl:text-4xl text-lg xl:text-xl 2xl:text-2xl",
-                )}
-                onClick={() => onWordSelection(word)}
-              >
-                <span>
-                  {before}
-                  <span className="font-bold">{bold}</span>
-                  {after}
-                </span>
-              </button>
-              <button
-                className="hidden text-neutral-800 hover:text-neutral-600/50 hover:underline sm:flex"
-                onClick={() => cachedWordDeleteClickHandler(word)}
-              >
-                Delete
-              </button>
-              <button
-                className="visible text-neutral-800 hover:text-neutral-600/50 hover:underline sm:hidden"
-                onClick={() => cachedWordDeleteClickHandler(word)}
-              >
-                <FaTimesCircle className="opacity-80" size={20} color="#757575" />{" "}
-              </button>
-            </div>
-          );
-        })}
+        .sort((a, b) => finderFunc(debouncedSearchInputValue.trim(), a, b, (a) => a))
+        .map((word) => (
+          <CachedElement
+            word={word}
+            debouncedSearchInputValue={debouncedSearchInputValue}
+            onDelete={cachedWordDeleteClickHandler}
+            onSelect={onWordSelection}
+          />
+        ))}
       {autocompletesList
-        .filter((a) => {
-          return !cachedAutocompletesList.includes(a.key);
-        })
-        .sort((a, b) => {
-          const searchInputValAdjusted = replaceStickLettersToPalochka(debouncedSearchInputValue);
-          // Prioritize words that start with debouncedSearchInputValue
-          const aStartsWith = a.key.toLowerCase().startsWith(searchInputValAdjusted.toLowerCase());
-          const bStartsWith = b.key.toLowerCase().startsWith(searchInputValAdjusted.toLowerCase());
-
-          if (aStartsWith && !bStartsWith) {
-            return -1;
-          }
-          if (!aStartsWith && bStartsWith) {
-            return 1;
-          }
-
-          // If both or neither start with debouncedSearchInputValue, sort alphabetically
-          return a.key.localeCompare(b.key);
-        })
-        .map((word) => {
-          return (
-            <button
-              className={cn(
-                "w-full rounded-md p-2 text-left font-medium hover:bg-[#e7e7e7] hover:bg-gray-100",
-              )}
-              key={word.key}
-              onClick={() => onWordSelection(word.key)}
-            >
-              <div className="flex flex-row items-center justify-start gap-1 sm:gap-2">
-                <span className="mt-1 text-[8px] sm:text-xs md:text-base">
-                  [{word.fromLangs.join(", ")}]
-                </span>
-                <span className="3xl:text-3xl 4xl:text-4xl text-lg xl:text-xl 2xl:text-2xl">
-                  {word.key}
-                </span>
-              </div>
-            </button>
-          );
-        })}
+        .filter((a) => !cachedAutocompletesList.includes(a.key))
+        .sort((a, b) => finderFunc(debouncedSearchInputValue.trim(), a, b, (a) => a.key))
+        .map((word) => (
+          <AutocompleteElement word={word} onSelect={onWordSelection} />
+        ))}
     </div>
   );
 }

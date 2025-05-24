@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import DictionaryContainer from "../../containers/dictionaryPage";
+import DictionaryShowContainer from "../../containers/dictionaryPage";
 
 export default function DictionaryPage() {
   return (
@@ -8,8 +8,8 @@ export default function DictionaryPage() {
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main className="w-full">
-        <DictionaryContainer />
+      <main>
+        <DictionaryShowContainer />
       </main>
     </>
   );
