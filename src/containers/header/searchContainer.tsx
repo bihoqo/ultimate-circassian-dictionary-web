@@ -9,6 +9,37 @@ import { regularWordToSafeWord } from "~/utils/wordFormatting";
 import useWindowSize from "~/hooks/useWindowDimensions";
 import KeyboardWrapper from "~/components/keyboardWrapper";
 
+function ShowButton({
+  showText,
+  hideText,
+  isShown,
+  setShown,
+}: {
+  showText: string;
+  hideText: string;
+  isShown: boolean;
+  setShown: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+  return (
+    <button
+      onClick={() => setShown((prev) => !prev)}
+      className="flex items-center gap-2 text-sm text-gray-600 transition hover:text-gray-800"
+      aria-expanded={isShown}
+    >
+      {isShown ? hideText : showText}
+      <svg
+        className={`h-4 w-4 transform transition-transform ${isShown ? "rotate-180" : "rotate-0"}`}
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  );
+}
+
 function useSearchLogic() {
   const searchInputRef = React.useRef<HTMLInputElement>(null);
   const [inputValue, setInputValue] = React.useState("");
@@ -49,6 +80,7 @@ function useSearchLogic() {
 
 export default function SearchContainer({ showOnMobile }: { showOnMobile: boolean }) {
   const { width } = useWindowSize();
+  const [showKeyboard, setShowKeyboard] = React.useState(false);
   const isMobile = width < 640;
 
   const {
@@ -79,14 +111,21 @@ export default function SearchContainer({ showOnMobile }: { showOnMobile: boolea
           dropdownVisible={dropdownVisible}
           clickWordHandler={clickWordHandler}
         />
-        <SearchFilter
+        {/* <SearchFilter
           filterDialogVisible={filterDialogVisible}
           openFilterDialog={openFilterDialog}
           closeFilterDialog={closeFilterDialog}
+        /> */}
+      </div>
+      <div className="flex justify-center">
+        <ShowButton
+          showText="Show keyboard"
+          hideText="Hide keyboard"
+          isShown={showKeyboard}
+          setShown={setShowKeyboard}
         />
       </div>
-
-      {!isMobile && (
+      {!isMobile && showKeyboard && (
         <KeyboardWrapper
           inputValue={inputValue}
           setInputValue={setInputValue}
