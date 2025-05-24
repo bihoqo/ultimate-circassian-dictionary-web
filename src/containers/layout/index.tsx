@@ -107,11 +107,9 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <div data-test-id="main-header z-50">
-        <div className="z-50 w-full">
-          <Header />
-        </div>
+        <Header />
       </div>
-      <div className="bg-gray-700">
+      <div className="bg-amber-100">
         <div className="relative flex w-full flex-row justify-center">{children}</div>
       </div>
       <GlobalFooter />
