@@ -190,9 +190,7 @@ export function CText({
 // TODO(artur): Make better breakpoints.
 export function GrammarBookContainer({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mx-auto w-full max-w-4xl p-6 md:p-8">
-      <div className="rounded-xl bg-gray-50 p-6 shadow-lg">{children}</div>
-    </div>
+    <article className="mx-auto max-w-7xl bg-yellow-50 px-4 sm:px-6 lg:px-8">{children}</article>
   );
 }
 

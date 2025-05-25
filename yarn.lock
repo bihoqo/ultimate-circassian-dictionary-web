@@ -243,6 +243,11 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.27.1"
 
+"@babel/runtime@^7.24.8":
+  version "7.27.1"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.27.1.tgz#9fce313d12c9a77507f264de74626e87fd0dc541"
+  integrity sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==
+
 "@babel/template@^7.27.1", "@babel/template@^7.3.3":
   version "7.27.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.27.2.tgz#fa78ceed3c4e7b63ebf6cb39e5852fca45f6809d"
@@ -4555,6 +4560,13 @@ react-simple-keyboard@^3.8.74:
   version "3.8.74"
   resolved "https://registry.yarnpkg.com/react-simple-keyboard/-/react-simple-keyboard-3.8.74.tgz#ccdc469505a8cda872f3e79936585c6e5e6c5179"
   integrity sha512-u0uTQEmtq0tpJ9XfGM76dzHX/d0LWwmUQ6Qu11bNGbt+w0iRx816m6n/hdUMnEWtO56+unT9lOnVf3iSNYenmg==
+
+react-social-icons@^6.24.0:
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/react-social-icons/-/react-social-icons-6.24.0.tgz#7ff5f1a4f9bfd839ce3929f21dde5400c265f007"
+  integrity sha512-1YlJe2TOf/UwPi2JAb8Ci7J207owP806Tpxu36o4EkB1/jLjGhi83xbCHOagoMyPozTZrPnZIGgvp1LiiWGuZw==
+  dependencies:
+    "@babel/runtime" "^7.24.8"
 
 react-toastify@^11.0.5:
   version "11.0.5"

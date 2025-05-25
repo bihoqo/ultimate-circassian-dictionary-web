@@ -8,12 +8,20 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import Head from "next/head";
 import { ModalContainer, ModalProvider } from "~/hooks/useModal";
-import Layout from "~/containers/layout";
+import Layout from "~/layouts";
 import { ToastContainer } from "react-toastify";
 
 const queryClient = new QueryClient();
 
-function InnerApp({ Component, pageProps }: any) {
+function InnerApp({
+  Component,
+  pageProps,
+}: {
+  Component: React.ComponentType;
+  pageProps: {
+    [key: string]: any;
+  };
+}) {
   const headContent = (
     <Head>
       {/* <!-- Allow web app to be run in full-screen mode - iOS. --> */}

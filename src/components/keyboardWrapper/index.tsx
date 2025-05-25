@@ -95,6 +95,26 @@ const layouts: Record<string, KeyboardLayoutObject> = {
   Turkish: TURKISH_LAYOUT,
 };
 
+function LanguageButton({
+  layout,
+  currentLayout,
+  handleLayoutChange,
+}: {
+  layout: string;
+  currentLayout: string;
+  handleLayoutChange: (layout: string) => void;
+}): React.JSX.Element {
+  return (
+    <button
+      key={layout}
+      className={`mx-1 rounded border p-2 ${currentLayout === layout ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-gray-300"}`}
+      onClick={() => handleLayoutChange(layout)}
+    >
+      {layout}
+    </button>
+  );
+}
+
 export default function KeyboardWrapper({
   inputValue,
   setInputValue,
@@ -144,17 +164,13 @@ export default function KeyboardWrapper({
 
   return (
     <div className="flex w-full flex-col items-center">
-      <div className="mb-4 flex justify-center">
+      <div className="mb-1 flex justify-center">
         {Object.keys(layouts).map((layout) => (
-          <button
-            key={layout}
-            className={`mx-1 rounded border px-4 py-2 ${
-              currentLayout === layout ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-gray-300"
-            }`}
-            onClick={() => handleLayoutChange(layout)}
-          >
-            {layout}
-          </button>
+          <LanguageButton
+            layout={layout}
+            currentLayout={currentLayout}
+            handleLayoutChange={handleLayoutChange}
+          />
         ))}
       </div>
       <Keyboard
