@@ -8,7 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import Head from "next/head";
 import { ModalContainer, ModalProvider } from "~/hooks/useModal";
-import Layout from "~/containers/layout";
+import Layout from "~/layouts";
 import { ToastContainer } from "react-toastify";
 
 const queryClient = new QueryClient();

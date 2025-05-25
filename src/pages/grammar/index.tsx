@@ -13,8 +13,8 @@ export default function GrammarPage() {
         <Head>
           <title>Learn Circassian - Grammar</title>
         </Head>
-        <main>
-          <ContainerDiv className="p-4">
+        <main className="min-h-screen bg-white xl:w-1/2">
+          <ContainerDiv className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center gap-4 text-center">
               <h1 className="text-4xl font-bold text-blue-600">Grammar</h1>
               <p className="text-lg text-gray-600">
@@ -42,8 +42,8 @@ export default function GrammarPage() {
         <Head>
           <title>Learn Circassian</title>
         </Head>
-        <main>
-          <ContainerDiv className="p-4">
+        <main className="min-h-screen bg-white xl:w-1/2">
+          <ContainerDiv className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-4">
               {grammarTopics.map((topic) => (
                 <p

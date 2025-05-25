@@ -189,7 +189,9 @@ export function CText({
 
 // TODO(artur): Make better breakpoints.
 export function GrammarBookContainer({ children }: { children: React.ReactNode }) {
-  return <article className="w-full bg-yellow-50 p-4 md:max-w-screen-md">{children}</article>;
+  return (
+    <article className="mx-auto max-w-7xl bg-yellow-50 px-4 sm:px-6 lg:px-8">{children}</article>
+  );
 }
 
 enum DisplayState {

@@ -20,7 +20,7 @@ export default function WordPage() {
       <Head>
         <title>Learn Circassian</title>
       </Head>
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-white xl:w-1/2">
         <ContainerDiv className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <section className="py-8 sm:py-12">
             <h1 className="mb-6 text-center text-2xl font-semibold sm:text-4xl md:text-5xl">
@@ -31,13 +31,8 @@ export default function WordPage() {
             </div>
           </section>
 
-          <section className="grid grid-cols-1 gap-6 pb-12 sm:gap-8 md:grid-cols-[2fr_5fr] lg:gap-12">
-            <div className="hidden md:block">
-              <WordHistoryContainer />
-            </div>
-            <div>
-              <DefinitionsContainer wordSpelling={wordSpelling} />
-            </div>
+          <section className="flex flex-row">
+            <DefinitionsContainer wordSpelling={wordSpelling} />
           </section>
         </ContainerDiv>
 
