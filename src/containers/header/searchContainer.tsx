@@ -111,20 +111,17 @@ export default function SearchContainer({ showOnMobile }: { showOnMobile: boolea
           dropdownVisible={dropdownVisible}
           clickWordHandler={clickWordHandler}
         />
-        {/* <SearchFilter
-          filterDialogVisible={filterDialogVisible}
-          openFilterDialog={openFilterDialog}
-          closeFilterDialog={closeFilterDialog}
-        /> */}
       </div>
-      <div className="flex justify-center">
-        <ShowButton
-          showText="Show keyboard"
-          hideText="Hide keyboard"
-          isShown={showKeyboard}
-          setShown={setShowKeyboard}
-        />
-      </div>
+      {!isMobile && (
+        <div className="flex justify-center">
+          <ShowButton
+            showText="Show keyboard"
+            hideText="Hide keyboard"
+            isShown={showKeyboard}
+            setShown={setShowKeyboard}
+          />
+        </div>
+      )}
       {!isMobile && showKeyboard && (
         <KeyboardWrapper
           inputValue={inputValue}

@@ -3,12 +3,11 @@ import React from "react";
 import Image from "next/image";
 
 import ContainerDiv from "~/components/containerDiv";
-import { DictionaryListingContainer } from "~/containers/dictionaryPage";
 import SearchContainer from "~/containers/header/searchContainer";
 
 function EntryText() {
   return (
-    <section className="mx-auto mb-10 max-w-3xl text-center md:text-left">
+    <section className="mx-auto mb-10 max-w-3xl text-left md:text-left">
       <p className="text-base text-gray-700">
         Welcome to our dedicated platform for preserving the Circassian language! Our mission is to
         keep this rich linguistic heritage alive by offering access to over 30 comprehensive
@@ -36,19 +35,7 @@ export default function HomePage() {
       </Head>
       <main>
         <ContainerDiv>
-          <div className="flex flex-col items-center gap-8 md:flex-row">
-            <Image
-              src="/fav/icon-1042x1042.png"
-              width={200}
-              height={200}
-              alt="logo"
-              className="rounded-xl"
-            />
-          </div>
-
-          <EntryText />
-          {/* HERO SECTION */}
-          <section className="my-10 rounded-3xl bg-gradient-to-br from-green-800 to-green-100 p-5 text-center shadow-xl">
+          <section className="my-10 rounded-3xl bg-green-700 p-5 text-center shadow-md shadow-black">
             <h1 className="text-2xl font-bold">Dictionary</h1>
             <p className="mt-2 mb-4 text-base">
               30+ bilingual dictionaries bridging Circassian with English, Russian, Arabic &
@@ -56,6 +43,17 @@ export default function HomePage() {
             </p>
             <SearchContainer showOnMobile />
           </section>
+          <div className="flex flex-col items-center gap-8 md:flex-row">
+            <Image
+              src="/fav/icon-1042x1042.png"
+              width={150}
+              height={150}
+              alt="logo"
+              className="rounded-xl"
+            />
+          </div>
+
+          <EntryText />
         </ContainerDiv>
       </main>
     </>
