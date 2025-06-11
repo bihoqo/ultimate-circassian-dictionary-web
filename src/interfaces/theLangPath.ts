@@ -68,4 +68,5 @@ export type ITheLangPathPanelData =
   | ITheLangPathLetterIntroductionTableRow[]
   | ITheLangPathExamplesInEachLangTableRow[]
   | ITheLangPathDialogBubble
-  | ITheLangPathPoem;
+  | ITheLangPathPoem
+  | ITheLangPathPoemTitle;

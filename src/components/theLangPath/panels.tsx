@@ -130,7 +130,7 @@ export function convertDataToPanelPartComponent(panelPart: ITheLangPathPart): Re
     case "poem":
       return _handlePoem(panelPart.data as ITheLangPathPoem);
     case "poemTitle":
-      return _handlePoemTitle(panelPart.data as ITheLangPathPoem);
+      return _handlePoemTitle(panelPart.data as ITheLangPathPoemTitle);
     default:
       return <p>Not Found</p>;
   }
