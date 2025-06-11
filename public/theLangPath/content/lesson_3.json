@@ -1769,143 +1769,119 @@
   {
     "title": "18.1 dialogue 1",
     "audio": "theLangPath\\lesson_3\\audio\\18.mp3",
-    "poem_title": "Адыгабзэр – Къуекъо Налбый.",
-    "langToTranslationMap": {
-      "en": "",
-      "ar": "اللغة الأديغية  - قويقوة نالبي",
-      "he": ""
-    },
     "parts": [
       {
         "type": "poem",
         "data": {
-          "stanza": "1",
-          "originText": "Огу нэфынэу къабзэ,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "نقيةٌ كنور السماء، ",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "1",
-          "originText": "Насып нэгоу дахэ,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "جميلةٌ كصفحة حظ،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "1",
-          "originText": "Осы гъогоу махэ,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "هشّةٌ كطريق ثلجية،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "1",
-          "originText": "Кlэлэ джэгоу чэфы,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "مبهجةٌ كلعب الأطفال،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "2",
-          "originText": "Пшысэ лъэгоу шъэфы,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "فيها سرٌ كمضمون قصة،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "2",
-          "originText": "Сабый ибэу хые,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "بريئةٌ كطفل يتيم،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "2",
-          "originText": "Щылыч lашэу пкъые,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "صلبةٌ كسلاح فولاذي،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "2",
-          "originText": "Уиныбджэгъумэ - убзэ ",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "إذا كانت صديقتك – ",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "3",
-          "originText": "Къемыгъаlу игъыбзэ,",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "لا تدعها تردّدُ رثائها،",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "3",
-          "originText": "Сыщыгъаl, сыгъэпсалъ",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "دعني أحيا - أتكلم، ",
-            "he": ""
-          }
-        }
-      },
-      {
-        "type": "poem",
-        "data": {
-          "stanza": "3",
-          "originText": "Ущэlэфэ сипlалъ.",
-          "langToTranslationMap": {
-            "en": "",
-            "ar": "ميعاد حياتي .. ما دمتِ حيّةً",
-            "he": ""
-          }
+          "title": {
+            "originText": "Адыгабзэр – Къуекъо Налбый.",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "اللغة الأديغية  - قويقوة نالبي",
+              "he": ""
+            }
+          },
+          "stanzas": [
+            {
+              "stanza": "1",
+              "originText": "Огу нэфынэу къабзэ,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "نقيةٌ كنور السماء، ",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Насып нэгоу дахэ,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "جميلةٌ كصفحة حظ،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Осы гъогоу махэ,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "هشّةٌ كطريق ثلجية،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Кlэлэ джэгоу чэфы,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "مبهجةٌ كلعب الأطفال،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Пшысэ лъэгоу шъэфы,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "فيها سرٌ كمضمون قصة،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Сабый ибэу хые,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "بريئةٌ كطفل يتيم،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Щылыч lашэу пкъые,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "صلبةٌ كسلاح فولاذي،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Уиныбджэгъумэ - убзэ",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "إذا كانت صديقتك – ",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Къемыгъаlу игъыбзэ,",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "لا تدعها تردّدُ رثائها،",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Сыщыгъаl, сыгъэпсалъ",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "دعني أحيا - أتكلم، ",
+                "he": ""
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Ущэlэфэ сипlалъ.",
+              "langToTranslationMap": {
+                "en": "",
+                "ar": "ميعاد حياتي .. ما دمتِ حيّةً",
+                "he": ""
+              }
+            }
+          ]
         }
       }
     ]
