@@ -1,7 +1,7 @@
 [
   {
     "title": "3.1 dialogue 1",
-    "audio": "theLangPath\\lesson_3\\audio\\3.1_1.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\3.1_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -98,7 +98,7 @@
   },
   {
     "title": "3.1 dialogue 2",
-    "audio": "theLangPath\\lesson_3\\audio\\3.1_2.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\3.1_2.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -156,7 +156,7 @@
   },
   {
     "title": "3.1 dialogue 3",
-    "audio": "theLangPath\\lesson_3\\audio\\3.1_3.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\3.1_3.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -188,7 +188,7 @@
   },
   {
     "title": "6.1 exercise 1",
-    "audio": "theLangPath\\lesson_3\\audio\\6_1.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\6_1.mp3",
     "parts": [
       {
         "type": "exampleInEachLang",
@@ -271,7 +271,7 @@
   },
   {
     "title": "9.1 dialogue 1",
-    "audio": "theLangPath\\lesson_3\\audio\\9.1_1.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\9.1_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -420,7 +420,7 @@
   },
   {
     "title": "10.2 dialogue 1",
-    "audio": "theLangPath\\lesson_3\\audio\\10.2_1.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\10.2_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -504,7 +504,7 @@
   },
   {
     "title": "10.2 dialogue 2",
-    "audio": "theLangPath\\lesson_3\\audio\\10.2_2.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\10.2_2.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -614,7 +614,7 @@
   },
   {
     "title": "10.2 dialogue 3",
-    "audio": "theLangPath\\lesson_3\\audio\\10.2_3.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\10.2_3.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -685,7 +685,7 @@
   },
   {
     "title": "21 dialogue 1",
-    "audio": "theLangPath\\lesson_3\\audio\\21.mp3",
+    "audio": "theLangPath\\lesson_4\\audio\\21.mp3",
     "poem_title": "Лlыгъэ",
     "langToTranslationMap": {
       "en": "Manhood",
