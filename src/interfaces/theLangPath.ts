@@ -43,6 +43,11 @@ export interface ITheLangPathPoem {
   langToTranslationMap: ILangToTranslationMap;
 }
 
+export interface ITheLangPathPoemTitle {
+  title: string;
+  langToTranslationMap: ILangToTranslationMap;
+}
+
 export interface ITheLangPathCharacterBank {
   names: string[];
   avatar: string;
@@ -57,9 +62,11 @@ export type ITheLangPathPanelType =
   | "letterIntroduction"
   | "exampleInEachLang"
   | "dialogBubble"
-  | "poem";
+  | "poem"
+  | "poemTitle";
 export type ITheLangPathPanelData =
   | ITheLangPathLetterIntroductionTableRow[]
   | ITheLangPathExamplesInEachLangTableRow[]
   | ITheLangPathDialogBubble
-  | ITheLangPathPoem;
+  | ITheLangPathPoem
+  | ITheLangPathPoemTitle;

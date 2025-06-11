@@ -686,13 +686,18 @@
   {
     "title": "21 dialogue 1",
     "audio": "theLangPath\\lesson_4\\audio\\21.mp3",
-    "poem_title": "Лlыгъэ",
-    "langToTranslationMap": {
-      "en": "Manhood",
-      "ar": "الرجولة",
-      "he": "גבריות"
-    },
     "parts": [
+      {
+        "type": "poemTitle",
+        "data": {
+          "title": "Лlыгъэ",
+          "langToTranslationMap": {
+            "en": "Manhood",
+            "ar": "الرجولة",
+            "he": "גבריות"
+          }
+        }
+      },
       {
         "type": "poem",
         "data": {

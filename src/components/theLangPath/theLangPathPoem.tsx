@@ -2,16 +2,15 @@ import React from "react";
 import { cn } from "~/utils/classNames";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
-import { ILangToTranslationMap } from "~/interfaces";
-import Image from "next/image";
-import { ITheLangPathPoem } from "~/interfaces/theLangPath";
+import { ITheLangPathPoem, ITheLangPathPoemTitle } from "~/interfaces/theLangPath";
 
-export default function TheLangPathPoem({ originText, langToTranslationMap }: ITheLangPathPoem) {
+export function TheLangPathPoem({ originText, langToTranslationMap }: ITheLangPathPoem) {
   const { settings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
     settings;
+
   return (
-    <div className="gap-4pb-2 mx-auto flex w-full flex-col">
+    <div className="mx-auto flex w-full flex-col gap-4 rounded-lg bg-orange-50 p-4 pb-2">
       <p className={cn("leading-none font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize])}>
         {originText}
       </p>
@@ -22,7 +21,6 @@ export default function TheLangPathPoem({ originText, langToTranslationMap }: IT
           { hidden: !isTranslationChecked },
         )}
       >
-        {/* Translation */}
         {translationLangs.map((lang) => (
           <p key={lang}>{langToTranslationMap[lang]}</p>
         ))}
@@ -31,63 +29,34 @@ export default function TheLangPathPoem({ originText, langToTranslationMap }: IT
   );
 }
 
-export interface ILessonTableCellProps {
-  firstRow?: string;
-  secondRow?: string;
-  imgUrl?: string;
-  langToTranslationMap?: ILangToTranslationMap;
-}
-
-export function TheLangPathTableCell({
-  firstRow,
-  secondRow,
-  imgUrl,
-  langToTranslationMap,
-}: ILessonTableCellProps) {
+export function TheLangPathPoemTitle({ title, langToTranslationMap }: ITheLangPathPoemTitle) {
   const { settings } = usePreferredSettings();
-  const { circassianFontSize, translationFontSize, translationLangs, isTranslationChecked } =
+  const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
     settings;
 
+  // Get max available font size key from the map
+  const maxFontSize = Math.max(...Object.keys(TEXT_SIZE_MAP).map(Number));
+
+  // Clamp the title font size to the max allowed size
+  const titleFontSize = Math.min(circassianFontSize + 2, maxFontSize);
+
   return (
-    <div className="flex flex-col gap-1">
+    <div className="mb-4 text-center">
+      <h2 className={cn("font-bold text-orange-600 drop-shadow-sm", TEXT_SIZE_MAP[titleFontSize])}>
+        {title}
+      </h2>
+
       <div
-        className={cn("text-center font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize], {
-          hidden: !firstRow,
-        })}
+        className={cn(
+          "mt-2 flex flex-col gap-1 text-gray-700",
+          TEXT_SIZE_MAP[translationFontSize],
+          { hidden: !isTranslationChecked },
+        )}
       >
-        {firstRow}
+        {translationLangs.map((lang) => (
+          <p key={lang}>{langToTranslationMap[lang]}</p>
+        ))}
       </div>
-      <div
-        className={cn("text-center font-semibold text-black", TEXT_SIZE_MAP[circassianFontSize], {
-          hidden: !secondRow,
-        })}
-      >
-        {secondRow}
-      </div>
-      {imgUrl && (
-        <div className="flex justify-center">
-          <div className="flex h-[65px] items-center">
-            <Image src={imgUrl} alt="img" height={65} width={65} className="h-[65px] w-auto" />
-          </div>
-        </div>
-      )}
-      {langToTranslationMap && (
-        <div className={cn("flex flex-col gap-1", { hidden: !isTranslationChecked })}>
-          {translationLangs.map((lang) => {
-            return (
-              <div
-                key={lang}
-                className={cn(
-                  "mt-1 text-center font-medium text-gray-600",
-                  TEXT_SIZE_MAP[translationFontSize],
-                )}
-              >
-                {langToTranslationMap[lang]}
-              </div>
-            );
-          })}
-        </div>
-      )}
     </div>
   );
 }

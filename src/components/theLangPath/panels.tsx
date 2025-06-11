@@ -9,9 +9,10 @@ import {
   ITheLangPathLetterIntroductionTableRow,
   ITheLangPathPart,
   ITheLangPathPoem,
+  ITheLangPathPoemTitle,
 } from "~/interfaces/theLangPath";
 import TheLangPathDialogBubble from "~/components/theLangPath/theLangPathDialogBubble";
-import TheLangPathPoem from "~/components/theLangPath/theLangPathPoem";
+import { TheLangPathPoem, TheLangPathPoemTitle } from "~/components/theLangPath/theLangPathPoem";
 
 export const LESSONS_LIST: ITheLangPathLesson[] = [
   {
@@ -128,6 +129,8 @@ export function convertDataToPanelPartComponent(panelPart: ITheLangPathPart): Re
       return _handleDialogBubble(panelPart.data as ITheLangPathDialogBubble);
     case "poem":
       return _handlePoem(panelPart.data as ITheLangPathPoem);
+    case "poemTitle":
+      return _handlePoemTitle(panelPart.data as ITheLangPathPoemTitle);
     default:
       return <p>Not Found</p>;
   }
@@ -224,6 +227,19 @@ export function _handlePoem(data: ITheLangPathPoem): React.ReactNode {
     <TheLangPathPoem
       originText={data.originText}
       stanza={data.stanza}
+      langToTranslationMap={{
+        en: data.langToTranslationMap.en,
+        ar: data.langToTranslationMap.ar,
+        he: data.langToTranslationMap.he,
+      }}
+    />
+  );
+}
+
+export function _handlePoemTitle(data: ITheLangPathPoemTitle): React.ReactNode {
+  return (
+    <TheLangPathPoemTitle
+      title={data.title}
       langToTranslationMap={{
         en: data.langToTranslationMap.en,
         ar: data.langToTranslationMap.ar,
