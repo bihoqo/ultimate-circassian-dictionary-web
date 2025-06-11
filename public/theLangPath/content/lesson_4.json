@@ -1,0 +1,794 @@
+[
+  {
+    "title": "3.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\3.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Ныр",
+          "originText": "Насып, уухыгъа? Джы дэдэм тыкlон фай!",
+          "langToTranslationMap": {
+            "en": "Nasep, are you done? We must go immediately!",
+            "ar": "!ناسب هل انتهيتي؟ يجب أن نذهب حالا",
+            "he": "!נאספ, סיימת? אנחנו צריכים לצאת מיד"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Насып",
+          "originText": "Сфаеп.",
+          "langToTranslationMap": {
+            "en": "I don't want to.",
+            "ar": ".لا أريد",
+            "he": ".אני לא רוצה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Ныр",
+          "originText": "Ау джыр сыхьатыр им минутитф къыщэкlэ.",
+          "langToTranslationMap": {
+            "en": "But it's five minutes to eight.",
+            "ar": ".ولكن الساعة الآن الثامنة إلا خمس دقائق",
+            "he": ".אבל השעה שמונה פחות חמש דקות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Насып",
+          "originText": "Им минутитф къыщэкlэ? Къысгурыlуагъэп.",
+          "langToTranslationMap": {
+            "en": "Five minutes to eight? I didn’t get it.",
+            "ar": ".الثامنة إلا خمس دقائق؟ لم أفهم",
+            "he": ".שמונת חסר חמש דקות? לא הבנתי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Ныр",
+          "originText": "Сыхьатыр и мэхъу пэт, некlо уигъусэхэр къыппэлъэх.",
+          "langToTranslationMap": {
+            "en": "It’s nearly eight o’clock. Come on, your friends are waiting for you.",
+            "ar": ".إنها تقريبا الساعة الثامنة ، هيا أصدقائك ينتظرونك ",
+            "he": ".כמעט שמונה. קדימה, החברים שלך מחכים לך"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Насып",
+          "originText": "Сыухыгъэп.",
+          "langToTranslationMap": {
+            "en": "I haven’t finished.",
+            "ar": ".أنا لم أنتهي",
+            "he": ".עדיין לא סיימתי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Ныр",
+          "originText": "Некlо некlо джыдэдэм тыкlон фай.",
+          "langToTranslationMap": {
+            "en": "Come on, come on! We must go now.",
+            "ar": ".هيا هيا يجب ان نذهب حالا",
+            "he": ".יאללה, יאללה! אנחנו חייבים ללכת עכשיו"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "3.1 dialogue 2",
+    "audio": "theLangPath\\lesson_3\\audio\\3.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Данэ, тхьапш сыхьатыр?",
+          "langToTranslationMap": {
+            "en": "Dana, what time is it now?",
+            "ar": "دانه كم الساعة الآن؟",
+            "he": "?דנה, מה השעה עכשיו"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Сыхьатыр блырэ плlанэрэ, джы lофым сыкlон фай. Шlукlэ.",
+          "langToTranslationMap": {
+            "en": "It's a quarter past seven, I must go to work now. Goodbye.",
+            "ar": ".الساعة  السابعة والربع  يجب أن اذهب إلى العمل الآن ، وداعاً ",
+            "he": ".השעה שבע ורבע, אני חייב ללכת לעבודה עכשיו. להתראות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Блырэ плlанэрэ, пlалъэ икъун сиl. ",
+          "langToTranslationMap": {
+            "en": "Seven fifteen? I still have plenty of time.",
+            "ar": ".السابعة والربع  لدي متسع من الوقت أيضا",
+            "he": ".שבע ורבע? יש לי עדיין הרבה זמן"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Пшъашъэр",
+          "originText": "Сэри, сиеджэн непэ сыхьатыр бгъум плlанэ къыщыкlэу ежьэщт.",
+          "langToTranslationMap": {
+            "en": "Me too, my class today starts at a quarter to nine.",
+            "ar": ".وأنا أيضا ،  مدرسي اليوم تبدأ في الساعة التاسعة إلا ربع",
+            "he": ".גם אני, השיעור שלי היום מתחיל בתשע פחות רבע"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "3.1 dialogue 3",
+    "audio": "theLangPath\\lesson_3\\audio\\3.1_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сузан",
+          "originText": "Шъуипчэдыжь шlу, сыхьатыр пшlы, къэбархэмэ шъуяплъынэу шъукъетэгъэблагъэ, студиум lоф щызышlэрэр Гъукlэлl Сузан, пэублэм зигугъу къэтшlыщтхэр кlэкlэу, …",
+          "langToTranslationMap": {
+            "en": "Good morning, it's ten o'clock, welcome to the news broadcast. Presenting from the studio is Gugal Susan. The topic we'll cover briefly in the introduction is…",
+            "ar": "...صباح الخير ، الساعة العاشرة ، تفضلوا لمشاهدة نشرة الأخبر ، التي تقوم بأداء العمل في الاستوديو هي غوجلء سوزان ، ما سنتحدث عنها باختصار في المقدمة هي",
+            "he": "...בוקר טוב, השעה עשר, ברוכים הבאים למהדורת החדשות. מגישה מהאולפן היא ר'וצ'אל' סוזן. הנושא שנציג בקצרה בפתיחה הוא"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Мазэ",
+          "originText": "Сыд? сыхьатыр пшlы? Сылъэжъуагъ, минут тlокl нэужым зэlукlэ сиl.",
+          "langToTranslationMap": {
+            "en": "What? It's ten o'clock? I'm late, I have a meeting in twenty minutes.",
+            "ar": ".ماذا؟ الساعة العاشرة ؟ لقد تأخرت ، لدي اجتماع  بعد عشرين دقيقة",
+            "he": ".מה? השעה עשר? אני מאחר, יש לי פגישה בעוד עשרים דקות"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "6.1 exercise 1",
+    "audio": "theLangPath\\lesson_3\\audio\\6_1.mp3",
+    "parts": [
+      {
+        "type": "exampleInEachLang",
+        "data": [
+          {
+            "cir": "Къэтэджы",
+            "ar": "يستيقظ",
+            "en": "Wakes up",
+            "he": "מתעורר"
+          },
+          {
+            "cir": "Къэуцу",
+            "ar": "يقف",
+            "en": "Stands",
+            "he": "עומד"
+          },
+          {
+            "cir": " Къещэфы",
+            "ar": "يشتري",
+            "en": "Buys",
+            "he": "קונה"
+          },
+          {
+            "cir": "Сэтэнай къэущыгъ",
+            "ar": "ستناي استيقظت",
+            "en": "Setenay woke up",
+            "he": "סתנאי התעוררה"
+          },
+          {
+            "cir": "Сэтэнай къэтэджыгъ",
+            "ar": "ستناي نهضت",
+            "en": "Setenay got up",
+            "he": "סתנאי קמה"
+          },
+          {
+            "cir": "Нарт мэщафэ",
+            "ar": "نارت يشتري",
+            "en": "Nart is buying",
+            "he": "נארת קונה"
+          },
+          {
+            "cir": "Щэджэгъошхэ гъэпсэфыгъу",
+            "ar": "استراحة الظهر",
+            "en": "Lunch break",
+            "he": "הפסקת צהריים"
+          },
+          {
+            "cir": "Кофэ ешъон",
+            "ar": "شرب القهوة",
+            "en": "Drinking coffee",
+            "he": "שותה קפה"
+          },
+          {
+            "cir": "Гъэзэт еджэныр",
+            "ar": "قراءة الجريدة",
+            "en": "Reading the newspaper",
+            "he": "קריאת עיתון"
+          },
+          {
+            "cir": "Ащ хьэлыгъур ешхы",
+            "ar": "هو يأكل الخبز",
+            "en": "He eats bread",
+            "he": "הוא אוכל לחם"
+          },
+          {
+            "cir": "Ар кофэ ешъо",
+            "ar": "هو يشرب القهوة",
+            "en": "He drinks coffee",
+            "he": "הוא שותה קפה"
+          },
+          {
+            "cir": "Ар гъэзэтым еджэ",
+            "ar": "هو يقرأ الجريدة",
+            "en": "He reads the newspaper",
+            "he": "הוא קורא עיתון"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "9.1 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\9.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Блан, Сыдигъу укъызущырэр? ",
+          "langToTranslationMap": {
+            "en": "Balan, what time do you wake up?",
+            "ar": "بلان في أي ساعة تستيقظ ؟ ",
+            "he": "?בלאן, באיזו שעה אתה מתעורר"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Сыхьатыр блым иlэнэ-гъун. ",
+          "langToTranslationMap": {
+            "en": "Around seven o’clock.",
+            "ar": ".الساعة 7 تقريبا ",
+            "he": ".בערך בשעה שבע"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Сыд фэдиз ебгъэхьырэ уипчэдыжьышхэ?",
+          "langToTranslationMap": {
+            "en": "How long does it take you to eat breakfast?",
+            "ar": "وكم تستغرق في تناول الفطور؟",
+            "he": "?כמה זמן לוקח לך לאכול ארוחת בוקר"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Минутипшl.",
+          "langToTranslationMap": {
+            "en": "Ten minutes.",
+            "ar": ".عشر دقاق",
+            "he": ".עשר דקות."
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Пчэдыжьым гъэзэтым уеджа?",
+          "langToTranslationMap": {
+            "en": "Do you read the newspaper in the morning?",
+            "ar": "هل تقرأ الجريدة صباحاً؟",
+            "he": "?אתה קורא עיתון בבוקר"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Хьау седжэрэп.",
+          "langToTranslationMap": {
+            "en": "No, I don’t read it.",
+            "ar": ".لا ، لا أقرأه",
+            "he": ".לא, אני לא קורא אותו"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Сыдигъо унэм уикlырэ екlокlым укlонэу?",
+          "langToTranslationMap": {
+            "en": "When do you leave home to go to the course?",
+            "ar": "متى تخرج من البيت لتذهب إلى الكورس؟",
+            "he": "?מתי אתה יוצא מהבית כדי ללכת לקורס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Сыхьатыр им.",
+          "langToTranslationMap": {
+            "en": "At eight o’clock.",
+            "ar": ".الساعة 8 صباحاً",
+            "he": ".בשעה שמונה בבוקר"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Сыд сыхьатым щегъэжьагъэу сыд сыхьатым нэс екlокlыр?",
+          "langToTranslationMap": {
+            "en": "From what time to what time is the language course?",
+            "ar": "من أي ساعة وحتى أي ساعة  كورس اللغة؟",
+            "he": "?מאיזו שעה ועד איזו שעה הקורס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Сыхьатыр ирэ ныкъорэм ежьэ, сыхьатыр пшlыкlутlум еухы.",
+          "langToTranslationMap": {
+            "en": "It starts at 8:30 and ends at 12. It lasts 3 hours and 30 minutes.",
+            "ar": ".من الساعة  8:30   حتى الساعة  12 ، يستمر  3 ساعات و 30 دقيقة",
+            "he": ".זה מתחיל בשמונה וחצי ונגמר בשתים עשרה. זה נמשך שלוש שעות ושלושים דקות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сэтэнай",
+          "originText": "Мыр тигъусэ Блан, сыхьатыр блым иlэнэ-гъунэхэм къэтэджы, минутипшl ипчэдьжьышхэ регъэхьы, ар пчэдыжьым гъэзэтым еджэрэп, сыхьатыр им унэм екlы екlокlым кlонэу. Бзэ еклокlыр сыхьатыр ирэ ныкъорэм ежьэ, сыхьатыр пшlыкlутlум еухы. Екlокlым мэфэ къэс сыхьатищырэ ныкъорэ екъудыи.",
+          "langToTranslationMap": {
+            "en": "This is our friend Balan. He wakes up at seven, eats breakfast in ten minutes, doesn’t read newspapers in the morning. He leaves home at 8 to go to the language course. The course starts at 8:30 and lasts until 12. The course duration is 3 hours and 30 minutes.",
+            "ar": ".هذا صديقنا بلان، يستيقظ الساعة السابعة، يفطر خلال عشر دقايق، لا يقرأ الجرائد في الصباح.  يخرج من المنزل الساعة 8 ليذهب إلى كورس اللغة. كورس اللغة  يبدأ الساعة  8:30   ويستمر  حتى الساعة 12 مدة الكورس يومياً 3 ساعات و 30  دقيقة",
+            "he": ".זה חבר שלנו, בלאן. הוא מתעורר בשבע, אוכל ארוחת בוקר בעשר דקות, ולא קורא עיתונים בבוקר. הוא יוצא מהבית בשמונה כדי ללכת לקורס שפה. הקורס מתחיל בשמונה וחצי ונמשך עד שתים עשרה. משך הקורס הוא שלוש שעות ושלושים דקות"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "10.2 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\10.2_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэрыс",
+          "originText": "Фэсапщи Симаз, сэ сынэрыс. ",
+          "langToTranslationMap": {
+            "en": "Hello Simaz, I am Naris.",
+            "ar": "مرحبا  سيماز أنا نرس",
+            "he": ".שלום סימאז, אני נַרֶס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Симаз",
+          "originText": "Къеблагъ Нэрыс, сыдэу ущыт?",
+          "langToTranslationMap": {
+            "en": "Hi Naris, how are you?",
+            "ar": "أهلاً نرس كيف حالك ؟",
+            "he": "?היי נַרֶס, מה שלומך"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэрыс",
+          "originText": "Сэ сыдэгъу Симаз, Къэкlорэ мэфэкум пщынэбзэ пчыхьэ щыl, сигъусэу укъэкlона?",
+          "langToTranslationMap": {
+            "en": "I'm fine Simaz, next Thursday there is a music evening, will you come with me?",
+            "ar": "أنا جيد سيماز، يوم الخميس القادم هناك أمسية موسيقية ، هل تأتين معي؟",
+            "he": "?אני בסדר סימאז, ביום חמישי הבא יש ערב מוזיקה, האם תבואי איתי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Симаз",
+          "originText": "Ар хъарзын. ары, скъыбдакlо сшlоигъу. Сыд фэдиз билетым ыуасэр?",
+          "langToTranslationMap": {
+            "en": "That's great, yes, I would like to go. How much is the ticket?",
+            "ar": "هذا رائع ، نعم أود ان أذهب  ،  كم سعر بطاقة الدخول؟",
+            "he": "?זה נהדר, כן, אני רוצה ללכת. כמה עולה הכרטיס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэрыс",
+          "originText": "Сэ уесэгъэблагъэ. Ащ иужымы шхапlэм тыкlощт.",
+          "langToTranslationMap": {
+            "en": "I invite you, and after the party we will go together to the restaurant for dinner.",
+            "ar": ".أنا أعزمك  ،  وبعد الحفل  نذهب معاً  لنتاول العشاء في  المطعم",
+            "he": ".אני מזמינה אותך, ואחרי המסיבה נלך יחד לאכול ארוחת ערב במסעדה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Симаз",
+          "originText": "Дэгъу дэд, опсэу.",
+          "langToTranslationMap": {
+            "en": "Great, thanks.",
+            "ar": ".رائع شكراً",
+            "he": ".מעולה, תודה"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "10.2 dialogue 2",
+    "audio": "theLangPath\\lesson_3\\audio\\10.2_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Аслъан",
+          "originText": "Фэсапщи Блан, сыдэу ущыт?",
+          "langToTranslationMap": {
+            "en": "Hello Blan, how are you?",
+            "ar": "مرحبا بلان كيف حالك؟",
+            "he": "?שלום בלאן, מה שלומך"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Къеблагъ Аслъан. Сэ сыдэгъу, оры?",
+          "langToTranslationMap": {
+            "en": "Hi Aslan. I'm fine, and you?",
+            "ar": "أهلا أسلان أنا بخير  وأنت؟",
+            "he": "?היי אסלאן. אני בסדר, ואתה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Аслъан",
+          "originText": "Уезэгъыщт, зытэкlу lоф сыхэт. Неущы пчыхьэм синэмэм укъысдэкlона?",
+          "langToTranslationMap": {
+            "en": "So-so, there is some pressure. Will you go to the cinema with me tomorrow evening?",
+            "ar": "ماشي الحال  ، هناك بعض الضغوطات  . هل تذهب معي غداً مساءً إلى السينما؟",
+            "he": "?בסדר-בסדר, יש קצת לחץ. תלכי איתי מחר בערב לקולנוע"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Хьау, А уахътэм Адыгэбзэ еджэгъу сиl.",
+          "langToTranslationMap": {
+            "en": "No, I can't because it's Adyghe language course time.",
+            "ar": ".لا أستطيع  لأنه وقت كورس اللغة الشركسية ",
+            "he": ".לא, אני לא יכולה כי זה זמן קורס שפת האדיגית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Аслъан",
+          "originText": "Сыд сыхьат еджэгъур зиухырэр?",
+          "langToTranslationMap": {
+            "en": "And what time does the language course finish?",
+            "ar": "وأي ساعة ينتهي كورس اللغة؟",
+            "he": "?ואיזה שעה נגמר קורס השפה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Сыхьатыр им. ",
+          "langToTranslationMap": {
+            "en": "At 8 o'clock.",
+            "ar": ".الساعة 8",
+            "he": ".בשעה 8"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Аслъан",
+          "originText": "Еджэгъур зиухырэм тызэlукlэшъущт, филмыр сыхьатыр бгъум ежьэ.",
+          "langToTranslationMap": {
+            "en": "We can meet after the course finishes because the movie starts at 9.",
+            "ar": ".يمكننا أن نتقابل بعد انتهاء كورس اللغة لأن الفيلم يبدأ الساعة التاسعة ",
+            "he": ".אנחנו יכולים להיפגש אחרי הקורס כי הסרט מתחיל בשעה 9"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Блан",
+          "originText": "Ара? ар дэгъу, скъыбдэкlон.",
+          "langToTranslationMap": {
+            "en": "Yes, that's good, I'll go with you.",
+            "ar": ".نعم هذا جيد سأذهب معك",
+            "he": ".כן, זה טוב, אני אלך איתך"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "10.2 dialogue 3",
+    "audio": "theLangPath\\lesson_3\\audio\\10.2_3.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Тхьэумэфэ мафэм лъэпао тыджэгунэу укъысдэкlона?",
+          "langToTranslationMap": {
+            "en": "Will you come with me on Sunday to play football?",
+            "ar": "هل تأتي معي يوم الأحد لنلعب كرة القدم؟",
+            "he": "?האם תבוא איתי ביום ראשון לשחק כדורגל"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Абрэдж",
+          "originText": "Хьау, сфаеп. Болйнг тыджэгунэу о укъысдэкlона?",
+          "langToTranslationMap": {
+            "en": "No, I don't want. Will you come with me to play bowling?",
+            "ar": "لا ، ليست لدي الرغبة .  أنت هل تأتي معي لنلعب ( البولنغ ) ؟",
+            "he": "?לא, אני לא רוצה. האם תבוא איתי לשחק באולינג"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Сыдигъу?",
+          "langToTranslationMap": {
+            "en": "When?",
+            "ar": "متى؟",
+            "he": "?מתי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Абрэдж",
+          "originText": "Тхьэумэфэ мафэм сыхьатыр пшlым едгъэжьэщт, сыхьатыр плlым нэс.",
+          "langToTranslationMap": {
+            "en": "On Sunday, we will start at 10 o'clock and finish at 4 in the afternoon.",
+            "ar": ".يوم الأحد  سنبدأ الساعة 10  و حتى الساعة 4 بعد الظهر",
+            "he": ".ביום ראשון נתחיל ב-10 ונגמור ב-4 אחרי הצהריים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Ар дэгъу, ащ ыужым лъэпао сыджэгунэу джэгупlэм сыкlощт.",
+          "langToTranslationMap": {
+            "en": "That's good. After that, I'll go to the field to play football.",
+            "ar": ".هذا جيد . وبعدها أذهب إلى لعب الكرة في الملعب",
+            "he": ".זה טוב. אחרי זה אלך למגרש לשחק כדורגל"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "21 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\21.mp3",
+    "poem_title": "Лlыгъэ",
+    "langToTranslationMap": {
+      "en": "Manhood",
+      "ar": "الرجولة",
+      "he": "גבריות"
+    },
+    "parts": [
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Тэтэжъ, къыcаlу:",
+          "langToTranslationMap": {
+            "en": "Grandfather, tell me:",
+            "ar": ":جدي، قل لي",
+            "he": ":סבא, תגיד לי"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Сыд илlэужыгъуа лIыгъэр? ",
+          "langToTranslationMap": {
+            "en": "What is manhood?",
+            "ar": "ماهي الرجولة؟",
+            "he": "?מהי גבריות"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Еупчlыгъ шъэожъыер ятэжъы.",
+          "langToTranslationMap": {
+            "en": "The young boy asked his grandfather.",
+            "ar": ".سأل الولد الصغير جده",
+            "he": ".הנער הקטן שאל את סבו"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "1",
+          "originText": "Уихэгъэгу шlу плъэгъоу, ар къэуухъумэн плъэкIымэ джар лӀыгъэ. ",
+          "langToTranslationMap": {
+            "en": "Manhood is to love your country and to be able to protect it.",
+            "ar": ".الرجولة هي أن تحب بلدك، وأن تستطيع حمايته.",
+            "he": ".גבריות היא לאהוב את ארצך ולהיות מסוגל להגן עליה"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Гузэжъогъу итым уишIуагъэ ебгъэкIымэ, къинэу зыхэфагъэм хэпщыжьмэ джар лӀыгъэ. ",
+          "langToTranslationMap": {
+            "en": "Manhood is to help someone who got into trouble and get them out of the mess they fell into.",
+            "ar": ".الرجوله هي أن تساعد الذي وقع في مشكلة وأن تخرجه من الورطة التي وقع بها",
+            "he": ".גבריות היא לעזור למי שנתקל בבעיה ולהוציא אותו מהמצב הקשה שבו הוא נמצא"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Уиныбджэгъухэм урялъапlэу, ори ахэр уилъапlэмэ джар лIыгъэ, цIыфыгъэ.",
+          "langToTranslationMap": {
+            "en": "Manhood and humanity is to be dear to your friends when they are dear to you.",
+            "ar": ".الرجولة والانسانية هي أن تكون غاليا على أصدقائك وهم غاليين عليك",
+            "he": ".גבריות ואנושיות הן להיות יקר לחבריך כשהם יקרים לך"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Іофэу узфэгъэзагъэр шӀу плъэгъоу, ащкӀэ гъэхъэгъэ дэгъухэр пшlымэ джар лIыгъэ, цIыфыгъэ.",
+          "langToTranslationMap": {
+            "en": "Manhood and humanity is to love your work and to excel at it.",
+            "ar": ".الرجولة والانسانية هي أن تحب عملك وأن تبرع به",
+            "he": ".גבריות ואנושיות הן לאהוב את עבודתך ולהצטיין בה"
+          }
+        }
+      },
+      {
+        "type": "poem",
+        "data": {
+          "stanza": "2",
+          "originText": "Уиlорэ уишIэрэ зэтетмэ джар лlыгъэ, цlыфыгъэ.",
+          "langToTranslationMap": {
+            "en": "Manhood and humanity is when your word matches your deed.",
+            "ar": ".الرجولة والانسانية هي أن يتوافق قولك مع عملك",
+            "he": ".גבריות ואנושיות הן שכאשר דבריך תואמים את מעשיך"
+          }
+        }
+      }
+    ]
+  }
+]
