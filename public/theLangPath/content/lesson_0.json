@@ -980,7 +980,7 @@
     "audio": "theLangPath\\lesson_0\\audio\\4_1.mp3",
     "parts": [
       {
-        "type": "undefined",
+        "type": "letterIntroduction",
         "data": [
           {
             "letter": "Я я",
@@ -1722,7 +1722,7 @@
     "audio": "theLangPath\\lesson_0\\audio\\\\9_2.mp3",
     "parts": [
       {
-        "type": "letterIntroduction",
+        "type": "exampleInEachLang",
         "data": [
           {
             "cir": "Гу",
@@ -2517,16 +2517,6 @@
               "ar": "رِجْل",
               "en": "Leg",
               "he": "רגל"
-            }
-          },
-          {
-            "letter": "ЛЬ ль",
-            "imgUrl": "0027.png",
-            "wordExample": "Льы",
-            "translationsMap": {
-              "ar": "دم",
-              "en": "Blood",
-              "he": "דם"
             }
           }
         ]
