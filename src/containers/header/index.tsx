@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaHome, FaTimes, FaHamburger } from "react-icons/fa";
+import { FaHome, FaTimes, FaBars } from "react-icons/fa";
 import { MdMenuBook, MdContactSupport, MdOutlineFileDownload } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import { cn } from "~/utils/classNames";
@@ -13,15 +13,13 @@ import SettingsSvg from "~/components/svg/settingsSvg";
 
 function Logo({ onClick }: { onClick: () => void }) {
   return (
-    <div className="size-0 sm:size-[40px] md:size-[50px] lg:size-[60px] xl:size-[65px]">
+    <div className="h-10 w-10">
       <Image
-        src="/fav/icon-1042x1042.png"
-        className={cn("cursor-pointer text-xl font-bold")}
+        src="/fav/icon-256x256.png"
+        className="cursor-pointer object-contain"
         onClick={onClick}
-        width={0}
-        height={0}
-        sizes="60vw"
-        style={{ width: "100%", height: "auto" }} // optional
+        width={40}
+        height={40}
         alt="logo"
       />
     </div>
@@ -35,10 +33,7 @@ function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) 
 
   return (
     <button
-      className={cn(
-        "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-[#303f2e] hover:text-[#637f5e]/50",
-        "3xl:text-4xl text-xl lg:text-xl xl:text-2xl 2xl:text-3xl",
-      )}
+      className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-semibold text-amber-200 transition hover:bg-green-700"
       onClick={onClick}
     >
       {item.icon}
@@ -54,9 +49,7 @@ function MobileNavItem({ item, onClick }: { item: INavBarItem; onClick: () => vo
 
   return (
     <button
-      className={cn(
-        "text-lightGreen hover:text-lightGreen/70 flex w-full items-center justify-center gap-2 py-4 text-lg font-bold",
-      )}
+      className="flex w-full items-center justify-start gap-3 px-6 py-4 text-left text-lg font-semibold text-green-800 transition hover:bg-green-100"
       onClick={onClick}
     >
       {item.icon}
@@ -97,10 +90,10 @@ export default function Header() {
   if (width < 640) {
     return (
       <div className={cn("z-50 w-full", { fixed: pathname?.includes("dictionary") })}>
-        <div className="relative z-50 flex flex-row gap-4 bg-[#afdda7] p-2 shadow">
+        <div className="relative z-50 flex flex-row gap-4 bg-green-800 p-2 shadow">
           <div className="mx-auto flex w-full flex-row items-center gap-1">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              <FaHamburger size={36} />
+              <FaBars size={26} />
             </button>
             <SearchContainer showOnMobile={true} />
 
@@ -114,20 +107,13 @@ export default function Header() {
           </div>
 
           {isMobileMenuOpen && (
-            <div className="absolute top-16 left-0 z-60 w-full bg-white shadow-lg">
-              {NAV_ITEMS.map((item) => {
-                return (
-                  <MobileNavItem
-                    key={item.title}
-                    item={item}
-                    onClick={() => navigateTo(item.link)}
-                  />
-                );
-              })}
-
+            <div className="absolute top-16 left-0 z-50 w-full rounded-b-lg border-t border-gray-200 bg-white shadow-lg">
+              {NAV_ITEMS.map((item) => (
+                <MobileNavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
+              ))}
               <MobileNavItem
                 item={{ title: "Close", link: "", icon: <FaTimes />, isVisible: true }}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                onClick={() => setIsMobileMenuOpen(false)}
               />
             </div>
           )}
@@ -140,29 +126,19 @@ export default function Header() {
   }
 
   return (
-    <div className="relative z-50 flex flex-row gap-4 bg-[#afdda7] p-2 shadow sm:gap-2 sm:px-0">
-      <div className="mx-auto flex w-11/12 flex-row items-center gap-1 sm:gap-4">
-        <Logo onClick={() => navigateTo("/")} />
-
-        <div className="flex">
-          {NAV_ITEMS.map((item) => {
-            return <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />;
-          })}
-        </div>
-
-        {/* Conditional rendering of SettingSvg for the-language-path */}
-        {isOnLanguagePath && (
-          <div className="ml-auto">
-            <SettingsSvg
-              className="cursor-pointer text-[#303f2e] hover:text-[#637f5e]/50"
-              onClick={() => setIsSettingsOpen(true)}
-            />
-          </div>
-        )}
-
-        {/* Settings panel */}
-        <SettingsPanel isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
+    <div className="relative z-50 flex w-full flex-row items-center bg-green-800 px-6 py-3 shadow">
+      <Logo onClick={() => navigateTo("/")} />
+      <div className="flex">
+        {NAV_ITEMS.map((item) => (
+          <NavItem key={item.title} item={item} onClick={() => navigateTo(item.link)} />
+        ))}
       </div>
+      {isOnLanguagePath && (
+        <SettingsSvg
+          className="cursor-pointer text-white transition hover:text-green-300"
+          onClick={() => setIsSettingsOpen(true)}
+        />
+      )}
     </div>
   );
 }

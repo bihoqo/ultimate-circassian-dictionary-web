@@ -24,54 +24,52 @@ export default function WordHistoryContainer() {
 
   function clickWordHandler(word: string) {
     const safeWord = regularWordToSafeWord(word);
-
-    // Check if safeWord is contained in the current URL
-    if (params && "word" in params && params.word === safeWord) {
-      console.log("Word already in URL");
+    if (params?.word === safeWord) {
       return;
     }
-
     router.push(`/dictionary/${safeWord}`);
   }
 
-  function onDeleteClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>, word: string) {
-    event.stopPropagation(); // Prevent click propagation to the word click handler
+  function onDeleteClick(event: React.MouseEvent<HTMLButtonElement>, word: string) {
+    event.stopPropagation();
     removeFromWordHistoryCache(word);
     refetchMyWordHistory();
   }
 
   return (
-    <div className={cn("flex w-full flex-col")}>
-      <div className="flex w-full items-center justify-between rounded-t-2xl bg-[#adb3ed] px-4 py-2 font-bold shadow">
-        <span className={cn("text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl")}>
-          Search History
-        </span>
+    <div className="flex w-full flex-col overflow-hidden rounded-2xl shadow-md">
+      <div className="bg-blue-100 px-4 py-3 text-xl font-semibold text-gray-800">
+        Search History
       </div>
-      <div
-        className={cn(
-          "rounded-b-2xl bg-[#f1f1ff] p-2 text-black shadow-sm",
-          "text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl",
+
+      <div className="bg-white px-4 py-3 text-gray-700">
+        {myWordHistory.length === 0 ? (
+          <div className="py-6 text-center text-gray-500">
+            <p className="text-sm italic">No search history yet. Start exploring!</p>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-y-2">
+            {myWordHistory.map((word, index) => (
+              <div
+                key={index}
+                className="group flex items-center justify-between rounded-md px-3 py-2 transition-colors hover:bg-gray-100"
+              >
+                <span
+                  className="cursor-pointer truncate text-base hover:underline"
+                  onClick={() => clickWordHandler(word)}
+                >
+                  {word}
+                </span>
+                <button
+                  onClick={(event) => onDeleteClick(event, word)}
+                  className="flex items-center text-gray-400 opacity-100 transition-opacity hover:text-red-500 md:opacity-0 md:group-hover:opacity-100"
+                >
+                  <FaTimesCircle size={18} />
+                </button>
+              </div>
+            ))}
+          </div>
         )}
-      >
-        <p className={cn({ hidden: myWordHistory.length > 0 })}>Your search history is empty</p>
-        {myWordHistory.map((word, index) => {
-          return (
-            <div key={index} className="group flex items-center justify-between p-2">
-              <span
-                className="truncate hover:cursor-pointer hover:underline"
-                onClick={() => clickWordHandler(word)}
-              >
-                {word}
-              </span>
-              <button
-                onClick={(event) => onDeleteClick(event, word)}
-                className="flex items-center opacity-0 group-hover:opacity-100"
-              >
-                <FaTimesCircle className="opacity-80" size={20} color="#757575" />
-              </button>
-            </div>
-          );
-        })}
       </div>
     </div>
   );
