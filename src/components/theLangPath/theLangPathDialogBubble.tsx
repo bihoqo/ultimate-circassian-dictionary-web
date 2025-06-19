@@ -6,12 +6,8 @@ import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { getCharacterByName } from "~/components/theLangPath/panels";
 import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 
-export default function TheLangPathDialogBubble({
-  leftOrRight,
-  characterName,
-  originText,
-  langToTranslationMap,
-}: ITheLangPathDialogBubble) {
+export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDialogBubble }) {
+  const { leftOrRight, characterName, originText, langToTranslationMap } = data;
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =

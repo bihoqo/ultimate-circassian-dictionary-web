@@ -64,7 +64,7 @@ export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
     avatar: "/theLangPath/faces/14.png",
   },
   {
-    names: ["Сэтэнай", "Нэф", "Нэфын"],
+    names: ["Сэтэнай", "Нэф", "Нэфын", "Ныр", "Сузан"],
     avatar: "/theLangPath/faces/10.png",
   },
   {
@@ -82,6 +82,8 @@ export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
       "Бибэрс",
       "Нурбй",
       "Щэфакlор",
+      "Лlыр",
+      "Абрэдж",
     ],
     avatar: "/theLangPath/faces/4.png",
   },
@@ -203,30 +205,9 @@ export function _handleExamplesInEachLangTableRow(
 }
 
 export function _handleDialogBubble(data: ITheLangPathDialogBubble): React.ReactNode {
-  return (
-    <TheLangPathDialogBubble
-      leftOrRight={data.leftOrRight}
-      characterName={data.characterName}
-      originText={data.originText}
-      langToTranslationMap={{
-        en: data.langToTranslationMap.en,
-        ar: data.langToTranslationMap.ar,
-        he: data.langToTranslationMap.he,
-      }}
-    />
-  );
+  return <TheLangPathDialogBubble data={data} />;
 }
 
 export function _handlePoem(data: ITheLangPathPoem): React.ReactNode {
-  return (
-    <TheLangPathPoem
-      originText={data.originText}
-      stanza={data.stanza}
-      langToTranslationMap={{
-        en: data.langToTranslationMap.en,
-        ar: data.langToTranslationMap.ar,
-        he: data.langToTranslationMap.he,
-      }}
-    />
-  );
+  return <TheLangPathPoem data={data} />;
 }

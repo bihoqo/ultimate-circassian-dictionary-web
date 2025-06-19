@@ -38,9 +38,15 @@ export interface ITheLangPathDialogBubble {
 }
 
 export interface ITheLangPathPoem {
-  stanza: string;
-  originText: string;
-  langToTranslationMap: ILangToTranslationMap;
+  title: {
+    originText: string;
+    langToTranslationMap: ILangToTranslationMap;
+  };
+  stanzas: {
+    stanza: string;
+    originText: string;
+    langToTranslationMap: ILangToTranslationMap;
+  }[];
 }
 
 export interface ITheLangPathCharacterBank {
