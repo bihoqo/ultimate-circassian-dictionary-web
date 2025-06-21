@@ -60,12 +60,19 @@ export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
       "Насып",
       "Адиф",
       "Мазэ",
+      "Тыжьын",
+      "Дышъэ",
+      "Шъузыр",
     ],
     avatar: "/theLangPath/faces/14.png",
   },
   {
-    names: ["Сэтэнай", "Нэф", "Нэфын", "Ныр", "Сузан"],
+    names: ["Сэтэнай", "Нэф", "Нэфын", "Ныр", "Сузан", "Сипсэ"],
     avatar: "/theLangPath/faces/10.png",
+  },
+  {
+    names: ["Нэнэжъ"],
+    avatar: "/theLangPath/faces/12.png",
   },
   {
     names: [
@@ -84,6 +91,9 @@ export const LESSON_CHARACTERS: ITheLangPathCharacterBank[] = [
       "Щэфакlор",
       "Лlыр",
       "Абрэдж",
+      "Саусыр",
+      "Тамбот",
+      "Налбыи",
     ],
     avatar: "/theLangPath/faces/4.png",
   },
