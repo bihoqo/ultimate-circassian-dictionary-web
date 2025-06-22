@@ -1,0 +1,988 @@
+[
+  {
+    "title": "2.2 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\2.2_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэрыс",
+          "originText": "Къысфэгъэгъу, ужлъыфын тэшlы, упчlэ тиl. Тыдэ уиунэ ищыкlагъэхэр, гъомылэхэр къыщыпщэфыхэра?",
+          "langToTranslationMap": {
+            "en": "Excuse me, we’re doing a survey and we have a question: where do you buy your groceries and household items?",
+            "ar": "أرجو المعذرة نحن نقوم باستطلاع ولدينا سؤال، من أين تشتري أغراضك وغذائيات منزلك؟",
+            "he": "?סליחה, אנחנו עורכים סקר ויש לנו שאלה: מאיפה את קונה את הקניות שלך ואת המצרכים לבית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Сэтэнай",
+          "originText": "Сэ сикlасэп щэпlэшхом сыкъщыщэфэнэу. Къуемыехэр мыlэрс, тlам, къоIус фэдэхэр бэдзэрым къыщысэщэфых. Хэтэрыкlхэри ары, къэбы, чlыбжым, цугу, нэшэбэгу фэдэхэр. Ау хьалыгъур хьалыгъущапlэм къыщысэщэфы, гъэжъэгъакlэу щэты, мэфэ къэс ежьым егъажъэ. Сэ унагъо сиl, узынчъэгъэ шхын lофтхьабзэр сэркlэ гугъоешху. Тхьацу зэпыупкlыгъэр, пынджыр, хьаджыгъэр, lорганык щапlэмэ къащысэщэфых. Джыри шъонlэшlухэр, пцIыипсыр , псыр сишъхьагъусэ шъонlэшlу щапlэм къыщещэфых, сэ ахэр Сэ сикlасэп щэпlэшхом сыкъщыщэфэнэу. Къуемыехэр мыlэрс, тlам, къоIус фэдэхэр бэдзэрым къыщысэщэфых. Хэтэрыкlхэри ары, къэбы, чlыбжым, цугу, нэшэбэгу фэдэхэр. Ау хьалыгъур хьалыгъущапlэм къыщысэщэфы, гъэжъэгъакlэу щэты, мэфэ къэс ежьым егъажъэ. Сэ унагъо сиl, узынчъэгъэ шхын lофтхьабзэр сэркlэ гугъоешху. Тхьацу зэпыупкlыгъэр, пынджыр, хьаджыгъэр, lорганык щапlэмэ къащысэщэфых. Джыри шъонlэшlухэр, пцIыипсыр , псыр сишъхьагъусэ шъонlэшlу щапlэм къыщещэфых, сэ ахэр къысфэхьыщтхэп.",
+          "langToTranslationMap": {
+            "en": "Where do I buy my groceries? Well, I buy everything from the supermarket. I come back late from work and the supermarket is open until 8 p.m., and it has everything I need: bread, butter, cheese, eggs, fish, apple juice, and pizza. I leave work without energy to cook. On Saturdays, I buy meat (beef) from the butcher, because it’s fresh there. That’s why I’ve been buying from him for years.",
+            "ar": ".من أين أَشتري أغراضي، حسناً أنا أَشتري كل أغراضي من السوبر ماركت، أَرجع متأخراً من العمل والسوبر ماركت تبقى مفتوحة حتى الساعة الثامنة مساءً وفيها كل ما أحتاج إليه: خبز، زبدة، جبنة، بيض، سمك، عصير تفاح، وبيتزا، أنا أَخرج من العمل ولا طاقة لدي للطبخ، يوم السبت أَشتري لحم (البقر) من عند الجزار، فعنده يكون طازجاً، لذلك أَشتري من عنده منذ عدة سنوات",
+            "he": ".מאיפה אני קונה את המצרכים שלי? טוב, אני קונה את כל המצרכים שלי מהסופרמרקט. אני חוזרת מאוחר מהעבודה, והסופרמרקט פתוח עד שמונה בערב, ויש בו כל מה שאני צריכה: לחם, חמאה, גבינה, ביצים, דג, מיץ תפוחים ופיצה. אני יוצאת מהעבודה בלי כוח לבשל. ביום שבת אני קונה בשר (בקר) מהקצב, כי אצלו הבשר טרי. בגלל זה אני קונה אצלו כבר כמה שנים"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "2.2 dialogue 2",
+    "audio": "theLangPath\\lesson_5\\audio\\2.2_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэрыс",
+          "originText": "Къысфэгъэгъу, ужлъыфын тэшlы, упчlэ тиl. Тыдэ уиунэ ищыкlагъэхэр, гъомылэхэр къыщыпщэфыхэра?",
+          "langToTranslationMap": {
+            "en": "Excuse me, we’re doing a survey and we have a question: where do you buy your groceries and household items?",
+            "ar": "أرجو المعذرة نحن نقوم باستطلاع ولدينا سؤال، من أين تشتري أغراضك وغذائيات منزلك؟",
+            "he": "?סליחה, אנחנו עורכים סקר ויש לנו שאלה: מאיפה את קונה את הקניות שלך ואת המצרכים לבית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Нарт",
+          "originText": "Тыдэ сищыкlагъэхэр къыщысщэфыхэрэр? Дэгъу, сищыкlагъэхэр щэпlэшхом къыщысэщэфых. lофым лъэжъуагъэу сыкъекlыжьы, щэпlэшхор сыхьатыр им нэсэ lохыгъэ, ащ телъ сищыкlагъэхэр: хьалъыгъу, тхъуцlын, къуае, кlэнкlэ, пцэжъый, мые фызыгъ, пицэ. Сэ lофым сыкъчlэкlыжьы сыпщэрыхьэнэу кlуачlэ симlэжьэу. Мэфэ закъом чэмыл лыщапlэм къыщысэщэфы. Ащ иlэхэр лыкlэх, арышъ, илъэс заулэ хъугъэу ащ сыкъщэщафэ.",
+          "langToTranslationMap": {
+            "en": "I don’t like shopping at the supermarket. Fruits like apples, oranges, and bananas I buy from the local market (bazaar). Also, vegetables like zucchini, potatoes, tomatoes, cucumbers. As for bread, I buy it from a bakery where it’s always fresh – they bake it daily themselves. I have a family and healthy eating is very important to me. Pasta, rice, and flour I always buy from organic stores – food grown without synthetic fertilizers or hormones. My husband buys the juices, mineral water, and regular water from juice shops, because I can’t carry them myself.",
+            "ar": ".أنا لا أُحب الشراء من السوبر ماركت، الفواكه، مثل التفاح والبرتقال والموز أَشتريهم من السوق الشعبي (بازار)، وكذلك أيضاً الخضراوات مثل الكوسا، البطاطا، البندورة، الخيار، أَما الخبز فأَشتريه من محل بيع الخبز حيث يكون طازجاً فهو يخبزه كل يوم بنفسه. أنا لدي عائلة وموضوع الطعام الصحي مهم جداً بالنسبة إليّ، المعكرونة، الأرز، الطحين أَشتريهم دائماً من محلات الأُورغانِك (الطعام الذي يأتي من نباتات دون استخدام الأَسمدة والهرمونات الصناعية)، كما أن زوجي يشتري العصائر، المياه المعدنية، والماء من محلات بيع العصائر، فأنا لا أَستطيع أَن أَجلبهم",
+            "he": ".אני לא אוהב לקנות מהסופרמרקט. פירות כמו תפוחים, תפוזים ובננות אני קונה מהשוק המקומי (באזאר). גם ירקות כמו קישואים, תפוחי אדמה, עגבניות, מלפפונים. לחם אני קונה ממאפייה, שם הוא טרי – הם אופים אותו בעצמם כל יום. יש לי משפחה, ותזונה בריאה חשובה לי מאוד. פסטה, אורז, וקמח אני תמיד קונה מחנויות אורגניות – מזון שגודל בלי דשנים וחומרים סינתטיים. הבעל שלי קונה את המיצים, את המים המינרליים ואת המים מהחנויות לממכר מיצים, כי אני לא יכולה לסחוב אותם"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.1 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\4.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Тыжьын",
+          "originText": "Сыда мыщ ыцlэр? Къужъа?",
+          "langToTranslationMap": {
+            "en": "What is this called? A pear?",
+            "ar": "ما اسم هذه؟ إجاص؟",
+            "he": "?איך קוראים לזה? אגס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Саусыр",
+          "originText": "Хьау. Мыр цумпэ. Мыщ ыцlэр цумп.",
+          "langToTranslationMap": {
+            "en": "No, it's a strawberry. Its name is strawberry.",
+            "ar": ".لا، إنها فراولة. اسمها فراولة",
+            "he": ".לא, זה תות שדה. קוראים לזה תות שדה"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "4.1 dialogue 2",
+    "audio": "theLangPath\\lesson_5\\audio\\4.1_2.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Дышъэ",
+          "originText": "Сыда мыщ ыцlэр?",
+          "langToTranslationMap": {
+            "en": "What is this called?",
+            "ar": "ما اسم هذه؟",
+            "he": "?איך קוראים לזה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Тамбот",
+          "originText": "Мыщ ыцlэр къэбаскъ.",
+          "langToTranslationMap": {
+            "en": "Its name is cabbage.",
+            "ar": ".اسمها ملفوف",
+            "he": ".קוראים לזה כרוב"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "6.4 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\6.4_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Пэрыт",
+          "originText": "Сэ шъонlэшlу бэщрэбитlу сфай.",
+          "langToTranslationMap": {
+            "en": "I want two bottles of soft drinks.",
+            "ar": ".أنا أريد زجاجتين من المشروبات المحلّاة",
+            "he": ".אני רוצה שתי בקבוקי משקאות ממותקים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэ",
+          "originText": "Сэ колитlурэ цугу пхъонтищырэ сфай.",
+          "langToTranslationMap": {
+            "en": "I want two bottles of Coca-Cola and three cans of tomatoes.",
+            "ar": ".أريد زجاجتين من الكوكاكولا وثلاث علب من الطماطم",
+            "he": ".אני רוצה שתי בקבוקי קוקה קולה ושלוש קופסאות של עגבניות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Сипсэ",
+          "originText": "Сэ шъонlэшlу бэщэрэбитlурэ цугу пхъонтищырэ зытхьацу зэпыупкlыгъэрэ сфай.",
+          "langToTranslationMap": {
+            "en": "I want two bottles of soft drinks, three cans of tomatoes, and spaghetti pasta.",
+            "ar": ".أنا أريد زجاجتين من المشروبات المحلّاة، وثلاث علب من الطماطم، ومعكرونة سباغيتي",
+            "he": ".אני רוצה שתי בקבוקי משקאות ממותקים, שלוש קופסאות עגבניות, ופסטת ספגטי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Енал",
+          "originText": "Сэ шъонlэшlу бэщрэбитlурэ тхьацу зэпыупкlыгъэ пхъонтиплlырэ сфай.",
+          "langToTranslationMap": {
+            "en": "I want two bottles of soft drinks and four packs of spaghetti.",
+            "ar": ".أنا أريد زجاجتين من المشروبات المحلّاة وأربع علب من السباغيتي",
+            "he": ".אני רוצה שתי בקבוקי משקאות ממותקים וארבע חבילות של ספגטי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Синэ",
+          "originText": "Тэрэзэп. мыlэрсиплl сызфаер.",
+          "langToTranslationMap": {
+            "en": "That's not correct. What I need is four apples.",
+            "ar": ".هذا غير صحيح. ما أحتاجه هو أربع تفاحات",
+            "he": ".זה לא נכון. מה שאני צריכה זה ארבעה תפוחים"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "7.1 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\7.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Уимафэ шlу Синэмис.",
+          "langToTranslationMap": {
+            "en": "Good day, Sinemis.",
+            "ar": ".نهارك سعيد، سينميس",
+            "he": ".יום טוב, סינמיס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Уимафэ шlу Заур.",
+          "langToTranslationMap": {
+            "en": "Good day, Zaur.",
+            "ar": ".نهارك سعيد، زاور",
+            "he": ".יום טוב, זאור"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Сыд къыпфэсшlэшъунэу щыlэр... къаlо?",
+          "langToTranslationMap": {
+            "en": "How can I help you? Tell me.",
+            "ar": ".كيف يمكنني مساعدتك؟ قولي لي",
+            "he": ".איך אפשר לעזור לך? תגידי לי"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Зы КГ. Цугу сфай.",
+          "langToTranslationMap": {
+            "en": "I want one kilo of tomatoes.",
+            "ar": ".أريد كيلو واحد من الطماطم",
+            "he": ".אני רוצה קילו אחד של עגבניות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Мыекъопэ гъэкlыгъэ цугуа хьэуми Налчык гъэкlыгъэ цугуа?",
+          "langToTranslationMap": {
+            "en": "Tomatoes grown in Myekop or from Nalchik?",
+            "ar": "طماطم مزروعة في ميكوب أم طماطم من نالتشيك؟",
+            "he": "?עגבניות שגודלו במייקופ או עגבניות מנלצ'יק"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Зэхэдз сиlэп, тlури дэгъух.",
+          "langToTranslationMap": {
+            "en": "I'm not picky, both are fine.",
+            "ar": ".لستُ مُتطلبة، كلاهما جيد",
+            "he": ".אני לא בררנית, שניהם טובים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Джыри зыгорэ уфая?",
+          "langToTranslationMap": {
+            "en": "Do you need anything else?",
+            "ar": "هل تحتاجين شيئًا آخر؟",
+            "he": "?את צריכה עוד משהו"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Ары, хьалыгъурэ кlэнкlихырэ сфай.",
+          "langToTranslationMap": {
+            "en": "Yes, bread and six eggs.",
+            "ar": ".نعم، خبز وست بيضات",
+            "he": ".כן, לחם ושש ביצים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Къеблагъ, джыри зыгорэ уфая?",
+          "langToTranslationMap": {
+            "en": "Here you go. Anything else?",
+            "ar": "تفضلي، هل تحتاجين شيئًا آخر؟",
+            "he": "?הנה, את צריכה עוד משהו"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Зэ, мммм, цугу, хьалыгъу, кlэнкlэ, ааа, ары къое гъугъэ кило грамитlу сфай.",
+          "langToTranslationMap": {
+            "en": "Wait, hmm, tomatoes, bread, eggs, uh... I want two kilos of dried cheese.",
+            "ar": ".لحظة، هممم، طماطم، خبز، بيض، آآآ، أريد كيلوين من الجبنة المجففة",
+            "he": ".רגע, הממ, עגבניות, לחם, ביצים, אה... אני רוצה שני קילוגרם של גבינה מיובשת"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Къысфэгъэгъу, къое гъугъэ тиlэжьэп, адыгэ къуае тиl ыуасэ къегъэхыгъэу.",
+          "langToTranslationMap": {
+            "en": "Sorry, we’re out of dried cheese. We have Adyghe cheese at a discount.",
+            "ar": ".عذرًا، لم يتبقَّ لدينا جبنة مجففة، لدينا جبنة أديغية بسعر مخفّض",
+            "he": ".סליחה, נגמרה לנו הגבינה המיובשת. יש לנו גבינה אדיגית במחיר מוזל"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Арымэ, адыгэ къуаер сштэщт.",
+          "langToTranslationMap": {
+            "en": "Alright, I’ll take the Adyghe cheese.",
+            "ar": ".حسنًا، سأخذ جبنة أديغية ",
+            "he": ".בסדר, אני אקח גבינה אדיגית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Джара пстэури?",
+          "langToTranslationMap": {
+            "en": "Is that everything?",
+            "ar": "هل هذا كل شيء؟",
+            "he": "?זה הכול"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Тхьапш мыlэрысэм ыуасэр?",
+          "langToTranslationMap": {
+            "en": "How much is the apple?",
+            "ar": "كم سعر التفاح؟",
+            "he": "?כמה עולה תפוח"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Ар чыжьэ къекlы, рубл 1500 ыуас.",
+          "langToTranslationMap": {
+            "en": "It’s imported from far away. The price is 1500 rubles.",
+            "ar": ".إنه مستورد من مكان بعيد. سعره 1500 روبل",
+            "he": ".זה מיובא ממקום רחוק. המחיר 1500 רובל"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Ар лъэпlэ дэд, сфаеп. Хьйсапыр тхьапш?",
+          "langToTranslationMap": {
+            "en": "That's too expensive, I don’t want it. What’s the total?",
+            "ar": "هذا غالٍ جدًا، لا أريد. ما هو الحساب؟",
+            "he": "?זה יקר מדי, אני לא רוצה. כמה הסכום"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Заур",
+          "originText": "Зэ къысфэгъэгъу, хьйсапыр: Цугу 1 КГ. 200 рубл, Кlэнкlэ 6 300 рубл, Къуае 1 КГ. 1000 рубл, Хьалыгъу 1 пхыр 550 рубл, пстэури зэхэтэу 2080 -рэ рубл.",
+          "langToTranslationMap": {
+            "en": "Sorry, the total is: 1 kg tomatoes – 200 rubles, 6 eggs – 300 rubles, 1 kg cheese – 1000 rubles, 1 loaf of bread – 550 rubles, total – 2080 rubles.",
+            "ar": ".عذرًا، الحساب كالتالي: كيلو طماطم – 200 روبل، 6  بيضات – 300 روبل، كيلو جبنة – 1000 روبل، ربطة خبز – 550 روبل، المجموع – 2080 روبل",
+            "he": ".סליחה, החשבון הוא: קילו עגבניות – 200 רובל, 6 ביצים – 300 רובל, קילו גבינה – 1000 רובל, כיכר לחם – 550 רובל, סך הכול – 2080 רובל"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Синэмис",
+          "originText": "Сыд пая 2080 -рэ рубл, Джыри зэ хьйсап къэшlыжь, хьйсапыр 2050 -рэ рублын фай.",
+          "langToTranslationMap": {
+            "en": "Why is it 2080 rubles? Recalculate, the total should be 2050 rubles.",
+            "ar": ".لماذا 2080 روبل؟ احسب مرة أخرى، يجب أن يكون الحساب 2050 روبل",
+            "he": ".למה זה 2080 רובל? תחשב שוב, הסכום צריך להיות 2050 רובל"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "9.1 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\9.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Тхьапш хьакlэхэу непэ къедгъэблэгъэщтхэр?",
+          "langToTranslationMap": {
+            "en": "How many guests are we hosting today?",
+            "ar": "كم عدد الضيوف الذين سنستضيفهم اليوم؟",
+            "he": "?כמה אורחים נארח היום"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Тфы е хы, Нарт къэмкlонкlи мэхъу.",
+          "langToTranslationMap": {
+            "en": "Five or six, Nart might not come.",
+            "ar": ".خمسة أو ستة، من الممكن أن لا يأتي نارت",
+            "he": ".חמישה או שישה, אולי נארט לא יבוא"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Сыд шхынэу яфэтыупщэрыхьэщтыр?",
+          "langToTranslationMap": {
+            "en": "What food shall we cook for them?",
+            "ar": "ما الطعام الذي سنطبخه لهم؟",
+            "he": "?איזה אוכל נבשל להם"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Сэ зэфэшъхьэфхэу шхыныгъуиплl сиl.",
+          "langToTranslationMap": {
+            "en": "I have four different dishes.",
+            "ar": ".لدي أربعة أطباق مختلفة",
+            "he": ".יש לי ארבע מנות שונות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Хъарзын, сэ сэлатэрэ хьантхъупсырэ гузэlухыхэу тшlынэу сэlо.",
+          "langToTranslationMap": {
+            "en": "Great, I’ll prepare a salad and soup as appetizers.",
+            "ar": ".ممتاز، أقول أنا سأحضّر سلطة وحساء كمقبلات",
+            "he": ".מצוין, אני אכין סלט ומרק כמתאבנים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Бибэрсырэ Нэфынэрэ хьалыжъор якlас.",
+          "langToTranslationMap": {
+            "en": "Bibrs and Nafna love haluj.",
+            "ar": ".بيبرس ونفنة يحبّون الحلوچ ",
+            "he": ".'ביברס ונפנה אוהבים חלוג"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Джыри хьалыжъуа? Сэ псырыжъо хьалыжъор пстэуми якlас сэlо.",
+          "langToTranslationMap": {
+            "en": "Haluj again? I’d say everyone loves psaryzho haluj (boiled cheese pies).",
+            "ar": ".حلوچ مرة أخرى؟ أقول إن الجميع يحبّ بسرچوه حلوچ  (فطائر مسلوقة محشوة بالجبنة)",
+            "he": ".חלוג' שוב? אני אומר שכולם אוהבים חלוג' פסרז'ו (פִּטָה מבושלת במילוי גבינה)"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Дэгъу псырыжъо хьалыжъо тыпщэрыхьэн. Iэшlутеор?",
+          "langToTranslationMap": {
+            "en": "Alright, we’ll cook psaryzho haluj. And dessert?",
+            "ar": "حسنًا، سنطبخ پسرچوه حلوچ. والحلوى؟",
+            "he": "?בסדר, נבשל פסרז'ו חלוג'. ומה לגבי קינוח"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Сэ кек къэсшlыщт.",
+          "langToTranslationMap": {
+            "en": "I'll make a cake.",
+            "ar": ".سأحضّر كعكة",
+            "he": ".אני אכין עוגה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Хъарзын. Некlо lофым тыфежьэн.",
+          "langToTranslationMap": {
+            "en": "Great. Let’s start working.",
+            "ar": ".ممتاز. هيا لنبدأ العمل",
+            "he": ".מצוין. בואי נתחיל לעבוד"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "9.2 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\9.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Сыд сэ къэсшlыщтыр? сыд о къэпшlыщтыр?",
+          "langToTranslationMap": {
+            "en": "What should I prepare? What will you prepare?",
+            "ar": "ماذا سأحضّر؟ ماذا ستحضّرين أنتِ؟",
+            "he": "?מה אני אכין? ומה את תכיני"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Сэ псырыжъо хьалыжъо сыпщэрыхьэщт.",
+          "langToTranslationMap": {
+            "en": "I will cook psaryzho haluj.",
+            "ar": ".سأطبخ پسرچوه لوچ",
+            "he": ".אני אבשל חלוג' פסרז'ו"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Сэ сэлатэмрэ хьантхъупсымрэ къэсшӀыщтых. Зэкlэ ящыкӀагъэхэр тиӀа?",
+          "langToTranslationMap": {
+            "en": "I’ll prepare the salad and soup. Do we have everything we need?",
+            "ar": "سأحضّر السلطة والحساء. هل لدينا كل ما نحتاجه؟",
+            "he": "?אני אכין את הסלט והמרק. האם יש לנו את כל מה שצריך"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Бжьыны къэлъы нэшэбэгу тиl ау цугу тиlэп тхъуи тиlэп.",
+          "langToTranslationMap": {
+            "en": "We have onions and lettuce, but we don’t have tomatoes or butter.",
+            "ar": ".لدينا بصل، خس وخيار، لكن لا يوجد لدينا طماطم وزبدة",
+            "he": ".יש לנו בצל וחסה, אבל אין לנו עגבניות וחמאה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Земгъэгъап щапlэм сыкlонышъ къэсщэфыщтых.",
+          "langToTranslationMap": {
+            "en": "Don’t worry, I’ll go to the grocery store and buy them.",
+            "ar": ".لا تقلقي، سأذهب إلى البقالة وأشتري",
+            "he": ".אל תדאגי, אני אלך למכולת ואקנה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "псырыжъо хьалыжъом пае хьаджыгъэрэ тхъу цlынэрэ тищыкlагъэх ахэри къыздэхьых.",
+          "langToTranslationMap": {
+            "en": "We need flour and butter for the psaryzho haluj. Bring them with you.",
+            "ar": ".نحتاج إلى طحين وزبدة للپسرچوه خلوچ، أحضرهما معك",
+            "he": ".אנחנו צריכים קמח וחמאה בשביל חלוג' פסרז'ו. תביא אותם איתך"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Лlыр",
+          "originText": "Тищыкlагъхэр псынкlэу къэсщэфынхэшъ скъэкlожьыщт.",
+          "langToTranslationMap": {
+            "en": "I’ll quickly buy what we need and return.",
+            "ar": ".سأشتري بسرعة ما نحتاجه وأعود",
+            "he": ".אני אקנה מהר את מה שצריך ואחזור"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Шъузыр",
+          "originText": "Зы щэ литри къыздэхь.",
+          "langToTranslationMap": {
+            "en": "Bring one liter of milk, too.",
+            "ar": ".أحضر معك لترًا واحدًا من الحليب",
+            "he": ".תביא גם ליטר חלב"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "13.1 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\13.1_1.mp3",
+    "parts": [
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэнэжъ",
+          "originText": "Алоо, хэт ар?",
+          "langToTranslationMap": {
+            "en": "Hello, who is this?",
+            "ar": "ألو، من هذا؟",
+            "he": "?הלו, מי זה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налбыи",
+          "originText": "Фэсэпщи нэнэжъ, сэры, Налбый. Опсэу пщэрыхьэн шlыкlэу къысэптыгъэм пае къыосэlо. Ау сэгузажъо. Непэ нэбгырибл къэкlощт, сыд сшlэщтыр?",
+          "langToTranslationMap": {
+            "en": "Hi Grandma, it's me, Nalby. I wanted to thank you for the recipe you gave me. Today, seven people are coming over — what should I do?",
+            "ar": "مرحباً جدتي، أنا نالبي. أود أن أشكركِ على الوصفة التي أعطيتِني إياها. اليوم سيأتي سبعة أشخاص، ماذا أفعل؟",
+            "he": "?שלום סבתא, זאת אני, נאלבי. רציתי להודות לך על המתכון שנתת לי. היום יבואו שבעה אנשים — מה לעשות"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэнэжъ",
+          "originText": "Сыдрэри фэдитlу шlы. Нэбгыриблым ар афырикъущт.",
+          "langToTranslationMap": {
+            "en": "Double the amount of everything. That will be enough for seven people.",
+            "ar": ".ضاعف الكمية من كل شيء. هذا يكفي لسبعة أشخاص",
+            "he": ".תכפיל את הכמות של הכול. זה יספיק לשבעה אנשים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налбыи",
+          "originText": "Ау сэтэнаи мэлыщэ къуаер икlасэп.",
+          "langToTranslationMap": {
+            "en": "But Stenai doesn’t like cheese made from sheep’s milk.",
+            "ar": ".لكن ستناي لا تحب الجبنة المصنوعة من حليب الغنم",
+            "he": ".אבל סתנאי לא אוהבת גבינה מחלב כבשים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэнэжъ",
+          "originText": "Чэмыщэ къое хьалыр, ари хъущт.",
+          "langToTranslationMap": {
+            "en": "A cow’s milk cheese disk will be fine too.",
+            "ar": ".قرص جبنة مصنوعة من حليب البقر ممكنٌ أيضاً",
+            "he": ".גם גבינה מחלב פרה תתאים"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налбыи",
+          "originText": "Сыда тэ тшхыщтыр?",
+          "langToTranslationMap": {
+            "en": "And what will we eat?",
+            "ar": "وماذا سنأكل نحن؟",
+            "he": "?ומה אנחנו נאכל"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэнэжъ",
+          "originText": "Щхыу.",
+          "langToTranslationMap": {
+            "en": "Yogurt.",
+            "ar": ".لبن",
+            "he": ".יוגורט"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налбыи",
+          "originText": "Ау Джэбагъы щхыу ишхырэп.",
+          "langToTranslationMap": {
+            "en": "But Jabagh doesn’t eat yogurt.",
+            "ar": ".لكن جباغ لا يأكل اللبن",
+            "he": ".אבל ג'באג לא אוכל יוגורט"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Нэнэжъ",
+          "originText": "Крем егъэшх.",
+          "langToTranslationMap": {
+            "en": "Give him cream.",
+            "ar": ".أطعمه قشطة",
+            "he": ".תן לו שמנת"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "right",
+          "characterName": "Налбыи",
+          "originText": "Хъарзын, гупшысэ дэгъу, опсэу нэнэжъ, шlукlэ.",
+          "langToTranslationMap": {
+            "en": "Great, that’s a good idea. Thanks Grandma, goodbye.",
+            "ar": ".ممتاز، فكرة جيدة. شكراً جدتي، إلى اللقاء",
+            "he": ".מצוין, רעיון טוב. תודה סבתא, להתראות"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "title": "19 dialogue 1",
+    "audio": "theLangPath\\lesson_5\\audio\\19.mp3",
+    "parts": [
+      {
+        "type": "poem",
+        "data": {
+          "title": {
+            "originText": "Лъэпкъ шъыгъу - Дзыбэ Саные.",
+            "langToTranslationMap": {
+              "en": "Lament of the People – Dzibeh Saniye",
+              "ar": "مرثية الشعب – دزيبه سانييه",
+              "he": "קינת העם – דזיבה סאניה"
+            }
+          },
+          "stanzas": [
+            {
+              "stanza": "1",
+              "originText": "Непэ силъэпкъ мэшъыгъо",
+              "langToTranslationMap": {
+                "en": "Today my people lament,",
+                "ar": "،اليوم شعبي يحدّ",
+                "he": ",היום עמי מקונן"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Мэшъыгъо лlэшlэгъум къехъугъэу",
+              "langToTranslationMap": {
+                "en": "They’ve mourned for more than a century.",
+                "ar": ".يحدّون منذ أكثر من قرن",
+                "he": ".הם מתאבלים יותר ממאה שנה"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "А машlом изао къелыгъэм",
+              "langToTranslationMap": {
+                "en": "Those who survived the flames of that war,",
+                "ar": "،إن عدد الناجين من لظى الحرب هذه",
+                "he": ",הניצולים מאש המלחמה ההיא"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Ипчъагъэ гур егъэлыгъо.",
+              "langToTranslationMap": {
+                "en": "Their sheer number sends chills down the spine.",
+                "ar": ".تقشعر الأبدان لكثرتهم",
+                "he": ".ריבויים מעורר צמרמורת"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Хьадэгъур зыми шъхьасыгъэп",
+              "langToTranslationMap": {
+                "en": "Death showed no mercy to anyone,",
+                "ar": "،لم يكترث الموت لأحد",
+                "he": ",המוות לא ריחם על איש"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Ижь чъыlэ зынэсырэр фэхызэ",
+              "langToTranslationMap": {
+                "en": "Everyone touched by its cold breath fell dead.",
+                "ar": ".فقد كان كل من تمسّت ريحه الباردة يسقط ميتاً",
+                "he": ".כל מי שנגעה בו נשימתו הקרה – נפל מת"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Адыгэр ихэку рагъэсыгъэп",
+              "langToTranslationMap": {
+                "en": "They did not let the Adyghe settle in their homeland.",
+                "ar": ".ولم يتركوا الأديغة يستقرون في وطنهم",
+                "he": ".לא הניחו לאדיגים לשוב למולדתם"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Адыгэр ичlыгу рафыгъ гъызэ.",
+              "langToTranslationMap": {
+                "en": "They expelled them from their land in tears.",
+                "ar": ".طردوا الأديغة من وطنهم وهم يبكون",
+                "he": ".הם גורשו מביתם בבכי"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Псэ минмэ джы хыр якъэхалъэу",
+              "langToTranslationMap": {
+                "en": "Thousands now lie buried beneath the sea,",
+                "ar": "،آلاف الأرواح الآن قبورهم قاع البحر",
+                "he": ",אלפי נשמות קבורות בקרקעית הים"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Псы чъыlэр ателъ чэфын хьылъэу",
+              "langToTranslationMap": {
+                "en": "Cold water wraps their bodies like a heavy shroud,",
+                "ar": "،الماء البارد كفنٌ ثقيلٌ فوق أجسادهم",
+                "he": ",מים קרים עוטפים את גופותיהם כמו תכריך כבד"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Ябгыбзэ ор шlуцlэм щэуалъэ",
+              "langToTranslationMap": {
+                "en": "Their cries echo through the Black Sea,",
+                "ar": "،صرخات لعناتهم تتردد في البحر الأسود",
+                "he": ",קללותיהם מהדהדות בים השחור"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Зилажьэм фатlупщы жьым хэлъэу.",
+              "langToTranslationMap": {
+                "en": "Carried by the wind to those who deserve it.",
+                "ar": ".يرسلونها مع الريح لمستحقيهم",
+                "he": ".נושבות ברוח לאוזני מי שראוי להן"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Шъукъэущ, сикъушъхьэ сыджхэр!",
+              "langToTranslationMap": {
+                "en": "Awaken, you peaks of my mountains!",
+                "ar": "!استيقظوا ، يا قمم جبالي",
+                "he": "!התעוררו, פסגות הררי"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Къэжъугъэуцу, сипсыхъохэр, шъуичъэ!",
+              "langToTranslationMap": {
+                "en": "Halt, my rivers, cease your flow!",
+                "ar": "!أوقفوا يا أنهاري، جريانكم",
+                "he": "!עצרו, נהרותיי, את זרמכם"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Зышъууф, симэзхэр, сышъоджэ!",
+              "langToTranslationMap": {
+                "en": "Bow down, my forests, I call to you!",
+                "ar": "!انحنوا يا غاباتي، أناديكم",
+                "he": "!השתחוו, יערותיי, אני קוראת לכן"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Шъудэшъыгъу силъэпкъ насыпынчъэ!",
+              "langToTranslationMap": {
+                "en": "Join in the mourning of my sorrowful people!",
+                "ar": "!شاركوا الحدا مع شعبي التعيس",
+                "he": "!הצטרפו לאבלו של עמי האומלל"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -30,7 +30,7 @@ export default function TheLanguagePathContentContainer() {
       }
 
       try {
-        const response = await fetch(`/theLangPath/content/lesson_${lessonIdx}.json`);
+        const response = await fetch(`/theLangPath/lesson_${lessonIdx}/lesson_${lessonIdx}.json`);
         if (!response.ok) {
           console.error(`Failed to load lesson data for lesson ${lessonIdx}`);
           return [];
