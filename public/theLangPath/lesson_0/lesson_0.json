@@ -1,6 +1,6 @@
 [
   {
-    "title": "0.1 Exercise 1",
+    "title": "0.1 Адыгабзэм итхыбзэхэр",
     "audio": "theLangPath\\lesson_0\\audio\\0_1.mp3",
     "parts": [
       {
@@ -471,7 +471,7 @@
     ]
   },
   {
-    "title": "1.1 Exercise 1",
+    "title": "1.1 А, О, Э, Ы, У, И, Е, М, С.",
     "audio": "theLangPath\\lesson_0\\audio\\1_1.mp3",
     "parts": [
       {
@@ -552,7 +552,7 @@
     ]
   },
   {
-    "title": "1.2 Exercise 1",
+    "title": "1.2 М, С.",
     "audio": "theLangPath\\lesson_0\\audio\\1_2.mp3",
     "parts": [
       {
@@ -583,7 +583,7 @@
     ]
   },
   {
-    "title": "1.3 Exercise 1",
+    "title": "1.3 А, О, Э, Ы, У, И, Е, М, С.",
     "audio": "theLangPath\\lesson_0\\audio\\1_3.mp3",
     "parts": [
       {
@@ -690,7 +690,7 @@
     ]
   },
   {
-    "title": "2.1 Exercise 1",
+    "title": "2.1 К, Т, I.",
     "audio": "theLangPath\\lesson_0\\audio\\2_1.mp3",
     "parts": [
       {
@@ -731,7 +731,7 @@
     ]
   },
   {
-    "title": "2.2 Exercise 1",
+    "title": "2.2 К, Т, I.",
     "audio": "theLangPath\\lesson_0\\audio\\2_2.mp3",
     "parts": [
       {
@@ -838,7 +838,7 @@
     ]
   },
   {
-    "title": "3.1 Exercise 1",
+    "title": "3.1 Ш, Щ.",
     "audio": "theLangPath\\lesson_0\\audio\\3_1.mp3",
     "parts": [
       {
@@ -869,7 +869,7 @@
     ]
   },
   {
-    "title": "3.2 Exercise 1",
+    "title": "3.2 Ш, Щ.",
     "audio": "theLangPath\\lesson_0\\audio\\3_2.mp3",
     "parts": [
       {
@@ -976,7 +976,7 @@
     ]
   },
   {
-    "title": "4.1 Exercise 1",
+    "title": "4.1 Я, Й.",
     "audio": "theLangPath\\lesson_0\\audio\\4_1.mp3",
     "parts": [
       {
@@ -1007,7 +1007,7 @@
     ]
   },
   {
-    "title": "4.2 Exercise 1",
+    "title": "4.2 Я, Й.",
     "audio": "theLangPath\\lesson_0\\audio\\4_2.mp3",
     "parts": [
       {
@@ -1114,7 +1114,7 @@
     ]
   },
   {
-    "title": "5.1 Exercise 1",
+    "title": "5.1 П, Р, Н.",
     "audio": "theLangPath\\lesson_0\\audio\\5_1.mp3",
     "parts": [
       {
@@ -1155,7 +1155,7 @@
     ]
   },
   {
-    "title": "5.2 Exercise 1",
+    "title": "5.2 П, Р, Н.",
     "audio": "theLangPath\\lesson_0\\audio\\5_2.mp3",
     "parts": [
       {
@@ -1238,7 +1238,7 @@
     ]
   },
   {
-    "title": "6.1 Exercise 1",
+    "title": "6.1  З, Х.",
     "audio": "theLangPath\\lesson_0\\audio\\6_1.mp3",
     "parts": [
       {
@@ -1269,7 +1269,7 @@
     ]
   },
   {
-    "title": "6.2 Exercise 1",
+    "title": "6.2  З, Х.",
     "audio": "theLangPath\\lesson_0\\audio\\6_2.mp3",
     "parts": [
       {
@@ -1376,7 +1376,7 @@
     ]
   },
   {
-    "title": "7.1 Exercise 1",
+    "title": "7.1 Ч, Ц.",
     "audio": "theLangPath\\lesson_0\\audio\\7_1.mp3",
     "parts": [
       {
@@ -1407,7 +1407,7 @@
     ]
   },
   {
-    "title": "7.2 Exercise 1",
+    "title": "7.2 ЦУ.",
     "audio": "theLangPath\\lesson_0\\audio\\7_2.mp3",
     "parts": [
       {
@@ -1442,7 +1442,7 @@
     ]
   },
   {
-    "title": "7.3 Exercise 1",
+    "title": "7.3 Ч, Ц, ЦУ.",
     "audio": "theLangPath\\lesson_0\\audio\\7_3.mp3",
     "parts": [
       {
@@ -1549,7 +1549,7 @@
     ]
   },
   {
-    "title": "8.1 Exercise 1",
+    "title": "8.1  Д, Л.",
     "audio": "theLangPath\\lesson_0\\audio\\\\8_1.mp3",
     "parts": [
       {
@@ -1580,7 +1580,7 @@
     ]
   },
   {
-    "title": "8.2 Exercise 1",
+    "title": "8.2  Д, Л.",
     "audio": "theLangPath\\lesson_0\\audio\\\\8_2.mp3",
     "parts": [
       {
@@ -1687,7 +1687,7 @@
     ]
   },
   {
-    "title": "9.1 Exercise 1",
+    "title": "9.1 Б, Г.",
     "audio": "theLangPath\\lesson_0\\audio\\\\9_1.mp3",
     "parts": [
       {
@@ -1718,7 +1718,7 @@
     ]
   },
   {
-    "title": "9.2 Exercise 1",
+    "title": "9.2 ГУ.",
     "audio": "theLangPath\\lesson_0\\audio\\\\9_2.mp3",
     "parts": [
       {
@@ -1753,7 +1753,7 @@
     ]
   },
   {
-    "title": "9.3 Exercise 1",
+    "title": "9.3 Б, Г, ГУ.",
     "audio": "theLangPath\\lesson_0\\audio\\\\9_3.mp3",
     "parts": [
       {
@@ -1860,7 +1860,7 @@
     ]
   },
   {
-    "title": "10.1 Exercise 1",
+    "title": "10.1 Ж, Ф.",
     "audio": "theLangPath\\lesson_0\\audio\\10_1.mp3",
     "parts": [
       {
@@ -1891,7 +1891,7 @@
     ]
   },
   {
-    "title": "10.2 Exercise 1",
+    "title": "10.2 Ж, Ф.",
     "audio": "theLangPath\\lesson_0\\audio\\10_2.mp3",
     "parts": [
       {
@@ -1998,7 +1998,7 @@
     ]
   },
   {
-    "title": "11.1 Exercise 1",
+    "title": "11.1 В.",
     "audio": "theLangPath\\lesson_0\\audio\\11_1.mp3",
     "parts": [
       {
@@ -2019,7 +2019,7 @@
     ]
   },
   {
-    "title": "11.2 Exercise 1",
+    "title": "11.2 В.",
     "audio": "theLangPath\\lesson_0\\audio\\11_2.mp3",
     "parts": [
       {
@@ -2054,7 +2054,7 @@
     ]
   },
   {
-    "title": "12.1 Exercise 1",
+    "title": "12.1 КЪ, КI.",
     "audio": "theLangPath\\lesson_0\\audio\\12_1.mp3",
     "parts": [
       {
@@ -2085,7 +2085,7 @@
     ]
   },
   {
-    "title": "12.2 Exercise 1",
+    "title": "12.2 КIУ.",
     "audio": "theLangPath\\lesson_0\\audio\\12_2.mp3",
     "parts": [
       {
@@ -2120,7 +2120,7 @@
     ]
   },
   {
-    "title": "12.3 Exercise 1",
+    "title": "12.3 КЪ, КI, КIУ.",
     "audio": "theLangPath\\lesson_0\\audio\\12_3.mp3",
     "parts": [
       {
@@ -2227,7 +2227,7 @@
     ]
   },
   {
-    "title": "13.1 Exercise 1",
+    "title": "13.1 ДЖ, ГЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\13_1.mp3",
     "parts": [
       {
@@ -2258,7 +2258,7 @@
     ]
   },
   {
-    "title": "13.2 Exercise 1",
+    "title": "13.2 ДЖ, ГЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\13_2.mp3",
     "parts": [
       {
@@ -2365,7 +2365,7 @@
     ]
   },
   {
-    "title": "14.1 Exercise 1",
+    "title": "14.1 ХЬ, ХЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\14_1.mp3",
     "parts": [
       {
@@ -2396,7 +2396,7 @@
     ]
   },
   {
-    "title": "14.2 Exercise 1",
+    "title": "14.2 ХЬ, ХЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\14_2.mp3",
     "parts": [
       {
@@ -2503,7 +2503,7 @@
     ]
   },
   {
-    "title": "15.1 Exercise 1",
+    "title": "15.1  ЛЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\15_1.mp3",
     "parts": [
       {
@@ -2524,7 +2524,7 @@
     ]
   },
   {
-    "title": "15.2 Exercise 1",
+    "title": "15.2  ЛЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\15_2.mp3",
     "parts": [
       {
@@ -2583,7 +2583,7 @@
     ]
   },
   {
-    "title": "16.1 Exercise 1",
+    "title": "16.1 ЖЬ, ЖЪ.",
     "audio": "theLangPath\\lesson_0\\audio\\16_1.mp3",
     "parts": [
       {
@@ -2614,7 +2614,7 @@
     ]
   },
   {
-    "title": "16.2 Exercise 1",
+    "title": "16.2 ЖЪУ.",
     "audio": "theLangPath\\lesson_0\\audio\\16_2.mp3",
     "parts": [
       {
@@ -2649,7 +2649,7 @@
     ]
   },
   {
-    "title": "16.3 Exercise 1",
+    "title": "16.3 ЖЬ, ЖЪ, ЖЪУ.",
     "audio": "theLangPath\\lesson_0\\audio\\16_3.mp3",
     "parts": [
       {
@@ -2756,7 +2756,7 @@
     ]
   },
   {
-    "title": "17.1 Exercise 1",
+    "title": "17.1 ШЪ, ШI.",
     "audio": "theLangPath\\lesson_0\\audio\\17_1.mp3",
     "parts": [
       {
@@ -2787,7 +2787,7 @@
     ]
   },
   {
-    "title": "17.2 Exercise 1",
+    "title": "17.2 ШЪУ.",
     "audio": "theLangPath\\lesson_0\\audio\\17_2.mp3",
     "parts": [
       {
@@ -2822,7 +2822,7 @@
     ]
   },
   {
-    "title": "17.3 Exercise 1",
+    "title": "17.3 ШlУ.",
     "audio": "theLangPath\\lesson_0\\audio\\17_3.mp3",
     "parts": [
       {
@@ -2857,7 +2857,7 @@
     ]
   },
   {
-    "title": "17.4 Exercise 1",
+    "title": "17.4 ШЪ, ШI, ШЪУ, ШIУ.",
     "audio": "theLangPath\\lesson_0\\audio\\17_4.mp3",
     "parts": [
       {
@@ -2964,7 +2964,7 @@
     ]
   },
   {
-    "title": "18.1 Exercise 1",
+    "title": "18.1  ЦӀ.",
     "audio": "theLangPath\\lesson_0\\audio\\18_1.mp3",
     "parts": [
       {
@@ -2985,7 +2985,7 @@
     ]
   },
   {
-    "title": "18.2 Exercise 1",
+    "title": "18.2 ЦӀ.",
     "audio": "theLangPath\\lesson_0\\audio\\18_2.mp3",
     "parts": [
       {
@@ -3044,7 +3044,7 @@
     ]
   },
   {
-    "title": "19.1 Exercise 1",
+    "title": "19.1 ЧЪ, ЧӀ.",
     "audio": "theLangPath\\lesson_0\\audio\\19_1.mp3",
     "parts": [
       {
@@ -3075,7 +3075,7 @@
     ]
   },
   {
-    "title": "19.2 Exercise 1",
+    "title": "19.2 ЧЪ, ЧӀ.",
     "audio": "theLangPath\\lesson_0\\audio\\19_2.mp3",
     "parts": [
       {
@@ -3182,7 +3182,7 @@
     ]
   },
   {
-    "title": "20.1 Exercise 1",
+    "title": "20.1  ТӀ, ПI.",
     "audio": "theLangPath\\lesson_0\\audio\\20_1.mp3",
     "parts": [
       {
@@ -3213,7 +3213,7 @@
     ]
   },
   {
-    "title": "20.2 Exercise 1",
+    "title": "20.2  ТӀ, ПI.",
     "audio": "theLangPath\\lesson_0\\audio\\20_2.mp3",
     "parts": [
       {
@@ -3320,7 +3320,7 @@
     ]
   },
   {
-    "title": "21.1 Exercise 1",
+    "title": "21.1 ЛӀ, ДЗ.",
     "audio": "theLangPath\\lesson_0\\audio\\21_1.mp3",
     "parts": [
       {
@@ -3351,7 +3351,7 @@
     ]
   },
   {
-    "title": "21.2 Exercise 1",
+    "title": "21.2 ЛӀ, ДЗ.",
     "audio": "theLangPath\\lesson_0\\audio\\21_2.mp3",
     "parts": [
       {
@@ -3458,7 +3458,7 @@
     ]
   },
   {
-    "title": "22.1 Exercise 1",
+    "title": "22.1 Къытегъэзэжь.",
     "audio": "theLangPath\\lesson_0\\audio\\22_1.mp3",
     "parts": [
       {
