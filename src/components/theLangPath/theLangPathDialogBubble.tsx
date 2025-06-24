@@ -5,8 +5,10 @@ import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { getCharacterByName } from "~/components/theLangPath/panels";
 import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
+import useWindowSize from "~/hooks/useWindowDimensions";
 
 export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDialogBubble }) {
+  const { width } = useWindowSize();
   const { leftOrRight, characterName, originText, langToTranslationMap } = data;
   const character = getCharacterByName(characterName);
   const { settings } = usePreferredSettings();
@@ -19,7 +21,7 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
   return (
     <div className="mx-auto flex w-full flex-col gap-4 border-b-2 border-solid border-gray-300 pb-2">
       <div
-        className={cn("flex items-start gap-4", {
+        className={cn("flex items-start gap-1 sm:gap-2 md:gap-4", {
           "flex-row": leftOrRight === "left",
           "flex-row-reverse": leftOrRight === "right",
         })}
@@ -29,14 +31,23 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
           <Image
             src={character.avatar}
             alt={character.name}
-            width={65}
-            height={65}
-            className={cn({ "scale-x-[-1]": leftOrRight === "right" })}
+            width={width < 640 ? 45 : 65}
+            height={width < 640 ? 45 : 65}
+            unoptimized
+            className={cn(
+              width < 640
+                ? "max-h-[45px] min-h-[45px] max-w-[45px] min-w-[45px]"
+                : "max-h-[65px] min-h-[65px] max-w-[65px] min-w-[65px]",
+              {
+                "scale-x-[-1]": leftOrRight === "right",
+              },
+            )}
           />
           <p
             className={cn(
               "text-2xl font-bold",
               leftOrRight === "left" ? "text-[#f27141]" : "text-[#4a7324]",
+              TEXT_SIZE_MAP[circassianFontSize],
             )}
           >
             {character.name}

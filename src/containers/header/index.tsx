@@ -114,7 +114,7 @@ export default function Header() {
           </div>
 
           {isMobileMenuOpen && (
-            <div className="absolute top-16 left-0 z-60 w-full bg-white shadow-lg">
+            <div className="absolute top-16 left-0 z-50 w-full bg-white shadow-lg">
               {NAV_ITEMS.map((item) => {
                 return (
                   <MobileNavItem
