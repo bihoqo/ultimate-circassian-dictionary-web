@@ -59,7 +59,7 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
           <div className="relative">
             <div
               className={cn(
-                "relative flex flex-row flex-wrap gap-4 rounded-sm border border-solid p-4",
+                "relative flex flex-row flex-wrap gap-2 rounded-sm border border-solid p-2 sm:gap-3 sm:p-3 md:gap-4 md:p-4",
                 { "border-[#f19f76] bg-[#fbddd1]": leftOrRight === "left" },
                 { "border-[#96c07e] bg-[#d6e8ce]": leftOrRight === "right" },
               )}

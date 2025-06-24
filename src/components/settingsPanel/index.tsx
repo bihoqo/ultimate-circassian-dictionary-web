@@ -141,7 +141,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
       >
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-bold">Settings</h2>
-          <button className="text-xl font-bold hover:opacity-50" onClick={onClose}>
+          <button className="text-4xl font-bold hover:opacity-50 sm:text-2xl" onClick={onClose}>
             X
           </button>
         </div>
