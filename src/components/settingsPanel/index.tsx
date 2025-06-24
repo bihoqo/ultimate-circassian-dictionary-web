@@ -44,16 +44,27 @@ function FontSizeSetting({
       <span className="font-semibold">{label}</span>
       <div className="mt-3 flex flex-col gap-y-4 sm:flex-row sm:items-center sm:justify-between sm:gap-x-2">
         <p className="whitespace-nowrap">Font size</p>
-        <div className="flex w-full flex-col items-center gap-4 sm:flex-row sm:gap-2">
-          {/* Minus button */}
-          <MinusSvg
-            className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
-            onClick={decrease}
-            isDisabled={fontSize === min}
-          />
 
-          {/* Slider + size + plus + reset in a row on desktop */}
-          <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row sm:justify-start sm:gap-2">
+        <div className="flex w-full flex-col items-center gap-3 sm:flex-row sm:gap-2">
+          {/* Desktop layout: row */}
+          {/* Mobile layout: stacked with special grouping */}
+
+          {/* Mobile: (- +) in a row */}
+          <div className="flex items-center justify-center gap-10 sm:hidden">
+            <MinusSvg
+              className="h-8 w-8 cursor-pointer hover:opacity-50"
+              onClick={decrease}
+              isDisabled={fontSize === min}
+            />
+            <PlusSvg
+              className="h-8 w-8 cursor-pointer hover:opacity-50"
+              onClick={increase}
+              isDisabled={fontSize === max}
+            />
+          </div>
+
+          {/* Slider + value */}
+          <div className="flex w-full flex-col items-center sm:flex-row sm:justify-start sm:gap-2">
             <input
               type="range"
               min={min}
@@ -63,21 +74,29 @@ function FontSizeSetting({
               onChange={(e) => onChange(Number(e.target.value))}
               className="w-full max-w-[180px] py-2 sm:max-w-[200px] sm:py-0"
             />
-
             <span className="w-[32px] text-center">{fontSize}</span>
 
-            <PlusSvg
-              className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
-              onClick={increase}
-              isDisabled={fontSize === max}
-            />
-
-            <RestoreSvg
-              className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
-              onClick={restore}
-              isDisabled={fontSize === defaultValue}
-            />
+            {/* Desktop: inline - and + */}
+            <div className="hidden gap-2 sm:flex">
+              <MinusSvg
+                className="h-6 w-6 cursor-pointer hover:opacity-50"
+                onClick={decrease}
+                isDisabled={fontSize === min}
+              />
+              <PlusSvg
+                className="h-6 w-6 cursor-pointer hover:opacity-50"
+                onClick={increase}
+                isDisabled={fontSize === max}
+              />
+            </div>
           </div>
+
+          {/* Restore (always last, centered on mobile) */}
+          <RestoreSvg
+            className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
+            onClick={restore}
+            isDisabled={fontSize === defaultValue}
+          />
         </div>
       </div>
     </div>
