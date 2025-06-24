@@ -18,6 +18,72 @@ interface SettingsPanelProps {
   onClose: () => void;
 }
 
+interface FontSizeSettingProps {
+  label: string;
+  fontSize: number;
+  min: number;
+  max: number;
+  defaultValue: number;
+  onChange: (value: number) => void;
+}
+
+function FontSizeSetting({
+  label,
+  fontSize,
+  min,
+  max,
+  defaultValue,
+  onChange,
+}: FontSizeSettingProps) {
+  const decrease = () => onChange(fontSize - 1);
+  const increase = () => onChange(fontSize + 1);
+  const restore = () => onChange(defaultValue);
+
+  return (
+    <div className="mt-6">
+      <span className="font-semibold">{label}</span>
+      <div className="mt-3 flex flex-col gap-y-4 sm:flex-row sm:items-center sm:justify-between sm:gap-x-2">
+        <p className="whitespace-nowrap">Font size</p>
+        <div className="flex w-full flex-col items-center gap-4 sm:flex-row sm:gap-2">
+          {/* Minus button */}
+          <MinusSvg
+            className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
+            onClick={decrease}
+            isDisabled={fontSize === min}
+          />
+
+          {/* Slider + size + plus + reset in a row on desktop */}
+          <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row sm:justify-start sm:gap-2">
+            <input
+              type="range"
+              min={min}
+              max={max}
+              step={1}
+              value={fontSize}
+              onChange={(e) => onChange(Number(e.target.value))}
+              className="w-full max-w-[180px] py-2 sm:max-w-[200px] sm:py-0"
+            />
+
+            <span className="w-[32px] text-center">{fontSize}</span>
+
+            <PlusSvg
+              className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
+              onClick={increase}
+              isDisabled={fontSize === max}
+            />
+
+            <RestoreSvg
+              className="h-8 w-8 cursor-pointer hover:opacity-50 sm:h-6 sm:w-6"
+              onClick={restore}
+              isDisabled={fontSize === defaultValue}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
   const { settings, saveSettings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, translationLangs } = settings;
@@ -50,7 +116,7 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
 
       <div
         className={cn(
-          "fixed top-0 right-0 z-50 h-full w-[200px] transform bg-white p-4 shadow-lg transition-transform duration-300 ease-in-out sm:w-[300px] md:w-96",
+          "fixed top-0 right-0 z-50 h-full max-h-screen w-[200px] transform overflow-y-auto bg-white p-4 shadow-lg transition-transform duration-300 ease-in-out sm:w-[300px] md:w-96",
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
@@ -61,120 +127,40 @@ export default function SettingsPanel({ isOpen, onClose }: SettingsPanelProps) {
           </button>
         </div>
 
-        {/* Circassian font size settings */}
-        <div className="mt-4">
-          <span className="font-semibold">Circassian font</span>
-          <div className="mt-2 flex flex-row items-center justify-between gap-2">
-            <p>Font size</p>
-            <div className="flex flex-row items-center gap-2">
-              <MinusSvg
-                height="24"
-                width="24"
-                className="cursor-pointer hover:opacity-50"
-                onClick={() => changeCircassianFontSizeHandler(circassianFontSize - 1)}
-                isDisabled={circassianFontSize === MIN_ORIGIN_FONT_SIZE}
-              />
-
-              <div className="relative flex w-48 items-center">
-                {" "}
-                {/* Increased width here */}
-                <input
-                  type="range"
-                  min={MIN_ORIGIN_FONT_SIZE}
-                  max={MAX_ORIGIN_FONT_SIZE}
-                  step={1}
-                  value={circassianFontSize}
-                  onChange={(e) => changeCircassianFontSizeHandler(Number(e.target.value))}
-                  className="w-full" // Ensures the slider fills the parent width
-                />
-              </div>
-
-              <span className="w-[16px]">{circassianFontSize}</span>
-
-              <PlusSvg
-                height="24"
-                width="24"
-                className="cursor-pointer hover:opacity-50"
-                onClick={() => changeCircassianFontSizeHandler(circassianFontSize + 1)}
-                isDisabled={circassianFontSize === MAX_ORIGIN_FONT_SIZE}
-              />
-              <RestoreSvg
-                height="24"
-                width="24"
-                className="cursor-pointer hover:opacity-50"
-                onClick={() => changeCircassianFontSizeHandler(DEFAULT_SETTINGS.circassianFontSize)}
-                isDisabled={circassianFontSize === DEFAULT_SETTINGS.circassianFontSize}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Translation font size settings */}
-        <div className="mt-4">
-          <span className="font-semibold">Translation font</span>
-          <div className="mt-2 flex flex-row justify-between gap-2">
-            <p>Font size</p>
-            <div className="flex flex-row items-center gap-2">
-              <MinusSvg
-                height="24"
-                width="24"
-                className="cursor-pointer hover:opacity-50"
-                onClick={() => changeTranslationFontSizeHandler(translationFontSize - 1)}
-                isDisabled={translationFontSize === MIN_TRANSLATION_FONT_SIZE}
-              />
-
-              {/* Increased width here */}
-              <input
-                type="range"
-                min={MIN_TRANSLATION_FONT_SIZE}
-                max={MAX_TRANSLATION_FONT_SIZE}
-                value={translationFontSize}
-                onChange={(e) => changeTranslationFontSizeHandler(Number(e.target.value))}
-                className="w-48"
-              />
-
-              <span className="w-[16px]">{translationFontSize}</span>
-
-              <PlusSvg
-                height="24"
-                width="24"
-                className="cursor-pointer hover:opacity-50"
-                onClick={() => changeTranslationFontSizeHandler(translationFontSize + 1)}
-                isDisabled={translationFontSize === MAX_TRANSLATION_FONT_SIZE}
-              />
-
-              <RestoreSvg
-                height="24"
-                width="24"
-                className="cursor-pointer hover:opacity-50"
-                onClick={() =>
-                  changeTranslationFontSizeHandler(DEFAULT_SETTINGS.translationFontSize)
-                }
-                isDisabled={translationFontSize === DEFAULT_SETTINGS.translationFontSize}
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Translation Language settings */}
-        <div className="mt-4">
+        <div className="mt-6">
           <span className="font-semibold">Translation Language</span>
-          <div className="mt-2 flex flex-col gap-2">
-            {Object.entries(DEFAULT_TRANSLATION_LANG_TO_NAME).map((lang) => {
-              const [shortName, longName] = lang;
-              return (
-                <label key={shortName} className="flex items-center gap-2">
-                  <input
-                    type="checkbox"
-                    checked={translationLangs.includes(shortName as ISupportedTranslationLang)}
-                    onChange={() => toggleTranslationLang(shortName as ISupportedTranslationLang)}
-                  />
-                  {longName}
-                </label>
-              );
-            })}
+          <div className="mt-3 flex flex-col gap-2">
+            {Object.entries(DEFAULT_TRANSLATION_LANG_TO_NAME).map(([shortName, longName]) => (
+              <label key={shortName} className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  checked={translationLangs.includes(shortName as ISupportedTranslationLang)}
+                  onChange={() => toggleTranslationLang(shortName as ISupportedTranslationLang)}
+                />
+                {longName}
+              </label>
+            ))}
           </div>
         </div>
+
+        <FontSizeSetting
+          label="Circassian font"
+          fontSize={circassianFontSize}
+          min={MIN_ORIGIN_FONT_SIZE}
+          max={MAX_ORIGIN_FONT_SIZE}
+          defaultValue={DEFAULT_SETTINGS.circassianFontSize}
+          onChange={changeCircassianFontSizeHandler}
+        />
+
+        <FontSizeSetting
+          label="Translation font"
+          fontSize={translationFontSize}
+          min={MIN_TRANSLATION_FONT_SIZE}
+          max={MAX_TRANSLATION_FONT_SIZE}
+          defaultValue={DEFAULT_SETTINGS.translationFontSize}
+          onChange={changeTranslationFontSizeHandler}
+        />
       </div>
     </>
   );
