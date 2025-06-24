@@ -24,12 +24,7 @@ export default function WordPage() {
       <main className="size-full">
         <ContainerDiv>
           <div className="flex w-full flex-grow flex-col gap-4">
-            <h1
-              className={cn("w-full text-center text-5xl font-semibold", { hidden: width < 400 })}
-            >
-              Circassian Dictionary
-            </h1>
-            <SearchContainer showOnMobile={false} />
+            <SearchContainer />
           </div>
           <div
             className={cn(

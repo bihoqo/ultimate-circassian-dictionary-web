@@ -6,6 +6,7 @@ import { TEXT_SIZE_MAP } from "~/constants/setting";
 import { getCharacterByName } from "~/components/theLangPath/panels";
 import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 import useWindowSize from "~/hooks/useWindowDimensions";
+import { MOBILE_VERSION_WIDTH } from "~/constants";
 
 export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDialogBubble }) {
   const { width } = useWindowSize();
@@ -31,11 +32,11 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
           <Image
             src={character.avatar}
             alt={character.name}
-            width={width < 640 ? 45 : 65}
-            height={width < 640 ? 45 : 65}
+            width={width < MOBILE_VERSION_WIDTH ? 45 : 65}
+            height={width < MOBILE_VERSION_WIDTH ? 45 : 65}
             unoptimized
             className={cn(
-              width < 640
+              width < MOBILE_VERSION_WIDTH
                 ? "max-h-[45px] min-h-[45px] max-w-[45px] min-w-[45px]"
                 : "max-h-[65px] min-h-[65px] max-w-[65px] min-w-[65px]",
               {

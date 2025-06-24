@@ -7,8 +7,9 @@ import { useParams, useRouter } from "next/navigation";
 import { regularWordToSafeWord } from "~/utils/wordFormatting";
 import useWindowSize from "~/hooks/useWindowDimensions";
 import KeyboardWrapper from "~/components/keyboardWrapper";
+import { MOBILE_VERSION_WIDTH } from "~/constants";
 
-export default function SearchContainer({ showOnMobile }: { showOnMobile: boolean }) {
+export default function SearchContainer() {
   const { width } = useWindowSize();
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [inputValue, setInputValue] = React.useState<string>("");
@@ -37,13 +38,9 @@ export default function SearchContainer({ showOnMobile }: { showOnMobile: boolea
     searchInputRef.current?.focus();
   }
 
-  if (!showOnMobile && width < 640) {
-    return null;
-  }
-
-  if (showOnMobile && width < 640) {
+  if (width < MOBILE_VERSION_WIDTH) {
     return (
-      <div className="z-2 mx-auto flex w-11/12 flex-col">
+      <div className="z-2 mx-auto flex w-full flex-col px-1">
         <div className={cn("flex flex-row items-center justify-center")}>
           {/* Search Input */}
           <SearchInput

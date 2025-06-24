@@ -25,8 +25,6 @@ interface HeaderSearchResultsDropdownProps {
   setDropdownVisible: (visible: boolean) => void;
 }
 
-const SIZE_STYLE = cn("sm:w-full w-11/12");
-
 export default function HeaderSearchResultsDropdown({
   searchInputValue,
   onWordSelection,
@@ -113,7 +111,7 @@ export default function HeaderSearchResultsDropdown({
         ref={dropdownRef}
         className={cn(
           "absolute top-[80px] left-1/2 flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center gap-2 overflow-y-auto rounded-b-[16px] bg-white shadow-lg",
-          SIZE_STYLE,
+          "w-11/12 sm:w-full",
         )}
       >
         <div className="flex items-center justify-center p-4">
@@ -129,7 +127,7 @@ export default function HeaderSearchResultsDropdown({
         ref={dropdownRef}
         className={cn(
           "absolute top-[80px] left-1/2 flex max-h-80 -translate-x-1/2 transform flex-col items-center justify-center overflow-y-auto rounded-b-[16px] bg-white py-4 shadow-lg",
-          SIZE_STYLE,
+          "w-11/12 sm:w-full",
         )}
       >
         <p className="text-center text-xl font-semibold text-black md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl">
@@ -150,7 +148,7 @@ export default function HeaderSearchResultsDropdown({
         "6xl:max-h-[900px] 5xl:max-h-[875px] 3xl:max-h-[825px] 4xl:max-h-[850px] max-h-[600px] md:max-h-[600px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px]",
         "w-full overflow-x-hidden overflow-y-auto break-words text-ellipsis whitespace-normal",
         "p-0 sm:p-1 md:p-2 lg:p-4",
-        SIZE_STYLE,
+        "w-full",
       )}
     >
       <div className="flex w-full items-center justify-between border-b-2 border-solid border-[#0049d7] px-2 py-4 text-left text-lg font-bold">

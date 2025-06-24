@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import { INavBarItem } from "~/interfaces";
 import SettingsPanel from "~/components/settingsPanel";
 import SettingsSvg from "~/components/svg/settingsSvg";
+import { MOBILE_VERSION_WIDTH } from "~/constants";
 
 function Logo({ onClick }: { onClick: () => void }) {
   return (
@@ -37,7 +38,7 @@ function NavItem({ item, onClick }: { item: INavBarItem; onClick: () => void }) 
     <button
       className={cn(
         "flex items-center gap-1 rounded-lg px-2 py-2 font-bold text-[#303f2e] hover:text-[#637f5e]/50",
-        "3xl:text-4xl text-xl lg:text-xl xl:text-2xl 2xl:text-3xl",
+        "3xl:text-4xl text-lg lg:text-xl xl:text-2xl 2xl:text-3xl",
       )}
       onClick={onClick}
     >
@@ -94,15 +95,14 @@ export default function Header() {
   // Check if current path is "/the-language-path" to show the setting icon
   const isOnLanguagePath = pathname?.startsWith("/the-language-path");
 
-  if (width < 640) {
+  if (width < MOBILE_VERSION_WIDTH) {
     return (
       <div className={cn("z-50 w-full", { fixed: pathname?.includes("dictionary") })}>
         <div className="relative z-50 flex flex-row gap-4 bg-[#afdda7] p-2 shadow">
           <div className="mx-auto flex w-full flex-row items-center gap-1">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              <FaHamburger size={36} />
+              <FaHamburger size={46} />
             </button>
-            <SearchContainer showOnMobile={true} />
 
             {/* Settings icon added on mobile next to the search input */}
             {isOnLanguagePath && (

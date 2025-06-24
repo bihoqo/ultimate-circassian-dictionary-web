@@ -19,7 +19,7 @@ export function Content() {
     <ContainerDiv>
       <div className="mb-16 flex w-full flex-grow flex-col gap-4">
         <h1 className="w-full text-center text-5xl font-semibold">Circassian Dictionary</h1>
-        <SearchContainer showOnMobile={false} />
+        <SearchContainer />
       </div>
       <Image src="/fav/icon-1042x1042.png" width={300} height={300} alt="logo" />
       <p className="mt-8 w-11/12 text-center text-2xl md:w-1/2">

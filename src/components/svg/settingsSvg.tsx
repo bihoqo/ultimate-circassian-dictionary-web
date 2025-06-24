@@ -2,8 +2,8 @@ import React from "react";
 import { GenericSvgProps } from "~/interfaces";
 
 export default function SettingsSvg({
-  width = "28",
-  height = "28",
+  width = "46",
+  height = "46",
   className,
   fill = "#000000",
   onClick,
