@@ -7,52 +7,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Данэ",
+          "characterName": {
+            "originText": "Данэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шlу. Сэ сцIэр Данэ. О сыда пцlэр?",
           "langToTranslationMap": {
             "en": "Good day. My name is Dana. What is your name?",
             "ar": "نهارك سعيد ، أنا اسمي  دانا ، أنت ما هو اسمك ؟",
             "he": "?יום טוב. שמי דנה. מה שמך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцlэр Сэтэнай.",
           "langToTranslationMap": {
             "en": "My name is Satenai.",
             "ar": ".أنا اسمي ستناي",
             "he": ".שמי סתנאי"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Данэ",
+          "characterName": {
+            "originText": "Данэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ укъикIыра?",
           "langToTranslationMap": {
             "en": "From where are you?",
             "ar": "من أين أنت؟",
             "he": "?מאיפה את"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Мыекъуапэ сыкъекIы.",
           "langToTranslationMap": {
             "en": "I am from Maykop.",
             "ar": ".أنا من مايكوب",
             "he": ".אני ממיקופ"
-          }
+          },
+          "characterFace": 10
         }
       }
     ]
@@ -65,65 +97,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нарт",
+          "characterName": {
+            "originText": "Нарт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Фэсапщи. Сэ сцIэр Нарт. О сыда пцlэр?",
           "langToTranslationMap": {
             "en": "Hello. My name is Nart. What is your name?",
             "ar": "مرحبا. أنا اسمي نارت. أنت ما هو اسمك ؟",
             "he": "?שלום. שמי נארת. מה שמך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Аслъан",
+          "characterName": {
+            "originText": "Аслъан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцlэр Аслъан.",
           "langToTranslationMap": {
             "en": "My name is Aslan.",
             "ar": ".أنا اسمي أسلان",
             "he": ".שמי אסלאן"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нарт",
+          "characterName": {
+            "originText": "Нарт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ укъикIыра, Аслъан?",
           "langToTranslationMap": {
             "en": "From where are you Aslan?",
             "ar": "من أين أنت أسلان؟",
             "he": "?מאיפה אתה אסלאן"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Аслъан",
+          "characterName": {
+            "originText": "Аслъан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Истамбулы сыкъекIы. О тыдэ укъикIыра?",
           "langToTranslationMap": {
             "en": "I am from Istanbul. And you?",
             "ar": "أنا من إسطنبول . من أين أنت ؟",
             "he": "?אני מאיסטנבול. ואתה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нарт",
+          "characterName": {
+            "originText": "Нарт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Налчыкы сыкъекlы.",
           "langToTranslationMap": {
             "en": "I am from Nalchik.",
             "ar": ".أنا من نالتشيك",
             "he": ".אני מנלצ'יק"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -136,26 +208,42 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нэрыт",
+          "characterName": {
+            "originText": "Нэрыт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Фэсапщи, сэ сцIэр Нэрыт, Лащымэ сащыщ.",
           "langToTranslationMap": {
             "en": "Hello, my name is Narit, I am from Lash family.",
             "ar": ".مرحبا، أنا اسمي نرِت، أنا من آل لاش",
             "he": ".שלום, שמי נרית, אני ממשפחת לאש"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Енал",
+          "characterName": {
+            "originText": "Енал",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къеблагъ, сэ сцIэр Енал, Мышъэмэ сащыщ.",
           "langToTranslationMap": {
             "en": "Welcome, my name is Ynal, I am from Misha family.",
             "ar": ".تفضل،  أنا اسمي ينال، أنا من آل مِّشّة",
             "he": ".ברוך הבא, שמי ינאל, אני ממשפעת מישא"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -168,78 +256,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нэрыс",
+          "characterName": {
+            "originText": "Нэрыс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Фэсапщи, сэ сцIэр Нэрыс.",
           "langToTranslationMap": {
             "en": "Hello, my name is Neris.",
             "ar": ".مرحبا، أنا اسمي نَرِس",
             "he": "שלום, שמי נַרֶס"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Заур",
+          "characterName": {
+            "originText": "Заур",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къеблагъ, сэ сцIэр Заур.",
           "langToTranslationMap": {
             "en": "Welcome, my name is Zaur.",
             "ar": ".تفضل،  أنا اسمي زاوِر",
             "he": ".ברוך הבא, שמי זאור"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нэрыс",
+          "characterName": {
+            "originText": "Нэрыс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къысфэгъэгъу, сыда пцIэр?",
           "langToTranslationMap": {
             "en": "Excuse me, what is your name?",
             "ar": "عفوا، ما هو اسمك؟",
             "he": "?סליחה, מה שמך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Заур",
+          "characterName": {
+            "originText": "Заур",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Заур.",
           "langToTranslationMap": {
             "en": "Zaur.",
             "ar": ".زاوِر",
             "he": ".זאור"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нэрыс",
+          "characterName": {
+            "originText": "Нэрыс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шIу, Заур.",
           "langToTranslationMap": {
             "en": "Good day, Zaur.",
             "ar": ".نهارك سعيد، زاوِر",
             "he": ".יום טוב, זאור"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Заур",
+          "characterName": {
+            "originText": "Заур",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шIу, Нэрыс.",
           "langToTranslationMap": {
             "en": "Good day, Nerys.",
             "ar": ".نهارك سعيد، نَرِس",
             "he": ".יום טוב, נַרֶס"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -252,39 +388,63 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "lазэ",
+          "characterName": {
+            "originText": "lазэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уипчэдыжь шIу, сэ сцIэр lазэ. Сыда о пцIэр?",
           "langToTranslationMap": {
             "en": "Good morning, my name is Laze. What is your name?",
             "ar": "صباح الخير، أنا اسمي أزه، ما هو اسمك؟",
             "he": "?בוקר טוב, שמי אזה. מה שמך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Нэф",
+          "characterName": {
+            "originText": "Нэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уипчэдыжь шIу, сэ сцIэр Нэф. Тыдэ ущыщ, lаз?",
           "langToTranslationMap": {
             "en": "Good morning, my name is Nef. Where are you from, Aza?",
             "ar": "صباح الخير، أنا اسمي نَف. من أين أنت أز؟",
             "he": "?בוקר טוב, שמי נָף. מאיפה אתה אזה"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "lазэ",
+          "characterName": {
+            "originText": "lазэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Рихьаныем сыщыщ.",
           "langToTranslationMap": {
             "en": "I am from Rihaniya.",
             "ar": ".نا من الريحانية",
             "he": ".אני מריחאניה"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -297,78 +457,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Блан",
+          "characterName": {
+            "originText": "Блан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ укъикIыра?",
           "langToTranslationMap": {
             "en": "From where are you?",
             "ar": "من أين أنت؟",
             "he": "?מאיפה את"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Дэнэф",
+          "characterName": {
+            "originText": "Дэнэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хэусае сыкъекlы.",
           "langToTranslationMap": {
             "en": "I am from Khousai.",
             "ar": ".أنا من خهوساي",
             "he": ".אני האווסאיה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Блан",
+          "characterName": {
+            "originText": "Блан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыда пцIэр?",
           "langToTranslationMap": {
             "en": "What is your name?",
             "ar": "ما هو اسمك؟",
             "he": "?מה שמך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Дэнэф",
+          "characterName": {
+            "originText": "Дэнэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "lэбрэдж Дэнэф.",
           "langToTranslationMap": {
             "en": "My name is Abrej Denef.",
             "ar": ".أبرج دنف",
             "he": ".שמי אברג' דנף"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Блан",
+          "characterName": {
+            "originText": "Блан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыда бзэу пшlэхэрэр?",
           "langToTranslationMap": {
             "en": "What languages do you know?",
             "ar": "أية لغات تعرف؟",
             "he": "?אילו שפות את יודעת"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Дэнэф",
+          "characterName": {
+            "originText": "Дэнэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Адыгабзэрэ урысыбзэрэ.",
           "langToTranslationMap": {
             "en": "Adyghe and Russian.",
             "ar": ".الأديغابزة والروسية",
             "he": ".אדיג'בזה ורוסית"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -381,78 +589,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Блан",
+          "characterName": {
+            "originText": "Блан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ укъикIыра?",
           "langToTranslationMap": {
             "en": "From where are you?",
             "ar": "من أين أنت؟",
             "he": "?מאיפה את"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Дэнэф",
+          "characterName": {
+            "originText": "Дэнэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хэусае сыкъекlы.",
           "langToTranslationMap": {
             "en": "I am from Khousai.",
             "ar": ".أنا من خهوساي",
             "he": ".אני האווסאיה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Блан",
+          "characterName": {
+            "originText": "Блан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыда пцIэр?",
           "langToTranslationMap": {
             "en": "What is your name?",
             "ar": "ما هو اسمك؟",
             "he": "?מה שמך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Дэнэф",
+          "characterName": {
+            "originText": "Дэнэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "lэбрэдж Дэнэф.",
           "langToTranslationMap": {
             "en": "My name is Abrej Denef.",
             "ar": "لبزو دنف.",
             "he": "שמי אברג' דנף."
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Блан",
+          "characterName": {
+            "originText": "Блан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыда бзэу пшlэхэрэр?",
           "langToTranslationMap": {
             "en": "What languages do you know?",
             "ar": "أية لغات تعرف؟",
             "he": "?אילו שפות את יודעת"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Дэнэф",
+          "characterName": {
+            "originText": "Дэнэф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Адыгабзэрэ урысыбзэрэ.",
           "langToTranslationMap": {
             "en": "Adyghe and Russian.",
             "ar": ".الأديغابزة والروسية",
             "he": ".אדיג'בזה ורוסית"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -465,39 +721,63 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пэрыт",
+          "characterName": {
+            "originText": "Пэрыт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцlэр Пэрыт, Хъун Пэрыт.",
           "langToTranslationMap": {
             "en": "My name is Perit, Khun Perit.",
             "ar": ".أنا اسمي برت. خُن برت",
             "he": ".שמי פָּרֵת, חון פָּרֵת"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пэрыт",
+          "characterName": {
+            "originText": "Пэрыт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Аманы сыщэпсэу",
           "langToTranslationMap": {
             "en": "I live in Amman.",
             "ar": ".أنا أعيش في عمان",
             "he": ".אני גר בעמאן"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пэрыт",
+          "characterName": {
+            "originText": "Пэрыт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ адыгабзэрэ арапыбзэрэ сэшlэ.",
           "langToTranslationMap": {
             "en": "I know Adyghe and Arabic.",
             "ar": ".أنا أعرف الأديغية والعربية",
             "he": ".אני יודע אדיגית וערבית"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -510,65 +790,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Разэ",
+          "characterName": {
+            "originText": "Разэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шIу, сэ сцIэр Нэфыш Разэ.",
           "langToTranslationMap": {
             "en": "Good morning, my name is Razé.",
             "ar": ".نهارك سعيد  ، أنا اسمي رازة",
             "he": ".בוקר טוב, שמי ראזה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Hypбый",
+          "characterName": {
+            "originText": "Hypбый",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шIу. Сэ сцIэр Гъоркlожъ Hypбый.",
           "langToTranslationMap": {
             "en": "Good morning. My name is Gorkoj Hypбый.",
             "ar": ".نهارك سعيد ، أنا اسمي غوركؤج نوربي",
             "he": ".בוקר טוב. שמי ר'ורקוז' נורבי"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Разэ",
+          "characterName": {
+            "originText": "Разэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къысфэгъэгъу, сыдa пцIэр?",
           "langToTranslationMap": {
             "en": "Excuse me, what is your name?",
             "ar": "عفوا، ما هو اسمك ؟",
             "he": "?סליחה, מה שמך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Hypбый",
+          "characterName": {
+            "originText": "Hypбый",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Гъоркlожъ Hypбый, сэ Дузджэм сыщыщ. О тыдэ ущыщa?",
           "langToTranslationMap": {
             "en": "Gorkoj Hypбый, I am from Duzdjem. Where are you from?",
             "ar": "غوركؤج نوربي، أنا من دُزجه، من أين أنت؟",
             "he": "?ר'ורקוז' נורבי, אני מדוזג'ה. מאיפה את"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Разэ",
+          "characterName": {
+            "originText": "Разэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Iэнкъэрэм сыщыщ.",
           "langToTranslationMap": {
             "en": "I am from Anqara.",
             "ar": ".أنا من أنقره",
             "he": ".אני מאנקרה"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -581,65 +901,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Озырмэс",
+          "characterName": {
+            "originText": "Озырмэс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шIу, сэ сцIэр Уджыхъу Озырмэс.",
           "langToTranslationMap": {
             "en": "Good morning, my name is Wijukh Wazirmas.",
             "ar": ".نهارك سعيد  ، أنا اسمي وِجوخ وَزِرمس",
             "he": ".בוקר טוב, שמי וּוּג'וך וּאזֵרְמַס"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Чан",
+          "characterName": {
+            "originText": "Чан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шIу, ныбджэгъу Озырмэс, Сэ сцIэр Хьэлэо Чан.",
           "langToTranslationMap": {
             "en": "Good day, my friend, Wijukh Wazirmas. My name is Halwa chan.",
             "ar": ".نهارك سعيد  ، صديقي وِجوخ وَزِرمس. أنا اسمي حَلَوه تشان",
             "he": ".יום טוב, ידידי,וּוּג'וך וּאזֵרְמַס. שמי חלוּוּה צ'אן"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Озырмэс",
+          "characterName": {
+            "originText": "Озырмэс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ укъикIыра?",
           "langToTranslationMap": {
             "en": "Where are you from?",
             "ar": "من أين أنت؟",
             "he": "?מאיפה אתה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Чан",
+          "characterName": {
+            "originText": "Чан",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Пэнэхэсы сыщыщ, оры?",
           "langToTranslationMap": {
             "en": "I am from Panakes, and you?",
             "ar": "أنا من بنة-خهس. أنت؟",
             "he": "?אני מפנהאס, ואתה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Озырмэс",
+          "characterName": {
+            "originText": "Озырмэс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "ТIуапсэ сыщыщ.",
           "langToTranslationMap": {
             "en": "I am from Tiwapsa.",
             "ar": ".أنا من  طوابسه",
             "he": ".אני מטוואפסה"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -652,65 +1012,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симаз",
+          "characterName": {
+            "originText": "Симаз",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уипчыхьэ шIу.",
           "langToTranslationMap": {
             "en": "Good evening.",
             "ar": ".مساء الخير",
             "he": ".ערב טוב"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Къазбэч",
+          "characterName": {
+            "originText": "Къазбэч",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уипчыхьэ шIу, сэ сцIэр Гъунэжьыкъо Къазбэч.",
           "langToTranslationMap": {
             "en": "Good evening, my name is Gunezhyko Kazbech.",
             "ar": ".مساء الخير، أنا اسمي غوه-نَجِقوه قزبَتش",
             "he": ".'ערב טוב, שמי ר'ואנאז'וקוה קזבץ"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симаз",
+          "characterName": {
+            "originText": "Симаз",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къысфэгъэгъу, сыдa пцIэр?",
           "langToTranslationMap": {
             "en": "Excuse me, what is your name?",
             "ar": "عفوا، ما هو اسمك؟",
             "he": "?סליחה, מה שמך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Къазбэч",
+          "characterName": {
+            "originText": "Къазбэч",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Гъунэжьыкъо, Гъунэжьыкъо Къазбэч.",
           "langToTranslationMap": {
             "en": "Gunezhyko, Gunezhyko Kazbech.",
             "ar": ".غوه-نَجِقوه، غوه-نَجِقوه قزبَتش",
             "he": ".'ר'ואנאז'וקוה, ר'ואנאז'וקוה קזבץ"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симаз",
+          "characterName": {
+            "originText": "Симаз",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцIэр Симаз, Джантыгъ Симаз.",
           "langToTranslationMap": {
             "en": "My name is Simaz, Jantig Simaz.",
             "ar": ".أنا اسمي سيماز، جانتِغ سيماز",
             "he": ".שמי סימאז, ג'נטיר' סימאז"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -723,104 +1123,168 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Данэ",
+          "characterName": {
+            "originText": "Данэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хэтa мыр ?",
           "langToTranslationMap": {
             "en": "Who is this?",
             "ar": "من هذا؟",
             "he": "?מי זה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Нэфын",
+          "characterName": {
+            "originText": "Нэфын",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мыр Хъут Синэ.",
           "langToTranslationMap": {
             "en": "This is Khut Sine.",
             "ar": ".هذا خُت سينه",
             "he": ".זה חות סינה"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Данэ",
+          "characterName": {
+            "originText": "Данэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ ар къикlыра?",
           "langToTranslationMap": {
             "en": "Where is she from?",
             "ar": "من أين هي؟",
             "he": "?מאיפה היא"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Нэфын",
+          "characterName": {
+            "originText": "Нэфын",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар Нарткъалэ къекlы.",
           "langToTranslationMap": {
             "en": "It is from Nartkale.",
             "ar": ".إنها من نارتقاله",
             "he": ".היא מנארתקרלה"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Данэ",
+          "characterName": {
+            "originText": "Данэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тыдэ щыl а Нарткъалэp?",
           "langToTranslationMap": {
             "en": "Where is Nartkale?",
             "ar": "أين تقع نارتقاله؟",
             "he": "?איפה נארתקאלה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Нэфын",
+          "characterName": {
+            "originText": "Нэфын",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къэбэртаим ит.",
           "langToTranslationMap": {
             "en": "It is in Kabardia.",
             "ar": ".تقع في القبرتاي",
             "he": ".זה בקברתאי"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Данэ",
+          "characterName": {
+            "originText": "Данэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар адыгабзэкIэ мэгyщыIа?",
           "langToTranslationMap": {
             "en": "Does she speak Adyghe?",
             "ar": "هل هي تتحدث الأديغية؟",
             "he": "?האם היא מדברת אדיגית"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Нэфын",
+          "characterName": {
+            "originText": "Нэфын",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, ар адыгабзэкIэ мэгyщыIэ.",
           "langToTranslationMap": {
             "en": "Yes, she speaks Adyghe.",
             "ar": ".نعم هي تتحدث الاديغية",
             "he": ".כן, היא מדברת אדיגית"
-          }
+          },
+          "characterFace": 10
         }
       }
     ]
@@ -832,52 +1296,282 @@
       {
         "type": "exampleInEachLang",
         "data": [
-          { "cir": "А", "ar": "", "en": "", "he": "" },
-          { "cir": "Б", "ar": "", "en": "", "he": "" },
-          { "cir": "В", "ar": "", "en": "", "he": "" },
-          { "cir": "Г", "ar": "", "en": "", "he": "" },
-          { "cir": "ГЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "Д", "ar": "", "en": "", "he": "" },
-          { "cir": "ДЖ", "ar": "", "en": "", "he": "" },
-          { "cir": "ДЗ", "ar": "", "en": "", "he": "" },
-          { "cir": "Е", "ar": "", "en": "", "he": "" },
-          { "cir": "Ж", "ar": "", "en": "", "he": "" },
-          { "cir": "ЖЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "ЖЬ", "ar": "", "en": "", "he": "" },
-          { "cir": "З", "ar": "", "en": "", "he": "" },
-          { "cir": "И", "ar": "", "en": "", "he": "" },
-          { "cir": "Й", "ar": "", "en": "", "he": "" },
-          { "cir": "К", "ar": "", "en": "", "he": "" },
-          { "cir": "КЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "Кl", "ar": "", "en": "", "he": "" },
-          { "cir": "Л", "ar": "", "en": "", "he": "" },
-          { "cir": "ЛЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "М", "ar": "", "en": "", "he": "" },
-          { "cir": "Н", "ar": "", "en": "", "he": "" },
-          { "cir": "О", "ar": "", "en": "", "he": "" },
-          { "cir": "П", "ar": "", "en": "", "he": "" },
-          { "cir": "Пl", "ar": "", "en": "", "he": "" },
-          { "cir": "Р", "ar": "", "en": "", "he": "" },
-          { "cir": "С", "ar": "", "en": "", "he": "" },
-          { "cir": "Т", "ar": "", "en": "", "he": "" },
-          { "cir": "Тl", "ar": "", "en": "", "he": "" },
-          { "cir": "У", "ar": "", "en": "", "he": "" },
-          { "cir": "Ф", "ar": "", "en": "", "he": "" },
-          { "cir": "Х", "ar": "", "en": "", "he": "" },
-          { "cir": "ХЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "ХЬ", "ar": "", "en": "", "he": "" },
-          { "cir": "Ц", "ar": "", "en": "", "he": "" },
-          { "cir": "Цl", "ar": "", "en": "", "he": "" },
-          { "cir": "Ч", "ar": "", "en": "", "he": "" },
-          { "cir": "ЧЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "Чl", "ar": "", "en": "", "he": "" },
-          { "cir": "Ш", "ar": "", "en": "", "he": "" },
-          { "cir": "ШЪ", "ar": "", "en": "", "he": "" },
-          { "cir": "Щ", "ar": "", "en": "", "he": "" },
-          { "cir": "Ы", "ar": "", "en": "", "he": "" },
-          { "cir": "Э", "ar": "", "en": "", "he": "" },
-          { "cir": "Я", "ar": "", "en": "", "he": "" },
-          { "cir": "I", "ar": "", "en": "", "he": "" }
+          {
+            "cir": "А",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Б",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "В",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Г",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ГЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Д",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ДЖ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ДЗ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Е",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Ж",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ЖЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ЖЬ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "З",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "И",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Й",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "К",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "КЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Кl",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Л",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ЛЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "М",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Н",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "О",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "П",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Пl",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Р",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "С",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Т",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Тl",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "У",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Ф",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Х",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ХЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ХЬ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Ц",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Цl",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Ч",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ЧЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Чl",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Ш",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "ШЪ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Щ",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Ы",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Э",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "Я",
+            "ar": "",
+            "en": "",
+            "he": ""
+          },
+          {
+            "cir": "I",
+            "ar": "",
+            "en": "",
+            "he": ""
+          }
         ]
       }
     ]
@@ -890,104 +1584,168 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симэ",
+          "characterName": {
+            "originText": "Симэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уипчэдыжь шlу. Сыда плъэкъуацlэр?",
           "langToTranslationMap": {
             "en": "Good morning. What is your last name?",
             "ar": "صباح الخير. ما هو اسم عائلتك ؟",
             "he": "?בוקר טוב. מה שם משפחתך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Гъукlэлl.",
           "langToTranslationMap": {
             "en": "Gutchel.",
             "ar": ".غوتشلأ",
             "he": ".'גוצ'ל"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симэ",
+          "characterName": {
+            "originText": "Симэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд? Тащ фэдэу птхыщт?",
           "langToTranslationMap": {
             "en": "What? How is it written?",
             "ar": "ماذا ؟ كيف تكتب؟",
             "he": "?מה? איך כותבים"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Гъу - кlэлl.",
           "langToTranslationMap": {
             "en": "Gu - tchel.",
             "ar": ".غو-تشلأ",
             "he": "'גו - צ'ל."
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симэ",
+          "characterName": {
+            "originText": "Симэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Дэгъу. Сыда пцlэр?",
           "langToTranslationMap": {
             "en": "Okay. What is your name?",
             "ar": "حسنا. ما هو اسمك؟",
             "he": "?בסדר. מה שמך"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэтэнай. Сэ - тэ - най.",
           "langToTranslationMap": {
             "en": "Setenai. Se-te-nai.",
             "ar": ".ستناي. س-ت-ناي",
             "he": ".סתנאי. ס - ת - נאי"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Симэ",
+          "characterName": {
+            "originText": "Симэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Дэгъу. Тыдэ ущыпсэурэ?",
           "langToTranslationMap": {
             "en": "Okay. Where do you live?",
             "ar": "حسنا. أين تعيش؟",
             "he": "?בסדר. איפה את גרה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ мыекъуапэ сыщэпсэу.",
           "langToTranslationMap": {
             "en": "I live in Maikop.",
             "ar": ".أنا أعيش في مايكوب",
             "he": ".אני גרה במאיקופ"
-          }
+          },
+          "characterFace": 10
         }
       }
     ]
@@ -1000,91 +1758,147 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Батыр",
+          "characterName": {
+            "originText": "Батыр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыда пцIэр?",
           "langToTranslationMap": {
             "en": "What is your name?",
             "ar": "ما هو اسمك؟",
             "he": "?מה שמך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Озырмэдж",
+          "characterName": {
+            "originText": "Озырмэдж",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Озырмэдж",
           "langToTranslationMap": {
             "en": "Wessermaj.",
             "ar": ".وزِرمج",
             "he": ".'וואזרמאג"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Батыр",
+          "characterName": {
+            "originText": "Батыр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къысфэгъэгъу, сыда пцIэр?",
           "langToTranslationMap": {
             "en": "Excuse me, what is your name?",
             "ar": "عفوا، ما هو اسمك؟",
             "he": "?סליחה, מה שמך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Озырмэдж",
+          "characterName": {
+            "originText": "Озырмэдж",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Озырмэдж",
           "langToTranslationMap": {
             "en": "Wessermaj",
             "ar": ".وزِرمج",
             "he": ".'וואזרמאג"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Батыр",
+          "characterName": {
+            "originText": "Батыр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тащ фэдэу птхыщт?",
           "langToTranslationMap": {
             "en": "How is it written?",
             "ar": "كيف تكتب؟",
             "he": "?איך כותבים"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Озырмэдж",
+          "characterName": {
+            "originText": "Озырмэдж",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "О-зыр-мэдж.",
           "langToTranslationMap": {
             "en": "We-sser-maj.",
             "ar": ".و-زِر-مج",
             "he": ".ווא-זר-מאג"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Батыр",
+          "characterName": {
+            "originText": "Батыр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьэуегъэпсэу",
           "langToTranslationMap": {
             "en": "Thank you.",
             "ar": ".شكرا",
             "he": ".תודה"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -1097,91 +1911,147 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Джэбагъ",
+          "characterName": {
+            "originText": "Джэбагъ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыда пцIэр?",
           "langToTranslationMap": {
             "en": "What is your name?",
             "ar": "ما هو اسمك؟",
             "he": "?מה שמך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Пщымаф",
+          "characterName": {
+            "originText": "Пщымаф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Пщымаф.",
           "langToTranslationMap": {
             "en": "Pshemaf.",
             "ar": ".بشِماف",
             "he": ".פשימאף"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Джэбагъ",
+          "characterName": {
+            "originText": "Джэбагъ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Пщэмыфа?",
           "langToTranslationMap": {
             "en": "Pshamif?",
             "ar": "?بشَمف",
             "he": "?פשאמיף"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Пщымаф",
+          "characterName": {
+            "originText": "Пщымаф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау.",
           "langToTranslationMap": {
             "en": "No.",
             "ar": ".لا",
             "he": ".לא"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Джэбагъ",
+          "characterName": {
+            "originText": "Джэбагъ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тащ фэдэу птхыщт, къысэпlона?",
           "langToTranslationMap": {
             "en": "How is it written, can you tell me?",
             "ar": "كيف تكتب؟هل يمكن أن تقول لي؟",
             "he": "?איך כותבים, אתה יכול לומר לי"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Пщымаф",
+          "characterName": {
+            "originText": "Пщымаф",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Пщы-маф.",
           "langToTranslationMap": {
             "en": "Pshe-maf.",
             "ar": ".بشِ-ماف",
             "he": ".פשי-מאף"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Джэбагъ",
+          "characterName": {
+            "originText": "Джэбагъ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьэуегъэпсэу",
           "langToTranslationMap": {
             "en": "Thank you.",
             "ar": ".شكرا",
             "he": ".תודה"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -1194,39 +2064,63 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Тембот",
+          "characterName": {
+            "originText": "Тембот",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцlэр Мэщбэшlэ Тембот. Сэ 40 синыбжь.",
           "langToTranslationMap": {
             "en": "My name is Mashbashah Tembot. I am 40 years old.",
             "ar": ".أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40",
             "he": ".שמי משבשה תמבוט. אני בן 40"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Тембот",
+          "characterName": {
+            "originText": "Тембот",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мыекъопэ къалэ сыщэпсэу. Мекъуапэ Адыгаем икъэлэ шъхьаl.",
           "langToTranslationMap": {
             "en": "I live in the city of Maikop. Maikop is the capital of Adygea.",
             "ar": ".أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي",
             "he": ".אני גר בעיר מאיקופ. מאיקופ היא בירת אדיגיה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Тембот",
+          "characterName": {
+            "originText": "Тембот",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сыпхъашl. Унэхэр пхъэкlэ сшlынхэр сикlас.",
           "langToTranslationMap": {
             "en": "I am a carpenter. I like building houses with wood.",
             "ar": ".أنا نجار. أحب بناء البيوت بالخشب",
             "he": ".אני נגר. אני אוהב לבנות בתים מעץ"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1239,78 +2133,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Бибэрс",
+          "characterName": {
+            "originText": "Бибэрс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцlэр Хъут Бибэрс.",
           "langToTranslationMap": {
             "en": "My name is Khut Bibers.",
             "ar": ".أنا اسمي خُت بيبرس",
             "he": ".שמי חות ביברס"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Бибэрс",
+          "characterName": {
+            "originText": "Бибэрс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ Чэркескы сыщэпсэу.",
           "langToTranslationMap": {
             "en": "I live in Cherkessk.",
             "ar": ",أنا أعيش في تشركيسك",
             "he": ",אני גר בצ'רקסק"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Бибэрс",
+          "characterName": {
+            "originText": "Бибэрс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Черкеск республикэм Черкеск икъэлэ шъхьаl.",
           "langToTranslationMap": {
             "en": "Cherkessk is the capital of the Circassian republic",
             "ar": ".تشركيسك هي عاصمة جمهورية الشركس",
             "he": ".צ'רקסק היא בירת הרפובליקה הצ'רקסית"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Бибэрс",
+          "characterName": {
+            "originText": "Бибэрс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "37 синыбжь.",
           "langToTranslationMap": {
             "en": "I am 37 years old.",
             "ar": ".عمري 37",
             "he": ".אני בן 37"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Бибэрс",
+          "characterName": {
+            "originText": "Бибэрс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сытхакlу. Усэхэр Адыгабзэкlэ стхынхэр сикlас.",
           "langToTranslationMap": {
             "en": "I am a writer. I like writing poetry in Adyghe.",
             "ar": ".أنا كاتب.أحب كتابة الأشعار بالأديغابزة",
             "he": "אני סופר. אני אוהב לכתוב שירים באדיגית"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Бибэрс",
+          "characterName": {
+            "originText": "Бибэрс",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Къэсщагъ. Бынэу кlэлэцlыкlуищ сиl.",
           "langToTranslationMap": {
             "en": "I am married. I have three young children.",
             "ar": ".متزوج. لدي ثلاثة أولاد صغار",
             "he": ".אני נשוי. יש לי שלושה ילדים קטינים"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -1323,65 +2265,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Синэмис",
+          "characterName": {
+            "originText": "Синэмис",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сцlэр Цэй Синэмис. 25 синыбжь.",
           "langToTranslationMap": {
             "en": "My name is Tzei Sinemis. I am 25 years old.",
             "ar": ".أنا اسمي تزي سينميس. عمري 25",
             "he": ".שמי צ'י סינמיס. בת 25"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Синэмис",
+          "characterName": {
+            "originText": "Синэмис",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Налчыкы сыдэс. Налчык Къэбэртаим икъэлэ шъхьаl.",
           "langToTranslationMap": {
             "en": "I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria.",
             "ar": ".أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي",
             "he": ".אני גרה בנאלצ'יק. נאלצ'יק היא בירת קברדינו-בלקריה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Синэмис",
+          "characterName": {
+            "originText": "Синэмис",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сыегъэджакlу. Адыгабзэ есэгъаджэх.",
           "langToTranslationMap": {
             "en": "I am a teacher. I teach Adyghe language.",
             "ar": ".أنا معلمة. أعلم الأديغابزة",
             "he": ".אני מורה. מלמדת את השפה האדיגית"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Синэмис",
+          "characterName": {
+            "originText": "Синэмис",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Адыгабзэр сикlас. Джыри езгъэджэнхэр сикlас.",
           "langToTranslationMap": {
             "en": "I love Adyghe language. I also love teaching.",
             "ar": ".أحب الأديغابزة. وأيضا أحب التعليم",
             "he": ".אני אוהבת את השפה האדיגית .אני גם אוהבת ללמד"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Синэмис",
+          "characterName": {
+            "originText": "Синэмис",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ сыдэкlуагъ. Пшъашъэ сиl, Синэ ыцlэр, илъэситlу ыныбжь.",
           "langToTranslationMap": {
             "en": "I am married. I have a daughter, her name is Sina, she is two years old.",
             "ar": ".أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين",
             "he": ".אני נשואה. יש לי בת, שמה סינה, היא בת שנתיים"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]

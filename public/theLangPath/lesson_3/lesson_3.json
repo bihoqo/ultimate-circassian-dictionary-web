@@ -126,65 +126,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "ХъопкI остыгъэм сэ сфай.",
           "langToTranslationMap": {
             "en": "I want the electric lamp.",
             "ar": ".أنا أريد المصباح الكهربائي",
             "he": ".אני רוצה את המנורה החשמלית"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "ХъопкI остыгъэу мыра?",
           "langToTranslationMap": {
             "en": "Is this the electric lamp?",
             "ar": "هل هذا المصباح الكهربائي؟",
             "he": "?האם זו המנורה החשמלית"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау, модэ щылъыр ары, сыд фэдиз ыуасэр?",
           "langToTranslationMap": {
             "en": "No, the one over there. How much does it cost?",
             "ar": "لا، ذلك الذي هناك! ما هو سعره؟",
             "he": "?לא, זה ששם. כמה זה עולה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл щэкl ныIэп.",
           "langToTranslationMap": {
             "en": "Only 30 rubles.",
             "ar": ".فقط 30 روبل",
             "he": ".רק 30 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар лъэпIэ дэд!",
           "langToTranslationMap": {
             "en": "That's too expensive!",
             "ar": "!هذا غالٍ جداً",
             "he": "!זה יקר מאוד"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -197,39 +237,63 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Еплъи, мо хэутылъэр пыут шъыпкъ.",
           "langToTranslationMap": {
             "en": "Look, that printer is really cheap.",
             "ar": ".انظر، تلك الطابعة هي رخيصة حقاً",
             "he": ".תראה, המדפסת הזו ממש זולה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ыуасэр шъитlурэ плlыкlырэ ныIэп.",
           "langToTranslationMap": {
             "en": "Its price is only 240 rubles.",
             "ar": ".سعرها فقط 240 روبل",
             "he": ".המחיר שלה רק 240 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Теубытагъэу зэIыхьэгъэн фай.",
           "langToTranslationMap": {
             "en": "Surely it must be broken!",
             "ar": "!بالتأكيد يجب أن تكون معطلة",
             "he": "!זאת בהחלט חייבת להיות מקולקלת."
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -242,78 +306,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Телевизорым рублишъэрэ икlырэ ыуас, утым рубл блыкl ыуас.",
           "langToTranslationMap": {
             "en": "The TV costs 180 rubles, and the iron costs 70 rubles.",
             "ar": ".التلفاز سعره 180 روبل، والمكواة سعرها 70 روبل",
             "he": ".הטלוויזיה עולה 180 רובל, והמגהץ עולה 70 רובל"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Телевизорыр цIыкIу дэд рублишъэрэ икlырэр бэ дэд арыкIэ, рублишъэрэ пшlырэ къылъыстыщт.",
           "langToTranslationMap": {
             "en": "The TV is too small, 180 rubles is too much for it. I’ll pay 110 rubles for it.",
             "ar": ".التلفاز صغير جداً، 180 روبل كثير جداً عليه، سأدفع فيه 110 روبل",
             "he": ".הטלוויזיה קטנה מאוד, 180 רובל זה יותר מדי בשבילה, אני אשלם 110 רובל בשבילה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау ар мэкIэ дэд, кIэ хьазыр пIон плъэкIыщт.",
           "langToTranslationMap": {
             "en": "No, that’s too little. You can say it’s almost new.",
             "ar": ".لا، هذا قليل جداً، يمكنك القول إنه جديد تقريباً",
             "he": ".לא, זה מעט מדי, אפשר לומר שהוא כמעט חדש"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ щэкlырэ.",
           "langToTranslationMap": {
             "en": "130 rubles.",
             "ar": ".130 روبل",
             "he": ".130 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ плlыкlырэ.",
           "langToTranslationMap": {
             "en": "140 rubles.",
             "ar": ".140 روبل",
             "he": ".140 רובל"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хъун, сщэфын.",
           "langToTranslationMap": {
             "en": "Alright, I’ll take it.",
             "ar": ".حسناً، سأشتريه",
             "he": ".בסדר, אני אקנה את זה"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -326,78 +438,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "---",
+          "characterName": {
+            "originText": "---",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл xыкIырэ тфырэ.",
           "langToTranslationMap": {
             "en": "65 rubles.",
             "ar": ".65 روبل",
             "he": ".65 רובל"
-          }
+          },
+          "characterFace": 0
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "---",
+          "characterName": {
+            "originText": "---",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл милионищырэ мин шъитIурэ мин хыкIырэ минитфырэ шъэрэ блыкIырэ.",
           "langToTranslationMap": {
             "en": "3,265,170 rubles.",
             "ar": ".3،265،170 روبل",
             "he": ".3,265,170 רובל"
-          }
+          },
+          "characterFace": 0
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "---",
+          "characterName": {
+            "originText": "---",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ щэкIырэ бгъурэ.",
           "langToTranslationMap": {
             "en": "139 rubles.",
             "ar": ".139 روبل",
             "he": ".139 רובל"
-          }
+          },
+          "characterFace": 0
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "---",
+          "characterName": {
+            "originText": "---",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл шъитIурэ икIырэ бгъурэ.",
           "langToTranslationMap": {
             "en": "289 rubles.",
             "ar": ".289 روبل",
             "he": ".289 רובל"
-          }
+          },
+          "characterFace": 0
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "---",
+          "characterName": {
+            "originText": "---",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл минищырэ шъийрэ.",
           "langToTranslationMap": {
             "en": "3,800 rubles.",
             "ar": ".3،800 روبل",
             "he": ".3,800 רובל"
-          }
+          },
+          "characterFace": 0
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "---",
+          "characterName": {
+            "originText": "---",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл мин шъиблырэ мин плlыкlырэ минитфырэ шъихырэ.",
           "langToTranslationMap": {
             "en": "745,600 rubles.",
             "ar": ".745،600 روبل",
             "he": ".745,600 רובל"
-          }
+          },
+          "characterFace": 0
         }
       }
     ]
@@ -410,52 +570,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз хъопкI сэпэшыпым ыуасэр?",
           "langToTranslationMap": {
             "en": "What is the price of the vacuum cleaner?",
             "ar": "?ما سعر المكنسة الكهربائية",
             "he": "?מה המחיר של שואב האבק"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ щэкIырэ бгъурэ.",
           "langToTranslationMap": {
             "en": "139 rubles.",
             "ar": ".مائة وتسعة وثلاثون روبل",
             "he": ".מאה שלושים ותשע רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз?",
           "langToTranslationMap": {
             "en": "How much?",
             "ar": "?كم",
             "he": "?כמה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ щэкIырэ бгъурэ, ар лlэужыгъо дэгъу.",
           "langToTranslationMap": {
             "en": "139 rubles. It is of good quality.",
             "ar": ".مائة وتسعة وثلاثون روبلًا. جودة جيدة",
             "he": ".מאה שלושים ותשע רובל. היא באיכות טובה"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -468,52 +660,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мы лъэрыфыр хъарзынэ дэд, тхьапш ыуасэр?",
           "langToTranslationMap": {
             "en": "This bicycle is very nice, how much does it cost?",
             "ar": "هذه البسكليت رائعة جدا، كم هي سعرها؟",
             "he": "?האם האופניים האלה יקרים, כמה הן עולות"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ащ тефэщт рубл шъитIурэ икIырэ бгъурэ.  ",
           "langToTranslationMap": {
             "en": "It costs 289 rubles.",
             "ar": ".انها تكلف 289 روبل",
             "he": ".היא עולה 289 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ау зы щэрэхъыр зэlыхьагъ, джыри лъахъэр  лажьэрэп.",
           "langToTranslationMap": {
             "en": "But it has a broken wheel and the brake doesn't work.",
             "ar": ".ولكن فيها عجلة خربانة والكابح لا يعمل",
             "he": ".אבל יש לה גלגל מקולקל והבלם לא עובד"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ммм… тэрэз, лъапlэ, ау дэхэ дэд.",
           "langToTranslationMap": {
             "en": "Mmm... True, it's expensive but very beautiful.",
             "ar": ".ممم... صحيح غالية ولكنها جميلة جدا",
             "he": ".הממ... נכון, יקרה אבל היא מאוד יפה"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -526,65 +750,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд мы кум пае уасэу узфаер? ",
           "langToTranslationMap": {
             "en": "What price do you ask for this car?",
             "ar": "ما السعر الذي تطلبه في هذه السيارة؟ ",
             "he": "?מה המחיר שאתה מבקש על המכונית הזאת"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл мин блыкlырэ минийрэ.",
           "langToTranslationMap": {
             "en": "78,000 rubles.",
             "ar": ".78000 روبل",
             "he": ".78,000 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау, рубл мин икlырэ миниблырэ! ар лъэпlэ дэд.",
           "langToTranslationMap": {
             "en": "No, 87,000 rubles, that is very expensive!",
             "ar": "كلا 87000 روبل، هذه غالٍ جدا",
             "he": "!לא, 87,000 רובל, זה יקר מאוד"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау, хьау, уасэр Рубл мин блыкlырэ минийрэ.",
           "langToTranslationMap": {
             "en": "No, no, the price is 78,000 rubles.",
             "ar": ".كلا،  كلا،  السعر  78000 روبل",
             "he": "!לא, לא, המחיר הוא 78,000 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ааа, арымэ уасэр дэгъу.",
           "langToTranslationMap": {
             "en": "Ah, then this is a good price.",
             "ar": ".آآه، إذاً هذا سعر جيد",
             "he": ".אהה, אז זה מחיר טוב"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -597,65 +861,105 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз мы гъэучъыlылъэм ыуасэр?",
           "langToTranslationMap": {
             "en": "What is the price of this refrigerator?",
             "ar": "ما هو سعر هذا البراد؟",
             "he": "?מה המחיר של המקרר הזה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Литр шъитlу иинагъ, хъопкl къыдрегъадзэ, нэхьышlумэ ащыщ, lйтlале гъэпсыкl.",
           "langToTranslationMap": {
             "en": "It has a capacity of 200 liters, energy saving, one of the best types, Italian design.",
             "ar": ".سعته 200 لتر،  يوفير الطاقة، من النوعيات الأفضل، تصميم إيطالي",
             "he": ".הנפח שלו 200 ליטר, חוסך אנרגיה, אחד הסוגים הטובים ביותר, עיצוב איטלקי"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз ыуасэр?",
           "langToTranslationMap": {
             "en": "And what is its price?",
             "ar": "وكم سعره؟",
             "he": "?ומה המחיר שלו"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл мин тlокlырэ минитфырэ шъийрэ.",
           "langToTranslationMap": {
             "en": "25,800 rubles.",
             "ar": ".25800 روبل.",
             "he": ".25,800 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау ар лъэпlэ дэд, нэмыкl уиlа нахь пыутэу?",
           "langToTranslationMap": {
             "en": "No, that's very expensive, do you have a cheaper one?",
             "ar": "لا هذا غال جدا، هل عندك غيره أرخص؟",
             "he": "?לא, זה יקר מאוד, יש לך אחד אחר יותר זול"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -668,52 +972,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Шъуащыщ горэм сабый-курэжъые ищэфы шlоигъуа?",
           "langToTranslationMap": {
             "en": "Does anyone want to buy a baby stroller?",
             "ar": "هل يريد أحدكم شراء عربة أطفال؟",
             "he": "?האם מישהו רוצה לקנות עגלת תינוק"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сшыпхъу зы ищыкlагъ, тхьапш ыуасэр?",
           "langToTranslationMap": {
             "en": "My sister needs one, how much is the price?",
             "ar": "أختي بحاجة لواحدة، كم سعره؟",
             "he": "?אחותי צריכה אחת, מה המחיר"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар кlэп ау дэгъоу зекlо, уасэр рубл минрэ шъихырэ тфыкlырэ.",
           "langToTranslationMap": {
             "en": "It is not new but works well, the price is 1650 rubles.",
             "ar": ".هي ليست جديدة ولكنها تعمل بشكل جيد، السعر 1650 روبل",
             "he": ".זה לא חדש אבל עובד טוב, המחיר הוא 1650 רובלים"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, мы уасэр екlу, сшыпхъу сеупчlыжьын.",
           "langToTranslationMap": {
             "en": "Yes, this price is suitable, I will ask my sister.",
             "ar": ".نعم، هذا السعر مناسب، سوف أسال أختي",
             "he": ".כן, המחיר מתאים, אשאל את אחותי"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -726,91 +1062,147 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз унэм ыуасэр",
           "langToTranslationMap": {
             "en": "What is the price of the house?",
             "ar": "ما سعر المنزل؟",
             "he": "?מה מחיר הבית"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Вилэра?",
           "langToTranslationMap": {
             "en": "The villa?",
             "ar": "الفيلا؟",
             "he": "?הוילה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, Вилэр ары.",
           "langToTranslationMap": {
             "en": "Yes, the villa.",
             "ar": ".نعم، الفيلا",
             "he": ".כן, זו הוילה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уасэм уригъэнэцlынэу щыт, рубл милион тlокlырэ мин шъиблырэ ныlэп.",
           "langToTranslationMap": {
             "en": "It is a great offer, the price is only 20,700,000 rubles.",
             "ar": ".انه عرض مغر، سعرها فقط  20،700،000  روبل",
             "he": ".זו הצעה נהדרת, המחיר הוא רק 20,700,000 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз?",
           "langToTranslationMap": {
             "en": "How much?",
             "ar": "كم؟",
             "he": "?כמה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл милион тlокlырэ мин шъиблырэ.",
           "langToTranslationMap": {
             "en": "20,700,000 rubles.",
             "ar": ".20،700،000 روبل",
             "he": "20,700,000 רובלים."
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ааа, ара? ар уэсэ дэгъу, ар вилэ дах.",
           "langToTranslationMap": {
             "en": "Ah, yes? It is a good price, it is a beautiful villa.",
             "ar": ".آآه، نعم إنه سعر جيد، إنها فيلا جميلة",
             "he": ".אה, כן? זה מחיר טוב, זו וילה יפה"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -823,156 +1215,252 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Алоо, къеблагъ.",
           "langToTranslationMap": {
             "en": "Hello, please.",
             "ar": ".الو، تفضل",
             "he": ".שלום, בבקשה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шlу. Сэ сцlэр Енал, мэкъэгъэlоу къибдзагъэм ехьылlагъэу сыкъыпфытео, Сабый курэжъыер джыри шъоща?",
           "langToTranslationMap": {
             "en": "Good day. My name is Enal, I am calling regarding the ad you posted, is the baby stroller still available?",
             "ar": "نهارك سعيد. أنا اسمي ينال، أتصل بخصوص الإعلان الذي عرضتيه، هل ما تزال عربة الأطفال  معروضة للبيع؟",
             "he": "?שלום. קוראים לי ינאל, אני מתקשר בנוגע למודעה שהצגת, האם עגלת התינוק עדיין למכירה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, ар тэщэ.",
           "langToTranslationMap": {
             "en": "Yes, it is still available for sale.",
             "ar": "نعم إنها ما تزال متاحة للبيع.",
             "he": ".כן, היא עדיין זמינה למכירה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьапш ыуасэр?",
           "langToTranslationMap": {
             "en": "What is the price?",
             "ar": "ما هو السعر؟",
             "he": "?מה המחיר"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл минрэ шъитlурэ cфай, сабый-курэжъыемрэ пхъэнтlэкlумрэ яуас зэгъусэхэу, тlури мэкъэ гъэlум къидзагъэх.",
           "langToTranslationMap": {
             "en": "I want 1200 rubles for the stroller with the chair, both are included in the ad.",
             "ar": ".أريد 1200 روبل سعر العربة مع الكرسي  كلاهما موجودان في الإعلان",
             "he": ".אני רוצה 1200 רובלים על העגלה עם הכיסא, שניהם כלולים במודעה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл минрэ шъитlурэр лъэпlэ дэд.",
           "langToTranslationMap": {
             "en": "1200 rubles is too expensive.",
             "ar": ".1200 روبل غال جدا",
             "he": ".1200 רובלים יקרים מדי"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сабый-курэжъыер кlэм фэд.",
           "langToTranslationMap": {
             "en": "The baby stroller is like new.",
             "ar": ".عربة الأطفال بمثابة الجديدة",
             "he": ".עגלת התינוק כמו חדשה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ рубл шъибл къэстыщт, сэ сабый-курэжъыер ары ныlэп сызфаер.",
           "langToTranslationMap": {
             "en": "I will pay 700 rubles, I want only the baby stroller.",
             "ar": ":أنا أدفع 700 روبل، أنا أريد عربة الأطفال فقط",
             "he": ".אני אתן 700 רובלים, אני רוצה רק את עגלת התינוק"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар мэкlэ дэд, рубл минрэ шъэрэ сабый-курэжъыемрэ пхъэнтlэкумрэ зэгъусэхэу тэгъаlу.",
           "langToTranslationMap": {
             "en": "That's too little, let's say 1100 rubles for the stroller and the chair together.",
             "ar": ".هذا قليل جداً، لنقل 1100 روبل لأجل العربة والكرسي معا",
             "he": ".זה מעט מדי, בוא נאמר 1100 רובלים עבור העגלה והכיסא יחד"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ рубл шъий сэlо.",
           "langToTranslationMap": {
             "en": "I say 800 rubles.",
             "ar": ".أنا أقول  800  روبل",
             "he": ".אני אומר 800 רובלים"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Дэгъу, рубл шъибгъу.",
           "langToTranslationMap": {
             "en": "Okay, 900 rubles.",
             "ar": ".حسناً، 900 روبل",
             "he": ".בסדר, 900 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар дэгъу, непэ щэджэгъо ужым схьынхэу сыкъэкlощт.",
           "langToTranslationMap": {
             "en": "Good, I will come this afternoon to pick up the items.",
             "ar": ".هذا جيد، سأحضر اليوم بعد الظهر لأخذ الأغراض",
             "he": ".טוב, אני אבוא היום אחרי הצהריים לקחת את הדברים"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -985,117 +1473,189 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Алоо, къеблагъ. ",
           "langToTranslationMap": {
             "en": "Hello, go ahead.",
             "ar": ".الو، تفضل",
             "he": ".שלום, עליך"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шlу, сэ сцlэр Псэтын, компиутэрым ехьылlагъэу мэкъэ гъэlоу интэрнетым къибдзагъэм пае сыкъыпфытео, джыри ар оща?",
           "langToTranslationMap": {
             "en": "Good day, my name is Psetyn. I'm calling regarding the advertisement you posted online about the computer. Are you still selling it?",
             "ar": "نهارك سعيد، اسمي بسَتِن. أتصل بك بخصوص الإعلان الذي نشرته على الإنترنت عن هذا الكمبيوتر. هل ما زلت تبيعه؟",
             "he": "?שלום, קוראים לי פסטין. אני מתקשר בנוגע למודעה שהצבתם באינטרנט לגבי המחשב. האם עדיין מוכרים אותו"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, тэщэ.",
           "langToTranslationMap": {
             "en": "Yes, we are selling it.",
             "ar": ".نعم، نبيعه",
             "he": ".כן, אנחנו מוכרים אותו"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз ыуасэр?",
           "langToTranslationMap": {
             "en": "What is the price?",
             "ar": "?ما هو سعره",
             "he": "?מה המחיר"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл миниплlырэ шъищрэ сфай",
           "langToTranslationMap": {
             "en": "I want 4300 rubles.",
             "ar": ".أريد 4300 روبل",
             "he": ".אני רוצה 4300 רובל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "А уасэр тlэкlу лъапlэба?",
           "langToTranslationMap": {
             "en": "Isn't that price a bit high?",
             "ar": "?أليس هذا السعر مرتفعٌ قليلاً",
             "he": "?האם המחיר הזה לא גבוה קצת"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уасэм компиутэрым итеплъэбгъуи хэт. ",
           "langToTranslationMap": {
             "en": "The price includes the computer screen as well.",
             "ar": ".السعر يتضمن شاشة الكمبيوتر أيضاً",
             "he": ".המחיר כולל גם את מסך המחשב"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ рубл минищ къэстын слъэкlыщт.",
           "langToTranslationMap": {
             "en": "I can pay 3000 rubles.",
             "ar": ".أنا أستطيع أن أدفع 3000 روبل",
             "he": ".אני יכול לשלם 3000 רובל"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ рубл минищрэ шъитфырэ  сэlо.",
           "langToTranslationMap": {
             "en": "I say 3500 rubles.",
             "ar": ".أنا أقول  3500 روبل",
             "he": ".אני אומר 3500 רובל"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1108,52 +1668,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мыр телевизора?",
           "langToTranslationMap": {
             "en": "Is this a TV?",
             "ar": "?هل هذا تلفزيون",
             "he": "?האם זה טלוויזיה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау, мыр телевизорэп, мыр компиутэр теплъэбгъу.",
           "langToTranslationMap": {
             "en": "No, this is not a TV, this is a computer screen.",
             "ar": ".لا، هذا ليس تلفزيون، هذه شاشة كمبيوتر",
             "he": ".לא, זה לא טלוויזיה, זה מסך מחשב"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьапш ыуасэр?",
           "langToTranslationMap": {
             "en": "How much is its price?",
             "ar": "?كم هو سعرها",
             "he": "?כמה המחיר שלה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рубл мин щэкlырэ тфырэ (35000).",
           "langToTranslationMap": {
             "en": "35,000 rubles.",
             "ar": ".35,000 روبل",
             "he": ".35,000 רובל"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1166,52 +1758,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мыр мобайла?",
           "langToTranslationMap": {
             "en": "Is this a mobile phone?",
             "ar": "?هل هذا موبايل",
             "he": "?האם זה טלפון נייד"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, тэрэз.",
           "langToTranslationMap": {
             "en": "Yes, correct.",
             "ar": ".نعم، صحيح",
             "he": ".כן, נכון"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьапш ыуасэр?",
           "langToTranslationMap": {
             "en": "How much is its price?",
             "ar": "?كم هو سعره",
             "he": "?כמה המחיר שלו"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ощ пае рубл мин тlокlырэ тфырэ (25,000).",
           "langToTranslationMap": {
             "en": "For you, 25,000 rubles.",
             "ar": ".من أجلك 25،000 روبل",
             "he": ".בשבילך 25,000 רובל"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1224,52 +1848,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мыр о уимобайла?",
           "langToTranslationMap": {
             "en": "Is this your mobile?",
             "ar": "?هل هذا موبايلك",
             "he": "?האם זה הנייד שלך"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау, мыр сурэттех.",
           "langToTranslationMap": {
             "en": "No, this is my digital camera.",
             "ar": ".لا، هذه كاميرتي الرقمية",
             "he": ".לא, זו המצלמה הדיגיטלית שלי"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мыр дэгъуа?",
           "langToTranslationMap": {
             "en": "Is it good?",
             "ar": "?هل هي جيدة",
             "he": "?האם היא טובה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "ГъэшIэгъоны.",
           "langToTranslationMap": {
             "en": "Wonderful.",
             "ar": ".رائعة",
             "he": ".מצוינת"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1282,104 +1938,168 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Мы кофэ гъэжъуалъэр дэгъуа?",
           "langToTranslationMap": {
             "en": "Is this coffee kettle good?",
             "ar": "?هل غلّاية القهوة هذه جيدة",
             "he": "?האם קומקום הקפה הזה טוב"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары дэгъу.",
           "langToTranslationMap": {
             "en": "Yes, it is good.",
             "ar": ".نعم جيدة",
             "he": ".כן, היא טובה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз ыуасэр?",
           "langToTranslationMap": {
             "en": "What is its price?",
             "ar": "?ما هو سعرها",
             "he": "?מה המחיר שלה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублибгъу ныIэп.",
           "langToTranslationMap": {
             "en": "Only 9 rubles.",
             "ar": ".فقط 9 روبل",
             "he": ".רק 9 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыдэу ыуасэ пыут!",
           "langToTranslationMap": {
             "en": "How cheap it is!",
             "ar": "!كم هو رخيصٌ سعرها",
             "he": "!כמה היא זולה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, мыр осэ къегъэхыгъ.",
           "langToTranslationMap": {
             "en": "Yes, it is a discounted price.",
             "ar": ".نعم، إنه سعرٌ مخفّض",
             "he": ".כן, זה מחיר מוזל"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ау мыр дэгъуа?",
           "langToTranslationMap": {
             "en": "But is it good?",
             "ar": "?لكن هل هو جيد",
             "he": "?אבל האם הוא טוב"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, теубытагъэу дэгъу.",
           "langToTranslationMap": {
             "en": "Yes, it is definitely good.",
             "ar": ".نعم، بالتأكيد جيد",
             "he": ".כן, בהחלט טוב"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1392,52 +2112,84 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз тхылъым ыуасэр?",
           "langToTranslationMap": {
             "en": "What is the price of the book?",
             "ar": "?ما سعر الكتاب",
             "he": "?מה מחיר הספר"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ыуасэр рублихырэ чапычипшlырэ.",
           "langToTranslationMap": {
             "en": "The price is six rubles and ten chapichs.",
             "ar": ".سعره ست روبلات و عشر تشابيتش",
             "he": ".המחיר הוא שישה רובלים ועשרה צ'אפיץ'"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ лэныстэмрэ дэтхалъэмрэ сафай.",
           "langToTranslationMap": {
             "en": "I want the scissors and the notebook.",
             "ar": ".أنا أريد المقص والدفتر",
             "he": ".אני רוצה את המספריים ואת המחברת"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Дэгъу, зэкIыгъухэу ауасэр рубл пшlыкlублырэ чапыч пшlыкlутlурэ.",
           "langToTranslationMap": {
             "en": "Okay, their combined price is 17 rubles and 12 chapichs.",
             "ar": ".حسناً، سعرهم معاً 17 روبلاً و12 تشابيتش",
             "he": ".בסדר, המחיר הכולל שלהם הוא 17 רובלים ו-12 צ'אפיץ'"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1450,156 +2202,252 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Алоо, къеблагъ.",
           "langToTranslationMap": {
             "en": "Hello, please.",
             "ar": ".الو، تفضل",
             "he": ".שלום, בבקשה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шlу. Сэ сцlэр Пэрыт, мэкъэгъэlум пае Сыкътеуагъ. Сабый курэжъыер джыри шъоща?",
           "langToTranslationMap": {
             "en": "Good day, my name is Berit. I'm calling about the ad, are you still selling the baby stroller?",
             "ar": "?نهارك سعيد، أنا اسمي برت، أتصل بخصوص الإعلان، هل ما تزالون تبيعون عربة الأطفال",
             "he": "?!שלום, קוראים לי בריט. אני מתקשר לגבי הפרסום, האם אתם עדיין מוכרים את עגלת התינוק"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары джыри тэщэ.",
           "langToTranslationMap": {
             "en": "Yes, we are still selling it.",
             "ar": ".نعم، ما نزال نبيعه",
             "he": ".כן, אנחנו עדיין מוכרים אותו"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд фэдиз ыуасэр?",
           "langToTranslationMap": {
             "en": "What is the price?",
             "ar": "?ما هو سعرها",
             "he": "?מה המחיר"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ тlукlырэ кумрэ пхъэнтэкlумрэ яуас тlури мэкъэгъэум хэтых.",
           "langToTranslationMap": {
             "en": "The price is 120 rubles for the stroller and the seat, both are included in the ad.",
             "ar": ".120 روبلاً سعر العربة مع الكرسي،  كلاهما موجودان في الإعلان",
             "he": ".120 רובלים זה המחיר של העגלה עם המושב, שניהם כלולים במודעה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Рублишъэрэ тlукlырэр бэ дэд.",
           "langToTranslationMap": {
             "en": "120 rubles is too expensive.",
             "ar": ".روبلاً 120 غالٍ جداً",
             "he": ".120 רובלים זה יקר מדי"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сабый курэжъыер кlэм фэд.",
           "langToTranslationMap": {
             "en": "The baby stroller is almost new.",
             "ar": ".عربةالأطفال بمثابة الجديدة",
             "he": ".עגלת התינוק כמעט חדשה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ рубл блыкl къэстыщт, сэ сабый курэжъем изакъоу сфай.",
           "langToTranslationMap": {
             "en": "I will pay 70 rubles; I want only the stroller.",
             "ar": ".أنا سأدفع 70 روبلاً، أنا أريد عربة الاطفال لوحدها",
             "he": ".אני אשלם 70 רובלים, אני רוצה רק את העגלה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар мэкlэ дэд. Сабый курэжъыемрэ пкъэнтэкlумрэ рублишъэрэ пшlырэ тэгъаlу.",
           "langToTranslationMap": {
             "en": "That’s too little, let’s say 110 rubles for the stroller and the seat.",
             "ar": ".هذا قلل جداً، دعنا نقول  110 روبل لأجل العربة والكرسي",
             "he": ".זה מעט מדי, בוא נגיד 110 רובלים לעגלה ולמושב"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэ рубл икlырэ тфырэ сэlо.",
           "langToTranslationMap": {
             "en": "I say 85 rubles.",
             "ar": ".أنا أقول  85  روبلاً",
             "he": ".אני אומר 85 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Дэгъу Рубл бгъукlырэ тфырэр .",
           "langToTranslationMap": {
             "en": "95 rubles is reasonable.",
             "ar": ".95  روبل مناسب",
             "he": ".95 רובלים זה סביר"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар дэгъу, непэ щэджэгъоужым схьынхэу сыкъэкlощт.",
           "langToTranslationMap": {
             "en": "That’s good. I will come this afternoon to take them.",
             "ar": ".هذا جيد. سأحضر اليوم بعد الظهر لأخذهم",
             "he": ".זה טוב. אני אבוא היום אחר הצהריים לקחת אותם"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -1612,156 +2460,252 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Алоо Енал къэгущыlэрэр. Хэт ар? ",
           "langToTranslationMap": {
             "en": "Hello, Yinal speaking, who is this?",
             "ar": "?الو، ينال يتكلم، من معي",
             "he": "?שלום, ינאל מדבר, מי שם"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Шъуимафэ шlу. Сэ сцlэр Заур. Мэкъэ гъэlоу интэрнетым къиплъхьагъэм пае скъыпфытеуагъ, гыкlалъэ ыужы уита?",
           "langToTranslationMap": {
             "en": "Good day, my name is Zaur. I called you regarding the advertisement you posted on the internet. Are you looking for a washing machine?",
             "ar": "?نهاركم سعيد، أنا اسمي زاور، أتصلت بك بخصوص الإعلان الذي عرضته في الانترنت، هل تبحث عن غسالة",
             "he": "?שלום, קוראים לי זאור. התקשרתי בקשר לפרסום שהעלית באינטרנט, האם אתה מחפש מכונת כביסה"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, сигыкlалъэ къутагъэ, гыкlалъэ пщэнэу уиlа?",
           "langToTranslationMap": {
             "en": "Yes, my washing machine broke down. Do you have a washing machine for sale?",
             "ar": "?نعم غسالتي تعطلت، هل عندك غسالة للبيع",
             "he": "?כן, המכבסה שלי התקלקלה, האם יש לך מכונת כביסה למכירה"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары зы сиl. Ар дэгъу дэд, рублишъэрэ тфыкlырэ ыуас.",
           "langToTranslationMap": {
             "en": "Yes, I have one. It is very good quality, priced at 150 rubles.",
             "ar": ".نعم، عندي واحدة، وهي نوعية جيدة جداً، سعرها 150 روبل",
             "he": ".כן, יש לי אחת, היא באיכות טובה מאוד, המחיר הוא 150 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау ар лъэпlэ дэд.",
           "langToTranslationMap": {
             "en": "No, this is very expensive.",
             "ar": ".لا، هذا سعر غالٍ جداً",
             "he": ".לא, זה מחיר יקר מאוד"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ау ащ илъэпкъ блэфыгъэу дэгъу.",
           "langToTranslationMap": {
             "en": "But it is a very excellent brand.",
             "ar": ".ولكنها ماركة ممتازة جداً",
             "he": ".אבל זו מותג מצוין מאוד"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьапш ыныбжь?",
           "langToTranslationMap": {
             "en": "How old is it?",
             "ar": "?كم عمرها",
             "he": "?כמה זמן היא"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Илъситlу - щы. ",
           "langToTranslationMap": {
             "en": "Two to three years.",
             "ar": ".سنتان-ثلاثة",
             "he": ".שנתיים-שלוש"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау. Ар лъэпlэ дэд, рублишъэ къыостыщт.",
           "langToTranslationMap": {
             "en": "No, this is very expensive, I will give you 100 rubles.",
             "ar": ".لا، هذا سعر غالٍ جداً، سوف أعطيك 100 روبل",
             "he": ".לא, זה מחיר יקר מאוד, אתן לך 100 רובלים"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау. Рублишъэрэ щэкlырэ.",
           "langToTranslationMap": {
             "en": "No, 130 rubles.",
             "ar": ".لا، 130 روبلاً",
             "he": ".לא, 130 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Щэфакlор",
+          "characterName": {
+            "originText": "Щэфакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "КIо рублишъэрэ тlукlырэклэ сштэн.",
           "langToTranslationMap": {
             "en": "Okay, I will take it for 120 rubles.",
             "ar": ".لا بأس، سآخذها بسعر 120 روبلاً",
             "he": ".בסדר, אני אקח אותה במחיר 120 רובלים"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Щакlор",
+          "characterName": {
+            "originText": "Щакlор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары, сэдэ шъэрэ тукlырэклэ къыосщэн.",
           "langToTranslationMap": {
             "en": "Okay, I agree to sell it to you for 120 rubles.",
             "ar": ".حسناً، أقبل أن أبيعها لك بــ 120 روبلاً",
             "he": ".בסדר, אני מסכים למכור לך ב-120 רובלים"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]

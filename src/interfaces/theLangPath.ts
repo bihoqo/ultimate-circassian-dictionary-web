@@ -32,9 +32,13 @@ export interface ITheLangPathPanel {
 
 export interface ITheLangPathDialogBubble {
   leftOrRight: "left" | "right";
-  characterName: string;
+  characterName: {
+    originText: string;
+    langToTranslationMap: ILangToTranslationMap;
+  };
   originText: string;
   langToTranslationMap: ILangToTranslationMap;
+  characterFace: number;
 }
 
 export interface ITheLangPathPoem {

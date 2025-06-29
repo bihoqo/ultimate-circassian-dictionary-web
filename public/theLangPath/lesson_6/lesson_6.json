@@ -2,165 +2,167 @@
   {
     "title": "1.1 dialogue 1",
     "audio": "theLangPath\\lesson_6\\audio\\1.1_1.mp3",
-    "parts": {
-      "type": "poem",
-      "data": {
-        "title": {
-          "originText": "Уимэфэкl",
-          "langToTranslationMap": {
-            "en": "Your Birthday",
-            "ar": ".عيد ميلادك",
-            "he": ".יום ההולדת שלך"
-          }
-        },
-        "stanzas": [
-          {
-            "stanza": "1",
-            "originText": "Уимэфэкl мафэ пае сыкъыпфэгушlо нэнэжъ. ",
+    "parts": [
+      {
+        "type": "poem",
+        "data": {
+          "title": {
+            "originText": "Уимэфэкl",
             "langToTranslationMap": {
-              "en": "I congratulate you on your birthday, Grandma.",
-              "ar": ".أهنئك بمناسبة عيد ميلادك جدتي",
-              "he": ".אני מברך אותך לרגל יום הולדתך, סבתא"
+              "en": "Your Birthday",
+              "ar": ".عيد ميلادك",
+              "he": ".יום ההולדת שלך"
             }
           },
-          {
-            "stanza": "1",
-            "originText": "Мы орэдым уезгъэдэlун:",
-            "langToTranslationMap": {
-              "en": "Let me sing you this song:",
-              "ar": ":دعني أسمعك هذه الأغنية",
-              "he": ":תני לי להשמיע לך את השיר הזה"
+          "stanzas": [
+            {
+              "stanza": "1",
+              "originText": "Уимэфэкl мафэ пае сыкъыпфэгушlо нэнэжъ. ",
+              "langToTranslationMap": {
+                "en": "I congratulate you on your birthday, Grandma.",
+                "ar": ".أهنئك بمناسبة عيد ميلادك جدتي",
+                "he": ".אני מברך אותך לרגל יום הולדתך, סבתא"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Мы орэдым уезгъэдэlун:",
+              "langToTranslationMap": {
+                "en": "Let me sing you this song:",
+                "ar": ":دعني أسمعك هذه الأغنية",
+                "he": ":תני לי להשמיע לך את השיר הזה"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Непэ о уигушlуагъу.",
+              "langToTranslationMap": {
+                "en": "Today is your day of joy.",
+                "ar": ".اليوم يوم بهجتك",
+                "he": ".היום הוא יום שמחתך"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Непэ уимэфэ тхъагъу.",
+              "langToTranslationMap": {
+                "en": "Today is your happy day.",
+                "ar": ".اليوم يوم سعادتك",
+                "he": ".היום הוא יום אושרך"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "О уимафэ о уимафэ о уимэфэ гушlуагъу.",
+              "langToTranslationMap": {
+                "en": "Your day, your day, your day of joy.",
+                "ar": ".يومك، يومك، يوم بهجتك",
+                "he": ".יומך, יומך, יום שמחתך"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Къыбдэрэхъу уигу хэлъ.",
+              "langToTranslationMap": {
+                "en": "May your heart's wishes come true.",
+                "ar": ".ليتحقق ما في قلبك",
+                "he": ".שיתגשמו משאלות ליבך"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Тэри уигум тигъэлъ .",
+              "langToTranslationMap": {
+                "en": "Keep us in your heart.",
+                "ar": ".واحفظنا في قلبك",
+                "he": ".שמור אותנו בליבך"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Тэри уигум тэри уигум тэри уигум тигъэлъ.",
+              "langToTranslationMap": {
+                "en": "Keep us in your heart, in your heart, in your heart.",
+                "ar": ".واحفظنا في قلبك، في قلبك، في قلبك",
+                "he": ".שמור אותנו בליבך, בליבך, בליבך"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Узынчъагъэр гъэкlэжь.",
+              "langToTranslationMap": {
+                "en": "Health is renewed.",
+                "ar": ".الصحة تتجدد",
+                "he": ".הבריאות מתחדשת"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Ренэу ренэу отхъэжь.",
+              "langToTranslationMap": {
+                "en": "Always, always, be in happiness.",
+                "ar": ".دائمًا، دائمًا، تكوني في سعادة",
+                "he": ".תמיד, תמיד, היי באושר"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Ренэу ренэу ренэу ренэу ренэу ренэу отхъэжь.",
+              "langToTranslationMap": {
+                "en": "Always, always, always be in happiness.",
+                "ar": ".دائمًا، دائمًا، دائمًا تكوني في سعادة",
+                "he": ".תמיד, תמיד, תמיד היי באושר"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Ренэу ренэу ренэу ренэу ренэу ренэу отхъэжь.",
+              "langToTranslationMap": {
+                "en": "Always, always, always be in happiness.",
+                "ar": ".دائمًا، دائمًا، دائمًا تكوني في سعادة",
+                "he": ".תמיד, תמיד, תמיד היי באושר"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "Непэ о уигушlуагъу.",
+              "langToTranslationMap": {
+                "en": "Today is your day of joy.",
+                "ar": ".اليوم يوم بهجتك",
+                "he": ".היום הוא יום שמחתך"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "Непэ уимэфэ тхъагъу.",
+              "langToTranslationMap": {
+                "en": "Today is your happy day.",
+                "ar": ".اليوم يوم سعادتك",
+                "he": ".היום הוא יום אושרך"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "О уимафэ о уимафэ о уимэфэ гушlуагъу.",
+              "langToTranslationMap": {
+                "en": "Your day, your day, your day of joy.",
+                "ar": ".يومك، يومك، يوم بهجتك",
+                "he": ".יומך, יומך, יום שמחתך"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "О уимафэ о уимафэ о уимэфэ гушlуагъу.",
+              "langToTranslationMap": {
+                "en": "Your day, your day, your day of joy.",
+                "ar": ".يومك، يومك، يوم بهجتك",
+                "he": ".יומך, יומך, יום שמחתך"
+              }
             }
-          },
-          {
-            "stanza": "2",
-            "originText": "Непэ о уигушlуагъу.",
-            "langToTranslationMap": {
-              "en": "Today is your day of joy.",
-              "ar": ".اليوم يوم بهجتك",
-              "he": ".היום הוא יום שמחתך"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Непэ уимэфэ тхъагъу.",
-            "langToTranslationMap": {
-              "en": "Today is your happy day.",
-              "ar": ".اليوم يوم سعادتك",
-              "he": ".היום הוא יום אושרך"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "О уимафэ о уимафэ о уимэфэ гушlуагъу.",
-            "langToTranslationMap": {
-              "en": "Your day, your day, your day of joy.",
-              "ar": ".يومك، يومك، يوم بهجتك",
-              "he": ".יומך, יומך, יום שמחתך"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "Къыбдэрэхъу уигу хэлъ.",
-            "langToTranslationMap": {
-              "en": "May your heart's wishes come true.",
-              "ar": ".ليتحقق ما في قلبك",
-              "he": ".שיתגשמו משאלות ליבך"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "Тэри уигум тигъэлъ .",
-            "langToTranslationMap": {
-              "en": "Keep us in your heart.",
-              "ar": ".واحفظنا في قلبك",
-              "he": ".שמור אותנו בליבך"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "Тэри уигум тэри уигум тэри уигум тигъэлъ.",
-            "langToTranslationMap": {
-              "en": "Keep us in your heart, in your heart, in your heart.",
-              "ar": ".واحفظنا في قلبك، في قلبك، في قلبك",
-              "he": ".שמור אותנו בליבך, בליבך, בליבך"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Узынчъагъэр гъэкlэжь.",
-            "langToTranslationMap": {
-              "en": "Health is renewed.",
-              "ar": ".الصحة تتجدد",
-              "he": ".הבריאות מתחדשת"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Ренэу ренэу отхъэжь.",
-            "langToTranslationMap": {
-              "en": "Always, always, be in happiness.",
-              "ar": ".دائمًا، دائمًا، تكوني في سعادة",
-              "he": ".תמיד, תמיד, היי באושר"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Ренэу ренэу ренэу ренэу ренэу ренэу отхъэжь.",
-            "langToTranslationMap": {
-              "en": "Always, always, always be in happiness.",
-              "ar": ".دائمًا، دائمًا، دائمًا تكوني في سعادة",
-              "he": ".תמיד, תמיד, תמיד היי באושר"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Ренэу ренэу ренэу ренэу ренэу ренэу отхъэжь.",
-            "langToTranslationMap": {
-              "en": "Always, always, always be in happiness.",
-              "ar": ".دائمًا، دائمًا، دائمًا تكوني في سعادة",
-              "he": ".תמיד, תמיד, תמיד היי באושר"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "Непэ о уигушlуагъу.",
-            "langToTranslationMap": {
-              "en": "Today is your day of joy.",
-              "ar": ".اليوم يوم بهجتك",
-              "he": ".היום הוא יום שמחתך"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "Непэ уимэфэ тхъагъу.",
-            "langToTranslationMap": {
-              "en": "Today is your happy day.",
-              "ar": ".اليوم يوم سعادتك",
-              "he": ".היום הוא יום אושרך"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "О уимафэ о уимафэ о уимэфэ гушlуагъу.",
-            "langToTranslationMap": {
-              "en": "Your day, your day, your day of joy.",
-              "ar": ".يومك، يومك، يوم بهجتك",
-              "he": ".יומך, יומך, יום שמחתך"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "О уимафэ о уимафэ о уимэфэ гушlуагъу.",
-            "langToTranslationMap": {
-              "en": "Your day, your day, your day of joy.",
-              "ar": ".يومك، يومك، يوم بهجتك",
-              "he": ".יומך, יומך, יום שמחתך"
-            }
-          }
-        ]
+          ]
+        }
       }
-    }
+    ]
   },
   {
     "title": "1.1 dialogue 2",
@@ -170,78 +172,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэ цlыкlур",
+          "characterName": {
+            "originText": "Пшъэшъэ цlыкlур",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыдигъо сянэ къэкlожьыщт?",
           "langToTranslationMap": {
             "en": "When will my mom come back?",
             "ar": "?متى ستعود أمي",
             "he": "?מתי אמא שלי תחזור"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Ят",
+          "characterName": {
+            "originText": "Ят",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Пчыхьэм сыхьатыр бгъурэ ныкъорэм.",
           "langToTranslationMap": {
             "en": "At nine-thirty in the evening.",
             "ar": ".في التاسعة والنصف مساءً",
             "he": ".בתשע וחצי בערב"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэ цlыкlур",
+          "characterName": {
+            "originText": "Пшъэшъэ цlыкlур",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сянэ чэщ гупсэф къыокlу есlон фаеба?",
           "langToTranslationMap": {
             "en": "Shouldn’t I say good night to my mom?",
             "ar": ".ألا يجب أن أقول ليلة سعيدة لأمي",
             "he": ".האם אני לא צריך להגיד לאמא לילה טוב"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Ят",
+          "characterName": {
+            "originText": "Ят",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Адэ, ау непэп, уянэ къэлъэжъощт уичъыежь пlалъэ къэсыгъ.",
           "langToTranslationMap": {
             "en": "Of course, but not today. Your mom will be late, and it’s your bedtime.",
             "ar": ".طبعاً، ولكن ليس اليوم، أمك ستتأخر، حان وقت نومك",
             "he": ".בוודאי, אבל לא היום. אמא שלך תאחר, והגיע הזמן לישון"
-          }
+          },
+          "characterFace": 13
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэ цlыкlур",
+          "characterName": {
+            "originText": "Пшъэшъэ цlыкlур",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыпаплъэ хъущтба?",
           "langToTranslationMap": {
             "en": "Can I wait for her?",
             "ar": ".هل يمكنني انتظارها",
             "he": ".אפשר לחכות לה"
-          }
+          },
+          "characterFace": 14
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Ят",
+          "characterName": {
+            "originText": "Ят",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау хъущтэп, учъыежьын фай джыдэдэм, неущы пчэдыжьым уипчэдыжь шlу уянэ епlон.",
           "langToTranslationMap": {
             "en": "No, you can't. You should sleep now, and in the morning you can say good morning to your mom.",
             "ar": ".لا، لا يمكنكِ، يجب أن تنامي الآن، وغدًا صباحًا يمكنكِ قول صباح الخير لأمكِ",
             "he": ".לא, את לא יכולה. עכשיו צריך לישון, ובבוקר תוכלי להגיד לאמא בוקר טוב"
-          }
+          },
+          "characterFace": 13
         }
       }
     ]
@@ -254,78 +304,126 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Гуащэр",
+          "characterName": {
+            "originText": "Гуащэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыдэу ущыт непэрэмкlэ?",
           "langToTranslationMap": {
             "en": "How are you today?",
             "ar": "?كيف حالك اليوم",
             "he": "?מה שלומך היום"
-          }
+          },
+          "characterFace": 12
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Лlыр",
+          "characterName": {
+            "originText": "Лlыр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тхьэм щытхъур ыдэжь, узыжьрэп ау неущы lазэм идэжьы сыкощт силъакъоу узыгъэм пае.",
           "langToTranslationMap": {
             "en": "Praise be to God, it no longer hurts, but tomorrow I’ll go to the doctor because of the pain in my leg.",
             "ar": ".الحمد لله، لم يعد يؤلمني، لكن غدًا سأذهب إلى الطبيب بسبب ساقي التي تؤلمني",
             "he": ".השבח לאל, זה כבר לא כואב לי, אבל מחר אלך לרופא בגלל הרגל שכואבת לי"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Гуащэр",
+          "characterName": {
+            "originText": "Гуащэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сэтэнай сыдигъо шхыныр хьазырыщт?",
           "langToTranslationMap": {
             "en": "Setenay, when will the food be ready?",
             "ar": "?ستناي، متى سيكون الطعام جاهزاً",
             "he": "?סתנאי, מתי האוכל יהיה מוכן"
-          }
+          },
+          "characterFace": 12
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Тlэкlу шlэмэ шхыныр хьазырыщт, тыдэ щыlэх кlэлэцlыкlухэр, Eналрэ Данэрэ?",
           "langToTranslationMap": {
             "en": "The food will be ready soon. Where are the kids, Yanal and Dana?",
             "ar": "?سيكون الطعام جاهزاً قريباً، أين الأطفال، ينال ودانا",
             "he": "?האוכל יהיה מוכן בקרוב. איפה הילדים, יאנל ודנה"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Лlыр",
+          "characterName": {
+            "originText": "Лlыр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Яныбджэгъухэмэ ягъусэхэу шхапlэм кlуагъэх шхэнхэу.",
           "langToTranslationMap": {
             "en": "They went to the restaurant with their friends to eat.",
             "ar": ".ذهبوا إلى المطعم مع أصدقائهم لتناول الطعام",
             "he": ".הם הלכו למסעדה עם חברים כדי לאכול"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Сэтэнай",
+          "characterName": {
+            "originText": "Сэтэнай",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ар сыда къызфэмlуагъэр ? шхыныр згъэхазырыгъ пстэуми апае",
           "langToTranslationMap": {
             "en": "Why didn’t you tell me? I prepared the food for everyone.",
             "ar": ".لماذا لم تخبرني بهذا؟ لقد أعددتُ الطعام لأجل الجميع",
             "he": ".למה לא סיפרת לי? הכנתי את האוכל בשביל כולם"
-          }
+          },
+          "characterFace": 10
         }
       }
     ]
@@ -338,91 +436,147 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Ныр",
+          "characterName": {
+            "originText": "Ныр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уиеджэн тхыжьын уухыгъа?",
           "langToTranslationMap": {
             "en": "Tejen, have you finished your homework?",
             "ar": "?تچن، هل انتهيتَ من دراستك",
             "he": "?תג'ן, סיימת את הלימודים שלך"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Кlалэр",
+          "characterName": {
+            "originText": "Кlалэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ары пстэури ары, джыр сиеджэнмэ саплъыжьы.",
           "langToTranslationMap": {
             "en": "Yes, all of it. Now I’m reviewing my lessons.",
             "ar": ".نعم كلها، الآن ألقي نظرة على دروسي",
             "he": ".כן, את הכל. עכשיו אני עוברת על החומר"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Ныр",
+          "characterName": {
+            "originText": "Ныр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыкъыпдэlэпыlэнэу уищыкlагъа?",
           "langToTranslationMap": {
             "en": "Do you need my help?",
             "ar": "?هل تحتاجين مساعدتي",
             "he": "?את צריכה את העזרה שלי"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Кlалэр",
+          "characterName": {
+            "originText": "Кlалэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Хьау сэ сизакъоу седжэ.",
           "langToTranslationMap": {
             "en": "No, I study by myself.",
             "ar": ".لا، أنا أُدرس لوحدي",
             "he": ".לא, אני לומדת לבד"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Ныр",
+          "characterName": {
+            "originText": "Ныр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Зыгъэпсэфыгъом, тхьмафэм икlэ уятэ дэжьы укlощт.",
           "langToTranslationMap": {
             "en": "On the weekend, you will go to your father.",
             "ar": ".في العطلة، في نهاية الأسبوع، ستذهبين إلى أبيك",
             "he": ".בסוף השבוע תסעי לאבא שלך"
-          }
+          },
+          "characterFace": 10
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Кlалэр",
+          "characterName": {
+            "originText": "Кlалэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Сыд пай непэп?",
           "langToTranslationMap": {
             "en": "Why not today?",
             "ar": "?لماذا ليس اليوم",
             "he": "?למה לא היום"
-          }
+          },
+          "characterFace": 4
         }
       },
       {
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Ныр",
+          "characterName": {
+            "originText": "Ныр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Джары зэдэтштагъэр, бэрэскэшхом укlонзы, джау ущыlэщт, Тхьэумафэм щэджэгъоужым укъэкlожьыщт.",
           "langToTranslationMap": {
             "en": "That’s what we agreed. You’ll go on Friday and stay there, and return Sunday afternoon.",
             "ar": ".هكذا اتفقنا، ستذهبين يوم الجمعة وتبقين هناك، وستعودين بعد ظهر يوم الأحد",
             "he": ".כך סיכמנו. את תסעי ביום שישי, תישארי שם ותחזרי ביום ראשון אחר הצהריים"
-          }
+          },
+          "characterFace": 10
         }
       }
     ]
@@ -435,13 +589,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэр",
+          "characterName": {
+            "originText": "Пшъэшъэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "А - Сянэжъ джыри псау, ау сятэжъ бэ шlагъэу идунае ихъожьыгъ.",
           "langToTranslationMap": {
             "en": "My grandmother is still alive, but my grandfather passed away a long time ago.",
             "ar": ".جدتي لا تزال على قيد الحياة، ولكن جدي توفي منذ مدة طويلة",
             "he": ".סבתא שלי עדיין בחיים, אבל סבא שלי נפטר לפני זמן רב"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -454,13 +616,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэр",
+          "characterName": {
+            "originText": "Пшъэшъэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Б - Сэ сыдэкlуагъэп ау тlэкlу джыри тешlэмэ сыдэкlощт, тхьмэфитlу текlымэ синысащ.",
           "langToTranslationMap": {
             "en": "I’m not married, but I’ll marry after some time. The wedding will be in two weeks.",
             "ar": ".لم أتزوج، ولكنني سأتزوج بعد مرور فترة. حفل الزفاف بعد مرور أسبوعين",
             "he": ".אני לא נשואה, אבל אתחתן בעוד זמן מה. החתונה תתקיים בעוד שבועיים"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -473,13 +643,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэр",
+          "characterName": {
+            "originText": "Пшъэшъэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "В - Ары тlу.",
           "langToTranslationMap": {
             "en": "Yes, two.",
             "ar": ".نعم اثنان",
             "he": ".כן, שניים"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -492,13 +670,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэр",
+          "characterName": {
+            "originText": "Пшъэшъэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Г - Нарты пшlыкlутlу ыныбжь, Симэ хы ыныбжь.",
           "langToTranslationMap": {
             "en": "Nart is twelve years old, and Sima is six years old.",
             "ar": ".نارت يبلغ من العمر اثني عشر عاماً، وسيما تبلغ من العمر ست سنوات",
             "he": ".נארט בן שתים עשרה, וסימה בת שש"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -511,13 +697,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Пшъэшъэр",
+          "characterName": {
+            "originText": "Пшъэшъэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Д - Шы сиl шъачэ дэсэу, сшыпахъуи налчыкы дэс.",
           "langToTranslationMap": {
             "en": "My brother is in Shatsha, and my sister is in Nalchik.",
             "ar": ".لدي أخ موجود في شاتشه، وأختي موجودة في نالتشيك",
             "he": ".אחי נמצא בשאטשה, ואחותי בנלצ'יק"
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -530,13 +724,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Кlалэр",
+          "characterName": {
+            "originText": "Кlалэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Е - Сиунагъо мэу цlыкlу, ау тиунагъоу Мыекъуапэ дэсхэр ины, ащ унэгъо тlокlы тыхъоу тыщэпсэу.",
           "langToTranslationMap": {
             "en": "My family here is small, but the rest of our family in Maykop is big. We are about twenty families living there.",
             "ar": ".عائلتي هنا صغيرة، لكن عائلتنا الموجودة في مايكوب كبيرة. نحن حوالي عشرين عائلة نعيش هناك",
             "he": ".המשפחה שלי כאן קטנה, אבל המשפחה שלנו במייקופ גדולה. אנחנו בערך עשרים משפחות שחיות שם"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -549,13 +751,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Кlалэр",
+          "characterName": {
+            "originText": "Кlалэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ж - Сянэ - сятэ Бжъэдыгъу къалэ дэсых.",
           "langToTranslationMap": {
             "en": "My mother and father live in the city of Bzhedug.",
             "ar": ".أمي وأبي يعيشان في مدينة بجدوغ",
             "he": ".אמא ואבא שלי גרים בעיר בז'דוג"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -568,13 +778,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Кlалэр",
+          "characterName": {
+            "originText": "Кlалэр",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "З - Ары гъэрекlо къэсщагъ.",
           "langToTranslationMap": {
             "en": "Yes, I got married last year.",
             "ar": ".نعم، تزوجت العام الماضي",
             "he": ".כן, התחתנתי בשנה שעברה"
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -724,13 +942,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нарт",
+          "characterName": {
+            "originText": "Нарт",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уимафэ шly Бэрзэдж, къэгущыlэрэр Нарт, непэ блыпэ маф, щылэ мазэм иятфэнэрэ, тыдэ ущыl ,сыкъыпфытеуагъ скъыпфэгушlонэу, Укъызхъугъэ уимэфэкl мафэм олажьа? къысфытеожь къызыпфифэрэм, Сишlухьафтын къыбнэсыгъа? Тхьам ыlомэ уигу еlун, Псауныгъэ пытэ Тхьам къыует, Гъэпсэфыгъо мафэм тызэlукlэн, джэгу екlунэу тшlыщт, Шlукlэ.",
           "langToTranslationMap": {
             "ar": ".نهارك سعيد يا برزج، نارت هو المتحدث، اليوم يوم الاثنين، الخامس من يناير، أين أنت، اتصلت بك لتهنئتك، هل تعمل في يوم عيد ميلادك؟ اتصل بي مجدداً عندما يكون لديك الوقت، هل وصلتك هديتي؟ أسأل الله أن تنال إعجابك، وأن يمتعك بالصحة والعافية، نلتقي في نهاية الأسبوع، سنقيم حفلاً لائقاً. بالخير",
             "he": ".יום טוב ברזג', נרט הוא המדבר, היום יום שני, חמישי בינואר, איפה אתה? התקשרתי לברך אותך, האם אתה עובד ביום הולדתך? התקשר אליי שוב כשיש לך זמן, האם קיבלת את המתנה שלי? אני מבקש מאלוהים שתאהב אותה ושתהיה לך בריאות טובה, נתראה בסוף השבוע, נקיים מסיבה מכובדת. בברכה",
             "en": "Good day Berzeg, Nart is the speaker, today is Monday, January 5th, where are you? I called to congratulate you. Are you working on your birthday? Call me again when you have time. Did you receive my gift? I pray to God that you like it and that you enjoy good health and wellness. We will meet at the weekend. We will hold a proper party. Best regards."
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -743,13 +969,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Анзор",
+          "characterName": {
+            "originText": "Анзор",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Ошlу, къэгущыlэрэр Анзор, уитхыгъэ седжагъ, опсэу сыкъзэребгъэблэгъагъэмкlэ, теубытагъэу уизэlукlэ сыкъэкlощт, ау къысфэгъэгъу мэфэзакъом сэлажьэ сыхьатыр блым нэсэ, сыкъэкlошъущтэп сыхьатыр бгъум ипэу.",
           "langToTranslationMap": {
             "ar": ".حسنًا، أنزور هو المتحدث، لقد قرأت رسالتك، شكرًا لك على دعوتي، سأحضر جَمعتك )لقاءك( بالتأكيد، لكنني اعذرني، فأنا أعمل يوم السبت حتى الساعة السابعة، ولن أتمكن من الحضور قبل الساعة التاسعة",
             "he": ".טוב, אנזור הוא המדבר, קראתי את ההודעה שלך, תודה על ההזמנה, אני בהחלט אגיע למפגש שלך (פגישתך), אך סליחה, אני עובד בשבת עד השעה שבע, ולא אוכל להגיע לפני השעה תשע",
             "en": "Okay, Anzor is the speaker, I read your message, thank you for inviting me, I will definitely attend your gathering (meeting), but excuse me, I work on Saturday until 7 o'clock, and I won't be able to arrive before 9."
-          }
+          },
+          "characterFace": 4
         }
       }
     ]
@@ -762,13 +996,21 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Разэ",
+          "characterName": {
+            "originText": "Разэ",
+            "langToTranslationMap": {
+              "en": "",
+              "ar": "",
+              "he": ""
+            }
+          },
           "originText": "Уипчыхьэ шlу, уитхыгъэ седжагъ, опсэу укъзэрэсфэтхагъэмкlэ, къысфэгъэгъу шlухьафтын Бэрзэджы фэсхьынэу хьазырэу сиlэп, ау гупшысэ дэгъу сиl, Сыд пlорэр кек мыlэрысэкlэ къэсшlынышъ къыздэсхьынэу Бэрзэджы изэхэсы. Шlукlэ.",
           "langToTranslationMap": {
             "ar": ".مساء الخير، قرأتُ رسالتك، شكراً لك على مراسلتي. عذراً، ليس لديّ هدية جاهزة لآخذها لبرزج، لكن لديّ فكرة جيدة. ما رأيكِ لو جهّزتُ كيك تفاح وأحضرتها إلى جَمعة برزج؟ مع أطيب التمنيات.بالخير",
             "he": ".ערב טוב, קראתי את ההודעה שלך, תודה שפנית אליי. סליחה, אין לי מתנה מוכנה להביא לברזג, אבל יש לי רעיון טוב. מה דעתך שאכין עוגת תפוחים ואביא אותה למפגש של ברזג? עם מיטב האיחולים. .בברכה",
             "en": "Good evening, I read your message, thank you for contacting me. Sorry, I don't have a ready gift to bring to Berzaj, but I have a good idea. What do you think if I prepare an apple cake and bring it to Berzaj's gathering? Best wishes. Goodbye."
-          }
+          },
+          "characterFace": 14
         }
       }
     ]
@@ -811,291 +1053,295 @@
   {
     "title": "19 dialogue 1",
     "audio": "theLangPath\\lesson_6\\audio\\19.mp3",
-    "parts": {
-      "type": "poem",
-      "data": {
-        "title": {
-          "originText": "О، Iошъхьэмаф! - Дербе Тимур",
-          "langToTranslationMap": {
-            "en": "You Ushhka Maf - Darba Tymor",
-            "ar": "أنت يا أوشحة ماف - دربة تيمور",
-            "he": "אתה אושחה מאף - דרבה צימור"
-          }
-        },
-        "stanzas": [
-          {
-            "stanza": "1",
-            "originText": "ШIулъэгъу зыпфэсшIыгъагъэр сэ бэшIагъэ,",
+    "parts": [
+      {
+        "type": "poem",
+        "data": {
+          "title": {
+            "originText": "О، Iошъхьэмаф! - Дербе Тимур",
             "langToTranslationMap": {
-              "en": "It has been a long time since I loved you,",
-              "ar": "،لقد مضى زمنٍ طويلٍ منذ أن أحببكِ",
-              "he": ",עבר זמן רב מאז שאהבתי אותך"
+              "en": "You Ushhka Maf - Darba Tymor",
+              "ar": "أنت يا أوشحة ماف - دربة تيمور",
+              "he": "אתה אושחה מאף - דרבה צימור"
             }
           },
-          {
-            "stanza": "1",
-            "originText": "О, Iошъхьэмафэу зилъэгагъэ щтагъор.",
-            "langToTranslationMap": {
-              "en": ".You, O Yushkhamaf, whose height inspires fear.",
-              "ar": ".أنت يا أوشحة ماف ، يا من يُثير ارتفاعه الرعب",
-              "he": ".אתה, אוי יושחהמאף, שמרומך מעורר פחד"
+          "stanzas": [
+            {
+              "stanza": "1",
+              "originText": "ШIулъэгъу зыпфэсшIыгъагъэр сэ бэшIагъэ,",
+              "langToTranslationMap": {
+                "en": "It has been a long time since I loved you,",
+                "ar": "،لقد مضى زمنٍ طويلٍ منذ أن أحببكِ",
+                "he": ",עבר זמן רב מאז שאהבתי אותך"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "О, Iошъхьэмафэу зилъэгагъэ щтагъор.",
+              "langToTranslationMap": {
+                "en": ".You, O Yushkhamaf, whose height inspires fear.",
+                "ar": ".أنت يا أوشحة ماف ، يا من يُثير ارتفاعه الرعب",
+                "he": ".אתה, אוי יושחהמאף, שמרומך מעורר פחד"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Сэ Фыщт ышъхьашъо ситэу уидэхагъэ",
+              "langToTranslationMap": {
+                "en": "I am from the top of Fisht, because I remembered your beauty,",
+                "ar": "،وأنا من فوق قمة فيشت، لأني تذكرتُ جمالكِ",
+                "he": ",אני מלמעלה של פסגת פישט, כי זכרתי את יופייך"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Сыгу къэкIыжьыгъэшъ, шыблэу сыщэгъуагъо.",
+              "langToTranslationMap": {
+                "en": "So I thunder like thunder.",
+                "ar": ".فأدوّي كالرعد",
+                "he": ".לכן אני רועם כמו רעם"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Сэкуо лъэшэу, чIыр зэпэзгъэджэжьэу,",
+              "langToTranslationMap": {
+                "en": ",I shout loudly to make the earth hear",
+                "ar": "،أصرخ بصوت عالي أُسْمِعُ أرجاء الأرض",
+                "he": ",אני צועק בקול רם לשמוע את כל הארץ"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Тхьэу сызлъыхъугъэм ыгу зыкъэзгъэкIыжьэу,",
+              "langToTranslationMap": {
+                "en": ",I remember the god I searched for",
+                "ar": "،أذكر الإله الذي بحثت عنه",
+                "he": ",אני זוכר את האל שאליו חיפשתי"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Сэ къысаIуагъэшъ, пщыпIэр Iошъхьэмафэу,",
+              "langToTranslationMap": {
+                "en": ",Because they told me the throne is Yushkhamaf",
+                "ar": "،ولأنهم أخبرني أن العرش هو أوشحة ماف",
+                "he": ",כי אמרו לי שהכס הוא יושחהמאף"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Къушъхьэ зэхэтмэ ар яжъышъхьэ мафэу.",
+              "langToTranslationMap": {
+                "en": "It is the ultimate good of the combined mountain masses.",
+                "ar": ".إنها منتهى الخير لكتل الجبال المجتمعة",
+                "he": ".זו הטובה העליונה של המוני ההרים המאוחדים"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Си Фыщти дахэ, тыжьыныпсэу осыр.",
+              "langToTranslationMap": {
+                "en": "Fisht’s beautiful snow is like silver water.",
+                "ar": ".فيشتت الجميل ثلج كماء الفضة",
+                "he": ".שלג פישט היפה כמו מים מכסף"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Шъхьац жъокужъоустхъоу тыгъэм пэжъыужьы.",
+              "langToTranslationMap": {
+                "en": "Hair reflected on the sun’s rays like glowing embers.",
+                "ar": ".شعر ينعكس على أشعة الشمس كجَمْرِ متّقد",
+                "he": ".שיער המשקף את קרני השמש כמו גחלים בוערות"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "Ащ емыплъэкIхэу, мэкIэмакIэу нэпсыр,",
+              "langToTranslationMap": {
+                "en": "Without turning to them, the tears slowly,",
+                "ar": "،دون أن يلتفتوا إليها،  الدموع .. رويداً رويداً ",
+                "he": ",בלי להפנות אליהם מביטות, הדמעות לאט לאט"
+              }
+            },
+            {
+              "stanza": "3",
+              "originText": "ГушIогъо нэпсыр нэмэ къакIефыжьы.",
+              "langToTranslationMap": {
+                "en": "Tears of joy gush from the eyes.",
+                "ar": ".تقذف دموع الفرح من العيون",
+                "he": ".דמעות שמחה זורמות מהעיניים"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Ау сэ сызфаер, сигугъапIэр оры,",
+              "langToTranslationMap": {
+                "en": "But what I want, what I hope for, is you,",
+                "ar": "،ولكن ما أريده، ما آمله هو أنت",
+                "he": ",אבל מה שאני רוצה, מה שאני מקווה לו, זה אתה"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Орыф-орыфэу осыр къызэздзыхрэр,",
+              "langToTranslationMap": {
+                "en": "Throwing snow from its peak with sparkle after sparkle,",
+                "ar": "،من ترمي عن قمتها الثلج وميضاً وميضاً ",
+                "he": ",זורק שלג מפסגתו ניצוץ אחרי ניצוץ"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Къушъхьэтх зэхэтэу шъхьитIукIэ ом хэхьагъэр,",
+              "langToTranslationMap": {
+                "en": "Mountain masses embracing the sky with two peaks,",
+                "ar": "،كُتلَ جبالٍ تعانق السماء بقمّتين",
+                "he": ",מוני הרים מחבקים את השמיים עם שתי פסגות"
+              }
+            },
+            {
+              "stanza": "4",
+              "originText": "Зипахъи, пщагъуи уахътэм хэкIокIагъэр.",
+              "langToTranslationMap": {
+                "en": ".With its steam and mist it permeates history.",
+                "ar": ".ببخارها وضبابها تغلغلا في التاريخ",
+                "he": ".עם האדים והערפילים שלה היא חודרת להיסטוריה"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "Си Къэбэртай, сипкIыхьэу Iошъхьэмаф,",
+              "langToTranslationMap": {
+                "en": "O Qabertay, my dream, O Yushkhamaf,",
+                "ar": "،يا قبرتايي، حلمي يا أوشحة ماف",
+                "he": ",או קברטאי, חלומי, אוי יושחהמאף"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "Сигъэт такъикърэ, зы такъикърэ уионэгу.",
+              "langToTranslationMap": {
+                "en": "Let me stay for a minute, for a minute on your saddle.",
+                "ar": ".أدعني لدقيقة، لدقيقةٍ فوق سرجك",
+                "he": ".תן לי לשהות רגע, רגע על האוכף שלך"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "Джащыгъум къыдэхъущтыр бэ сэ сыгу,",
+              "langToTranslationMap": {
+                "en": "Then much will be fulfilled for my heart,",
+                "ar": "،عندها سيتحقق الكثير لقلبي",
+                "he": ",אז הרבה יתגשם ללבי"
+              }
+            },
+            {
+              "stanza": "5",
+              "originText": "Джащыгъум, скъошхэр, сидунай сфэмаф!",
+              "langToTranslationMap": {
+                "en": "Then, my brothers, my world will be better for me!",
+                "ar": "!حينها، يا أخوتي، سيكون دنيايَ خيراً عليّ",
+                "he": "!אז, אחי, יהיה עולמי טוב יותר בשבילי"
+              }
             }
-          },
-          {
-            "stanza": "1",
-            "originText": "Сэ Фыщт ышъхьашъо ситэу уидэхагъэ",
-            "langToTranslationMap": {
-              "en": "I am from the top of Fisht, because I remembered your beauty,",
-              "ar": "،وأنا من فوق قمة فيشت، لأني تذكرتُ جمالكِ",
-              "he": ",אני מלמעלה של פסגת פישט, כי זכרתי את יופייך"
-            }
-          },
-          {
-            "stanza": "1",
-            "originText": "Сыгу къэкIыжьыгъэшъ, шыблэу сыщэгъуагъо.",
-            "langToTranslationMap": {
-              "en": "So I thunder like thunder.",
-              "ar": ".فأدوّي كالرعد",
-              "he": ".לכן אני רועם כמו רעם"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Сэкуо лъэшэу, чIыр зэпэзгъэджэжьэу,",
-            "langToTranslationMap": {
-              "en": ",I shout loudly to make the earth hear",
-              "ar": "،أصرخ بصوت عالي أُسْمِعُ أرجاء الأرض",
-              "he": ",אני צועק בקול רם לשמוע את כל הארץ"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Тхьэу сызлъыхъугъэм ыгу зыкъэзгъэкIыжьэу,",
-            "langToTranslationMap": {
-              "en": ",I remember the god I searched for",
-              "ar": "،أذكر الإله الذي بحثت عنه",
-              "he": ",אני זוכר את האל שאליו חיפשתי"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Сэ къысаIуагъэшъ, пщыпIэр Iошъхьэмафэу,",
-            "langToTranslationMap": {
-              "en": ",Because they told me the throne is Yushkhamaf",
-              "ar": "،ولأنهم أخبرني أن العرش هو أوشحة ماف",
-              "he": ",כי אמרו לי שהכס הוא יושחהמאף"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Къушъхьэ зэхэтмэ ар яжъышъхьэ мафэу.",
-            "langToTranslationMap": {
-              "en": "It is the ultimate good of the combined mountain masses.",
-              "ar": ".إنها منتهى الخير لكتل الجبال المجتمعة",
-              "he": ".זו הטובה העליונה של המוני ההרים המאוחדים"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "Си Фыщти дахэ, тыжьыныпсэу осыр.",
-            "langToTranslationMap": {
-              "en": "Fisht’s beautiful snow is like silver water.",
-              "ar": ".فيشتت الجميل ثلج كماء الفضة",
-              "he": ".שלג פישט היפה כמו מים מכסף"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "Шъхьац жъокужъоустхъоу тыгъэм пэжъыужьы.",
-            "langToTranslationMap": {
-              "en": "Hair reflected on the sun’s rays like glowing embers.",
-              "ar": ".شعر ينعكس على أشعة الشمس كجَمْرِ متّقد",
-              "he": ".שיער המשקף את קרני השמש כמו גחלים בוערות"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "Ащ емыплъэкIхэу, мэкIэмакIэу нэпсыр,",
-            "langToTranslationMap": {
-              "en": "Without turning to them, the tears slowly,",
-              "ar": "،دون أن يلتفتوا إليها،  الدموع .. رويداً رويداً ",
-              "he": ",בלי להפנות אליהם מביטות, הדמעות לאט לאט"
-            }
-          },
-          {
-            "stanza": "3",
-            "originText": "ГушIогъо нэпсыр нэмэ къакIефыжьы.",
-            "langToTranslationMap": {
-              "en": "Tears of joy gush from the eyes.",
-              "ar": ".تقذف دموع الفرح من العيون",
-              "he": ".דמעות שמחה זורמות מהעיניים"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Ау сэ сызфаер, сигугъапIэр оры,",
-            "langToTranslationMap": {
-              "en": "But what I want, what I hope for, is you,",
-              "ar": "،ولكن ما أريده، ما آمله هو أنت",
-              "he": ",אבל מה שאני רוצה, מה שאני מקווה לו, זה אתה"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Орыф-орыфэу осыр къызэздзыхрэр,",
-            "langToTranslationMap": {
-              "en": "Throwing snow from its peak with sparkle after sparkle,",
-              "ar": "،من ترمي عن قمتها الثلج وميضاً وميضاً ",
-              "he": ",זורק שלג מפסגתו ניצוץ אחרי ניצוץ"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Къушъхьэтх зэхэтэу шъхьитIукIэ ом хэхьагъэр,",
-            "langToTranslationMap": {
-              "en": "Mountain masses embracing the sky with two peaks,",
-              "ar": "،كُتلَ جبالٍ تعانق السماء بقمّتين",
-              "he": ",מוני הרים מחבקים את השמיים עם שתי פסגות"
-            }
-          },
-          {
-            "stanza": "4",
-            "originText": "Зипахъи, пщагъуи уахътэм хэкIокIагъэр.",
-            "langToTranslationMap": {
-              "en": ".With its steam and mist it permeates history.",
-              "ar": ".ببخارها وضبابها تغلغلا في التاريخ",
-              "he": ".עם האדים והערפילים שלה היא חודרת להיסטוריה"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "Си Къэбэртай, сипкIыхьэу Iошъхьэмаф,",
-            "langToTranslationMap": {
-              "en": "O Qabertay, my dream, O Yushkhamaf,",
-              "ar": "،يا قبرتايي، حلمي يا أوشحة ماف",
-              "he": ",או קברטאי, חלומי, אוי יושחהמאף"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "Сигъэт такъикърэ, зы такъикърэ уионэгу.",
-            "langToTranslationMap": {
-              "en": "Let me stay for a minute, for a minute on your saddle.",
-              "ar": ".أدعني لدقيقة، لدقيقةٍ فوق سرجك",
-              "he": ".תן לי לשהות רגע, רגע על האוכף שלך"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "Джащыгъум къыдэхъущтыр бэ сэ сыгу,",
-            "langToTranslationMap": {
-              "en": "Then much will be fulfilled for my heart,",
-              "ar": "،عندها سيتحقق الكثير لقلبي",
-              "he": ",אז הרבה יתגשם ללבי"
-            }
-          },
-          {
-            "stanza": "5",
-            "originText": "Джащыгъум, скъошхэр, сидунай сфэмаф!",
-            "langToTranslationMap": {
-              "en": "Then, my brothers, my world will be better for me!",
-              "ar": "!حينها، يا أخوتي، سيكون دنيايَ خيراً عليّ",
-              "he": "!אז, אחי, יהיה עולמי טוב יותר בשבילי"
-            }
-          }
-        ]
+          ]
+        }
       }
-    }
+    ]
   },
   {
     "title": "20 dialogue 1",
     "audio": "theLangPath\\lesson_6\\audio\\20.mp3",
-    "parts": {
-      "type": "poem",
-      "data": {
-        "title": {
-          "originText": "Кlэух – Чэтэо Мэруан.",
-          "langToTranslationMap": {
-            "en": "Ending - Chataw Marwan",
-            "ar": "خاتمة - تشتاو مروان.",
-            "he": "סיום - צ'טאוו מרואן"
-          }
-        },
-        "stanzas": [
-          {
-            "stanza": "1",
-            "originText": "Ой тилъэпкъэу икъухьагъэр",
+    "parts": [
+      {
+        "type": "poem",
+        "data": {
+          "title": {
+            "originText": "Кlэух – Чэтэо Мэруан.",
             "langToTranslationMap": {
-              "en": "O our scattered people,",
-              "ar": "يا شعبنا المشتت،",
-              "he": "הו עמנו המפוזר,"
+              "en": "Ending - Chataw Marwan",
+              "ar": "خاتمة - تشتاو مروان.",
+              "he": "סיום - צ'טאוו מרואן"
             }
           },
-          {
-            "stanza": "1",
-            "originText": "Хамэ къэралхэмэ ащыпсэурэр ",
-            "langToTranslationMap": {
-              "en": "Who lives in foreign lands,",
-              "ar": "الذي يعيش في بلاد الغربة،",
-              "he": "שגר בארצות זרות,"
+          "stanzas": [
+            {
+              "stanza": "1",
+              "originText": "Ой тилъэпкъэу икъухьагъэр",
+              "langToTranslationMap": {
+                "en": "O our scattered people,",
+                "ar": "يا شعبنا المشتت،",
+                "he": "הו עמנו המפוזר,"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Хамэ къэралхэмэ ащыпсэурэр ",
+              "langToTranslationMap": {
+                "en": "Who lives in foreign lands,",
+                "ar": "الذي يعيش في بلاد الغربة،",
+                "he": "שגר בארצות זרות,"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Тыгъогу рыкlу тэ пстэури! ",
+              "langToTranslationMap": {
+                "en": "We are all travelers",
+                "ar": "نحن جميعاً على مرتحلون",
+                "he": "כולנו עולים על דרך"
+              }
+            },
+            {
+              "stanza": "1",
+              "originText": "Сыд ибагъэу гъомылэ тlыгъми ",
+              "langToTranslationMap": {
+                "en": "No matter how much provision we carry,",
+                "ar": "مهما حملنا معنا من زادٍ،",
+                "he": "לא משנה כמה אספנו אספקה,"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Тигъогу кlыхьэшъ тlэкlэухэщт ",
+              "langToTranslationMap": {
+                "en": "Our journey is long, and we will consume it all.",
+                "ar": "فرحلتنا طويلة، وسنستهلكه كله.",
+                "he": "המסע שלנו ארוך, ונצרוך את הכל."
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Типlалъэ тынэсы тшlоигъомэ",
+              "langToTranslationMap": {
+                "en": "If we want to reach our goal,",
+                "ar": "إن أردنا الوصول إلى غايتنا،",
+                "he": "אם נרצה להגיע ליעד שלנו,"
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Теужьэрын фай адыгэ лъэпкъ ... ",
+              "langToTranslationMap": {
+                "en": "Let's hasten, O Adyghe people...",
+                "ar": "فلنُسرّع يا شعب الأديغة...",
+                "he": "נמהר, עם האדיגה..."
+              }
+            },
+            {
+              "stanza": "2",
+              "originText": "Шъуеу ... шыухэр, тежъугъэлъэдэкъау.",
+              "langToTranslationMap": {
+                "en": "Forward... horsemen, let’s urge our horses.",
+                "ar": "إلى الأمام... أيها الفرسان، فلنُهمز خيولنا.",
+                "he": "קדימה... רוכבי הסוסים, נדרבן את הסוסים שלנו."
+              }
             }
-          },
-          {
-            "stanza": "1",
-            "originText": "Тыгъогу рыкlу тэ пстэури! ",
-            "langToTranslationMap": {
-              "en": "We are all travelers",
-              "ar": "نحن جميعاً على مرتحلون",
-              "he": "כולנו עולים על דרך"
-            }
-          },
-          {
-            "stanza": "1",
-            "originText": "Сыд ибагъэу гъомылэ тlыгъми ",
-            "langToTranslationMap": {
-              "en": "No matter how much provision we carry,",
-              "ar": "مهما حملنا معنا من زادٍ،",
-              "he": "לא משנה כמה אספנו אספקה,"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Тигъогу кlыхьэшъ тlэкlэухэщт ",
-            "langToTranslationMap": {
-              "en": "Our journey is long, and we will consume it all.",
-              "ar": "فرحلتنا طويلة، وسنستهلكه كله.",
-              "he": "המסע שלנו ארוך, ונצרוך את הכל."
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Типlалъэ тынэсы тшlоигъомэ",
-            "langToTranslationMap": {
-              "en": "If we want to reach our goal,",
-              "ar": "إن أردنا الوصول إلى غايتنا،",
-              "he": "אם נרצה להגיע ליעד שלנו,"
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Теужьэрын фай адыгэ лъэпкъ ... ",
-            "langToTranslationMap": {
-              "en": "Let's hasten, O Adyghe people...",
-              "ar": "فلنُسرّع يا شعب الأديغة...",
-              "he": "נמהר, עם האדיגה..."
-            }
-          },
-          {
-            "stanza": "2",
-            "originText": "Шъуеу ... шыухэр, тежъугъэлъэдэкъау.",
-            "langToTranslationMap": {
-              "en": "Forward... horsemen, let’s urge our horses.",
-              "ar": "إلى الأمام... أيها الفرسان، فلنُهمز خيولنا.",
-              "he": "קדימה... רוכבי הסוסים, נדרבן את הסוסים שלנו."
-            }
-          }
-        ]
+          ]
+        }
       }
-    }
+    ]
   }
 ]

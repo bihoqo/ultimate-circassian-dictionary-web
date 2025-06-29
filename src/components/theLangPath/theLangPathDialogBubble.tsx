@@ -3,15 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { usePreferredSettings } from "~/hooks/usePreferredSettings";
 import { TEXT_SIZE_MAP } from "~/constants/setting";
-import { getCharacterByName } from "~/components/theLangPath/panels";
 import { ITheLangPathDialogBubble } from "~/interfaces/theLangPath";
 import useWindowSize from "~/hooks/useWindowDimensions";
 import { MOBILE_VERSION_WIDTH } from "~/constants";
 
 export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDialogBubble }) {
   const { width } = useWindowSize();
-  const { leftOrRight, characterName, originText, langToTranslationMap } = data;
-  const character = getCharacterByName(characterName);
+  const { leftOrRight, characterName, originText, langToTranslationMap, characterFace } = data;
   const { settings } = usePreferredSettings();
   const { circassianFontSize, translationFontSize, isTranslationChecked, translationLangs } =
     settings;
@@ -30,8 +28,8 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
         {/* Avatar and name */}
         <div className="flex flex-col items-center gap-1">
           <Image
-            src={character.avatar}
-            alt={character.name}
+            src={`/theLangPath/faces/${characterFace}.png`}
+            alt={characterName.originText}
             width={width < MOBILE_VERSION_WIDTH ? 45 : 65}
             height={width < MOBILE_VERSION_WIDTH ? 45 : 65}
             unoptimized
@@ -51,7 +49,7 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
               TEXT_SIZE_MAP[circassianFontSize],
             )}
           >
-            {character.name}
+            {characterName.originText}
           </p>
         </div>
 
