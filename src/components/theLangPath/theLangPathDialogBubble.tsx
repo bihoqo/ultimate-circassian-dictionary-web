@@ -42,15 +42,35 @@ export default function TheLangPathDialogBubble({ data }: { data: ITheLangPathDi
               },
             )}
           />
-          <p
-            className={cn(
-              "text-2xl font-bold",
-              leftOrRight === "left" ? "text-[#f27141]" : "text-[#4a7324]",
-              TEXT_SIZE_MAP[circassianFontSize],
-            )}
-          >
-            {characterName.originText}
-          </p>
+          <div>
+            <p
+              className={cn(
+                "text-2xl font-bold",
+                leftOrRight === "left" ? "text-[#f27141]" : "text-[#4a7324]",
+                TEXT_SIZE_MAP[circassianFontSize],
+              )}
+            >
+              {characterName.originText}
+            </p>
+            <div
+              className={cn(
+                "flex flex-col gap-0 space-y-0 font-bold",
+                leftOrRight === "left" ? "text-[#f27141]" : "text-[#4a7324]",
+                TEXT_SIZE_MAP[translationFontSize],
+                { hidden: !isTranslationChecked },
+                {
+                  // Align translation text based on the direction of the bubble
+                  "text-left": leftOrRight === "left",
+                  "text-right": leftOrRight === "right",
+                },
+              )}
+            >
+              {/* Translation */}
+              {translationLangs.map((lang) => (
+                <p key={lang}>{characterName.langToTranslationMap[lang]}</p>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Dialog bubble and translation container */}
