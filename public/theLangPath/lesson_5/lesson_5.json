@@ -21,7 +21,7 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Сэтэнай",
-          "originText": "Сэ сикlасэп щэпlэшхом сыкъщыщэфэнэу. Къуемыехэр мыlэрс, тlам, къоIус фэдэхэр бэдзэрым къыщысэщэфых. Хэтэрыкlхэри ары, къэбы, чlыбжым, цугу, нэшэбэгу фэдэхэр. Ау хьалыгъур хьалыгъущапlэм къыщысэщэфы, гъэжъэгъакlэу щэты, мэфэ къэс ежьым егъажъэ. Сэ унагъо сиl, узынчъэгъэ шхын lофтхьабзэр сэркlэ гугъоешху. Тхьацу зэпыупкlыгъэр, пынджыр, хьаджыгъэр, lорганык щапlэмэ къащысэщэфых. Джыри шъонlэшlухэр, пцIыипсыр , псыр сишъхьагъусэ шъонlэшlу щапlэм къыщещэфых, сэ ахэр Сэ сикlасэп щэпlэшхом сыкъщыщэфэнэу. Къуемыехэр мыlэрс, тlам, къоIус фэдэхэр бэдзэрым къыщысэщэфых. Хэтэрыкlхэри ары, къэбы, чlыбжым, цугу, нэшэбэгу фэдэхэр. Ау хьалыгъур хьалыгъущапlэм къыщысэщэфы, гъэжъэгъакlэу щэты, мэфэ къэс ежьым егъажъэ. Сэ унагъо сиl, узынчъэгъэ шхын lофтхьабзэр сэркlэ гугъоешху. Тхьацу зэпыупкlыгъэр, пынджыр, хьаджыгъэр, lорганык щапlэмэ къащысэщэфых. Джыри шъонlэшlухэр, пцIыипсыр , псыр сишъхьагъусэ шъонlэшlу щапlэм къыщещэфых, сэ ахэр къысфэхьыщтхэп.",
+          "originText": "Сэ сикlасэп щэпlэшхом сыкъщыщэфэнэу. Къуемыехэр мыlэрс, тlам, къоIус фэдэхэр бэдзэрым къыщысэщэфых. Хэтэрыкlхэри ары, къэбы, чlыбжым, цугу, нэшэбэгу фэдэхэр. Ау хьалыгъур хьалыгъущапlэм къыщысэщэфы, гъэжъэгъакlэу щэты, мэфэ къэс ежьым егъажъэ. Сэ унагъо сиl, узынчъэгъэ шхын lофтхьабзэр сэркlэ гугъоешху. Тхьацу зэпыупкlыгъэр, пынджыр, хьаджыгъэр, lорганык щапlэмэ къащысэщэфых. Джыри шъонlэшlухэр, пцIыипсыр , псыр сишъхьагъусэ шъонlэшlу щапlэм къыщещэфых, сэ ахэр Сэ сикlасэп щэпlэшхом сыкъщыщэфэнэу. Къуемыехэр мыlэрс, тlам, къоIус фэдэхэр бэдзэрым къыщысэщэфых. Хэтэрыкlхэри ары, къэбы, чlыбжым, цугу, нэшэбэгу фэдэхэр. Ау хьалыгъур хьалыгъущапlэм къыщысэщэфы, гъэжъэгъакlэу щэты, мэфэ къэс ежьым егъажъэ. Сэ унагъо сиl, узынчъэгъэ шхын lофтхьабзэр сэркlэ гугъоешху. Тхьацу зэпыупкlыгъэр, пынджыр, хьаджыгъэр, lорганык щапlэмэ къащысэщэфых. Джыри шъонlэшlухэр, пцIыипсыр , псыр сишъхьагъусэ шъонlэшlу щапlэм къыщещэфых, сэ ахэр къысфэхьыщтхэп.",
           "langToTranslationMap": {
             "en": "Where do I buy my groceries? Well, I buy everything from the supermarket. I come back late from work and the supermarket is open until 8 p.m., and it has everything I need: bread, butter, cheese, eggs, fish, apple juice, and pizza. I leave work without energy to cook. On Saturdays, I buy meat (beef) from the butcher, because it’s fresh there. That’s why I’ve been buying from him for years.",
             "ar": ".من أين أَشتري أغراضي، حسناً أنا أَشتري كل أغراضي من السوبر ماركت، أَرجع متأخراً من العمل والسوبر ماركت تبقى مفتوحة حتى الساعة الثامنة مساءً وفيها كل ما أحتاج إليه: خبز، زبدة، جبنة، بيض، سمك، عصير تفاح، وبيتزا، أنا أَخرج من العمل ولا طاقة لدي للطبخ، يوم السبت أَشتري لحم (البقر) من عند الجزار، فعنده يكون طازجاً، لذلك أَشتري من عنده منذ عدة سنوات",
@@ -576,7 +576,7 @@
   },
   {
     "title": "9.2 dialogue 1",
-    "audio": "theLangPath\\lesson_5\\audio\\9.1_1.mp3",
+    "audio": "theLangPath\\lesson_5\\audio\\9.2_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -823,166 +823,164 @@
   {
     "title": "19 dialogue 1",
     "audio": "theLangPath\\lesson_5\\audio\\19.mp3",
-    "parts": [
-      {
-        "type": "poem",
-        "data": {
-          "title": {
-            "originText": "Лъэпкъ шъыгъу - Дзыбэ Саные.",
+    "parts": {
+      "type": "poem",
+      "data": {
+        "title": {
+          "originText": "Лъэпкъ шъыгъу - Дзыбэ Саные.",
+          "langToTranslationMap": {
+            "en": "Lament of the People – Dzibeh Saniye",
+            "ar": "مرثية الشعب – دزيبه سانييه",
+            "he": "קינת העם – דזיבה סאניה"
+          }
+        },
+        "stanzas": [
+          {
+            "stanza": "1",
+            "originText": "Непэ силъэпкъ мэшъыгъо",
             "langToTranslationMap": {
-              "en": "Lament of the People – Dzibeh Saniye",
-              "ar": "مرثية الشعب – دزيبه سانييه",
-              "he": "קינת העם – דזיבה סאניה"
+              "en": "Today my people lament,",
+              "ar": "،اليوم شعبي يحدّ",
+              "he": ",היום עמי מקונן"
             }
           },
-          "stanzas": [
-            {
-              "stanza": "1",
-              "originText": "Непэ силъэпкъ мэшъыгъо",
-              "langToTranslationMap": {
-                "en": "Today my people lament,",
-                "ar": "،اليوم شعبي يحدّ",
-                "he": ",היום עמי מקונן"
-              }
-            },
-            {
-              "stanza": "1",
-              "originText": "Мэшъыгъо лlэшlэгъум къехъугъэу",
-              "langToTranslationMap": {
-                "en": "They’ve mourned for more than a century.",
-                "ar": ".يحدّون منذ أكثر من قرن",
-                "he": ".הם מתאבלים יותר ממאה שנה"
-              }
-            },
-            {
-              "stanza": "1",
-              "originText": "А машlом изао къелыгъэм",
-              "langToTranslationMap": {
-                "en": "Those who survived the flames of that war,",
-                "ar": "،إن عدد الناجين من لظى الحرب هذه",
-                "he": ",הניצולים מאש המלחמה ההיא"
-              }
-            },
-            {
-              "stanza": "1",
-              "originText": "Ипчъагъэ гур егъэлыгъо.",
-              "langToTranslationMap": {
-                "en": "Their sheer number sends chills down the spine.",
-                "ar": ".تقشعر الأبدان لكثرتهم",
-                "he": ".ריבויים מעורר צמרמורת"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Хьадэгъур зыми шъхьасыгъэп",
-              "langToTranslationMap": {
-                "en": "Death showed no mercy to anyone,",
-                "ar": "،لم يكترث الموت لأحد",
-                "he": ",המוות לא ריחם על איש"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Ижь чъыlэ зынэсырэр фэхызэ",
-              "langToTranslationMap": {
-                "en": "Everyone touched by its cold breath fell dead.",
-                "ar": ".فقد كان كل من تمسّت ريحه الباردة يسقط ميتاً",
-                "he": ".כל מי שנגעה בו נשימתו הקרה – נפל מת"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Адыгэр ихэку рагъэсыгъэп",
-              "langToTranslationMap": {
-                "en": "They did not let the Adyghe settle in their homeland.",
-                "ar": ".ولم يتركوا الأديغة يستقرون في وطنهم",
-                "he": ".לא הניחו לאדיגים לשוב למולדתם"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Адыгэр ичlыгу рафыгъ гъызэ.",
-              "langToTranslationMap": {
-                "en": "They expelled them from their land in tears.",
-                "ar": ".طردوا الأديغة من وطنهم وهم يبكون",
-                "he": ".הם גורשו מביתם בבכי"
-              }
-            },
-            {
-              "stanza": "3",
-              "originText": "Псэ минмэ джы хыр якъэхалъэу",
-              "langToTranslationMap": {
-                "en": "Thousands now lie buried beneath the sea,",
-                "ar": "،آلاف الأرواح الآن قبورهم قاع البحر",
-                "he": ",אלפי נשמות קבורות בקרקעית הים"
-              }
-            },
-            {
-              "stanza": "3",
-              "originText": "Псы чъыlэр ателъ чэфын хьылъэу",
-              "langToTranslationMap": {
-                "en": "Cold water wraps their bodies like a heavy shroud,",
-                "ar": "،الماء البارد كفنٌ ثقيلٌ فوق أجسادهم",
-                "he": ",מים קרים עוטפים את גופותיהם כמו תכריך כבד"
-              }
-            },
-            {
-              "stanza": "3",
-              "originText": "Ябгыбзэ ор шlуцlэм щэуалъэ",
-              "langToTranslationMap": {
-                "en": "Their cries echo through the Black Sea,",
-                "ar": "،صرخات لعناتهم تتردد في البحر الأسود",
-                "he": ",קללותיהם מהדהדות בים השחור"
-              }
-            },
-            {
-              "stanza": "3",
-              "originText": "Зилажьэм фатlупщы жьым хэлъэу.",
-              "langToTranslationMap": {
-                "en": "Carried by the wind to those who deserve it.",
-                "ar": ".يرسلونها مع الريح لمستحقيهم",
-                "he": ".נושבות ברוח לאוזני מי שראוי להן"
-              }
-            },
-            {
-              "stanza": "4",
-              "originText": "Шъукъэущ, сикъушъхьэ сыджхэр!",
-              "langToTranslationMap": {
-                "en": "Awaken, you peaks of my mountains!",
-                "ar": "!استيقظوا ، يا قمم جبالي",
-                "he": "!התעוררו, פסגות הררי"
-              }
-            },
-            {
-              "stanza": "4",
-              "originText": "Къэжъугъэуцу, сипсыхъохэр, шъуичъэ!",
-              "langToTranslationMap": {
-                "en": "Halt, my rivers, cease your flow!",
-                "ar": "!أوقفوا يا أنهاري، جريانكم",
-                "he": "!עצרו, נהרותיי, את זרמכם"
-              }
-            },
-            {
-              "stanza": "4",
-              "originText": "Зышъууф, симэзхэр, сышъоджэ!",
-              "langToTranslationMap": {
-                "en": "Bow down, my forests, I call to you!",
-                "ar": "!انحنوا يا غاباتي، أناديكم",
-                "he": "!השתחוו, יערותיי, אני קוראת לכן"
-              }
-            },
-            {
-              "stanza": "4",
-              "originText": "Шъудэшъыгъу силъэпкъ насыпынчъэ!",
-              "langToTranslationMap": {
-                "en": "Join in the mourning of my sorrowful people!",
-                "ar": "!شاركوا الحدا مع شعبي التعيس",
-                "he": "!הצטרפו לאבלו של עמי האומלל"
-              }
+          {
+            "stanza": "1",
+            "originText": "Мэшъыгъо лlэшlэгъум къехъугъэу",
+            "langToTranslationMap": {
+              "en": "They’ve mourned for more than a century.",
+              "ar": ".يحدّون منذ أكثر من قرن",
+              "he": ".הם מתאבלים יותר ממאה שנה"
             }
-          ]
-        }
+          },
+          {
+            "stanza": "1",
+            "originText": "А машlом изао къелыгъэм",
+            "langToTranslationMap": {
+              "en": "Those who survived the flames of that war,",
+              "ar": "،إن عدد الناجين من لظى الحرب هذه",
+              "he": ",הניצולים מאש המלחמה ההיא"
+            }
+          },
+          {
+            "stanza": "1",
+            "originText": "Ипчъагъэ гур егъэлыгъо.",
+            "langToTranslationMap": {
+              "en": "Their sheer number sends chills down the spine.",
+              "ar": ".تقشعر الأبدان لكثرتهم",
+              "he": ".ריבויים מעורר צמרמורת"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Хьадэгъур зыми шъхьасыгъэп",
+            "langToTranslationMap": {
+              "en": "Death showed no mercy to anyone,",
+              "ar": "،لم يكترث الموت لأحد",
+              "he": ",המוות לא ריחם על איש"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Ижь чъыlэ зынэсырэр фэхызэ",
+            "langToTranslationMap": {
+              "en": "Everyone touched by its cold breath fell dead.",
+              "ar": ".فقد كان كل من تمسّت ريحه الباردة يسقط ميتاً",
+              "he": ".כל מי שנגעה בו נשימתו הקרה – נפל מת"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Адыгэр ихэку рагъэсыгъэп",
+            "langToTranslationMap": {
+              "en": "They did not let the Adyghe settle in their homeland.",
+              "ar": ".ولم يتركوا الأديغة يستقرون في وطنهم",
+              "he": ".לא הניחו לאדיגים לשוב למולדתם"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Адыгэр ичlыгу рафыгъ гъызэ.",
+            "langToTranslationMap": {
+              "en": "They expelled them from their land in tears.",
+              "ar": ".طردوا الأديغة من وطنهم وهم يبكون",
+              "he": ".הם גורשו מביתם בבכי"
+            }
+          },
+          {
+            "stanza": "3",
+            "originText": "Псэ минмэ джы хыр якъэхалъэу",
+            "langToTranslationMap": {
+              "en": "Thousands now lie buried beneath the sea,",
+              "ar": "،آلاف الأرواح الآن قبورهم قاع البحر",
+              "he": ",אלפי נשמות קבורות בקרקעית הים"
+            }
+          },
+          {
+            "stanza": "3",
+            "originText": "Псы чъыlэр ателъ чэфын хьылъэу",
+            "langToTranslationMap": {
+              "en": "Cold water wraps their bodies like a heavy shroud,",
+              "ar": "،الماء البارد كفنٌ ثقيلٌ فوق أجسادهم",
+              "he": ",מים קרים עוטפים את גופותיהם כמו תכריך כבד"
+            }
+          },
+          {
+            "stanza": "3",
+            "originText": "Ябгыбзэ ор шlуцlэм щэуалъэ",
+            "langToTranslationMap": {
+              "en": "Their cries echo through the Black Sea,",
+              "ar": "،صرخات لعناتهم تتردد في البحر الأسود",
+              "he": ",קללותיהם מהדהדות בים השחור"
+            }
+          },
+          {
+            "stanza": "3",
+            "originText": "Зилажьэм фатlупщы жьым хэлъэу.",
+            "langToTranslationMap": {
+              "en": "Carried by the wind to those who deserve it.",
+              "ar": ".يرسلونها مع الريح لمستحقيهم",
+              "he": ".נושבות ברוח לאוזני מי שראוי להן"
+            }
+          },
+          {
+            "stanza": "4",
+            "originText": "Шъукъэущ, сикъушъхьэ сыджхэр!",
+            "langToTranslationMap": {
+              "en": "Awaken, you peaks of my mountains!",
+              "ar": "!استيقظوا ، يا قمم جبالي",
+              "he": "!התעוררו, פסגות הררי"
+            }
+          },
+          {
+            "stanza": "4",
+            "originText": "Къэжъугъэуцу, сипсыхъохэр, шъуичъэ!",
+            "langToTranslationMap": {
+              "en": "Halt, my rivers, cease your flow!",
+              "ar": "!أوقفوا يا أنهاري، جريانكم",
+              "he": "!עצרו, נהרותיי, את זרמכם"
+            }
+          },
+          {
+            "stanza": "4",
+            "originText": "Зышъууф, симэзхэр, сышъоджэ!",
+            "langToTranslationMap": {
+              "en": "Bow down, my forests, I call to you!",
+              "ar": "!انحنوا يا غاباتي، أناديكم",
+              "he": "!השתחוו, יערותיי, אני קוראת לכן"
+            }
+          },
+          {
+            "stanza": "4",
+            "originText": "Шъудэшъыгъу силъэпкъ насыпынчъэ!",
+            "langToTranslationMap": {
+              "en": "Join in the mourning of my sorrowful people!",
+              "ar": "!شاركوا الحدا مع شعبي التعيس",
+              "he": "!הצטרפו לאבלו של עמי האומלל"
+            }
+          }
+        ]
       }
-    ]
+    }
   }
 ]

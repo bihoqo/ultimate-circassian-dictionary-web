@@ -117,13 +117,17 @@ export default function TheLanguagePathContentContainer() {
       <main className="relative flex min-h-screen w-full flex-col bg-white">
         {/* Title - Display selected lesson and panel information */}
         <div className="w-full border-b border-solid border-[#cecec3] py-4 text-center">
-          <span className="rounded-md px-1 py-1 text-2xl font-black text-[#f27141] transition-colors duration-200 hover:hover:bg-gray-100">
-            {selectedLesson.title}
-          </span>
-          <span className="text-4xl font-bold text-[#f27141]">/</span>
-          <span className="rounded-md px-1 py-1 text-2xl font-black text-[#f27141] transition-colors duration-200 hover:hover:bg-gray-100">
-            {panelsOfSelectedLesson[currentPanelIdx]?.title || "Panel not selected"}
-          </span>
+          <p className="py-1 text-2xl font-black text-[#f27141]">
+            <span className="rounded-md px-1 transition-colors duration-200 hover:hover:bg-gray-100">
+              <span>
+                {lessonIdx}. {selectedLesson.title}
+              </span>
+            </span>
+            <span>/</span>
+            <span className="rounded-md px-1 transition-colors duration-200 hover:hover:bg-gray-100">
+              {panelsOfSelectedLesson[currentPanelIdx]?.title || "Panel not selected"}
+            </span>
+          </p>
         </div>
 
         <div className="flex w-full flex-row px-0 sm:px-1 md:px-2 xl:mx-auto xl:px-3 2xl:w-11/12 2xl:px-4">

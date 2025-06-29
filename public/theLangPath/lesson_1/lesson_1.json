@@ -136,12 +136,12 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "left",
-          "characterName": "Нарт",
-          "originText": "Фэсапщи, сэ сцIэр Нарт, Налчыкы сащыщ.",
+          "characterName": "Нэрыт",
+          "originText": "Фэсапщи, сэ сцIэр Нэрыт, Лащымэ сащыщ.",
           "langToTranslationMap": {
-            "en": "Hello, my name is Nart, I am from Nalchik.",
-            "ar": ".مرحبا، أنا اسمي نارت، أنا من نالتشيك",
-            "he": ".שלום, שמי נארת,אני מנלצ'יק"
+            "en": "Hello, my name is Narit, I am from Lash family.",
+            "ar": ".مرحبا، أنا اسمي نرِت، أنا من آل لاش",
+            "he": ".שלום, שמי נרית, אני ממשפחת לאש"
           }
         }
       },
@@ -149,12 +149,12 @@
         "type": "dialogBubble",
         "data": {
           "leftOrRight": "right",
-          "characterName": "Аслъан",
-          "originText": "Къеблагъ, сэ сцIэр Аслъан, Истамбулы сащыщ.",
+          "characterName": "Енал",
+          "originText": "Къеблагъ, сэ сцIэр Енал, Мышъэмэ сащыщ.",
           "langToTranslationMap": {
-            "en": "Welcome, my name is Aslan, I am from Istanbul.",
-            "ar": ".تفضل،  أنا اسمي أسلان، أنا من إسطنبول",
-            "he": ".ברוך הבא, שמי אסלאן, אני מאיסטנבול"
+            "en": "Welcome, my name is Ynal, I am from Misha family.",
+            "ar": ".تفضل،  أنا اسمي ينال، أنا من آل مِّشّة",
+            "he": ".ברוך הבא, שמי ינאל, אני ממשפעת מישא"
           }
         }
       }
@@ -375,7 +375,7 @@
   },
   {
     "title": "3.2 Dialogue 1",
-    "audio": "theLangPath\\lesson_1\\audio\\3.2_1.mp3",
+    "audio": "theLangPath\\lesson_1\\audio\\3.1_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -645,8 +645,8 @@
     ]
   },
   {
-    "title": "4.2 Dialogue 1",
-    "audio": "theLangPath\\lesson_1\\audio\\4.2_1.mp3",
+    "title": "4.2 Dialogue 3",
+    "audio": "theLangPath\\lesson_1\\audio\\4.2_3.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -669,7 +669,7 @@
           "originText": "Уипчыхьэ шIу, сэ сцIэр Гъунэжьыкъо Къазбэч.",
           "langToTranslationMap": {
             "en": "Good evening, my name is Gunezhyko Kazbech.",
-            "ar": "مساء الخير، أنا اسمي غوه-نَجِقوه قزبَتش",
+            "ar": ".مساء الخير، أنا اسمي غوه-نَجِقوه قزبَتش",
             "he": ".'ערב טוב, שמי ר'ואנאז'וקוה קזבץ"
           }
         }
@@ -716,7 +716,7 @@
     ]
   },
   {
-    "title": "7.1 Dialogue 1",
+    "title": "7 Dialogue 1",
     "audio": "theLangPath\\lesson_1\\audio\\7.1_1.mp3",
     "parts": [
       {
@@ -830,17 +830,55 @@
     "audio": "theLangPath\\lesson_1\\audio\\9.1_1.mp3",
     "parts": [
       {
-        "type": "dialogBubble",
-        "data": {
-          "leftOrRight": "left",
-          "characterName": "",
-          "originText": "Адыгэбзэ тхыбзэхэр зэдгъэшlэщтых",
-          "langToTranslationMap": {
-            "en": "We will learn the Adyghe alphabet",
-            "ar": "سنتعلم الأحرف الأديغية",
-            "he": "נלמד את האלפבית האדיגי"
-          }
-        }
+        "type": "exampleInEachLang",
+        "data": [
+          { "cir": "А", "ar": "", "en": "", "he": "" },
+          { "cir": "Б", "ar": "", "en": "", "he": "" },
+          { "cir": "В", "ar": "", "en": "", "he": "" },
+          { "cir": "Г", "ar": "", "en": "", "he": "" },
+          { "cir": "ГЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "Д", "ar": "", "en": "", "he": "" },
+          { "cir": "ДЖ", "ar": "", "en": "", "he": "" },
+          { "cir": "ДЗ", "ar": "", "en": "", "he": "" },
+          { "cir": "Е", "ar": "", "en": "", "he": "" },
+          { "cir": "Ж", "ar": "", "en": "", "he": "" },
+          { "cir": "ЖЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "ЖЬ", "ar": "", "en": "", "he": "" },
+          { "cir": "З", "ar": "", "en": "", "he": "" },
+          { "cir": "И", "ar": "", "en": "", "he": "" },
+          { "cir": "Й", "ar": "", "en": "", "he": "" },
+          { "cir": "К", "ar": "", "en": "", "he": "" },
+          { "cir": "КЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "Кl", "ar": "", "en": "", "he": "" },
+          { "cir": "Л", "ar": "", "en": "", "he": "" },
+          { "cir": "ЛЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "М", "ar": "", "en": "", "he": "" },
+          { "cir": "Н", "ar": "", "en": "", "he": "" },
+          { "cir": "О", "ar": "", "en": "", "he": "" },
+          { "cir": "П", "ar": "", "en": "", "he": "" },
+          { "cir": "Пl", "ar": "", "en": "", "he": "" },
+          { "cir": "Р", "ar": "", "en": "", "he": "" },
+          { "cir": "С", "ar": "", "en": "", "he": "" },
+          { "cir": "Т", "ar": "", "en": "", "he": "" },
+          { "cir": "Тl", "ar": "", "en": "", "he": "" },
+          { "cir": "У", "ar": "", "en": "", "he": "" },
+          { "cir": "Ф", "ar": "", "en": "", "he": "" },
+          { "cir": "Х", "ar": "", "en": "", "he": "" },
+          { "cir": "ХЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "ХЬ", "ar": "", "en": "", "he": "" },
+          { "cir": "Ц", "ar": "", "en": "", "he": "" },
+          { "cir": "Цl", "ar": "", "en": "", "he": "" },
+          { "cir": "Ч", "ar": "", "en": "", "he": "" },
+          { "cir": "ЧЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "Чl", "ar": "", "en": "", "he": "" },
+          { "cir": "Ш", "ar": "", "en": "", "he": "" },
+          { "cir": "ШЪ", "ar": "", "en": "", "he": "" },
+          { "cir": "Щ", "ar": "", "en": "", "he": "" },
+          { "cir": "Ы", "ar": "", "en": "", "he": "" },
+          { "cir": "Э", "ar": "", "en": "", "he": "" },
+          { "cir": "Я", "ar": "", "en": "", "he": "" },
+          { "cir": "I", "ar": "", "en": "", "he": "" }
+        ]
       }
     ]
   },
@@ -892,9 +930,9 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Сэтэнай",
-          "originText": "Гу - кlэлл",
+          "originText": "Гъу - кlэлl.",
           "langToTranslationMap": {
-            "en": "Gu - tchel",
+            "en": "Gu - tchel.",
             "ar": ".غو-تشلأ",
             "he": "'גו - צ'ל."
           }
@@ -918,10 +956,10 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Сэтэнай",
-          "originText": "Сэтэнай. Сэ - тэ - най",
+          "originText": "Сэтэнай. Сэ - тэ - най.",
           "langToTranslationMap": {
             "en": "Setenai. Se-te-nai.",
-            "ar": "ستناي. س-ت-ناي",
+            "ar": ".ستناي. س-ت-ناي",
             "he": ".סתנאי. ס - ת - נאי"
           }
         }
@@ -1028,11 +1066,11 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Озырмэдж",
-          "originText": "О-зыр-мэдж",
+          "originText": "О-зыр-мэдж.",
           "langToTranslationMap": {
-            "en": "We-sser-maj",
-            "ar": "و-زِر-مج",
-            "he": "ווא-זר-מאג"
+            "en": "We-sser-maj.",
+            "ar": ".و-زِر-مج",
+            "he": ".ווא-זר-מאג"
           }
         }
       },
@@ -1073,11 +1111,11 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Пщымаф",
-          "originText": "Пщымаф",
+          "originText": "Пщымаф.",
           "langToTranslationMap": {
-            "en": "Pshemaf",
-            "ar": "بشِماف",
-            "he": "פשימאף"
+            "en": "Pshemaf.",
+            "ar": ".بشِماف",
+            "he": ".פשימאף"
           }
         }
       },
@@ -1125,11 +1163,11 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Пщымаф",
-          "originText": "Пщы-маф",
+          "originText": "Пщы-маф.",
           "langToTranslationMap": {
-            "en": "Pshe-maf",
-            "ar": "بشِ-ماف",
-            "he": "פשי-מאף"
+            "en": "Pshe-maf.",
+            "ar": ".بشِ-ماف",
+            "he": ".פשי-מאף"
           }
         }
       },
@@ -1157,11 +1195,37 @@
         "data": {
           "leftOrRight": "left",
           "characterName": "Тембот",
-          "originText": "Сэ сцlэр Мэщбэшlэ Тембот. Сэ 40 синыбжь. Мыекъопэ къалэ сыщэпсэу. Мекъуапэ Адыгаем икъэлэ шъхьаl. Сэ сыпхъашl. унэхэр пхъэкlэ сшlынхэр сикlас.",
+          "originText": "Сэ сцlэр Мэщбэшlэ Тембот. Сэ 40 синыбжь.",
           "langToTranslationMap": {
-            "en": "My name is Mashbashah Tembot. I am 40 years old. I live in the city of Maikop. Maikop is the capital of Adygea. I am a carpenter. I like building houses with wood.",
-            "ar": ".أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40. أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي. أنا نجار. أحب بناء البيوت بالخشب",
-            "he": ".שמי משבשה תמבוט. אני בן 40. אני גר בעיר מאיקופ. מאיקופ היא בירת אדיגיה. אני נגר. אני אוהב לבנות בתים מעץ"
+            "en": "My name is Mashbashah Tembot. I am 40 years old.",
+            "ar": ".أنا اسمي مَشبَشّأه تيمبوت. أنا عمري 40",
+            "he": ".שמי משבשה תמבוט. אני בן 40"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Тембот",
+          "originText": "Мыекъопэ къалэ сыщэпсэу. Мекъуапэ Адыгаем икъэлэ шъхьаl.",
+          "langToTranslationMap": {
+            "en": "I live in the city of Maikop. Maikop is the capital of Adygea.",
+            "ar": ".أعيش في مدينة مايكوب. مايكوب هي عاصمة الأديغي",
+            "he": ".אני גר בעיר מאיקופ. מאיקופ היא בירת אדיגיה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Тембот",
+          "originText": "Сэ сыпхъашl. Унэхэр пхъэкlэ сшlынхэр сикlас.",
+          "langToTranslationMap": {
+            "en": "I am a carpenter. I like building houses with wood.",
+            "ar": ".أنا نجار. أحب بناء البيوت بالخشب",
+            "he": ".אני נגר. אני אוהב לבנות בתים מעץ"
           }
         }
       }
@@ -1176,11 +1240,76 @@
         "data": {
           "leftOrRight": "left",
           "characterName": "Бибэрс",
-          "originText": "Сэ сцlэр Хъут Бибэрс. Сэ Чэркескы сыщэпсэу. Черкеск республикэм Черкеск икъэлэ шъхьаl. 37 синыбжь. Сэ сытхакlу. усэхэр Адыгабзэкlэ стхынхэр сикlас. къэсщагъ. Бынэу кlэлэцlыкlуищ сиl.",
+          "originText": "Сэ сцlэр Хъут Бибэрс.",
           "langToTranslationMap": {
-            "en": "My name is Khut Bibers. I live in Cherkessk. Cherkessk is the capital of the Circassian republic. I am 37 years old. I am a writer. I like writing poetry in Adyghe. I am married. I have three young children.",
-            "ar": ".أنا اسمي خُت بيبرس. أنا أعيش في تشركيسك. تشركيسك هي عاصمة جمهورية الشركس. عمري 37. أنا كاتب. أحب كتابة الأشعار بالأديغابزة. متزوج. لدي ثلاثة أولاد صغار",
-            "he": ".שמי חות ביברס. אני גר בצ'רקסק. צ'רקסק היא בירת הרפובליקה הצ'רקסית. בן 37. אני סופר. אני אוהב לכתוב שירים באדיג'ה. אני נשוי. יש לי שלושה ילדים קטנים"
+            "en": "My name is Khut Bibers.",
+            "ar": ".أنا اسمي خُت بيبرس",
+            "he": ".שמי חות ביברס"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Сэ Чэркескы сыщэпсэу.",
+          "langToTranslationMap": {
+            "en": "I live in Cherkessk.",
+            "ar": ",أنا أعيش في تشركيسك",
+            "he": ",אני גר בצ'רקסק"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Черкеск республикэм Черкеск икъэлэ шъхьаl.",
+          "langToTranslationMap": {
+            "en": "Cherkessk is the capital of the Circassian republic",
+            "ar": ".تشركيسك هي عاصمة جمهورية الشركس",
+            "he": ".צ'רקסק היא בירת הרפובליקה הצ'רקסית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "37 синыбжь.",
+          "langToTranslationMap": {
+            "en": "I am 37 years old.",
+            "ar": ".عمري 37",
+            "he": ".אני בן 37"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Сэ сытхакlу. Усэхэр Адыгабзэкlэ стхынхэр сикlас.",
+          "langToTranslationMap": {
+            "en": "I am a writer. I like writing poetry in Adyghe.",
+            "ar": ".أنا كاتب.أحب كتابة الأشعار بالأديغابزة",
+            "he": "אני סופר. אני אוהב לכתוב שירים באדיגית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Бибэрс",
+          "originText": "Къэсщагъ. Бынэу кlэлэцlыкlуищ сиl.",
+          "langToTranslationMap": {
+            "en": "I am married. I have three young children.",
+            "ar": ".متزوج. لدي ثلاثة أولاد صغار",
+            "he": ".אני נשוי. יש לי שלושה ילדים קטינים"
           }
         }
       }
@@ -1195,11 +1324,63 @@
         "data": {
           "leftOrRight": "left",
           "characterName": "Синэмис",
-          "originText": "Сэ сцlэр Цэй Синэмис . 25 синыбжь. Налчыкы сыдэс. Налчык Къэбэртаим икъэлэ шъхьаl. Сэ сыегъэджакlу. Адыгабзэ есэгъаджэх. Адыгабзэр сикlас. Джыри езгъэджэнхэр сикlас. Сэ сыдэкlуагъ. Пшъашъэ сиl, Синэ ыцlэр, илъэситlу ыныбжь.",
+          "originText": "Сэ сцlэр Цэй Синэмис. 25 синыбжь.",
           "langToTranslationMap": {
-            "en": "My name is Tzei Sinemis. I am 25 years old. I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria. I am a teacher. I teach Adyghe. I love Adyghe. I also love teaching. I am married. I have a daughter, her name is Sina, she is two years old.",
-            "ar": ".أنا اسمي تزي سينميس. عمري 25. أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي. أنا معلمة. أعلم الأديغابزة. أحب الأديغابزة. وأيضا أحب التعليم. أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين",
-            "he": ".שמי צ'י סינמיס. בת 25. אני גרה בנלצ'יק. נלצ'יק היא בירת קברדינו-בלקריה. אני מורה. אני מלמדת אדיגית. אני אוהבת אדיגית. אני גם אוהבת ללמד. אני נשואה. יש לי בת, שמה סינה, בת שנתיים"
+            "en": "My name is Tzei Sinemis. I am 25 years old.",
+            "ar": ".أنا اسمي تزي سينميس. عمري 25",
+            "he": ".שמי צ'י סינמיס. בת 25"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Синэмис",
+          "originText": "Налчыкы сыдэс. Налчык Къэбэртаим икъэлэ шъхьаl.",
+          "langToTranslationMap": {
+            "en": "I live in Nalchik. Nalchik is the capital of Kabardino-Balkaria.",
+            "ar": ".أسكن في نالتشيك. نالتشيك هي عاصمة القبرتاي",
+            "he": ".אני גרה בנאלצ'יק. נאלצ'יק היא בירת קברדינו-בלקריה"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Синэмис",
+          "originText": "Сэ сыегъэджакlу. Адыгабзэ есэгъаджэх.",
+          "langToTranslationMap": {
+            "en": "I am a teacher. I teach Adyghe language.",
+            "ar": ".أنا معلمة. أعلم الأديغابزة",
+            "he": ".אני מורה. מלמדת את השפה האדיגית"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Синэмис",
+          "originText": "Адыгабзэр сикlас. Джыри езгъэджэнхэр сикlас.",
+          "langToTranslationMap": {
+            "en": "I love Adyghe language. I also love teaching.",
+            "ar": ".أحب الأديغابزة. وأيضا أحب التعليم",
+            "he": ".אני אוהבת את השפה האדיגית .אני גם אוהבת ללמד"
+          }
+        }
+      },
+      {
+        "type": "dialogBubble",
+        "data": {
+          "leftOrRight": "left",
+          "characterName": "Синэмис",
+          "originText": "Сэ сыдэкlуагъ. Пшъашъэ сиl, Синэ ыцlэр, илъэситlу ыныбжь.",
+          "langToTranslationMap": {
+            "en": "I am married. I have a daughter, her name is Sina, she is two years old.",
+            "ar": ".أنا متزوجة. لدي إبنة، اسمها سينا ، عمرها سنتين",
+            "he": ".אני נשואה. יש לי בת, שמה סינה, היא בת שנתיים"
           }
         }
       }
