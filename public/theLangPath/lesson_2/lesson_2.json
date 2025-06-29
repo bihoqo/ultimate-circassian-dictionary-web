@@ -10,9 +10,9 @@
           "characterName": {
             "originText": "Налмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nalmas",
+              "ar": "نالمس",
+              "he": "נאלמס"
             }
           },
           "originText": "Уимафэ шIу Бибэрс. Сыды уфэд?",
@@ -31,9 +31,9 @@
           "characterName": {
             "originText": "Бибэрс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Bibars",
+              "ar": "بيبَرس",
+              "he": "ביברס"
             }
           },
           "originText": "Сыдэгъу, О сыды уфэд?",
@@ -52,9 +52,9 @@
           "characterName": {
             "originText": "Налмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nalmas",
+              "ar": "نالمس",
+              "he": "נאלמס"
             }
           },
           "originText": "Опсэу, сыдэгъу, кофэ уешъона?",
@@ -73,9 +73,9 @@
           "characterName": {
             "originText": "Бибэрс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Bibars",
+              "ar": "بيبَرس",
+              "he": "ביברס"
             }
           },
           "originText": "Хьау, опсэу, кофэ сешъуагъ.",
@@ -100,9 +100,9 @@
           "characterName": {
             "originText": "Налмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nalmas",
+              "ar": "نالمس",
+              "he": "נאלמס"
             }
           },
           "originText": "Фэсапщи, сыды уфэд?",
@@ -121,9 +121,9 @@
           "characterName": {
             "originText": "Бибэрс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Bibars",
+              "ar": "بيبَرس",
+              "he": "ביברס"
             }
           },
           "originText": "Сытэрэзэп.",
@@ -142,9 +142,9 @@
           "characterName": {
             "originText": "Налмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nalmas",
+              "ar": "نالمس",
+              "he": "נאלמס"
             }
           },
           "originText": "Ар бэу гумэкlыгъу, щаи уешъона?",
@@ -163,9 +163,9 @@
           "characterName": {
             "originText": "Бибэрс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Bibars",
+              "ar": "بيبَرس",
+              "he": "ביברס"
             }
           },
           "originText": "Хьау, фызыгъэ lэшlу сешъомэ нахь сикlас.",
@@ -190,9 +190,9 @@
           "characterName": {
             "originText": "Озырмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Wazirmas",
+              "ar": "وَزِرمَس",
+              "he": "וזירמס"
             }
           },
           "originText": "Уипчэдыжь шIу Нэфын, сыдэу ущыт?",
@@ -211,9 +211,9 @@
           "characterName": {
             "originText": "Нэфын",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nafin",
+              "ar": "نَفِن",
+              "he": "נפין"
             }
           },
           "originText": "Опсэу, сэ сыдэгъу, о сыдэу ущыт?",
@@ -232,9 +232,9 @@
           "characterName": {
             "originText": "Озырмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Wazirmas",
+              "ar": "وَزِرمَس",
+              "he": "וזירמס"
             }
           },
           "originText": "Сэ сыдэгъу дэд, кофэ уешъона?",
@@ -253,9 +253,9 @@
           "characterName": {
             "originText": "Нэфын",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nafin",
+              "ar": "نَفِن",
+              "he": "נפין"
             }
           },
           "originText": "Ары, опсэу, кофэ сфай псы шъуалъэ игъусэу.",
@@ -280,9 +280,9 @@
           "characterName": {
             "originText": "Блан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Blan",
+              "ar": "بلان",
+              "he": "בלאן"
             }
           },
           "originText": "Сыда узэшъощтыр?",
@@ -301,9 +301,9 @@
           "characterName": {
             "originText": "Насып",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nasip",
+              "ar": "ناسِب",
+              "he": "נאספ"
             }
           },
           "originText": "Кофэ.",
@@ -322,9 +322,9 @@
           "characterName": {
             "originText": "Блан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Blan",
+              "ar": "بلان",
+              "he": "בלאן"
             }
           },
           "originText": "Щэ, шъоущыгъу хэлъэу уфая?",
@@ -343,9 +343,9 @@
           "characterName": {
             "originText": "Насып",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nasip",
+              "ar": "ناسِب",
+              "he": "נאספ"
             }
           },
           "originText": "Хьау опсэу, кофэм изакъу, о тащфэд уикофэ?",
@@ -364,9 +364,9 @@
           "characterName": {
             "originText": "Блан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Blan",
+              "ar": "بلان",
+              "he": "בלאן"
             }
           },
           "originText": "Сэ щэр баIоу хэкIагъэу сешъо.",
@@ -391,9 +391,9 @@
           "characterName": {
             "originText": "Симаз",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Simaz",
+              "ar": "سيماز",
+              "he": "סימאז"
             }
           },
           "originText": "Фэсапщи, сыдэу ущыт?",
@@ -412,9 +412,9 @@
           "characterName": {
             "originText": "Синэмис",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Sinamis",
+              "ar": "سينيميس",
+              "he": "סינמיס"
             }
           },
           "originText": "Опсэу, сэ сыдэгъу. Ори сыдэу ущыт?",
@@ -433,9 +433,9 @@
           "characterName": {
             "originText": "Симаз",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Simaz",
+              "ar": "سيماز",
+              "he": "סימאז"
             }
           },
           "originText": "Сэри сыдэгъу.",
@@ -454,9 +454,9 @@
           "characterName": {
             "originText": "Синэмис",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Sinamis",
+              "ar": "سينيميس",
+              "he": "סינמיס"
             }
           },
           "originText": "Щаи уешъона?",
@@ -475,9 +475,9 @@
           "characterName": {
             "originText": "Симаз",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Simaz",
+              "ar": "سيماز",
+              "he": "סימאז"
             }
           },
           "originText": "Хьау, сэ кофэр щаим нахьи нахь сикIас.",
@@ -502,9 +502,9 @@
           "characterName": {
             "originText": "Джэбагъ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Gabagh",
+              "ar": "جَباغ",
+              "he": "ג'באר"
             }
           },
           "originText": "Уипчэдыжь шIу, сыд фэд уипсауныгъэ?",
@@ -523,9 +523,9 @@
           "characterName": {
             "originText": "Аслъан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Aslan",
+              "ar": "أسلان",
+              "he": "אסלאן"
             }
           },
           "originText": "Дэгъу дэд, опсэу, ори?",
@@ -544,9 +544,9 @@
           "characterName": {
             "originText": "Джэбагъ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Gabagh",
+              "ar": "جَباغ",
+              "he": "ג'באר"
             }
           },
           "originText": "Дэгъу, кофэ уешъона?",
@@ -565,9 +565,9 @@
           "characterName": {
             "originText": "Аслъан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Aslan",
+              "ar": "أسلان",
+              "he": "אסלאן"
             }
           },
           "originText": "Ары, сигуапэу, щэр баIоу, ори?",
@@ -586,9 +586,9 @@
           "characterName": {
             "originText": "Джэбагъ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Gabagh",
+              "ar": "جَباغ",
+              "he": "ג'באר"
             }
           },
           "originText": "Сэ щаи сешъо сшIоигъу.",
@@ -613,9 +613,9 @@
           "characterName": {
             "originText": "Бибэрс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Bibars",
+              "ar": "بيبَرس",
+              "he": "ביברס"
             }
           },
           "originText": "О Нэджэхьаблэ укъэкIуа?",
@@ -634,9 +634,9 @@
           "characterName": {
             "originText": "Заур",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Zawir",
+              "ar": "زاوِر",
+              "he": "זאור"
             }
           },
           "originText": "Хьау, сэ Нэчэрэзые сыкъэкIо.",
@@ -661,9 +661,9 @@
           "characterName": {
             "originText": "Мамсыр",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Mamsir",
+              "ar": "مامسِر",
+              "he": "מאמסיר"
             }
           },
           "originText": "О адыгабзэкIэ огущыIа?",
@@ -682,9 +682,9 @@
           "characterName": {
             "originText": "Адиф",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Adif",
+              "ar": "آديف",
+              "he": "אדיף"
             }
           },
           "originText": "Ары, сэ адыгабзэкIэ сэгущыIэ.",
@@ -709,9 +709,9 @@
           "characterName": {
             "originText": "Джбагъ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Jbag",
+              "ar": "جباغ",
+              "he": "ג'באג"
             }
           },
           "originText": "Шъо щаи шъуфая?",
@@ -730,9 +730,9 @@
           "characterName": {
             "originText": "Данэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Dana",
+              "ar": "دانة",
+              "he": "דאנה"
             }
           },
           "originText": "Хьау, тэ кофэ тыфай.",
@@ -757,9 +757,9 @@
           "characterName": {
             "originText": "Озырмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Wazirmas",
+              "ar": "وَزِرمَس",
+              "he": "וזירמס"
             }
           },
           "originText": "Шъо кофэ шъуешъуа?",
@@ -778,9 +778,9 @@
           "characterName": {
             "originText": "Дэнэф",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Denaf",
+              "ar": "دنَف",
+              "he": "דנאף"
             }
           },
           "originText": "Ары, тэ кофэ тешъо.",
@@ -805,9 +805,9 @@
           "characterName": {
             "originText": "Енал",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Yanal",
+              "ar": "ينال",
+              "he": "ינאל"
             }
           },
           "originText": "Фэсапщи, мы чIыпIэр нэкIа, сытIысын слъэкIыщта?",
@@ -826,9 +826,9 @@
           "characterName": {
             "originText": "Нарт",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nart",
+              "ar": "نارت",
+              "he": "נארת"
             }
           },
           "originText": "Ары, къеблагъ, мыр Сэтэнай, мыр Дан.",
@@ -847,9 +847,9 @@
           "characterName": {
             "originText": "Енал",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Yanal",
+              "ar": "ينال",
+              "he": "ינאל"
             }
           },
           "originText": "Сэ сцIэр Енал, шъо Мыекъуапэ шъущыща?",
@@ -868,9 +868,9 @@
           "characterName": {
             "originText": "Данэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Dana",
+              "ar": "دانة",
+              "he": "דאנה"
             }
           },
           "originText": "Хьау. Тэ Тыркуем тыщыщ.",
@@ -889,9 +889,9 @@
           "characterName": {
             "originText": "Енал",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Yanal",
+              "ar": "ينال",
+              "he": "ינאל"
             }
           },
           "originText": "Адэ сыд Мыекъуапэ щышъушIэрэр.",
@@ -910,9 +910,9 @@
           "characterName": {
             "originText": "Данэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Dana",
+              "ar": "دانة",
+              "he": "דאנה"
             }
           },
           "originText": "Адыгабзэ тыщеджэ.",
@@ -931,9 +931,9 @@
           "characterName": {
             "originText": "Нарт",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nart",
+              "ar": "نارت",
+              "he": "נארת"
             }
           },
           "originText": "ШIогъэшху, ащыгъум шъо адыгабзэкIэ унэм.",
@@ -958,9 +958,9 @@
           "characterName": {
             "originText": "Нарт",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nart",
+              "ar": "نارت",
+              "he": "נארת"
             }
           },
           "originText": "Шъо тыдэ шъущыщ?",
@@ -979,9 +979,9 @@
           "characterName": {
             "originText": "Сэтэнай",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Satenay",
+              "ar": "ستيناي",
+              "he": "סתנאי"
             }
           },
           "originText": "Сэ Бжъэдыгъу къалэ сыщыщ, о?",
@@ -1000,9 +1000,9 @@
           "characterName": {
             "originText": "Енал",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Yanal",
+              "ar": "ينال",
+              "he": "ינאל"
             }
           },
           "originText": "Сэ Шъачэ сыщыщ, Нарти Мыекъуапэ щыщ.",
@@ -1021,9 +1021,9 @@
           "characterName": {
             "originText": "Нарт",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nart",
+              "ar": "نارت",
+              "he": "נארת"
             }
           },
           "originText": "Ары, сэ Мыекъуапэ сыщыщ, зыгорэ шъуешъона? Щаи шъуешъона?",
@@ -1042,9 +1042,9 @@
           "characterName": {
             "originText": "Сэтэнай",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Satenay",
+              "ar": "ستيناي",
+              "he": "סתנאי"
             }
           },
           "originText": "Сэ кофэ сфай, Данэ, о сыд узэшъощтыр?",
@@ -1063,9 +1063,9 @@
           "characterName": {
             "originText": "Данэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Dana",
+              "ar": "دانة",
+              "he": "דאנה"
             }
           },
           "originText": "Сэ щаи сешъо сшIоигъу.",
@@ -1117,9 +1117,9 @@
           "characterName": {
             "originText": "Нарт",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nart",
+              "ar": "نارت",
+              "he": "נארת"
             }
           },
           "originText": "Телефон уиIа?",
@@ -1159,9 +1159,9 @@
           "characterName": {
             "originText": "Нарт",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nart",
+              "ar": "نارت",
+              "he": "נארת"
             }
           },
           "originText": "Сыда илъытэгъу?",
@@ -1207,9 +1207,9 @@
           "characterName": {
             "originText": "Насып",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nasip",
+              "ar": "ناسِب",
+              "he": "נאספ"
             }
           },
           "originText": "Непэ сыкъыпфытеощт.",
@@ -1228,9 +1228,9 @@
           "characterName": {
             "originText": "Нэрыс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Naris",
+              "ar": "نَريس",
+              "he": "נריס"
             }
           },
           "originText": "Силъытэгъу пIыгъа?",
@@ -1249,9 +1249,9 @@
           "characterName": {
             "originText": "Насып",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nasip",
+              "ar": "ناسِب",
+              "he": "נאספ"
             }
           },
           "originText": "Хьау",
@@ -1270,9 +1270,9 @@
           "characterName": {
             "originText": "Нэрыс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Naris",
+              "ar": "نَريس",
+              "he": "נריס"
             }
           },
           "originText": "87685413",
@@ -1488,9 +1488,9 @@
           "characterName": {
             "originText": "Мазэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Maza",
+              "ar": "مازه",
+              "he": "מאזה"
             }
           },
           "originText": "Кофэ, псы… атефагъэр рублитIурэ чапычипшIырэ.",
@@ -1509,9 +1509,9 @@
           "characterName": {
             "originText": "Блан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Blan",
+              "ar": "بلان",
+              "he": "בלאן"
             }
           },
           "originText": "Къысфэгъэгъу, сыд фэдиз атефагъэр?",
@@ -1530,9 +1530,9 @@
           "characterName": {
             "originText": "Мазэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Maza",
+              "ar": "مازه",
+              "he": "מאזה"
             }
           },
           "originText": "РублитIурэ чапычипшIырэ.",
@@ -1551,9 +1551,9 @@
           "characterName": {
             "originText": "Блан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Blan",
+              "ar": "بلان",
+              "he": "בלאן"
             }
           },
           "originText": "Къеблагъ.",
@@ -1572,9 +1572,9 @@
           "characterName": {
             "originText": "Мазэ",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Maza",
+              "ar": "مازه",
+              "he": "מאזה"
             }
           },
           "originText": "Мыри чапыч бгъукI, къелыжьыгъэр ары, опсэу.",
@@ -1593,9 +1593,9 @@
           "characterName": {
             "originText": "Блан",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Blan",
+              "ar": "بلان",
+              "he": "בלאן"
             }
           },
           "originText": "Опсэу, шIукIэ.",
@@ -1620,9 +1620,9 @@
           "characterName": {
             "originText": "Сэтэнай",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Satenay",
+              "ar": "ستيناي",
+              "he": "סתנאי"
             }
           },
           "originText": "КолитIурэ кофитIурэ, … атефагъэр рублихырэ чапыч тIукIырэ рубл.",
@@ -1641,9 +1641,9 @@
           "characterName": {
             "originText": "Налмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nalmas",
+              "ar": "نالمس",
+              "he": "נאלמס"
             }
           },
           "originText": "Къысфэгъэгъу, сыд фэдиз атефагъэр?",
@@ -1662,9 +1662,9 @@
           "characterName": {
             "originText": "Сэтэнай",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Satenay",
+              "ar": "ستيناي",
+              "he": "סתנאי"
             }
           },
           "originText": "Рублихырэ чапыч тIокIырэ.",
@@ -1683,9 +1683,9 @@
           "characterName": {
             "originText": "Налмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Nalmas",
+              "ar": "نالمس",
+              "he": "נאלמס"
             }
           },
           "originText": "Къеблагъ.",
@@ -1710,9 +1710,9 @@
           "characterName": {
             "originText": "Озырмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Wazirmas",
+              "ar": "وَزِرمَس",
+              "he": "וזירמס"
             }
           },
           "originText": "Сыныбджэгъухэр, сэ атефагъэр стыщт.",
@@ -1731,9 +1731,9 @@
           "characterName": {
             "originText": "Симаз",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Simaz",
+              "ar": "سيماز",
+              "he": "סימאז"
             }
           },
           "originText": "Зы щай, зы щай шIуцI, зы тIамыпс, зы пцIыипс … атефагъэр рубылиплIырэ чапыч блыкIырэ.",
@@ -1752,9 +1752,9 @@
           "characterName": {
             "originText": "Озырмэс",
             "langToTranslationMap": {
-              "en": "",
-              "ar": "",
-              "he": ""
+              "en": "Wazirmas",
+              "ar": "وَزِرمَس",
+              "he": "וזירמס"
             }
           },
           "originText": "ТIу, плIы... Нарт, чапыч щэкI пIыгъа?",
