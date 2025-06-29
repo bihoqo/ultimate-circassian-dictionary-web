@@ -485,7 +485,7 @@
           "originText": "Ащ тефэщт рубл шъитIурэ икIырэ бгъурэ.  ",
           "langToTranslationMap": {
             "en": "It costs 289 rubles.",
-            "ar": "انها تكلف 289 روبل.",
+            "ar": ".انها تكلف 289 روبل",
             "he": ".היא עולה 289 רובל"
           }
         }
@@ -498,7 +498,7 @@
           "originText": "Ау зы щэрэхъыр зэlыхьагъ, джыри лъахъэр  лажьэрэп.",
           "langToTranslationMap": {
             "en": "But it has a broken wheel and the brake doesn't work.",
-            "ar": "ولكن فيها عجلة خربانة والكابح لا يعمل. ",
+            "ar": ".ولكن فيها عجلة خربانة والكابح لا يعمل",
             "he": ".אבל יש לה גלגל מקולקל והבלם לא עובד"
           }
         }
@@ -511,7 +511,7 @@
           "originText": "Ммм… тэрэз, лъапlэ, ау дэхэ дэд.",
           "langToTranslationMap": {
             "en": "Mmm... True, it's expensive but very beautiful.",
-            "ar": "ممم... صحيح غالية ولكنها جميلة جدا.",
+            "ar": ".ممم... صحيح غالية ولكنها جميلة جدا",
             "he": ".הממ... נכון, יקרה אבל היא מאוד יפה"
           }
         }
@@ -543,7 +543,7 @@
           "originText": "Рубл мин блыкlырэ минийрэ.",
           "langToTranslationMap": {
             "en": "78,000 rubles.",
-            "ar": "78000 روبل.",
+            "ar": ".78000 روبل",
             "he": ".78,000 רובל"
           }
         }
@@ -555,8 +555,8 @@
           "characterName": "Щэфакlор",
           "originText": "Хьау, рубл мин икlырэ миниблырэ! ар лъэпlэ дэд.",
           "langToTranslationMap": {
-            "en": "No, 87,000 rubles, that is very expensive.",
-            "ar": "كلا 87000 روبل، هذه غالٍ جدا .",
+            "en": "No, 87,000 rubles, that is very expensive!",
+            "ar": "كلا 87000 روبل، هذه غالٍ جدا",
             "he": "!לא, 87,000 רובל, זה יקר מאוד"
           }
         }
@@ -569,7 +569,7 @@
           "originText": "Хьау, хьау, уасэр Рубл мин блыкlырэ минийрэ.",
           "langToTranslationMap": {
             "en": "No, no, the price is 78,000 rubles.",
-            "ar": "كلا،  كلا،  السعر  78000 روبل.",
+            "ar": ".كلا،  كلا،  السعر  78000 روبل",
             "he": "!לא, לא, המחיר הוא 78,000 רובל"
           }
         }
@@ -582,7 +582,7 @@
           "originText": "Ааа, арымэ уасэр дэгъу.",
           "langToTranslationMap": {
             "en": "Ah, then this is a good price.",
-            "ar": "آآه، إذاً هذا سعر جيد. ",
+            "ar": ".آآه، إذاً هذا سعر جيد",
             "he": ".אהה, אז זה מחיר טוב"
           }
         }
@@ -611,10 +611,10 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Щакlор",
-          "originText": "Литр шъитlу иинагъ, хъопкl къыдрегъадзэ, нэхьышlумэ ащыщ, lйтlале гъэпсыкl",
+          "originText": "Литр шъитlу иинагъ, хъопкl къыдрегъадзэ, нэхьышlумэ ащыщ, lйтlале гъэпсыкl.",
           "langToTranslationMap": {
             "en": "It has a capacity of 200 liters, energy saving, one of the best types, Italian design.",
-            "ar": "سعته 200 لتر،  يوفير الطاقة، من النوعيات الأفضل، تصميم إيطالي.  ",
+            "ar": ".سعته 200 لتر،  يوفير الطاقة، من النوعيات الأفضل، تصميم إيطالي",
             "he": ".הנפח שלו 200 ליטר, חוסך אנרגיה, אחד הסוגים הטובים ביותר, עיצוב איטלקי"
           }
         }
@@ -637,10 +637,10 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Щакlор",
-          "originText": "Рубл мин тlокlырэ минитфырэ шъийрэ. ",
+          "originText": "Рубл мин тlокlырэ минитфырэ шъийрэ.",
           "langToTranslationMap": {
             "en": "25,800 rubles.",
-            "ar": "25800 روبل.",
+            "ar": ".25800 روبل.",
             "he": ".25,800 רובל"
           }
         }
@@ -698,7 +698,7 @@
           "originText": "Ар кlэп ау дэгъоу зекlо, уасэр рубл минрэ шъихырэ тфыкlырэ.",
           "langToTranslationMap": {
             "en": "It is not new but works well, the price is 1650 rubles.",
-            "ar": "هي ليست جديدة ولكنها تعمل بشكل جيد، السعر 1650 روبل.",
+            "ar": ".هي ليست جديدة ولكنها تعمل بشكل جيد، السعر 1650 روبل",
             "he": ".זה לא חדש אבל עובד טוב, המחיר הוא 1650 רובלים"
           }
         }
@@ -711,7 +711,7 @@
           "originText": "Ары, мы уасэр екlу, сшыпхъу сеупчlыжьын.",
           "langToTranslationMap": {
             "en": "Yes, this price is suitable, I will ask my sister.",
-            "ar": "نعم، هذا السعر مناسب، سوف أسال أختي.",
+            "ar": ".نعم، هذا السعر مناسب، سوف أسال أختي",
             "he": ".כן, המחיר מתאים, אשאל את אחותי"
           }
         }
@@ -756,7 +756,7 @@
           "originText": "Ары, Вилэр ары.",
           "langToTranslationMap": {
             "en": "Yes, the villa.",
-            "ar": "نعم، الفيلا.",
+            "ar": ".نعم، الفيلا",
             "he": ".כן, זו הוילה"
           }
         }
@@ -769,7 +769,7 @@
           "originText": "Уасэм уригъэнэцlынэу щыт, рубл милион тlокlырэ мин шъиблырэ ныlэп.",
           "langToTranslationMap": {
             "en": "It is a great offer, the price is only 20,700,000 rubles.",
-            "ar": "انه عرض مغر، سعرها فقط  20،700،000  روبل.",
+            "ar": ".انه عرض مغر، سعرها فقط  20،700،000  روبل",
             "he": ".זו הצעה נהדרת, המחיר הוא רק 20,700,000 רובלים"
           }
         }
@@ -795,7 +795,7 @@
           "originText": "Рубл милион тlокlырэ мин шъиблырэ.",
           "langToTranslationMap": {
             "en": "20,700,000 rubles.",
-            "ar": "20،700،000 روبل.",
+            "ar": ".20،700،000 روبل",
             "he": "20,700,000 רובלים."
           }
         }
@@ -808,7 +808,7 @@
           "originText": "Ааа, ара? ар уэсэ дэгъу, ар вилэ дах.",
           "langToTranslationMap": {
             "en": "Ah, yes? It is a good price, it is a beautiful villa.",
-            "ar": "آآه، نعم إنه سعر جيد، إنها فيلا جميلة.",
+            "ar": ".آآه، نعم إنه سعر جيد، إنها فيلا جميلة",
             "he": ".אה, כן? זה מחיר טוב, זו וילה יפה"
           }
         }
@@ -827,7 +827,7 @@
           "originText": "Алоо, къеблагъ.",
           "langToTranslationMap": {
             "en": "Hello, please.",
-            "ar": "الو، تفضل.",
+            "ar": ".الو، تفضل",
             "he": ".שלום, בבקשה"
           }
         }
@@ -840,7 +840,7 @@
           "originText": "Уимафэ шlу. Сэ сцlэр Енал, мэкъэгъэlоу къибдзагъэм ехьылlагъэу сыкъыпфытео, Сабый курэжъыер джыри шъоща?",
           "langToTranslationMap": {
             "en": "Good day. My name is Enal, I am calling regarding the ad you posted, is the baby stroller still available?",
-            "ar": "نهارك سعيد. أنا اسمي ينال، أتصل بخصوص الإعلان الذي عرضتيه، هل ما تزال عربة الأطفال  معروضة للبيع ؟",
+            "ar": "نهارك سعيد. أنا اسمي ينال، أتصل بخصوص الإعلان الذي عرضتيه، هل ما تزال عربة الأطفال  معروضة للبيع؟",
             "he": "?שלום. קוראים לי ינאל, אני מתקשר בנוגע למודעה שהצגת, האם עגלת התינוק עדיין למכירה"
           }
         }
@@ -879,7 +879,7 @@
           "originText": "Рубл минрэ шъитlурэ cфай, сабый-курэжъыемрэ пхъэнтlэкlумрэ яуас зэгъусэхэу, тlури мэкъэ гъэlум къидзагъэх.",
           "langToTranslationMap": {
             "en": "I want 1200 rubles for the stroller with the chair, both are included in the ad.",
-            "ar": "أريد 1200 روبل سعر العربة مع الكرسي  كلاهما موجودان في الإعلان.",
+            "ar": ".أريد 1200 روبل سعر العربة مع الكرسي  كلاهما موجودان في الإعلان",
             "he": ".אני רוצה 1200 רובלים על העגלה עם הכיסא, שניהם כלולים במודעה"
           }
         }
@@ -892,7 +892,7 @@
           "originText": "Рубл минрэ шъитlурэр лъэпlэ дэд.",
           "langToTranslationMap": {
             "en": "1200 rubles is too expensive.",
-            "ar": "1200 روبل غال جدا.",
+            "ar": ".1200 روبل غال جدا",
             "he": ".1200 רובלים יקרים מדי"
           }
         }
@@ -905,7 +905,7 @@
           "originText": "Сабый-курэжъыер кlэм фэд.",
           "langToTranslationMap": {
             "en": "The baby stroller is like new.",
-            "ar": "عربة الأطفال بمثابة الجديدة.",
+            "ar": ".عربة الأطفال بمثابة الجديدة",
             "he": ".עגלת התינוק כמו חדשה"
           }
         }
@@ -918,7 +918,7 @@
           "originText": "Сэ рубл шъибл къэстыщт, сэ сабый-курэжъыер ары ныlэп сызфаер.",
           "langToTranslationMap": {
             "en": "I will pay 700 rubles, I want only the baby stroller.",
-            "ar": ": أنا أدفع 700 روبل، أنا أريد عربة الأطفال فقط.",
+            "ar": ":أنا أدفع 700 روبل، أنا أريد عربة الأطفال فقط",
             "he": ".אני אתן 700 רובלים, אני רוצה רק את עגלת התינוק"
           }
         }
@@ -931,7 +931,7 @@
           "originText": "Ар мэкlэ дэд, рубл минрэ шъэрэ сабый-курэжъыемрэ пхъэнтlэкумрэ зэгъусэхэу тэгъаlу.",
           "langToTranslationMap": {
             "en": "That's too little, let's say 1100 rubles for the stroller and the chair together.",
-            "ar": "هذا قليل جداً، لنقل 1100 روبل لأجل العربة والكرسي معاً.",
+            "ar": ".هذا قليل جداً، لنقل 1100 روبل لأجل العربة والكرسي معا",
             "he": ".זה מעט מדי, בוא נאמר 1100 רובלים עבור העגלה והכיסא יחד"
           }
         }
@@ -944,7 +944,7 @@
           "originText": "Сэ рубл шъий сэlо.",
           "langToTranslationMap": {
             "en": "I say 800 rubles.",
-            "ar": "أنا أقول  800  روبل.",
+            "ar": ".أنا أقول  800  روبل",
             "he": ".אני אומר 800 רובלים"
           }
         }
@@ -957,7 +957,7 @@
           "originText": "Дэгъу, рубл шъибгъу.",
           "langToTranslationMap": {
             "en": "Okay, 900 rubles.",
-            "ar": "حسناً، 900 روبل.",
+            "ar": ".حسناً، 900 روبل",
             "he": ".בסדר, 900 רובלים"
           }
         }
@@ -970,7 +970,7 @@
           "originText": "Ар дэгъу, непэ щэджэгъо ужым схьынхэу сыкъэкlощт.",
           "langToTranslationMap": {
             "en": "Good, I will come this afternoon to pick up the items.",
-            "ar": "هذا جيد، سأحضر اليوم بعد الظهر لأخذ الأغراض.",
+            "ar": ".هذا جيد، سأحضر اليوم بعد الظهر لأخذ الأغراض",
             "he": ".טוב, אני אבוא היום אחרי הצהריים לקחת את הדברים"
           }
         }
@@ -1002,7 +1002,7 @@
           "originText": "Уимафэ шlу, сэ сцlэр Псэтын, компиутэрым ехьылlагъэу мэкъэ гъэlоу интэрнетым къибдзагъэм пае сыкъыпфытео, джыри ар оща?",
           "langToTranslationMap": {
             "en": "Good day, my name is Psetyn. I'm calling regarding the advertisement you posted online about the computer. Are you still selling it?",
-            "ar": "د؟هل ما زلتم تبيعونه  بخصوص الكمبيوتر  أتصل بخصوص الاأعلان الذي عرضته في الانترنت  أنا اسمي  بستن. نهارك سعي",
+            "ar": "نهارك سعيد، اسمي بسَتِن. أتصل بك بخصوص الإعلان الذي نشرته على الإنترنت عن هذا الكمبيوتر. هل ما زلت تبيعه؟",
             "he": "?שלום, קוראים לי פסטין. אני מתקשר בנוגע למודעה שהצבתם באינטרנט לגבי המחשב. האם עדיין מוכרים אותו"
           }
         }
@@ -1605,8 +1605,8 @@
     ]
   },
   {
-    "title": "12.1 dialogue 2",
-    "audio": "theLangPath\\lesson_3\\audio\\12.1_2.mp3",
+    "title": "12.2 dialogue 1",
+    "audio": "theLangPath\\lesson_3\\audio\\12.2_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -1615,7 +1615,7 @@
           "characterName": "Щэфакlор",
           "originText": "Алоо Енал къэгущыlэрэр. Хэт ар? ",
           "langToTranslationMap": {
-            "en": "?Hello, Yinal speaking, who is this?",
+            "en": "Hello, Yinal speaking, who is this?",
             "ar": "?الو، ينال يتكلم، من معي",
             "he": "?שלום, ינאל מדבר, מי שם"
           }
@@ -1628,7 +1628,7 @@
           "characterName": "Щакlор",
           "originText": "Шъуимафэ шlу. Сэ сцlэр Заур. Мэкъэ гъэlоу интэрнетым къиплъхьагъэм пае скъыпфытеуагъ, гыкlалъэ ыужы уита?",
           "langToTranslationMap": {
-            "en": "?Good day, my name is Zaur. I called you regarding the advertisement you posted on the internet. Are you looking for a washing machine?",
+            "en": "Good day, my name is Zaur. I called you regarding the advertisement you posted on the internet. Are you looking for a washing machine?",
             "ar": "?نهاركم سعيد، أنا اسمي زاور، أتصلت بك بخصوص الإعلان الذي عرضته في الانترنت، هل تبحث عن غسالة",
             "he": "?שלום, קוראים לי זאור. התקשרתי בקשר לפרסום שהעלית באינטרנט, האם אתה מחפש מכונת כביסה"
           }
@@ -1641,7 +1641,7 @@
           "characterName": "Щэфакlор",
           "originText": "Ары, сигыкlалъэ къутагъэ, гыкlалъэ пщэнэу уиlа?",
           "langToTranslationMap": {
-            "en": "?Yes, my washing machine broke down. Do you have a washing machine for sale?",
+            "en": "Yes, my washing machine broke down. Do you have a washing machine for sale?",
             "ar": "?نعم غسالتي تعطلت، هل عندك غسالة للبيع",
             "he": "?כן, המכבסה שלי התקלקלה, האם יש לך מכונת כביסה למכירה"
           }
@@ -1693,7 +1693,7 @@
           "characterName": "Щэфакlор",
           "originText": "Тхьапш ыныбжь?",
           "langToTranslationMap": {
-            "en": "?How old is it?",
+            "en": "How old is it?",
             "ar": "?كم عمرها",
             "he": "?כמה זמן היא"
           }
@@ -1788,7 +1788,7 @@
               "langToTranslationMap": {
                 "en": "Pure like the light of the sky,",
                 "ar": "،نقية كنور السماء",
-                "he": "נקייה כאור השמיים,"
+                "he": ",נקייה כאור השמיים"
               }
             },
             {
@@ -1797,7 +1797,7 @@
               "langToTranslationMap": {
                 "en": "Beautiful like a page of luck,",
                 "ar": "،جميلة كصفحة حظ",
-                "he": "יפה כמו דף מזל,"
+                "he": ",יפה כמו דף מזל"
               }
             },
             {
@@ -1806,7 +1806,7 @@
               "langToTranslationMap": {
                 "en": "Fragile like a snowy path,",
                 "ar": "،هشة كطريق ثلجية",
-                "he": "שברירית כמו דרך מושלגת,"
+                "he": ",שברירית כמו דרך מושלגת"
               }
             },
             {
@@ -1815,7 +1815,7 @@
               "langToTranslationMap": {
                 "en": "Joyful like children’s play,",
                 "ar": "،مبهجة كلعب الأطفال",
-                "he": "שמחה כמו משחקי ילדים,"
+                "he": ",שמחה כמו משחקי ילדים"
               }
             },
             {
@@ -1824,7 +1824,7 @@
               "langToTranslationMap": {
                 "en": "In it is a secret like the meaning of a story,",
                 "ar": "،فيها سر كمضمون قصة",
-                "he": "יש בו סוד כמו תוכן סיפור,"
+                "he": ",יש בו סוד כמו תוכן סיפור"
               }
             },
             {
@@ -1833,7 +1833,7 @@
               "langToTranslationMap": {
                 "en": "Innocent like an orphan child,",
                 "ar": "،بريئة كطفل يتيم",
-                "he": "תמימה כמו ילד יתום,"
+                "he": ",תמימה כמו ילד יתום"
               }
             },
             {
@@ -1842,7 +1842,7 @@
               "langToTranslationMap": {
                 "en": "Strong like a steel weapon,",
                 "ar": "،صلبة كسلاح فولاذي",
-                "he": "חזקה כמו נשק מפלדה,"
+                "he": ",חזקה כמו נשק מפלדה"
               }
             },
             {
@@ -1851,7 +1851,7 @@
               "langToTranslationMap": {
                 "en": "If she is your friend –",
                 "ar": "،إذا كانت صديقتك –",
-                "he": "אם היא חברתך –"
+                "he": "– אם היא חברתך"
               }
             },
             {
@@ -1860,7 +1860,7 @@
               "langToTranslationMap": {
                 "en": "Do not let her repeat her lament,",
                 "ar": "،لا تدعها تردّد رثائها",
-                "he": "אל תתני לה לחזור על קינה,"
+                "he": ",אל תתני לה לחזור על קינה"
               }
             },
             {
@@ -1869,7 +1869,7 @@
               "langToTranslationMap": {
                 "en": "Let me live – let me speak,",
                 "ar": "،دعني أحيا - أتكلم",
-                "he": "תני לי לחיות – תני לי לדבר,"
+                "he": ",תני לי לחיות – תני לי לדבר"
               }
             },
             {
@@ -1878,7 +1878,7 @@
               "langToTranslationMap": {
                 "en": "My life’s appointment… as long as you live.",
                 "ar": "،ميعاد حياتي .. ما دمتِ حيّة",
-                "he": "תאריך חיי... כל עוד את חיה."
+                "he": ".תאריך חיי... כל עוד את חיה"
               }
             }
           ]

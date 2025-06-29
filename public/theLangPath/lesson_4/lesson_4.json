@@ -1,7 +1,7 @@
 [
   {
     "title": "3.1 dialogue 1",
-    "audio": "theLangPath\\lesson_4\\audio\\3.1_1.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\3.1_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -98,7 +98,7 @@
   },
   {
     "title": "3.1 dialogue 2",
-    "audio": "theLangPath\\lesson_4\\audio\\3.1_2.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\3.1_2.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -156,7 +156,7 @@
   },
   {
     "title": "3.1 dialogue 3",
-    "audio": "theLangPath\\lesson_4\\audio\\3.1_3.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\3.1_3.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -188,7 +188,7 @@
   },
   {
     "title": "6.1 exercise 1",
-    "audio": "theLangPath\\lesson_4\\audio\\6_1.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\6.1_1.mp3",
     "parts": [
       {
         "type": "exampleInEachLang",
@@ -271,7 +271,7 @@
   },
   {
     "title": "9.1 dialogue 1",
-    "audio": "theLangPath\\lesson_4\\audio\\9.1_1.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\9.1_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -420,7 +420,7 @@
   },
   {
     "title": "10.2 dialogue 1",
-    "audio": "theLangPath\\lesson_4\\audio\\10.2_1.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\10.2_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -504,7 +504,7 @@
   },
   {
     "title": "10.2 dialogue 2",
-    "audio": "theLangPath\\lesson_4\\audio\\10.2_2.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\10.2_2.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -614,7 +614,7 @@
   },
   {
     "title": "10.2 dialogue 3",
-    "audio": "theLangPath\\lesson_4\\audio\\10.2_3.mp3",
+    "audio": "theLangPath\\lesson_3\\audio\\10.2_3.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -685,95 +685,93 @@
   },
   {
     "title": "21 dialogue 1",
-    "audio": "theLangPath\\lesson_4\\audio\\21.mp3",
-    "parts": [
-      {
-        "type": "poem",
-        "data": {
-          "title": {
-            "originText": "Лlыгъэ",
+    "audio": "theLangPath\\lesson_3\\audio\\21.mp3",
+    "parts": {
+      "type": "poem",
+      "data": {
+        "title": {
+          "originText": "Лlыгъэ",
+          "langToTranslationMap": {
+            "en": "Manhood",
+            "ar": "الرجولة",
+            "he": "גבריות"
+          }
+        },
+        "stanzas": [
+          {
+            "stanza": "1",
+            "originText": "Тэтэжъ, къыcаlу:",
             "langToTranslationMap": {
-              "en": "Manhood",
-              "ar": "الرجولة",
-              "he": "גבריות"
+              "en": "Grandfather, tell me:",
+              "ar": ":جدي، قل لي",
+              "he": ":סבא, תגיד לי"
             }
           },
-          "stanzas": [
-            {
-              "stanza": "1",
-              "originText": "Тэтэжъ, къыcаlу:",
-              "langToTranslationMap": {
-                "en": "Grandfather, tell me:",
-                "ar": ":جدي، قل لي",
-                "he": ":סבא, תגיד לי"
-              }
-            },
-            {
-              "stanza": "1",
-              "originText": "Сыд илlэужыгъуа лIыгъэр?",
-              "langToTranslationMap": {
-                "en": "What is manhood?",
-                "ar": "ماهي الرجولة؟",
-                "he": "?מהי גבריות"
-              }
-            },
-            {
-              "stanza": "1",
-              "originText": "Еупчlыгъ шъэожъыер ятэжъы.",
-              "langToTranslationMap": {
-                "en": "The young boy asked his grandfather.",
-                "ar": ".سأل الولد الصغير جده",
-                "he": ".הנער הקטן שאל את סבו"
-              }
-            },
-            {
-              "stanza": "1",
-              "originText": "Уихэгъэгу шlу плъэгъоу, ар къэуухъумэн плъэкIымэ джар лӀыгъэ.",
-              "langToTranslationMap": {
-                "en": "Manhood is to love your country and to be able to protect it.",
-                "ar": ".الرجولة هي أن تحب بلدك، وأن تستطيع حمايته.",
-                "he": ".גבריות היא לאהוב את ארצך ולהיות מסוגל להגן עליה"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Гузэжъогъу итым уишIуагъэ ебгъэкIымэ, къинэу зыхэфагъэм хэпщыжьмэ джар лӀыгъэ.",
-              "langToTranslationMap": {
-                "en": "Manhood is to help someone who got into trouble and get them out of the mess they fell into.",
-                "ar": ".الرجوله هي أن تساعد الذي وقع في مشكلة وأن تخرجه من الورطة التي وقع بها",
-                "he": ".גבריות היא לעזור למי שנתקל בבעיה ולהוציא אותו מהמצב הקשה שבו הוא נמצא"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Уиныбджэгъухэм урялъапlэу, ори ахэр уилъапlэмэ джар лIыгъэ, цIыфыгъэ.",
-              "langToTranslationMap": {
-                "en": "Manhood and humanity is to be dear to your friends when they are dear to you.",
-                "ar": ".الرجولة والانسانية هي أن تكون غاليا على أصدقائك وهم غاليين عليك",
-                "he": ".גבריות ואנושיות הן להיות יקר לחבריך כשהם יקרים לך"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Іофэу узфэгъэзагъэр шӀу плъэгъоу, ащкӀэ гъэхъэгъэ дэгъухэр пшlымэ джар лIыгъэ, цIыфыгъэ.",
-              "langToTranslationMap": {
-                "en": "Manhood and humanity is to love your work and to excel at it.",
-                "ar": ".الرجولة والانسانية هي أن تحب عملك وأن تبرع به",
-                "he": ".גבריות ואנושיות הן לאהוב את עבודתך ולהצטיין בה"
-              }
-            },
-            {
-              "stanza": "2",
-              "originText": "Уиlорэ уишIэрэ зэтетмэ джар лlыгъэ, цlыфыгъэ.",
-              "langToTranslationMap": {
-                "en": "Manhood and humanity is when your word matches your deed.",
-                "ar": ".الرجولة والانسانية هي أن يتوافق قولك مع عملك",
-                "he": ".גבריות ואנושיות הן שכאשר דבריך תואמים את מעשיך"
-              }
+          {
+            "stanza": "1",
+            "originText": "Сыд илlэужыгъуа лIыгъэр? ",
+            "langToTranslationMap": {
+              "en": "What is manhood?",
+              "ar": "ماهي الرجولة؟",
+              "he": "?מהי גבריות"
             }
-          ]
-        }
+          },
+          {
+            "stanza": "1",
+            "originText": "Еупчlыгъ шъэожъыер ятэжъы.",
+            "langToTranslationMap": {
+              "en": "The young boy asked his grandfather.",
+              "ar": ".سأل الولد الصغير جده",
+              "he": ".הנער הקטן שאל את סבו"
+            }
+          },
+          {
+            "stanza": "1",
+            "originText": "Уихэгъэгу шlу плъэгъоу, ар къэуухъумэн плъэкIымэ джар лӀыгъэ. ",
+            "langToTranslationMap": {
+              "en": "Manhood is to love your country and to be able to protect it.",
+              "ar": ".الرجولة هي أن تحب بلدك، وأن تستطيع حمايته.",
+              "he": ".גבריות היא לאהוב את ארצך ולהיות מסוגל להגן עליה"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Гузэжъогъу итым уишIуагъэ ебгъэкIымэ, къинэу зыхэфагъэм хэпщыжьмэ джар лӀыгъэ. ",
+            "langToTranslationMap": {
+              "en": "Manhood is to help someone who got into trouble and get them out of the mess they fell into.",
+              "ar": ".الرجوله هي أن تساعد الذي وقع في مشكلة وأن تخرجه من الورطة التي وقع بها",
+              "he": ".גבריות היא לעזור למי שנתקל בבעיה ולהוציא אותו מהמצב הקשה שבו הוא נמצא"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Уиныбджэгъухэм урялъапlэу, ори ахэр уилъапlэмэ джар лIыгъэ, цIыфыгъэ.",
+            "langToTranslationMap": {
+              "en": "Manhood and humanity is to be dear to your friends when they are dear to you.",
+              "ar": ".الرجولة والانسانية هي أن تكون غاليا على أصدقائك وهم غاليين عليك",
+              "he": ".גבריות ואנושיות הן להיות יקר לחבריך כשהם יקרים לך"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Іофэу узфэгъэзагъэр шӀу плъэгъоу, ащкӀэ гъэхъэгъэ дэгъухэр пшlымэ джар лIыгъэ, цIыфыгъэ.",
+            "langToTranslationMap": {
+              "en": "Manhood and humanity is to love your work and to excel at it.",
+              "ar": ".الرجولة والانسانية هي أن تحب عملك وأن تبرع به",
+              "he": ".גבריות ואנושיות הן לאהוב את עבודתך ולהצטיין בה"
+            }
+          },
+          {
+            "stanza": "2",
+            "originText": "Уиlорэ уишIэрэ зэтетмэ джар лlыгъэ, цlыфыгъэ.",
+            "langToTranslationMap": {
+              "en": "Manhood and humanity is when your word matches your deed.",
+              "ar": ".الرجولة والانسانية هي أن يتوافق قولك مع عملك",
+              "he": ".גבריות ואנושיות הן שכאשר דבריך תואמים את מעשיך"
+            }
+          }
+        ]
       }
-    ]
+    }
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "title": "2.1 dialogue 1",
-    "audio": "theLangPath\\lesson_2\\audio\\2.1_2.mp3",
+    "audio": "theLangPath\\lesson_2\\audio\\2.1_1.mp3",
     "parts": [
       {
         "type": "dialogBubble",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "title": "2.1 dialogue 1",
+    "title": "2.1 dialogue 2",
     "audio": "theLangPath\\lesson_2\\audio\\2.1_2.mp3",
     "parts": [
       {
@@ -66,11 +66,11 @@
         "data": {
           "leftOrRight": "left",
           "characterName": "Налмэс",
-          "originText": "Уимафэ шIу Бибэрс. Сыды уфэд?",
+          "originText": "Фэсапщи, сыды уфэд?",
           "langToTranslationMap": {
-            "en": "Good day, Bibars. How are you?",
-            "ar": "نهارك سعيد بيبرس، كيف حالك؟",
-            "he": "?יום טוב, ביברס. מה שלומך"
+            "en": "Hello, how are you?",
+            "ar": "مرحباً , كيف الحال؟",
+            "he": "?שלום, מה שלומך"
           }
         }
       },
@@ -79,11 +79,11 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Бибэрс",
-          "originText": "Сыдэгъу, О сыды уфэд?",
+          "originText": "Сытэрэзэп.",
           "langToTranslationMap": {
-            "en": "I'm fine. And how are you?",
-            "ar": "أنا بخير، أنت كيف حالك؟",
-            "he": "?אני בסדר, ומה שלומך"
+            "en": "I'm not well.",
+            "ar": ".لست بخير",
+            "he": ".לא טוב"
           }
         }
       },
@@ -92,11 +92,11 @@
         "data": {
           "leftOrRight": "left",
           "characterName": "Налмэс",
-          "originText": "Опсэу, сыдэгъу, кофэ уешъона?",
+          "originText": "Ар бэу гумэкlыгъу, щаи уешъона?",
           "langToTranslationMap": {
             "en": "Thanks, I’m fine. Would you like some coffee?",
-            "ar": "شكراً، أنا بخير، هل تشرب قهوةً؟",
-            "he": "?תודה, אני בסדר. רוצה קפה"
+            "ar": "That's really unfortunate. Do you drink tea?",
+            "he": "?זה ממש מצער. אתה שותה תה"
           }
         }
       },
@@ -105,11 +105,11 @@
         "data": {
           "leftOrRight": "right",
           "characterName": "Бибэрс",
-          "originText": "Хьау, опсэу, кофэ сешъуагъ.",
+          "originText": "Хьау, фызыгъэ lэшlу сешъомэ нахь сикlас.",
           "langToTranslationMap": {
-            "en": "No, thanks. I already drank coffee.",
-            "ar": ".لا، شكراً، لقد شربت قهوة",
-            "he": ".לא, תודה. כבר שתיתי קפה"
+            "en": "No, I'd rather drink sweet juice.",
+            "ar": ".لا , أفضل شرب  عصير حلو",
+            "he": ".לא, אני מעדיף לשתות מיץ מתוק"
           }
         }
       }
@@ -270,7 +270,7 @@
           "langToTranslationMap": {
             "en": "Thanks, I'm good. And how are you?",
             "ar": "شكراً، أنا جيد، وأنت كيف حالك؟",
-            "he": ".תודה, אני בסדר ?ואתה מה שלומך"
+            "he": "?תודה, אני בסדר ?ואתה מה שלומך"
           }
         }
       },
@@ -1059,8 +1059,8 @@
           "originText": "РублитIурэ чапычипшIырэ.",
           "langToTranslationMap": {
             "en": "Two rubles and 10 chapich.",
-            "ar": "روبلين و10 تشابتش",
-            "he": "'שני רובל ועשרה צ'אבצ"
+            "ar": ".روبلين و10 تشابتش",
+            "he": ".'שני רובל ועשרה צ'אבצ"
           }
         }
       },
@@ -1391,7 +1391,7 @@
           "originText": "Псыр гъашIэр ары. непэ шъонхэмкIэ хэшыкIыгъэу Зыпщызэ пцIыипс  литрым чапыч икI ыуасэр",
           "langToTranslationMap": {
             "en": "Water is life today regarding drinks there is a special offer on mineral water (Nahr Bshiz) price per liter is 80 chabitch",
-            "ar": "المياه هي الحياة، واليوم بما يخص المشروبات ستجدون عرضاً خاصاً على مياه ( نهر بشيز ) المعدنية ، سعر اللتر ثمانون تشابتشاً.",
+            "ar": ".المياه هي الحياة، واليوم بما يخص المشروبات ستجدون عرضاً خاصاً على مياه ( نهر بشيز ) المعدنية ، سعر اللتر ثمانون تشابتشاً",
             "he": ".'מים הם חיים, היום לגבי המשקאות יש הצעה מיוחדת על מים מינרליים (נהר בשיז) מחיר לליטר 80 צ'אבצ"
           }
         }
